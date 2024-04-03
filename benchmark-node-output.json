@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1712175951274,
+  "lastUpdate": 1712178148750,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -111,6 +111,40 @@
           {
             "name": "threejs10x-sourcemap",
             "value": "416.41",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1a2888599105e92254d0f60600009c6129ee7f22",
+          "message": "chore: bump up vite version to v5.1.7 [SECURITY] (#738)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2024-04-03T20:59:37Z",
+          "tree_id": "75ee05ab392bbf4ff92841c798175a3b00a8f0ef",
+          "url": "https://github.com/rolldown/rolldown/commit/1a2888599105e92254d0f60600009c6129ee7f22"
+        },
+        "date": 1712178148749,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x",
+            "value": "303.43",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap",
+            "value": "428.98",
             "unit": "ms / ops"
           }
         ]
