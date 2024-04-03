@@ -1,0 +1,52 @@
+{
+  "lastUpdate": 1712167650445,
+  "repoUrl": "https://github.com/rolldown/rolldown",
+  "entries": {
+    "Benchmark": [
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei",
+            "username": "hyf0"
+          },
+          "distinct": true,
+          "id": "5cab786f119397b6402cbbec995a9faa61e1f16d",
+          "message": "chore(bench/ci): correct path settings",
+          "timestamp": "2024-04-04T01:56:36+08:00",
+          "tree_id": "45d2deddadb282173691a51f70cc506adf219d18",
+          "url": "https://github.com/rolldown/rolldown/commit/5cab786f119397b6402cbbec995a9faa61e1f16d"
+        },
+        "date": 1712167650444,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs",
+            "value": "40.27",
+            "unit": "ms"
+          },
+          {
+            "name": "threejs10x",
+            "value": "372.51",
+            "unit": "ms"
+          },
+          {
+            "name": "threejs-sourcemap",
+            "value": "32.21",
+            "unit": "ms"
+          },
+          {
+            "name": "threejs10x-sourcemap",
+            "value": "322.04",
+            "unit": "ms"
+          }
+        ]
+      }
+    ]
+  }
+}
