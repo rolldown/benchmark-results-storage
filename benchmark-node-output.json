@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1712266914878,
+  "lastUpdate": 1712267062881,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -366,23 +366,23 @@
             "username": "web-flow"
           },
           "distinct": true,
-          "id": "f2f7476daaa086df29115e1a096a1409310962f5",
-          "message": "chore(scripts/bench): allow to derive new benchmark suite with reusing existing one (#749)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
-          "timestamp": "2024-04-05T05:39:20+08:00",
-          "tree_id": "ef02c567846eaeb90783b8b365de540b1df633db",
-          "url": "https://github.com/rolldown/rolldown/commit/f2f7476daaa086df29115e1a096a1409310962f5"
+          "id": "5e25f31943430cfdf57c64a87495ac16bafd9960",
+          "message": "chore(node/bench): add `rome-ts` benchmark suite (#750)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-04-05T05:41:38+08:00",
+          "tree_id": "a118dda06de8434134d8048eafa5f6f3c28bf12d",
+          "url": "https://github.com/rolldown/rolldown/commit/5e25f31943430cfdf57c64a87495ac16bafd9960"
         },
-        "date": 1712266914877,
+        "date": 1712267062880,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x",
-            "value": "306.24",
+            "value": "360.40",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap",
-            "value": "427.55",
+            "value": "459.35",
             "unit": "ms / ops"
           }
         ]
