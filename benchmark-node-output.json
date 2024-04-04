@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1712221602929,
+  "lastUpdate": 1712243192812,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -281,6 +281,40 @@
           {
             "name": "threejs10x-sourcemap",
             "value": "432.82",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "admin@iios.net",
+            "name": "John",
+            "username": "18o"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "226a213dab8a3336da5830406c853d6d30cc2b69",
+          "message": "chore: update Rust channel to 1.76.0 (#743)\n\nCo-authored-by: Boshen <boshenc@gmail.com>",
+          "timestamp": "2024-04-04T23:03:50+08:00",
+          "tree_id": "86d506945d77d7dfc60ac89030348c2cab24eba2",
+          "url": "https://github.com/rolldown/rolldown/commit/226a213dab8a3336da5830406c853d6d30cc2b69"
+        },
+        "date": 1712243192811,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x",
+            "value": "304.39",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap",
+            "value": "428.84",
             "unit": "ms / ops"
           }
         ]
