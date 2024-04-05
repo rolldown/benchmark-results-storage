@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1712316551351,
+  "lastUpdate": 1712316669236,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -468,23 +468,23 @@
             "username": "web-flow"
           },
           "distinct": true,
-          "id": "eb65176fe07437d4fa382bb38db24c91fceac456",
-          "message": "chore(ci): Update automate-labeling.yml to use pull_request_target event (#756)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
-          "timestamp": "2024-04-05T19:26:27+08:00",
-          "tree_id": "cfd71b7a31be4f986979fc8d4791ab34cbe0d9da",
-          "url": "https://github.com/rolldown/rolldown/commit/eb65176fe07437d4fa382bb38db24c91fceac456"
+          "id": "c0db7ac0622477e4ea62c5c5ba9f440e972574a5",
+          "message": "chore(ci): update benchmark-node workflow settings (#757)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-04-05T19:28:31+08:00",
+          "tree_id": "514bd5a1a17071b9bddfcead2e4227e96a5eee2d",
+          "url": "https://github.com/rolldown/rolldown/commit/c0db7ac0622477e4ea62c5c5ba9f440e972574a5"
         },
-        "date": 1712316551350,
+        "date": 1712316669236,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x",
-            "value": "345.53",
+            "value": "308.48",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap",
-            "value": "423.95",
+            "value": "461.10",
             "unit": "ms / ops"
           }
         ]
