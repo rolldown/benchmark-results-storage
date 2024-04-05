@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1712358981275,
+  "lastUpdate": 1712359114897,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -535,24 +535,24 @@
             "name": "GitHub",
             "username": "web-flow"
           },
-          "distinct": false,
-          "id": "81082646dd1ed36c2d54f128d4b4fa4cadb263cb",
-          "message": "refactor(rust): introduce `BundlerOptions`, remove `InputOptions` and `OutputOptions` (#760)\n\n<!-- Thank you for contributing! -->\r\n\r\n### Description\r\n\r\nSince `InputOptions` and `OutputOptions` are always come up in pair, there's no need to maintain them separably in rust. So we just flat them, this will improve the dx of using rolldown in rust.\r\n\r\nFor js, to be compatible with rollup, we just keep the current structures.\r\n\r\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
-          "timestamp": "2024-04-06T07:13:11+08:00",
-          "tree_id": "7cca645cff27a12975961fd2e6fe32763b5ef0e8",
-          "url": "https://github.com/rolldown/rolldown/commit/81082646dd1ed36c2d54f128d4b4fa4cadb263cb"
+          "distinct": true,
+          "id": "408ba0e5be642bcf7aa29e36a0ff14e030b1d545",
+          "message": "refactor(rust): move `BundlerOptions` to `rolldown_common` (#761)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-04-06T07:15:31+08:00",
+          "tree_id": "fa912e29dc1f13c2b2e991a771d6fc98e4d8a2a1",
+          "url": "https://github.com/rolldown/rolldown/commit/408ba0e5be642bcf7aa29e36a0ff14e030b1d545"
         },
-        "date": 1712358981274,
+        "date": 1712359114896,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x",
-            "value": "320.96",
+            "value": "320.66",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap",
-            "value": "435.84",
+            "value": "444.30",
             "unit": "ms / ops"
           }
         ]
