@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1712316669236,
+  "lastUpdate": 1712350769087,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -485,6 +485,40 @@
           {
             "name": "threejs10x-sourcemap",
             "value": "461.10",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e9d77178f5e89539e35ce0f16b3544e9aa71cbdc",
+          "message": "feat(rust): improve alignment of resolve behaviors with esbuild (#759)",
+          "timestamp": "2024-04-06T04:56:54+08:00",
+          "tree_id": "fd577cb16fed20e3ff888e143c56cd15c0b70d75",
+          "url": "https://github.com/rolldown/rolldown/commit/e9d77178f5e89539e35ce0f16b3544e9aa71cbdc"
+        },
+        "date": 1712350769087,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x",
+            "value": "354.15",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap",
+            "value": "456.03",
             "unit": "ms / ops"
           }
         ]
