@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1712359114897,
+  "lastUpdate": 1712359308256,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -553,6 +553,40 @@
           {
             "name": "threejs10x-sourcemap",
             "value": "444.30",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ee3739d65dfed173dbc582270f7cc89017dc285a",
+          "message": "refactor(rust/testing): don't repeat `bundlerOptions` twice (#762)\n\n<!-- Thank you for contributing! -->\r\n\r\n### Description\r\n\r\nWe used to maintain a copy of `BundlerOptions` for allowing us to writing test config in json. This cause a lot of duplicate works for writing the same options twice.\r\n\r\nNow we use `BundlerOptions` directly, it solve the problem.\r\n\r\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-04-06T07:17:47+08:00",
+          "tree_id": "155e1b383873f381359fa814f2a0bac21387ff76",
+          "url": "https://github.com/rolldown/rolldown/commit/ee3739d65dfed173dbc582270f7cc89017dc285a"
+        },
+        "date": 1712359308256,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x",
+            "value": "309.32",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap",
+            "value": "428.09",
             "unit": "ms / ops"
           }
         ]
