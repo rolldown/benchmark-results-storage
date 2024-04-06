@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1712445408849,
+  "lastUpdate": 1712445533594,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -740,23 +740,23 @@
             "username": "web-flow"
           },
           "distinct": true,
-          "id": "6714dd070b4f1bd08283734be3685a3963badd03",
-          "message": "feat(tree_shaking): shake unused import variables (#771)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
-          "timestamp": "2024-04-07T07:14:05+08:00",
-          "tree_id": "89af3d1061666afaa346ac024300ab0714218bb2",
-          "url": "https://github.com/rolldown/rolldown/commit/6714dd070b4f1bd08283734be3685a3963badd03"
+          "id": "2c84963b63b946bcfd0bc569e4f5d13243016939",
+          "message": "feat: support `InputOptions#shimMissingExports` (#772)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-04-07T07:15:38+08:00",
+          "tree_id": "466d176ff86aadff82ba454cd419a6b172aeaa61",
+          "url": "https://github.com/rolldown/rolldown/commit/2c84963b63b946bcfd0bc569e4f5d13243016939"
         },
-        "date": 1712445408848,
+        "date": 1712445533593,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x",
-            "value": "341.99",
+            "value": "325.73",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap",
-            "value": "466.68",
+            "value": "457.97",
             "unit": "ms / ops"
           }
         ]
