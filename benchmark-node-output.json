@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1712401486876,
+  "lastUpdate": 1712440253252,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -689,6 +689,40 @@
           {
             "name": "threejs10x-sourcemap",
             "value": "447.07",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d743a01ce38e10104e13691adde0ba70aaec46de",
+          "message": "chore(rust/tracing): use env variable to fully control tracing output (#766)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-04-07T05:48:13+08:00",
+          "tree_id": "3a3cd22f62b5e83aafa1dba98ad40735e66cdebe",
+          "url": "https://github.com/rolldown/rolldown/commit/d743a01ce38e10104e13691adde0ba70aaec46de"
+        },
+        "date": 1712440253251,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x",
+            "value": "303.74",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap",
+            "value": "422.83",
             "unit": "ms / ops"
           }
         ]
