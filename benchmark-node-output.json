@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1712393700371,
+  "lastUpdate": 1712401486876,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -655,6 +655,40 @@
           {
             "name": "threejs10x-sourcemap",
             "value": "477.79",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "679a9ac97c351712c5f97e5f2168985c3f6f9cd2",
+          "message": "fix: normalize original sourcemap sources (#765)",
+          "timestamp": "2024-04-06T19:02:07+08:00",
+          "tree_id": "53fe1a93bb3c389fa18bed3021dfddd753fc56c3",
+          "url": "https://github.com/rolldown/rolldown/commit/679a9ac97c351712c5f97e5f2168985c3f6f9cd2"
+        },
+        "date": 1712401486875,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x",
+            "value": "306.85",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap",
+            "value": "447.07",
             "unit": "ms / ops"
           }
         ]
