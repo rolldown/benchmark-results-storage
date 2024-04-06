@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1712445677703,
+  "lastUpdate": 1712446326064,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -791,6 +791,40 @@
           {
             "name": "threejs10x-sourcemap",
             "value": "419.45",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "vbasky@outlook.com.au",
+            "name": "Vikram Bhaskaran",
+            "username": "vbasky"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "160935fa5cea7b5dc0259062ca66e559591933b9",
+          "message": "chore(repo): make `cargo build` not failed due to undefined symbols of NAPI-RS (#774)\n\nCo-authored-by: Vikram Bhaskaran <vikram.bhaskaran@outlook.com>",
+          "timestamp": "2024-04-07T07:29:28+08:00",
+          "tree_id": "b4bd4a9eb2d5158df875de9cc775431a3712b7a0",
+          "url": "https://github.com/rolldown/rolldown/commit/160935fa5cea7b5dc0259062ca66e559591933b9"
+        },
+        "date": 1712446326063,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x",
+            "value": "294.27",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap",
+            "value": "416.41",
             "unit": "ms / ops"
           }
         ]
