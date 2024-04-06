@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1712440343245,
+  "lastUpdate": 1712445408849,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -723,6 +723,40 @@
           {
             "name": "threejs10x-sourcemap",
             "value": "459.27",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6714dd070b4f1bd08283734be3685a3963badd03",
+          "message": "feat(tree_shaking): shake unused import variables (#771)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-04-07T07:14:05+08:00",
+          "tree_id": "89af3d1061666afaa346ac024300ab0714218bb2",
+          "url": "https://github.com/rolldown/rolldown/commit/6714dd070b4f1bd08283734be3685a3963badd03"
+        },
+        "date": 1712445408848,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x",
+            "value": "341.99",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap",
+            "value": "466.68",
             "unit": "ms / ops"
           }
         ]
