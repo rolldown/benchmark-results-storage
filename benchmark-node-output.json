@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1712440253252,
+  "lastUpdate": 1712440343245,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -706,23 +706,23 @@
             "username": "web-flow"
           },
           "distinct": true,
-          "id": "d743a01ce38e10104e13691adde0ba70aaec46de",
-          "message": "chore(rust/tracing): use env variable to fully control tracing output (#766)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
-          "timestamp": "2024-04-07T05:48:13+08:00",
-          "tree_id": "3a3cd22f62b5e83aafa1dba98ad40735e66cdebe",
-          "url": "https://github.com/rolldown/rolldown/commit/d743a01ce38e10104e13691adde0ba70aaec46de"
+          "id": "c304a0dcde43234654626f8695cd745f37de4d33",
+          "message": "feat: Allow pass tsconfig to `oxc-resolver` via `InputOptions#resolve#tsconfigFilename` (#767)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-04-07T05:49:29+08:00",
+          "tree_id": "1ad39ff1000a6aa6f16f3604208e54b147d29fc3",
+          "url": "https://github.com/rolldown/rolldown/commit/c304a0dcde43234654626f8695cd745f37de4d33"
         },
-        "date": 1712440253251,
+        "date": 1712440343244,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x",
-            "value": "303.74",
+            "value": "316.12",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap",
-            "value": "422.83",
+            "value": "459.27",
             "unit": "ms / ops"
           }
         ]
