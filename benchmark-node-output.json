@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1712445533594,
+  "lastUpdate": 1712445677703,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -740,23 +740,57 @@
             "username": "web-flow"
           },
           "distinct": true,
-          "id": "2c84963b63b946bcfd0bc569e4f5d13243016939",
-          "message": "feat: support `InputOptions#shimMissingExports` (#772)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
-          "timestamp": "2024-04-07T07:15:38+08:00",
-          "tree_id": "466d176ff86aadff82ba454cd419a6b172aeaa61",
-          "url": "https://github.com/rolldown/rolldown/commit/2c84963b63b946bcfd0bc569e4f5d13243016939"
+          "id": "6714dd070b4f1bd08283734be3685a3963badd03",
+          "message": "feat(tree_shaking): shake unused import variables (#771)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-04-07T07:14:05+08:00",
+          "tree_id": "89af3d1061666afaa346ac024300ab0714218bb2",
+          "url": "https://github.com/rolldown/rolldown/commit/6714dd070b4f1bd08283734be3685a3963badd03"
         },
-        "date": 1712445533593,
+        "date": 1712445408848,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x",
-            "value": "325.73",
+            "value": "341.99",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap",
-            "value": "457.97",
+            "value": "466.68",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "387905b48f714691f301c7d154e8b3e474ed3866",
+          "message": "chore(bench/node): bundling `rome-ts` with rolldown (#773)\n\n<!-- Thank you for contributing! -->\r\n\r\n### Description\r\n\r\nhttps://github.com/rolldown/rolldown/blob/c304a0dcde43234654626f8695cd745f37de4d33/packages/bench/src/suites.js#L65-L85\r\n\r\nSince rolldown doesn't support transpile typescript natively, so we use esbuild to transpile typescript code :).\r\n\r\n```\r\n// esbuild.transformSync\r\n\r\nrome-ts:\r\n  esbuild: 59.02ms (fastest)\r\n  rolldown: 471.67ms\r\nSummary(rome-ts):\r\n  esbuild is\r\n  - 7.99 times faster than rolldown\r\n  \r\n// await esbuild.transform\r\n\r\nrome-ts:\r\n  esbuild: 55.27ms (fastest)\r\n  rolldown: 154.02ms\r\nSummary(rome-ts):\r\n  esbuild is\r\n  - 2.79 times faster than rolldown\r\n```\r\n\r\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-04-07T07:17:30+08:00",
+          "tree_id": "6280003fc95048cc38c67c5d3659fda15ed423b3",
+          "url": "https://github.com/rolldown/rolldown/commit/387905b48f714691f301c7d154e8b3e474ed3866"
+        },
+        "date": 1712445677702,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x",
+            "value": "302.29",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap",
+            "value": "419.45",
             "unit": "ms / ops"
           }
         ]
