@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1712500756670,
+  "lastUpdate": 1712500895522,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -978,23 +978,23 @@
             "username": "web-flow"
           },
           "distinct": true,
-          "id": "9267113dd5709aeb5fda83c5b78275b2cb25eb0b",
-          "message": "refactor(rust): use `walk_xxx` API to traverse AST (#779)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
-          "timestamp": "2024-04-07T22:36:28+08:00",
-          "tree_id": "bdc1f9dbb5adf553ff422d8fef9243cac2248e43",
-          "url": "https://github.com/rolldown/rolldown/commit/9267113dd5709aeb5fda83c5b78275b2cb25eb0b"
+          "id": "226df5b9993e568ff58a345ef1ca39d2cdc37613",
+          "message": "fix(rust/resolver): use selected resolver instead of the default one (#780)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-04-07T22:38:45+08:00",
+          "tree_id": "e73ef257d0da47e904144d2fcdab2f35775042b1",
+          "url": "https://github.com/rolldown/rolldown/commit/226df5b9993e568ff58a345ef1ca39d2cdc37613"
         },
-        "date": 1712500756669,
+        "date": 1712500895521,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x",
-            "value": "308.44",
+            "value": "304.24",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap",
-            "value": "455.04",
+            "value": "426.73",
             "unit": "ms / ops"
           }
         ]
