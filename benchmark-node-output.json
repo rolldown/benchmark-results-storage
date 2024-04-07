@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1712496172187,
+  "lastUpdate": 1712500756670,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -961,6 +961,40 @@
           {
             "name": "threejs10x-sourcemap",
             "value": "436.19",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9267113dd5709aeb5fda83c5b78275b2cb25eb0b",
+          "message": "refactor(rust): use `walk_xxx` API to traverse AST (#779)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-04-07T22:36:28+08:00",
+          "tree_id": "bdc1f9dbb5adf553ff422d8fef9243cac2248e43",
+          "url": "https://github.com/rolldown/rolldown/commit/9267113dd5709aeb5fda83c5b78275b2cb25eb0b"
+        },
+        "date": 1712500756669,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x",
+            "value": "308.44",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap",
+            "value": "455.04",
             "unit": "ms / ops"
           }
         ]
