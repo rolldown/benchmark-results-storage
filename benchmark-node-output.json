@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1712549382859,
+  "lastUpdate": 1712574534193,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -1063,6 +1063,40 @@
           {
             "name": "threejs10x-sourcemap",
             "value": "468.81",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5b9abb6eba834fa2496dc016ac5759c5e46f45d5",
+          "message": "chore: bump up zx version to v8.0.1 (#793)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2024-04-08T19:06:03+08:00",
+          "tree_id": "cda06bf4a00d0e979bf942653a319b8795b255dc",
+          "url": "https://github.com/rolldown/rolldown/commit/5b9abb6eba834fa2496dc016ac5759c5e46f45d5"
+        },
+        "date": 1712574534192,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x",
+            "value": "307.21",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap",
+            "value": "416.55",
             "unit": "ms / ops"
           }
         ]
