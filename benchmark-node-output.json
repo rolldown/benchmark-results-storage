@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1712574534193,
+  "lastUpdate": 1712579481649,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -1097,6 +1097,40 @@
           {
             "name": "threejs10x-sourcemap",
             "value": "416.55",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "83183039436bc676dfc7c4f828f59e8c7b634a86",
+          "message": "chore(rust/dep): update `sugar_path` to 1.0.0 (#796)",
+          "timestamp": "2024-04-08T20:28:19+08:00",
+          "tree_id": "c374f44e2319cabbc9666203cf4df4efe8cc9987",
+          "url": "https://github.com/rolldown/rolldown/commit/83183039436bc676dfc7c4f828f59e8c7b634a86"
+        },
+        "date": 1712579481648,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x",
+            "value": "308.05",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap",
+            "value": "428.09",
             "unit": "ms / ops"
           }
         ]
