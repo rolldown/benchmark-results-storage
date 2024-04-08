@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1712579481649,
+  "lastUpdate": 1712584106137,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -1131,6 +1131,40 @@
           {
             "name": "threejs10x-sourcemap",
             "value": "428.09",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "57180744+PengBoUESTC@users.noreply.github.com",
+            "name": "pengbo",
+            "username": "PengBoUESTC"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2f3d86559c7d62d072ba7a130a6c616f14699acb",
+          "message": "fix: passing `BindingResolveOptions#alias` from js to rust with maintaining order (#798)",
+          "timestamp": "2024-04-08T13:45:43Z",
+          "tree_id": "10cfd9f4579e5bb6f2e58aaa675b3502ef25b030",
+          "url": "https://github.com/rolldown/rolldown/commit/2f3d86559c7d62d072ba7a130a6c616f14699acb"
+        },
+        "date": 1712584106136,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x",
+            "value": "319.17",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap",
+            "value": "493.61",
             "unit": "ms / ops"
           }
         ]
