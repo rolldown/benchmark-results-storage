@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1712584106137,
+  "lastUpdate": 1712588146895,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -1165,6 +1165,40 @@
           {
             "name": "threejs10x-sourcemap",
             "value": "493.61",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "709aca7d522f66b5b67385411a5d88d7af5b3fc5",
+          "message": "feat: support render chunk hook normalzied output options (#795)",
+          "timestamp": "2024-04-08T14:52:34Z",
+          "tree_id": "ad848225736bad110ed7be4855d01c710c05adae",
+          "url": "https://github.com/rolldown/rolldown/commit/709aca7d522f66b5b67385411a5d88d7af5b3fc5"
+        },
+        "date": 1712588146894,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x",
+            "value": "334.29",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap",
+            "value": "459.16",
             "unit": "ms / ops"
           }
         ]
