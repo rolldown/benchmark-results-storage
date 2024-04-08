@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1712540406532,
+  "lastUpdate": 1712549382859,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -1029,6 +1029,40 @@
           {
             "name": "threejs10x-sourcemap",
             "value": "437.41",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8739d177feecfd7eb303c0dbb369ef0c76e7dedc",
+          "message": "chore: bump up Rust crate oxc to 0.12.2 (#792)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2024-04-08T12:06:58+08:00",
+          "tree_id": "b21708b109b3f72f909f63777af1df32e5f858d8",
+          "url": "https://github.com/rolldown/rolldown/commit/8739d177feecfd7eb303c0dbb369ef0c76e7dedc"
+        },
+        "date": 1712549382858,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x",
+            "value": "362.33",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap",
+            "value": "468.81",
             "unit": "ms / ops"
           }
         ]
