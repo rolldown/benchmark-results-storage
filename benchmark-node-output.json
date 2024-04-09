@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1712588146895,
+  "lastUpdate": 1712632950006,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -1199,6 +1199,40 @@
           {
             "name": "threejs10x-sourcemap",
             "value": "459.16",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "641a4b989c17c3f116edf75df59aa60574ddd044",
+          "message": "chore(rust): rename `RolldownOutput` to `BundleOutput` (#799)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-04-09T11:19:21+08:00",
+          "tree_id": "d97d8b149e670647cbc50eb6309108dbafff9b09",
+          "url": "https://github.com/rolldown/rolldown/commit/641a4b989c17c3f116edf75df59aa60574ddd044"
+        },
+        "date": 1712632950005,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x",
+            "value": "315.25",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap",
+            "value": "439.89",
             "unit": "ms / ops"
           }
         ]
