@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1712643766708,
+  "lastUpdate": 1712653485728,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -1403,6 +1403,40 @@
           {
             "name": "threejs10x-sourcemap",
             "value": "427.46",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "267fc2ac5744006872edaf3e4ab7cf11156138c1",
+          "message": "perf(sourcemap): search lines count at parallel (#806)",
+          "timestamp": "2024-04-09T17:02:04+08:00",
+          "tree_id": "3ad654f55ead430806ab337dbbe88865e5412c9e",
+          "url": "https://github.com/rolldown/rolldown/commit/267fc2ac5744006872edaf3e4ab7cf11156138c1"
+        },
+        "date": 1712653485726,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x",
+            "value": "306.64",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap",
+            "value": "416.28",
             "unit": "ms / ops"
           }
         ]
