@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1712681342794,
+  "lastUpdate": 1712681483998,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -1556,23 +1556,23 @@
             "username": "web-flow"
           },
           "distinct": true,
-          "id": "25245cfdcc97b872e0b21026cc3c76f30977c58d",
-          "message": "chore(rust): improve dx of `OxcAst` (#813)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
-          "timestamp": "2024-04-10T00:46:03+08:00",
-          "tree_id": "c9e296c3bf34e98cd503048eb056ac8c83b0b23f",
-          "url": "https://github.com/rolldown/rolldown/commit/25245cfdcc97b872e0b21026cc3c76f30977c58d"
+          "id": "2011bf463b8cead1903375046643abb1168ef46f",
+          "message": "chore(rust): remove unsafe around `TaskContext` (#814)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-04-10T00:48:36+08:00",
+          "tree_id": "a555facd0922fe1fa5f503d7a2426137f84007da",
+          "url": "https://github.com/rolldown/rolldown/commit/2011bf463b8cead1903375046643abb1168ef46f"
         },
-        "date": 1712681342793,
+        "date": 1712681483997,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x",
-            "value": "349.41",
+            "value": "325.50",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap",
-            "value": "445.22",
+            "value": "472.27",
             "unit": "ms / ops"
           }
         ]
