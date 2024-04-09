@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1712663460004,
+  "lastUpdate": 1712675556317,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -1505,6 +1505,40 @@
           {
             "name": "threejs10x-sourcemap",
             "value": "476.79",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "25c6364492fd0bdef2ebf256ad0f90162e354585",
+          "message": "chore(rust): rename `OxcProgram` to `OxcAst` (#811)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-04-09T23:09:46+08:00",
+          "tree_id": "b1ea7471f35493815b2a46de6b3e4c9bf2666f5b",
+          "url": "https://github.com/rolldown/rolldown/commit/25c6364492fd0bdef2ebf256ad0f90162e354585"
+        },
+        "date": 1712675556315,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x",
+            "value": "340.59",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap",
+            "value": "520.55",
             "unit": "ms / ops"
           }
         ]
