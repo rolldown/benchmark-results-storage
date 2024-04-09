@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1712653485728,
+  "lastUpdate": 1712661894266,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -1437,6 +1437,40 @@
           {
             "name": "threejs10x-sourcemap",
             "value": "416.28",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "166317454+verytrap@users.noreply.github.com",
+            "name": "verytrap",
+            "username": "verytrap"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e917c16e4767d3ec99fc20fcd982a71a18179b48",
+          "message": "chore: fix typo in conment (#809)\n\nSigned-off-by: verytrap <wangqiuyue@outlook.com>",
+          "timestamp": "2024-04-09T11:21:51Z",
+          "tree_id": "6b6ef0e3348c29091c157f8f1896bd570d7e5511",
+          "url": "https://github.com/rolldown/rolldown/commit/e917c16e4767d3ec99fc20fcd982a71a18179b48"
+        },
+        "date": 1712661894265,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x",
+            "value": "310.49",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap",
+            "value": "486.40",
             "unit": "ms / ops"
           }
         ]
