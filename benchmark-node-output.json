@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1712634216664,
+  "lastUpdate": 1712636262025,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -1335,6 +1335,40 @@
           {
             "name": "threejs10x-sourcemap",
             "value": "443.60",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9bb01eb113e5679098450494a905cf169ff4e3b6",
+          "message": "refactor: make chunk sourcemap mutatable (#804)",
+          "timestamp": "2024-04-09T12:14:46+08:00",
+          "tree_id": "ac2965132ef5ffd2bb8a4ea71c3945c99f9caa12",
+          "url": "https://github.com/rolldown/rolldown/commit/9bb01eb113e5679098450494a905cf169ff4e3b6"
+        },
+        "date": 1712636262023,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x",
+            "value": "417.52",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap",
+            "value": "468.35",
             "unit": "ms / ops"
           }
         ]
