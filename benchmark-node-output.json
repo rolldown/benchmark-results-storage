@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1712632950006,
+  "lastUpdate": 1712633128324,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -1233,6 +1233,40 @@
           {
             "name": "threejs10x-sourcemap",
             "value": "439.89",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d43d77394b46f9600cb33fac89f5ef9beb9ff086",
+          "message": "refactor(rust/error): refine concepts related to errors (#800)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-04-09T11:21:36+08:00",
+          "tree_id": "a507edaa6ddb660294f925c54a8c5e45d2ee68e6",
+          "url": "https://github.com/rolldown/rolldown/commit/d43d77394b46f9600cb33fac89f5ef9beb9ff086"
+        },
+        "date": 1712633128323,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x",
+            "value": "312.63",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap",
+            "value": "437.32",
             "unit": "ms / ops"
           }
         ]
