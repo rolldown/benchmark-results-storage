@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1712675556317,
+  "lastUpdate": 1712675695160,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -1522,23 +1522,23 @@
             "username": "web-flow"
           },
           "distinct": true,
-          "id": "25c6364492fd0bdef2ebf256ad0f90162e354585",
-          "message": "chore(rust): rename `OxcProgram` to `OxcAst` (#811)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
-          "timestamp": "2024-04-09T23:09:46+08:00",
-          "tree_id": "b1ea7471f35493815b2a46de6b3e4c9bf2666f5b",
-          "url": "https://github.com/rolldown/rolldown/commit/25c6364492fd0bdef2ebf256ad0f90162e354585"
+          "id": "cfffd7c287bc92f5228857d4c00b096c85ba9b30",
+          "message": "refactor(rust): remove unsafe around `OxcAst` (#812)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-04-09T23:11:34+08:00",
+          "tree_id": "7126d139baf24b8c5ad863fc1b76dacb6ad838ec",
+          "url": "https://github.com/rolldown/rolldown/commit/cfffd7c287bc92f5228857d4c00b096c85ba9b30"
         },
-        "date": 1712675556315,
+        "date": 1712675695159,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x",
-            "value": "340.59",
+            "value": "328.08",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap",
-            "value": "520.55",
+            "value": "478.42",
             "unit": "ms / ops"
           }
         ]
