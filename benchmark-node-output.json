@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1712636262025,
+  "lastUpdate": 1712643766708,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -1369,6 +1369,40 @@
           {
             "name": "threejs10x-sourcemap",
             "value": "468.35",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c9d018d7ac777d30eac27ef4efe166921ca3e1a5",
+          "message": "chore: bump up @types/node version to v20.12.6 (#805)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2024-04-09T14:19:44+08:00",
+          "tree_id": "ed1b41c80fcc725e786ee8b7ef359c63206e781b",
+          "url": "https://github.com/rolldown/rolldown/commit/c9d018d7ac777d30eac27ef4efe166921ca3e1a5"
+        },
+        "date": 1712643766707,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x",
+            "value": "308.94",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap",
+            "value": "427.46",
             "unit": "ms / ops"
           }
         ]
