@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1712726077182,
+  "lastUpdate": 1712726207779,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -1658,23 +1658,23 @@
             "username": "web-flow"
           },
           "distinct": true,
-          "id": "c26b822e51a78e8151eb920c66e14fae6c57f29f",
-          "message": "chore(rust): improve documents of `OxcAst` (#817)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
-          "timestamp": "2024-04-10T13:11:51+08:00",
-          "tree_id": "97539d8bd52273a57de1476520d7f210368014ec",
-          "url": "https://github.com/rolldown/rolldown/commit/c26b822e51a78e8151eb920c66e14fae6c57f29f"
+          "id": "5b78700651b4dbcf5369ac85c09a5d18c6313a84",
+          "message": "chore(rust): introduce oxc allocator helpers (#818)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-04-10T13:13:30+08:00",
+          "tree_id": "ff96202dbb6bec7abe1440a3b23d0180836497d8",
+          "url": "https://github.com/rolldown/rolldown/commit/5b78700651b4dbcf5369ac85c09a5d18c6313a84"
         },
-        "date": 1712726077181,
+        "date": 1712726207778,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x",
-            "value": "311.87",
+            "value": "317.44",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap",
-            "value": "425.33",
+            "value": "470.45",
             "unit": "ms / ops"
           }
         ]
