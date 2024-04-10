@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1712681483998,
+  "lastUpdate": 1712721173642,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -1573,6 +1573,40 @@
           {
             "name": "threejs10x-sourcemap",
             "value": "472.27",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "411020382@qq.com",
+            "name": "谭光志",
+            "username": "woai3c"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b948cf6aac4baad169a3afcb93eb177714b4eaa5",
+          "message": "feat: improve side effect detector  (#807)",
+          "timestamp": "2024-04-10T03:50:00Z",
+          "tree_id": "7ed22aca6693b2fbed8e41064e26174892546814",
+          "url": "https://github.com/rolldown/rolldown/commit/b948cf6aac4baad169a3afcb93eb177714b4eaa5"
+        },
+        "date": 1712721173641,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x",
+            "value": "313.32",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap",
+            "value": "432.08",
             "unit": "ms / ops"
           }
         ]
