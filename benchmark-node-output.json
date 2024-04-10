@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1712730489298,
+  "lastUpdate": 1712734640139,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -1743,6 +1743,40 @@
           {
             "name": "threejs10x-sourcemap",
             "value": "428.58",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f814c3e780969a8b8e3a6618d110016dcc9390ad",
+          "message": "perf: avoid unnecessary clone in `AddonFunction` (#822)",
+          "timestamp": "2024-04-10T07:34:30Z",
+          "tree_id": "cd00ea85e0088cb5ec89b803fa6474256f754f93",
+          "url": "https://github.com/rolldown/rolldown/commit/f814c3e780969a8b8e3a6618d110016dcc9390ad"
+        },
+        "date": 1712734640138,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x",
+            "value": "313.29",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap",
+            "value": "464.94",
             "unit": "ms / ops"
           }
         ]
