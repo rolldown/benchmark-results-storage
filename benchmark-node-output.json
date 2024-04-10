@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1712734640139,
+  "lastUpdate": 1712735782380,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -1777,6 +1777,40 @@
           {
             "name": "threejs10x-sourcemap",
             "value": "464.94",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3b81588c3a1a42896cd2463b71498cf8338540ab",
+          "message": "refactor: optional banner footer at NormalizedBundlerOptions (#823)",
+          "timestamp": "2024-04-10T15:53:24+08:00",
+          "tree_id": "9c0c7e80bf3f79eb6862dfb46c907a5f28180862",
+          "url": "https://github.com/rolldown/rolldown/commit/3b81588c3a1a42896cd2463b71498cf8338540ab"
+        },
+        "date": 1712735782379,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x",
+            "value": "315.88",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap",
+            "value": "434.82",
             "unit": "ms / ops"
           }
         ]
