@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1712845856112,
+  "lastUpdate": 1712847390343,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -1981,6 +1981,40 @@
           {
             "name": "threejs10x-sourcemap",
             "value": "432.99",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "57180744+PengBoUESTC@users.noreply.github.com",
+            "name": "pengbo",
+            "username": "PengBoUESTC"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c1194e6282dccf2496f5fa3c437415348286a4d8",
+          "message": "feat(node/plugin): support `renderStart` hook (#833)",
+          "timestamp": "2024-04-11T14:53:17Z",
+          "tree_id": "e0d2a66e47f28ac013f14b845178abefa98075ce",
+          "url": "https://github.com/rolldown/rolldown/commit/c1194e6282dccf2496f5fa3c437415348286a4d8"
+        },
+        "date": 1712847390342,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x",
+            "value": "323.17",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap",
+            "value": "431.62",
             "unit": "ms / ops"
           }
         ]
