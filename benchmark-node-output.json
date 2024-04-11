@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1712813362359,
+  "lastUpdate": 1712825650018,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -1845,6 +1845,40 @@
           {
             "name": "threejs10x-sourcemap",
             "value": "450.71",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c092e0b4a9a8c1a9382340c7794e4b81ec0db1b1",
+          "message": "feat(rust): collect circular dependencies while sorting modules (#830)",
+          "timestamp": "2024-04-11T16:51:11+08:00",
+          "tree_id": "006f3e3b73b20ef6e44c618d269fd875de169146",
+          "url": "https://github.com/rolldown/rolldown/commit/c092e0b4a9a8c1a9382340c7794e4b81ec0db1b1"
+        },
+        "date": 1712825650016,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x",
+            "value": "317.33",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap",
+            "value": "437.53",
             "unit": "ms / ops"
           }
         ]
