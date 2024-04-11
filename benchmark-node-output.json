@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1712735782380,
+  "lastUpdate": 1712813362359,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -1811,6 +1811,40 @@
           {
             "name": "threejs10x-sourcemap",
             "value": "434.82",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f5aab3af712185760ef0ec1fc655b29ce855f9f7",
+          "message": "chore(rust): use `SymbolRef` for `NormalModule#named_imports` (#828)",
+          "timestamp": "2024-04-11T13:26:31+08:00",
+          "tree_id": "96987a9c2247d6d4b74fac431e78a465c62b2158",
+          "url": "https://github.com/rolldown/rolldown/commit/f5aab3af712185760ef0ec1fc655b29ce855f9f7"
+        },
+        "date": 1712813362358,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x",
+            "value": "310.98",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap",
+            "value": "450.71",
             "unit": "ms / ops"
           }
         ]
