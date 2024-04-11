@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1712825650018,
+  "lastUpdate": 1712826306786,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -1879,6 +1879,40 @@
           {
             "name": "threejs10x-sourcemap",
             "value": "437.53",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7c1bcda6c802710710ea53a8e8951f942ceeb564",
+          "message": "refactor(rust): make `NormalizedBundlerOptions#external` optional (#829)",
+          "timestamp": "2024-04-11T09:02:13Z",
+          "tree_id": "3ec57b3a45a46a52857d0b5a6e83880166ff6e4e",
+          "url": "https://github.com/rolldown/rolldown/commit/7c1bcda6c802710710ea53a8e8951f942ceeb564"
+        },
+        "date": 1712826306784,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x",
+            "value": "339.00",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap",
+            "value": "445.16",
             "unit": "ms / ops"
           }
         ]
