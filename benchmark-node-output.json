@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1712829690997,
+  "lastUpdate": 1712845856112,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -1947,6 +1947,40 @@
           {
             "name": "threejs10x-sourcemap",
             "value": "421.52",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "lynweklm@gmail.com",
+            "name": "LongYinan",
+            "username": "Brooooooklyn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8da5ab8a0f554d4cf539756b00966001d9398ae9",
+          "message": "chore: improve some async usage for wasi support (#834)",
+          "timestamp": "2024-04-11T22:27:55+08:00",
+          "tree_id": "81dd0b7f664ce97f9a5c0425d682264bade2c4a4",
+          "url": "https://github.com/rolldown/rolldown/commit/8da5ab8a0f554d4cf539756b00966001d9398ae9"
+        },
+        "date": 1712845856111,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x",
+            "value": "322.01",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap",
+            "value": "432.99",
             "unit": "ms / ops"
           }
         ]
