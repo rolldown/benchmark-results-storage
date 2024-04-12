@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1712911468557,
+  "lastUpdate": 1712927342638,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -2185,6 +2185,40 @@
           {
             "name": "threejs10x-sourcemap",
             "value": "405.97",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "57180744+PengBoUESTC@users.noreply.github.com",
+            "name": "pengbo",
+            "username": "PengBoUESTC"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6d64a640cc96b950e26cf6859894097612bb96f1",
+          "message": "feat: emit warning for circular dependency (#839)\n\nCo-authored-by: Yunfei <i.heyunfei@gmail.com>",
+          "timestamp": "2024-04-12T13:06:05Z",
+          "tree_id": "58a2494483f3aa1049b65788b29d2513debebe82",
+          "url": "https://github.com/rolldown/rolldown/commit/6d64a640cc96b950e26cf6859894097612bb96f1"
+        },
+        "date": 1712927342637,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x",
+            "value": "362.40",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap",
+            "value": "447.26",
             "unit": "ms / ops"
           }
         ]
