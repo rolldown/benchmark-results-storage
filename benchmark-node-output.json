@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1712927342638,
+  "lastUpdate": 1712928481148,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -2219,6 +2219,40 @@
           {
             "name": "threejs10x-sourcemap",
             "value": "447.26",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f2c0b8aceb5c8576a5297a8871608ee182922b95",
+          "message": "chore(rust): rename `BundleStage` to `GenerateStage` (#843)",
+          "timestamp": "2024-04-12T21:25:00+08:00",
+          "tree_id": "72b8079f598e9befe0b8d3826a2a22f1e1fe9ea1",
+          "url": "https://github.com/rolldown/rolldown/commit/f2c0b8aceb5c8576a5297a8871608ee182922b95"
+        },
+        "date": 1712928481147,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x",
+            "value": "293.16",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap",
+            "value": "401.40",
             "unit": "ms / ops"
           }
         ]
