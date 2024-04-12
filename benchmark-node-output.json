@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1712895129977,
+  "lastUpdate": 1712898261036,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -2117,6 +2117,40 @@
           {
             "name": "threejs10x-sourcemap",
             "value": "424.01",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "lynweklm@gmail.com",
+            "name": "LongYinan",
+            "username": "Brooooooklyn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ba6b79d905f8ee9bf7bc185f0d112fbe856028b6",
+          "message": "chore: remove useless async-scoped (#840)",
+          "timestamp": "2024-04-12T05:01:19Z",
+          "tree_id": "3a2f5eb7c466941532c01676e06a4d003511b2ae",
+          "url": "https://github.com/rolldown/rolldown/commit/ba6b79d905f8ee9bf7bc185f0d112fbe856028b6"
+        },
+        "date": 1712898261034,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x",
+            "value": "298.56",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap",
+            "value": "411.91",
             "unit": "ms / ops"
           }
         ]
