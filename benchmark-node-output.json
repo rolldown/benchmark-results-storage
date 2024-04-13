@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1713043345808,
+  "lastUpdate": 1713043466648,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -2440,23 +2440,23 @@
             "username": "web-flow"
           },
           "distinct": true,
-          "id": "a50d2bd647f2015c36328a53feaa46057f032099",
-          "message": "chore(rust/chunk): prepare moving `Chunk` to `rolldown_common` (#850)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
-          "timestamp": "2024-04-14T05:19:37+08:00",
-          "tree_id": "bea57c515a016b6ea46dd29815ef8ab48a79c0c8",
-          "url": "https://github.com/rolldown/rolldown/commit/a50d2bd647f2015c36328a53feaa46057f032099"
+          "id": "d598f12565287615933c47aa7b6212cced2ae26e",
+          "message": "chore(rust/chunk): move `Chunk` to `rolldown_common` (#851)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-04-14T05:21:41+08:00",
+          "tree_id": "b5fe1cf199e11cd14db9461de0b45acf5030c5a6",
+          "url": "https://github.com/rolldown/rolldown/commit/d598f12565287615933c47aa7b6212cced2ae26e"
         },
-        "date": 1713043345807,
+        "date": 1713043466646,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x",
-            "value": "309.32",
+            "value": "292.76",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap",
-            "value": "417.98",
+            "value": "419.14",
             "unit": "ms / ops"
           }
         ]
