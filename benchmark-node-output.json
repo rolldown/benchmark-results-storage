@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1712993205134,
+  "lastUpdate": 1712995467651,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -2287,6 +2287,40 @@
           {
             "name": "threejs10x-sourcemap",
             "value": "396.38",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "lynweklm@gmail.com",
+            "name": "LongYinan",
+            "username": "Brooooooklyn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9a569ac134cdd18f6cb0668ba1c69531e54b1dea",
+          "message": "chore: remove rayon on wasm targets (#845)",
+          "timestamp": "2024-04-13T08:01:49Z",
+          "tree_id": "7e54878931d5feb584bd851301886ebd1dc1a1c9",
+          "url": "https://github.com/rolldown/rolldown/commit/9a569ac134cdd18f6cb0668ba1c69531e54b1dea"
+        },
+        "date": 1712995467650,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x",
+            "value": "332.26",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap",
+            "value": "420.99",
             "unit": "ms / ops"
           }
         ]
