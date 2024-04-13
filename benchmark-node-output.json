@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1712928481148,
+  "lastUpdate": 1712993205134,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -2253,6 +2253,40 @@
           {
             "name": "threejs10x-sourcemap",
             "value": "401.40",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "lynweklm@gmail.com",
+            "name": "LongYinan",
+            "username": "Brooooooklyn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "749fe51963446f5d73f22271b517ec4c467d65ad",
+          "message": "chore: update Rust toolchain 1.77.2 (#844)",
+          "timestamp": "2024-04-13T15:23:57+08:00",
+          "tree_id": "6faaf20ba67bbb8d301bffc6412bf9e32e19afa2",
+          "url": "https://github.com/rolldown/rolldown/commit/749fe51963446f5d73f22271b517ec4c467d65ad"
+        },
+        "date": 1712993205132,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x",
+            "value": "287.07",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap",
+            "value": "396.38",
             "unit": "ms / ops"
           }
         ]
