@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1713003489311,
+  "lastUpdate": 1713043345808,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -2423,6 +2423,40 @@
           {
             "name": "threejs10x-sourcemap",
             "value": "404.96",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a50d2bd647f2015c36328a53feaa46057f032099",
+          "message": "chore(rust/chunk): prepare moving `Chunk` to `rolldown_common` (#850)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-04-14T05:19:37+08:00",
+          "tree_id": "bea57c515a016b6ea46dd29815ef8ab48a79c0c8",
+          "url": "https://github.com/rolldown/rolldown/commit/a50d2bd647f2015c36328a53feaa46057f032099"
+        },
+        "date": 1713043345807,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x",
+            "value": "309.32",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap",
+            "value": "417.98",
             "unit": "ms / ops"
           }
         ]
