@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1713003284901,
+  "lastUpdate": 1713003489311,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -2389,6 +2389,40 @@
           {
             "name": "threejs10x-sourcemap",
             "value": "430.98",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "650ef2f381d1d3b29f36e772e336cc3b5ca828c0",
+          "message": "chore(ci/rust): add check for building wasi (#848)\n\n<!-- Thank you for contributing! -->\r\n\r\n### Description\r\n\r\nhttps://beyermatthias.de/cargo-check-succeeds-but-cargo-build-fails-what\r\n\r\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-04-13T18:15:25+08:00",
+          "tree_id": "5fc0c69a32de8bd553b220e8348df4e5baac091c",
+          "url": "https://github.com/rolldown/rolldown/commit/650ef2f381d1d3b29f36e772e336cc3b5ca828c0"
+        },
+        "date": 1713003489310,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x",
+            "value": "301.12",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap",
+            "value": "404.96",
             "unit": "ms / ops"
           }
         ]
