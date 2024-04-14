@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1713104259025,
+  "lastUpdate": 1713105350408,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -2607,6 +2607,40 @@
           {
             "name": "rolldown (default)",
             "value": "423.96",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "green@sapphi.red",
+            "name": "翠 / green",
+            "username": "sapphi-red"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9e7cbdaa22911cfdc227aa7163b12b5048e55584",
+          "message": "chore: ci bench name was incorrect (#857)",
+          "timestamp": "2024-04-14T14:32:59Z",
+          "tree_id": "69c61187b6dd6fc35b373cdb514e8ebea918b24f",
+          "url": "https://github.com/rolldown/rolldown/commit/9e7cbdaa22911cfdc227aa7163b12b5048e55584"
+        },
+        "date": 1713105350407,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "298.47",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "409.45",
             "unit": "ms / ops"
           }
         ]
