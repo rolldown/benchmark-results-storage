@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1713105350408,
+  "lastUpdate": 1713139041772,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -2641,6 +2641,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "409.45",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f90bbb0baa4950228122291f3ac79c8d009b4801",
+          "message": "feat: support disable warnings using `InputOptions#logLevel` (#859)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-04-15T07:54:38+08:00",
+          "tree_id": "4465c6893b588fac953655f51d5ff46ad13618e6",
+          "url": "https://github.com/rolldown/rolldown/commit/f90bbb0baa4950228122291f3ac79c8d009b4801"
+        },
+        "date": 1713139041771,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "295.95",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "401.98",
             "unit": "ms / ops"
           }
         ]
