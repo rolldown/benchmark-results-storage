@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1713101372795,
+  "lastUpdate": 1713103189564,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -2549,6 +2549,35 @@
           {
             "name": "rolldown (default)",
             "value": "459.10",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a6862ff682ca07a321a9d1309d2267dd1882cae6",
+          "message": "chore: bump up all non-major dependencies (#854)",
+          "timestamp": "2024-04-14T21:57:08+08:00",
+          "tree_id": "4a3d65bee91daf491d6de4621348c3d24a6f31f2",
+          "url": "https://github.com/rolldown/rolldown/commit/a6862ff682ca07a321a9d1309d2267dd1882cae6"
+        },
+        "date": 1713103189563,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "rolldown (default)",
+            "value": "382.36",
             "unit": "ms / ops"
           }
         ]
