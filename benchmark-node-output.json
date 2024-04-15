@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1713139041772,
+  "lastUpdate": 1713139211500,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -2658,23 +2658,23 @@
             "username": "web-flow"
           },
           "distinct": true,
-          "id": "f90bbb0baa4950228122291f3ac79c8d009b4801",
-          "message": "feat: support disable warnings using `InputOptions#logLevel` (#859)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
-          "timestamp": "2024-04-15T07:54:38+08:00",
-          "tree_id": "4465c6893b588fac953655f51d5ff46ad13618e6",
-          "url": "https://github.com/rolldown/rolldown/commit/f90bbb0baa4950228122291f3ac79c8d009b4801"
+          "id": "26c2fe93918505dde8473f2bf76b1c3aabe7ce80",
+          "message": "chore(bench/node): split suites and add benchmark for parallel-js only (#860)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-04-15T07:56:39+08:00",
+          "tree_id": "cf19d88edb926e851390df9658ce76124332eee3",
+          "url": "https://github.com/rolldown/rolldown/commit/26c2fe93918505dde8473f2bf76b1c3aabe7ce80"
         },
-        "date": 1713139041771,
+        "date": 1713139211499,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x (default)",
-            "value": "295.95",
+            "value": "309.21",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap (default)",
-            "value": "401.98",
+            "value": "439.73",
             "unit": "ms / ops"
           }
         ]
