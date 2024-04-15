@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1713170872904,
+  "lastUpdate": 1713183390989,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -2947,6 +2947,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "425.22",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ecaa2d81560002eefddeeb541de0f4980601d630",
+          "message": "chore(rust/dep): enable `cached_current_dir` in `sugar_path` (#868)",
+          "timestamp": "2024-04-15T12:12:49Z",
+          "tree_id": "ce6bfd9d5f3caaf6836c39f4de85e776954aba9d",
+          "url": "https://github.com/rolldown/rolldown/commit/ecaa2d81560002eefddeeb541de0f4980601d630"
+        },
+        "date": 1713183390988,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "290.49",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "401.28",
             "unit": "ms / ops"
           }
         ]
