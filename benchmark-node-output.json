@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1713145707738,
+  "lastUpdate": 1713146107186,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -2743,6 +2743,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "457.56",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f8c52eb5e4088c94b0af366a73cccdf8bbbcd282",
+          "message": "chore: bump up Rust crate async-channel to 2.2.1 (#858)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2024-04-15T01:52:16Z",
+          "tree_id": "85318d1651269060dbf3cffcdd384d990eaf2452",
+          "url": "https://github.com/rolldown/rolldown/commit/f8c52eb5e4088c94b0af366a73cccdf8bbbcd282"
+        },
+        "date": 1713146107185,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "340.13",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "417.62",
             "unit": "ms / ops"
           }
         ]
