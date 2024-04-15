@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1713169181616,
+  "lastUpdate": 1713170872904,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -2913,6 +2913,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "407.98",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1c797255adceb7a5a57ecab193c9e6c993d7c2f7",
+          "message": "refactor: distinguish program error and business error  (#824)\n\nCo-authored-by: Yunfei <i.heyunfei@gmail.com>",
+          "timestamp": "2024-04-15T16:44:50+08:00",
+          "tree_id": "3aedd6a64d7a1e2b5c2618ae1e384f3de48bc6ea",
+          "url": "https://github.com/rolldown/rolldown/commit/1c797255adceb7a5a57ecab193c9e6c993d7c2f7"
+        },
+        "date": 1713170872903,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "309.25",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "425.22",
             "unit": "ms / ops"
           }
         ]
