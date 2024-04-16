@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1713278831540,
+  "lastUpdate": 1713278919291,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -3364,9 +3364,9 @@
       {
         "commit": {
           "author": {
-            "email": "lynweklm@gmail.com",
-            "name": "LongYinan",
-            "username": "Brooooooklyn"
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
           },
           "committer": {
             "email": "noreply@github.com",
@@ -3374,23 +3374,23 @@
             "username": "web-flow"
           },
           "distinct": true,
-          "id": "c2292613a6f9a141c358b23d8058bbc56c14919b",
-          "message": "ci: fix publish artifacts script (#887)",
-          "timestamp": "2024-04-16T14:44:12Z",
-          "tree_id": "4d3e103edb24fbbf967afbc50ac0214138fa0895",
-          "url": "https://github.com/rolldown/rolldown/commit/c2292613a6f9a141c358b23d8058bbc56c14919b"
+          "id": "e67a80e9638e72ea871b5972d1bf957751c52592",
+          "message": "chore: bump up peter-evans/create-or-update-comment action to v4 (#888)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2024-04-16T14:45:29Z",
+          "tree_id": "69af8b4e60c8561ab06ba4937aa17a222034b98d",
+          "url": "https://github.com/rolldown/rolldown/commit/e67a80e9638e72ea871b5972d1bf957751c52592"
         },
-        "date": 1713278831538,
+        "date": 1713278919290,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x (default)",
-            "value": "299.14",
+            "value": "306.35",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap (default)",
-            "value": "413.46",
+            "value": "416.34",
             "unit": "ms / ops"
           }
         ]
