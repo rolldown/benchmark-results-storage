@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1713251943451,
+  "lastUpdate": 1713253419240,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -3117,6 +3117,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "408.57",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "lynweklm@gmail.com",
+            "name": "LongYinan",
+            "username": "Brooooooklyn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ee7126a24707896376e3a7afaf9571b8d3f2005e",
+          "message": "chore(rolldown): use bounded channel to avoid dynamic memory allocation (#872)",
+          "timestamp": "2024-04-16T15:40:39+08:00",
+          "tree_id": "19c19589d3847a26f4dc45606c08ad245d431ec4",
+          "url": "https://github.com/rolldown/rolldown/commit/ee7126a24707896376e3a7afaf9571b8d3f2005e"
+        },
+        "date": 1713253419238,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "305.46",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "411.27",
             "unit": "ms / ops"
           }
         ]
