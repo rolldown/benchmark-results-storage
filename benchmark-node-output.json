@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1713279390011,
+  "lastUpdate": 1713285274226,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -3425,6 +3425,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "459.25",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "lynweklm@gmail.com",
+            "name": "LongYinan",
+            "username": "Brooooooklyn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "efc7787003318ab9dff4b5ac54def11afd461b4d",
+          "message": "ci: fix publish step artifacts command (#889)",
+          "timestamp": "2024-04-17T00:31:31+08:00",
+          "tree_id": "2714f7a808b005a8e8dfc999c644c9a2ad8a34fd",
+          "url": "https://github.com/rolldown/rolldown/commit/efc7787003318ab9dff4b5ac54def11afd461b4d"
+        },
+        "date": 1713285274224,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "294.35",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "404.19",
             "unit": "ms / ops"
           }
         ]
