@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1713286617278,
+  "lastUpdate": 1713290681396,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -3493,6 +3493,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "393.14",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e396b75fe33cfea21154f51da75a57b0ca17b8fe",
+          "message": "chore(repo): add command `just build [native|wasi] [debug|release]` (#892)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-04-17T02:01:53+08:00",
+          "tree_id": "b65f028641827a70687d92d6f0f2820176b1aed1",
+          "url": "https://github.com/rolldown/rolldown/commit/e396b75fe33cfea21154f51da75a57b0ca17b8fe"
+        },
+        "date": 1713290681394,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "284.91",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "408.52",
             "unit": "ms / ops"
           }
         ]
