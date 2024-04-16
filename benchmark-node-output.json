@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1713253831084,
+  "lastUpdate": 1713255395173,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -3185,6 +3185,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "406.04",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "zscumt123@163.com",
+            "name": "zs",
+            "username": "zscumt123"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ae65b8c864741083ecb5cf77fb6483ee9a535b0c",
+          "message": "chore(rust): remove unnecessary condition checks (#879)\n\nCo-authored-by: Yunfei He <i.heyunfei@gmail.com>",
+          "timestamp": "2024-04-16T08:13:33Z",
+          "tree_id": "9c8105ce5affd066677d424529db31d9b796ff5d",
+          "url": "https://github.com/rolldown/rolldown/commit/ae65b8c864741083ecb5cf77fb6483ee9a535b0c"
+        },
+        "date": 1713255395172,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "337.41",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "425.18",
             "unit": "ms / ops"
           }
         ]
