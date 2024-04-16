@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1713234425605,
+  "lastUpdate": 1713251102609,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -3049,6 +3049,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "425.63",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "lynweklm@gmail.com",
+            "name": "LongYinan",
+            "username": "Brooooooklyn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5106eda06c1449595a43f58bf77ad62d50617d11",
+          "message": "refactor(rolldown): simplify the runtime module creation (#874)",
+          "timestamp": "2024-04-16T15:02:04+08:00",
+          "tree_id": "28cb470b76bd0c98b7216451e7fc0d960484ff5e",
+          "url": "https://github.com/rolldown/rolldown/commit/5106eda06c1449595a43f58bf77ad62d50617d11"
+        },
+        "date": 1713251102608,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "365.55",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "408.05",
             "unit": "ms / ops"
           }
         ]
