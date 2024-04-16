@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1713255395173,
+  "lastUpdate": 1713258130427,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -3219,6 +3219,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "425.18",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "zscumt123@163.com",
+            "name": "zs",
+            "username": "zscumt123"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "07a175bbb30396af762ad7bc6d6009a84c43d96d",
+          "message": "chore(rust): remove unnecessary statements (#882)",
+          "timestamp": "2024-04-16T16:59:06+08:00",
+          "tree_id": "1d830165034fc7d37d6a4fd7b2b253f52a470564",
+          "url": "https://github.com/rolldown/rolldown/commit/07a175bbb30396af762ad7bc6d6009a84c43d96d"
+        },
+        "date": 1713258130426,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "298.43",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "405.51",
             "unit": "ms / ops"
           }
         ]
