@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1713253419240,
+  "lastUpdate": 1713253831084,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -3151,6 +3151,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "411.27",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "lynweklm@gmail.com",
+            "name": "LongYinan",
+            "username": "Brooooooklyn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "93dc6ce52262d65dfc37a63eca44900981d48864",
+          "message": "perf(rolldown): use starts_with instead of regex in resolve (#878)",
+          "timestamp": "2024-04-16T07:47:33Z",
+          "tree_id": "49f06430f18e48128d338c10f7982d08b6628b01",
+          "url": "https://github.com/rolldown/rolldown/commit/93dc6ce52262d65dfc37a63eca44900981d48864"
+        },
+        "date": 1713253831082,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "326.75",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "406.04",
             "unit": "ms / ops"
           }
         ]
