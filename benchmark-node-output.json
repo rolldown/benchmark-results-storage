@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1713232689092,
+  "lastUpdate": 1713234425605,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -3015,6 +3015,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "413.14",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "99897242+chiehw@users.noreply.github.com",
+            "name": "Chieh Wang",
+            "username": "chiehw"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f38c27bc0549fd4dba2011e03df3abb88bd85797",
+          "message": "chore(test): fix cargo test by add rt-multi-thread flag for tokio. (#871)\n\nCo-authored-by: chieh <wangjie@healbone.xyz>",
+          "timestamp": "2024-04-16T02:24:05Z",
+          "tree_id": "fcffbf8533e409d2263079061cf58326b24f6ca8",
+          "url": "https://github.com/rolldown/rolldown/commit/f38c27bc0549fd4dba2011e03df3abb88bd85797"
+        },
+        "date": 1713234425602,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "286.12",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "425.63",
             "unit": "ms / ops"
           }
         ]
