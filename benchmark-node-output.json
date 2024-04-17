@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1713339058010,
+  "lastUpdate": 1713341535442,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -3765,6 +3765,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "411.85",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "65fcea25981a840f67e2f4d684cfeae1614a3e8b",
+          "message": "chore: bump up Rust crate serde to 1.0.198 (#895)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2024-04-17T16:08:55+08:00",
+          "tree_id": "ca5306d683c9d4351e2d0ff15bfbd6a70697c7c0",
+          "url": "https://github.com/rolldown/rolldown/commit/65fcea25981a840f67e2f4d684cfeae1614a3e8b"
+        },
+        "date": 1713341535440,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "330.37",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "411.28",
             "unit": "ms / ops"
           }
         ]
