@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1713331909535,
+  "lastUpdate": 1713332874441,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -3663,6 +3663,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "401.39",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "98176103+kainzc@users.noreply.github.com",
+            "name": "kainzc",
+            "username": "kainzc"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7b64957632f0942ff69dac7899f74f8d29141b6d",
+          "message": "chore(rust/test): generate `_test.schema.json` automatically (#891)\n\nCo-authored-by: Yunfei <i.heyunfei@gmail.com>",
+          "timestamp": "2024-04-17T05:44:53Z",
+          "tree_id": "23b76122b4f08bd8fb8c658e1fcde8961bb534e9",
+          "url": "https://github.com/rolldown/rolldown/commit/7b64957632f0942ff69dac7899f74f8d29141b6d"
+        },
+        "date": 1713332874440,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "282.07",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "394.03",
             "unit": "ms / ops"
           }
         ]
