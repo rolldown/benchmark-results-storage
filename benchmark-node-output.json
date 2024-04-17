@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1713332874441,
+  "lastUpdate": 1713334644996,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -3697,6 +3697,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "394.03",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "boshenc@gmail.com",
+            "name": "Boshen",
+            "username": "Boshen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "82030d5fede976dabe0dd8b0aa79c248defe37bd",
+          "message": "ci: add `cargo-shear`; run `cargo shear --fix` (#897)",
+          "timestamp": "2024-04-17T06:13:51Z",
+          "tree_id": "7311d667ed39c40f0681135a8c9c253f165e6edc",
+          "url": "https://github.com/rolldown/rolldown/commit/82030d5fede976dabe0dd8b0aa79c248defe37bd"
+        },
+        "date": 1713334644994,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "295.56",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "413.41",
             "unit": "ms / ops"
           }
         ]
