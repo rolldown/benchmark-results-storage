@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1713327789360,
+  "lastUpdate": 1713330183178,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -3595,6 +3595,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "415.08",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b5b06bfed59cb8089da1d77937fdd2b82f44106e",
+          "message": "ci(test/wasi): enable tests in multiple platforms (#894)",
+          "timestamp": "2024-04-17T13:00:13+08:00",
+          "tree_id": "f805135b7eb8639c1f619eb8340dcfd8f3e22b83",
+          "url": "https://github.com/rolldown/rolldown/commit/b5b06bfed59cb8089da1d77937fdd2b82f44106e"
+        },
+        "date": 1713330183176,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "296.72",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "409.05",
             "unit": "ms / ops"
           }
         ]
