@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1713352435463,
+  "lastUpdate": 1713353164118,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -3833,6 +3833,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "421.39",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "15aaeb979845a9ebb322cc1328540c029ec040fd",
+          "message": "chore: bump up vue-router version to v4.3.1 (#901)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2024-04-17T19:22:23+08:00",
+          "tree_id": "cff6c7447925541515d8e3502a7187fcc319a1f9",
+          "url": "https://github.com/rolldown/rolldown/commit/15aaeb979845a9ebb322cc1328540c029ec040fd"
+        },
+        "date": 1713353164116,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "295.75",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "412.71",
             "unit": "ms / ops"
           }
         ]
