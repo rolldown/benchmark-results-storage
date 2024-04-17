@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1713341535442,
+  "lastUpdate": 1713352435463,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -3799,6 +3799,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "411.28",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b9c9181a77e3bba021ae2d9d92cb6a768f79e892",
+          "message": "feat: support `renderError` hook (#900)\n\nCo-authored-by: Yunfei He <i.heyunfei@gmail.com>",
+          "timestamp": "2024-04-17T11:10:56Z",
+          "tree_id": "47112d5af0a5b8813eace152088f2fb9c238c864",
+          "url": "https://github.com/rolldown/rolldown/commit/b9c9181a77e3bba021ae2d9d92cb6a768f79e892"
+        },
+        "date": 1713352435462,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "336.75",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "421.39",
             "unit": "ms / ops"
           }
         ]
