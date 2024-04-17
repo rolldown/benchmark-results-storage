@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1713334644996,
+  "lastUpdate": 1713339058010,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -3731,6 +3731,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "413.41",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0169bfed760e5e159fd7538e2c34d4f610709af8",
+          "message": "fix(ci): cargo bench should install critcmp (#899)",
+          "timestamp": "2024-04-17T15:28:08+08:00",
+          "tree_id": "dcefd97e3c42ba76755784900fe4d15d98844feb",
+          "url": "https://github.com/rolldown/rolldown/commit/0169bfed760e5e159fd7538e2c34d4f610709af8"
+        },
+        "date": 1713339058008,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "289.31",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "411.85",
             "unit": "ms / ops"
           }
         ]
