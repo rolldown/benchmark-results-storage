@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1713353164118,
+  "lastUpdate": 1713357968686,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -3867,6 +3867,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "412.71",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "bc8e9ab4529e8d18b28a4c67dbac1aceb1177f22",
+          "message": "fix: buildEnd hook handle error (#902)",
+          "timestamp": "2024-04-17T12:42:58Z",
+          "tree_id": "5d3d7de1784797b94b1d46b283ba2f1a68eb3b51",
+          "url": "https://github.com/rolldown/rolldown/commit/bc8e9ab4529e8d18b28a4c67dbac1aceb1177f22"
+        },
+        "date": 1713357968684,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "291.35",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "422.10",
             "unit": "ms / ops"
           }
         ]
