@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1713357968686,
+  "lastUpdate": 1713358369131,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -3901,6 +3901,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "422.10",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d13d94f6de4422cd1ae6203078cce665737b3e22",
+          "message": "chore: bump up @napi-rs/cli version to v3.0.0-alpha.50 (#903)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2024-04-17T12:49:22Z",
+          "tree_id": "629fffd6324b48f843e39e1a333ab42ec00d45c2",
+          "url": "https://github.com/rolldown/rolldown/commit/d13d94f6de4422cd1ae6203078cce665737b3e22"
+        },
+        "date": 1713358369129,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "358.94",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "407.19",
             "unit": "ms / ops"
           }
         ]
