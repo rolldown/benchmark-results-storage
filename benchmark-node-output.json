@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1713408543488,
+  "lastUpdate": 1713425362477,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -4003,6 +4003,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "442.41",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5fd16b82bed14c2124892c7d0e9f4ef2ee59eed4",
+          "message": "refactor: remove duplicate logic at scan (#907)",
+          "timestamp": "2024-04-18T07:26:31Z",
+          "tree_id": "9881ea934d7edcffbb0c827fd37d12b18fa0e6ae",
+          "url": "https://github.com/rolldown/rolldown/commit/5fd16b82bed14c2124892c7d0e9f4ef2ee59eed4"
+        },
+        "date": 1713425362475,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "290.77",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "403.33",
             "unit": "ms / ops"
           }
         ]
