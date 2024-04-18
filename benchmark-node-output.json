@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1713437134678,
+  "lastUpdate": 1713455885714,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -4071,6 +4071,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "394.35",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fdea014d9d38b033b86092b1dd72e2f1c1e376ee",
+          "message": "chore: bump up vitepress version to v1.1.1 (#910)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2024-04-18T23:55:09+08:00",
+          "tree_id": "997474b4b2b90cce0d793b116d83d9bc93f4c25b",
+          "url": "https://github.com/rolldown/rolldown/commit/fdea014d9d38b033b86092b1dd72e2f1c1e376ee"
+        },
+        "date": 1713455885711,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "296.03",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "414.36",
             "unit": "ms / ops"
           }
         ]
