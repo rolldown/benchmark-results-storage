@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1713365984732,
+  "lastUpdate": 1713408543488,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -3969,6 +3969,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "417.62",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "91f24df3630425a22852448fb899d3492a62b70a",
+          "message": "chore: bump up pnpm to v9.0.2 (#906)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2024-04-18T10:46:10+08:00",
+          "tree_id": "d2bb95e0e1d7e333bb02264a268c510d6d693b04",
+          "url": "https://github.com/rolldown/rolldown/commit/91f24df3630425a22852448fb899d3492a62b70a"
+        },
+        "date": 1713408543486,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "300.30",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "442.41",
             "unit": "ms / ops"
           }
         ]
