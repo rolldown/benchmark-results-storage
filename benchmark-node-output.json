@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1713516956758,
+  "lastUpdate": 1713527018994,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -4241,6 +4241,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "403.00",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "706162a4111e8401669120cc81e24ba0708ddc22",
+          "message": "refactor: move the logic of transform sourcemap check to rust (#914)",
+          "timestamp": "2024-04-19T19:40:34+08:00",
+          "tree_id": "f450df22fea1d3be16226453b4b58f99a8b4a6bd",
+          "url": "https://github.com/rolldown/rolldown/commit/706162a4111e8401669120cc81e24ba0708ddc22"
+        },
+        "date": 1713527018992,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "284.52",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "408.06",
             "unit": "ms / ops"
           }
         ]
