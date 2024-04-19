@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1713455885714,
+  "lastUpdate": 1713495474458,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -4105,6 +4105,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "414.36",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b85c484ad85f622e043b8e90dbec65737bbc9629",
+          "message": "chore: bump up all non-major dependencies (#911)\n\n[![Mend Renovate](https://app.renovatebot.com/images/banner.svg)](https://renovatebot.com)\n\nThis PR contains the following updates:\n\n| Package | Change | Age | Adoption | Passing | Confidence |\n|---|---|---|---|---|---|\n| [pnpm](https://pnpm.io) ([source](https://togithub.com/pnpm/pnpm)) | [`9.0.2` -> `9.0.3`](https://renovatebot.com/diffs/npm/pnpm/9.0.2/9.0.3) | [![age](https://developer.mend.io/api/mc/badges/age/npm/pnpm/9.0.3?slim=true)](https://docs.renovatebot.com/merge-confidence/) | [![adoption](https://developer.mend.io/api/mc/badges/adoption/npm/pnpm/9.0.3?slim=true)](https://docs.renovatebot.com/merge-confidence/) | [![passing](https://developer.mend.io/api/mc/badges/compatibility/npm/pnpm/9.0.2/9.0.3?slim=true)](https://docs.renovatebot.com/merge-confidence/) | [![confidence](https://developer.mend.io/api/mc/badges/confidence/npm/pnpm/9.0.2/9.0.3?slim=true)](https://docs.renovatebot.com/merge-confidence/) |\n| [vitepress](https://togithub.com/vuejs/vitepress/tree/main/#readme) ([source](https://togithub.com/vuejs/vitepress)) | [`1.1.1` -> `1.1.3`](https://renovatebot.com/diffs/npm/vitepress/1.1.1/1.1.3) | [![age](https://developer.mend.io/api/mc/badges/age/npm/vitepress/1.1.3?slim=true)](https://docs.renovatebot.com/merge-confidence/) | [![adoption](https://developer.mend.io/api/mc/badges/adoption/npm/vitepress/1.1.3?slim=true)](https://docs.renovatebot.com/merge-confidence/) | [![passing](https://developer.mend.io/api/mc/badges/compatibility/npm/vitepress/1.1.1/1.1.3?slim=true)](https://docs.renovatebot.com/merge-confidence/) | [![confidence](https://developer.mend.io/api/mc/badges/confidence/npm/vitepress/1.1.1/1.1.3?slim=true)](https://docs.renovatebot.com/merge-confidence/) |\n| [zx](https://togithub.com/google/zx) | [`8.0.1` -> `8.0.2`](https://renovatebot.com/diffs/npm/zx/8.0.1/8.0.2) | [![age](https://developer.mend.io/api/mc/badges/age/npm/zx/8.0.2?slim=true)](https://docs.renovatebot.com/merge-confidence/) | [![adoption](https://developer.mend.io/api/mc/badges/adoption/npm/zx/8.0.2?slim=true)](https://docs.renovatebot.com/merge-confidence/) | [![passing](https://developer.mend.io/api/mc/badges/compatibility/npm/zx/8.0.1/8.0.2?slim=true)](https://docs.renovatebot.com/merge-confidence/) | [![confidence](https://developer.mend.io/api/mc/badges/confidence/npm/zx/8.0.1/8.0.2?slim=true)](https://docs.renovatebot.com/merge-confidence/) |\n\n---\n\n### Release Notes\n\n<details>\n<summary>pnpm/pnpm (pnpm)</summary>\n\n### [`v9.0.3`](https://togithub.com/pnpm/pnpm/compare/v9.0.2...v9.0.3)\n\n[Compare Source](https://togithub.com/pnpm/pnpm/compare/v9.0.2...v9.0.3)\n\n</details>\n\n<details>\n<summary>vuejs/vitepress (vitepress)</summary>\n\n### [`v1.1.3`](https://togithub.com/vuejs/vitepress/blob/HEAD/CHANGELOG.md#113-2024-04-18)\n\n[Compare Source](https://togithub.com/vuejs/vitepress/compare/v1.1.2...v1.1.3)\n\n##### Bug Fixes\n\n-   **build/regression:** markdown backslash escapes not working ([d02d1e9](https://togithub.com/vuejs/vitepress/commit/d02d1e923aacdb1e8061a3f76af30e8a13518277)), closes [#&#8203;3808](https://togithub.com/vuejs/vitepress/issues/3808)\n\n### [`v1.1.2`](https://togithub.com/vuejs/vitepress/blob/HEAD/CHANGELOG.md#112-2024-04-18)\n\n[Compare Source](https://togithub.com/vuejs/vitepress/compare/v1.1.1...v1.1.2)\n\n##### Bug Fixes\n\n-   **build/regression:** markdown backslash escapes not working ([d02d1e9](https://togithub.com/vuejs/vitepress/commit/d02d1e923aacdb1e8061a3f76af30e8a13518277)), closes [#&#8203;3808](https://togithub.com/vuejs/vitepress/issues/3808)\n\n</details>\n\n<details>\n<summary>google/zx (zx)</summary>\n\n### [`v8.0.2`](https://togithub.com/google/zx/compare/8.0.1...5fd3d8a8f126565248f16cc810a889a95bdd88d9)\n\n[Compare Source](https://togithub.com/google/zx/compare/8.0.1...8.0.2)\n\n</details>\n\n---\n\n### Configuration\n\n📅 **Schedule**: Branch creation - At any time (no schedule defined), Automerge - At any time (no schedule defined).\n\n🚦 **Automerge**: Disabled by config. Please merge this manually once you are satisfied.\n\n♻ **Rebasing**: Whenever PR becomes conflicted, or you tick the rebase/retry checkbox.\n\n👻 **Immortal**: This PR will be recreated if closed unmerged. Get [config help](https://togithub.com/renovatebot/renovate/discussions) if that's undesired.\n\n---\n\n - [ ] <!-- rebase-check -->If you want to rebase/retry this PR, check this box\n\n---\n\nThis PR has been generated by [Mend Renovate](https://www.mend.io/free-developer-tools/renovate/). View repository job log [here](https://developer.mend.io/github/rolldown/rolldown).\n<!--renovate-debug:eyJjcmVhdGVkSW5WZXIiOiIzNy4zMDEuNCIsInVwZGF0ZWRJblZlciI6IjM3LjMwMS40IiwidGFyZ2V0QnJhbmNoIjoibWFpbiIsImxhYmVscyI6WyJkZXBlbmRlbmNpZXMiXX0=-->",
+          "timestamp": "2024-04-19T10:55:00+08:00",
+          "tree_id": "59b4e49656671434b837404b308ea203d9986e9e",
+          "url": "https://github.com/rolldown/rolldown/commit/b85c484ad85f622e043b8e90dbec65737bbc9629"
+        },
+        "date": 1713495474456,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "289.18",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "406.90",
             "unit": "ms / ops"
           }
         ]
