@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1713779669985,
+  "lastUpdate": 1713779852274,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -4581,6 +4581,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "520.18",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5e96945ef7c1104f1c45064b0c74950311b9d8c4",
+          "message": "ci: enable CI workflow on merge queue (#949)",
+          "timestamp": "2024-04-22T17:53:50+08:00",
+          "tree_id": "8a7a1e3792321481c85233c843f3cd2dff8d48bc",
+          "url": "https://github.com/rolldown/rolldown/commit/5e96945ef7c1104f1c45064b0c74950311b9d8c4"
+        },
+        "date": 1713779852273,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "338.78",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "533.50",
             "unit": "ms / ops"
           }
         ]
