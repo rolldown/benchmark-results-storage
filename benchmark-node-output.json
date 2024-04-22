@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1713779852274,
+  "lastUpdate": 1713781242852,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -4615,6 +4615,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "533.50",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c54bd5132a1d04cc683730d2da5f7f9f2e440b12",
+          "message": "refactor: implement ModuleInfo from NormalModule (#942)",
+          "timestamp": "2024-04-22T10:11:08Z",
+          "tree_id": "a70781686ee076bb67997725ba5ab68852599a12",
+          "url": "https://github.com/rolldown/rolldown/commit/c54bd5132a1d04cc683730d2da5f7f9f2e440b12"
+        },
+        "date": 1713781242850,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "318.92",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "549.24",
             "unit": "ms / ops"
           }
         ]
