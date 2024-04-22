@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1713757036745,
+  "lastUpdate": 1713760344547,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -4411,6 +4411,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "519.00",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "bf9bbe191e58ba170f57759d196b1b0c26aeef1e",
+          "message": "fix: normalize windows path for sourcemap sources (#941)",
+          "timestamp": "2024-04-22T04:29:27Z",
+          "tree_id": "116f2707344b861b2022e1399409093bbac5fed3",
+          "url": "https://github.com/rolldown/rolldown/commit/bf9bbe191e58ba170f57759d196b1b0c26aeef1e"
+        },
+        "date": 1713760344545,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "314.66",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "535.63",
             "unit": "ms / ops"
           }
         ]
