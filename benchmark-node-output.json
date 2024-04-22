@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1713754312098,
+  "lastUpdate": 1713757036745,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -4377,6 +4377,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "515.91",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3ebf0ade9dfd4a595a0d0735a8a6dc634bc98be3",
+          "message": "feat: support sourcemapPathTransform option (#920)",
+          "timestamp": "2024-04-22T11:34:06+08:00",
+          "tree_id": "c9be743033125aae8f4bcd76d0973418bdc52f32",
+          "url": "https://github.com/rolldown/rolldown/commit/3ebf0ade9dfd4a595a0d0735a8a6dc634bc98be3"
+        },
+        "date": 1713757036743,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "295.66",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "519.00",
             "unit": "ms / ops"
           }
         ]
