@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1713760344547,
+  "lastUpdate": 1713774445446,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -4445,6 +4445,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "535.63",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "604a498f3a36d499f5362ae7a051305a6faf2059",
+          "message": "chore: bump up oxlint version to ^0.3.0 (#944)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2024-04-22T16:24:15+08:00",
+          "tree_id": "ec3fae070bf8692022a945231366d6f43a8c00b0",
+          "url": "https://github.com/rolldown/rolldown/commit/604a498f3a36d499f5362ae7a051305a6faf2059"
+        },
+        "date": 1713774445444,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "345.22",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "527.34",
             "unit": "ms / ops"
           }
         ]
