@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1713784405910,
+  "lastUpdate": 1713797978855,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -4751,6 +4751,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "514.88",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "dd08768bf39e4630f875449dd974cdcdad36f8fe",
+          "message": "chore: bump up terser version to v5.30.4 (#954)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2024-04-22T14:48:35Z",
+          "tree_id": "39eca7a5710a74d1a8db9c404d27900314ae9383",
+          "url": "https://github.com/rolldown/rolldown/commit/dd08768bf39e4630f875449dd974cdcdad36f8fe"
+        },
+        "date": 1713797978853,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "307.24",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "539.76",
             "unit": "ms / ops"
           }
         ]
