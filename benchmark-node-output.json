@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1713847079813,
+  "lastUpdate": 1713849448412,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -4887,6 +4887,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "528.30",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "zscumt123@163.com",
+            "name": "zs",
+            "username": "zscumt123"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1c5c7d59449680d58074e11c4a58df2377a798f0",
+          "message": "fix(node): should call hooks with await (#950)",
+          "timestamp": "2024-04-23T04:58:27Z",
+          "tree_id": "aee3ccf72aa8498ecb82848fb04a5b733f067f08",
+          "url": "https://github.com/rolldown/rolldown/commit/1c5c7d59449680d58074e11c4a58df2377a798f0"
+        },
+        "date": 1713849448409,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "350.94",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "515.13",
             "unit": "ms / ops"
           }
         ]
