@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1713905269669,
+  "lastUpdate": 1713905462303,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -5023,6 +5023,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "544.84",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c9b246b96a07ac6ef71e681543ad80aa69452d29",
+          "message": "chore(rust): remove unnecessary panic (#964)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-04-24T04:47:29+08:00",
+          "tree_id": "6300734ca205ea31a47c04d20bd963962e3507b0",
+          "url": "https://github.com/rolldown/rolldown/commit/c9b246b96a07ac6ef71e681543ad80aa69452d29"
+        },
+        "date": 1713905462301,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "365.47",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "535.00",
             "unit": "ms / ops"
           }
         ]
