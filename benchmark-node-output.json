@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1713905462303,
+  "lastUpdate": 1713905662415,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -5057,6 +5057,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "535.00",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8e366ce9b2f31389b0950476fb29cf77b74f107d",
+          "message": "refactor(rust): call `build_start` in parallel (#965)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-04-24T04:49:32+08:00",
+          "tree_id": "5ad24a3a26d8ce7d4a926997a064dbc35c06850e",
+          "url": "https://github.com/rolldown/rolldown/commit/8e366ce9b2f31389b0950476fb29cf77b74f107d"
+        },
+        "date": 1713905662413,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "290.28",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "567.64",
             "unit": "ms / ops"
           }
         ]
