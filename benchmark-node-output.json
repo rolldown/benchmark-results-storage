@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1713846892075,
+  "lastUpdate": 1713847079813,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -4853,6 +4853,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "517.05",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "62782d1c9373aa1c471359a2b89748cb150bbf22",
+          "message": "refactor(error): render diagnostic with friendly paths (#957)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-04-23T12:33:38+08:00",
+          "tree_id": "c38c23b0d13ad1c8d0566e1727f18baa84dff608",
+          "url": "https://github.com/rolldown/rolldown/commit/62782d1c9373aa1c471359a2b89748cb150bbf22"
+        },
+        "date": 1713847079810,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "374.84",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "528.30",
             "unit": "ms / ops"
           }
         ]
