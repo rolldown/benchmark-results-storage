@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1713843754752,
+  "lastUpdate": 1713846892075,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -4819,6 +4819,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "568.19",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5d8fb5943804f8017b720aed24b0ef240f8d437d",
+          "message": "refactor(rust/error): allow to customize cwd when stabilizing paths (#956)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-04-23T12:31:52+08:00",
+          "tree_id": "1064a631a43b6d28b7ad8f85703dc1cdfa6c2255",
+          "url": "https://github.com/rolldown/rolldown/commit/5d8fb5943804f8017b720aed24b0ef240f8d437d"
+        },
+        "date": 1713846892073,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "332.04",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "517.05",
             "unit": "ms / ops"
           }
         ]
