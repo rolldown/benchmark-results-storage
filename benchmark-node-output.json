@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1713860103261,
+  "lastUpdate": 1713873634148,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -4955,6 +4955,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "555.84",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ef29a12fcae05bc25243135766da1214d79d5b6b",
+          "message": "chore(rolldown_common): enable serde and schemars with features (#960)",
+          "timestamp": "2024-04-23T19:57:37+08:00",
+          "tree_id": "ae5dded84ae44feb606c606ab979af2ff1396351",
+          "url": "https://github.com/rolldown/rolldown/commit/ef29a12fcae05bc25243135766da1214d79d5b6b"
+        },
+        "date": 1713873634146,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "294.24",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "528.85",
             "unit": "ms / ops"
           }
         ]
