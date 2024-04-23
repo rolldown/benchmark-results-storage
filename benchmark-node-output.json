@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1713873634148,
+  "lastUpdate": 1713905269669,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -4989,6 +4989,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "528.85",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c0de4c453873a3c7b4424bfa62575da84e862e28",
+          "message": "chore(rust): remove unused code (#963)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-04-24T04:44:54+08:00",
+          "tree_id": "df04ed1b08ed820fdeb136d4f27f21d28091e2eb",
+          "url": "https://github.com/rolldown/rolldown/commit/c0de4c453873a3c7b4424bfa62575da84e862e28"
+        },
+        "date": 1713905269667,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "352.09",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "544.84",
             "unit": "ms / ops"
           }
         ]
