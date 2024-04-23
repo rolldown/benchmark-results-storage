@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1713849448412,
+  "lastUpdate": 1713860103261,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -4921,6 +4921,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "515.13",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "53b62b0a51657b7cc14032d31461381882fff13b",
+          "message": "chore: bump up all non-major dependencies (#961)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>\nCo-authored-by: LongYinan <lynweklm@gmail.com>",
+          "timestamp": "2024-04-23T08:05:01Z",
+          "tree_id": "340118993761197b24b108a35a935975d36189e1",
+          "url": "https://github.com/rolldown/rolldown/commit/53b62b0a51657b7cc14032d31461381882fff13b"
+        },
+        "date": 1713860103258,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "286.41",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "555.84",
             "unit": "ms / ops"
           }
         ]
