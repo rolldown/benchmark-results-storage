@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1713941780513,
+  "lastUpdate": 1713944116250,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -5125,6 +5125,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "525.46",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4a45b2d5359cd65a9e1a8775b750116619c3c85d",
+          "message": "fix: generateBundle and writeBundle compat to rollup (#966)",
+          "timestamp": "2024-04-24T07:23:32Z",
+          "tree_id": "1c9dd45cb74deaaf8130a6871613c359eea1cfdb",
+          "url": "https://github.com/rolldown/rolldown/commit/4a45b2d5359cd65a9e1a8775b750116619c3c85d"
+        },
+        "date": 1713944116248,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "353.53",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "533.50",
             "unit": "ms / ops"
           }
         ]
