@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1714067623296,
+  "lastUpdate": 1714067801243,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -5363,6 +5363,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "541.60",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7acbc6fcaabc557508cd7dcf67e758f7fd9c0cb4",
+          "message": "chore(rust/tracing): refine instrument on functions (#977)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-04-26T01:51:42+08:00",
+          "tree_id": "bf7655284f6ce10d0c4f7034b6303251a1a0dbb1",
+          "url": "https://github.com/rolldown/rolldown/commit/7acbc6fcaabc557508cd7dcf67e758f7fd9c0cb4"
+        },
+        "date": 1714067801241,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "301.96",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "536.38",
             "unit": "ms / ops"
           }
         ]
