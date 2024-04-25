@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1714067801243,
+  "lastUpdate": 1714067967288,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -5380,23 +5380,23 @@
             "username": "web-flow"
           },
           "distinct": true,
-          "id": "7acbc6fcaabc557508cd7dcf67e758f7fd9c0cb4",
-          "message": "chore(rust/tracing): refine instrument on functions (#977)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
-          "timestamp": "2024-04-26T01:51:42+08:00",
-          "tree_id": "bf7655284f6ce10d0c4f7034b6303251a1a0dbb1",
-          "url": "https://github.com/rolldown/rolldown/commit/7acbc6fcaabc557508cd7dcf67e758f7fd9c0cb4"
+          "id": "7437119be8174208de026672e85ede1be0abf3fd",
+          "message": "chore(exmaples): add `par-babel-rome-ts` (#978)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-04-26T01:53:29+08:00",
+          "tree_id": "3a3e9dbf0807cf8502e6b1f9340aa4777ab7661f",
+          "url": "https://github.com/rolldown/rolldown/commit/7437119be8174208de026672e85ede1be0abf3fd"
         },
-        "date": 1714067801241,
+        "date": 1714067967287,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x (default)",
-            "value": "301.96",
+            "value": "316.10",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap (default)",
-            "value": "536.38",
+            "value": "550.85",
             "unit": "ms / ops"
           }
         ]
