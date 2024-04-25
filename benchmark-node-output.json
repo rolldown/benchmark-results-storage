@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1714067467422,
+  "lastUpdate": 1714067623296,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -5346,23 +5346,23 @@
             "username": "web-flow"
           },
           "distinct": true,
-          "id": "3f15ed83db212b3fb75edff39c9851fc94651b5e",
-          "message": "refactor(rolldown_tracing): refine tracing infra and documents (#975)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
-          "timestamp": "2024-04-26T01:48:08+08:00",
-          "tree_id": "56a3372f8670c05af5129325bd83b400252e5f3b",
-          "url": "https://github.com/rolldown/rolldown/commit/3f15ed83db212b3fb75edff39c9851fc94651b5e"
+          "id": "388db906355819d70d65c5b23b258414c4735955",
+          "message": "chore(rust/rolldown): add `build_bench_threejs10x` example (#976)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-04-26T01:49:31+08:00",
+          "tree_id": "028c453fb322e71ba047161cac7315d3c6c1f673",
+          "url": "https://github.com/rolldown/rolldown/commit/388db906355819d70d65c5b23b258414c4735955"
         },
-        "date": 1714067467420,
+        "date": 1714067623294,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x (default)",
-            "value": "332.82",
+            "value": "365.46",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap (default)",
-            "value": "546.29",
+            "value": "541.60",
             "unit": "ms / ops"
           }
         ]
