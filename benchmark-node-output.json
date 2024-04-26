@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1714111427835,
+  "lastUpdate": 1714127675727,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -5431,6 +5431,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "526.63",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "84dc41968d1952ce329478bfb382d5ea8e26df11",
+          "message": "chore(rust/testing_config): avoid unnecessary re-runs for `build.rs` (#980)",
+          "timestamp": "2024-04-26T18:31:38+08:00",
+          "tree_id": "355adaeea33b442b636aa4f3f18f9e8d0639e321",
+          "url": "https://github.com/rolldown/rolldown/commit/84dc41968d1952ce329478bfb382d5ea8e26df11"
+        },
+        "date": 1714127675725,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "376.05",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "553.58",
             "unit": "ms / ops"
           }
         ]
