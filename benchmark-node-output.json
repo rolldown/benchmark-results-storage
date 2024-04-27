@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1714227896273,
+  "lastUpdate": 1714229494147,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -5499,6 +5499,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "540.99",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "green@sapphi.red",
+            "name": "翠 / green",
+            "username": "sapphi-red"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ff1286c46e7f76d5180ecca861b023c11ceae6c7",
+          "message": "feat: parallel plugin handle error in worker (#986)",
+          "timestamp": "2024-04-27T14:43:25Z",
+          "tree_id": "8c00998d47c790f5f01ef5ac8a97ac393b02ba0f",
+          "url": "https://github.com/rolldown/rolldown/commit/ff1286c46e7f76d5180ecca861b023c11ceae6c7"
+        },
+        "date": 1714229494144,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "303.93",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "533.86",
             "unit": "ms / ops"
           }
         ]
