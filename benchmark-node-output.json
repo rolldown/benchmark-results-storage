@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1714286600362,
+  "lastUpdate": 1714286710187,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -5617,24 +5617,24 @@
             "name": "GitHub",
             "username": "web-flow"
           },
-          "distinct": false,
-          "id": "37ef30d60502a51b7aa9762c72acf5bd440532ef",
-          "message": "feat: support `resolveDynamicImport` hook (#981)",
-          "timestamp": "2024-04-28T06:34:37Z",
-          "tree_id": "b371d9862a6dc432ec0ea8cb1212b9ead58359dc",
-          "url": "https://github.com/rolldown/rolldown/commit/37ef30d60502a51b7aa9762c72acf5bd440532ef"
+          "distinct": true,
+          "id": "b7f035bd6dc2e2a029a47bab61d35a32e8f6be84",
+          "message": "chore: move ModuleTable to rolldown_common (#972)",
+          "timestamp": "2024-04-28T06:34:58Z",
+          "tree_id": "15817f999952cda0f0dbb77d981079b51eece24d",
+          "url": "https://github.com/rolldown/rolldown/commit/b7f035bd6dc2e2a029a47bab61d35a32e8f6be84"
         },
-        "date": 1714286600360,
+        "date": 1714286710185,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x (default)",
-            "value": "316.60",
+            "value": "302.54",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap (default)",
-            "value": "539.57",
+            "value": "528.72",
             "unit": "ms / ops"
           }
         ]
