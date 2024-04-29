@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1714376874669,
+  "lastUpdate": 1714380202130,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -5907,6 +5907,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "521.90",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c13b56edc55c6026ec938c39bac77cc17d9fd70c",
+          "message": "chore: bump up type-fest version to v4.18.0 (#998)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2024-04-29T08:34:33Z",
+          "tree_id": "a9c35b96a9cdd30373eafff920d5c66fbe7e9528",
+          "url": "https://github.com/rolldown/rolldown/commit/c13b56edc55c6026ec938c39bac77cc17d9fd70c"
+        },
+        "date": 1714380202128,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "344.80",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "564.65",
             "unit": "ms / ops"
           }
         ]
