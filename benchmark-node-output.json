@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1714392229619,
+  "lastUpdate": 1714407541413,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -6043,6 +6043,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "542.43",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kawakazu80@gmail.com",
+            "name": "kazuya kawaguchi",
+            "username": "kazupon"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c07c3ed2b5140dc07e422f08fb44907bbeb860f7",
+          "message": "fix(cli): Improvements to more brandaly CLI (#754)\n\nCo-authored-by: Yunfei He <i.heyunfei@gmail.com>",
+          "timestamp": "2024-04-29T16:08:36Z",
+          "tree_id": "f92768048189d8a0c217c9723dd64d29415d5987",
+          "url": "https://github.com/rolldown/rolldown/commit/c07c3ed2b5140dc07e422f08fb44907bbeb860f7"
+        },
+        "date": 1714407541411,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "364.67",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "571.48",
             "unit": "ms / ops"
           }
         ]
