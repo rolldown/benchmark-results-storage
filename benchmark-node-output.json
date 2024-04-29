@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1714385902563,
+  "lastUpdate": 1714389018484,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -5975,6 +5975,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "519.50",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "24afd5521fc3893210e3d532a3492bec12d13005",
+          "message": "chore: bump up vue version to v3.4.26 (#1000)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2024-04-29T10:59:05Z",
+          "tree_id": "7cb3c6bcffa4ede56be66616c81d4e87033e5987",
+          "url": "https://github.com/rolldown/rolldown/commit/24afd5521fc3893210e3d532a3492bec12d13005"
+        },
+        "date": 1714389018482,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "303.37",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "528.49",
             "unit": "ms / ops"
           }
         ]
