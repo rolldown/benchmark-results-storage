@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1714310510278,
+  "lastUpdate": 1714356729722,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -5703,6 +5703,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "538.86",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "59c3418a30daeb3d1639acf86d4491ee273cf041",
+          "message": "chore: Lock file maintenance (#993)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2024-04-29T02:03:03Z",
+          "tree_id": "4b0ac15e62611bf129a96f51b9578cd5f09f28f6",
+          "url": "https://github.com/rolldown/rolldown/commit/59c3418a30daeb3d1639acf86d4491ee273cf041"
+        },
+        "date": 1714356729720,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "303.16",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "527.68",
             "unit": "ms / ops"
           }
         ]
