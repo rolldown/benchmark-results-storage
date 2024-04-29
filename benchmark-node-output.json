@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1714376705059,
+  "lastUpdate": 1714376874669,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -5873,6 +5873,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "568.08",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fd75404982efbdc7c6481bf78ffbd6a869f30c9d",
+          "message": "refactor: avoid RenderedChunk module id allocate (#997)",
+          "timestamp": "2024-04-29T07:39:10Z",
+          "tree_id": "6c7284c29d4871f8b2e5de547477e462438daa81",
+          "url": "https://github.com/rolldown/rolldown/commit/fd75404982efbdc7c6481bf78ffbd6a869f30c9d"
+        },
+        "date": 1714376874667,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "319.58",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "521.90",
             "unit": "ms / ops"
           }
         ]
