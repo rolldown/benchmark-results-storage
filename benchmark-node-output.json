@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1714474902404,
+  "lastUpdate": 1714493216180,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -6281,6 +6281,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "521.39",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "adrien.caccia@gmail.com",
+            "name": "Adrien Cacciaguerra",
+            "username": "adriencaccia"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ae4d041ac1b0d78052ef2935e26454747958f26c",
+          "message": "chore(ci): re-enable codspeed (#1013)",
+          "timestamp": "2024-04-30T15:57:36Z",
+          "tree_id": "eecc399f59c3ea5bbe799cdaafe124e3a0ec23bf",
+          "url": "https://github.com/rolldown/rolldown/commit/ae4d041ac1b0d78052ef2935e26454747958f26c"
+        },
+        "date": 1714493216178,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "361.60",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "542.91",
             "unit": "ms / ops"
           }
         ]
