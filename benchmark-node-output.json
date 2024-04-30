@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1714457822645,
+  "lastUpdate": 1714463446839,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -6213,6 +6213,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "532.96",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "16e6ea1fd95f2953418db9fb85224a9f45854560",
+          "message": "feat: support OutputChunk#dynamicImports and RenderedChunk#dynamicImp… (#1002)",
+          "timestamp": "2024-04-30T07:42:23Z",
+          "tree_id": "f39588d1ec3bc15a690c9eaee3adc28d7a4937da",
+          "url": "https://github.com/rolldown/rolldown/commit/16e6ea1fd95f2953418db9fb85224a9f45854560"
+        },
+        "date": 1714463446837,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "306.00",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "539.86",
             "unit": "ms / ops"
           }
         ]
