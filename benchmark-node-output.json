@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1714463446839,
+  "lastUpdate": 1714474902404,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -6247,6 +6247,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "539.86",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ee987b151f9b4f1cd3ef85126e291776ba8a0149",
+          "message": "chore: bump up vitest version to v1.5.3 (#1012)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2024-04-30T10:52:41Z",
+          "tree_id": "9ba88e18d87272532a99537b8ce80b80053937ff",
+          "url": "https://github.com/rolldown/rolldown/commit/ee987b151f9b4f1cd3ef85126e291776ba8a0149"
+        },
+        "date": 1714474902401,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "296.21",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "521.39",
             "unit": "ms / ops"
           }
         ]
