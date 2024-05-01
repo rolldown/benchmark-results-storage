@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1714493216180,
+  "lastUpdate": 1714547259424,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -6315,6 +6315,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "542.91",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "aa944b240f9a700bc5a24bd878fe811875e2f1dc",
+          "message": "chore: bump up Rust crate base64 to 0.22.1 (#1014)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2024-05-01T06:58:29Z",
+          "tree_id": "c9b32079a7234966ca501bf98922fc277169c359",
+          "url": "https://github.com/rolldown/rolldown/commit/aa944b240f9a700bc5a24bd878fe811875e2f1dc"
+        },
+        "date": 1714547259422,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "308.26",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "529.33",
             "unit": "ms / ops"
           }
         ]
