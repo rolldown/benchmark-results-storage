@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1714804277716,
+  "lastUpdate": 1714824025029,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -6417,6 +6417,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "520.94",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fa40dc50abf26c2f1632cf221c5ddc055783dd21",
+          "message": "chore: bump up @types/lodash version to v4.17.1 (#1022)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2024-05-04T11:51:20Z",
+          "tree_id": "495a7a4b60f89e96274c9baede57a76a27a72fda",
+          "url": "https://github.com/rolldown/rolldown/commit/fa40dc50abf26c2f1632cf221c5ddc055783dd21"
+        },
+        "date": 1714824025027,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "307.68",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "520.38",
             "unit": "ms / ops"
           }
         ]
