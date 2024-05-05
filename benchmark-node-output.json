@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1714925213077,
+  "lastUpdate": 1714926463901,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -6485,6 +6485,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "532.03",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "chenhaojie.chj@alibaba-inc.com",
+            "name": "hj",
+            "username": "Cecil0o0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ec990614930a0354674d8943092419a6fb7290ab",
+          "message": "chore(test): rename `_test.scheme.json` to `_test.schema.json` (#1025)\n\nCo-authored-by: Yunfei <i.heyunfei@gmail.com>",
+          "timestamp": "2024-05-05T16:18:51Z",
+          "tree_id": "d5ffd55f6ea0596cf11b12b421dbbeca80471ad0",
+          "url": "https://github.com/rolldown/rolldown/commit/ec990614930a0354674d8943092419a6fb7290ab"
+        },
+        "date": 1714926463899,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "303.62",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "524.70",
             "unit": "ms / ops"
           }
         ]
