@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1714824025029,
+  "lastUpdate": 1714925213077,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -6451,6 +6451,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "520.38",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b337b19391d2511e0f7b502cd7088c9443bcf849",
+          "message": "chore: bump up conventional-changelog-cli version to v5 (#1017)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2024-05-05T15:58:01Z",
+          "tree_id": "f2ad969f4f9edbc20af3edf5d2eb926c9e917324",
+          "url": "https://github.com/rolldown/rolldown/commit/b337b19391d2511e0f7b502cd7088c9443bcf849"
+        },
+        "date": 1714925213075,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "305.10",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "532.03",
             "unit": "ms / ops"
           }
         ]
