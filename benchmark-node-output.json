@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1715012311501,
+  "lastUpdate": 1715012432850,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -6637,24 +6637,24 @@
             "name": "GitHub",
             "username": "web-flow"
           },
-          "distinct": false,
-          "id": "02c11d490042cf1b3b4d216832ddfb15ca1bcc38",
-          "message": "chore(deps): update dependency @types/node to ^20.12.8 (#1035)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
-          "timestamp": "2024-05-06T16:10:16Z",
-          "tree_id": "4fb792d852075f2babbb34ab6eaf987b23a4d8dd",
-          "url": "https://github.com/rolldown/rolldown/commit/02c11d490042cf1b3b4d216832ddfb15ca1bcc38"
+          "distinct": true,
+          "id": "8645e7782bd179ca1a261f5109ed32d7605ab8bd",
+          "message": "chore(deps): update dependency type-fest to ^4.18.1 (#1036)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2024-05-06T16:10:38Z",
+          "tree_id": "0564d1c602740c7b77404ebb712d3b5315f5f28f",
+          "url": "https://github.com/rolldown/rolldown/commit/8645e7782bd179ca1a261f5109ed32d7605ab8bd"
         },
-        "date": 1715012311499,
+        "date": 1715012432848,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x (default)",
-            "value": "330.43",
+            "value": "396.75",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap (default)",
-            "value": "542.49",
+            "value": "553.10",
             "unit": "ms / ops"
           }
         ]
