@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1715054723442,
+  "lastUpdate": 1715065327152,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -6859,6 +6859,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "520.30",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "cf87c5d6df4875d99e6e12c0f73469cc0f7199d7",
+          "message": "fix(deps): update dependency vue to v3.4.27 (#1048)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2024-05-07T06:53:46Z",
+          "tree_id": "809c80711000441f914fdc235e5aea6e89b297ee",
+          "url": "https://github.com/rolldown/rolldown/commit/cf87c5d6df4875d99e6e12c0f73469cc0f7199d7"
+        },
+        "date": 1715065327150,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "381.14",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "533.19",
             "unit": "ms / ops"
           }
         ]
