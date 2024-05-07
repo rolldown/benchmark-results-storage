@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1715065327152,
+  "lastUpdate": 1715071790517,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -6893,6 +6893,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "533.19",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8c55a62e0ec7e84477ef97c55bd5c9b8b3337f1c",
+          "message": "chore: add plugin context to hook (#1050)",
+          "timestamp": "2024-05-07T08:41:41Z",
+          "tree_id": "9a35badca02e23323304b399890332f63200c676",
+          "url": "https://github.com/rolldown/rolldown/commit/8c55a62e0ec7e84477ef97c55bd5c9b8b3337f1c"
+        },
+        "date": 1715071790515,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "315.52",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "528.57",
             "unit": "ms / ops"
           }
         ]
