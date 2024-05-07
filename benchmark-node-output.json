@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1715071790517,
+  "lastUpdate": 1715086282474,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -6927,6 +6927,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "528.57",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "1a9532d5938d5465a58aa82879dd7f231d1bf868",
+          "message": "feat: add plugin context info/warn/error/debug (#1051)",
+          "timestamp": "2024-05-07T12:42:19Z",
+          "tree_id": "e6f8cf2c2ea4e4b3121f65d639539fce0653def7",
+          "url": "https://github.com/rolldown/rolldown/commit/1a9532d5938d5465a58aa82879dd7f231d1bf868"
+        },
+        "date": 1715086282472,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "305.11",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "531.12",
             "unit": "ms / ops"
           }
         ]
