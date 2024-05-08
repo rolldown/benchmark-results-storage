@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1715152542031,
+  "lastUpdate": 1715154375974,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -6995,6 +6995,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "528.42",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4806660ee7449464b8805bcde49d0dc92271318d",
+          "message": "chore(deps): pin dependencies (#1059)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2024-05-08T07:37:02Z",
+          "tree_id": "6089890d9d949a080eb3515734e012ee768538cd",
+          "url": "https://github.com/rolldown/rolldown/commit/4806660ee7449464b8805bcde49d0dc92271318d"
+        },
+        "date": 1715154375971,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "307.11",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "530.29",
             "unit": "ms / ops"
           }
         ]
