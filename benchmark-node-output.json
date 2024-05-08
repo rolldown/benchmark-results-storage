@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1715182178532,
+  "lastUpdate": 1715187226078,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -7131,6 +7131,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "518.31",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "dankatdennis@gmail.com",
+            "name": "Daniel Dennis",
+            "username": "katungi"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2d2974e7b185b63cd7593093114e815e77b0d2a3",
+          "message": "chore(rust/test): validate `_config.json` (#1042)\n\nCo-authored-by: Yunfei <i.heyunfei@gmail.com>",
+          "timestamp": "2024-05-08T16:44:13Z",
+          "tree_id": "0b09afaee4cf510f7a6c9f6b115e1b141e4a06c2",
+          "url": "https://github.com/rolldown/rolldown/commit/2d2974e7b185b63cd7593093114e815e77b0d2a3"
+        },
+        "date": 1715187226075,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "301.88",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "526.21",
             "unit": "ms / ops"
           }
         ]
