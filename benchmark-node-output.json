@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1715319995345,
+  "lastUpdate": 1715323571492,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -7369,6 +7369,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "513.79",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "db1be3d3baa9c731ac974cd688a804256f78e093",
+          "message": "fix(deps): update dependency execa to v9.0.2 (#1078)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2024-05-10T06:36:29Z",
+          "tree_id": "4214460a496c075a421cd5d5edcc65f3112c08a7",
+          "url": "https://github.com/rolldown/rolldown/commit/db1be3d3baa9c731ac974cd688a804256f78e093"
+        },
+        "date": 1715323571489,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "309.66",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "544.44",
             "unit": "ms / ops"
           }
         ]
