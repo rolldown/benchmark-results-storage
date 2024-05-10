@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1715284174278,
+  "lastUpdate": 1715319995345,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -7335,6 +7335,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "548.52",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "26848902bee24ae76fd1d45a11d4d05dfd1b7066",
+          "message": "chore(deps): update dependency cspell to ^8.8.0 (#1074)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2024-05-10T05:37:55Z",
+          "tree_id": "c9b9c7774113df7ef5fc3f641c716e0adbd12d23",
+          "url": "https://github.com/rolldown/rolldown/commit/26848902bee24ae76fd1d45a11d4d05dfd1b7066"
+        },
+        "date": 1715319995343,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "295.60",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "513.79",
             "unit": "ms / ops"
           }
         ]
