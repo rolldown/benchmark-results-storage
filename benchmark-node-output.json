@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1715323582315,
+  "lastUpdate": 1715324064492,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -7403,6 +7403,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "544.10",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "bc1b3ac9b33952c8d2306e1f406ecff507404af3",
+          "message": "refactor(rust/resolver): deduplicate conditions (#1077)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-05-10T14:47:44+08:00",
+          "tree_id": "6f2907201cd91273bb4a9c1ddf7e3bb513c75676",
+          "url": "https://github.com/rolldown/rolldown/commit/bc1b3ac9b33952c8d2306e1f406ecff507404af3"
+        },
+        "date": 1715324064490,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "302.87",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "530.22",
             "unit": "ms / ops"
           }
         ]
