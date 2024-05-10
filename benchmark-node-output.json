@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1715375191395,
+  "lastUpdate": 1715375394191,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -7505,6 +7505,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "527.11",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d58561bee1aa04305390ad292dda2215814e6104",
+          "message": "refactor(rust/plugin): mark `resolve_dynamic_import` deprecated (#1086)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-05-11T05:05:51+08:00",
+          "tree_id": "330880b83fbc85b7c024f779c59f25abaccedfca",
+          "url": "https://github.com/rolldown/rolldown/commit/d58561bee1aa04305390ad292dda2215814e6104"
+        },
+        "date": 1715375394188,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "367.01",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "536.98",
             "unit": "ms / ops"
           }
         ]
