@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1715375683971,
+  "lastUpdate": 1715375761009,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -7556,23 +7556,23 @@
             "username": "web-flow"
           },
           "distinct": true,
-          "id": "985f49705cc7cc449a65c77f7ab2353919a1a5e3",
-          "message": "feat: treat unresolved module as external by default and emit warnings (#1087)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
-          "timestamp": "2024-05-11T05:08:56+08:00",
-          "tree_id": "0384a58562085320cd494256a5652dd525e931a0",
-          "url": "https://github.com/rolldown/rolldown/commit/985f49705cc7cc449a65c77f7ab2353919a1a5e3"
+          "id": "f23ddad7e90bd23089b2fe7b08eef45d4e7d614f",
+          "message": "refactor(rust): remove unnecessary derived `PartialEq, Eq` on `ImportKind` (#1088)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-05-11T05:11:06+08:00",
+          "tree_id": "5558159200bb797c27d7fc4fed7f63a64283d8d5",
+          "url": "https://github.com/rolldown/rolldown/commit/f23ddad7e90bd23089b2fe7b08eef45d4e7d614f"
         },
-        "date": 1715375683969,
+        "date": 1715375761006,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x (default)",
-            "value": "306.98",
+            "value": "302.45",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap (default)",
-            "value": "530.18",
+            "value": "526.35",
             "unit": "ms / ops"
           }
         ]
