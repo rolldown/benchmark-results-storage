@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1715416869301,
+  "lastUpdate": 1715435248229,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -7607,6 +7607,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "530.24",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b93389246d44ebf094632274a3983ba93232136d",
+          "message": "feat: support delete OutputBundle item (#1083)",
+          "timestamp": "2024-05-11T13:39:13Z",
+          "tree_id": "5505fcd81e1e66fee05e5c58cab2a8d552d4df4c",
+          "url": "https://github.com/rolldown/rolldown/commit/b93389246d44ebf094632274a3983ba93232136d"
+        },
+        "date": 1715435248227,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "305.11",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "527.50",
             "unit": "ms / ops"
           }
         ]
