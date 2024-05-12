@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1715504967128,
+  "lastUpdate": 1715506637850,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -7709,6 +7709,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "536.42",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "jiegithub@gmail.com",
+            "name": "hj",
+            "username": "Cecil0o0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0e60949b00c1a21168487afe6b49be30a49b02dc",
+          "message": "chore(repo/toml): include more files in `.taplo.toml` (#1099)",
+          "timestamp": "2024-05-12T09:23:51Z",
+          "tree_id": "143f3248945dba8bf96afc13ba1647705bc4a276",
+          "url": "https://github.com/rolldown/rolldown/commit/0e60949b00c1a21168487afe6b49be30a49b02dc"
+        },
+        "date": 1715506637847,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "300.83",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "575.04",
             "unit": "ms / ops"
           }
         ]
