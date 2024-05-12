@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1715529213885,
+  "lastUpdate": 1715539859550,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -7777,6 +7777,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "518.99",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5bcf3edd60789d9b5ba34caab77773cebfa0b80b",
+          "message": "feat(node/plugin): support `PluginContext#resolve` (#1102)",
+          "timestamp": "2024-05-13T02:48:19+08:00",
+          "tree_id": "2ea880d7ce89ddc31fac69ef0c343e143c257e96",
+          "url": "https://github.com/rolldown/rolldown/commit/5bcf3edd60789d9b5ba34caab77773cebfa0b80b"
+        },
+        "date": 1715539859548,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "300.66",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "522.78",
             "unit": "ms / ops"
           }
         ]
