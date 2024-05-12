@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1715504873377,
+  "lastUpdate": 1715504967128,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -7692,23 +7692,23 @@
             "username": "web-flow"
           },
           "distinct": true,
-          "id": "9a9168784131013a224e3558a7c801d362d875d6",
-          "message": "fix(node/cli): exit process after bundling (#1097)\n\n<!-- Thank you for contributing! -->\r\n\r\n### Description\r\n\r\nWorkaround of #985.\r\n\r\n\r\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
-          "timestamp": "2024-05-12T17:04:47+08:00",
-          "tree_id": "a06ee3e98ffe1505216f6596fc8f8cb9d669aede",
-          "url": "https://github.com/rolldown/rolldown/commit/9a9168784131013a224e3558a7c801d362d875d6"
+          "id": "d535aa226272593961d080c1c49b3c6a0b5c090c",
+          "message": "chore(node/example): add `par-plugin` (#1098)\n\n<!-- Thank you for contributing! -->\r\n\r\n### Description\r\n\r\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-05-12T17:06:35+08:00",
+          "tree_id": "b28c0ab00dda5378536d2e4899770bf40efb743b",
+          "url": "https://github.com/rolldown/rolldown/commit/d535aa226272593961d080c1c49b3c6a0b5c090c"
         },
-        "date": 1715504873373,
+        "date": 1715504967126,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x (default)",
-            "value": "309.91",
+            "value": "322.51",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap (default)",
-            "value": "535.63",
+            "value": "536.42",
             "unit": "ms / ops"
           }
         ]
