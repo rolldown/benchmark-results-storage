@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1715627970562,
+  "lastUpdate": 1715628188520,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -8049,6 +8049,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "529.68",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2508f7f22da255b61b8f5071488417c6b41ecc7e",
+          "message": "refactor(rust): improve `ResolvedPath#prettify` (#1116)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-05-14T03:15:33+08:00",
+          "tree_id": "c0d79815e3cb253121e966797f9cd526ca9ccadc",
+          "url": "https://github.com/rolldown/rolldown/commit/2508f7f22da255b61b8f5071488417c6b41ecc7e"
+        },
+        "date": 1715628188518,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "329.24",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "547.66",
             "unit": "ms / ops"
           }
         ]
