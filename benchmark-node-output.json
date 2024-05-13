@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1715613633860,
+  "lastUpdate": 1715627516744,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -7947,6 +7947,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "587.02",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "54b76bf5ee5ecb7d4ec6ea17cc0f897ef809b11a",
+          "message": "feat(rust): add `NormalModule#stable_resource_id` (#1112)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-05-14T03:09:14+08:00",
+          "tree_id": "ebb5246e5cbcee7da0fc2f2246ddd0f1af0f87b6",
+          "url": "https://github.com/rolldown/rolldown/commit/54b76bf5ee5ecb7d4ec6ea17cc0f897ef809b11a"
+        },
+        "date": 1715627516742,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "311.49",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "609.32",
             "unit": "ms / ops"
           }
         ]
