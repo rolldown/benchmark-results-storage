@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1715627516744,
+  "lastUpdate": 1715627693146,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -7981,6 +7981,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "609.32",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a40d697da26c49c409ca27b453adec81b2c25d9f",
+          "message": "refactor(rust): remove `FilePath`, use `ResourceId` instead (#1113)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-05-14T03:11:37+08:00",
+          "tree_id": "ad7d223431581fe0aa4bf4b9deb72f689f9a34d7",
+          "url": "https://github.com/rolldown/rolldown/commit/a40d697da26c49c409ca27b453adec81b2c25d9f"
+        },
+        "date": 1715627693143,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "302.94",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "517.46",
             "unit": "ms / ops"
           }
         ]
