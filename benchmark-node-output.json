@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1715627693146,
+  "lastUpdate": 1715627970562,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -8015,6 +8015,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "517.46",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "49d4b5c03ab699d71125782c746d15b9b276821c",
+          "message": "refactor(rust): calculated `is_virtual` based on `resource_id` (#1114)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-05-14T03:13:40+08:00",
+          "tree_id": "6e2cc8bade2f55ad20a7f59ed56e84cbe8c14a7c",
+          "url": "https://github.com/rolldown/rolldown/commit/49d4b5c03ab699d71125782c746d15b9b276821c"
+        },
+        "date": 1715627970560,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "313.56",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "529.68",
             "unit": "ms / ops"
           }
         ]
