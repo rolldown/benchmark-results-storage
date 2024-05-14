@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1715677243993,
+  "lastUpdate": 1715678651177,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -8117,6 +8117,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "553.03",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e02e2576ece5292bdb7e9a96dd76ce8f24295706",
+          "message": "feat: support TransformPluginContext#getCombinedSourcemap (#1121)",
+          "timestamp": "2024-05-14T09:14:03Z",
+          "tree_id": "5874dd954bc8249cfaf1d215fc78a0b4dcc0ba49",
+          "url": "https://github.com/rolldown/rolldown/commit/e02e2576ece5292bdb7e9a96dd76ce8f24295706"
+        },
+        "date": 1715678651175,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "308.10",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "528.72",
             "unit": "ms / ops"
           }
         ]
