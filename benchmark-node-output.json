@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1715677129295,
+  "lastUpdate": 1715677243993,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -8099,24 +8099,24 @@
             "name": "GitHub",
             "username": "web-flow"
           },
-          "distinct": false,
-          "id": "7558600aa9b4cb23006f8c8b2583f344896c96d9",
-          "message": "fix(deps): update dependency zx to v8.1.0 (#1120)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
-          "timestamp": "2024-05-14T08:50:30Z",
-          "tree_id": "3fd1d776c591093989373205785e8ef8db5dd5b8",
-          "url": "https://github.com/rolldown/rolldown/commit/7558600aa9b4cb23006f8c8b2583f344896c96d9"
+          "distinct": true,
+          "id": "62df6b57ce7c11d253109da4a90b27966590a0ef",
+          "message": "chore(deps): update dependency @types/node to v20.12.12 (#1119)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2024-05-14T08:51:36Z",
+          "tree_id": "3006db96dad0dab0a72cdc19578078c008cb16f8",
+          "url": "https://github.com/rolldown/rolldown/commit/62df6b57ce7c11d253109da4a90b27966590a0ef"
         },
-        "date": 1715677129292,
+        "date": 1715677243991,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x (default)",
-            "value": "306.83",
+            "value": "316.79",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap (default)",
-            "value": "529.17",
+            "value": "553.03",
             "unit": "ms / ops"
           }
         ]
