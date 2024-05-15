@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1715809510252,
+  "lastUpdate": 1715810200537,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -8389,6 +8389,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "532.56",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "68f44ff6ebb87a9713a8e02d0d649eb633fb6fa0",
+          "message": "fix(deps): update dependency esbuild to v0.21.3 (#1139)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2024-05-15T21:43:39Z",
+          "tree_id": "508e0db7219105cdf7791d949d935bcfdb3a8b80",
+          "url": "https://github.com/rolldown/rolldown/commit/68f44ff6ebb87a9713a8e02d0d649eb633fb6fa0"
+        },
+        "date": 1715810200535,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "312.26",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "554.72",
             "unit": "ms / ops"
           }
         ]
