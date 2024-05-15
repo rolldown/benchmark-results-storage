@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1715773218463,
+  "lastUpdate": 1715773478482,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -8219,6 +8219,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "541.77",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9ec58913fca644160feb71b70d2afa6829784d3e",
+          "message": "chore(deps): update rust crate insta to v1.39.0 (#1133)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2024-05-15T11:30:03Z",
+          "tree_id": "464116ea6349902e37f9b4a1df9c5039d77e55cf",
+          "url": "https://github.com/rolldown/rolldown/commit/9ec58913fca644160feb71b70d2afa6829784d3e"
+        },
+        "date": 1715773478479,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "311.31",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "565.07",
             "unit": "ms / ops"
           }
         ]
