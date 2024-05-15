@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1715773478482,
+  "lastUpdate": 1715774108951,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -8253,6 +8253,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "565.07",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "31bf1a9b0fee9f7aa05f8911ede2efae98cf8279",
+          "message": "refactor(rust): add `with_capacity` method for `FxHashMap``FxHashSet` (#1129)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-05-15T19:52:25+08:00",
+          "tree_id": "57a5b2497418abd62603e7a3723e1e94d2212dde",
+          "url": "https://github.com/rolldown/rolldown/commit/31bf1a9b0fee9f7aa05f8911ede2efae98cf8279"
+        },
+        "date": 1715774108949,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "307.72",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "550.62",
             "unit": "ms / ops"
           }
         ]
