@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1715801982556,
+  "lastUpdate": 1715802058290,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -8328,9 +8328,9 @@
       {
         "commit": {
           "author": {
-            "email": "29139614+renovate[bot]@users.noreply.github.com",
-            "name": "renovate[bot]",
-            "username": "renovate[bot]"
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
           },
           "committer": {
             "email": "noreply@github.com",
@@ -8338,23 +8338,23 @@
             "username": "web-flow"
           },
           "distinct": true,
-          "id": "e0bfee7699ffe67f20d77fd6ca9a6cd5d14533fa",
-          "message": "chore(deps): update dependency oxlint to v0.3.5 (#1136)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
-          "timestamp": "2024-05-15T19:30:19Z",
-          "tree_id": "ea8763417db104660e3ca80af1ecfab7a35ae939",
-          "url": "https://github.com/rolldown/rolldown/commit/e0bfee7699ffe67f20d77fd6ca9a6cd5d14533fa"
+          "id": "975e884671e364ddddef39a993aa0c688dfb6aa0",
+          "message": "fix: ensure chunk order (#1135)",
+          "timestamp": "2024-05-16T03:37:57+08:00",
+          "tree_id": "e256d7da6a195db6f22bf20b698d9dd256cd0dbe",
+          "url": "https://github.com/rolldown/rolldown/commit/975e884671e364ddddef39a993aa0c688dfb6aa0"
         },
-        "date": 1715801982553,
+        "date": 1715802058286,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x (default)",
-            "value": "353.29",
+            "value": "297.91",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap (default)",
-            "value": "558.54",
+            "value": "569.81",
             "unit": "ms / ops"
           }
         ]
