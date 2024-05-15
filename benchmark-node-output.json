@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1715774289078,
+  "lastUpdate": 1715774369830,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -8304,23 +8304,23 @@
             "username": "web-flow"
           },
           "distinct": true,
-          "id": "a793768e20f603a32cf2f3f87ea9d65de8fbb88d",
-          "message": "refactor(rust): sort `dynamic_import_entry_ids` using `NormalModule#stable_resource_id` (#1130)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
-          "timestamp": "2024-05-15T19:53:42+08:00",
-          "tree_id": "907994d6bc2249f48f3176f1a711e31acc3d7224",
-          "url": "https://github.com/rolldown/rolldown/commit/a793768e20f603a32cf2f3f87ea9d65de8fbb88d"
+          "id": "5eb66a2ae785106acbda379e93e0d85cd43ee282",
+          "message": "chore(rust): add comments on `LinkStage#sort_modules` (#1131)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-05-15T19:55:30+08:00",
+          "tree_id": "2f6924847bd431cf4d7d5058795f184b998e4c89",
+          "url": "https://github.com/rolldown/rolldown/commit/5eb66a2ae785106acbda379e93e0d85cd43ee282"
         },
-        "date": 1715774289076,
+        "date": 1715774369826,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x (default)",
-            "value": "307.41",
+            "value": "313.51",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap (default)",
-            "value": "553.37",
+            "value": "561.55",
             "unit": "ms / ops"
           }
         ]
