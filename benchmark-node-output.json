@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1715774108951,
+  "lastUpdate": 1715774289078,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -8287,6 +8287,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "550.62",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a793768e20f603a32cf2f3f87ea9d65de8fbb88d",
+          "message": "refactor(rust): sort `dynamic_import_entry_ids` using `NormalModule#stable_resource_id` (#1130)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-05-15T19:53:42+08:00",
+          "tree_id": "907994d6bc2249f48f3176f1a711e31acc3d7224",
+          "url": "https://github.com/rolldown/rolldown/commit/a793768e20f603a32cf2f3f87ea9d65de8fbb88d"
+        },
+        "date": 1715774289076,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "307.41",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "553.37",
             "unit": "ms / ops"
           }
         ]
