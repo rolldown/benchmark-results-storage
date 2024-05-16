@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1715874456011,
+  "lastUpdate": 1715903298847,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -8525,6 +8525,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "579.12",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b633d20deb7932b65e513b464eff5abb95514161",
+          "message": "chore(deps): update rust crate itertools to 0.13.0 (#1146)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2024-05-16T23:39:07Z",
+          "tree_id": "3ae47a1cd1500fba596f681456c0cda9bd8a6352",
+          "url": "https://github.com/rolldown/rolldown/commit/b633d20deb7932b65e513b464eff5abb95514161"
+        },
+        "date": 1715903298845,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "301.05",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "540.90",
             "unit": "ms / ops"
           }
         ]
