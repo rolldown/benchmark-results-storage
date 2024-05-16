@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1715835083745,
+  "lastUpdate": 1715857034378,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -8457,6 +8457,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "553.04",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "130013b90e98f087c20e7f96242ab762bfc67e43",
+          "message": "fix(rolldown/hash): caculate hash by scanning actually used dependencies and also prevent hash collision from different chunks that have the same content (#1141)",
+          "timestamp": "2024-05-16T18:54:19+08:00",
+          "tree_id": "2b519e1f2f97af6430ae2fc68932e2403a7162df",
+          "url": "https://github.com/rolldown/rolldown/commit/130013b90e98f087c20e7f96242ab762bfc67e43"
+        },
+        "date": 1715857034374,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "313.71",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "552.96",
             "unit": "ms / ops"
           }
         ]
