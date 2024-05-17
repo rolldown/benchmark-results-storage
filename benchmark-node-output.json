@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1715924678024,
+  "lastUpdate": 1715944246279,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -8593,6 +8593,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "551.30",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "88c2e02e62d6c0283308b66cce441f9107aeaeee",
+          "message": "chore: use web-tree-sitter instead node for better compatibility (#1142)\n\nCo-authored-by: Yunfei <i.heyunfei@gmail.com>",
+          "timestamp": "2024-05-17T11:01:48Z",
+          "tree_id": "c00bb2bf6e0807540cc4cabf52c8f3620d4200b1",
+          "url": "https://github.com/rolldown/rolldown/commit/88c2e02e62d6c0283308b66cce441f9107aeaeee"
+        },
+        "date": 1715944246277,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "300.97",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "591.27",
             "unit": "ms / ops"
           }
         ]
