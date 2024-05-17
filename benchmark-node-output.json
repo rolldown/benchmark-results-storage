@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1715944246279,
+  "lastUpdate": 1715944774647,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -8627,6 +8627,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "591.27",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "d73d334564a19bf72ff0ece84d44766417f0ada7",
+          "message": "chore(deps): update dependency npm-run-all2 to ^6.2.0 (#1148)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2024-05-17T11:10:11Z",
+          "tree_id": "e78d719e32e3841dd69012e7ab819dc37874ce1f",
+          "url": "https://github.com/rolldown/rolldown/commit/d73d334564a19bf72ff0ece84d44766417f0ada7"
+        },
+        "date": 1715944774642,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "319.37",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "570.16",
             "unit": "ms / ops"
           }
         ]
