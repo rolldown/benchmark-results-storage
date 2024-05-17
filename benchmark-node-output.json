@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1715903298847,
+  "lastUpdate": 1715924678024,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -8559,6 +8559,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "540.90",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "73e6d81a52361a1bb57b047f9c32388189554d0c",
+          "message": "fix(deps): update dependency @types/lodash to v4.17.4 (#1147)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2024-05-17T05:34:27Z",
+          "tree_id": "ee85bb6281b0c5183708c1114e58c10cfa98413f",
+          "url": "https://github.com/rolldown/rolldown/commit/73e6d81a52361a1bb57b047f9c32388189554d0c"
+        },
+        "date": 1715924678022,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "304.75",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "551.30",
             "unit": "ms / ops"
           }
         ]
