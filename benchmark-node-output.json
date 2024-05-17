@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1715944774647,
+  "lastUpdate": 1715954261627,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -8661,6 +8661,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "570.16",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f789a6728039d116dc8b85b841f62187cb224682",
+          "message": "chore: don't ignore `node_modules` under `crates/rolldown/esbuild/` (#1149)",
+          "timestamp": "2024-05-17T13:47:49Z",
+          "tree_id": "a923982f7bbbb972ac32791cf2913ebd0022706f",
+          "url": "https://github.com/rolldown/rolldown/commit/f789a6728039d116dc8b85b841f62187cb224682"
+        },
+        "date": 1715954261623,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "312.71",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "559.80",
             "unit": "ms / ops"
           }
         ]
