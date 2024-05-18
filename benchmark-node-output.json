@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1716037329961,
+  "lastUpdate": 1716054022364,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -8865,6 +8865,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "565.36",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "97d50b538b4b4e2dd5d9ecd177a2893ced47310d",
+          "message": "fix(cjs): only wrap entry cjs modules conditionally (#1164)",
+          "timestamp": "2024-05-19T01:37:35+08:00",
+          "tree_id": "2bbec02b9998ad711d1a62d2bd22bb8f18858897",
+          "url": "https://github.com/rolldown/rolldown/commit/97d50b538b4b4e2dd5d9ecd177a2893ced47310d"
+        },
+        "date": 1716054022361,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "310.00",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "556.16",
             "unit": "ms / ops"
           }
         ]
