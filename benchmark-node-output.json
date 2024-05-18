@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1715977976910,
+  "lastUpdate": 1715997146540,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -8729,6 +8729,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "575.34",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "68c4f31ce51d7a499e8e69fad2fd913d6fa8b287",
+          "message": "chore(deps): update rust crate anyhow to v1.0.85 (#1153)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2024-05-18T01:43:36Z",
+          "tree_id": "38ab2f0e442964ccda3d6c719072c34575bc8f97",
+          "url": "https://github.com/rolldown/rolldown/commit/68c4f31ce51d7a499e8e69fad2fd913d6fa8b287"
+        },
+        "date": 1715997146536,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "302.64",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "551.14",
             "unit": "ms / ops"
           }
         ]
