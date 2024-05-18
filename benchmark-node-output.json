@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1716030499568,
+  "lastUpdate": 1716037060682,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -8797,6 +8797,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "592.94",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "bf87c92d8ccb5bb945045a48fe1607ea755a94fb",
+          "message": "test(esbuild/splitting): fix `hybrid_esm_and_cjs_issue617` (#1159)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-05-18T20:53:29+08:00",
+          "tree_id": "9d7fd77a54b4210d069edcba15c84a8aa8dcd3c0",
+          "url": "https://github.com/rolldown/rolldown/commit/bf87c92d8ccb5bb945045a48fe1607ea755a94fb"
+        },
+        "date": 1716037060680,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "299.23",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "549.24",
             "unit": "ms / ops"
           }
         ]
