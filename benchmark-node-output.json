@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1716037060682,
+  "lastUpdate": 1716037329961,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -8831,6 +8831,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "549.24",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c977412edb8b1ec9a4cc38015bd87b793d971b49",
+          "message": "refactor(rust): render default export for cjs entry specially (#1160)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-05-18T20:55:28+08:00",
+          "tree_id": "cc3578e1b4fd3091a8dd508e27700fccd0158789",
+          "url": "https://github.com/rolldown/rolldown/commit/c977412edb8b1ec9a4cc38015bd87b793d971b49"
+        },
+        "date": 1716037329958,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "313.62",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "565.36",
             "unit": "ms / ops"
           }
         ]
