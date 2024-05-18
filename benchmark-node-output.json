@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1715997146540,
+  "lastUpdate": 1716030499568,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -8763,6 +8763,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "551.14",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e031e7607cd2535627192aef5941803d886046e1",
+          "message": "chore(deps): update dependency vitepress to ^1.2.0 (#1155)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2024-05-18T10:59:09Z",
+          "tree_id": "ded9954f5ca7557115a1fb8bde1bfebcbd72cd1b",
+          "url": "https://github.com/rolldown/rolldown/commit/e031e7607cd2535627192aef5941803d886046e1"
+        },
+        "date": 1716030499565,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "304.03",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "592.94",
             "unit": "ms / ops"
           }
         ]
