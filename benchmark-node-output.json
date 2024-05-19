@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1716054022364,
+  "lastUpdate": 1716093608498,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -8899,6 +8899,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "556.16",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "73ae76c6171fbe514e605ce20fd07fe28ed76501",
+          "message": "chore(deps): update rust crate schemars to v0.8.20 (#1165)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2024-05-19T04:32:05Z",
+          "tree_id": "1513cb8f0b7eb196a192d1d23b89333c334c4a34",
+          "url": "https://github.com/rolldown/rolldown/commit/73ae76c6171fbe514e605ce20fd07fe28ed76501"
+        },
+        "date": 1716093608495,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "302.63",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "540.18",
             "unit": "ms / ops"
           }
         ]
