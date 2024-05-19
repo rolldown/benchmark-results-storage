@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1716145083253,
+  "lastUpdate": 1716145248721,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -9069,6 +9069,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "542.43",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f102cc0ef4550cd71f8fe7340618a420a6f93367",
+          "message": "feat(rust): render external imports after normal imports (#1171)\n\n<!-- Thank you for contributing! -->\r\n\r\n### Description\r\n\r\nSee https://github.com/rolldown/rolldown/blob/5c3b4fbb732dda092bc5298b2ad1b85786735977/crates/rolldown/tests/esbuild/import_star/re_export_star_as_external_common_js/artifacts.snap#L19-L20 for why.\r\n\r\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-05-20T02:56:27+08:00",
+          "tree_id": "9a6a56539d79442ad9d0c24f5bf332547a9cecd4",
+          "url": "https://github.com/rolldown/rolldown/commit/f102cc0ef4550cd71f8fe7340618a420a6f93367"
+        },
+        "date": 1716145248718,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "345.86",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "542.49",
             "unit": "ms / ops"
           }
         ]
