@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1716093608498,
+  "lastUpdate": 1716115661575,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -8933,6 +8933,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "540.18",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c8e3b5e94ab9009bf8978deaab53aa177c48c9dc",
+          "message": "chore(deps): update dependency emnapi to ^1.2.0 (#1168)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2024-05-19T10:38:13Z",
+          "tree_id": "6a61cf284ca837e6f0ab5d12c8bab2b8df176cfd",
+          "url": "https://github.com/rolldown/rolldown/commit/c8e3b5e94ab9009bf8978deaab53aa177c48c9dc"
+        },
+        "date": 1716115661573,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "305.17",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "544.31",
             "unit": "ms / ops"
           }
         ]
