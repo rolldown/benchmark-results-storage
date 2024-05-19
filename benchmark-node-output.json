@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1716134923948,
+  "lastUpdate": 1716145083253,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -9035,6 +9035,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "548.78",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e9938d99b4ddae28717aad8530376ca3a6ec5b87",
+          "message": "feat(rust): store `package.json` in `NormalModule` (#1170)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-05-20T02:55:21+08:00",
+          "tree_id": "d43a87c625c59a7c55852b9dff80dd6ea7673b39",
+          "url": "https://github.com/rolldown/rolldown/commit/e9938d99b4ddae28717aad8530376ca3a6ec5b87"
+        },
+        "date": 1716145083250,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "300.80",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "542.43",
             "unit": "ms / ops"
           }
         ]
