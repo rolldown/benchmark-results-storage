@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1716178589514,
+  "lastUpdate": 1716195303978,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -9171,6 +9171,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "546.93",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9e4dfa80f82d9cae3e69b4c0dd1c3b8e7bc36950",
+          "message": "feat: add TransfromPluginContext debug/info/warn/error (#1176)",
+          "timestamp": "2024-05-20T08:45:43Z",
+          "tree_id": "1a3f4c4601132f3efaba8a49f435b17e7283c5de",
+          "url": "https://github.com/rolldown/rolldown/commit/9e4dfa80f82d9cae3e69b4c0dd1c3b8e7bc36950"
+        },
+        "date": 1716195303975,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "314.79",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "558.95",
             "unit": "ms / ops"
           }
         ]
