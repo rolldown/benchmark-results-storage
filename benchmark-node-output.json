@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1716225763023,
+  "lastUpdate": 1716225930165,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -9273,6 +9273,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "556.38",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8190a5c5206ffe21425e2e64867eb5e95ffb8508",
+          "message": "fix: should generate correct chunk import path to importee in importer chunk (#1180)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-05-21T01:21:40+08:00",
+          "tree_id": "e57cde014ae99b0a166f1bbf1f78f2e1ed4d8ab7",
+          "url": "https://github.com/rolldown/rolldown/commit/8190a5c5206ffe21425e2e64867eb5e95ffb8508"
+        },
+        "date": 1716225930162,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "320.49",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "612.71",
             "unit": "ms / ops"
           }
         ]
