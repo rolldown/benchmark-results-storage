@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1716195303978,
+  "lastUpdate": 1716196052310,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -9205,6 +9205,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "558.95",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "289fe8b371b1559e5215b2fb88a531d8846b12b9",
+          "message": "chore(deps): update rust crate mimalloc to v0.1.42 (#1177)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2024-05-20T08:59:23Z",
+          "tree_id": "43ccd0546326524d51397345d973be57899595ed",
+          "url": "https://github.com/rolldown/rolldown/commit/289fe8b371b1559e5215b2fb88a531d8846b12b9"
+        },
+        "date": 1716196052307,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "343.44",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "581.97",
             "unit": "ms / ops"
           }
         ]
