@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1716145424109,
+  "lastUpdate": 1716178589514,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -9137,6 +9137,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "540.16",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "66500121+ErKeLost@users.noreply.github.com",
+            "name": "ADNY",
+            "username": "ErKeLost"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6b0bbe7fdaa0f117de80245ceca35d6b5b3b2adb",
+          "message": "fix: typo (#1175)",
+          "timestamp": "2024-05-20T04:06:45Z",
+          "tree_id": "d419ed9c6934b3d66dab48e65e68f7a3207f2bee",
+          "url": "https://github.com/rolldown/rolldown/commit/6b0bbe7fdaa0f117de80245ceca35d6b5b3b2adb"
+        },
+        "date": 1716178589511,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "304.70",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "546.93",
             "unit": "ms / ops"
           }
         ]
