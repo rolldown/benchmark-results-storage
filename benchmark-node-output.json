@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1716285508076,
+  "lastUpdate": 1716288793835,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -9375,6 +9375,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "553.41",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "14a37a0322d82101199a1e349b96b4dd5d48f268",
+          "message": "chore(rust): rename `pretty_path` to `debug_resource_id` (#1187)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-05-21T18:50:23+08:00",
+          "tree_id": "c2c1812c85838e20d714c5fcc5b735dae50207b9",
+          "url": "https://github.com/rolldown/rolldown/commit/14a37a0322d82101199a1e349b96b4dd5d48f268"
+        },
+        "date": 1716288793832,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "317.08",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "547.86",
             "unit": "ms / ops"
           }
         ]
