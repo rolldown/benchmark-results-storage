@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1716310757177,
+  "lastUpdate": 1716311263712,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -9477,6 +9477,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "555.22",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3e29eaceec1cd8e2530ffba97a2455665bded89f",
+          "message": "chore(oxlint): enable jsdoc plugin (#1192)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-05-22T01:05:01+08:00",
+          "tree_id": "6e20df4fdb3cf94d3bb5468914248a426ef1812f",
+          "url": "https://github.com/rolldown/rolldown/commit/3e29eaceec1cd8e2530ffba97a2455665bded89f"
+        },
+        "date": 1716311263708,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "302.07",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "542.87",
             "unit": "ms / ops"
           }
         ]
