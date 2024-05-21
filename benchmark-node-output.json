@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1716288793835,
+  "lastUpdate": 1716288943206,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -9392,23 +9392,23 @@
             "username": "web-flow"
           },
           "distinct": true,
-          "id": "14a37a0322d82101199a1e349b96b4dd5d48f268",
-          "message": "chore(rust): rename `pretty_path` to `debug_resource_id` (#1187)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
-          "timestamp": "2024-05-21T18:50:23+08:00",
-          "tree_id": "c2c1812c85838e20d714c5fcc5b735dae50207b9",
-          "url": "https://github.com/rolldown/rolldown/commit/14a37a0322d82101199a1e349b96b4dd5d48f268"
+          "id": "711b9ff73e14ca5ad0b375acd893e8701ed7a5d5",
+          "message": "chore(test/rust): prefer `camelCase` in `_test.shcema.json` (#1188)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-05-21T18:52:38+08:00",
+          "tree_id": "9b58c1c699d497883be337ac274c519e0f157431",
+          "url": "https://github.com/rolldown/rolldown/commit/711b9ff73e14ca5ad0b375acd893e8701ed7a5d5"
         },
-        "date": 1716288793832,
+        "date": 1716288943203,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x (default)",
-            "value": "317.08",
+            "value": "314.02",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap (default)",
-            "value": "547.86",
+            "value": "550.42",
             "unit": "ms / ops"
           }
         ]
