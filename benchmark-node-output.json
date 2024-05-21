@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1716289264900,
+  "lastUpdate": 1716310757177,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -9443,6 +9443,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "563.91",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "sling1994@live.com",
+            "name": "王子凌",
+            "username": "wangziling"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "776aff053a4d175dc8367a4d17e9411c00a04068",
+          "message": "chore(rust): use more semantic method about judging the file path exists. (#1191)",
+          "timestamp": "2024-05-21T16:39:55Z",
+          "tree_id": "c25637168f06184e2b795658997a68cff3fc39ad",
+          "url": "https://github.com/rolldown/rolldown/commit/776aff053a4d175dc8367a4d17e9411c00a04068"
+        },
+        "date": 1716310757174,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "311.31",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "555.22",
             "unit": "ms / ops"
           }
         ]
