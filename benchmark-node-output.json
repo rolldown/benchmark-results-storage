@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1716311625864,
+  "lastUpdate": 1716311855749,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -9579,6 +9579,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "559.80",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d242f3ee23e7641d1721e7756ceb2a1a514250f8",
+          "message": "fix: rewrite dynamic import to correct entry chunk (#1195)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-05-22T01:10:30+08:00",
+          "tree_id": "47334302a316870200e7741ae55b4ca2ae8ce377",
+          "url": "https://github.com/rolldown/rolldown/commit/d242f3ee23e7641d1721e7756ceb2a1a514250f8"
+        },
+        "date": 1716311855745,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "332.73",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "634.85",
             "unit": "ms / ops"
           }
         ]
