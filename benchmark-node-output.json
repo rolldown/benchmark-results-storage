@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1716311855749,
+  "lastUpdate": 1716311985551,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -9596,23 +9596,23 @@
             "username": "web-flow"
           },
           "distinct": true,
-          "id": "d242f3ee23e7641d1721e7756ceb2a1a514250f8",
-          "message": "fix: rewrite dynamic import to correct entry chunk (#1195)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
-          "timestamp": "2024-05-22T01:10:30+08:00",
-          "tree_id": "47334302a316870200e7741ae55b4ca2ae8ce377",
-          "url": "https://github.com/rolldown/rolldown/commit/d242f3ee23e7641d1721e7756ceb2a1a514250f8"
+          "id": "2c0303254c0cafd0495428383f64df7d0dbeca0e",
+          "message": "feat: support using unicode as import/export name (#1196)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-05-22T01:12:49+08:00",
+          "tree_id": "28f243f2c522a25e842e966b3c8f9d72335394e4",
+          "url": "https://github.com/rolldown/rolldown/commit/2c0303254c0cafd0495428383f64df7d0dbeca0e"
         },
-        "date": 1716311855745,
+        "date": 1716311985548,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x (default)",
-            "value": "332.73",
+            "value": "308.38",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap (default)",
-            "value": "634.85",
+            "value": "542.97",
             "unit": "ms / ops"
           }
         ]
