@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1716344037898,
+  "lastUpdate": 1716359021377,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -9647,6 +9647,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "593.26",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d2fb818570933ef8e29a03dfb1b95b7356b36d4f",
+          "message": "chore(deps): update dependency rollup to v4.18.0 (#1199)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2024-05-22T06:13:05Z",
+          "tree_id": "b5badf0bcd67f20ee62cd73675f9c51818cad00e",
+          "url": "https://github.com/rolldown/rolldown/commit/d2fb818570933ef8e29a03dfb1b95b7356b36d4f"
+        },
+        "date": 1716359021374,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "332.12",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "552.63",
             "unit": "ms / ops"
           }
         ]
