@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1716372177502,
+  "lastUpdate": 1716372377493,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -9817,6 +9817,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "552.20",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c9acb392a3c1c74d92c6230c4136ab61d0bc69a8",
+          "message": "fix(rust): cacluate order of import chunks by global module execution order (#1206)\n\n<!-- Thank you for contributing! -->\r\n\r\n### Description\r\n\r\nThis PR make the chunk order is more predictable. Chunk will be executed first if it contains the module that executed first. \r\n\r\nThe old order has a bug. Solving that bug need to calculate every module's full dependencies of each chunk. It's not worth it.\r\n\r\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-05-22T18:01:34+08:00",
+          "tree_id": "de1ec6050b8570b601573e7db623ec77aa352373",
+          "url": "https://github.com/rolldown/rolldown/commit/c9acb392a3c1c74d92c6230c4136ab61d0bc69a8"
+        },
+        "date": 1716372377489,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "317.63",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "567.66",
             "unit": "ms / ops"
           }
         ]
