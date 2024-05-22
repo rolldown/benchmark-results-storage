@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1716372377493,
+  "lastUpdate": 1716373061275,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -9851,6 +9851,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "567.66",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7c3ab2f42752dfedc97fbac1306f39c45157d9b4",
+          "message": "ci(publish): pnpm publish needs a version even on private pacakges (#1209)",
+          "timestamp": "2024-05-22T18:14:50+08:00",
+          "tree_id": "ca2bcbfadc8d268110355b26ebb974859c9e5d64",
+          "url": "https://github.com/rolldown/rolldown/commit/7c3ab2f42752dfedc97fbac1306f39c45157d9b4"
+        },
+        "date": 1716373061272,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "303.62",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "603.91",
             "unit": "ms / ops"
           }
         ]
