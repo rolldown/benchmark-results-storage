@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1716373061275,
+  "lastUpdate": 1716374038204,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -9885,6 +9885,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "603.91",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "boshenc@gmail.com",
+            "name": "Boshen",
+            "username": "Boshen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fea76c986e8e7be7696117ff0dc80cf8da4af8ec",
+          "message": "feat: bump oxc to v0.13.1 (#1208)\n\nCo-authored-by: Yunfei <i.heyunfei@gmail.com>",
+          "timestamp": "2024-05-22T10:25:08Z",
+          "tree_id": "54e2a0e6319dace71b78a9a3da7d13b0fb9242a0",
+          "url": "https://github.com/rolldown/rolldown/commit/fea76c986e8e7be7696117ff0dc80cf8da4af8ec"
+        },
+        "date": 1716374038201,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "307.44",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "540.49",
             "unit": "ms / ops"
           }
         ]
