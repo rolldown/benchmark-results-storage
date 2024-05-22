@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1716359021377,
+  "lastUpdate": 1716360701869,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -9681,6 +9681,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "552.63",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f4740e94282b6b9165f01253d56419748d6b98e3",
+          "message": "chore(node): remove the `.js` extension in import paths (#1197)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-05-22T14:48:24+08:00",
+          "tree_id": "1429211440c9feb48511fb29be2d9df81bc30a23",
+          "url": "https://github.com/rolldown/rolldown/commit/f4740e94282b6b9165f01253d56419748d6b98e3"
+        },
+        "date": 1716360701866,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "430.90",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "662.40",
             "unit": "ms / ops"
           }
         ]
