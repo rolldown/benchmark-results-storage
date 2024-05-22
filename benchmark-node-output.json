@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1716311985551,
+  "lastUpdate": 1716344037898,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -9613,6 +9613,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "542.97",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6a520620b5635f15e354001ff07a645dd3087437",
+          "message": "chore(deps): update dependency glob to ^10.3.15 (#1198)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2024-05-22T02:05:10Z",
+          "tree_id": "a32b88c38f8d9f61628aa2134c317b7da42fdb94",
+          "url": "https://github.com/rolldown/rolldown/commit/6a520620b5635f15e354001ff07a645dd3087437"
+        },
+        "date": 1716344037895,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "307.96",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "593.26",
             "unit": "ms / ops"
           }
         ]
