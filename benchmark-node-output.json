@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1716360772886,
+  "lastUpdate": 1716362476070,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -9715,6 +9715,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "547.07",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e13d865f8ff44dea546eda8e85eac4b467a5fd9d",
+          "message": "feat(node/rolldown): support cjs output (#1202)",
+          "timestamp": "2024-05-22T15:18:35+08:00",
+          "tree_id": "d0b43f99ae19ab6234bf38120d7eb030696c8e45",
+          "url": "https://github.com/rolldown/rolldown/commit/e13d865f8ff44dea546eda8e85eac4b467a5fd9d"
+        },
+        "date": 1716362476067,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "307.77",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "595.85",
             "unit": "ms / ops"
           }
         ]
