@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1716360701869,
+  "lastUpdate": 1716360772886,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -9698,23 +9698,23 @@
             "username": "web-flow"
           },
           "distinct": true,
-          "id": "f4740e94282b6b9165f01253d56419748d6b98e3",
-          "message": "chore(node): remove the `.js` extension in import paths (#1197)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
-          "timestamp": "2024-05-22T14:48:24+08:00",
-          "tree_id": "1429211440c9feb48511fb29be2d9df81bc30a23",
-          "url": "https://github.com/rolldown/rolldown/commit/f4740e94282b6b9165f01253d56419748d6b98e3"
+          "id": "f6bb893115c1cdfb4ef8f27164be6809b5e07d8d",
+          "message": "chore(oxlint): enable prefer-node-protocol (#1200)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-05-22T14:49:51+08:00",
+          "tree_id": "f1da5b0d69212f73a1387d2fdd6c656b4de4dea4",
+          "url": "https://github.com/rolldown/rolldown/commit/f6bb893115c1cdfb4ef8f27164be6809b5e07d8d"
         },
-        "date": 1716360701866,
+        "date": 1716360772883,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x (default)",
-            "value": "430.90",
+            "value": "313.37",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap (default)",
-            "value": "662.40",
+            "value": "547.07",
             "unit": "ms / ops"
           }
         ]
