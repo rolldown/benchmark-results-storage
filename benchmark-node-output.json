@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1716374038204,
+  "lastUpdate": 1716382263166,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -9919,6 +9919,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "540.49",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4fb51165d8ca471c6b21b87ae86d4f464acf5121",
+          "message": "feat: using onLog option export rust side warnings (#1204)",
+          "timestamp": "2024-05-22T12:41:22Z",
+          "tree_id": "a56065814325a610a35f8a68092f125db6a082fb",
+          "url": "https://github.com/rolldown/rolldown/commit/4fb51165d8ca471c6b21b87ae86d4f464acf5121"
+        },
+        "date": 1716382263163,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "305.16",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "541.96",
             "unit": "ms / ops"
           }
         ]
