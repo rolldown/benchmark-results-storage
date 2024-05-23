@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1716399223795,
+  "lastUpdate": 1716436523557,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -10055,6 +10055,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "533.52",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "470137ca22f439f512e0837abed60530ed4788b5",
+          "message": "ci: 🎡 replace rust benchmark result instead of append (#1220)",
+          "timestamp": "2024-05-23T03:47:05Z",
+          "tree_id": "61eb1883af221199cfea32229a56b1dc64ef3b6b",
+          "url": "https://github.com/rolldown/rolldown/commit/470137ca22f439f512e0837abed60530ed4788b5"
+        },
+        "date": 1716436523554,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "355.68",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "534.74",
             "unit": "ms / ops"
           }
         ]
