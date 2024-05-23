@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1716442176209,
+  "lastUpdate": 1716443949550,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -10123,6 +10123,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "533.47",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "boshenc@gmail.com",
+            "name": "Boshen",
+            "username": "Boshen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d1a40861b2632acd386c6cb48330df8bc593c0f5",
+          "message": "chore: use .oxlintrc config file (#1222)",
+          "timestamp": "2024-05-23T05:51:13Z",
+          "tree_id": "ae74a7a5dd0a97845774961ef7dac31d0c591e07",
+          "url": "https://github.com/rolldown/rolldown/commit/d1a40861b2632acd386c6cb48330df8bc593c0f5"
+        },
+        "date": 1716443949546,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "310.74",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "596.65",
             "unit": "ms / ops"
           }
         ]
