@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1716662986588,
+  "lastUpdate": 1716665454767,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -10259,6 +10259,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "542.39",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9e6437d34e24c0c8f913009ebbb1b25fe4d9a3ce",
+          "message": "refactor(rust): expose `trivias` in `OxcAst` more easily (#1233)",
+          "timestamp": "2024-05-26T03:28:11+08:00",
+          "tree_id": "dfb849bf4fe68d03f21363ed01942a6992c24e8e",
+          "url": "https://github.com/rolldown/rolldown/commit/9e6437d34e24c0c8f913009ebbb1b25fe4d9a3ce"
+        },
+        "date": 1716665454764,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "307.41",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "548.21",
             "unit": "ms / ops"
           }
         ]
