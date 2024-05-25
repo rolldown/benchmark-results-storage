@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1716668816630,
+  "lastUpdate": 1716675084408,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -10327,6 +10327,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "552.51",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0e115293097f4e0b6c01d1d89aae5d520207b20c",
+          "message": "chore(rust): make `side_effect_detector` a standalone folder (#1236)",
+          "timestamp": "2024-05-26T06:08:31+08:00",
+          "tree_id": "ed97ca66e8cc552432d6fe5a357a304e640a5a5d",
+          "url": "https://github.com/rolldown/rolldown/commit/0e115293097f4e0b6c01d1d89aae5d520207b20c"
+        },
+        "date": 1716675084406,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "306.15",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "540.41",
             "unit": "ms / ops"
           }
         ]
