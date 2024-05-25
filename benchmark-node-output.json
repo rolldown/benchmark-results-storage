@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1716443949550,
+  "lastUpdate": 1716629370794,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -10157,6 +10157,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "596.65",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d7d2284b15d9b2f9e622e9c2922cfeca32c83e92",
+          "message": "feat(tree_shaking):  pure annotation (#1225)",
+          "timestamp": "2024-05-25T09:20:50Z",
+          "tree_id": "829bde27d8ea3ec90c3b8ed885253b6827caddf9",
+          "url": "https://github.com/rolldown/rolldown/commit/d7d2284b15d9b2f9e622e9c2922cfeca32c83e92"
+        },
+        "date": 1716629370792,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "332.04",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "541.09",
             "unit": "ms / ops"
           }
         ]
