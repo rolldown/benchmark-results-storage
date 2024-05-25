@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1716646445702,
+  "lastUpdate": 1716662986588,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -10225,6 +10225,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "538.91",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "jiegithub@gmail.com",
+            "name": "hj",
+            "username": "Cecil0o0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "56320abcb82e19bee5a68ca38e019ee845f4fcad",
+          "message": "fix(node/rolldown): CIRCULAR_DEPENDENCY warnings. (#1232)",
+          "timestamp": "2024-05-25T18:40:59Z",
+          "tree_id": "f6eab95efefb5191c7437a47bde32aa83b3447cc",
+          "url": "https://github.com/rolldown/rolldown/commit/56320abcb82e19bee5a68ca38e019ee845f4fcad"
+        },
+        "date": 1716662986585,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "321.12",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "542.39",
             "unit": "ms / ops"
           }
         ]
