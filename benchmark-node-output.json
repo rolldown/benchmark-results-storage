@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1716707667772,
+  "lastUpdate": 1716708171204,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -10429,6 +10429,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "599.34",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "67f908accb0e7e07dcf55df364594ed7226eb90c",
+          "message": "refactor(rust): clarify the priority of side effect from different source (#1237)",
+          "timestamp": "2024-05-26T07:11:57Z",
+          "tree_id": "f04580a4959dc3302e0ba24ac57509347af30c88",
+          "url": "https://github.com/rolldown/rolldown/commit/67f908accb0e7e07dcf55df364594ed7226eb90c"
+        },
+        "date": 1716708171201,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "325.55",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "563.27",
             "unit": "ms / ops"
           }
         ]
