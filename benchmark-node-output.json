@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1716749136391,
+  "lastUpdate": 1716751002851,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -10565,6 +10565,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "541.08",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f4bd84f90a8b17b9d96f6b9e06f31839b66fee87",
+          "message": "fix(deps): update patch dependencies (#1246)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2024-05-26T19:08:35Z",
+          "tree_id": "ee3a617844cd9687df805567750b49da0713e435",
+          "url": "https://github.com/rolldown/rolldown/commit/f4bd84f90a8b17b9d96f6b9e06f31839b66fee87"
+        },
+        "date": 1716751002848,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "372.37",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "542.59",
             "unit": "ms / ops"
           }
         ]
