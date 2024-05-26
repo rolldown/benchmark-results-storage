@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1716748630202,
+  "lastUpdate": 1716749136391,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -10531,6 +10531,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "557.16",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei",
+            "username": "hyf0"
+          },
+          "distinct": true,
+          "id": "3134b77a03474a44c59854d6031b90eecbd9eacc",
+          "message": "fix(rust): remove not existed member method",
+          "timestamp": "2024-05-27T02:42:55+08:00",
+          "tree_id": "ff89eb6da6e5a299809c477f1b958e9e6aaa0887",
+          "url": "https://github.com/rolldown/rolldown/commit/3134b77a03474a44c59854d6031b90eecbd9eacc"
+        },
+        "date": 1716749136388,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "345.99",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "541.08",
             "unit": "ms / ops"
           }
         ]
