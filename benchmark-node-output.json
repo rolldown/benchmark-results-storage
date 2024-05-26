@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1716695853958,
+  "lastUpdate": 1716707667772,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -10395,6 +10395,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "546.00",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ce50d0c34c467e9e31f9445533edf48e5a04e6ab",
+          "message": "refactor(rust/tree_shaking): simplify detection on pure annotations (#1234)",
+          "timestamp": "2024-05-26T07:06:22Z",
+          "tree_id": "e567439d835ab5425a0eb6d05dfcf0a26f6f71a4",
+          "url": "https://github.com/rolldown/rolldown/commit/ce50d0c34c467e9e31f9445533edf48e5a04e6ab"
+        },
+        "date": 1716707667769,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "312.45",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "599.34",
             "unit": "ms / ops"
           }
         ]
