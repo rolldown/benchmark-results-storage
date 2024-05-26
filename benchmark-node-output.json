@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1716731024001,
+  "lastUpdate": 1716748630202,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -10497,6 +10497,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "550.89",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "33f0a49c9afa57694cdb8d3b7576fb3fe5ad79f2",
+          "message": "feat(rust/bundler_options): add output format `app` (#1242)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-05-27T02:34:23+08:00",
+          "tree_id": "ff5368483b8a5810cbae6d9d928bbd3e9eafc2cc",
+          "url": "https://github.com/rolldown/rolldown/commit/33f0a49c9afa57694cdb8d3b7576fb3fe5ad79f2"
+        },
+        "date": 1716748630199,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "372.72",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "557.16",
             "unit": "ms / ops"
           }
         ]
