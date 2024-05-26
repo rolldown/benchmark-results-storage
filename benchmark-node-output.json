@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1716675084408,
+  "lastUpdate": 1716695853958,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -10361,6 +10361,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "540.41",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c6939e52546e7d7c6bf5dfdd2451c68a8cad1752",
+          "message": "feat: support hook module side effects (#1229)",
+          "timestamp": "2024-05-26T03:47:50Z",
+          "tree_id": "5ada0adc3c459a34ded5c10c906b1fa625392d28",
+          "url": "https://github.com/rolldown/rolldown/commit/c6939e52546e7d7c6bf5dfdd2451c68a8cad1752"
+        },
+        "date": 1716695853955,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "331.81",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "546.00",
             "unit": "ms / ops"
           }
         ]
