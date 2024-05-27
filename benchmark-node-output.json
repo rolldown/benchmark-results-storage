@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1716825369830,
+  "lastUpdate": 1716834212417,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -10735,6 +10735,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "540.56",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "cff5b94e5bed16f63d632a4e076f1cbb48065528",
+          "message": "chore: bump oxc-resolver to 1.8.0 (#1254)",
+          "timestamp": "2024-05-28T02:20:42+08:00",
+          "tree_id": "14678f17bcca3b0d2f9b89dac41d3af28d300ac5",
+          "url": "https://github.com/rolldown/rolldown/commit/cff5b94e5bed16f63d632a4e076f1cbb48065528"
+        },
+        "date": 1716834212414,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "321.61",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "534.88",
             "unit": "ms / ops"
           }
         ]
