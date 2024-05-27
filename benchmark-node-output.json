@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1716834212417,
+  "lastUpdate": 1716834619588,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -10769,6 +10769,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "534.88",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4ab44ed5381da37f2bbd9583104bbcd818d6f61a",
+          "message": "fix(deps): update dependency zx to v8.1.2 (#1255)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2024-05-27T18:19:34Z",
+          "tree_id": "964acf152d2136d3306b3180a8ca9c33ec8353e9",
+          "url": "https://github.com/rolldown/rolldown/commit/4ab44ed5381da37f2bbd9583104bbcd818d6f61a"
+        },
+        "date": 1716834619585,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "314.02",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "548.38",
             "unit": "ms / ops"
           }
         ]
