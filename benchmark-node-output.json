@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1716804220598,
+  "lastUpdate": 1716825369830,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -10701,6 +10701,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "532.81",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4667d32313cc8da5e48420c2199c1a15d2629271",
+          "message": "fix(rust/resolve): should point to the correct resolved external module with alias (#1253)",
+          "timestamp": "2024-05-27T23:53:31+08:00",
+          "tree_id": "dd0bd19489fb2be8768dd2a1006fb946d40e21b7",
+          "url": "https://github.com/rolldown/rolldown/commit/4667d32313cc8da5e48420c2199c1a15d2629271"
+        },
+        "date": 1716825369827,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "360.86",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "540.56",
             "unit": "ms / ops"
           }
         ]
