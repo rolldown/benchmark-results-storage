@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1716892192954,
+  "lastUpdate": 1716894775842,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -10837,6 +10837,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "548.84",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4520a81280571248fedeea33382d83cf2cb3336a",
+          "message": "feat: support augmentChunkHash hook (#1258)",
+          "timestamp": "2024-05-28T11:05:11Z",
+          "tree_id": "93056a4a86fb8466bedc75be37344b8b7b361875",
+          "url": "https://github.com/rolldown/rolldown/commit/4520a81280571248fedeea33382d83cf2cb3336a"
+        },
+        "date": 1716894775839,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "304.93",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "539.15",
             "unit": "ms / ops"
           }
         ]
