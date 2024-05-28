@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1716911657405,
+  "lastUpdate": 1716927378108,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -10905,6 +10905,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "564.83",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5b147e545ffec9b4e40934548430365e16ac548c",
+          "message": "chore(deps): update dependency vite to ^5.2.11 (#1259)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2024-05-28T20:07:43Z",
+          "tree_id": "b2a8b191cbee4607b358b8410cbd878fac01b976",
+          "url": "https://github.com/rolldown/rolldown/commit/5b147e545ffec9b4e40934548430365e16ac548c"
+        },
+        "date": 1716927378105,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "405.34",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "563.39",
             "unit": "ms / ops"
           }
         ]
