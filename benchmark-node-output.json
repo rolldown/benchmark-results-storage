@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1716894775842,
+  "lastUpdate": 1716911657405,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -10871,6 +10871,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "539.15",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b98ba42ac210dd9a96db8313f32572cd4f25a2a3",
+          "message": "chore(deps): update dependency oxlint to v0.4.2 (#1260)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2024-05-28T23:51:26+08:00",
+          "tree_id": "116ff03276f86d2ee3cdf24b8dd2554209b89c2e",
+          "url": "https://github.com/rolldown/rolldown/commit/b98ba42ac210dd9a96db8313f32572cd4f25a2a3"
+        },
+        "date": 1716911657402,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "325.53",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "564.83",
             "unit": "ms / ops"
           }
         ]
