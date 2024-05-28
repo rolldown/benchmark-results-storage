@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1716834619588,
+  "lastUpdate": 1716892192954,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -10803,6 +10803,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "548.38",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "00564afb33e654dee768eeb7031396f4a709cca0",
+          "message": "fix(deps): update minor dependencies (#1257)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>\nCo-authored-by: Yunfei <i.heyunfei@gmail.com>",
+          "timestamp": "2024-05-28T10:21:51Z",
+          "tree_id": "03adf2a536809e553055421a43b42f441d54813c",
+          "url": "https://github.com/rolldown/rolldown/commit/00564afb33e654dee768eeb7031396f4a709cca0"
+        },
+        "date": 1716892192951,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "309.26",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "548.84",
             "unit": "ms / ops"
           }
         ]
