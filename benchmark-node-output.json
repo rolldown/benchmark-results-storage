@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1717001359523,
+  "lastUpdate": 1717024837664,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -11109,6 +11109,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "546.34",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4532ae94797a5a4d6bb369b2f5e5d3c8eac29979",
+          "message": "chore(deps): update dependency @types/node to v20.12.13 (#1282)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2024-05-29T23:09:42Z",
+          "tree_id": "95bd9083799ba4169699629e2556afa1095f2fb3",
+          "url": "https://github.com/rolldown/rolldown/commit/4532ae94797a5a4d6bb369b2f5e5d3c8eac29979"
+        },
+        "date": 1717024837661,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "310.14",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "546.46",
             "unit": "ms / ops"
           }
         ]
