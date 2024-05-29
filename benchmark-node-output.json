@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1716978699673,
+  "lastUpdate": 1717001359523,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -11075,6 +11075,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "547.15",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "804df07c57a5d9be1b299b9facd0fdff132c55a3",
+          "message": "feat(rust/options): add `BundlerOptions#loaders` (#1280)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-05-30T00:46:36+08:00",
+          "tree_id": "0038ecee9d723e10c311ce247f134d1b97c35bad",
+          "url": "https://github.com/rolldown/rolldown/commit/804df07c57a5d9be1b299b9facd0fdff132c55a3"
+        },
+        "date": 1717001359520,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "314.00",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "546.34",
             "unit": "ms / ops"
           }
         ]
