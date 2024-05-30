@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1717024837664,
+  "lastUpdate": 1717048512647,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -11143,6 +11143,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "546.46",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "79fbbd4e5357335ea07f2f63041c47e17dd77e6b",
+          "message": "feat: remove `use strict` while emitting esm output (#1283)",
+          "timestamp": "2024-05-30T13:52:31+08:00",
+          "tree_id": "ba19305a7cc42b62c78971f78c7b0afd9dcfe00e",
+          "url": "https://github.com/rolldown/rolldown/commit/79fbbd4e5357335ea07f2f63041c47e17dd77e6b"
+        },
+        "date": 1717048512644,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "309.67",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "558.86",
             "unit": "ms / ops"
           }
         ]
