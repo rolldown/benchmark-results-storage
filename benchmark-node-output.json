@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1717048610812,
+  "lastUpdate": 1717054118684,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -11177,6 +11177,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "565.22",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f1c49e9d181efae6c36162bf216cafc216ed7df2",
+          "message": "chore: add onwarn test (#1288)",
+          "timestamp": "2024-05-30T07:19:32Z",
+          "tree_id": "7f8199a4d97b1915a3e647cd727ceb659ca65495",
+          "url": "https://github.com/rolldown/rolldown/commit/f1c49e9d181efae6c36162bf216cafc216ed7df2"
+        },
+        "date": 1717054118681,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "309.97",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "594.59",
             "unit": "ms / ops"
           }
         ]
