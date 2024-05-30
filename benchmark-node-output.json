@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1717054118684,
+  "lastUpdate": 1717070586706,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -11211,6 +11211,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "594.59",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f1c2b6ea3544a3511d703011603b039d5a6db9b7",
+          "message": "chore(deps): update pnpm to v9.1.4 (#1290)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2024-05-30T11:54:26Z",
+          "tree_id": "acb43e8860aff831c89b1ec52feaa37445331464",
+          "url": "https://github.com/rolldown/rolldown/commit/f1c2b6ea3544a3511d703011603b039d5a6db9b7"
+        },
+        "date": 1717070586703,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "358.53",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "544.85",
             "unit": "ms / ops"
           }
         ]
