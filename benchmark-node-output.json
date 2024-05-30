@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1717048512647,
+  "lastUpdate": 1717048610812,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -11160,23 +11160,23 @@
             "username": "web-flow"
           },
           "distinct": true,
-          "id": "79fbbd4e5357335ea07f2f63041c47e17dd77e6b",
-          "message": "feat: remove `use strict` while emitting esm output (#1283)",
-          "timestamp": "2024-05-30T13:52:31+08:00",
-          "tree_id": "ba19305a7cc42b62c78971f78c7b0afd9dcfe00e",
-          "url": "https://github.com/rolldown/rolldown/commit/79fbbd4e5357335ea07f2f63041c47e17dd77e6b"
+          "id": "bf3f86e09058fc34ab281fc232ea9fd031d2e07d",
+          "message": "feat(cjs): add `\"use strict\"` if possible (#1284)",
+          "timestamp": "2024-05-30T13:52:59+08:00",
+          "tree_id": "5b760dc0167a01ab339327f639a68b5d5d308f3c",
+          "url": "https://github.com/rolldown/rolldown/commit/bf3f86e09058fc34ab281fc232ea9fd031d2e07d"
         },
-        "date": 1717048512644,
+        "date": 1717048610808,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x (default)",
-            "value": "309.67",
+            "value": "323.88",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap (default)",
-            "value": "558.86",
+            "value": "565.22",
             "unit": "ms / ops"
           }
         ]
