@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1717070586706,
+  "lastUpdate": 1717111293127,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -11245,6 +11245,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "544.85",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d4dce88160b6b58517498fd3b2721405fdd029e9",
+          "message": "chore(deps): update rust crate tokio to v1.38.0 (#1291)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2024-05-30T23:11:53Z",
+          "tree_id": "a5f9dd6a58f76a8e12f963f71075f0a25520f8af",
+          "url": "https://github.com/rolldown/rolldown/commit/d4dce88160b6b58517498fd3b2721405fdd029e9"
+        },
+        "date": 1717111293123,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "335.35",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "540.21",
             "unit": "ms / ops"
           }
         ]
