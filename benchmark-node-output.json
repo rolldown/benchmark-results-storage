@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1717173557133,
+  "lastUpdate": 1717174647839,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -11449,6 +11449,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "535.46",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a5b22df98cddd4452487a3b3db48fd59d2d9afe5",
+          "message": "chore(tree-shaking):  tweak determine module side effects (#1305)",
+          "timestamp": "2024-05-31T16:49:24Z",
+          "tree_id": "2b2658e8ff8d0b335ada64150cfff071f4f8e0a2",
+          "url": "https://github.com/rolldown/rolldown/commit/a5b22df98cddd4452487a3b3db48fd59d2d9afe5"
+        },
+        "date": 1717174647834,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "339.34",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "611.07",
             "unit": "ms / ops"
           }
         ]
