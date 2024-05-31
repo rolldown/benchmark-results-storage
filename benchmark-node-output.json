@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1717111293127,
+  "lastUpdate": 1717159124637,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -11279,6 +11279,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "540.21",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e88c85d7cf6b60ee04a9a901c8a7c033c4d7ad5d",
+          "message": "refactor(crates/rolldown): improve structure of `parse_to_ast` (#1294)",
+          "timestamp": "2024-05-31T20:36:04+08:00",
+          "tree_id": "c10f2656a01ebd9b9e6ac536233628d3a2b97604",
+          "url": "https://github.com/rolldown/rolldown/commit/e88c85d7cf6b60ee04a9a901c8a7c033c4d7ad5d"
+        },
+        "date": 1717159124633,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "316.36",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "549.52",
             "unit": "ms / ops"
           }
         ]
