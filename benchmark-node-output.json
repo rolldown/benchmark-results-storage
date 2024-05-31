@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1717178200734,
+  "lastUpdate": 1717178422910,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -11517,6 +11517,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "562.32",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9ce6e90c770c4f52a2d4208947bf81de3d2d700a",
+          "message": "refactor(crates/rolldown): rename `Finalizer` to `ScopeHoistingFinalizer` (#1307)",
+          "timestamp": "2024-06-01T01:57:43+08:00",
+          "tree_id": "aa9b3af2b275f245c2445a083d754804a157c710",
+          "url": "https://github.com/rolldown/rolldown/commit/9ce6e90c770c4f52a2d4208947bf81de3d2d700a"
+        },
+        "date": 1717178422907,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "330.47",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "543.02",
             "unit": "ms / ops"
           }
         ]
