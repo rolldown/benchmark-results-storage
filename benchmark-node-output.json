@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1717170531312,
+  "lastUpdate": 1717173557133,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -11415,6 +11415,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "540.24",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "283a58c1fdb5db1bb98458abd9c7570124c8c776",
+          "message": "feat(plugin): support return `sideEffect: 'no-treeshake'` (#1293)\n\nCo-authored-by: Yunfei <i.heyunfei@gmail.com>",
+          "timestamp": "2024-05-31T16:28:54Z",
+          "tree_id": "bf62904078e16a3a5f8ed33216f4ce69f361609b",
+          "url": "https://github.com/rolldown/rolldown/commit/283a58c1fdb5db1bb98458abd9c7570124c8c776"
+        },
+        "date": 1717173557130,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "314.33",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "535.46",
             "unit": "ms / ops"
           }
         ]
