@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1717185161608,
+  "lastUpdate": 1717214559620,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -11585,6 +11585,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "598.65",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5be6ffb1b157780879dfcf4a96d0db15c3861ba0",
+          "message": "feat(rust): deny invalid parsing code (#1310)",
+          "timestamp": "2024-06-01T11:59:59+08:00",
+          "tree_id": "202fe2661b96f6b4e68050aeba562d4bbfae5145",
+          "url": "https://github.com/rolldown/rolldown/commit/5be6ffb1b157780879dfcf4a96d0db15c3861ba0"
+        },
+        "date": 1717214559617,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "322.99",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "555.85",
             "unit": "ms / ops"
           }
         ]
