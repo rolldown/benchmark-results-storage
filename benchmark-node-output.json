@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1717256894935,
+  "lastUpdate": 1717261250707,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -11891,6 +11891,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "545.91",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e306f1d5b201ccc36df65b0cddeeb0bd474dd36a",
+          "message": "chore(rust): improve naming (#1318)",
+          "timestamp": "2024-06-02T00:58:16+08:00",
+          "tree_id": "a21080089ee560cc3592f5196c2cd5934669fd11",
+          "url": "https://github.com/rolldown/rolldown/commit/e306f1d5b201ccc36df65b0cddeeb0bd474dd36a"
+        },
+        "date": 1717261250704,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "302.13",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "534.07",
             "unit": "ms / ops"
           }
         ]
