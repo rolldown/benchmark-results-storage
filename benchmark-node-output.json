@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1717261250707,
+  "lastUpdate": 1717262087946,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -11925,6 +11925,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "534.07",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8e65fb055a4f02760ec6eb46481823e1a7c11623",
+          "message": "chore(deps): update rust crate criterion to 0.10.0 (#1319)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2024-06-01T17:05:42Z",
+          "tree_id": "52747a6d195ae84cd9adb8ba486101a1305301e6",
+          "url": "https://github.com/rolldown/rolldown/commit/8e65fb055a4f02760ec6eb46481823e1a7c11623"
+        },
+        "date": 1717262087943,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "311.70",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "548.28",
             "unit": "ms / ops"
           }
         ]
