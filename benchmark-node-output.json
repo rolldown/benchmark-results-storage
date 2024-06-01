@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1717262087946,
+  "lastUpdate": 1717265629202,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -11959,6 +11959,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "548.28",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "133e81c625429cadfd1cc912a514542e3e0f0c8f",
+          "message": "chore(rust): tweak util functions (#1321)",
+          "timestamp": "2024-06-02T02:10:59+08:00",
+          "tree_id": "c60b315e17dc860fe9a5d1e413ca9be92382c3c0",
+          "url": "https://github.com/rolldown/rolldown/commit/133e81c625429cadfd1cc912a514542e3e0f0c8f"
+        },
+        "date": 1717265629199,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "365.19",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "552.09",
             "unit": "ms / ops"
           }
         ]
