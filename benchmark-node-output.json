@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1717235781522,
+  "lastUpdate": 1717239783792,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -11789,6 +11789,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "539.68",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "46bd4aaa7adc6ebe7b23d67a295567943e462d8e",
+          "message": "chore(rust): clarify the concept of \"Module Namespace Object\" (#1314)",
+          "timestamp": "2024-06-01T19:00:01+08:00",
+          "tree_id": "ecb77b6fe8bf5ac183115984936380776a4123d9",
+          "url": "https://github.com/rolldown/rolldown/commit/46bd4aaa7adc6ebe7b23d67a295567943e462d8e"
+        },
+        "date": 1717239783789,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "359.31",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "589.59",
             "unit": "ms / ops"
           }
         ]
