@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1717215017431,
+  "lastUpdate": 1717224840000,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -11653,6 +11653,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "608.57",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "jiegithub@gmail.com",
+            "name": "hj",
+            "username": "Cecil0o0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b0f19c1f203a45f8a300028cbfe8cd38a77d95b4",
+          "message": "feat: support text loader (#1302)\n\nCo-authored-by: Yunfei <i.heyunfei@gmail.com>",
+          "timestamp": "2024-06-01T06:45:17Z",
+          "tree_id": "bf007c2a3d1aeaf8f16a9d6c0b0b96370d943faf",
+          "url": "https://github.com/rolldown/rolldown/commit/b0f19c1f203a45f8a300028cbfe8cd38a77d95b4"
+        },
+        "date": 1717224839997,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "381.81",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "546.52",
             "unit": "ms / ops"
           }
         ]
