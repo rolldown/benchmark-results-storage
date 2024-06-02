@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1717305683537,
+  "lastUpdate": 1717321726484,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -12027,6 +12027,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "539.08",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "afb2af58df2647564a2e0df5e08ae834e3dbcf81",
+          "message": "chore: 🤖 remove redundant package josn field (#1322)",
+          "timestamp": "2024-06-02T09:39:36Z",
+          "tree_id": "9c3550bce77f52fce1ce95eaa40f1a2057cfed5f",
+          "url": "https://github.com/rolldown/rolldown/commit/afb2af58df2647564a2e0df5e08ae834e3dbcf81"
+        },
+        "date": 1717321726481,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "322.04",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "549.05",
             "unit": "ms / ops"
           }
         ]
