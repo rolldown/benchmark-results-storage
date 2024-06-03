@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1717379707131,
+  "lastUpdate": 1717380218609,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -12129,6 +12129,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "569.80",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "sxzz@sxzz.moe",
+            "name": "Kevin Deng 三咲智子",
+            "username": "sxzz"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "41207f9881fc3dcbedbbb0dcc6e984b7e6ee687c",
+          "message": "ci: add missing type definitions (#1325)",
+          "timestamp": "2024-06-03T01:52:05Z",
+          "tree_id": "5dac07026d56dc44d4be2f62e8d5d0e68fb1215a",
+          "url": "https://github.com/rolldown/rolldown/commit/41207f9881fc3dcbedbbb0dcc6e984b7e6ee687c"
+        },
+        "date": 1717380218606,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "360.43",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "553.50",
             "unit": "ms / ops"
           }
         ]
