@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1717424353714,
+  "lastUpdate": 1717439118443,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -12197,6 +12197,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "595.31",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "28ae3de7ed8abb7f17abb3873a38062fca3bb1e0",
+          "message": "refactor(rust/render_normal_module): prevent leaking render details outside of `render_normal_module` (#1328)",
+          "timestamp": "2024-06-04T02:22:24+08:00",
+          "tree_id": "4484c2f276614c2785984565c99543da90705190",
+          "url": "https://github.com/rolldown/rolldown/commit/28ae3de7ed8abb7f17abb3873a38062fca3bb1e0"
+        },
+        "date": 1717439118440,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "308.30",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "611.23",
             "unit": "ms / ops"
           }
         ]
