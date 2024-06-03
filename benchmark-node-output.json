@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1717439816550,
+  "lastUpdate": 1717439858899,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -12282,23 +12282,57 @@
             "username": "web-flow"
           },
           "distinct": true,
-          "id": "14b7bfc9e75bc89100938da60c2d7debbd519461",
-          "message": "refactor(test): remove special test-only logic for snapshot testing (#1332)",
-          "timestamp": "2024-06-04T02:26:02+08:00",
-          "tree_id": "b8c23eeec382db9bfdedd5cdcf51272f8310a36e",
-          "url": "https://github.com/rolldown/rolldown/commit/14b7bfc9e75bc89100938da60c2d7debbd519461"
+          "id": "886a5f4132ebb18dc63432f49373f4baf101bcdd",
+          "message": "refactor(runtime_module): use `rolldown:runtime` as the resource id of runtime module instead of `\\0<runtime>` (#1331)",
+          "timestamp": "2024-06-04T02:25:05+08:00",
+          "tree_id": "10f2a865c333f81c3400660a379f349000ab0853",
+          "url": "https://github.com/rolldown/rolldown/commit/886a5f4132ebb18dc63432f49373f4baf101bcdd"
         },
-        "date": 1717439816546,
+        "date": 1717439636075,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x (default)",
-            "value": "358.21",
+            "value": "319.32",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap (default)",
-            "value": "576.66",
+            "value": "563.41",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8697c4b3847e8f9f6fc5421121a184e1dc8feccb",
+          "message": "test(snapshot): allow disable hiding runtime module output (#1333)",
+          "timestamp": "2024-06-04T02:26:29+08:00",
+          "tree_id": "9230452f004e92e1034ae50d5f55a95d44f0167f",
+          "url": "https://github.com/rolldown/rolldown/commit/8697c4b3847e8f9f6fc5421121a184e1dc8feccb"
+        },
+        "date": 1717439858896,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "318.34",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "618.24",
             "unit": "ms / ops"
           }
         ]
