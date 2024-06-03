@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1717439244820,
+  "lastUpdate": 1717439419997,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -12231,6 +12231,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "601.09",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ace105cf69965baec8ac1626d5b79e42b66574e3",
+          "message": "feat(output): make output folding-friendly using `#region` (#1330)",
+          "timestamp": "2024-06-04T02:24:19+08:00",
+          "tree_id": "fe4999c7c6743f6e30f10130e6f220463ce82520",
+          "url": "https://github.com/rolldown/rolldown/commit/ace105cf69965baec8ac1626d5b79e42b66574e3"
+        },
+        "date": 1717439419992,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "302.48",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "581.30",
             "unit": "ms / ops"
           }
         ]
