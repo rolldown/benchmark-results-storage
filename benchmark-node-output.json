@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1717461653572,
+  "lastUpdate": 1717474971817,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -12367,6 +12367,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "547.29",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "94b137111b28d92684725cc24dd2e944f25c0ab1",
+          "message": "fix(cjs): should render runtime module before generated imports (#1335)",
+          "timestamp": "2024-06-04T12:20:12+08:00",
+          "tree_id": "1625d041b445bf7c551be52ce548447ba2a41325",
+          "url": "https://github.com/rolldown/rolldown/commit/94b137111b28d92684725cc24dd2e944f25c0ab1"
+        },
+        "date": 1717474971814,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "338.71",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "543.86",
             "unit": "ms / ops"
           }
         ]
