@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1717494423905,
+  "lastUpdate": 1717508746702,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -12605,6 +12605,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "557.06",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "04639cfab3c7636d0e5b798a220f532c118b5af5",
+          "message": "chore(deps): update dependency type-fest to ^4.19.0 (#1346)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2024-06-04T13:36:55Z",
+          "tree_id": "497b1367294f43e8ca0fef344d462c80525c5d6e",
+          "url": "https://github.com/rolldown/rolldown/commit/04639cfab3c7636d0e5b798a220f532c118b5af5"
+        },
+        "date": 1717508746699,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "307.08",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "597.62",
             "unit": "ms / ops"
           }
         ]
