@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1717508746702,
+  "lastUpdate": 1717522110114,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -12639,6 +12639,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "597.62",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c6e1937f867f40a58c740ee4b3e472076bf4a79f",
+          "message": "fix(deps): update dependency @codemirror/view to v6.27.0 (#1347)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2024-06-04T17:18:30Z",
+          "tree_id": "f335fdaab0feb5051ff9db5f5be9b8770b5e22e2",
+          "url": "https://github.com/rolldown/rolldown/commit/c6e1937f867f40a58c740ee4b3e472076bf4a79f"
+        },
+        "date": 1717522110111,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "346.66",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "537.62",
             "unit": "ms / ops"
           }
         ]
