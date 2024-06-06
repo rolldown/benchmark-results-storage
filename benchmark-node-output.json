@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1717663492914,
+  "lastUpdate": 1717666885425,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -12979,6 +12979,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "540.98",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "cfc16e801f899359f16ea2c53ca2b94da168453a",
+          "message": "feat: support emit binary asset (#1359)",
+          "timestamp": "2024-06-06T09:32:25Z",
+          "tree_id": "8dc48c6887b03c4e9b9fcf879b2f1f1a64e9b11d",
+          "url": "https://github.com/rolldown/rolldown/commit/cfc16e801f899359f16ea2c53ca2b94da168453a"
+        },
+        "date": 1717666885419,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "328.12",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "571.21",
             "unit": "ms / ops"
           }
         ]
