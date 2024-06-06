@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1717654798425,
+  "lastUpdate": 1717657591501,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -12911,6 +12911,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "545.89",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "boshenc@gmail.com",
+            "name": "Boshen",
+            "username": "Boshen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7055715167ede5fb5ef6049162ed94d953bc26f6",
+          "message": "chore: simplify renovate bot (#1356)",
+          "timestamp": "2024-06-06T15:03:53+08:00",
+          "tree_id": "8aa215c01268a94a630149e7ad97ff85e6c0f3b0",
+          "url": "https://github.com/rolldown/rolldown/commit/7055715167ede5fb5ef6049162ed94d953bc26f6"
+        },
+        "date": 1717657591497,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "325.10",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "550.06",
             "unit": "ms / ops"
           }
         ]
