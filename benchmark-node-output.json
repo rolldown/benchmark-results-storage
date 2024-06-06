@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1717666885425,
+  "lastUpdate": 1717669329867,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -13013,6 +13013,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "571.21",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c86f78406546f20db34d606980810c51bcb86fcc",
+          "message": "feat: add assetFileNames binding (#1360)",
+          "timestamp": "2024-06-06T10:13:09Z",
+          "tree_id": "af493ad6ac1be06fd4267de1d031714b550c4f29",
+          "url": "https://github.com/rolldown/rolldown/commit/c86f78406546f20db34d606980810c51bcb86fcc"
+        },
+        "date": 1717669329863,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "337.29",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "587.84",
             "unit": "ms / ops"
           }
         ]
