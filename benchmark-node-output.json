@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1717657591501,
+  "lastUpdate": 1717663492914,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -12945,6 +12945,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "550.06",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "610d2034bdb80b396051b83a09c15842c117d528",
+          "message": "chore(deps): lock file maintenance npm packages (#1357)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>\r\nCo-authored-by: Boshen <boshenc@gmail.com>",
+          "timestamp": "2024-06-06T16:42:09+08:00",
+          "tree_id": "e30e72f58403f60f04a254c0691fcd3037004424",
+          "url": "https://github.com/rolldown/rolldown/commit/610d2034bdb80b396051b83a09c15842c117d528"
+        },
+        "date": 1717663492911,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "306.42",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "540.98",
             "unit": "ms / ops"
           }
         ]
