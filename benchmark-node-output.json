@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1717652401413,
+  "lastUpdate": 1717652797259,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -12843,6 +12843,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "546.35",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ylei.mk@gmail.com",
+            "name": "ikkz",
+            "username": "ikkz"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "16d59384099db5f1927144a3de501813bd79e39d",
+          "message": "feat: support base64 loader (#1352)",
+          "timestamp": "2024-06-06T05:37:29Z",
+          "tree_id": "3a2766cfa5eae8129f0ecb293349fffdacc1d2cc",
+          "url": "https://github.com/rolldown/rolldown/commit/16d59384099db5f1927144a3de501813bd79e39d"
+        },
+        "date": 1717652797256,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "310.03",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "537.98",
             "unit": "ms / ops"
           }
         ]
