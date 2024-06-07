@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1717669329867,
+  "lastUpdate": 1717735884916,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -13047,6 +13047,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "587.84",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9dbb80346b075d36b2be379cf86ed6652dd7470f",
+          "message": "fix(cjs): handle `export * from 'external'` correctly (#1363)",
+          "timestamp": "2024-06-07T04:42:13Z",
+          "tree_id": "a5f754a395e5f255b33e8e55100f03db0809edf4",
+          "url": "https://github.com/rolldown/rolldown/commit/9dbb80346b075d36b2be379cf86ed6652dd7470f"
+        },
+        "date": 1717735884912,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "314.83",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "572.33",
             "unit": "ms / ops"
           }
         ]
