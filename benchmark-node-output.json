@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1717963732702,
+  "lastUpdate": 1717973207825,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -13251,6 +13251,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "717.14",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4715b658f0236bd266d9093a2f020c7b244e261d",
+          "message": "chore(deps): update node.js to v20 (#1372)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2024-06-09T22:38:30Z",
+          "tree_id": "5d0c268adae2013d982d680f95835d92880e97cd",
+          "url": "https://github.com/rolldown/rolldown/commit/4715b658f0236bd266d9093a2f020c7b244e261d"
+        },
+        "date": 1717973207821,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "315.02",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "540.69",
             "unit": "ms / ops"
           }
         ]
