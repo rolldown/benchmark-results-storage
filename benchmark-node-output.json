@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1717963533707,
+  "lastUpdate": 1717963732702,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -13217,6 +13217,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "590.12",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "af5414520525544cc629ef33eb4811917beda89c",
+          "message": "chore(deps): update rust crate regex to 1.10.5 (#1371)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2024-06-09T19:55:28Z",
+          "tree_id": "1a102ddf828529eeafce141847a0d9641cf6dc40",
+          "url": "https://github.com/rolldown/rolldown/commit/af5414520525544cc629ef33eb4811917beda89c"
+        },
+        "date": 1717963732698,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "446.39",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "717.14",
             "unit": "ms / ops"
           }
         ]
