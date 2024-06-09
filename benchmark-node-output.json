@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1717850621294,
+  "lastUpdate": 1717907643472,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -13149,6 +13149,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "546.18",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4cff3323e3258c52e8f1866842a9525e051cae0b",
+          "message": "chore(deps): update rust crates (#1358)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>\nCo-authored-by: Boshen <boshenc@gmail.com>\nCo-authored-by: IWANABETHATGUY <iwanabethatguy@qq.com>",
+          "timestamp": "2024-06-09T04:26:09Z",
+          "tree_id": "c0dd776c7cbcc3b68d7ae91a9b28344b8922d6fa",
+          "url": "https://github.com/rolldown/rolldown/commit/4cff3323e3258c52e8f1866842a9525e051cae0b"
+        },
+        "date": 1717907643468,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "312.07",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "608.78",
             "unit": "ms / ops"
           }
         ]
