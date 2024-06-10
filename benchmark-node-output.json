@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1718013410123,
+  "lastUpdate": 1718039554318,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -13353,6 +13353,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "546.65",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "boshenc@gmail.com",
+            "name": "Boshen",
+            "username": "Boshen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0391951fccd06c83d1e487687a708b1c28dbcde9",
+          "message": "ci: actions/setup-node should use package.engines.node (#1377)",
+          "timestamp": "2024-06-10T17:02:47Z",
+          "tree_id": "53ac8f941181d64a823f2589531221a6bb88eb6f",
+          "url": "https://github.com/rolldown/rolldown/commit/0391951fccd06c83d1e487687a708b1c28dbcde9"
+        },
+        "date": 1718039554315,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "303.45",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "539.49",
             "unit": "ms / ops"
           }
         ]
