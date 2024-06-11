@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1718039554318,
+  "lastUpdate": 1718087975188,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -13387,6 +13387,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "539.49",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "65ec42c4b7a50e0ce9e8d491e9c37c6a4203e168",
+          "message": "feat: wasm plugin (#1368)",
+          "timestamp": "2024-06-11T06:29:23Z",
+          "tree_id": "b48afc56670e5d25e293176653e336a19df947f7",
+          "url": "https://github.com/rolldown/rolldown/commit/65ec42c4b7a50e0ce9e8d491e9c37c6a4203e168"
+        },
+        "date": 1718087975184,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "304.89",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "530.98",
             "unit": "ms / ops"
           }
         ]
