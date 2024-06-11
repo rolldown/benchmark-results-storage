@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1718087975188,
+  "lastUpdate": 1718123203426,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -13421,6 +13421,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "530.98",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b79148d764055df08ead93f97f7b3f673b207ed8",
+          "message": "refactor: avoid string asset source bindingfy to buffer (#1380)",
+          "timestamp": "2024-06-11T16:17:22Z",
+          "tree_id": "9d9d79d0f5202bdecaadade366bbfcb1080a7d0d",
+          "url": "https://github.com/rolldown/rolldown/commit/b79148d764055df08ead93f97f7b3f673b207ed8"
+        },
+        "date": 1718123203422,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "387.27",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "555.67",
             "unit": "ms / ops"
           }
         ]
