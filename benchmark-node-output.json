@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1718248478012,
+  "lastUpdate": 1718253817218,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -13489,6 +13489,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "553.62",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "boshenc@gmail.com",
+            "name": "Boshen",
+            "username": "Boshen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "21ca0589ef42020746752806963e2e2ef1a1b9af",
+          "message": "refactor: use the unified `oxc` crate to make sure version is correct (#1383)",
+          "timestamp": "2024-06-13T04:34:35Z",
+          "tree_id": "cd4a941e963c62f8ee231b11ad8c99ff072c268f",
+          "url": "https://github.com/rolldown/rolldown/commit/21ca0589ef42020746752806963e2e2ef1a1b9af"
+        },
+        "date": 1718253817215,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "329.94",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "537.76",
             "unit": "ms / ops"
           }
         ]
