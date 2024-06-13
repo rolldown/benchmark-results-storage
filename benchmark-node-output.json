@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1718256116458,
+  "lastUpdate": 1718272265859,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -13557,6 +13557,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "560.93",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "42b42fdd5a23a525758f4aa543ab2a7510d7161c",
+          "message": "refactor: bindingfy sourcemap (#1382)",
+          "timestamp": "2024-06-13T09:42:06Z",
+          "tree_id": "de289511697e41cbf4b7ea7449996dd77793f5e1",
+          "url": "https://github.com/rolldown/rolldown/commit/42b42fdd5a23a525758f4aa543ab2a7510d7161c"
+        },
+        "date": 1718272265855,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "305.21",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "539.93",
             "unit": "ms / ops"
           }
         ]
