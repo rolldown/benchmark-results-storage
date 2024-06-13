@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1718253817218,
+  "lastUpdate": 1718256116458,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -13523,6 +13523,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "537.76",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "boshenc@gmail.com",
+            "name": "Boshen",
+            "username": "Boshen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "149da91e8ca4a6bdacf453099905be352b224bf0",
+          "message": "chore: remove unused Rust features from `jsonschema` and `tracing-subscriber` (#1386)",
+          "timestamp": "2024-06-13T05:13:24Z",
+          "tree_id": "b34c6c8b3a2c62b3477b38870145517c93f08a8c",
+          "url": "https://github.com/rolldown/rolldown/commit/149da91e8ca4a6bdacf453099905be352b224bf0"
+        },
+        "date": 1718256116454,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "296.84",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "560.93",
             "unit": "ms / ops"
           }
         ]
