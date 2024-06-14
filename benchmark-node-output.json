@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1718272265859,
+  "lastUpdate": 1718350360227,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -13591,6 +13591,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "539.93",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "440e68ed7bb06c972cda3b12874d748ec8ef366d",
+          "message": "fix: rolldown typing (#1387)",
+          "timestamp": "2024-06-14T07:23:47Z",
+          "tree_id": "20bdd8d5c0f91938be961b72d14c7d6b1209d7c7",
+          "url": "https://github.com/rolldown/rolldown/commit/440e68ed7bb06c972cda3b12874d748ec8ef366d"
+        },
+        "date": 1718350360224,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "320.29",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "593.57",
             "unit": "ms / ops"
           }
         ]
