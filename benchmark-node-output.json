@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1718558026791,
+  "lastUpdate": 1718558044759,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -13777,24 +13777,24 @@
             "name": "GitHub",
             "username": "web-flow"
           },
-          "distinct": false,
-          "id": "f9c04101ac3497eb1ff731c24e9759405adc1332",
-          "message": "chore(deps): update npm packages (#1398)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
-          "timestamp": "2024-06-16T17:03:59Z",
-          "tree_id": "3ccef5a41b88f7131307ead29f78a9bf782c36cd",
-          "url": "https://github.com/rolldown/rolldown/commit/f9c04101ac3497eb1ff731c24e9759405adc1332"
+          "distinct": true,
+          "id": "c9779e36a27a685b146925491140342dd7e24bcf",
+          "message": "chore(deps): update rust crates (#1399)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2024-06-16T17:04:33Z",
+          "tree_id": "e4bee9eae18a2508298fbfafed9f90e4f9d7961f",
+          "url": "https://github.com/rolldown/rolldown/commit/c9779e36a27a685b146925491140342dd7e24bcf"
         },
-        "date": 1718558026787,
+        "date": 1718558044756,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x (default)",
-            "value": "302.25",
+            "value": "317.96",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap (default)",
-            "value": "533.54",
+            "value": "572.69",
             "unit": "ms / ops"
           }
         ]
