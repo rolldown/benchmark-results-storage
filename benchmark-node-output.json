@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1718535319745,
+  "lastUpdate": 1718550272062,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -13693,6 +13693,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "576.24",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "aef45e09fa93e7df8f18422fb8d5c47fae0c77f0",
+          "message": "feat: mark `PluginContext#parse` as unsupported (#1289)\n\nCo-authored-by: Yunfei <i.heyunfei@gmail.com>",
+          "timestamp": "2024-06-16T14:54:48Z",
+          "tree_id": "fd73c975c96517061861a8a8ab31916fa462d9f9",
+          "url": "https://github.com/rolldown/rolldown/commit/aef45e09fa93e7df8f18422fb8d5c47fae0c77f0"
+        },
+        "date": 1718550272059,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "378.43",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "541.72",
             "unit": "ms / ops"
           }
         ]
