@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1718355497187,
+  "lastUpdate": 1718535319745,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -13659,6 +13659,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "541.72",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "dengqing0821@gmail.com",
+            "name": "Dunqing",
+            "username": "Dunqing"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "26ca3da3d0968a39b18cb217454213ae3c8e82a9",
+          "message": "feat!: support `jsx`, `ts` and `tsx` via oxc transform by default (#1364)\n\nCo-authored-by: Boshen <boshenc@gmail.com>\nCo-authored-by: Yunfei <i.heyunfei@gmail.com>",
+          "timestamp": "2024-06-16T10:45:58Z",
+          "tree_id": "b475b06b4c22dffdba82ca608445019ad5df7291",
+          "url": "https://github.com/rolldown/rolldown/commit/26ca3da3d0968a39b18cb217454213ae3c8e82a9"
+        },
+        "date": 1718535319741,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "298.30",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "576.24",
             "unit": "ms / ops"
           }
         ]
