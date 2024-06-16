@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1718550272062,
+  "lastUpdate": 1718554126258,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -13727,6 +13727,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "541.72",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "66e8482fdb987738ff823fdb03329d8241921602",
+          "message": "chore(deps): update dependency rust to v1.79.0 (#1389)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>\nCo-authored-by: IWANABETHATGUY <iwanabethatguy@qq.com>",
+          "timestamp": "2024-06-16T15:58:12Z",
+          "tree_id": "0d554be2de91856d39267e1eb7264db3db663847",
+          "url": "https://github.com/rolldown/rolldown/commit/66e8482fdb987738ff823fdb03329d8241921602"
+        },
+        "date": 1718554126255,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "297.38",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "534.65",
             "unit": "ms / ops"
           }
         ]
