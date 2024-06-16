@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1718558044759,
+  "lastUpdate": 1718562201278,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -13795,6 +13795,40 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "572.69",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a9c99b47ce136fa0c10e4d22c2168daf2da86e34",
+          "message": "chore(package/rolldown): use builtin typescript transformer for self-compiling and drop esbuild (#1397)",
+          "timestamp": "2024-06-17T02:20:13+08:00",
+          "tree_id": "bdf0001548f4b06211cf31ae7edb801869848f65",
+          "url": "https://github.com/rolldown/rolldown/commit/a9c99b47ce136fa0c10e4d22c2168daf2da86e34"
+        },
+        "date": 1718562201275,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "376.86",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "561.34",
             "unit": "ms / ops"
           }
         ]
