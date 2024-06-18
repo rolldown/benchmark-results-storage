@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1718703618857,
+  "lastUpdate": 1718707991181,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -13897,6 +13897,50 @@
           {
             "name": "threejs10x-sourcemap (default)",
             "value": "546.49",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "f084e693098e970400ecadcc453bfd91191afdb2",
+          "message": "chore(node/bench): track benchmark of transform typescript using rome-ts (#1409)",
+          "timestamp": "2024-06-18T10:43:49Z",
+          "tree_id": "46cc682c79cd73201b2e7e4fb39bc373deb50763",
+          "url": "https://github.com/rolldown/rolldown/commit/f084e693098e970400ecadcc453bfd91191afdb2"
+        },
+        "date": 1718707991177,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "387.69",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "552.28",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "122.36",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "185.55",
             "unit": "ms / ops"
           }
         ]
