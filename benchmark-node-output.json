@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1718707991181,
+  "lastUpdate": 1718725565811,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -13941,6 +13941,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "185.55",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "33a6db5cf3a33de702a1b5e59b15e9afe6c1eb4e",
+          "message": "feat: advanced barrel exports optimization. (#1374)",
+          "timestamp": "2024-06-18T15:35:28Z",
+          "tree_id": "cddf016e97b3bb042acc587e573302064c301f2e",
+          "url": "https://github.com/rolldown/rolldown/commit/33a6db5cf3a33de702a1b5e59b15e9afe6c1eb4e"
+        },
+        "date": 1718725565807,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "344.84",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "557.99",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "131.24",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "186.42",
             "unit": "ms / ops"
           }
         ]
