@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1718766077390,
+  "lastUpdate": 1718781648582,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -14117,6 +14117,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "195.41",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6df56a90b61a297c2e287f7e7fc614464d9cfc9c",
+          "message": "feat: tree shake module side effect (#1395)",
+          "timestamp": "2024-06-19T06:56:24Z",
+          "tree_id": "8039e97f0909cfef58a572de8b8ac9efae67ebf8",
+          "url": "https://github.com/rolldown/rolldown/commit/6df56a90b61a297c2e287f7e7fc614464d9cfc9c"
+        },
+        "date": 1718781648578,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "330.75",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "555.36",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "131.15",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "192.31",
             "unit": "ms / ops"
           }
         ]
