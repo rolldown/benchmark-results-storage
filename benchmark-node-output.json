@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1718729624604,
+  "lastUpdate": 1718766077390,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -14073,6 +14073,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "192.98",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3cf75b8ba3b7d59620a09d5d015d07b5bdb17bbf",
+          "message": "test(rust): add rome-ts (#1412)",
+          "timestamp": "2024-06-19T02:35:45Z",
+          "tree_id": "1c82c77c7b9d3308aa71366f9140530f75064a2b",
+          "url": "https://github.com/rolldown/rolldown/commit/3cf75b8ba3b7d59620a09d5d015d07b5bdb17bbf"
+        },
+        "date": 1718766077386,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "410.48",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "577.62",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "130.67",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "195.41",
             "unit": "ms / ops"
           }
         ]
