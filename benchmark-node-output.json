@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1718789000186,
+  "lastUpdate": 1718892415621,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -14249,6 +14249,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "188.09",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9854330074c1851872688fe3fa7a29f36cd6a011",
+          "message": "feat: export more typing (#1420)",
+          "timestamp": "2024-06-20T22:03:37+08:00",
+          "tree_id": "666860dbbfe5d6d9ead53ca593283b41a2afbea4",
+          "url": "https://github.com/rolldown/rolldown/commit/9854330074c1851872688fe3fa7a29f36cd6a011"
+        },
+        "date": 1718892415616,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "350.14",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "569.93",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "132.12",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "190.34",
             "unit": "ms / ops"
           }
         ]
