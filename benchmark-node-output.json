@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1718958853827,
+  "lastUpdate": 1718960923849,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -14425,6 +14425,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "181.78",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "401164829eede4f6418bfbf708a34c1028823b72",
+          "message": "ci: unify setup steps (#1423)",
+          "timestamp": "2024-06-21T17:05:01+08:00",
+          "tree_id": "eb679d9fe39f0b7552b45edac3bfa0203e82f3a6",
+          "url": "https://github.com/rolldown/rolldown/commit/401164829eede4f6418bfbf708a34c1028823b72"
+        },
+        "date": 1718960923845,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "332.28",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "548.16",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "126.34",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "186.68",
             "unit": "ms / ops"
           }
         ]
