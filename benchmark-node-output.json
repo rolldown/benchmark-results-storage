@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1718895135099,
+  "lastUpdate": 1718932586111,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -14337,6 +14337,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "192.23",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a64e78f31e13e3da38dd68fede711b872c0c8d6b",
+          "message": "feat: support RenderedChunk#name (#1421)",
+          "timestamp": "2024-06-21T00:52:40Z",
+          "tree_id": "f261341c6a711cf4651d817f8619bbc5c33a86da",
+          "url": "https://github.com/rolldown/rolldown/commit/a64e78f31e13e3da38dd68fede711b872c0c8d6b"
+        },
+        "date": 1718932586106,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "325.35",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "564.71",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "124.27",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "187.65",
             "unit": "ms / ops"
           }
         ]
