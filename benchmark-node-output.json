@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1718932586111,
+  "lastUpdate": 1718958853827,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -14381,6 +14381,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "187.65",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "pascalschilp@gmail.com",
+            "name": "Pascal Schilp",
+            "username": "thepassle"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "38a2c3e6a9d782efdea45a71d15cae589647ea37",
+          "message": "fix: option hook can be async and can return overwritten input options (#1422)\n\nCo-authored-by: underfin <likui.underfin@gmail.com>",
+          "timestamp": "2024-06-21T08:23:38Z",
+          "tree_id": "6951cc2c2f14ed7462981fa16103a9b9c7494d95",
+          "url": "https://github.com/rolldown/rolldown/commit/38a2c3e6a9d782efdea45a71d15cae589647ea37"
+        },
+        "date": 1718958853823,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "345.99",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "552.31",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "124.68",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "181.78",
             "unit": "ms / ops"
           }
         ]
