@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1719076021246,
+  "lastUpdate": 1719077554887,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -14601,6 +14601,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "209.05",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2b38861262c843cb0be1a61d04860fb6a3edf9c3",
+          "message": "refactor(rust): prefer using `program` explicitly on `OxcAst` (#1427)",
+          "timestamp": "2024-06-23T01:29:16+08:00",
+          "tree_id": "6730922d65fb7fd027ddfa8ebdc9dc9202d67c25",
+          "url": "https://github.com/rolldown/rolldown/commit/2b38861262c843cb0be1a61d04860fb6a3edf9c3"
+        },
+        "date": 1719077554883,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "333.43",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "541.91",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "124.85",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "179.78",
             "unit": "ms / ops"
           }
         ]
