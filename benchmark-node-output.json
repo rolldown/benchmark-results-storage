@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1719077554887,
+  "lastUpdate": 1719079567538,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -14645,6 +14645,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "179.78",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3bc0dd4995c17fb033247796b06f2ff8fce29f34",
+          "message": "refactor(rust): add `ProgramCellDependent` on `ProgramCell` (#1428)",
+          "timestamp": "2024-06-23T02:01:12+08:00",
+          "tree_id": "4bdbd75ae4973ca97f23bcab0b23434f3859b37c",
+          "url": "https://github.com/rolldown/rolldown/commit/3bc0dd4995c17fb033247796b06f2ff8fce29f34"
+        },
+        "date": 1719079567534,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "326.38",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "548.46",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "125.50",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "184.49",
             "unit": "ms / ops"
           }
         ]
