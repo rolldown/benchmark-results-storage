@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1718964736211,
+  "lastUpdate": 1719076021246,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -14557,6 +14557,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "178.55",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ce1eed533883610536ab1820c9afc7af487e3b3f",
+          "message": "chore!: temporarily disable `getCombinedSourcemap` functionality (#1426)",
+          "timestamp": "2024-06-23T01:03:04+08:00",
+          "tree_id": "d46c2b19a7a309895d665624545bf92cffe71801",
+          "url": "https://github.com/rolldown/rolldown/commit/ce1eed533883610536ab1820c9afc7af487e3b3f"
+        },
+        "date": 1719076021242,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "374.15",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "589.06",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "160.01",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "209.05",
             "unit": "ms / ops"
           }
         ]
