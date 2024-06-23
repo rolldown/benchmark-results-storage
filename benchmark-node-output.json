@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1719079567538,
+  "lastUpdate": 1719131505889,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -14689,6 +14689,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "184.49",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "472848b56288ae5fa59db792cff83cf379885323",
+          "message": "fix: outputOptions hook argument should be OutputOptions (#1430)",
+          "timestamp": "2024-06-23T08:22:07Z",
+          "tree_id": "6348105a78918099ffd95b820a44d381f3c49548",
+          "url": "https://github.com/rolldown/rolldown/commit/472848b56288ae5fa59db792cff83cf379885323"
+        },
+        "date": 1719131505884,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "326.94",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "555.20",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "127.04",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "193.04",
             "unit": "ms / ops"
           }
         ]
