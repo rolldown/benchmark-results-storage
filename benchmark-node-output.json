@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1719239601369,
+  "lastUpdate": 1719240983503,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -14909,6 +14909,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "184.20",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "boshenc@gmail.com",
+            "name": "Boshen",
+            "username": "Boshen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "32f909e6f7d4f2e9a440464f41d0c497f8d3e912",
+          "message": "chore(deps): rustc-hash v2.0.0 (#1438)",
+          "timestamp": "2024-06-24T14:46:42Z",
+          "tree_id": "ca0e7adb725e08b3547763b2ccacc49796577f18",
+          "url": "https://github.com/rolldown/rolldown/commit/32f909e6f7d4f2e9a440464f41d0c497f8d3e912"
+        },
+        "date": 1719240983499,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "327.59",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "555.63",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "128.96",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "187.17",
             "unit": "ms / ops"
           }
         ]
