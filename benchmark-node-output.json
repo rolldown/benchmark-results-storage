@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1719240983503,
+  "lastUpdate": 1719280900378,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -14953,6 +14953,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "187.17",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1f70a4cd7b7dc0d78d0cf446bfd77b851c4c1a25",
+          "message": "feat: move dependency (#1381)\n\nCo-authored-by: Yunfei He <i.heyunfei@gmail.com>",
+          "timestamp": "2024-06-25T09:58:20+08:00",
+          "tree_id": "7011203def7b5057913d0bb31651c0aaa6f699c0",
+          "url": "https://github.com/rolldown/rolldown/commit/1f70a4cd7b7dc0d78d0cf446bfd77b851c4c1a25"
+        },
+        "date": 1719280900373,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "326.44",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "536.61",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "120.92",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "181.61",
             "unit": "ms / ops"
           }
         ]
