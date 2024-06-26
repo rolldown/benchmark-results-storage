@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1719372057993,
+  "lastUpdate": 1719373712360,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -15041,6 +15041,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "185.88",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5fb31d0d254128825df9441b23da58e3f6663060",
+          "message": "fix(core): don't panic on require calls that are invalid to bundler (#1445)",
+          "timestamp": "2024-06-26T03:37:59Z",
+          "tree_id": "5fcfe2716e52f76567adb271590c28c9dedeffc2",
+          "url": "https://github.com/rolldown/rolldown/commit/5fb31d0d254128825df9441b23da58e3f6663060"
+        },
+        "date": 1719373712356,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "327.15",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "546.42",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "123.17",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "185.64",
             "unit": "ms / ops"
           }
         ]
