@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1719484375645,
+  "lastUpdate": 1719485987977,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -15261,6 +15261,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "177.69",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fcfd4a1770229722b3c3adddac59cddc615ca556",
+          "message": "ci: speed up ci on windows by using dev drive (#1452)",
+          "timestamp": "2024-06-27T18:56:23+08:00",
+          "tree_id": "b8b77f4289991348b3e0ce50ecca865f2131852e",
+          "url": "https://github.com/rolldown/rolldown/commit/fcfd4a1770229722b3c3adddac59cddc615ca556"
+        },
+        "date": 1719485987973,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "320.70",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "543.10",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "120.03",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "181.74",
             "unit": "ms / ops"
           }
         ]
