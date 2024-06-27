@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1719486590944,
+  "lastUpdate": 1719494939200,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -15349,6 +15349,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "184.54",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "boshenc@gmail.com",
+            "name": "Boshen",
+            "username": "Boshen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f82fad160b09abc10c1d9ec87a1d86ab6daeb59a",
+          "message": "chore: upgrade oxc to v0.16.0 (#1454)",
+          "timestamp": "2024-06-27T13:18:14Z",
+          "tree_id": "e3a61162a8224e6e6bcddb2b85c0e2e7a50f3ccb",
+          "url": "https://github.com/rolldown/rolldown/commit/f82fad160b09abc10c1d9ec87a1d86ab6daeb59a"
+        },
+        "date": 1719494939196,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "340.86",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "572.86",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "128.36",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "185.22",
             "unit": "ms / ops"
           }
         ]
