@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1719485987977,
+  "lastUpdate": 1719486113531,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -15278,33 +15278,33 @@
             "username": "web-flow"
           },
           "distinct": true,
-          "id": "fcfd4a1770229722b3c3adddac59cddc615ca556",
-          "message": "ci: speed up ci on windows by using dev drive (#1452)",
-          "timestamp": "2024-06-27T18:56:23+08:00",
-          "tree_id": "b8b77f4289991348b3e0ce50ecca865f2131852e",
-          "url": "https://github.com/rolldown/rolldown/commit/fcfd4a1770229722b3c3adddac59cddc615ca556"
+          "id": "39f16e2459dccc07fb793c421ff8c38096a5061b",
+          "message": "feat(node): expose the `moduleTypes` option (#1451)",
+          "timestamp": "2024-06-27T18:56:47+08:00",
+          "tree_id": "cd3b341b1736ecef0c4efcbb68df4fd2f250f699",
+          "url": "https://github.com/rolldown/rolldown/commit/39f16e2459dccc07fb793c421ff8c38096a5061b"
         },
-        "date": 1719485987973,
+        "date": 1719486113526,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x (default)",
-            "value": "320.70",
+            "value": "332.65",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap (default)",
-            "value": "543.10",
+            "value": "569.07",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts (default)",
-            "value": "120.03",
+            "value": "131.06",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts-sourcemap (default)",
-            "value": "181.74",
+            "value": "192.27",
             "unit": "ms / ops"
           }
         ]
