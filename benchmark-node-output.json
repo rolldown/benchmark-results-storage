@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1719479650166,
+  "lastUpdate": 1719480743275,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -15173,6 +15173,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "175.72",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "1399789151@qq.com",
+            "name": "AliceLanniste",
+            "username": "AliceLanniste"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "cb3bf33f69a303b50ffcaa04ebfa1d31c1a4a17d",
+          "message": "feat(ModuleType): support `empty` (#1369)\n\nCo-authored-by: Yunfei <i.heyunfei@gmail.com>",
+          "timestamp": "2024-06-27T09:22:24Z",
+          "tree_id": "b9e5e30349535633a206498044b9d5c80ab68b32",
+          "url": "https://github.com/rolldown/rolldown/commit/cb3bf33f69a303b50ffcaa04ebfa1d31c1a4a17d"
+        },
+        "date": 1719480743270,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "321.24",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "559.00",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "123.67",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "190.85",
             "unit": "ms / ops"
           }
         ]
