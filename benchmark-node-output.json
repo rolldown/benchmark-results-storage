@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1719552541996,
+  "lastUpdate": 1719553896426,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -15569,6 +15569,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "173.59",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "fa866eb68de39bd174ec79bf411e149c5d9ef609",
+          "message": "perf(rust/renamer): new deconflict strategy (#1461)",
+          "timestamp": "2024-06-28T05:40:46Z",
+          "tree_id": "3e8d793d4ac27f695305c12d89fe0eb6427fbd6d",
+          "url": "https://github.com/rolldown/rolldown/commit/fa866eb68de39bd174ec79bf411e149c5d9ef609"
+        },
+        "date": 1719553896422,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "318.13",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "594.93",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "116.26",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "175.75",
             "unit": "ms / ops"
           }
         ]
