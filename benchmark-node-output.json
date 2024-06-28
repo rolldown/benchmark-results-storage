@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1719558011905,
+  "lastUpdate": 1719558190889,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -15673,34 +15673,34 @@
             "name": "GitHub",
             "username": "web-flow"
           },
-          "distinct": false,
-          "id": "190e18cddf08d828a626948708f8583097e26dec",
-          "message": "ci: only run codecov on the main branch (#1468)",
-          "timestamp": "2024-06-28T06:49:28Z",
-          "tree_id": "a33fb13fc61278f51eb85329e94680a24f2ab63e",
-          "url": "https://github.com/rolldown/rolldown/commit/190e18cddf08d828a626948708f8583097e26dec"
+          "distinct": true,
+          "id": "151d8c7a93657981e000d9513ee64f3a1e33f781",
+          "message": "perf(rolldown): use `sort_unstable` variants (#1469)",
+          "timestamp": "2024-06-28T06:51:12Z",
+          "tree_id": "a0a2335f7f572b4b08ef5a47735d944e06372f96",
+          "url": "https://github.com/rolldown/rolldown/commit/151d8c7a93657981e000d9513ee64f3a1e33f781"
         },
-        "date": 1719558011901,
+        "date": 1719558190884,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x (default)",
-            "value": "320.64",
+            "value": "346.82",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap (default)",
-            "value": "537.15",
+            "value": "562.70",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts (default)",
-            "value": "117.28",
+            "value": "126.76",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts-sourcemap (default)",
-            "value": "179.26",
+            "value": "189.76",
             "unit": "ms / ops"
           }
         ]
