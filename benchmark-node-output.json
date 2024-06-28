@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1719550558694,
+  "lastUpdate": 1719552541996,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -15525,6 +15525,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "180.56",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "boshenc@gmail.com",
+            "name": "Boshen",
+            "username": "Boshen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7029ec5804b01167f4f5d53861191401620357b5",
+          "message": "refactor(rolldown): clean up code around scan stage (#1465)",
+          "timestamp": "2024-06-28T05:18:56Z",
+          "tree_id": "70f80f00cb6d8cc4f2f1b1105c7b04892e48250f",
+          "url": "https://github.com/rolldown/rolldown/commit/7029ec5804b01167f4f5d53861191401620357b5"
+        },
+        "date": 1719552541992,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "379.63",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "528.27",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "116.42",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "173.59",
             "unit": "ms / ops"
           }
         ]
