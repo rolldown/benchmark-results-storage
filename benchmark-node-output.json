@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1719558190889,
+  "lastUpdate": 1719583710706,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -15701,6 +15701,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "189.76",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "boshenc@gmail.com",
+            "name": "Boshen",
+            "username": "Boshen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e40b61b08f04b8b11d800ad4fa079b3436873800",
+          "message": "refactor(rolldown_resolver): remove raw json API to reduce memory usage (#1472)",
+          "timestamp": "2024-06-28T13:57:36Z",
+          "tree_id": "ab369cfe031d00669a87522a74a6c04f8ce311d0",
+          "url": "https://github.com/rolldown/rolldown/commit/e40b61b08f04b8b11d800ad4fa079b3436873800"
+        },
+        "date": 1719583710701,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "321.87",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "534.43",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "117.26",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "174.82",
             "unit": "ms / ops"
           }
         ]
