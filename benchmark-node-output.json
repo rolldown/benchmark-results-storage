@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1719670223667,
+  "lastUpdate": 1719671017715,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -16053,6 +16053,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "178.35",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "529d0aeaf66a7aedd1feffeac71dc9935399774b",
+          "message": "ci: remove setup dev drive action and add approve action (#1485)",
+          "timestamp": "2024-06-29T22:19:24+08:00",
+          "tree_id": "c0bd0cf7c8edfdec9a22fe77293e36c58ffe43fb",
+          "url": "https://github.com/rolldown/rolldown/commit/529d0aeaf66a7aedd1feffeac71dc9935399774b"
+        },
+        "date": 1719671017709,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "326.64",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "549.48",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "118.59",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "177.09",
             "unit": "ms / ops"
           }
         ]
