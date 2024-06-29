@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1719670033646,
+  "lastUpdate": 1719670223667,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -16009,6 +16009,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "185.60",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "835c532ad280bebb4529a1506a69cea9aca1bb03",
+          "message": "chore(deps): update rust crate oxc to v0.16.1 (#1486)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2024-06-29T13:45:55Z",
+          "tree_id": "b9699d583bd1d10fc69658f81d5d4b708b9b5934",
+          "url": "https://github.com/rolldown/rolldown/commit/835c532ad280bebb4529a1506a69cea9aca1bb03"
+        },
+        "date": 1719670223663,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "336.26",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "548.62",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "116.87",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "178.35",
             "unit": "ms / ops"
           }
         ]
