@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1719768117243,
+  "lastUpdate": 1719768547033,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -16185,6 +16185,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "186.06",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fc037ac477370543d4d1c07cb7c6f1661d8954e0",
+          "message": "chore(deps): update rust crates (#1500)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2024-06-30T17:12:03Z",
+          "tree_id": "f6df2b8b0b416c5f1a9e42b4bc64f98c9e5bab6e",
+          "url": "https://github.com/rolldown/rolldown/commit/fc037ac477370543d4d1c07cb7c6f1661d8954e0"
+        },
+        "date": 1719768547029,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "321.57",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "553.34",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "122.55",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "184.08",
             "unit": "ms / ops"
           }
         ]
