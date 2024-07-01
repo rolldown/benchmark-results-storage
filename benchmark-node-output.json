@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1719809234884,
+  "lastUpdate": 1719839949976,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -16405,6 +16405,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "178.66",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "boshenc@gmail.com",
+            "name": "Boshen",
+            "username": "Boshen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fa347b3a44d7fee7f3edeb1f7b6b26e1fdef2ee2",
+          "message": "perf(rolldown): build oxc semantic data only once (#1506)\n\nIt was accidental that oxc semantic data is built twice during the whole\nprocess. This PR passes the built semantic into the transformer so it is\nnot built twice.",
+          "timestamp": "2024-07-01T13:07:49Z",
+          "tree_id": "98858049cb6768976bbf2e7a58e7e5344e2106d9",
+          "url": "https://github.com/rolldown/rolldown/commit/fa347b3a44d7fee7f3edeb1f7b6b26e1fdef2ee2"
+        },
+        "date": 1719839949971,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "372.64",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "543.41",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "109.43",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "166.67",
             "unit": "ms / ops"
           }
         ]
