@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1719916823958,
+  "lastUpdate": 1719933988326,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -16581,6 +16581,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "168.58",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0aaa5ce35fe8c846fa69d51644552aed1dae7d69",
+          "message": "feat: glob import plugin (#1510)\n\n<!-- Thank you for contributing! -->\n\n### Description\nThe pr intend to implement Vite GlobImportPlugin, doc is\nhttps://vitejs.dev/guide/features.html#glob-import.\n\nBefore we discussed using `transform` hook return `ast` to do it, it\ncan't implement because we always need to re-parse and re-codegen for\nit. So here add `transform_ast` hook to do this, if you any ideas, I'm\nfeel free using `transform` hook to do it.\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-02T15:15:39Z",
+          "tree_id": "d00d40a88d5a554fcb70cefe002a7c264f07f2e1",
+          "url": "https://github.com/rolldown/rolldown/commit/0aaa5ce35fe8c846fa69d51644552aed1dae7d69"
+        },
+        "date": 1719933988321,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "314.48",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "541.27",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "110.53",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "167.90",
             "unit": "ms / ops"
           }
         ]
