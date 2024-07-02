@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1719933988326,
+  "lastUpdate": 1719943995267,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -16625,6 +16625,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "167.90",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "7086cmd@gmail.com",
+            "name": "Ethan Goh",
+            "username": "7086cmd"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "b27b0b0cb44eb5c958f8812854b722c49604d1cb",
+          "message": "feat: support `dataurl` module type. (#1367)\n\nresolves #1299.\n\nAs for the `Data Url`, I modified the `read_source` and directly\nconverted it into Data Url through `MIME`, etc.\n\nAs for texts, especially `.svg`, I use `urlencoding` crate to avoid\nchars leading to errors.\n\nThanks to the inspiration of #1406, this pr can use `infer` crate to\ninfer the MIME type through file content.\n\n---------\n\nCo-authored-by: Ethan Goh <ethangoh@Ethans-MacBook-Pro.local>\nCo-authored-by: Yunfei <i.heyunfei@gmail.com>",
+          "timestamp": "2024-07-02T18:02:30Z",
+          "tree_id": "e5eb2b52c607f72752e50c8832c4a9ea768b6b48",
+          "url": "https://github.com/rolldown/rolldown/commit/b27b0b0cb44eb5c958f8812854b722c49604d1cb"
+        },
+        "date": 1719943995262,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "330.30",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "550.37",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "112.62",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "169.01",
             "unit": "ms / ops"
           }
         ]
