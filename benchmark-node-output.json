@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1719906022216,
+  "lastUpdate": 1719916823958,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -16537,6 +16537,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "170.34",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ab7d5503ff8e9714146a989c7168141f6225b5e5",
+          "message": "feat: support PluginContext#getModuleInfo (#1408)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-02T10:24:48Z",
+          "tree_id": "486a780b8c27dc685ce99c03308a95baf9ed5e29",
+          "url": "https://github.com/rolldown/rolldown/commit/ab7d5503ff8e9714146a989c7168141f6225b5e5"
+        },
+        "date": 1719916823953,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "325.44",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "540.25",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "112.25",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "168.58",
             "unit": "ms / ops"
           }
         ]
