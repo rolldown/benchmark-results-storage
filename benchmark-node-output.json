@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1720164215368,
+  "lastUpdate": 1720164615000,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -16845,6 +16845,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "174.18",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "evan@vuejs.org",
+            "name": "Evan You",
+            "username": "yyx990803"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "bc260e733c6a410cd8baba310e73011e94b0fb0a",
+          "message": "chore: ignore fixtures in rolldown tsconfig (#1526)\n\nOtherwise `just check-node` fails",
+          "timestamp": "2024-07-05T07:16:36Z",
+          "tree_id": "936be57bc94e0b05cec825e40f315002d0ebd1d0",
+          "url": "https://github.com/rolldown/rolldown/commit/bc260e733c6a410cd8baba310e73011e94b0fb0a"
+        },
+        "date": 1720164614994,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "314.74",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "543.61",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "108.92",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "174.21",
             "unit": "ms / ops"
           }
         ]
