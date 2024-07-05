@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1720191827516,
+  "lastUpdate": 1720192672142,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -17021,6 +17021,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "183.17",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "077bf3b1098c8784e2fe99efd4ec9a3c20249140",
+          "message": "feat: module option meta (#1532)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nHere using `PluginContextData` to share data at plugins, it also make\n`PluginContext` typing clear(same with rollup)\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-05T15:06:13Z",
+          "tree_id": "3d82d80889903791a016c954031d699c639e2ff5",
+          "url": "https://github.com/rolldown/rolldown/commit/077bf3b1098c8784e2fe99efd4ec9a3c20249140"
+        },
+        "date": 1720192672137,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "321.99",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "540.28",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "118.94",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "179.06",
             "unit": "ms / ops"
           }
         ]
