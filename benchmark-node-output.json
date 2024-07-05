@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1720149127191,
+  "lastUpdate": 1720163974611,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -16757,6 +16757,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "168.15",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "f0de5f88227397091ad30e4fe042d98b2f4199d3",
+          "message": "feat(cjs): make output compatible with cjs-module-lexer (#1525)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-05T07:08:26Z",
+          "tree_id": "2038906fd5e3cb1e39df69d8c1423a4e518ba415",
+          "url": "https://github.com/rolldown/rolldown/commit/f0de5f88227397091ad30e4fe042d98b2f4199d3"
+        },
+        "date": 1720163974606,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "372.97",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "531.44",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "108.23",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "167.31",
             "unit": "ms / ops"
           }
         ]
