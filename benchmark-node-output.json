@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1720170296046,
+  "lastUpdate": 1720171027166,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -16933,6 +16933,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "183.95",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "7086cmd@gmail.com",
+            "name": "Ethan Goh",
+            "username": "7086cmd"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "405a9ce0ff8abbf8f1b2abaf8f581aa6f135b9cb",
+          "message": "refactor: remove `raw_text_to_esm` function. (#1530)\n\nMy previous pr #1367 includes `raw_text_to_esm`, but it is unnecessary\ndue to the existing function `text_to_esm`, and it passes the test, and\nis better for normalizing chars.",
+          "timestamp": "2024-07-05T08:58:00Z",
+          "tree_id": "49d88c43f4b4c4c5456604e0635e61dc4a6f2978",
+          "url": "https://github.com/rolldown/rolldown/commit/405a9ce0ff8abbf8f1b2abaf8f581aa6f135b9cb"
+        },
+        "date": 1720171027161,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "324.63",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "546.69",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "119.55",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "187.20",
             "unit": "ms / ops"
           }
         ]
