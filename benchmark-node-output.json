@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1720031758536,
+  "lastUpdate": 1720149127191,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -16713,6 +16713,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "167.32",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0930a4ecd5fd3c07d7f1a2e9badddebb72bbe14e",
+          "message": "refactor:  setup benchmark script (#1514)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. refactor setup benchmark script to make adding benchmark more easily\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-05T02:58:52Z",
+          "tree_id": "2086729ee97cf0a887812938931d515e0e785e66",
+          "url": "https://github.com/rolldown/rolldown/commit/0930a4ecd5fd3c07d7f1a2e9badddebb72bbe14e"
+        },
+        "date": 1720149127186,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "377.48",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "563.27",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "112.07",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "168.15",
             "unit": "ms / ops"
           }
         ]
