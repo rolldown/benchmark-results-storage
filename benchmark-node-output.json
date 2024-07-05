@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1720164615000,
+  "lastUpdate": 1720170296046,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -16889,6 +16889,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "174.21",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a6605546a3aaf5fd1ce25132df8eda0c2fa0da4b",
+          "message": "feat(core): make sure `Semantic` up-to-date after transforming (#1531)\n\n<!-- Thank you for contributing! -->\r\n\r\n### Description\r\n\r\n<!-- Please insert your description here and provide especially info\r\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-05T17:01:05+08:00",
+          "tree_id": "ec018145a1584114ccc51535fdb86dc5912a9e78",
+          "url": "https://github.com/rolldown/rolldown/commit/a6605546a3aaf5fd1ce25132df8eda0c2fa0da4b"
+        },
+        "date": 1720170296041,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "326.65",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "561.31",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "124.16",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "183.95",
             "unit": "ms / ops"
           }
         ]
