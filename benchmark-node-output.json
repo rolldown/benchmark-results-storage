@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1720192672142,
+  "lastUpdate": 1720290303491,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -17065,6 +17065,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "179.06",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "boshenc@gmail.com",
+            "name": "Boshen",
+            "username": "Boshen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "043e875de04eb6b06c4cff6cdf5097125ca6d556",
+          "message": "chore: bump oxc to v0.17.1 (#1528)\n\n* Preserves parentheses from the original code\n* simple constant folding and dead code removal",
+          "timestamp": "2024-07-06T18:13:03Z",
+          "tree_id": "dd05fd8c63739b5203b02e81d7a7c4699d9f3420",
+          "url": "https://github.com/rolldown/rolldown/commit/043e875de04eb6b06c4cff6cdf5097125ca6d556"
+        },
+        "date": 1720290303486,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "333.12",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "545.60",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "120.90",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "176.42",
             "unit": "ms / ops"
           }
         ]
