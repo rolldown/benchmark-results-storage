@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1720409154503,
+  "lastUpdate": 1720409440774,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -17285,6 +17285,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "175.15",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "7086cmd@gmail.com",
+            "name": "Ethan Goh",
+            "username": "7086cmd"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "ddee9528db97b9bbd6f2911c17321d68993aaf6f",
+          "message": "fix: add `dataurl` in json config syntax. (#1536)\n\nI am sorry for appearing here with \"faint\" modifications :( and forgot\nto configure the `DataURL` in several places.\n\n-\n`crates/rolldown_common/src/inner_bundler_options/types/module_type.rs`:\nadd `\"dataurl\" => Ok(Self::Dataurl)` for implementing `FromStr`.\n- `packages/rolldown/src/options/input-options.ts`: add `dataurl` for\nthe config file and remove the duplicated `empty` loader.\n\nAnd I sorted the options in the file above following the enum definition\nin `module_type.rs`.\n\nI am sure that I will create more technical pull requests ahead :)\n\nBy the way, since the academic exam has ended, I am now willing to\ncontribute more :)",
+          "timestamp": "2024-07-08T03:17:49Z",
+          "tree_id": "646fd82dfd50bb47ac1e10489b781c4d4e8ed760",
+          "url": "https://github.com/rolldown/rolldown/commit/ddee9528db97b9bbd6f2911c17321d68993aaf6f"
+        },
+        "date": 1720409440768,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "316.76",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "533.98",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "118.20",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "173.88",
             "unit": "ms / ops"
           }
         ]
