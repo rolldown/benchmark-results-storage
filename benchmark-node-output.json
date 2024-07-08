@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1720458273090,
+  "lastUpdate": 1720459625640,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -17725,6 +17725,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "181.20",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2cd2a367ee25c3d1f711fda9b1d3ead5982cfcff",
+          "message": "refactor(rust): rename `rolldown_oxc_utils` to `rolldown_ecmascript` (#1552)\n\n<!-- Thank you for contributing! -->\r\n\r\n### Description\r\n\r\nWe gonna have `rolldown_css` to do similar things as\r\n`rolldown_oxc_utils` and this suddenly make `rolldown_oxc_utils` a not\r\nproper name.\r\n\r\n<!-- Please insert your description here and provide especially info\r\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-09T01:22:36+08:00",
+          "tree_id": "7cdeace7dadae02422e2c485335bfff0a9686db7",
+          "url": "https://github.com/rolldown/rolldown/commit/2cd2a367ee25c3d1f711fda9b1d3ead5982cfcff"
+        },
+        "date": 1720459625635,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "366.94",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "555.21",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "121.35",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "181.21",
             "unit": "ms / ops"
           }
         ]
