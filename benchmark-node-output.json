@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1720457436086,
+  "lastUpdate": 1720458273090,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -17681,6 +17681,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "182.51",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "06bd4297ae67ea89d6e8f6dbd89f9fd29a5af99c",
+          "message": "feat(wip/css): add `CssModule` (#1551)\n\n<!-- Thank you for contributing! -->\r\n\r\n### Description\r\n\r\n<!-- Please insert your description here and provide especially info\r\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-09T01:00:01+08:00",
+          "tree_id": "9c7761f6a713cdf290f739300885e24db4625945",
+          "url": "https://github.com/rolldown/rolldown/commit/06bd4297ae67ea89d6e8f6dbd89f9fd29a5af99c"
+        },
+        "date": 1720458273084,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "329.53",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "550.62",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "119.68",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "181.20",
             "unit": "ms / ops"
           }
         ]
