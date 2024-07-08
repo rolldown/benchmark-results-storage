@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1720445208589,
+  "lastUpdate": 1720455173123,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -17593,6 +17593,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "184.97",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "672b8d5c165a021637e176a1ae564d50f91e3c91",
+          "message": "refactor(rust/rolldown): rename `NormalModule` to `EcmaModule` (#1549)\n\n<!-- Thank you for contributing! -->\r\n\r\n### Description\r\n\r\nWe gonna have `CssModule` and `NormalModule` is confusing name.\r\n\r\n<!-- Please insert your description here and provide especially info\r\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-09T00:08:54+08:00",
+          "tree_id": "a81ad7eacba2bde7231643159eae55fdffd3ca1c",
+          "url": "https://github.com/rolldown/rolldown/commit/672b8d5c165a021637e176a1ae564d50f91e3c91"
+        },
+        "date": 1720455173118,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "347.70",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "538.12",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "117.77",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "179.96",
             "unit": "ms / ops"
           }
         ]
