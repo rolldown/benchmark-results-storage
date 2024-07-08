@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1720437072381,
+  "lastUpdate": 1720440512231,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -17505,6 +17505,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "183.65",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "ad5b1c6f2bca9d86272044ab40001c86f6a49fd7",
+          "message": "chore(web):  remove playground (#1546)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. Remove `playground` since we have stackblitz support\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-08T11:56:44Z",
+          "tree_id": "116acf1b6c6e04035227f14f0c4aa69ab17b2a15",
+          "url": "https://github.com/rolldown/rolldown/commit/ad5b1c6f2bca9d86272044ab40001c86f6a49fd7"
+        },
+        "date": 1720440512226,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "338.87",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "545.42",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "119.72",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "184.64",
             "unit": "ms / ops"
           }
         ]
