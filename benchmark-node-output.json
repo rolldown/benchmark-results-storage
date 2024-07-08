@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1720402677961,
+  "lastUpdate": 1720409154503,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -17241,6 +17241,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "179.48",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "fde345e0f57604cf031f55564130b0031db948f4",
+          "message": "chore(deps): update npm-rolldown (#1540)\n\n[![Mend\nRenovate](https://app.renovatebot.com/images/banner.svg)](https://renovatebot.com)\n\nThis PR contains the following updates:\n\n| Package | Change | Age | Adoption | Passing | Confidence |\n|---|---|---|---|---|---|\n| [pnpm](https://pnpm.io) ([source](https://togithub.com/pnpm/pnpm)) |\n[`9.4.0` -> `9.5.0`](https://renovatebot.com/diffs/npm/pnpm/9.4.0/9.5.0)\n|\n[![age](https://developer.mend.io/api/mc/badges/age/npm/pnpm/9.5.0?slim=true)](https://docs.renovatebot.com/merge-confidence/)\n|\n[![adoption](https://developer.mend.io/api/mc/badges/adoption/npm/pnpm/9.5.0?slim=true)](https://docs.renovatebot.com/merge-confidence/)\n|\n[![passing](https://developer.mend.io/api/mc/badges/compatibility/npm/pnpm/9.4.0/9.5.0?slim=true)](https://docs.renovatebot.com/merge-confidence/)\n|\n[![confidence](https://developer.mend.io/api/mc/badges/confidence/npm/pnpm/9.4.0/9.5.0?slim=true)](https://docs.renovatebot.com/merge-confidence/)\n|\n| [vitepress](https://vitepress.dev/)\n([source](https://togithub.com/vuejs/vitepress)) | [`1.2.3` ->\n`1.3.0`](https://renovatebot.com/diffs/npm/vitepress/1.2.3/1.3.0) |\n[![age](https://developer.mend.io/api/mc/badges/age/npm/vitepress/1.3.0?slim=true)](https://docs.renovatebot.com/merge-confidence/)\n|\n[![adoption](https://developer.mend.io/api/mc/badges/adoption/npm/vitepress/1.3.0?slim=true)](https://docs.renovatebot.com/merge-confidence/)\n|\n[![passing](https://developer.mend.io/api/mc/badges/compatibility/npm/vitepress/1.2.3/1.3.0?slim=true)](https://docs.renovatebot.com/merge-confidence/)\n|\n[![confidence](https://developer.mend.io/api/mc/badges/confidence/npm/vitepress/1.2.3/1.3.0?slim=true)](https://docs.renovatebot.com/merge-confidence/)\n|\n\n---\n\n### Release Notes\n\n<details>\n<summary>pnpm/pnpm (pnpm)</summary>\n\n###\n[`v9.5.0`](https://togithub.com/pnpm/pnpm/compare/v9.5.0-beta.3...v9.5.0)\n\n[Compare Source](https://togithub.com/pnpm/pnpm/compare/v9.4.0...v9.5.0)\n\n</details>\n\n<details>\n<summary>vuejs/vitepress (vitepress)</summary>\n\n###\n[`v1.3.0`](https://togithub.com/vuejs/vitepress/blob/HEAD/CHANGELOG.md#130-2024-07-07)\n\n[Compare\nSource](https://togithub.com/vuejs/vitepress/compare/v1.2.3...v1.3.0)\n\n##### Bug Fixes\n\n- **build:** don't normalize links containing target or download\nproperty\n([e24899a](https://togithub.com/vuejs/vitepress/commit/e24899a073d066486e5f7ae0c47ba6d901d5ae51)),\ncloses [#&#8203;3947](https://togithub.com/vuejs/vitepress/issues/3947)\n- **build:** respect frontmatter.lastUpdated for pageData.lastUpdated\nand sitemap generation\n([7fcf462](https://togithub.com/vuejs/vitepress/commit/7fcf462eb8c2be6e72b4426a8211fcd6961e4967)),\ncloses [#&#8203;3931](https://togithub.com/vuejs/vitepress/issues/3931)\n- **build:** sort pageToHashMap to ensure stable assets\n([e302328](https://togithub.com/vuejs/vitepress/commit/e302328a4ce3242cbfb7112e856840b7346aa16a)),\ncloses [#&#8203;4016](https://togithub.com/vuejs/vitepress/issues/4016)\n- **client:** do nothing on anchor elements with empty href\n([6461f5d](https://togithub.com/vuejs/vitepress/commit/6461f5d42b3bfed1d7959e1167fc77f61d08f314)),\ncloses [#&#8203;3950](https://togithub.com/vuejs/vitepress/issues/3950)\n- don't do git log on non-existent file\n([387acf7](https://togithub.com/vuejs/vitepress/commit/387acf71aa351e23ca3402713020a3571ad17155)),\ncloses [#&#8203;4008](https://togithub.com/vuejs/vitepress/issues/4008)\n- don't reopen browser on restart\n([d837e82](https://togithub.com/vuejs/vitepress/commit/d837e82bc8bde63df737be2a1290a2e70c8a0bf3)),\ncloses [#&#8203;4001](https://togithub.com/vuejs/vitepress/issues/4001)\n- properly handle svg anchor elements\n([b785bd6](https://togithub.com/vuejs/vitepress/commit/b785bd6ab3b5dd909aa955dc9e03b08e66b76294))\n- **theme:** add styles for h4 too\n([b54d7b0](https://togithub.com/vuejs/vitepress/commit/b54d7b0d7cd1257bcadd25f9b69cba21d0a3dff6))\n- **theme:** deep watch sidebar groups and force render on match change\n([97f9469](https://togithub.com/vuejs/vitepress/commit/97f9469b6d4eb7ba9de9a1111986581d1f704ec3)),\ncloses [#&#8203;3613](https://togithub.com/vuejs/vitepress/issues/3613)\n- **theme:** dim color for all text like elements inside blockquotes\n([5d3ed87](https://togithub.com/vuejs/vitepress/commit/5d3ed87f8530134fa709681ebadb2f3cfc68680e)),\ncloses [#&#8203;3929](https://togithub.com/vuejs/vitepress/issues/3929)\n- **theme:** force update title attribute on hydration\n([d348da7](https://togithub.com/vuejs/vitepress/commit/d348da770c2a68993d1a40d1c0223e42a681057a)),\ncloses [#&#8203;4004](https://togithub.com/vuejs/vitepress/issues/4004)\n- **theme:** show filled nav bar when nav screen is open\n([0fc70e2](https://togithub.com/vuejs/vitepress/commit/0fc70e2d0c29c92a1dceba035295a3fac84ffc00))\n\n##### Features\n\n- allow using components in navigation bar\n([#&#8203;4000](https://togithub.com/vuejs/vitepress/issues/4000))\n([fa87d81](https://togithub.com/vuejs/vitepress/commit/fa87d8150d8185fa8a22cd6b6e762632b83f8231))\n- **cli/init:** allow passing target dir as command argument\n([#&#8203;3948](https://togithub.com/vuejs/vitepress/issues/3948))\n([99053ba](https://togithub.com/vuejs/vitepress/commit/99053baea7eb6aa62a11a2cfd4b1e6e60311dd63))\n- **markdown:** support including specific regions from markdown files\n([#&#8203;3978](https://togithub.com/vuejs/vitepress/issues/3978))\n([143b1e9](https://togithub.com/vuejs/vitepress/commit/143b1e91f3696507d33666ec5847e7b64a771bcf))\n- support `force-auto` as an option for appearance\n([1e8bb48](https://togithub.com/vuejs/vitepress/commit/1e8bb48bc2891ea388bf0b9edd2f5b612bb1e85d)),\ncloses [#&#8203;3946](https://togithub.com/vuejs/vitepress/issues/3946)\n- **theme:** export VPHomeContent\n([#&#8203;3960](https://togithub.com/vuejs/vitepress/issues/3960))\n([8aa6ccb](https://togithub.com/vuejs/vitepress/commit/8aa6ccbe32655f76c390d15568f69f83d079385d)),\ncloses [#&#8203;3954](https://togithub.com/vuejs/vitepress/issues/3954)\n\n####\n[1.2.3](https://togithub.com/vuejs/vitepress/compare/v1.2.2...v1.2.3)\n(2024-06-04)\n\n##### Bug Fixes\n\n- **theme,a11y:** handle overflow on long mathematical equation and make\ntables focusable\n([#&#8203;3932](https://togithub.com/vuejs/vitepress/issues/3932))\n(closes\n[#&#8203;3914](https://togithub.com/vuejs/vitepress/issues/3914))\n([afc611d](https://togithub.com/vuejs/vitepress/commit/afc611d399d2780550ae04caa0e73e1c0c69a680))\n- **types:** wrong types generated for markdown-it > mdurl\n([48ca76c](https://togithub.com/vuejs/vitepress/commit/48ca76c523d9b979a678d52447f5ce324799e47f)),\ncloses [#&#8203;3935](https://togithub.com/vuejs/vitepress/issues/3935)\n\n####\n[1.2.2](https://togithub.com/vuejs/vitepress/compare/v1.2.1...v1.2.2)\n(2024-05-21)\n\n##### Bug Fixes\n\n- dont escape ampersand twice in title\n([7ea3572](https://togithub.com/vuejs/vitepress/commit/7ea357256c855ae0a9a142c14bbd5e7d344ef865))\n\n####\n[1.2.1](https://togithub.com/vuejs/vitepress/compare/v1.2.0...v1.2.1)\n(2024-05-21)\n\n##### Bug Fixes\n\n- **a11y:** make code blocks accessible with keyboard\n([#&#8203;3902](https://togithub.com/vuejs/vitepress/issues/3902))\n([cb308b9](https://togithub.com/vuejs/vitepress/commit/cb308b9295e1e661c2c72fa4229b5c7d83278d49))\n- escape title properly in build\n([49b1233](https://togithub.com/vuejs/vitepress/commit/49b1233378436054c07a6ef646d0029096124021))\n- **theme:** remove unnecessary navigation role on nav element\n([af4717d](https://togithub.com/vuejs/vitepress/commit/af4717d6820233a011200d44abba53d0f66bfad3))\n\n</details>\n\n---\n\n### Configuration\n\n📅 **Schedule**: Branch creation - \"before 10am on monday\" in timezone\nAsia/Shanghai, Automerge - At any time (no schedule defined).\n\n🚦 **Automerge**: Disabled by config. Please merge this manually once you\nare satisfied.\n\n♻ **Rebasing**: Whenever PR becomes conflicted, or you tick the\nrebase/retry checkbox.\n\n👻 **Immortal**: This PR will be recreated if closed unmerged. Get\n[config help](https://togithub.com/renovatebot/renovate/discussions) if\nthat's undesired.\n\n---\n\n- [ ] <!-- rebase-check -->If you want to rebase/retry this PR, check\nthis box\n\n---\n\nThis PR has been generated by [Mend\nRenovate](https://www.mend.io/free-developer-tools/renovate/). View\nrepository job log\n[here](https://developer.mend.io/github/rolldown/rolldown).\n\n<!--renovate-debug:eyJjcmVhdGVkSW5WZXIiOiIzNy40MjEuOSIsInVwZGF0ZWRJblZlciI6IjM3LjQyMS45IiwidGFyZ2V0QnJhbmNoIjoibWFpbiIsImxhYmVscyI6W119-->\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2024-07-08T03:15:27Z",
+          "tree_id": "404ad926240b7a9f7e8d94bba4fa281512f73905",
+          "url": "https://github.com/rolldown/rolldown/commit/fde345e0f57604cf031f55564130b0031db948f4"
+        },
+        "date": 1720409154498,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "322.10",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "546.29",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "120.94",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "175.15",
             "unit": "ms / ops"
           }
         ]
