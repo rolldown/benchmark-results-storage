@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1720419126142,
+  "lastUpdate": 1720419354049,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -17373,6 +17373,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "181.48",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "15ce3aef4f885d600f535cd1c387422681c10bc8",
+          "message": "fix: optional TransformResult#code (#1544)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-08T06:02:38Z",
+          "tree_id": "8e026bc18daa54e487e013b7df0b070e3a80646a",
+          "url": "https://github.com/rolldown/rolldown/commit/15ce3aef4f885d600f535cd1c387422681c10bc8"
+        },
+        "date": 1720419354044,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "317.16",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "540.81",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "116.86",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "174.73",
             "unit": "ms / ops"
           }
         ]
