@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1720455173123,
+  "lastUpdate": 1720457436086,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -17637,6 +17637,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "179.96",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2fc90e5b304f2d6b6f9110d677d2c2dc6009c7df",
+          "message": "refactor(rust/rolldown): rename xx`Id` to xx`Idx` for defined types by `oxc_index` (#1550)\n\n<!-- Thank you for contributing! -->\r\n\r\n### Description\r\n\r\nThe `Id` concept will play an important role in the future and it's not\r\nworth to use it just for representing the index of some vectors.\r\n\r\n<!-- Please insert your description here and provide especially info\r\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-09T00:46:18+08:00",
+          "tree_id": "58b8e98f6cfe5cca2ed2f52d24c6a5cf45539cf3",
+          "url": "https://github.com/rolldown/rolldown/commit/2fc90e5b304f2d6b6f9110d677d2c2dc6009c7df"
+        },
+        "date": 1720457436081,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "326.14",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "547.84",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "120.20",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "182.51",
             "unit": "ms / ops"
           }
         ]
