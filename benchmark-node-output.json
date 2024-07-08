@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1720419354049,
+  "lastUpdate": 1720425512036,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -17417,6 +17417,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "174.73",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "593a4202c77dd53e31f0caa4ce5dfd4488d98745",
+          "message": "chore: adding cargo run-fixture (#1541)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. Move `common` dir in `crates/rolldown/tests` to `rolldown_testing`,\ncause now we need to dependent on it in `bin/run-fixture`, it is not\nproper to move `common` to `crates/rolldown`, so move it to\n`rolldown_testing`\n2. Usage: `cargo run-fixture\ncrates/rolldown/tests/fixtures/tree_shaking/advanced_barrel_exports/_config.json`\n3. Both relative path and absolute path are supported.\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-08T07:47:50Z",
+          "tree_id": "2e024f0c8ecd8785d79190b68d735a913cf9fbe2",
+          "url": "https://github.com/rolldown/rolldown/commit/593a4202c77dd53e31f0caa4ce5dfd4488d98745"
+        },
+        "date": 1720425512031,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "312.48",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "544.51",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "119.01",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "179.14",
             "unit": "ms / ops"
           }
         ]
