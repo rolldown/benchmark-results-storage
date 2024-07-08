@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1720440512231,
+  "lastUpdate": 1720445208589,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -17549,6 +17549,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "184.64",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "626b86593e0dead11c6777f16fe360a1b76c4286",
+          "message": "chore: add naming deconflict benchmark (#1517)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. required https://github.com/rolldown/rolldown/pull/1514 to be merged.\n2. Closed https://github.com/rolldown/rolldown/issues/1466\n3. repository `rolldown/benchcases` store all the rolldown custom\nbenchmark cases, like **naming deconflicting** etc.\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-08T13:16:04Z",
+          "tree_id": "b9a47566efd91068033584bde497020b93927b21",
+          "url": "https://github.com/rolldown/rolldown/commit/626b86593e0dead11c6777f16fe360a1b76c4286"
+        },
+        "date": 1720445208583,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "338.06",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "563.23",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "123.51",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "184.97",
             "unit": "ms / ops"
           }
         ]
