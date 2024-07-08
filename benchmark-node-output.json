@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1720425512036,
+  "lastUpdate": 1720437072381,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -17461,6 +17461,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "179.14",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3e137853aecf92e2ff0c21b8949e9182926379fe",
+          "message": "fix(sourcemap): avoid remapping if renderChunk hook not return map (#1545)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-08T10:59:30Z",
+          "tree_id": "48ca1d90c910e35cd6a51ba31dfdf3e1f8fe9d0d",
+          "url": "https://github.com/rolldown/rolldown/commit/3e137853aecf92e2ff0c21b8949e9182926379fe"
+        },
+        "date": 1720437072375,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "393.81",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "561.17",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "124.01",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "183.65",
             "unit": "ms / ops"
           }
         ]
