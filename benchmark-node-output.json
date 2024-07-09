@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1720539629458,
+  "lastUpdate": 1720547015245,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -18165,6 +18165,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "178.32",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "296eb64625e826e575420bba4705a5a4dda391fe",
+          "message": "refactor: add `Module` and `ModuleIdx` (#1565)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nPreparation for supporting css.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-09T17:30:46Z",
+          "tree_id": "379197fd11ff73d760a16ce4132f0413d8ebb1cf",
+          "url": "https://github.com/rolldown/rolldown/commit/296eb64625e826e575420bba4705a5a4dda391fe"
+        },
+        "date": 1720547015239,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "377.47",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "558.72",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "119.00",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "178.82",
             "unit": "ms / ops"
           }
         ]
