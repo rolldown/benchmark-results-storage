@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1720463429051,
+  "lastUpdate": 1720511475471,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -17813,6 +17813,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "172.69",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "lynweklm@gmail.com",
+            "name": "LongYinan",
+            "username": "Brooooooklyn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "59d95a1623c70e559ac971ded9e11896f692131d",
+          "message": "chore(rolldown): upgrade NAPI-RS cli (#1555)\n\n### Description\n\nThe wasi JavaScript binding files are forgotten to update, upgrade the\n`@napi-rs/cli` so that it will update the binding files after any\nchanges of the binding files.\n\n- Close https://github.com/rolldown/rolldown/issues/1547",
+          "timestamp": "2024-07-09T07:39:42Z",
+          "tree_id": "7eb153cd017b49dd958ffc876851480119b929cd",
+          "url": "https://github.com/rolldown/rolldown/commit/59d95a1623c70e559ac971ded9e11896f692131d"
+        },
+        "date": 1720511475466,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "307.27",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "524.75",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "116.38",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "172.68",
             "unit": "ms / ops"
           }
         ]
