@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1720530736560,
+  "lastUpdate": 1720531167037,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -18033,6 +18033,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "185.48",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f61ac92c68576cb816c94e21a4597a839684661a",
+          "message": "release: v0.11.1 (#1561)\n\n<!-- Thank you for contributing! -->\r\n\r\n### Description\r\n\r\n<!-- Please insert your description here and provide especially info\r\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-09T21:09:26+08:00",
+          "tree_id": "d20705388ffd9259f46bb24b2d7efe8031fda024",
+          "url": "https://github.com/rolldown/rolldown/commit/f61ac92c68576cb816c94e21a4597a839684661a"
+        },
+        "date": 1720531167031,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "386.89",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "536.80",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "116.30",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "171.70",
             "unit": "ms / ops"
           }
         ]
