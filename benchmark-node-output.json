@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1720611263010,
+  "lastUpdate": 1720624502174,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -18385,6 +18385,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "173.01",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "17974631+IWANABETHATGUY@users.noreply.github.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "17974631+IWANABETHATGUY@users.noreply.github.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "distinct": true,
+          "id": "51eb195e179d3d42081de55964ae70fa92b94c1d",
+          "message": "chore: refactor ast snippet (#1573)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. Using `ast` builder API instead of constructing ast by hand, avoid hiding none `oxc` offered default value, e.g. https://github.com/rolldown/rolldown/blob/5c5bf4884da5c28eea3c235c7239b41cf5de585c/crates/rolldown_ecmascript/src/allocator_helpers/take_in/impl_for_oxc_ast.rs#L341-L345\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-10T15:01:07Z",
+          "tree_id": "48a55c3f9b26a048a988812474b77fe309acd3b3",
+          "url": "https://github.com/rolldown/rolldown/commit/51eb195e179d3d42081de55964ae70fa92b94c1d"
+        },
+        "date": 1720624502169,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "308.88",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "536.62",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "118.01",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "178.07",
             "unit": "ms / ops"
           }
         ]
