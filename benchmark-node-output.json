@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1720600013932,
+  "lastUpdate": 1720611263010,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -18341,6 +18341,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "180.74",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7c9d5374811d10dccaea9e54b1bd74d7d84eff88",
+          "message": "feat(output): support emit output of iife format (#1570)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nThe pr intend to spport iife format, the result of rollup and esbuild\nhas some different.\n\nHere is a [esbuild\nexample](https://esbuild.github.io/try/#YgAwLjIzLjAALS1mb3JtYXQ9aWlmZSAtLWJ1bmRsZSAtLW91dGRpcj0iZGlzdCIAZQBlbnRyeS5qcwBpbXBvcnQoIi4vY2pzIikKaW1wb3J0KCIuL2VzbSIpLnRoZW4oKG0pID0+IG0udmFsdWUpAABjanMuanMAY29uc29sZS5sb2coKQBlAGVzbS5qcwBleHBvcnQgY29uc3QgdmFsdWUgPSAx)\nand [rollup\nexample](https://rollupjs.org/repl/?version=4.18.1&shareable=JTdCJTIyZXhhbXBsZSUyMiUzQSUyMiUyMiUyQyUyMm1vZHVsZXMlMjIlM0ElNUIlN0IlMjJjb2RlJTIyJTNBJTIyaW1wb3J0KCcuJTJGbW9kdWxlXzEnKSUyMiUyQyUyMmlzRW50cnklMjIlM0F0cnVlJTJDJTIybmFtZSUyMiUzQSUyMm1haW4uanMlMjIlN0QlMkMlN0IlMjJjb2RlJTIyJTNBJTIyJTIyJTJDJTIyaXNFbnRyeSUyMiUzQWZhbHNlJTJDJTIybmFtZSUyMiUzQSUyMm1vZHVsZV8xLmpzJTIyJTdEJTVEJTJDJTIyb3B0aW9ucyUyMiUzQSU3QiUyMm91dHB1dCUyMiUzQSU3QiUyMmZvcm1hdCUyMiUzQSUyMmlpZmUlMjIlN0QlN0QlN0Q=).\n\nDifference: The esbuild will wrapper esm if an inline dynamic module\nbecause it needs to execute lazily. The pr also port behavior form\nesbuild.\n\nFor iife format other issues, let us track at\n[here](https://github.com/rolldown/rolldown/issues/1569)\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-10T11:22:18Z",
+          "tree_id": "61ebb1ba9ed9139488f370d0946ee98760162d56",
+          "url": "https://github.com/rolldown/rolldown/commit/7c9d5374811d10dccaea9e54b1bd74d7d84eff88"
+        },
+        "date": 1720611263005,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "309.18",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "533.17",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "116.98",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "173.01",
             "unit": "ms / ops"
           }
         ]
