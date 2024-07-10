@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1720598229368,
+  "lastUpdate": 1720600013932,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -18297,6 +18297,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "169.53",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0303f1fdee8447c7ee65f1fe3c5e7b151d77e290",
+          "message": "feat(experimental): support strict execution order (#1568)\n\n<!-- Thank you for contributing! -->\r\n\r\n### Description\r\n\r\nThis feature try to solve the execution order problem caused by rollup\r\nand esbuild's code splitting logic. The nature of these problem is that\r\nthe execution order of shared modules are hoisted unexpectedly.\r\n\r\n- https://github.com/evanw/esbuild/issues/399\r\n- https://github.com/evanw/esbuild/issues/2598\r\n\r\nThis is done by adding helper function to simulate the original the\r\nsemantic esm input while keep the static linking between modules.\r\n\r\n<!-- Please insert your description here and provide especially info\r\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-10T16:22:27+08:00",
+          "tree_id": "b1182b362e7749c5d9f5dc8f6ad115fea8fa31bf",
+          "url": "https://github.com/rolldown/rolldown/commit/0303f1fdee8447c7ee65f1fe3c5e7b151d77e290"
+        },
+        "date": 1720600013927,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "386.21",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "532.52",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "116.98",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "180.74",
             "unit": "ms / ops"
           }
         ]
