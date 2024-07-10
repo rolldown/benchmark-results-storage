@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1720597983030,
+  "lastUpdate": 1720598229368,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -18260,9 +18260,9 @@
       {
         "commit": {
           "author": {
-            "email": "i.heyunfei@gmail.com",
-            "name": "Yunfei He",
-            "username": "hyf0"
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
           },
           "committer": {
             "email": "noreply@github.com",
@@ -18270,33 +18270,33 @@
             "username": "web-flow"
           },
           "distinct": false,
-          "id": "7b2387f7aa54f116293738b529552e17db33926e",
-          "message": "chore: update binding files (#1567)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
-          "timestamp": "2024-07-10T07:40:48Z",
-          "tree_id": "292fc313a4bc61bbf30e1f5573854a2cc01638e1",
-          "url": "https://github.com/rolldown/rolldown/commit/7b2387f7aa54f116293738b529552e17db33926e"
+          "id": "1971e3b3788fbd2ca7ad68ef2868e2e9ae196882",
+          "message": "fix: mixed multi declarator tree shake (#1566)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. Considering this case: \n```js\n// index.js\nimport {c} from './a.js'\nconsole.log(c)\n// a.js\n\nexport const a = 100, b = 200, [c, d] = [1, 2]\n```\nvar declarator should also be separated. \n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-10T07:43:24Z",
+          "tree_id": "bfe0c2d312d7a2e87efad68eb9df8190d9ce289d",
+          "url": "https://github.com/rolldown/rolldown/commit/1971e3b3788fbd2ca7ad68ef2868e2e9ae196882"
         },
-        "date": 1720597983024,
+        "date": 1720598229363,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x (default)",
-            "value": "309.96",
+            "value": "312.92",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap (default)",
-            "value": "536.84",
+            "value": "530.19",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts (default)",
-            "value": "115.12",
+            "value": "115.44",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts-sourcemap (default)",
-            "value": "171.06",
+            "value": "169.53",
             "unit": "ms / ops"
           }
         ]
