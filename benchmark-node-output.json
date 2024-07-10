@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1720582066797,
+  "lastUpdate": 1720597983030,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -18253,6 +18253,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "184.22",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "7b2387f7aa54f116293738b529552e17db33926e",
+          "message": "chore: update binding files (#1567)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-10T07:40:48Z",
+          "tree_id": "292fc313a4bc61bbf30e1f5573854a2cc01638e1",
+          "url": "https://github.com/rolldown/rolldown/commit/7b2387f7aa54f116293738b529552e17db33926e"
+        },
+        "date": 1720597983024,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "309.96",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "536.84",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "115.12",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "171.06",
             "unit": "ms / ops"
           }
         ]
