@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1720718957693,
+  "lastUpdate": 1720720358581,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -18869,6 +18869,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "187.93",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "bbb4b65c5c329e91fd67e7ce6f2e96ad58053749",
+          "message": "refactor: use `ArcStr` to replace `Arc<String>` and `String` (#1590)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-11T17:40:10Z",
+          "tree_id": "d30c292e7f6f5aabd55dc73e22a03c015495f8bb",
+          "url": "https://github.com/rolldown/rolldown/commit/bbb4b65c5c329e91fd67e7ce6f2e96ad58053749"
+        },
+        "date": 1720720358576,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "398.13",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "537.11",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "115.96",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "177.40",
             "unit": "ms / ops"
           }
         ]
