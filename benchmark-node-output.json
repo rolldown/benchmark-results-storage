@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1720640162571,
+  "lastUpdate": 1720663141755,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -18517,6 +18517,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "176.05",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ef1d6751f1e74e9b79b48dc227ea806e03b99af9",
+          "message": "chore: refactor make ast (#1574)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-11T01:47:24Z",
+          "tree_id": "678ccfe1c3c0fe2a6766d27d82750b6e5d19b9cf",
+          "url": "https://github.com/rolldown/rolldown/commit/ef1d6751f1e74e9b79b48dc227ea806e03b99af9"
+        },
+        "date": 1720663141750,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "317.15",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "542.12",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "117.96",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "171.88",
             "unit": "ms / ops"
           }
         ]
