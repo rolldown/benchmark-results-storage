@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1720682612445,
+  "lastUpdate": 1720683721258,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -18649,6 +18649,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "180.61",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4790d46f81c37e387c1c852ff16b8729a188cc1c",
+          "message": "fix: chunk modules should include empty module (#1583)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-11T07:30:29Z",
+          "tree_id": "25160dc543be6ed5b3fc4bbde15aa29c0509f166",
+          "url": "https://github.com/rolldown/rolldown/commit/4790d46f81c37e387c1c852ff16b8729a188cc1c"
+        },
+        "date": 1720683721252,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "304.56",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "588.15",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "123.40",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "176.61",
             "unit": "ms / ops"
           }
         ]
