@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1720720358581,
+  "lastUpdate": 1720721036175,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -18913,6 +18913,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "177.40",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a669d77e3e2ad1a821f511f2381d3328c1def248",
+          "message": "refactor: add `GenerateStage#render_chunk_to_assets` (#1592)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-11T17:48:34Z",
+          "tree_id": "6d6d0d0067ffd72d171eea938274edc756e4d73c",
+          "url": "https://github.com/rolldown/rolldown/commit/a669d77e3e2ad1a821f511f2381d3328c1def248"
+        },
+        "date": 1720721036169,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "316.63",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "538.01",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "119.86",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "180.68",
             "unit": "ms / ops"
           }
         ]
