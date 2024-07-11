@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1720663141755,
+  "lastUpdate": 1720669459201,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -18561,6 +18561,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "171.88",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "boshenc@gmail.com",
+            "name": "Boshen",
+            "username": "Boshen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5e846fb51af03eba2482216100ede505176cf38e",
+          "message": "chore: bump oxc to v0.20.0 (#1581)\n\n* minifier: Implement dce with var hoisting\n* minifier: Implement return statement dce\n* napi/transformer: Add jsx option to force parsing with jsx",
+          "timestamp": "2024-07-11T03:32:51Z",
+          "tree_id": "07259d8f5cb345b6fe60590d4a149232467e2be4",
+          "url": "https://github.com/rolldown/rolldown/commit/5e846fb51af03eba2482216100ede505176cf38e"
+        },
+        "date": 1720669459195,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "317.52",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "598.96",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "116.04",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "177.37",
             "unit": "ms / ops"
           }
         ]
