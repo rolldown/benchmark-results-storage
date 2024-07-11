@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1720716741613,
+  "lastUpdate": 1720718244743,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -18781,6 +18781,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "169.62",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "71cd1773c5d9e8f3c8980bd5048eb2b11df04ad5",
+          "message": "chore: rename `compiler.rs` to `ecma_compiler.rs` (#1587)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-11T17:05:31Z",
+          "tree_id": "7287652983e22e992fa292fbfe922cd031a3b57b",
+          "url": "https://github.com/rolldown/rolldown/commit/71cd1773c5d9e8f3c8980bd5048eb2b11df04ad5"
+        },
+        "date": 1720718244737,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "358.79",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "534.02",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "115.16",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "172.09",
             "unit": "ms / ops"
           }
         ]
