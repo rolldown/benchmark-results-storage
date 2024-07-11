@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1720669459201,
+  "lastUpdate": 1720682612445,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -18605,6 +18605,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "177.37",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "c1660942967a4dee4199e3269c55dfc800b1a43e",
+          "message": "fix: InternalModuleFormat typing (#1580)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-11T07:10:02Z",
+          "tree_id": "bdda5ee6844fd8d4e82a93a6f51988f5f70830dc",
+          "url": "https://github.com/rolldown/rolldown/commit/c1660942967a4dee4199e3269c55dfc800b1a43e"
+        },
+        "date": 1720682612439,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "319.97",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "544.82",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "117.48",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "180.61",
             "unit": "ms / ops"
           }
         ]
