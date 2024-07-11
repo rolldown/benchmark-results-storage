@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1720683721258,
+  "lastUpdate": 1720685085886,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -18693,6 +18693,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "176.61",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "593e87e63949e0223970e4140750be24e4dd53eb",
+          "message": "fix: iife wrapper (#1584)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-11T07:51:04Z",
+          "tree_id": "7d4cfbfd91cf16bfc19cf16ba72e10d6428cd24d",
+          "url": "https://github.com/rolldown/rolldown/commit/593e87e63949e0223970e4140750be24e4dd53eb"
+        },
+        "date": 1720685085880,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "338.10",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "627.97",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "127.16",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "188.83",
             "unit": "ms / ops"
           }
         ]
