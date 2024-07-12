@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1720764861892,
+  "lastUpdate": 1720771869024,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -19089,6 +19089,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "174.78",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "7b011df0372d7a9186253c89882dec4172f846e6",
+          "message": "fix: template literal side effects (#1594)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-12T07:59:15Z",
+          "tree_id": "a5737d9031a78b271d52ca627bb9ea4bb79b5c70",
+          "url": "https://github.com/rolldown/rolldown/commit/7b011df0372d7a9186253c89882dec4172f846e6"
+        },
+        "date": 1720771869018,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "353.72",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "528.34",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "115.59",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "173.26",
             "unit": "ms / ops"
           }
         ]
