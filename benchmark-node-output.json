@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1720750747519,
+  "lastUpdate": 1720759194890,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -19001,6 +19001,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "172.68",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "e7747fc8c59721bd0bcad86bdc913682368ebaab",
+          "message": "fix:  align using declaration side effects detection with esbuild. (#1593)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-12T04:28:13Z",
+          "tree_id": "9f6c22ff60ee7115e7a891eb68b9ed2cd1897243",
+          "url": "https://github.com/rolldown/rolldown/commit/e7747fc8c59721bd0bcad86bdc913682368ebaab"
+        },
+        "date": 1720759194884,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "312.79",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "530.97",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "115.14",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "174.56",
             "unit": "ms / ops"
           }
         ]
