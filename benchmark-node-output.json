@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1720773927282,
+  "lastUpdate": 1720783710955,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -19177,6 +19177,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "177.07",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "42becf062de1d7d4e137ff1541390a11b2ba07c0",
+          "message": "fix: remove unused pure comment call (#1597)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-12T11:14:15Z",
+          "tree_id": "52c3ce6804077bd9e47c80e34e8acec6711772c9",
+          "url": "https://github.com/rolldown/rolldown/commit/42becf062de1d7d4e137ff1541390a11b2ba07c0"
+        },
+        "date": 1720783710949,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "328.15",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "554.70",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "125.88",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "183.29",
             "unit": "ms / ops"
           }
         ]
