@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1720888028405,
+  "lastUpdate": 1720901002491,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -19265,6 +19265,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "180.71",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "42dd2843dd5c26fde5757a6047b13bb55d3df4c2",
+          "message": "refactor: introduce `PreliminaryAsset` and `Asset` (#1602)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-13T19:51:40Z",
+          "tree_id": "eb892be90321ed0b933128758b52bc11af3d50f6",
+          "url": "https://github.com/rolldown/rolldown/commit/42dd2843dd5c26fde5757a6047b13bb55d3df4c2"
+        },
+        "date": 1720901002485,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "327.69",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "547.15",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "120.05",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "177.43",
             "unit": "ms / ops"
           }
         ]
