@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1720904441828,
+  "lastUpdate": 1720905597873,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -19441,6 +19441,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "176.36",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "07801f83b0075423d053cb94839e71ddfd3ce640",
+          "message": "refactor: rename `RenderedChunk` to `RollupRenderedChunk` (#1606)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nThe design of rolldown is to be a self-consistent bundler. All the API\nit provides it are due to, as a bundler, it have to provide. And the\ncompatibility with rollup are also supported by these API, we don't need\ncome up with something that is specific for rollup.\n\nHowever, in practice, this's not possible, we have to add something that\njust for rollup compatibility and I want to know how much code we are\nadded due to this purpose.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-13T21:07:23Z",
+          "tree_id": "d316d6a4dbad29abb4845ff24641eb29b969de9e",
+          "url": "https://github.com/rolldown/rolldown/commit/07801f83b0075423d053cb94839e71ddfd3ce640"
+        },
+        "date": 1720905597867,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "317.19",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "600.49",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "122.32",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "185.14",
             "unit": "ms / ops"
           }
         ]
