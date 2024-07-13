@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1720901002491,
+  "lastUpdate": 1720902204208,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -19309,6 +19309,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "177.43",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b12b048d717f2aa6c02fd2a862eaee9cfdee98a0",
+          "message": "refactor: introduce `AssetMeta` (#1603)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-13T20:11:23Z",
+          "tree_id": "4c556d7612b91827045d03fb3053f316546506a9",
+          "url": "https://github.com/rolldown/rolldown/commit/b12b048d717f2aa6c02fd2a862eaee9cfdee98a0"
+        },
+        "date": 1720902204202,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "383.18",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "544.74",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "118.84",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "172.71",
             "unit": "ms / ops"
           }
         ]
