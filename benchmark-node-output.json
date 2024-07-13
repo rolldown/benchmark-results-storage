@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1720903355150,
+  "lastUpdate": 1720904441828,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -19397,6 +19397,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "176.93",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "17d96dc8c82d653543c9a57bde82a3db4b170e4a",
+          "message": "refactor: introduce `EcmaAssetMeta` (#1605)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-13T20:49:23Z",
+          "tree_id": "023391161bf9fdbb7a94b60885630ba38961cbb5",
+          "url": "https://github.com/rolldown/rolldown/commit/17d96dc8c82d653543c9a57bde82a3db4b170e4a"
+        },
+        "date": 1720904441822,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "354.81",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "539.91",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "116.51",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "176.36",
             "unit": "ms / ops"
           }
         ]
