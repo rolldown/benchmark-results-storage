@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1720902204208,
+  "lastUpdate": 1720903355150,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -19353,6 +19353,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "172.71",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2f53bce4ce7b47e98ca3419eec849893bde0e9c7",
+          "message": "refactor(plugin_driver): tweak code of `render_chunks` and `augment_chunk_hash` (#1604)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-13T20:30:23Z",
+          "tree_id": "cc829b0a7d0ac17794a0679421fb59b29cd791c8",
+          "url": "https://github.com/rolldown/rolldown/commit/2f53bce4ce7b47e98ca3419eec849893bde0e9c7"
+        },
+        "date": 1720903355144,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "308.06",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "601.39",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "116.08",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "176.93",
             "unit": "ms / ops"
           }
         ]
