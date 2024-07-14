@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1720945212245,
+  "lastUpdate": 1720954765216,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -19529,6 +19529,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "180.74",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "c3b589bbdb0b0caaea8c7c300c02ae7f7e692878",
+          "message": "refactor: introduce `Generator` to unite the way of generting assets (#1610)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-14T10:46:46Z",
+          "tree_id": "847eda8445cd6e2bc524995d73ac9304095e6e06",
+          "url": "https://github.com/rolldown/rolldown/commit/c3b589bbdb0b0caaea8c7c300c02ae7f7e692878"
+        },
+        "date": 1720954765210,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "315.93",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "546.83",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "117.57",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "181.23",
             "unit": "ms / ops"
           }
         ]
