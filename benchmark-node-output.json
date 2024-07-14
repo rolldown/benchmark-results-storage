@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1720954765216,
+  "lastUpdate": 1720955020395,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -19536,9 +19536,9 @@
       {
         "commit": {
           "author": {
-            "email": "i.heyunfei@gmail.com",
-            "name": "Yunfei He",
-            "username": "hyf0"
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
           },
           "committer": {
             "email": "noreply@github.com",
@@ -19546,33 +19546,33 @@
             "username": "web-flow"
           },
           "distinct": false,
-          "id": "c3b589bbdb0b0caaea8c7c300c02ae7f7e692878",
-          "message": "refactor: introduce `Generator` to unite the way of generting assets (#1610)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
-          "timestamp": "2024-07-14T10:46:46Z",
-          "tree_id": "847eda8445cd6e2bc524995d73ac9304095e6e06",
-          "url": "https://github.com/rolldown/rolldown/commit/c3b589bbdb0b0caaea8c7c300c02ae7f7e692878"
+          "id": "42b9b05e8bab751246505b36fbcc9086314e97ed",
+          "message": "chore(deps): update napi-rs to 3.0.0-alpha (#1609)\n\n[![Mend\nRenovate](https://app.renovatebot.com/images/banner.svg)](https://renovatebot.com)\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [napi](https://togithub.com/napi-rs/napi-rs) | workspace.dependencies\n| patch | `3.0.0-alpha.3` -> `3.0.0-alpha` |\n| [napi-derive](https://togithub.com/napi-rs/napi-rs) |\nworkspace.dependencies | patch | `3.0.0-alpha.2` -> `3.0.0-alpha` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>napi-rs/napi-rs (napi)</summary>\n\n###\n[`v3.0.0-alpha.6`](https://togithub.com/napi-rs/napi-rs/releases/tag/%40napi-rs/cli%403.0.0-alpha.6)\n\n[Compare\nSource](https://togithub.com/napi-rs/napi-rs/compare/napi@3.0.0-alpha.5...napi@3.0.0-alpha.6)\n\n#### What's Changed\n\n- chore(deps): update yarn to v3.6.2 by\n[@&#8203;renovate](https://togithub.com/renovate) in\n[https://github.com/napi-rs/napi-rs/pull/1702](https://togithub.com/napi-rs/napi-rs/pull/1702)\n- chore(deps): update yarn to v3.6.3 by\n[@&#8203;renovate](https://togithub.com/renovate) in\n[https://github.com/napi-rs/napi-rs/pull/1708](https://togithub.com/napi-rs/napi-rs/pull/1708)\n- chore(cli): update ci template by\n[@&#8203;Brooooooklyn](https://togithub.com/Brooooooklyn) in\n[https://github.com/napi-rs/napi-rs/pull/1771](https://togithub.com/napi-rs/napi-rs/pull/1771)\n- Integrate with emnapi by\n[@&#8203;Brooooooklyn](https://togithub.com/Brooooooklyn) in\n[https://github.com/napi-rs/napi-rs/pull/1669](https://togithub.com/napi-rs/napi-rs/pull/1669)\n- fix(cli): switch name parsing to allow periods in name by\n[@&#8203;RaphaelDarley](https://togithub.com/RaphaelDarley) in\n[https://github.com/napi-rs/napi-rs/pull/1716](https://togithub.com/napi-rs/napi-rs/pull/1716)\n- chore: upgrade to yarn 4 by\n[@&#8203;Brooooooklyn](https://togithub.com/Brooooooklyn) in\n[https://github.com/napi-rs/napi-rs/pull/1774](https://togithub.com/napi-rs/napi-rs/pull/1774)\n- fix(cli): js binding template by\n[@&#8203;Brooooooklyn](https://togithub.com/Brooooooklyn) in\n[https://github.com/napi-rs/napi-rs/pull/1788](https://togithub.com/napi-rs/napi-rs/pull/1788)\n\n**Full Changelog**:\nhttps://github.com/napi-rs/napi-rs/compare/napi@2.13.3...[@&#8203;napi-rs/cli](https://togithub.com/napi-rs/cli)[@&#8203;3](https://togithub.com/3).0.0-alpha.6\n\n###\n[`v3.0.0-alpha.5`](https://togithub.com/napi-rs/napi-rs/releases/tag/napi%403.0.0-alpha.5)\n\n[Compare\nSource](https://togithub.com/napi-rs/napi-rs/compare/napi@3.0.0-alpha.4...napi@3.0.0-alpha.5)\n\n#### What's Changed\n\n- feat(napi): impl from_string for Uint8Array by\n[@&#8203;Brooooooklyn](https://togithub.com/Brooooooklyn) in\n[https://github.com/napi-rs/napi-rs/pull/2167](https://togithub.com/napi-rs/napi-rs/pull/2167)\n- feat(napi): provide PromiseRaw for non-await scenario by\n[@&#8203;Brooooooklyn](https://togithub.com/Brooooooklyn) in\n[https://github.com/napi-rs/napi-rs/pull/2168](https://togithub.com/napi-rs/napi-rs/pull/2168)\n\n**Full Changelog**:\nhttps://github.com/napi-rs/napi-rs/compare/[@&#8203;napi-rs/cli](https://togithub.com/napi-rs/cli)[@&#8203;3](https://togithub.com/3).0.0-alpha.56...napi@3.0.0-alpha.5\n\n###\n[`v3.0.0-alpha.4`](https://togithub.com/napi-rs/napi-rs/compare/napi@3.0.0-alpha.3...napi@3.0.0-alpha.4)\n\n[Compare\nSource](https://togithub.com/napi-rs/napi-rs/compare/napi@3.0.0-alpha.3...napi@3.0.0-alpha.4)\n\n</details>\n\n---\n\n### Configuration\n\n📅 **Schedule**: Branch creation - At any time (no schedule defined),\nAutomerge - At any time (no schedule defined).\n\n🚦 **Automerge**: Enabled.\n\n♻ **Rebasing**: Whenever PR becomes conflicted, or you tick the\nrebase/retry checkbox.\n\n🔕 **Ignore**: Close this PR and you won't be reminded about these\nupdates again.\n\n---\n\n- [ ] <!-- rebase-check -->If you want to rebase/retry this PR, check\nthis box\n\n---\n\nThis PR has been generated by [Mend\nRenovate](https://www.mend.io/free-developer-tools/renovate/). View\nrepository job log\n[here](https://developer.mend.io/github/rolldown/rolldown).\n\n<!--renovate-debug:eyJjcmVhdGVkSW5WZXIiOiIzNy40MzEuNCIsInVwZGF0ZWRJblZlciI6IjM3LjQzMS40IiwidGFyZ2V0QnJhbmNoIjoibWFpbiIsImxhYmVscyI6W119-->\n\n---------\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>\nCo-authored-by: IWANABETHATGUY <iwanabethatguy@qq.com>",
+          "timestamp": "2024-07-14T10:51:17Z",
+          "tree_id": "2bc108e154c89bbdf3fe9de94598e931246d0817",
+          "url": "https://github.com/rolldown/rolldown/commit/42b9b05e8bab751246505b36fbcc9086314e97ed"
         },
-        "date": 1720954765210,
+        "date": 1720955020388,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x (default)",
-            "value": "315.93",
+            "value": "317.13",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap (default)",
-            "value": "546.83",
+            "value": "532.58",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts (default)",
-            "value": "117.57",
+            "value": "117.07",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts-sourcemap (default)",
-            "value": "181.23",
+            "value": "177.16",
             "unit": "ms / ops"
           }
         ]
