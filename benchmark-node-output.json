@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1720976128578,
+  "lastUpdate": 1720976848098,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -19749,6 +19749,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "181.47",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "bcc4edce8831c1c31f30f9dc04d91a7fedc1f499",
+          "message": "feat(node): support `OutputOptions#minify` to minify js output (#1617)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-14T16:50:35Z",
+          "tree_id": "d4af8c36fc4528728fab55fcb8183680a439ed6c",
+          "url": "https://github.com/rolldown/rolldown/commit/bcc4edce8831c1c31f30f9dc04d91a7fedc1f499"
+        },
+        "date": 1720976848092,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "305.85",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "538.15",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "117.04",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "178.40",
             "unit": "ms / ops"
           }
         ]
