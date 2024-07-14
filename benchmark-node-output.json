@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1720955020395,
+  "lastUpdate": 1720970615888,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -19573,6 +19573,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "177.16",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8d16b1efab710acc958c07ffaff2ac69cf32cf17",
+          "message": "test: improve `packages/rolldown/tests/fixtures/output/hashFileNames` (#1612)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-14T15:10:46Z",
+          "tree_id": "15a6aaad8fd880dbae4b695c6f4c1223eb1ea660",
+          "url": "https://github.com/rolldown/rolldown/commit/8d16b1efab710acc958c07ffaff2ac69cf32cf17"
+        },
+        "date": 1720970615882,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "308.46",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "533.96",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "116.99",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "180.06",
             "unit": "ms / ops"
           }
         ]
