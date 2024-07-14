@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1720905597873,
+  "lastUpdate": 1720945212245,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -19485,6 +19485,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "185.14",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "3536f00054822e5a814b25b541d486daa302ec82",
+          "message": "fix: object property tree shake (#1608)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-14T08:06:39Z",
+          "tree_id": "e5cdc2e51f633683b3560f3d47ea339ab20c8c30",
+          "url": "https://github.com/rolldown/rolldown/commit/3536f00054822e5a814b25b541d486daa302ec82"
+        },
+        "date": 1720945212239,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "343.41",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "547.75",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "120.56",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "180.74",
             "unit": "ms / ops"
           }
         ]
