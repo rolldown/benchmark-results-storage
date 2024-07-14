@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1720971411981,
+  "lastUpdate": 1720974406017,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -19661,6 +19661,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "173.16",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c04a8435b959b738ab4327fb6fb7e84d65e9cb48",
+          "message": "ci: 🎡 add binary size metric (#1614)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-14T16:12:51Z",
+          "tree_id": "7e1c2610ca3a2ac96ebf67df049143cb83f2896a",
+          "url": "https://github.com/rolldown/rolldown/commit/c04a8435b959b738ab4327fb6fb7e84d65e9cb48"
+        },
+        "date": 1720974406010,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "315.69",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "557.54",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "124.11",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "183.19",
             "unit": "ms / ops"
           }
         ]
