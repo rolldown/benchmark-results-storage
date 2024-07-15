@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1721052787062,
+  "lastUpdate": 1721066091846,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -20101,6 +20101,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "180.73",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8103968b9c3535f0c373aec80c58b165c4381737",
+          "message": "refactor(rust): stop deriving `Clone` on `ModuleType` (#1631)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-15T17:41:16Z",
+          "tree_id": "ae177ed8517a23dbcc7c231a66d34d52c81cba9e",
+          "url": "https://github.com/rolldown/rolldown/commit/8103968b9c3535f0c373aec80c58b165c4381737"
+        },
+        "date": 1721066091839,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "315.64",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "544.89",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "120.61",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "182.01",
             "unit": "ms / ops"
           }
         ]
