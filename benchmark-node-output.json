@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1721047491020,
+  "lastUpdate": 1721049118145,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -19969,6 +19969,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "178.04",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "159d4ad1071412a1422a680aa85b6ece06b2e280",
+          "message": "feat: support output.name for iife (#1627)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->\n\nThe pr intend to support `output.name` to make vue happy, it also\nsupport return value using exports.\n\nHere concat chunk code has some complex, i prefer using rollup like\nstyle to process it, see\n[here](https://github.com/rollup/rollup/blob/master/src/finalisers/index.ts#L36).\nWe will have one corresponding method for every format。",
+          "timestamp": "2024-07-15T12:58:57Z",
+          "tree_id": "6f4e4aa99076b485721bcfbf57972391da04135a",
+          "url": "https://github.com/rolldown/rolldown/commit/159d4ad1071412a1422a680aa85b6ece06b2e280"
+        },
+        "date": 1721049118139,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "331.30",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "562.19",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "126.48",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "194.39",
             "unit": "ms / ops"
           }
         ]
