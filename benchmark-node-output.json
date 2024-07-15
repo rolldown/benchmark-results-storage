@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1721066091846,
+  "lastUpdate": 1721066810521,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -20145,6 +20145,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "182.01",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9f244dbce66e26396f2f6d9d44942ad295cc5ccb",
+          "message": "feat(rust): Support accepting custom `ModuleType` (#1632)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-15T17:50:38Z",
+          "tree_id": "0b1ef31522b580148478abc3e12d67a2082e0dfe",
+          "url": "https://github.com/rolldown/rolldown/commit/9f244dbce66e26396f2f6d9d44942ad295cc5ccb"
+        },
+        "date": 1721066810515,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "339.20",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "539.80",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "119.04",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "179.90",
             "unit": "ms / ops"
           }
         ]
