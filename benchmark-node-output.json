@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1721066810521,
+  "lastUpdate": 1721069558205,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -20189,6 +20189,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "179.90",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "530bece57cefd13df0d9b06ac32ccd9ffeea31bb",
+          "message": "refactor(rust): tweak the data flow of `ModuleType` (#1633)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-15T18:39:28Z",
+          "tree_id": "02a33efa50ceaa55e9a3d900178d8707d3ff1f90",
+          "url": "https://github.com/rolldown/rolldown/commit/530bece57cefd13df0d9b06ac32ccd9ffeea31bb"
+        },
+        "date": 1721069558198,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "333.06",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "623.94",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "122.55",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "186.66",
             "unit": "ms / ops"
           }
         ]
