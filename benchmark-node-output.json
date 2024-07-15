@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1721044243467,
+  "lastUpdate": 1721047491020,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -19925,6 +19925,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "172.40",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "15ce04c44b7c0586f3b30fa299a75c65827b589b",
+          "message": "refactor: use `ArcStr` everywhere (#1626)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nAdvantages of `ArcStr`\n\n- Small size, which is u32 rather than usize. \n- No atomic operations on static str.\nhttps://docs.rs/arcstr/latest/arcstr/struct.ArcStr.html#what-does-zero-cost-literals-mean\n-\nhttps://docs.rs/arcstr/latest/arcstr/struct.ArcStr.html#benefits-of-arcstr-over-arcstr\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-15T12:32:36Z",
+          "tree_id": "6cdf37315d28a80d86402a26ba1ac4ec847ee015",
+          "url": "https://github.com/rolldown/rolldown/commit/15ce04c44b7c0586f3b30fa299a75c65827b589b"
+        },
+        "date": 1721047491013,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "318.91",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "556.40",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "121.35",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "178.04",
             "unit": "ms / ops"
           }
         ]
