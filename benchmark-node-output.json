@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1721049416830,
+  "lastUpdate": 1721052787062,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -20057,6 +20057,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "180.21",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "08aecadf77530f167aca01fee499f4a7bab0db17",
+          "message": "feat(wip/css): use lightningcss as css compiler (#1629)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-15T14:01:02Z",
+          "tree_id": "93921c8d6f0e174635fbb26204ba93926606a6c7",
+          "url": "https://github.com/rolldown/rolldown/commit/08aecadf77530f167aca01fee499f4a7bab0db17"
+        },
+        "date": 1721052787056,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "323.49",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "539.32",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "119.48",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "180.73",
             "unit": "ms / ops"
           }
         ]
