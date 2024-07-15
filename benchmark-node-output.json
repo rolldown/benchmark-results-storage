@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1720981019284,
+  "lastUpdate": 1721044243467,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -19881,6 +19881,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "188.75",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "07f8da48e1942ef5f58712a08a3141ef754efdf6",
+          "message": "refactor: improve logic of  `render_preliminary_assets` and add more comments (#1622)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-15T11:38:59Z",
+          "tree_id": "d3a02193fd5a7bbca84719770177309110315c88",
+          "url": "https://github.com/rolldown/rolldown/commit/07f8da48e1942ef5f58712a08a3141ef754efdf6"
+        },
+        "date": 1721044243460,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "310.42",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "527.17",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "115.46",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "172.40",
             "unit": "ms / ops"
           }
         ]
