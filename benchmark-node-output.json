@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1721122768615,
+  "lastUpdate": 1721124012051,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -20497,6 +20497,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "190.80",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e038205641e16012d760ca37f04ad5f8495f239c",
+          "message": "perf(sourcemap): lookup original token in parallel (#1596)\n\n<!-- Thank you for contributing! -->\r\n\r\n### Description\r\n\r\n<!-- Please insert your description here and provide especially info\r\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-16T17:54:18+08:00",
+          "tree_id": "2a7eba6ebe3eec13025010e44eb8d86ff700d514",
+          "url": "https://github.com/rolldown/rolldown/commit/e038205641e16012d760ca37f04ad5f8495f239c"
+        },
+        "date": 1721124012044,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "326.80",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "545.86",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "119.37",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "179.31",
             "unit": "ms / ops"
           }
         ]
