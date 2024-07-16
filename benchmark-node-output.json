@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1721122272474,
+  "lastUpdate": 1721122768615,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -20453,6 +20453,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "174.68",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "laipichan@qq.com",
+            "name": "dalaoshu",
+            "username": "shulaoda"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d03e15b1fa3d2c45acd8ace66f149105c8b176b3",
+          "message": "feat: throw friendly warning message for ambiguous export (#1634)\n\n<!-- Thank you for contributing! -->\nCloses #1621.\nCloses #397.\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->\n\n---------\n\nCo-authored-by: IWANABETHATGUY <974153916@qq.com>\nCo-authored-by: Yunfei He <i.heyunfei@gmail.com>",
+          "timestamp": "2024-07-16T09:23:39Z",
+          "tree_id": "868267222fbce5afd39b7526927a1bf8aca0749c",
+          "url": "https://github.com/rolldown/rolldown/commit/d03e15b1fa3d2c45acd8ace66f149105c8b176b3"
+        },
+        "date": 1721122768608,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "332.47",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "563.98",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "126.41",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "190.80",
             "unit": "ms / ops"
           }
         ]
