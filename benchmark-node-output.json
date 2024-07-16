@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1721124755279,
+  "lastUpdate": 1721126433001,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -20585,6 +20585,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "181.57",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "hi.ogawa.zz@gmail.com",
+            "name": "Hiroshi Ogawa",
+            "username": "hi-ogawa"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "f6a8d5137b1e796b622976bc5f40f2509f085a59",
+          "message": "fix(node): fix type errors (#1642)\n\n### Description\n\n- closes https://github.com/rolldown/rolldown/issues/1639\n\nThis PR renames rust side struct to match js naming\n`BindingJsonSourcemap` to workaround napi's inconsistent dts emit. I\nalso added `build-types-check` to verify type check passes for its\npackage types exports (similar to how vite does).\n\nI'm not sure changing rust side naming is ideal. Another workaround is\nto prevent napi renaming by `napi_derive::napi(object, js_name =\n\"BindingJSONSourcemap\"))`. I don't think I can figure the fix on napi\nside, so I thought it's worth suggesting a quick fix here. Please let me\nknow what you think. Thanks!",
+          "timestamp": "2024-07-16T10:27:09Z",
+          "tree_id": "92e7535b13e7fd6dc7435d67bbd17aa642632635",
+          "url": "https://github.com/rolldown/rolldown/commit/f6a8d5137b1e796b622976bc5f40f2509f085a59"
+        },
+        "date": 1721126432995,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "306.78",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "543.08",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "116.82",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "177.29",
             "unit": "ms / ops"
           }
         ]
