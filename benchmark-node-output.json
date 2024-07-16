@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1721082455367,
+  "lastUpdate": 1721111465488,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -20277,6 +20277,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "192.94",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "aabcb78fa166ff0066d43c0fd98b668731f10f7d",
+          "message": "chore: update `.prettierignore` (#1636)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nPrevent unnecessary changes on those binding files.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-16T06:19:06Z",
+          "tree_id": "970be086ef865d84c7f9659729088f68be14ec8f",
+          "url": "https://github.com/rolldown/rolldown/commit/aabcb78fa166ff0066d43c0fd98b668731f10f7d"
+        },
+        "date": 1721111465481,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "333.93",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "534.98",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "115.41",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "175.33",
             "unit": "ms / ops"
           }
         ]
