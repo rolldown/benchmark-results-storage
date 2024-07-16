@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1721117049586,
+  "lastUpdate": 1721119088625,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -20365,6 +20365,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "171.14",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "29431f71892cde0b466d8963879b1560d3b24811",
+          "message": "chore: add more comments on `ImportRecord` (#1640)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-16T08:25:43Z",
+          "tree_id": "efa3c7d403e6cbcc260446dc1aee0caafc096f68",
+          "url": "https://github.com/rolldown/rolldown/commit/29431f71892cde0b466d8963879b1560d3b24811"
+        },
+        "date": 1721119088618,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "316.19",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "551.76",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "131.48",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "200.15",
             "unit": "ms / ops"
           }
         ]
