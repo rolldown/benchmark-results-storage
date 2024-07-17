@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1721209517832,
+  "lastUpdate": 1721232562853,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -21025,6 +21025,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "180.08",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4493fe9986342e14ca57ae86b8ee5fb0dedecba4",
+          "message": "refactor(rust): change `pub mod format` to `mod format` (#1652)\n\nChanges the visibility of the `format` module.\n\n---\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-17T15:56:28Z",
+          "tree_id": "5a0e7eee66ebe2bd553dbff6bd9b67c6a219a4ec",
+          "url": "https://github.com/rolldown/rolldown/commit/4493fe9986342e14ca57ae86b8ee5fb0dedecba4"
+        },
+        "date": 1721232562846,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "324.59",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "548.95",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "117.92",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "179.56",
             "unit": "ms / ops"
           }
         ]
