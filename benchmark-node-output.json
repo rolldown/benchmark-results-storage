@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1721209125875,
+  "lastUpdate": 1721209517832,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -20981,6 +20981,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "182.22",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "247bc4b185a8cc95b7bc8727b0e81871f333824a",
+          "message": "refactor(rust): rename `ResourceId` to `ModuleId` (#1650)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n- `Resourceid` is used to represent ID for read resource, but that\nmeaning is not suited anymore.\n- Align the ID concept with rollup\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-17T09:29:16Z",
+          "tree_id": "890ee6ec44ab34b9cb248da26ffca51875dc2a9f",
+          "url": "https://github.com/rolldown/rolldown/commit/247bc4b185a8cc95b7bc8727b0e81871f333824a"
+        },
+        "date": 1721209517825,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "314.18",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "539.20",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "118.91",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "180.08",
             "unit": "ms / ops"
           }
         ]
