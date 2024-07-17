@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1721203843558,
+  "lastUpdate": 1721205240090,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -20849,6 +20849,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "181.84",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "307fbd3a7e3e3a1e9c598bc34ab38dc08ce54c69",
+          "message": "refactor(rust/resolver): make `EcmaModuleTask` hold `ResolveId` directly (#1648)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-17T08:21:48Z",
+          "tree_id": "4b330e77a110ebb275b3c639d230b28eccddcee6",
+          "url": "https://github.com/rolldown/rolldown/commit/307fbd3a7e3e3a1e9c598bc34ab38dc08ce54c69"
+        },
+        "date": 1721205240083,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "314.46",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "547.72",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "122.74",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "180.55",
             "unit": "ms / ops"
           }
         ]
