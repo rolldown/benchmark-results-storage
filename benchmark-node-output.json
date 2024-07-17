@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1721207221527,
+  "lastUpdate": 1721209125875,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -20937,6 +20937,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "193.44",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "4c3dc0e291e2a061738aab458007d0c07a6d16fd",
+          "message": "refactor: add abstraction for rendering chunk imports targeting different format (#1651)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nThe pr add a `collect_render_chunk_imports` to extract imports info and\nusing it to generate imports for different format.\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-17T09:25:33Z",
+          "tree_id": "c57cd5b3483f37d8d6607a73895389023a5d9147",
+          "url": "https://github.com/rolldown/rolldown/commit/4c3dc0e291e2a061738aab458007d0c07a6d16fd"
+        },
+        "date": 1721209125868,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "371.44",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "563.15",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "124.23",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "182.22",
             "unit": "ms / ops"
           }
         ]
