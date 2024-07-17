@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1721135999632,
+  "lastUpdate": 1721190759134,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -20673,6 +20673,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "181.86",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "f66e167d1884dd9af589af4fbba3553e9b2ffea4",
+          "message": "refactor: separate render chunk logic for different format (#1644)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nThe pr intend to make render chunk code clean. After this, we don't\nmatch the format many times if we add logic.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-17T04:20:44Z",
+          "tree_id": "6d738df729413e81e0c66237278bcc2d68d03f32",
+          "url": "https://github.com/rolldown/rolldown/commit/f66e167d1884dd9af589af4fbba3553e9b2ffea4"
+        },
+        "date": 1721190759127,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "314.34",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "536.18",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "119.16",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "174.41",
             "unit": "ms / ops"
           }
         ]
