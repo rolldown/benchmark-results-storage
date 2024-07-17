@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1721232562853,
+  "lastUpdate": 1721233872958,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -21069,6 +21069,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "179.56",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "991b687cab3376ac7412f0b37be7156128239352",
+          "message": "refactor(rust): introduce `ModuleFactory` trait (#1653)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nThis PR only build basic structure for other language support. So much\nto be improved in the later PRs.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-17T16:18:29Z",
+          "tree_id": "c5911a25519b3a4cb1f8d57307ceeff936828162",
+          "url": "https://github.com/rolldown/rolldown/commit/991b687cab3376ac7412f0b37be7156128239352"
+        },
+        "date": 1721233872951,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "311.56",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "600.86",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "119.00",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "179.00",
             "unit": "ms / ops"
           }
         ]
