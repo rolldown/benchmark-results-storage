@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1721202742973,
+  "lastUpdate": 1721203451965,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -20761,6 +20761,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "180.31",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fad7e609a7ccd2ec88bfb1c1f1a72503162031b0",
+          "message": "refactor(rust/resolver): handle bundle-related resolve errors in one place (#1646)\n\n<!-- Thank you for contributing! -->\r\n\r\n### Description\r\n\r\n<!-- Please insert your description here and provide especially info\r\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-17T15:59:47+08:00",
+          "tree_id": "bdc00ea800db108240014ca2dd5219b6409a122a",
+          "url": "https://github.com/rolldown/rolldown/commit/fad7e609a7ccd2ec88bfb1c1f1a72503162031b0"
+        },
+        "date": 1721203451958,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "370.60",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "541.82",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "115.17",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "171.17",
             "unit": "ms / ops"
           }
         ]
