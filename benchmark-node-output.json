@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1721237163593,
+  "lastUpdate": 1721274756084,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -21157,6 +21157,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "178.25",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "42d92417b75deb50219a85ef3d256c93a03ba6be",
+          "message": "fix: support banner/footer sync function (#1657)\n\n<!-- Thank you for contributing! -->\n\n### Description\nclose https://github.com/rolldown/rolldown/issues/1655\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-18T03:39:14Z",
+          "tree_id": "5a45745873e955bbce8cb0e475fa7762362f463c",
+          "url": "https://github.com/rolldown/rolldown/commit/42d92417b75deb50219a85ef3d256c93a03ba6be"
+        },
+        "date": 1721274756076,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "424.45",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "715.38",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "148.10",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "227.58",
             "unit": "ms / ops"
           }
         ]
