@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1721291992548,
+  "lastUpdate": 1721308930123,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -21333,6 +21333,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "172.09",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "laipichan@qq.com",
+            "name": "dalaoshu",
+            "username": "shulaoda"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6e53db7794ba1e6818a8b0713f2c7f166ee22bd7",
+          "message": "feat: better error report for ambiguous export (#1661)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nRelated #1643 \n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->\n\n---------\n\nCo-authored-by: Yunfei He <i.heyunfei@gmail.com>",
+          "timestamp": "2024-07-18T13:10:09Z",
+          "tree_id": "7d963d4149088b49d5d86a493fbb3487bc9cdb73",
+          "url": "https://github.com/rolldown/rolldown/commit/6e53db7794ba1e6818a8b0713f2c7f166ee22bd7"
+        },
+        "date": 1721308930116,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "307.02",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "595.47",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "115.08",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "173.35",
             "unit": "ms / ops"
           }
         ]
