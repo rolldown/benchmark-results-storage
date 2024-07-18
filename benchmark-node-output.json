@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1721274756084,
+  "lastUpdate": 1721276910317,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -21201,6 +21201,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "227.58",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e54bb4b26b188f2b3ad9b62d88f26b7d25daec77",
+          "message": "refactor: remove collapse_sourcemaps optional result (#1658)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-18T04:16:42Z",
+          "tree_id": "e2d2b0932a81d8f9cd2808b0e7cdd14c495e6a8a",
+          "url": "https://github.com/rolldown/rolldown/commit/e54bb4b26b188f2b3ad9b62d88f26b7d25daec77"
+        },
+        "date": 1721276910310,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "358.62",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "532.69",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "115.64",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "173.14",
             "unit": "ms / ops"
           }
         ]
