@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1721308930123,
+  "lastUpdate": 1721390291224,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -21377,6 +21377,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "173.35",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9788306046531dc78e0e3934418ceb02bb49ffc8",
+          "message": "refactor(remapping): instante token in parallel (#1666)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-19T11:45:17Z",
+          "tree_id": "65e27c3646e9bcc42d163de3a69e3f85988a4ef1",
+          "url": "https://github.com/rolldown/rolldown/commit/9788306046531dc78e0e3934418ceb02bb49ffc8"
+        },
+        "date": 1721390291217,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "306.81",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "538.77",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "114.82",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "176.51",
             "unit": "ms / ops"
           }
         ]
