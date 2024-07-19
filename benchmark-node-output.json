@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1721393087177,
+  "lastUpdate": 1721420155598,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -21465,6 +21465,50 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "177.45",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "7086cmd@gmail.com",
+            "name": "Ethan Goh",
+            "username": "7086cmd"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c6fccc8713624579ee85543ac3e7ef2e51db9e5d",
+          "message": "fix: correct the behavior in texture or empty extension-customized file. (#1668)\n\n#### Overview\nThis modification enhances the `Data URL` functionality to ensure better\nMIME type conformity.\n\n#### Changes\n\n1. **MIME Type Adjustment**:\n- The MIME type detection for texture files has been improved.\nPreviously, files like `text.data` with content `a\\x00b\\x80c\\xFFd` would\nbe recognized as `application/octet-stream` by the `get_mime` function.\nAccording to [MDN\ndocumentation](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types#textplain),\nunspecified texture file subtypes should be classified as `text/plain`,\nnot `application/octet-stream`.\n\n2. **Additional Testing Scenarios**:\n- New test cases have been added to cover various scenarios, including\n`abnormal_extension`, `binary`, `custom_content`, `empty`, and `text`.\n- ~~**`abnormal_extension`**: A 1x1 image was generated using the\nfollowing Python code and manually renamed with a `.custom` extension.\nThe file is small and does not significantly impact storage.~~\n\n       <details><summary>Generating Code</summary>\n\n       ```python\n       import cv2\n       import numpy as np\n\n       image = np.zeros((1, 1, 3), np.uint8)\n       image[:] = (128, 128, 128)\n       cv2.imwrite('image.png', image)\n       ```\n       </details>\n     \n- **`binary`, `empty`, and `text`**: These test cases are adapted from\nexisting `base64` or `binary` tests. Notably, the `text` test case uses\nURL-encoded content, which differs from the output of esbuild. According\nto [MDN\ndocumentation](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URLs#datatexthtml3cscript3ealert2827hi27293b3c2fscript3e),\ntags containing `<` should be transformed, which esbuild does not\ncurrently do. While URL encoding increases the file size, a better\nsolution needs to be found.\n     \n- ~~**`custom_content`**: This test case involves both customized\nextension and content, ensuring it falls under\n`application/octet-stream` as a binary file.~~\n\n       <details><summary>Generating Code</summary>\n\n       ```python\n       import os\n\n       def generate_random_file(file_path, size):\n           with open(file_path, 'wb') as f:\n               f.write(os.urandom(size))\n\n       file_path = 'random_data_file.bin'\n       file_size = 8\n\n       generate_random_file(file_path, file_size)\n       ```\n       </details>\n\nRemoved because GitHub doesn't support the file whose type can't be\nrecognised.\n\n> Note: The code snippets provided are for validation purposes only.",
+          "timestamp": "2024-07-19T20:03:17Z",
+          "tree_id": "33bcea0df192d82d59f0d3b991c047747d161974",
+          "url": "https://github.com/rolldown/rolldown/commit/c6fccc8713624579ee85543ac3e7ef2e51db9e5d"
+        },
+        "date": 1721420155591,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "320.72",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "537.73",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "115.04",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "171.08",
             "unit": "ms / ops"
           }
         ]
