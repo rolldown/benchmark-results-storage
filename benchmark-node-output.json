@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1721420155598,
+  "lastUpdate": 1721452374377,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -21509,6 +21509,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "171.08",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "86bfb9b97be3667c6cbe5518f62773d2c909dfcc",
+          "message": "chore: add js side minify benchmark (#1669)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nIt is result at my local.\n\n```\nthreejs10x-minify:\n  esbuild: 188.80ms (fastest)\n  rolldown (default): 440.56ms\nSummary(threejs10x-minify):\n  esbuild is\n  - 2.33 times faster than rolldown (default)\nthreejs10x-minify-sourcemap:\n  esbuild: 297.87ms (fastest)\n  rolldown (default): 633.30ms\nSummary(threejs10x-minify-sourcemap):\n  esbuild is\n  - 2.13 times faster than rolldown (default)\n```\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-20T04:58:07Z",
+          "tree_id": "dc4a6dfdb956ec9bbf6dcc8e290e5e2dbc438d22",
+          "url": "https://github.com/rolldown/rolldown/commit/86bfb9b97be3667c6cbe5518f62773d2c909dfcc"
+        },
+        "date": 1721452374370,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "301.73",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "529.27",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1034.59",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1456.66",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "109.92",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "170.87",
             "unit": "ms / ops"
           }
         ]
