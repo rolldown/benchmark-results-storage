@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1721572660594,
+  "lastUpdate": 1721573986201,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -21725,6 +21725,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "178.84",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0e319dab70ec077af633f7e79aa24e90ea265a28",
+          "message": "refactor(rust): return `Module` instead of `EcmaModule` in `EcmaModuleTask` (#1674)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nGonna reuse `EcmaModuleTask` to create `CssModule`, since it also need\nto go through a bunch of plugin hooks. It's not worth to duplicate these\ncode.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-21T14:47:16Z",
+          "tree_id": "f84d2244e0c2f567d010560cdcd167878a9dd865",
+          "url": "https://github.com/rolldown/rolldown/commit/0e319dab70ec077af633f7e79aa24e90ea265a28"
+        },
+        "date": 1721573986194,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "312.70",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "540.76",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "952.82",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1373.77",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "114.75",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "176.43",
             "unit": "ms / ops"
           }
         ]
