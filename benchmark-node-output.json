@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1721508364247,
+  "lastUpdate": 1721535584298,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -21617,6 +21617,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "184.21",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "laipichan@qq.com",
+            "name": "dalaoshu",
+            "username": "shulaoda"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "627e81ffc494a10de17fc5947b767afd2b0fe04c",
+          "message": "fix: the crate rolldown_ecmascript's test can't pass (#1672)\n\n<!-- Thank you for contributing! -->\n\n### Description\nClosed #1671 \n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-21T04:03:11Z",
+          "tree_id": "8c84196ef6c6c9e9492fbed6b0f01a33a6b41b88",
+          "url": "https://github.com/rolldown/rolldown/commit/627e81ffc494a10de17fc5947b767afd2b0fe04c"
+        },
+        "date": 1721535584292,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "307.34",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "526.26",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "946.07",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1368.46",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "114.31",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "176.98",
             "unit": "ms / ops"
           }
         ]
