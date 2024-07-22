@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1721580756721,
+  "lastUpdate": 1721645853522,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -21833,6 +21833,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "176.36",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "ab8dda501664c71477f17e43a4bcf1230b3e8f67",
+          "message": "fix: reexport star of a external module should be considered have side effect. (#1675)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-22T10:44:29Z",
+          "tree_id": "c95eda3f4d576166b4062d0c493caba85ef47e69",
+          "url": "https://github.com/rolldown/rolldown/commit/ab8dda501664c71477f17e43a4bcf1230b3e8f67"
+        },
+        "date": 1721645853515,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "306.69",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "535.54",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "963.45",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1383.45",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "117.50",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "177.12",
             "unit": "ms / ops"
           }
         ]
