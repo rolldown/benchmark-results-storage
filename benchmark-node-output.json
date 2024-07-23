@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1721744595842,
+  "lastUpdate": 1721751837907,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -22643,6 +22643,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "175.53",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3a1f216be0065b531649c8ae01192d542cde1a92",
+          "message": "fix(experimental): wrong `transform` behavior after composing (#1701)",
+          "timestamp": "2024-07-23T16:10:59Z",
+          "tree_id": "53467ee7bb6417b1359e3eb9b6f66c140546c79e",
+          "url": "https://github.com/rolldown/rolldown/commit/3a1f216be0065b531649c8ae01192d542cde1a92"
+        },
+        "date": 1721751837900,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "311.93",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "534.60",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "965.05",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1406.80",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "117.65",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "178.46",
             "unit": "ms / ops"
           }
         ]
