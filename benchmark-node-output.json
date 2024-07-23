@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1721731572271,
+  "lastUpdate": 1721731773193,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -22434,53 +22434,53 @@
       {
         "commit": {
           "author": {
-            "email": "likui.underfin@gmail.com",
-            "name": "underfin",
-            "username": "underfin"
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
           },
           "committer": {
             "email": "noreply@github.com",
             "name": "GitHub",
             "username": "web-flow"
           },
-          "distinct": false,
-          "id": "ef718d76dc143b1183a6e1f78f3a51b9b24cded0",
-          "message": "feat: add invalid export option to generate diagnostic (#1692)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nThe pr implement two things.\n\n1. Add diagnostic to `GenerateContext`, it used for collect diagnostic\nat generate stage.\n2. Collect InvalidExportOption errors.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
-          "timestamp": "2024-07-23T10:30:06Z",
-          "tree_id": "ffcea306c0c2467c7bc270f672f32e8fb59989a3",
-          "url": "https://github.com/rolldown/rolldown/commit/ef718d76dc143b1183a6e1f78f3a51b9b24cded0"
+          "distinct": true,
+          "id": "7aa56fea466220c0158d2c4b9d41f0220ed7fed0",
+          "message": "feat(experimental): support `enableComposingJsPlugins` option (#1693)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nI don't add tests since it's quite experimental. But we should think of\nhow to add tests to test such behavior.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-23T10:33:21Z",
+          "tree_id": "74abb6dca3857ff5b88dabcde3a075c21cc81b45",
+          "url": "https://github.com/rolldown/rolldown/commit/7aa56fea466220c0158d2c4b9d41f0220ed7fed0"
         },
-        "date": 1721731572261,
+        "date": 1721731773186,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x (default)",
-            "value": "315.02",
+            "value": "314.72",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap (default)",
-            "value": "542.42",
+            "value": "541.18",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify (default)",
-            "value": "969.69",
+            "value": "957.25",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify-sourcemap (default)",
-            "value": "1394.55",
+            "value": "1387.83",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts (default)",
-            "value": "116.49",
+            "value": "117.90",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts-sourcemap (default)",
-            "value": "173.65",
+            "value": "174.97",
             "unit": "ms / ops"
           }
         ]
