@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1721736595156,
+  "lastUpdate": 1721741660272,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -22535,6 +22535,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "175.36",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "7086cmd@gmail.com",
+            "name": "Ethan Goh",
+            "username": "7086cmd"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8aad7d0fc33c4ca991352b86362b0c0fa383944c",
+          "message": "feat: support `output.globals` for iife format (#1694)\n\nIn this PR, I addressed issues related to `output.exports`, particularly\nfor the `IIFE` format, and extended the solution to handle external\nmodules.\n\nresolves #1623.\nresolves #1569.\n\n### Modifications\n\n1. **Support for `output.globals` Key**: \n- Implemented support for the `{ [id: string]: string }` type in the\n`globals` key.\n- Note: Although Rollup supports both `{ [id: string]: string }` and\n`((id: string) => string)`, this PR only includes support for the\nformer. Future PRs may add support for the function type.\n\n2. **Arguments Handling for `IIFE` Format**: \n   - Adapted the handler function from `CJS`.\n   - Utilized `filter_map` to identify and manage used external modules.\n- Passed these modules to the `render_iife_arguments` function,\nleveraging the `globals` key.\n   - Open to suggestions for more elegant solutions.\n\n### Tests\n\n- Tests for `iife/external_modules` passed. (The actual behavior aligns\nwith rollup)\n- Added new tests for `iife/external_modules_with_globals` and\nJavaScript side tests.\n\n---------\n\nCo-authored-by: underfin <likui.underfin@gmail.com>",
+          "timestamp": "2024-07-23T13:19:20Z",
+          "tree_id": "3a7e3d691bc272affa806505fa880f40914dbecf",
+          "url": "https://github.com/rolldown/rolldown/commit/8aad7d0fc33c4ca991352b86362b0c0fa383944c"
+        },
+        "date": 1721741660265,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "306.79",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "545.35",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "971.79",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1421.32",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "114.94",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "176.11",
             "unit": "ms / ops"
           }
         ]
