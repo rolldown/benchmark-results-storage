@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1721675234924,
+  "lastUpdate": 1721705671964,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -21995,6 +21995,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "183.88",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "7086cmd@gmail.com",
+            "name": "Ethan Goh",
+            "username": "7086cmd"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "72abdfcf9bd6ad97cc74ffa1bf6018a522078a79",
+          "message": "feat: support `output.exports` option. (#1680)\n\n### Description\n\nresolves #1628\n\nThis pull request addresses the `output.exports` option related to\n[Rollup](https://rollupjs.org/configuration-options/#output-exports).\n\nThe PR does not yet address deconfliction; I will implement it if\nneeded. (Rollup uses `getExportMode`, which is `determine_export_mode`\nin this PR, during deconfliction).\n\n### Details\n\n1. Added options in both the Rust and TypeScript modules.\n2. Introduced the function `determine_export_mode` to handle the `auto`\nvalue. It is adapted from Rollup but uses `match` instead of an `if`\nchain.\n3. Managed `export_mode` in\n`crates/rolldown/src/utils/chunk/render_chunk_exports.rs`.\n\n### Issues Waiting for Fixes in this PR\n\n1. Remove the duplicated enums `ExportMode` and `OutputExports`, even\nthough `OutputExports` includes `Auto` while `ExportMode` does not.\n2. Improve support for the `iife` format. The `iife` format is still\nunstable in this project, and it's uncertain if it can handle the\n`output.exports` issue for `iife`. However, a prototype has been\nprovided.\n3. Used `anyhow::bail` for error handling. The error messages are not\nclear enough and need improvement. Contributors are welcome to address\nthis, and `TODO` comments have been added to the relevant sections.\n\nThis is the first time I have contributed to the core code. I am willing\nto fix problems in this PR promptly! :-)\n\n---------\n\nCo-authored-by: underfin <likui.underfin@gmail.com>",
+          "timestamp": "2024-07-23T03:19:01Z",
+          "tree_id": "2eee024e12541542288329d2c04debabad7a3edf",
+          "url": "https://github.com/rolldown/rolldown/commit/72abdfcf9bd6ad97cc74ffa1bf6018a522078a79"
+        },
+        "date": 1721705671957,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "316.87",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "548.80",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "980.88",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1407.04",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "115.57",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "175.37",
             "unit": "ms / ops"
           }
         ]
