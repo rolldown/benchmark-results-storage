@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1721751837907,
+  "lastUpdate": 1721787458496,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -22697,6 +22697,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "178.46",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "dengqing0821@gmail.com",
+            "name": "Dunqing",
+            "username": "Dunqing"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3ddad4a18d15892cbbf3967ae87e04f1dc67480b",
+          "message": "chore: bump oxc to 0.22.0 (#1665)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n\nTesting the performance gains from oxc\n\n---------\n\nCo-authored-by: IWANABETHATGUY <iwanabethatguy@qq.com>",
+          "timestamp": "2024-07-24T02:04:01Z",
+          "tree_id": "e01d6ec1c9764e7c3d1c20729a795708e4b64544",
+          "url": "https://github.com/rolldown/rolldown/commit/3ddad4a18d15892cbbf3967ae87e04f1dc67480b"
+        },
+        "date": 1721787458488,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "313.38",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "542.24",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "970.96",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1393.77",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "115.04",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "175.45",
             "unit": "ms / ops"
           }
         ]
