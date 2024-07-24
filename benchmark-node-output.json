@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1721787458496,
+  "lastUpdate": 1721803969041,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -22751,6 +22751,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "175.45",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "abe17bdd3e9a8fb54f95c6d0074e60751d11c25e",
+          "message": "feat: add use strict for iife (#1705)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-24T06:40:08Z",
+          "tree_id": "aada5a3d3c7af8bcbdc352ca38b52c080c8570ce",
+          "url": "https://github.com/rolldown/rolldown/commit/abe17bdd3e9a8fb54f95c6d0074e60751d11c25e"
+        },
+        "date": 1721803969034,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "304.23",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "534.79",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "940.61",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1369.92",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "115.14",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "172.62",
             "unit": "ms / ops"
           }
         ]
