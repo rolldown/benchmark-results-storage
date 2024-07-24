@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1721830018655,
+  "lastUpdate": 1721844981728,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -23021,6 +23021,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "186.04",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "30b6d0ff199bc98230b6a13af1e7eeccaa55e1f0",
+          "message": "perf: ⚡️ use base64-simd to accelerate calc base64 (#1716)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-24T18:03:42Z",
+          "tree_id": "6b093f8869e0d29b1adb4b728f12be60b431192a",
+          "url": "https://github.com/rolldown/rolldown/commit/30b6d0ff199bc98230b6a13af1e7eeccaa55e1f0"
+        },
+        "date": 1721844981721,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "301.00",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "534.72",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "937.62",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1349.92",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "115.79",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "182.77",
             "unit": "ms / ops"
           }
         ]
