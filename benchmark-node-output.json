@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1721828369165,
+  "lastUpdate": 1721830018655,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -22967,6 +22967,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "176.40",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "7086cmd@gmail.com",
+            "name": "Ethan Goh",
+            "username": "7086cmd"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "964c5ee3a60a1784a68baf6ce47aaad8cd2b2a6f",
+          "message": "feat: support `output.intro` and `output.outro`. (#1712)\n\nCheck it out\n[here](https://rollupjs.org/configuration-options/#output-intro-output-outro)\nin Rollup's documentation.\n\n`intro` is after the `use strict`, and `outro` is before closing the\nwrapper function in IIFE, or before the footer in others.\n\nExample\n[here](https://rollupjs.org/repl/?version=4.19.0&shareable=JTdCJTIyZXhhbXBsZSUyMiUzQW51bGwlMkMlMjJtb2R1bGVzJTIyJTNBJTVCJTdCJTIyY29kZSUyMiUzQSUyMmV4cG9ydCUyMGRlZmF1bHQlMjAlNUMlMjJleGFtcGxlJTVDJTIyJTIyJTJDJTIyaXNFbnRyeSUyMiUzQXRydWUlMkMlMjJuYW1lJTIyJTNBJTIybWFpbi5qcyUyMiU3RCUyQyU3QiUyMmNvZGUlMjIlM0ElMjJleHBvcnQlMjBjb25zdCUyMHF1eCUyMCUzRCUyMCdRVVgnJTNCJTIyJTJDJTIyaXNFbnRyeSUyMiUzQWZhbHNlJTJDJTIybmFtZSUyMiUzQSUyMnF1eC5qcyUyMiU3RCU1RCUyQyUyMm9wdGlvbnMlMjIlM0ElN0IlMjJvdXRwdXQlMjIlM0ElN0IlMjJiYW5uZXIlMjIlM0ElMjIlMkYlMkYlMjBIZWxsbyUyQyUyMHdvcmxkISUyMFRoaXMlMjBpcyUyMGJhbm5lciUyMiUyQyUyMmVzTW9kdWxlJTIyJTNBJTIyaWYtZGVmYXVsdC1wcm9wJTIyJTJDJTIyZXhwb3J0cyUyMiUzQSUyMmF1dG8lMjIlMkMlMjJmb290ZXIlMjIlM0ElMjIlMkYlMkYlMjBIZWxsbyUyQyUyMHdvcmxkISUyMFRoaXMlMjBpcyUyMGZvb3RlciUyMiUyQyUyMmZvcm1hdCUyMiUzQSUyMmlpZmUlMjIlMkMlMjJpbnRybyUyMiUzQSUyMiUyRiUyRiUyMEhlbGxvJTJDJTIwd29ybGQhJTIwVGhpcyUyMGlzJTIwaW50cm8lMjIlMkMlMjJuYW1lJTIyJTNBJTIybXlCdW5kbGUlMjIlMkMlMjJvdXRybyUyMiUzQSUyMiUyRiUyRiUyMEhlbGxvJTJDJTIwd29ybGQhJTIwVGhpcyUyMGlzJTIwb3V0cm8lMjIlN0QlN0QlN0Q=).\nIssue related: #819, including `intro` and `outro`.",
+          "timestamp": "2024-07-24T13:53:44Z",
+          "tree_id": "defb079e4cd7e5f1df729239e40d003b9e133fd6",
+          "url": "https://github.com/rolldown/rolldown/commit/964c5ee3a60a1784a68baf6ce47aaad8cd2b2a6f"
+        },
+        "date": 1721830018648,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "316.54",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "553.19",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "966.17",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1377.84",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "122.30",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "186.04",
             "unit": "ms / ops"
           }
         ]
