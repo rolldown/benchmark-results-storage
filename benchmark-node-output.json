@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1721940398228,
+  "lastUpdate": 1721940628447,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -23578,43 +23578,43 @@
             "username": "web-flow"
           },
           "distinct": true,
-          "id": "9b1c632336861b2a78374d83407d94f5637ba55f",
-          "message": "test(rust/infra): function-complete rust side tests (#1737)\n\n<!-- Thank you for contributing! -->\r\n\r\n### Description\r\n\r\nStill need to be improved. But now we could test the plugin behavior in\r\nrust now.\r\n\r\nThis also help us found the pain of using rolldown in rust.\r\n\r\n<!-- Please insert your description here and provide especially info\r\nabout the \"what\" this PR is solving -->",
-          "timestamp": "2024-07-26T04:40:54+08:00",
-          "tree_id": "fbffec151514fc7144619fb3fa4bb304320263cc",
-          "url": "https://github.com/rolldown/rolldown/commit/9b1c632336861b2a78374d83407d94f5637ba55f"
+          "id": "c682b76d214bd50711c8e8c6ffd1acb1a4b2e17f",
+          "message": "fix(rolldown): should correct rewrite path of dynamic imported external modules (#1738)\n\n<!-- Thank you for contributing! -->\r\n\r\n### Description\r\n\r\nFixes #1723.\r\n\r\n<!-- Please insert your description here and provide especially info\r\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-26T04:41:35+08:00",
+          "tree_id": "b7e143122b4074479da806a74d7d5d2d8ff61f02",
+          "url": "https://github.com/rolldown/rolldown/commit/c682b76d214bd50711c8e8c6ffd1acb1a4b2e17f"
         },
-        "date": 1721940398220,
+        "date": 1721940628440,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x (default)",
-            "value": "308.25",
+            "value": "308.09",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap (default)",
-            "value": "539.30",
+            "value": "537.67",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify (default)",
-            "value": "949.21",
+            "value": "953.53",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify-sourcemap (default)",
-            "value": "1353.35",
+            "value": "1357.09",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts (default)",
-            "value": "117.31",
+            "value": "114.57",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts-sourcemap (default)",
-            "value": "180.10",
+            "value": "179.42",
             "unit": "ms / ops"
           }
         ]
