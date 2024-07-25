@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1721897797927,
+  "lastUpdate": 1721904254211,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -23237,6 +23237,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "179.71",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "64b0ce2efaabe72746f3e7a056a2fb51dd86802a",
+          "message": "refactor(rust/rolldown): introduce `LinkingMetadata#dependencies` (#1718)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-25T10:28:54Z",
+          "tree_id": "696f0805e740faf7fbd6949709786ebd97a5fe8f",
+          "url": "https://github.com/rolldown/rolldown/commit/64b0ce2efaabe72746f3e7a056a2fb51dd86802a"
+        },
+        "date": 1721904254203,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "314.20",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "540.48",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "952.45",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1375.80",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "120.04",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "180.50",
             "unit": "ms / ops"
           }
         ]
