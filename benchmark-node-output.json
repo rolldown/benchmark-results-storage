@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1721939592749,
+  "lastUpdate": 1721940398228,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -23561,6 +23561,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "179.00",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9b1c632336861b2a78374d83407d94f5637ba55f",
+          "message": "test(rust/infra): function-complete rust side tests (#1737)\n\n<!-- Thank you for contributing! -->\r\n\r\n### Description\r\n\r\nStill need to be improved. But now we could test the plugin behavior in\r\nrust now.\r\n\r\nThis also help us found the pain of using rolldown in rust.\r\n\r\n<!-- Please insert your description here and provide especially info\r\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-26T04:40:54+08:00",
+          "tree_id": "fbffec151514fc7144619fb3fa4bb304320263cc",
+          "url": "https://github.com/rolldown/rolldown/commit/9b1c632336861b2a78374d83407d94f5637ba55f"
+        },
+        "date": 1721940398220,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "308.25",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "539.30",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "949.21",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1353.35",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "117.31",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "180.10",
             "unit": "ms / ops"
           }
         ]
