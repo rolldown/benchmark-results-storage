@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1721904254211,
+  "lastUpdate": 1721905712841,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -23291,6 +23291,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "180.50",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "fc7f5f05e3ae3de9b3bc71e2a81d312777089f7b",
+          "message": "refactor(rust/rolldown): skip non-included module in code splitting (#1719)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-25T10:54:50Z",
+          "tree_id": "8f9b9eef0cc8a64ad772a6955780228a7261a77b",
+          "url": "https://github.com/rolldown/rolldown/commit/fc7f5f05e3ae3de9b3bc71e2a81d312777089f7b"
+        },
+        "date": 1721905712834,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "313.15",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "541.41",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "952.08",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1362.36",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "117.02",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "182.05",
             "unit": "ms / ops"
           }
         ]
