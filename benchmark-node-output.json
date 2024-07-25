@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1721917657683,
+  "lastUpdate": 1721933908991,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -23453,6 +23453,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "186.77",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d92019dcd155e3db3a2d58d2f75c0320de14cba9",
+          "message": "chore:  upgrade to rust 1.80.0 (#1735)\n\n<!-- Thank you for contributing! -->\r\n\r\n### Description\r\n1. ref https://blog.rust-lang.org/2024/07/25/Rust-1.80.0.html\r\n<!-- Please insert your description here and provide especially info\r\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-26T02:53:23+08:00",
+          "tree_id": "6216e11b371cc40b6f92984b10bfc7c05be93d5d",
+          "url": "https://github.com/rolldown/rolldown/commit/d92019dcd155e3db3a2d58d2f75c0320de14cba9"
+        },
+        "date": 1721933908984,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "319.07",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "548.14",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "979.29",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1384.26",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "125.79",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "184.33",
             "unit": "ms / ops"
           }
         ]
