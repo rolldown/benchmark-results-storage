@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1721892095610,
+  "lastUpdate": 1721897797927,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -23183,6 +23183,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "178.15",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "af95809fcdeb273b071b9cafb0f8f804ab7c911d",
+          "message": "fix: base64 handling (#1725)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. Rewrite some file with binary format.\n2. should use standard base64 encoding instead.\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-25T08:42:35Z",
+          "tree_id": "c8da49188094ae544f850af5a96b66a04bc2d45c",
+          "url": "https://github.com/rolldown/rolldown/commit/af95809fcdeb273b071b9cafb0f8f804ab7c911d"
+        },
+        "date": 1721897797920,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "309.70",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "534.94",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "928.61",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1351.43",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "117.46",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "179.71",
             "unit": "ms / ops"
           }
         ]
