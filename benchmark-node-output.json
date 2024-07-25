@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1721933908991,
+  "lastUpdate": 1721939592749,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -23507,6 +23507,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "184.33",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "23971b95b72d386c4deea1eedb3edcbe7e23f2e0",
+          "message": "chore(rust/rolldown): Add `integration_` prefix in `rolldown/tests` (#1736)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nWe gonna allow to write plugin tests in rust side. And `fixtures.rs` is\nconflicted with `fixtures/mod.rs`.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-25T20:19:27Z",
+          "tree_id": "c61c18d914519649c63cb8ae2c9f697f59b61029",
+          "url": "https://github.com/rolldown/rolldown/commit/23971b95b72d386c4deea1eedb3edcbe7e23f2e0"
+        },
+        "date": 1721939592742,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "304.95",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "537.53",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "951.62",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1364.00",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "115.35",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "179.00",
             "unit": "ms / ops"
           }
         ]
