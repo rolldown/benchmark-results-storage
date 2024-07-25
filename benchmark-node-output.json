@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1721905712841,
+  "lastUpdate": 1721906421747,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -23345,6 +23345,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "182.05",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3dee9e01b9ebb7b1fb205967f9942d7c4c22c35c",
+          "message": "fix: should correctly include symbols of namespace object (#1727)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-25T11:03:25Z",
+          "tree_id": "25bd7655f007270d364cd777220dd5d813d91674",
+          "url": "https://github.com/rolldown/rolldown/commit/3dee9e01b9ebb7b1fb205967f9942d7c4c22c35c"
+        },
+        "date": 1721906421739,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "312.53",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "558.06",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "953.07",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1366.66",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "120.53",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "181.23",
             "unit": "ms / ops"
           }
         ]
