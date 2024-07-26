@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1721965964463,
+  "lastUpdate": 1721970125703,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -23723,6 +23723,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "181.01",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "7086cmd@gmail.com",
+            "name": "Ethan Goh",
+            "username": "7086cmd"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "cbcb5116b327091fa704948ef25588880bedaa7a",
+          "message": "perf: deprecate `mime_guess` in favor of a lighter guessing function. (#1698)\n\nI wrapped the `mime`, and `infer` crate to\n[`mime_more`](https://github.com/7086cmd/mime_more) (benchmark result\nalso in README). It also provides lighter mime guessing functions, with\nthe benchmark from using `mime_guess` in about 289 ns to 37 ns and less\nrare extensions.\n\nAlso, the behavior of the Data URL is aligned with esbuild (except the\npercent decoding).",
+          "timestamp": "2024-07-26T04:49:50Z",
+          "tree_id": "c483c2934cd5534c3d2860d937f30e2134d80142",
+          "url": "https://github.com/rolldown/rolldown/commit/cbcb5116b327091fa704948ef25588880bedaa7a"
+        },
+        "date": 1721970125693,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "308.89",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "541.24",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "942.55",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1374.11",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "123.36",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "186.50",
             "unit": "ms / ops"
           }
         ]
