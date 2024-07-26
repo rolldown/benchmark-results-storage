@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1722025413570,
+  "lastUpdate": 1722026573884,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -23939,6 +23939,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "177.38",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0b2c159e64faaae6da571fc3a0fc2267d5d8d388",
+          "message": "refactor(rust/test): reuse `IntegrationTest` in rust side tests (#1749)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-26T20:30:30Z",
+          "tree_id": "bf32130e861227b89c0c6c30fea052c120c77d5d",
+          "url": "https://github.com/rolldown/rolldown/commit/0b2c159e64faaae6da571fc3a0fc2267d5d8d388"
+        },
+        "date": 1722026573876,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "303.48",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "541.42",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "933.00",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1343.00",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "112.69",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "176.28",
             "unit": "ms / ops"
           }
         ]
