@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1722105022480,
+  "lastUpdate": 1722112809074,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -24371,6 +24371,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "181.56",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a0af35ea90f5816e0b94f1054d2a994143a1ae3e",
+          "message": "refactor(rust/plugin)!: drop `async_trait::async_trait` for writting `Plugin` and rename old `Plugin` to `Pluginable` (#1756)\n\n<!-- Thank you for contributing! -->\r\n\r\n### Description\r\n\r\nThis is more about the dx of writing rust plugins. The old version\r\nrelies on `async_trait::async_trait` which makes the rust-analyzer\r\ntotally unusable.\r\n\r\nFortunally, rust support `async fn in trait` in stable version, though\r\n[there are\r\nproblems](https://blog.rust-lang.org/2023/12/21/async-fn-rpit-in-traits.html#:~:text=Thankfully%2C%20we%20have,it%20like%20so%3A)\r\nand we have to define the `Plugin` trait in desugared version.\r\n\r\nBut for users that writes plugins they now could get auto completions\r\nfrom rust-analyzer. And the `impl Plugin` code is now just normal rust\r\ncode without any magic behind it.\r\n\r\n<!-- Please insert your description here and provide especially info\r\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-28T04:34:26+08:00",
+          "tree_id": "beb2cc85c70014f08f50b56b44525ffa4d004341",
+          "url": "https://github.com/rolldown/rolldown/commit/a0af35ea90f5816e0b94f1054d2a994143a1ae3e"
+        },
+        "date": 1722112809067,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "315.49",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "551.48",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "951.13",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1353.37",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "121.41",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "184.88",
             "unit": "ms / ops"
           }
         ]
