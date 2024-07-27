@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1722116375480,
+  "lastUpdate": 1722117058479,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -24533,6 +24533,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "180.87",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e1cfe12c027d6139873c9d4d4ac87047bf739554",
+          "message": "refactor(rust/plugin): remove all default impl method in `Pluginable` (#1759)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nThis ensure compiler checks that all methods of `Pluginable` will be\nimplemented in `impl<T: plugin> Pluginable for T`.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-27T21:34:28Z",
+          "tree_id": "063c98617fb5fc0effc8273fe6f561bdb8f7a343",
+          "url": "https://github.com/rolldown/rolldown/commit/e1cfe12c027d6139873c9d4d4ac87047bf739554"
+        },
+        "date": 1722117058471,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "306.29",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "524.17",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "927.84",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1313.87",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "114.95",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "175.04",
             "unit": "ms / ops"
           }
         ]
