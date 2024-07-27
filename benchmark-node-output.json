@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1722026573884,
+  "lastUpdate": 1722064559636,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -23993,6 +23993,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "176.28",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "138dd257fc56e4a376ebff8bdb978517d17e2e91",
+          "message": "feat(tree-shake): treeshake unused cjs module (#1744)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->\n\n---------\n\nCo-authored-by: IWANABETHATGUY <iwanabethatguy@qq.com>",
+          "timestamp": "2024-07-27T06:58:33Z",
+          "tree_id": "77d88dbda887deea53dde7ffcb061b52f726e5f9",
+          "url": "https://github.com/rolldown/rolldown/commit/138dd257fc56e4a376ebff8bdb978517d17e2e91"
+        },
+        "date": 1722064559628,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "308.29",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "538.27",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "936.81",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1346.92",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "116.36",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "174.75",
             "unit": "ms / ops"
           }
         ]
