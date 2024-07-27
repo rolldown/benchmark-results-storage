@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1722075992160,
+  "lastUpdate": 1722105022480,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -24317,6 +24317,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "175.32",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "7086cmd@gmail.com",
+            "name": "Ethan Goh",
+            "username": "7086cmd"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "549e1e1945b1dddad53598de7674f61800e45c4b",
+          "message": "feat: support loading dataurl as module. (#1741)\n\nThis PR ports functionality from\n[Vite](https://github.com/vitejs/vite/blob/main/packages/vite/src/node/plugins/dataUri.ts)\nand enables esbuild's tests.\n\nPlease note that there is an outstanding issue referenced\n[here](https://github.com/evanw/esbuild/blob/main/internal/bundler_tests/snapshots/snapshots_loader.txt#L602)\nthat is pending a fix. However, it seems unlikely that this PR will\naddress it, as the complexity of handling the module as an external\nmodule again in `load_source.rs` is considerable.\n\n---------\n\nCo-authored-by: Yunfei <i.heyunfei@gmail.com>",
+          "timestamp": "2024-07-27T18:16:53Z",
+          "tree_id": "0b5fffc5567021b12b56f8d2dc936cd2156014c5",
+          "url": "https://github.com/rolldown/rolldown/commit/549e1e1945b1dddad53598de7674f61800e45c4b"
+        },
+        "date": 1722105022472,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "321.19",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "553.86",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "983.78",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1382.18",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "119.20",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "181.56",
             "unit": "ms / ops"
           }
         ]
