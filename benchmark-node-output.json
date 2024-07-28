@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1722157136666,
+  "lastUpdate": 1722168654982,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -24803,6 +24803,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "183.78",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "512fc6156a83655dae6a7c1939411cae93ed3d69",
+          "message": "feat: enable plugin api typing (#1765)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nIt is a plugin typing feature to allow plugin define self typing, it\nhasn't related runtime code.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-28T11:58:12Z",
+          "tree_id": "c3bdb25cec0e647f99d464790942145c716ecf98",
+          "url": "https://github.com/rolldown/rolldown/commit/512fc6156a83655dae6a7c1939411cae93ed3d69"
+        },
+        "date": 1722168654974,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "317.11",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "535.33",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "707.44",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1108.78",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "118.98",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "181.19",
             "unit": "ms / ops"
           }
         ]
