@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1722189367010,
+  "lastUpdate": 1722189834267,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -25073,6 +25073,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "183.79",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d58c39ad74d035578588b182e1c866b3f6c82335",
+          "message": "chore(deps): update rust crates (#1776)\n\n[![Mend\nRenovate](https://app.renovatebot.com/images/banner.svg)](https://renovatebot.com)\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [tokio](https://tokio.rs)\n([source](https://togithub.com/tokio-rs/tokio)) | workspace.dependencies\n| minor | `1.38.1` -> `1.39.2` |\n| [xxhash-rust](https://togithub.com/DoumanAsh/xxhash-rust) |\nworkspace.dependencies | patch | `0.8.11` -> `0.8.12` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>tokio-rs/tokio (tokio)</summary>\n\n###\n[`v1.39.2`](https://togithub.com/tokio-rs/tokio/releases/tag/tokio-1.39.2):\nTokio v1.39.2\n\n[Compare\nSource](https://togithub.com/tokio-rs/tokio/compare/tokio-1.39.1...tokio-1.39.2)\n\n### 1.39.2 (July 27th, 2024)\n\nThis release fixes a regression where the `select!` macro stopped\naccepting expressions that make use of temporary lifetime extension.\n([#&#8203;6722])\n\n[#&#8203;6722]: https://togithub.com/tokio-rs/tokio/pull/6722\n\n###\n[`v1.39.1`](https://togithub.com/tokio-rs/tokio/releases/tag/tokio-1.39.1):\nTokio v1.39.1\n\n[Compare\nSource](https://togithub.com/tokio-rs/tokio/compare/tokio-1.39.0...tokio-1.39.1)\n\n##### 1.39.1 (July 23rd, 2024)\n\nThis release reverts \"time: avoid traversing entries in the time wheel\ntwice\" because it contains a bug. ([#&#8203;6715])\n\n[#&#8203;6715]: https://togithub.com/tokio-rs/tokio/pull/6715\n\n###\n[`v1.39.0`](https://togithub.com/tokio-rs/tokio/releases/tag/tokio-1.39.0):\nTokio v1.39.0\n\n[Compare\nSource](https://togithub.com/tokio-rs/tokio/compare/tokio-1.38.1...tokio-1.39.0)\n\n### 1.39.0 (July 23rd, 2024)\n\n-   This release bumps the MSRV to 1.70. ([#&#8203;6645])\n-   This release upgrades to mio v1. ([#&#8203;6635])\n-   This release upgrades to windows-sys v0.52 ([#&#8203;6154])\n\n##### Added\n\n-   io: implement `AsyncSeek` for `Empty` ([#&#8203;6663])\n- metrics: stabilize `num_alive_tasks` ([#&#8203;6619], [#&#8203;6667])\n-   process: add `Command::as_std_mut` ([#&#8203;6608])\n-   sync: add `watch::Sender::same_channel` ([#&#8203;6637])\n- sync: add\n`{Receiver,UnboundedReceiver}::{sender_strong_count,sender_weak_count}`\n([#&#8203;6661])\n-   sync: implement `Default` for `watch::Sender` ([#&#8203;6626])\n-   task: implement `Clone` for `AbortHandle` ([#&#8203;6621])\n-   task: stabilize `consume_budget` ([#&#8203;6622])\n\n##### Changed\n\n-   io: improve panic message of `ReadBuf::put_slice()` ([#&#8203;6629])\n- io: read during write in `copy_bidirectional` and `copy`\n([#&#8203;6532])\n- runtime: replace `num_cpus` with `available_parallelism`\n([#&#8203;6709])\n- task: avoid stack overflow when passing large future to `block_on`\n([#&#8203;6692])\n- time: avoid traversing entries in the time wheel twice\n([#&#8203;6584])\n-   time: support `IntoFuture` with `timeout` ([#&#8203;6666])\n- macros: support `IntoFuture` with `join!` and `select!`\n([#&#8203;6710])\n\n##### Fixed\n\n-   docs: fix docsrs builds with the fs feature enabled ([#&#8203;6585])\n- io: only use short-read optimization on known-to-be-compatible\nplatforms ([#&#8203;6668])\n- time: fix overflow panic when using large durations with `Interval`\n([#&#8203;6612])\n\n##### Added (unstable)\n\n- macros: allow `unhandled_panic` behavior for `#[tokio::main]` and\n`#[tokio::test]` ([#&#8203;6593])\n-   metrics: add `spawned_tasks_count` ([#&#8203;6114])\n-   metrics: add `worker_park_unpark_count` ([#&#8203;6696])\n-   metrics: add worker thread id ([#&#8203;6695])\n\n##### Documented\n\n-   io: update `tokio::io::stdout` documentation ([#&#8203;6674])\n-   macros: typo fix in `join.rs` and `try_join.rs` ([#&#8203;6641])\n-   runtime: fix typo in `unhandled_panic` ([#&#8203;6660])\n- task: document behavior of `JoinSet::try_join_next` when all tasks are\nrunning ([#&#8203;6671])\n\n[#&#8203;6114]: https://togithub.com/tokio-rs/tokio/pull/6114\n\n[#&#8203;6154]: https://togithub.com/tokio-rs/tokio/pull/6154\n\n[#&#8203;6532]: https://togithub.com/tokio-rs/tokio/pull/6532\n\n[#&#8203;6584]: https://togithub.com/tokio-rs/tokio/pull/6584\n\n[#&#8203;6585]: https://togithub.com/tokio-rs/tokio/pull/6585\n\n[#&#8203;6593]: https://togithub.com/tokio-rs/tokio/pull/6593\n\n[#&#8203;6608]: https://togithub.com/tokio-rs/tokio/pull/6608\n\n[#&#8203;6612]: https://togithub.com/tokio-rs/tokio/pull/6612\n\n[#&#8203;6619]: https://togithub.com/tokio-rs/tokio/pull/6619\n\n[#&#8203;6621]: https://togithub.com/tokio-rs/tokio/pull/6621\n\n[#&#8203;6622]: https://togithub.com/tokio-rs/tokio/pull/6622\n\n[#&#8203;6626]: https://togithub.com/tokio-rs/tokio/pull/6626\n\n[#&#8203;6629]: https://togithub.com/tokio-rs/tokio/pull/6629\n\n[#&#8203;6635]: https://togithub.com/tokio-rs/tokio/pull/6635\n\n[#&#8203;6637]: https://togithub.com/tokio-rs/tokio/pull/6637\n\n[#&#8203;6641]: https://togithub.com/tokio-rs/tokio/pull/6641\n\n[#&#8203;6645]: https://togithub.com/tokio-rs/tokio/pull/6645\n\n[#&#8203;6660]: https://togithub.com/tokio-rs/tokio/pull/6660\n\n[#&#8203;6661]: https://togithub.com/tokio-rs/tokio/pull/6661\n\n[#&#8203;6663]: https://togithub.com/tokio-rs/tokio/pull/6663\n\n[#&#8203;6666]: https://togithub.com/tokio-rs/tokio/pull/6666\n\n[#&#8203;6667]: https://togithub.com/tokio-rs/tokio/pull/6667\n\n[#&#8203;6668]: https://togithub.com/tokio-rs/tokio/pull/6668\n\n[#&#8203;6671]: https://togithub.com/tokio-rs/tokio/pull/6671\n\n[#&#8203;6674]: https://togithub.com/tokio-rs/tokio/pull/6674\n\n[#&#8203;6692]: https://togithub.com/tokio-rs/tokio/pull/6692\n\n[#&#8203;6695]: https://togithub.com/tokio-rs/tokio/pull/6695\n\n[#&#8203;6696]: https://togithub.com/tokio-rs/tokio/pull/6696\n\n[#&#8203;6709]: https://togithub.com/tokio-rs/tokio/pull/6709\n\n[#&#8203;6710]: https://togithub.com/tokio-rs/tokio/pull/6710\n\n</details>\n\n---\n\n### Configuration\n\n📅 **Schedule**: Branch creation - \"before 10am on monday\" in timezone\nAsia/Shanghai, Automerge - At any time (no schedule defined).\n\n🚦 **Automerge**: Enabled.\n\n♻ **Rebasing**: Whenever PR becomes conflicted, or you tick the\nrebase/retry checkbox.\n\n👻 **Immortal**: This PR will be recreated if closed unmerged. Get\n[config help](https://togithub.com/renovatebot/renovate/discussions) if\nthat's undesired.\n\n---\n\n- [ ] <!-- rebase-check -->If you want to rebase/retry this PR, check\nthis box\n\n---\n\nThis PR was generated by [Mend\nRenovate](https://www.mend.io/free-developer-tools/renovate/). View the\n[repository job\nlog](https://developer.mend.io/github/rolldown/rolldown).\n\n<!--renovate-debug:eyJjcmVhdGVkSW5WZXIiOiIzNy40NDAuNyIsInVwZGF0ZWRJblZlciI6IjM3LjQ0MC43IiwidGFyZ2V0QnJhbmNoIjoibWFpbiIsImxhYmVscyI6W119-->\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2024-07-28T17:39:58Z",
+          "tree_id": "067a1c6c6e4c261870a1364668cd8912f68741da",
+          "url": "https://github.com/rolldown/rolldown/commit/d58c39ad74d035578588b182e1c866b3f6c82335"
+        },
+        "date": 1722189834259,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "307.42",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "528.46",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "687.17",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1086.82",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "115.98",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "176.76",
             "unit": "ms / ops"
           }
         ]
