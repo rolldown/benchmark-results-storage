@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1722120966405,
+  "lastUpdate": 1722137222167,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -24695,6 +24695,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "183.45",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "7086cmd@gmail.com",
+            "name": "Ethan Goh",
+            "username": "7086cmd"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "b15d8c5d19c5f90860b99a3dde92173e8d8cf822",
+          "message": "feat: support `intro` and `outro` in plugins. (#1763)\n\n#### Contents\n\n1. **Code Optimization:**\n   - Refined types like `HookBannerArgs` to `HookInjectionArgs`, etc.\n   - **macros in #1755 are removed now**.\n\n2. **Plugin Enhancements:**\n- Added support for `intro` and `outro` in plugins, using #1713 as a\nreference example.",
+          "timestamp": "2024-07-28T03:13:17Z",
+          "tree_id": "501c46ee9a20d4f77cf12973160dd8054b810824",
+          "url": "https://github.com/rolldown/rolldown/commit/b15d8c5d19c5f90860b99a3dde92173e8d8cf822"
+        },
+        "date": 1722137222159,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "308.62",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "536.58",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "952.30",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1355.55",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "115.58",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "172.20",
             "unit": "ms / ops"
           }
         ]
