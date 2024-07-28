@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1722168654982,
+  "lastUpdate": 1722176883708,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -24857,6 +24857,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "181.19",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "250c11a541d34485fbd7b0c1420e10a830d822c4",
+          "message": "fix: should not panic if there are accessing on `star as`  member (#1730)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->\n\n---------\n\nCo-authored-by: IWANABETHATGUY <iwanabethatguy@qq.com>",
+          "timestamp": "2024-07-28T14:15:33Z",
+          "tree_id": "e3d8518e4e21f2f2f33f79ad174bd82fcccfe116",
+          "url": "https://github.com/rolldown/rolldown/commit/250c11a541d34485fbd7b0c1420e10a830d822c4"
+        },
+        "date": 1722176883700,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "320.00",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "550.04",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "724.80",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1145.52",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "117.22",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "177.22",
             "unit": "ms / ops"
           }
         ]
