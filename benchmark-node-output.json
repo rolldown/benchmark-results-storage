@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1722244655479,
+  "lastUpdate": 1722247623073,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -25289,6 +25289,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "192.92",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d041e08abc340c573196c9df05d073e7bb0ca665",
+          "message": "fix: generate valid file name for virtual module chunk (#1782)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-29T09:54:40Z",
+          "tree_id": "6ae444702ae76b05fb20050b06f040bd665b9d9a",
+          "url": "https://github.com/rolldown/rolldown/commit/d041e08abc340c573196c9df05d073e7bb0ca665"
+        },
+        "date": 1722247623065,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "310.70",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "533.79",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "703.46",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1097.12",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "117.33",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "173.88",
             "unit": "ms / ops"
           }
         ]
