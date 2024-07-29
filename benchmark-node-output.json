@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1722216355555,
+  "lastUpdate": 1722244655479,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -25235,6 +25235,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "174.86",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f3e49330c5a5506d3aea5619569cb8d2cbae73d1",
+          "message": "fix:  should not compose if there is only one pending plugin (#1781)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-29T09:02:24Z",
+          "tree_id": "6c8af28aab02162c64b76487661c308713a00889",
+          "url": "https://github.com/rolldown/rolldown/commit/f3e49330c5a5506d3aea5619569cb8d2cbae73d1"
+        },
+        "date": 1722244655470,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "338.31",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "564.43",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "744.13",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1170.40",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "129.59",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "192.92",
             "unit": "ms / ops"
           }
         ]
