@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1722331185809,
+  "lastUpdate": 1722336107736,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -25451,6 +25451,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "178.67",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3eba8a33042f27bb3077f3c0c873a8c7caf71911",
+          "message": "fix: dedup export all external in entry module (#1786)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-30T10:25:24Z",
+          "tree_id": "b861fb5d3ec23bdd87fa5f16cbe136c48a15a89e",
+          "url": "https://github.com/rolldown/rolldown/commit/3eba8a33042f27bb3077f3c0c873a8c7caf71911"
+        },
+        "date": 1722336107728,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "309.42",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "529.76",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "681.11",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1096.74",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "117.42",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "179.48",
             "unit": "ms / ops"
           }
         ]
