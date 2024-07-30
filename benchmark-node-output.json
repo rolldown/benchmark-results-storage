@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1722327778393,
+  "lastUpdate": 1722331185809,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -25397,6 +25397,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "184.22",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3d3028452d77854a8cd596a5094d28b37d3ce2ba",
+          "message": "fix: avoid panic if member expr referneced to non-namespace symbol (#1784)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-30T09:05:44Z",
+          "tree_id": "f679292eaf4c50350ecc208dd66b2fd43e8969d6",
+          "url": "https://github.com/rolldown/rolldown/commit/3d3028452d77854a8cd596a5094d28b37d3ce2ba"
+        },
+        "date": 1722331185801,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "317.65",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "540.87",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "700.87",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1104.17",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "116.07",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "178.67",
             "unit": "ms / ops"
           }
         ]
