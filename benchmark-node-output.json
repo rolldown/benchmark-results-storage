@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1722247623073,
+  "lastUpdate": 1722327778393,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -25343,6 +25343,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "173.88",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "954dd2a5fa5988ad0ea587d1d73d4a6e915ad56a",
+          "message": "fix: should generate `export * from ...` in entry chunks rather than entry modules (#1783)\n\n<!-- Thank you for contributing! -->\r\n\r\n### Description\r\n\r\n<!-- Please insert your description here and provide especially info\r\nabout the \"what\" this PR is solving -->\r\n\r\n---------\r\n\r\nCo-authored-by: IWANABETHATGUY <iwanabethatguy@qq.com>",
+          "timestamp": "2024-07-30T16:17:47+08:00",
+          "tree_id": "079cbca6976afb7b2b627b243a069234e564a6e4",
+          "url": "https://github.com/rolldown/rolldown/commit/954dd2a5fa5988ad0ea587d1d73d4a6e915ad56a"
+        },
+        "date": 1722327778384,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "315.33",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "540.90",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "695.54",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1096.95",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "119.73",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "184.22",
             "unit": "ms / ops"
           }
         ]
