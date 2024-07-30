@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1722336107736,
+  "lastUpdate": 1722341923030,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -25505,6 +25505,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "179.48",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b79e7e0a1bb75d4270b4cd7076c214796807f9ee",
+          "message": "fix(foramt/cjs): preserve semantic of entries exports even in wrapped (#1788)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-30T12:04:05Z",
+          "tree_id": "b7008debc16a149d8d10d86c87698d57a07aec3f",
+          "url": "https://github.com/rolldown/rolldown/commit/b79e7e0a1bb75d4270b4cd7076c214796807f9ee"
+        },
+        "date": 1722341923021,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "325.24",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "551.76",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "717.47",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1115.08",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "122.01",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "185.79",
             "unit": "ms / ops"
           }
         ]
