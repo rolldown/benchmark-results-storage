@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1722435684685,
+  "lastUpdate": 1722438739501,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -25991,6 +25991,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "179.63",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "felipe.armoni@gmail.com",
+            "name": "Felipe Armoni",
+            "username": "komyg"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "12d6a756bd9279298f1f2e1298693c47d2a255a6",
+          "message": "feat: add support for banner as str (#1810)",
+          "timestamp": "2024-07-31T23:06:41+08:00",
+          "tree_id": "b7b54a48295a84a170b4698ed0a0a34c2d42c603",
+          "url": "https://github.com/rolldown/rolldown/commit/12d6a756bd9279298f1f2e1298693c47d2a255a6"
+        },
+        "date": 1722438739493,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "307.33",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "530.88",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "690.10",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1100.54",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "118.43",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "185.42",
             "unit": "ms / ops"
           }
         ]
