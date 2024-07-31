@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1722393009261,
+  "lastUpdate": 1722417864437,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -25775,6 +25775,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "185.03",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "33c8b6896244bd64be12256ab0d317f7b5f416b6",
+          "message": "refactor: binding plugin config (#1806)\n\n<!-- Thank you for contributing! -->\r\n\r\n### Description\r\n1. allow pass configuration in builtin plugin.\r\n\r\npreviously, we used a dynamic type to represent `options`, the downside\r\nis you need to write deserialize code by hand.\r\nAnd you lose the code completion since the type is only `JsUnknown`.\r\nUnless you maintain related plugin configuration binding and let `napi`\r\ngenerate for you, you still need to write configuration deserialize code\r\nby hand, which the new impl doesn't need.\r\n\r\nThe only downside for the new implementation is `napi` only support\r\n`Either26`, which means we need to fallback to the previous impl (write\r\ndeserialization by hand) if our builtin plugin exceeds `25`, considering\r\n`vite` has about 30 builtin plugin, we don't need to worry about that\r\nfor the near future.\r\n<!-- Please insert your description here and provide especially info\r\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-31T17:19:14+08:00",
+          "tree_id": "dec1acdaab31bc0204e4c42530e4a3e210df6bca",
+          "url": "https://github.com/rolldown/rolldown/commit/33c8b6896244bd64be12256ab0d317f7b5f416b6"
+        },
+        "date": 1722417864429,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "331.05",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "565.05",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "729.25",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1150.40",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "123.89",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "178.76",
             "unit": "ms / ops"
           }
         ]
