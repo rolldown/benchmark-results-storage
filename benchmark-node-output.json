@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1722392833518,
+  "lastUpdate": 1722393009261,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -25738,43 +25738,43 @@
             "username": "hyf0"
           },
           "distinct": false,
-          "id": "04346003cd4945e8d76bc96734aa55ed49508287",
-          "message": "chore(rust): rename `tests/fixture` to `tests/rolldown` (#1802)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
-          "timestamp": "2024-07-31T02:08:31Z",
-          "tree_id": "c320d590deec7bdcb67b0e6234659ae0c46422db",
-          "url": "https://github.com/rolldown/rolldown/commit/04346003cd4945e8d76bc96734aa55ed49508287"
+          "id": "6cf30e34a262f10ec8a113a28906da9b83905553",
+          "message": "test(rust): add `tests/rollup` for prepare migrating rollup tests (#1803)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nJust a placeholder so far. Until we found a easy way to found if a rollup test is migrated in rust, we won't start to migrating rollup tests to rust side.\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-31T02:08:36Z",
+          "tree_id": "be5b5cadbfe2c980b6c261294456b5fea5d483e4",
+          "url": "https://github.com/rolldown/rolldown/commit/6cf30e34a262f10ec8a113a28906da9b83905553"
         },
-        "date": 1722392833510,
+        "date": 1722393009253,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x (default)",
-            "value": "324.57",
+            "value": "323.47",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap (default)",
-            "value": "553.12",
+            "value": "555.81",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify (default)",
-            "value": "705.06",
+            "value": "717.35",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify-sourcemap (default)",
-            "value": "1128.17",
+            "value": "1131.30",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts (default)",
-            "value": "116.14",
+            "value": "123.79",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts-sourcemap (default)",
-            "value": "174.12",
+            "value": "185.03",
             "unit": "ms / ops"
           }
         ]
