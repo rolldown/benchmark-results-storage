@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1722388743605,
+  "lastUpdate": 1722392833518,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -25721,6 +25721,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "178.29",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49502170+hyf0@users.noreply.github.com",
+            "name": "hyf0",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "49502170+hyf0@users.noreply.github.com",
+            "name": "hyf0",
+            "username": "hyf0"
+          },
+          "distinct": false,
+          "id": "04346003cd4945e8d76bc96734aa55ed49508287",
+          "message": "chore(rust): rename `tests/fixture` to `tests/rolldown` (#1802)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-31T02:08:31Z",
+          "tree_id": "c320d590deec7bdcb67b0e6234659ae0c46422db",
+          "url": "https://github.com/rolldown/rolldown/commit/04346003cd4945e8d76bc96734aa55ed49508287"
+        },
+        "date": 1722392833510,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "324.57",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "553.12",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "705.06",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1128.17",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "116.14",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "174.12",
             "unit": "ms / ops"
           }
         ]
