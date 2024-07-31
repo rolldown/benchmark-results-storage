@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1722432491886,
+  "lastUpdate": 1722434927240,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -25883,6 +25883,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "210.98",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "17974631+IWANABETHATGUY@users.noreply.github.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "17974631+IWANABETHATGUY@users.noreply.github.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "distinct": false,
+          "id": "178dd425dab17dcb4f77e6ccf1ddff79cf6594b1",
+          "message": "chore: export factory for builtin plugin (#1808)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-07-31T13:54:41Z",
+          "tree_id": "89e78771bae73d402338304f9da7dc9d70107fee",
+          "url": "https://github.com/rolldown/rolldown/commit/178dd425dab17dcb4f77e6ccf1ddff79cf6594b1"
+        },
+        "date": 1722434927232,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "336.65",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "561.88",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "726.48",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1149.91",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "126.76",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "185.75",
             "unit": "ms / ops"
           }
         ]
