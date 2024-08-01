@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1722491424663,
+  "lastUpdate": 1722495377370,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -26531,6 +26531,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "183.38",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "17974631+IWANABETHATGUY@users.noreply.github.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "17974631+IWANABETHATGUY@users.noreply.github.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "distinct": false,
+          "id": "8efd373e77184237eac000aa50d15b917c6cc494",
+          "message": "chore: add fixme on use `span` identify top level member expr (#1824)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. Add a comment to avoid forgetting the issue about using span to identify `AstNode`.\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-08-01T06:43:53Z",
+          "tree_id": "76d1813ef4120e815ffc510b4fb0af718ddde377",
+          "url": "https://github.com/rolldown/rolldown/commit/8efd373e77184237eac000aa50d15b917c6cc494"
+        },
+        "date": 1722495377361,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "305.42",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "525.03",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "671.16",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1073.32",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "114.67",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "170.41",
             "unit": "ms / ops"
           }
         ]
