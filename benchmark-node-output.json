@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1722495377370,
+  "lastUpdate": 1722499357235,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -26585,6 +26585,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "170.41",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kermanx@qq.com",
+            "name": "_Kerman",
+            "username": "KermanX"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "40cf58b9bb8b3f9d7145d97c25308213b68e2260",
+          "message": "feat: add dynamic_import_vars plugin (#1732)",
+          "timestamp": "2024-08-01T15:57:32+08:00",
+          "tree_id": "16322fd150edf09ac000ff698de19efa9d87c955",
+          "url": "https://github.com/rolldown/rolldown/commit/40cf58b9bb8b3f9d7145d97c25308213b68e2260"
+        },
+        "date": 1722499357227,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "311.74",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "539.76",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "697.15",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1097.26",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "118.30",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "177.55",
             "unit": "ms / ops"
           }
         ]
