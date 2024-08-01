@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1722518680313,
+  "lastUpdate": 1722534416511,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -26909,6 +26909,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "174.80",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kermanx@qq.com",
+            "name": "_Kerman",
+            "username": "KermanX"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8288370c3904c79fffaff6fd024c61c69cfc0f79",
+          "message": "feat: add manifest plugin (#1839)\n\n### Description\n\nListed in #1826.\n\nThis PR implements [Vite's manifest\nplugin](https://github.com/vitejs/vite/blob/main/packages/vite/src/node/plugins/manifest.ts).\n\nTodos are in the comments in the source code. All of them are due to\nother unimplemented features like multiple output and CSS support.",
+          "timestamp": "2024-08-01T17:33:24Z",
+          "tree_id": "e954d243e463d97fab12ac03359081e06ae8ecdf",
+          "url": "https://github.com/rolldown/rolldown/commit/8288370c3904c79fffaff6fd024c61c69cfc0f79"
+        },
+        "date": 1722534416502,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "313.40",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "544.79",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "714.65",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1125.75",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "120.71",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "188.67",
             "unit": "ms / ops"
           }
         ]
