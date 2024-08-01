@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1722505442833,
+  "lastUpdate": 1722509347441,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -26801,6 +26801,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "185.25",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c9f8af403fa17316f1a1c0f9c5ad437b417f74e1",
+          "message": "fix: using sanitize_file_name to generate valid file name (#1833)",
+          "timestamp": "2024-08-01T18:43:14+08:00",
+          "tree_id": "13aeda907f364a14ec625baa70beaf491c8e4e68",
+          "url": "https://github.com/rolldown/rolldown/commit/c9f8af403fa17316f1a1c0f9c5ad437b417f74e1"
+        },
+        "date": 1722509347431,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "351.00",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "593.16",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "783.84",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1208.79",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "137.60",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "196.29",
             "unit": "ms / ops"
           }
         ]
