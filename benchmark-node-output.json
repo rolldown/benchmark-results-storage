@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1722481770294,
+  "lastUpdate": 1722483768263,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -26369,6 +26369,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "174.58",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "felipe.armoni@gmail.com",
+            "name": "Felipe Armoni",
+            "username": "komyg"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "46d56c48b13eedf6f2e2f92cc6063e0debdee592",
+          "message": "feat: add support for outro as str (#1821)\n\n### Description\r\n\r\nAdd support for having `outro` as a `string` or an `object`.\r\n\r\n---------\r\n\r\nCo-authored-by: underfin <likui.underfin@gmail.com>",
+          "timestamp": "2024-08-01T03:37:56Z",
+          "tree_id": "abe7fa00a13eeae068477f02ffd6c67eb3c930fb",
+          "url": "https://github.com/rolldown/rolldown/commit/46d56c48b13eedf6f2e2f92cc6063e0debdee592"
+        },
+        "date": 1722483768255,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "314.11",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "539.58",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "696.20",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1112.22",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "117.54",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "177.31",
             "unit": "ms / ops"
           }
         ]
