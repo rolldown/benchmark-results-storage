@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1722503591614,
+  "lastUpdate": 1722505442833,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -26747,6 +26747,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "180.15",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "1430279+Boshen@users.noreply.github.com",
+            "name": "Boshen",
+            "username": "Boshen"
+          },
+          "committer": {
+            "email": "1430279+Boshen@users.noreply.github.com",
+            "name": "Boshen",
+            "username": "Boshen"
+          },
+          "distinct": false,
+          "id": "540ee470aa3becc1eae1e1912b0f13d14a2c4b5f",
+          "message": "feat: upgrade oxc (#1823)\n\nThe next oxc version improves sourcemap performance, and fixes various codegen annoyances.",
+          "timestamp": "2024-08-01T09:30:23Z",
+          "tree_id": "54ff5c78434d242cf3329fa0550a292efb045181",
+          "url": "https://github.com/rolldown/rolldown/commit/540ee470aa3becc1eae1e1912b0f13d14a2c4b5f"
+        },
+        "date": 1722505442823,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "330.62",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "558.44",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "729.62",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1144.83",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "123.10",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "185.25",
             "unit": "ms / ops"
           }
         ]
