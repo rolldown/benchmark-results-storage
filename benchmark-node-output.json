@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1722490584490,
+  "lastUpdate": 1722491424663,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -26477,6 +26477,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "177.53",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49502170+hyf0@users.noreply.github.com",
+            "name": "hyf0",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "49502170+hyf0@users.noreply.github.com",
+            "name": "hyf0",
+            "username": "hyf0"
+          },
+          "distinct": false,
+          "id": "8fc860832ba9f9a9a99d2b2e611d8d31c8c56540",
+          "message": "refactor(rust/treeshaking): get resolved symbol of `MemberExprRef` in one go (#1818)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n- This PR does does the same thing as the old code but storing the result in a map and use it directly rather do a resolving process with cache.\n- This PR also split the member expression resolving logic into a extra step, it might slow down the performance but make the treeshaking process more clean and simple.\n- https://github.com/rolldown/rolldown/pull/1805 rely on this PR, which makes the finalizing logic simpler.\n\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-08-01T05:37:44Z",
+          "tree_id": "3cee999c37241b6a3c5b71bc6e0c081970d69579",
+          "url": "https://github.com/rolldown/rolldown/commit/8fc860832ba9f9a9a99d2b2e611d8d31c8c56540"
+        },
+        "date": 1722491424654,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "312.54",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "535.46",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "692.82",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1111.83",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "121.24",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "183.38",
             "unit": "ms / ops"
           }
         ]
