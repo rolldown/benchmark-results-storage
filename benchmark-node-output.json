@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1722509347441,
+  "lastUpdate": 1722518680313,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -26855,6 +26855,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "196.29",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "ffd453328ceb75331be56eedfc09e66150c495aa",
+          "message": "feat: commonjs-variable-in-esm diagnostic (#1832)\n\n<!-- Thank you for contributing! -->\n\n### Description\nRef: https://github.com/evanw/esbuild/blob/main/CHANGELOG-2022.md#01411\n\nClosed https://github.com/rolldown/rolldown/issues/1831\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->\n\n---------\n\nCo-authored-by: Yunfei He <i.heyunfei@gmail.com>",
+          "timestamp": "2024-08-01T13:11:32Z",
+          "tree_id": "e95870185d838c939c998e6827b58c33b9f58dc8",
+          "url": "https://github.com/rolldown/rolldown/commit/ffd453328ceb75331be56eedfc09e66150c495aa"
+        },
+        "date": 1722518680305,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "320.86",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "563.74",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "734.75",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1155.04",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "117.34",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "174.80",
             "unit": "ms / ops"
           }
         ]
