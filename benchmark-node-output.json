@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1722483768263,
+  "lastUpdate": 1722490584490,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -26423,6 +26423,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "177.31",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "17974631+IWANABETHATGUY@users.noreply.github.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "17974631+IWANABETHATGUY@users.noreply.github.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "distinct": false,
+          "id": "3153a614c9dab13d655fdebd51bd51f6b520a1c8",
+          "message": "fix: remove ts expect error (#1817)\n\n<!-- Thank you for contributing! -->\n\n### Description\nClosed #1811\n<!-- Please insert your description here and provide especially info about the \"what\" this PR is solving -->",
+          "timestamp": "2024-08-01T05:23:50Z",
+          "tree_id": "a26b7c4073d52f7ae5c92198c224cc2f7da1278f",
+          "url": "https://github.com/rolldown/rolldown/commit/3153a614c9dab13d655fdebd51bd51f6b520a1c8"
+        },
+        "date": 1722490584482,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "306.63",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "528.29",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "674.17",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1076.28",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "116.79",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "177.53",
             "unit": "ms / ops"
           }
         ]
