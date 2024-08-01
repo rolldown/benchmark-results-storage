@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1722502300628,
+  "lastUpdate": 1722503591614,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -26693,6 +26693,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "179.12",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "1430279+Boshen@users.noreply.github.com",
+            "name": "Boshen",
+            "username": "Boshen"
+          },
+          "committer": {
+            "email": "1430279+Boshen@users.noreply.github.com",
+            "name": "Boshen",
+            "username": "Boshen"
+          },
+          "distinct": false,
+          "id": "726f6333ef6f765720bc7a827cb2b315f065c34a",
+          "message": "chore: disable all Rust doc tests (#1829)\n\nBecause they are slow to compile and we don't use them. Local `cargo test` run is improved by a few seconds.\n\nI also disabled test compilations in all test utility crates.",
+          "timestamp": "2024-08-01T08:59:25Z",
+          "tree_id": "c78527d354791984793002e3040f8bc8294a647e",
+          "url": "https://github.com/rolldown/rolldown/commit/726f6333ef6f765720bc7a827cb2b315f065c34a"
+        },
+        "date": 1722503591605,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "309.33",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "531.37",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "697.52",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1099.66",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "118.32",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "180.15",
             "unit": "ms / ops"
           }
         ]
