@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1722616823221,
+  "lastUpdate": 1722623535343,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -27341,6 +27341,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "179.23",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "4750f555e66e871d7877f42a3e9764e75d91bb15",
+          "message": "chore:  revert example basic vue (#1850)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. the example is broken since\nhttps://github.com/rolldown/rolldown/pull/1470/files#diff-e1477c04dd600c60e058bbf6b1d0dd47dd234120994bc23d0c3cf56efd5220e6,\nnow revert.\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-08-02T18:19:13Z",
+          "tree_id": "599573e31f05d73228ca02889f6d7d2b59de6d3f",
+          "url": "https://github.com/rolldown/rolldown/commit/4750f555e66e871d7877f42a3e9764e75d91bb15"
+        },
+        "date": 1722623535334,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "315.31",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "542.09",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "712.05",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1115.79",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "120.84",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "181.75",
             "unit": "ms / ops"
           }
         ]
