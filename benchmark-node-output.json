@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1722591713859,
+  "lastUpdate": 1722601822103,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -27125,6 +27125,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "173.82",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "475f765931876081825badd4f63420ae0a90634d",
+          "message": "fix: should call write_bundle after write bundle to disk (#1844)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nref\nhttps://github.com/rollup/rollup/blob/master/src/rollup/rollup.ts#L194-L200\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-08-02T12:15:19Z",
+          "tree_id": "aed32de93f6dcbaa211340815ee036c8a0a4342e",
+          "url": "https://github.com/rolldown/rolldown/commit/475f765931876081825badd4f63420ae0a90634d"
+        },
+        "date": 1722601822095,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "309.73",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "535.39",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "695.14",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1086.48",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "119.61",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "184.00",
             "unit": "ms / ops"
           }
         ]
