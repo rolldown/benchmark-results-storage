@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1722584983842,
+  "lastUpdate": 1722591713859,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -27071,6 +27071,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "184.59",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "145f1052d4ad89029843050a14674fe676077881",
+          "message": "fix(format/cjs): should keep live bindings for common chunks (#1805)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nThis fix isn't perfect, but I can't came out a perfect fix with thinking\neverything in mind. So let's merge it first and see how it interact with\nother code.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-08-02T09:28:10Z",
+          "tree_id": "e87b52ee2d2de9e6740f34a7f46d078e9019acea",
+          "url": "https://github.com/rolldown/rolldown/commit/145f1052d4ad89029843050a14674fe676077881"
+        },
+        "date": 1722591713850,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "306.10",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "521.58",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "685.95",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1089.03",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "117.37",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "173.82",
             "unit": "ms / ops"
           }
         ]
