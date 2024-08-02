@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1722534416511,
+  "lastUpdate": 1722580478203,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -26963,6 +26963,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "188.67",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c7b1dad4a91b93a972acb04da7996df072adcbcb",
+          "message": "chore: refactor import-glob plugin (#1835)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-08-02T06:19:51Z",
+          "tree_id": "ff3ccf00d774f96a3eed612a3ade0aaad32e54e8",
+          "url": "https://github.com/rolldown/rolldown/commit/c7b1dad4a91b93a972acb04da7996df072adcbcb"
+        },
+        "date": 1722580478194,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "300.83",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "519.12",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "682.65",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1073.93",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "113.49",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "171.25",
             "unit": "ms / ops"
           }
         ]
