@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1722674433399,
+  "lastUpdate": 1722693951411,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -27503,6 +27503,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "178.21",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "7086cmd@gmail.com",
+            "name": "Ethan Goh",
+            "username": "7086cmd"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4999aed32c6fb66b8cf87af855b3992b902c5d76",
+          "message": "feat: support `output.esModule` option (#1812)\n\nThis PR introduces support for namespace blocks in IIFE or CJS format\noutputs, treating them as ES Modules instead of relying solely on\n`output.exports` being `named`. @underfin (I'm not in a hurry to work on\nthis as I will likely spend a lot of time on my competition project next\nmonth. :)\n\n### Modifications\n\n1. Removed redundant usage of `determine_export_mode`.\n2. Added `render_namespace_block`, inspired by Rollup, but implemented\nbased on behavior observed in the REPL.\n3. Added corresponding tests to validate the changes.\n\n### Behaviors\n\n1. **Namespace block is disabled if `output.exports` isn't `named`.**\n2. **Namespace block is disabled if `output.format` is `esm` or `app`.**\n   - `esm` should always be an ES module.\n   - `app` would never be a module.\n3. **Entry Point with Default Export:**\n- When `output.esModule` is set to `'always'` (or `true` for Rollup\ncompatibility), or `'if-default-prop'` (similar to Rollup), it will\nrender `Object.defineProperty(exports, '__esModule', { value: true })`.\n   - Left an entry for `generatedCode.symbol` for future updates.\n\n### Rationale for Not Using `boolean | 'if-default-prop'`\n\nDuring the conversion from JavaScript to Rust, the program encountered a\npanic when the source value was a boolean. Overriding `true` or `false`\nwith a string was considered inelegant, so this approach was not used.\n\n---------\n\nCo-authored-by: underfin <likui.underfin@gmail.com>",
+          "timestamp": "2024-08-03T13:52:46Z",
+          "tree_id": "fd0740f1ddb54c9402c94e76f1e84ac61db373c7",
+          "url": "https://github.com/rolldown/rolldown/commit/4999aed32c6fb66b8cf87af855b3992b902c5d76"
+        },
+        "date": 1722693951403,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "306.99",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "528.56",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "682.43",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1087.71",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "115.81",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "176.27",
             "unit": "ms / ops"
           }
         ]
