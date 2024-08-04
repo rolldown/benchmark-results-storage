@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1722693951411,
+  "lastUpdate": 1722769428816,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -27557,6 +27557,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "176.27",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "eb7cd7d79358abf2878e0a50eab4aba5ae7e3ce2",
+          "message": "chore:  fix cargo deny ci (#1859)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. ref https://github.com/EmbarkStudios/cargo-deny/pull/611\n2. https://github.com/EmbarkStudios/cargo-deny/releases\n3. Fixed broken CI\nhttps://github.com/rolldown/rolldown/actions/runs/10235427949/job/28316252336?pr=1845\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-08-04T10:50:53Z",
+          "tree_id": "ec0e4106493cef86d56a66c59b306d7f3b496d47",
+          "url": "https://github.com/rolldown/rolldown/commit/eb7cd7d79358abf2878e0a50eab4aba5ae7e3ce2"
+        },
+        "date": 1722769428807,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "301.61",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "517.59",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "669.09",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1077.47",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "116.49",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "174.40",
             "unit": "ms / ops"
           }
         ]
