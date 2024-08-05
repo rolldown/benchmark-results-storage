@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1722848195840,
+  "lastUpdate": 1722851933585,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -28097,6 +28097,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "175.24",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3edfc401b065ae37bd9cea8cff320120320970b3",
+          "message": "chore:  replace module id related type with arcstr (#1870)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. replace `Arc<str>` with `ArcStr`\n2. replace `String` with `ArcStr`\n3. Normalize type related to module id\n\nrelated to #1866\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-08-05T09:46:03Z",
+          "tree_id": "faf0896196c2ba2c7c25e9735219bd68c54e13f0",
+          "url": "https://github.com/rolldown/rolldown/commit/3edfc401b065ae37bd9cea8cff320120320970b3"
+        },
+        "date": 1722851933575,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "311.41",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "529.65",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "702.47",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1097.15",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "120.69",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "178.79",
             "unit": "ms / ops"
           }
         ]
