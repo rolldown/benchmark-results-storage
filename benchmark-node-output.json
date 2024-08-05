@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1722856355746,
+  "lastUpdate": 1722876076059,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -28205,6 +28205,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "176.92",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "ad78e6314bbda3f0c46ff268d091dbb14be37f94",
+          "message": "chore:  add span of `module_request` in  raw import record (#1871)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. This pr add the ability to get the span of `module_request`.\n2. Aiming to keep the type size unchanged, I did some refactors, If I\nadd `Span` directly the type size will increase from `40` to `48` bytes.\nThis time, I'm sticking with the current impl, since `8` bytes for each\n`RawImportRecord` is none trivial, think about it, for a medium-size\nproject (10000 ~ 20000 modules with minimum import records only one),\nthis could save about (80 ~ 150MB) memory.\nRelated to https://github.com/rolldown/rolldown/pull/1866\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-08-05T16:28:37Z",
+          "tree_id": "845ede5abb887cea8463e3244c409b2cb57ad42d",
+          "url": "https://github.com/rolldown/rolldown/commit/ad78e6314bbda3f0c46ff268d091dbb14be37f94"
+        },
+        "date": 1722876076050,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "303.65",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "516.52",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "677.35",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1081.04",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "114.13",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "176.31",
             "unit": "ms / ops"
           }
         ]
