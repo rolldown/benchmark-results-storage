@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1722795711591,
+  "lastUpdate": 1722827533626,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -27881,6 +27881,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "193.18",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f55cfda1cdb2d17c6c914261d410d3f95d5e867b",
+          "message": "feat: module preload config skip (#1845)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-08-05T02:58:36Z",
+          "tree_id": "109cd144e95963be61ec0c1aadbfd74f15e1d87c",
+          "url": "https://github.com/rolldown/rolldown/commit/f55cfda1cdb2d17c6c914261d410d3f95d5e867b"
+        },
+        "date": 1722827533617,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "301.93",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "518.97",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "685.36",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1085.00",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "116.22",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "180.71",
             "unit": "ms / ops"
           }
         ]
