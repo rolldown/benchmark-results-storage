@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1722944040477,
+  "lastUpdate": 1722948535287,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -28475,6 +28475,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "176.33",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "boshenc@gmail.com",
+            "name": "Boshen",
+            "username": "Boshen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "97d8fb584836cf9c0925590803ad89df599a822c",
+          "message": "chore: bump oxc to version 0.23.1 (#1873)\n\n### Description\n\n* Adds define ast pass with simple member expression replacement\n\n```rust\nuse oxc::minifier::{ReplaceGlobalDefines, ReplaceGlobalDefinesConfig};\n\nlet config = ReplaceGlobalDefinesConfig::new(&[(\"process.env.NODE_ENV\", \"'production'\")]).unwrap();\nReplaceGlobalDefines::new(fields.allocator, config).build(fields.program);\n```",
+          "timestamp": "2024-08-06T12:35:46Z",
+          "tree_id": "38e0bb576ce5cc28fc15fcab4dcdf6f1cf09cd68",
+          "url": "https://github.com/rolldown/rolldown/commit/97d8fb584836cf9c0925590803ad89df599a822c"
+        },
+        "date": 1722948535278,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "318.49",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "529.87",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "787.61",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1186.49",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "118.04",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "176.59",
             "unit": "ms / ops"
           }
         ]
