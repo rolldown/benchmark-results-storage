@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1722940392161,
+  "lastUpdate": 1722944040477,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -28421,6 +28421,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "180.44",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "041aa320d7e6f5cf3dc3fee18caa59a5e738a8bc",
+          "message": "ci(rust/test): should reject new snapshots in CI (#1878)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-08-06T11:20:13Z",
+          "tree_id": "c0cabc4c32be1d9aae4a3125626311e19bbd3190",
+          "url": "https://github.com/rolldown/rolldown/commit/041aa320d7e6f5cf3dc3fee18caa59a5e738a8bc"
+        },
+        "date": 1722944040468,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "303.18",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "524.51",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "688.01",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1095.29",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "114.32",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "176.33",
             "unit": "ms / ops"
           }
         ]
