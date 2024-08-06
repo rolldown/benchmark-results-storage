@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1722955807143,
+  "lastUpdate": 1722956807699,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -28583,6 +28583,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "177.59",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "7086cmd@gmail.com",
+            "name": "Ethan Goh",
+            "username": "7086cmd"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2953b9023450639a5450ac94d9ba666c04ae86ae",
+          "message": "fix: resolve conflict `exports` key in `CJS` and `IIFE`. (#1837)\n\nresolves #1836.\nresolves #1623.\n\nI modified the `renamer` and checked if it wasn't `esm`. Since named\nexports are not allowed using `default` or `none`, we should always\nconsider it as a reserved key.\n\n> https://github.com/rolldown/rolldown/pull/1694#issuecomment-2245219042\nneed to do\n> \n> From #1623.\n\n---------\n\nCo-authored-by: IWANABETHATGUY <iwanabethatguy@qq.com>",
+          "timestamp": "2024-08-06T14:44:05Z",
+          "tree_id": "6ce9c5e4a855938e4768d0ab2737589203a76cb3",
+          "url": "https://github.com/rolldown/rolldown/commit/2953b9023450639a5450ac94d9ba666c04ae86ae"
+        },
+        "date": 1722956807691,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "324.82",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "546.52",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "801.50",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1205.71",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "120.59",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "180.00",
             "unit": "ms / ops"
           }
         ]
