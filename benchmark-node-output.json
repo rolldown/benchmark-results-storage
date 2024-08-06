@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1722956807699,
+  "lastUpdate": 1722963055453,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -28637,6 +28637,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "180.00",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "68d96a959fc2d59bf18cdbc36c731bd3866e7d74",
+          "message": "refactor(rust/test): don't execute bundle entries automatically if there is `_test.mjs`/`_test.cjs` (#1880)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nWe need `_test.mjs` to write some assertions while bundled output is\ninvalid to execute.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-08-06T16:35:44Z",
+          "tree_id": "733ab3d3b6cb5eefd9b84826c1e4ad148d9bc972",
+          "url": "https://github.com/rolldown/rolldown/commit/68d96a959fc2d59bf18cdbc36c731bd3866e7d74"
+        },
+        "date": 1722963055443,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "321.68",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "531.23",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "784.81",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1186.50",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "117.58",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "174.55",
             "unit": "ms / ops"
           }
         ]
