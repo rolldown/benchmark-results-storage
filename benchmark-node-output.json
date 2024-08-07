@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1723023477818,
+  "lastUpdate": 1723029198709,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -29123,6 +29123,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "176.35",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "cd2032d1a6caa8b2a25e8b457f43f177b71675cb",
+          "message": "chore:  basic preserve js stack trace (#1893)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-08-07T11:00:33Z",
+          "tree_id": "231c1be1143aa610c9095facb3327d16310fcce3",
+          "url": "https://github.com/rolldown/rolldown/commit/cd2032d1a6caa8b2a25e8b457f43f177b71675cb"
+        },
+        "date": 1723029198700,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "319.48",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "536.61",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "769.47",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1181.72",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "115.59",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "172.62",
             "unit": "ms / ops"
           }
         ]
