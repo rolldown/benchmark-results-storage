@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1723015730118,
+  "lastUpdate": 1723019132690,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -28961,6 +28961,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "169.15",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "03f6dc99db5687719585e07c489f31dc7b861251",
+          "message": "fix: avoid take first chunk if bundle is empty (#1887)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-08-07T08:11:50Z",
+          "tree_id": "a6f58080f00e36e11efa589f1e55f6f47b58055b",
+          "url": "https://github.com/rolldown/rolldown/commit/03f6dc99db5687719585e07c489f31dc7b861251"
+        },
+        "date": 1723019132681,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "310.03",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "519.64",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "770.60",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1176.22",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "119.13",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "174.20",
             "unit": "ms / ops"
           }
         ]
