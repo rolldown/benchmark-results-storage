@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1723022353200,
+  "lastUpdate": 1723023477818,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -29069,6 +29069,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "180.90",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "43f6f225e41a38df233eb4174fb5c03ff2e577b4",
+          "message": "feat(node/rolldown): support `define` functionality (#1891)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nCloses #186.\n\nSo far the target expr could only be identifier or member expression,\nbut the replacement could be any expr.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-08-07T09:19:06Z",
+          "tree_id": "efff06689a6ebf0b4b3dac5b28aa1ff6a3ca8b3c",
+          "url": "https://github.com/rolldown/rolldown/commit/43f6f225e41a38df233eb4174fb5c03ff2e577b4"
+        },
+        "date": 1723023477809,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "320.65",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "531.53",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "797.43",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1190.63",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "119.79",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "176.35",
             "unit": "ms / ops"
           }
         ]
