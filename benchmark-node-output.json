@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1723036299054,
+  "lastUpdate": 1723036588332,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -29194,43 +29194,43 @@
             "username": "web-flow"
           },
           "distinct": false,
-          "id": "25722f6f8514c2401b4545cc09b61993de034740",
-          "message": "chore: remove unused file (#1889)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
-          "timestamp": "2024-08-07T12:56:00Z",
-          "tree_id": "802368e9458ac3b6815b6106280ce513c01b47dc",
-          "url": "https://github.com/rolldown/rolldown/commit/25722f6f8514c2401b4545cc09b61993de034740"
+          "id": "e886d93b5c4974240b800da3f91e95579304627a",
+          "message": "chore: refactor composing js plugin bailout logic (#1894)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-08-07T13:02:40Z",
+          "tree_id": "c258012cc22838e1143156ff796ecfe0ffbcdb51",
+          "url": "https://github.com/rolldown/rolldown/commit/e886d93b5c4974240b800da3f91e95579304627a"
         },
-        "date": 1723036299044,
+        "date": 1723036588324,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x (default)",
-            "value": "314.02",
+            "value": "328.13",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap (default)",
-            "value": "526.21",
+            "value": "550.90",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify (default)",
-            "value": "760.14",
+            "value": "833.48",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify-sourcemap (default)",
-            "value": "1171.55",
+            "value": "1244.01",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts (default)",
-            "value": "119.35",
+            "value": "123.11",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts-sourcemap (default)",
-            "value": "177.77",
+            "value": "179.84",
             "unit": "ms / ops"
           }
         ]
