@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1723046245157,
+  "lastUpdate": 1723106513683,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -29339,6 +29339,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "181.42",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "eee1db08020c641bd56101a71f3714b501cd61b8",
+          "message": "fix:  share replace global define config (#1902)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-08-08T08:27:33Z",
+          "tree_id": "8616ead4d6c4fc4ee2419875927e5eaeec34091d",
+          "url": "https://github.com/rolldown/rolldown/commit/eee1db08020c641bd56101a71f3714b501cd61b8"
+        },
+        "date": 1723106513674,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "316.07",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "523.91",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "772.79",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1159.95",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "120.61",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "176.01",
             "unit": "ms / ops"
           }
         ]
