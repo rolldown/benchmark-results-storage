@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1723106513683,
+  "lastUpdate": 1723121907964,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -29393,6 +29393,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "176.01",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "boshenc@gmail.com",
+            "name": "Boshen",
+            "username": "Boshen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d879a8c478518687a9b3bcbd96755b3a4cc085b0",
+          "message": "chore: bump oxc to 0.24.0 (#1901)\n\nThis update adds symbols and scopes to the minifier for better constant\nfolding in the near future.\n\nWe'll try and fix this multiple semantic pass problem soon.",
+          "timestamp": "2024-08-08T12:45:02Z",
+          "tree_id": "dc48736a288212e44be47cbba2034eda30f1bd65",
+          "url": "https://github.com/rolldown/rolldown/commit/d879a8c478518687a9b3bcbd96755b3a4cc085b0"
+        },
+        "date": 1723121907956,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "350.34",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "558.19",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "955.95",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1367.18",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "123.69",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "185.12",
             "unit": "ms / ops"
           }
         ]
