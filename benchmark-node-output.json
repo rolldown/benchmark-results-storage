@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1723194382851,
+  "lastUpdate": 1723194816791,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -29609,6 +29609,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "181.03",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "cef3e576aa2c7b09cb4cdf2bf1b5ab41ffa31887",
+          "message": "feat: allow rewrite `moduleType` in transform Hook (#1916)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-08-09T08:58:48Z",
+          "tree_id": "ef8df22ba18d0af58516b6525af7bf379c48a063",
+          "url": "https://github.com/rolldown/rolldown/commit/cef3e576aa2c7b09cb4cdf2bf1b5ab41ffa31887"
+        },
+        "date": 1723194816783,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "356.89",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "570.95",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "952.52",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1364.06",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "127.26",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "184.59",
             "unit": "ms / ops"
           }
         ]
