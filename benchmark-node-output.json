@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1723204563502,
+  "lastUpdate": 1723205846068,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -29879,6 +29879,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "188.94",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1206d32fd5d00a5e21c2f583e758a8d7ff08c3d4",
+          "message": "chore:  bump rust to 1.80.1 (#1920)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. Fixed a clippy error\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-08-09T12:03:45Z",
+          "tree_id": "2fefa07a7b69e360e3efc4a0f72538e554a6f31a",
+          "url": "https://github.com/rolldown/rolldown/commit/1206d32fd5d00a5e21c2f583e758a8d7ff08c3d4"
+        },
+        "date": 1723205846057,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "351.10",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "578.69",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "981.66",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1384.16",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "130.01",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "186.26",
             "unit": "ms / ops"
           }
         ]
