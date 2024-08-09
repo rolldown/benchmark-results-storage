@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1723194816791,
+  "lastUpdate": 1723201728283,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -29663,6 +29663,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "184.59",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "laipichan@qq.com",
+            "name": "dalaoshu",
+            "username": "shulaoda"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "c14406fb61051cba19833368a23539a4342c8e80",
+          "message": "feat: align OutputOptions#esModule with rollup (#1898)\n\n<!-- Thank you for contributing! -->\n\n### Description\ncloses #1888 \n\nNeed some help, it doesn't seem to work.\n\nhttps://github.com/rolldown/rolldown/blob/e0751e4db539ce8e25ca8f31bb027475a0dd9e98/crates/rolldown_binding/src/options/binding_output_options/mod.rs#L37-L38\n`Error: Failed to load native binding`\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-08-09T10:54:44Z",
+          "tree_id": "977ee076057e15051a4923515890c3be490d6c92",
+          "url": "https://github.com/rolldown/rolldown/commit/c14406fb61051cba19833368a23539a4342c8e80"
+        },
+        "date": 1723201728274,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "350.56",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "558.53",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "928.10",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1323.88",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "125.02",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "176.74",
             "unit": "ms / ops"
           }
         ]
