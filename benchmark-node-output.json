@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1723125175618,
+  "lastUpdate": 1723188023553,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -29501,6 +29501,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "183.47",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b7e1d9064aee5d585bc205755351a2dce4b3052c",
+          "message": "fix(node/plugin): ensure order for generateBundle and writeBundle hooks (#1913)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-08-09T07:07:21Z",
+          "tree_id": "30f4b5171c358805d191b8bc1b56bd30b684ddea",
+          "url": "https://github.com/rolldown/rolldown/commit/b7e1d9064aee5d585bc205755351a2dce4b3052c"
+        },
+        "date": 1723188023544,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "360.52",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "582.40",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "965.49",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1380.89",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "127.05",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "184.94",
             "unit": "ms / ops"
           }
         ]
