@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1723201728283,
+  "lastUpdate": 1723202079485,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -29717,6 +29717,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "176.74",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "7086cmd@gmail.com",
+            "name": "Ethan Goh",
+            "username": "7086cmd"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "13f4adc8b1a2bc26591a25df6aef14fe855f8fa5",
+          "message": "fix: remove name assignment in IIFE that doesn't have export. (#1900)\n\nIn Rollup, there is no assignment when the IIFE does not contain any\nexports. [REPL\nhere](https://rollupjs.org/repl/?version=4.20.0&shareable=JTdCJTIyZXhhbXBsZSUyMiUzQSUyMjAwJTIyJTJDJTIybW9kdWxlcyUyMiUzQSU1QiU3QiUyMmNvZGUlMjIlM0ElMjIlMkYlMkYlMjBUUkVFLVNIQUtJTkclNUNuaW1wb3J0JTIwJTdCJTIwY3ViZSUyMCU3RCUyMGZyb20lMjAnLiUyRm1hdGhzLmpzJyUzQiU1Q24lNUNuY29uc29sZS5sb2coY3ViZSg1KSklM0IlMjAlMkYlMkYlMjAxMjUlMjIlMkMlMjJpc0VudHJ5JTIyJTNBdHJ1ZSUyQyUyMm5hbWUlMjIlM0ElMjJtYWluLmpzJTIyJTdEJTJDJTdCJTIyY29kZSUyMiUzQSUyMiUyRiUyRiUyMG1hdGhzLmpzJTVDbiU1Q24lMkYlMkYlMjBUaGlzJTIwZnVuY3Rpb24lMjBpc24ndCUyMHVzZWQlMjBhbnl3aGVyZSUyQyUyMHNvJTVDbiUyRiUyRiUyMFJvbGx1cCUyMGV4Y2x1ZGVzJTIwaXQlMjBmcm9tJTIwdGhlJTIwYnVuZGxlLi4uJTVDbmV4cG9ydCUyMGNvbnN0JTIwc3F1YXJlJTIwJTNEJTIweCUyMCUzRCUzRSUyMHglMjAqJTIweCUzQiU1Q24lNUNuJTJGJTJGJTIwVGhpcyUyMGZ1bmN0aW9uJTIwZ2V0cyUyMGluY2x1ZGVkJTVDbiUyRiUyRiUyMHJld3JpdGUlMjB0aGlzJTIwYXMlMjAlNjBzcXVhcmUoeCklMjAqJTIweCU2MCU1Q24lMkYlMkYlMjBhbmQlMjBzZWUlMjB3aGF0JTIwaGFwcGVucyElNUNuZXhwb3J0JTIwY29uc3QlMjBjdWJlJTIwJTNEJTIweCUyMCUzRCUzRSUyMHglMjAqJTIweCUyMColMjB4JTNCJTVDbiU1Q24lMkYlMkYlMjBUaGlzJTIwJTVDJTIyc2lkZSUyMGVmZmVjdCU1QyUyMiUyMGNyZWF0ZXMlMjBhJTIwZ2xvYmFsJTVDbiUyRiUyRiUyMHZhcmlhYmxlJTIwYW5kJTIwd2lsbCUyMG5vdCUyMGJlJTIwcmVtb3ZlZC4lNUNud2luZG93LmVmZmVjdDElMjAlM0QlMjAnY3JlYXRlZCclM0IlNUNuJTVDbmNvbnN0JTIwaW5jbHVkZUVmZmVjdCUyMCUzRCUyMGZhbHNlJTNCJTVDbmlmJTIwKGluY2x1ZGVFZmZlY3QpJTIwJTdCJTVDbiU1Q3QlMkYlMkYlMjBPbiUyMHRoZSUyMG90aGVyJTIwaGFuZCUyQyUyMHRoaXMlMjBpcyUyMG5ldmVyJTVDbiU1Q3QlMkYlMkYlMjBleGVjdXRlZCUyMGFuZCUyMHRodXMlMjByZW1vdmVkLiU1Q24lNUN0d2luZG93LmVmZmVjdDElMjAlM0QlMjAnbm90JTIwY3JlYXRlZCclM0IlNUNuJTdEJTIyJTJDJTIyaXNFbnRyeSUyMiUzQWZhbHNlJTJDJTIybmFtZSUyMiUzQSUyMm1hdGhzLmpzJTIyJTdEJTVEJTJDJTIyb3B0aW9ucyUyMiUzQSU3QiUyMm91dHB1dCUyMiUzQSU3QiUyMmZvcm1hdCUyMiUzQSUyMmlpZmUlMjIlMkMlMjJuYW1lJTIyJTNBJTIybXlCdW5kbGUlMjIlN0QlMkMlMjJ0cmVlc2hha2UlMjIlM0F0cnVlJTdEJTdE).",
+          "timestamp": "2024-08-09T10:57:06Z",
+          "tree_id": "117ec659226812a67a438b4fdd7e72489647e1d0",
+          "url": "https://github.com/rolldown/rolldown/commit/13f4adc8b1a2bc26591a25df6aef14fe855f8fa5"
+        },
+        "date": 1723202079476,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "348.91",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "560.38",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "944.91",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1368.02",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "123.63",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "182.18",
             "unit": "ms / ops"
           }
         ]
