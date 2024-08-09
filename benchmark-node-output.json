@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1723204233380,
+  "lastUpdate": 1723204563502,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -29825,6 +29825,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "190.18",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "d37079a8b8c1b02416572088b7603b4e238c2aed",
+          "message": "feat: transform plugin (#1914)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. port vite transform plugin\n2. Only added basic test case, the rest testcases about `exclude` and\n`include` will be added after a new option to disable default transform\nbehavior.\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-08-09T11:39:32Z",
+          "tree_id": "0e7eeb062666a5a4a0a261fe1fdf691fc2c74efa",
+          "url": "https://github.com/rolldown/rolldown/commit/d37079a8b8c1b02416572088b7603b4e238c2aed"
+        },
+        "date": 1723204563492,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "354.29",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "568.54",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "976.92",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1365.77",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "126.50",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "188.94",
             "unit": "ms / ops"
           }
         ]
