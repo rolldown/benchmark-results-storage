@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1723290624308,
+  "lastUpdate": 1723292450368,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -30203,6 +30203,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "183.17",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "boshenc@gmail.com",
+            "name": "Boshen",
+            "username": "Boshen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "293962261fa147bc543c1f3632152a9ab87ba515",
+          "message": "chore: bump oxc to 0.24.1 (#1926)\n\nThis releases adds \n\n## inject plugin\n\n```rust\n    let config =\n        InjectGlobalVariablesConfig::new(vec![InjectImport::named_specifier(\"jquery\", None, \"$\")]);\n    InjectGlobalVariables::new(&allocator, config).build(&mut symbols, &mut scopes, program);\n```\n\nAPI:\nhttps://github.com/oxc-project/oxc/blob/970c36942cffb0d0a57f39e4170add9bce9f74ae/crates/oxc_minifier/src/plugins/inject_global_variables.rs#L10-L56\n\nI'll draft another PR with inject plugin usage for you to integrate.",
+          "timestamp": "2024-08-10T12:07:11Z",
+          "tree_id": "600d8fbc10b262e99b790cd119eadcfaab81ca5d",
+          "url": "https://github.com/rolldown/rolldown/commit/293962261fa147bc543c1f3632152a9ab87ba515"
+        },
+        "date": 1723292450358,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "360.24",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "577.35",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "951.75",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1346.22",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "127.50",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "183.99",
             "unit": "ms / ops"
           }
         ]
