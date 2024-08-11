@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1723356975115,
+  "lastUpdate": 1723357701992,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -30419,6 +30419,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "183.04",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "boshenc@gmail.com",
+            "name": "Boshen",
+            "username": "Boshen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c5aafadfa5704cbe679bf6fb68e1810d08a642a3",
+          "message": "fix(rolldown): fix inject test where `alias` can be a member expression (#1934)\n\n### Description\n\nIn inject plugin https://www.npmjs.com/package/@rollup/plugin-inject,\n`imported` is optional and is defaulted to `default`\nhttps://github.com/rollup/plugins/blob/8550c4b1925b246adbd3af48ed0e5f74f822c951/packages/inject/src/index.js#L125\n\nOnly `alias` can be a member expression.\n\n---------\n\nCo-authored-by: Yunfei <i.heyunfei@gmail.com>",
+          "timestamp": "2024-08-11T06:14:10Z",
+          "tree_id": "262449c3d47af60f1396164f8de6b97366bbc433",
+          "url": "https://github.com/rolldown/rolldown/commit/c5aafadfa5704cbe679bf6fb68e1810d08a642a3"
+        },
+        "date": 1723357701983,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "402.80",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "617.83",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1022.28",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1463.02",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "131.15",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "195.90",
             "unit": "ms / ops"
           }
         ]
