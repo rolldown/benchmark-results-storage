@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1723311647338,
+  "lastUpdate": 1723356975115,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -30365,6 +30365,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "195.66",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "hi.ogawa.zz@gmail.com",
+            "name": "Hiroshi Ogawa",
+            "username": "hi-ogawa"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6b6d71304610d2f7985f05f05623b39fe7bcaed2",
+          "message": "fix: fix `absolute_preliminary_filename` not taking `options.cwd` into account (#1935)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nWhile making a previous PR, I noticed `absolutize_with` is only using\n`options.dir` but not `options.cwd`. It looks like\n`absolute_preliminary_filename` is only for obtaining a relative path\nbetween chunks (namely `Chunk::import_path_for`), so the base path\ndoesn't seem to matter, but I thought this is not intended.",
+          "timestamp": "2024-08-11T06:01:04Z",
+          "tree_id": "2902094806c02e6a939f1093d6b860da290b0c0f",
+          "url": "https://github.com/rolldown/rolldown/commit/6b6d71304610d2f7985f05f05623b39fe7bcaed2"
+        },
+        "date": 1723356975105,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "383.63",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "601.59",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "964.06",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1366.76",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "123.48",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "183.04",
             "unit": "ms / ops"
           }
         ]
