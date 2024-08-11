@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1723374762584,
+  "lastUpdate": 1723386018316,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -30527,6 +30527,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "183.57",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a208493310ceee95774e52a1073d179c034de2e3",
+          "message": "chore: add `lint-repo` as a subcommand to `lint` in justfile (#1939)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. so developers don't need to `just lint` and then run `just lint-repo`\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-08-11T14:06:27Z",
+          "tree_id": "712d8edf768b2ca46556e935e83f8ec7fc85123e",
+          "url": "https://github.com/rolldown/rolldown/commit/a208493310ceee95774e52a1073d179c034de2e3"
+        },
+        "date": 1723386018307,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "389.29",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "607.12",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1021.72",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1424.35",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "130.53",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "189.86",
             "unit": "ms / ops"
           }
         ]
