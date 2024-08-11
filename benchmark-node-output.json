@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1723386018316,
+  "lastUpdate": 1723391771070,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -30581,6 +30581,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "189.86",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "71db541baadce0fc6e05ff05dd312cf8823a4c67",
+          "message": "refactor(node/rolldown): `normalizeHook` should consider meta props of hooks (#1941)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nWe gonna have a complex js plugin system considering the composing JS\nplugin logic. We need to build a solid infra to reduce errors. To do\nthat:\n\n- Dealing with plugin in a unite form is needed and it's also what this\nPR does.\n- We need to make sure the types defined in different places are synced\nrather than copy around.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-08-11T15:43:02Z",
+          "tree_id": "ce60aaa055a666451d85fa78cda352bd1dd0255a",
+          "url": "https://github.com/rolldown/rolldown/commit/71db541baadce0fc6e05ff05dd312cf8823a4c67"
+        },
+        "date": 1723391771060,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "384.49",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "600.71",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "966.75",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1379.84",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "122.83",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "181.44",
             "unit": "ms / ops"
           }
         ]
