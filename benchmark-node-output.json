@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1723392916195,
+  "lastUpdate": 1723393742961,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -30689,6 +30689,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "183.78",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ebfebf30d3bfea4d8c9034b09e9032752d332ad7",
+          "message": "fix(node/compose-plugins): Plugin that uses `order` meta is considered as not composable (#1943)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nI'm thinking exposing `composeJsPlugin as composePlugins` to outside\nunder `rolldown/experimental`, so we could write unite tests on\n`rolldown/tests`.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-08-11T16:11:04Z",
+          "tree_id": "3b7050887fb3240da8505d885ba03f90bc75a605",
+          "url": "https://github.com/rolldown/rolldown/commit/ebfebf30d3bfea4d8c9034b09e9032752d332ad7"
+        },
+        "date": 1723393742952,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "387.31",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "592.38",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "969.14",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1379.82",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "123.86",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "183.89",
             "unit": "ms / ops"
           }
         ]
