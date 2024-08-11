@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1723391771070,
+  "lastUpdate": 1723392916195,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -30635,6 +30635,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "181.44",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "61d6a748afe758f617ea7e43dccb6eeaa0b92e54",
+          "message": "refactor(node/rolldown): single source of truth for plugin hooks (#1942)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nThis prevent bugs of forgetting define hooks in multiple places.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-08-11T16:01:42Z",
+          "tree_id": "1bed485370d98625096f8a9d27d75a8bdb5994de",
+          "url": "https://github.com/rolldown/rolldown/commit/61d6a748afe758f617ea7e43dccb6eeaa0b92e54"
+        },
+        "date": 1723392916186,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "391.54",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "606.18",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "968.41",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1378.99",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "123.71",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "183.78",
             "unit": "ms / ops"
           }
         ]
