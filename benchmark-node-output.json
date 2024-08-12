@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1723453292428,
+  "lastUpdate": 1723453953083,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -31175,6 +31175,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "192.24",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "boshenc@gmail.com",
+            "name": "Boshen",
+            "username": "Boshen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "e0dd96c0a11fd6071aa5da079d899f7562800138",
+          "message": "chore: bump oxc to 0.24.2 (#1960)\n\n### Description\n\nA small update for\n\n* https://github.com/oxc-project/oxc/issues/4789",
+          "timestamp": "2024-08-12T08:52:43Z",
+          "tree_id": "89072a7c4b9867aa69fa8388d5df5596479d284e",
+          "url": "https://github.com/rolldown/rolldown/commit/e0dd96c0a11fd6071aa5da079d899f7562800138"
+        },
+        "date": 1723453953074,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "394.35",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "599.33",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "984.54",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1388.56",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "126.31",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "185.35",
             "unit": "ms / ops"
           }
         ]
