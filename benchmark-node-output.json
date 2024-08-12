@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1723433664139,
+  "lastUpdate": 1723441836629,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -31067,6 +31067,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "184.24",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "441be5b2d470652acb5f81918c404545c2ee723e",
+          "message": "chore: renmae import glob (#1953)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. align with\nhttps://github.com/rolldown/vite/blob/a3d8de37591ff21a7872e84f8fd677533a04810e/packages/vite/src/node/plugins/importMetaGlob.ts#L69-L69\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-08-12T05:36:34Z",
+          "tree_id": "b5b82b7c8f0fc998575526894ab802c856e65f99",
+          "url": "https://github.com/rolldown/rolldown/commit/441be5b2d470652acb5f81918c404545c2ee723e"
+        },
+        "date": 1723441836619,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "388.72",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "603.23",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "982.04",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1380.02",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "124.85",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "184.66",
             "unit": "ms / ops"
           }
         ]
