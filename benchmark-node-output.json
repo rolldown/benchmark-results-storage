@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1723453953083,
+  "lastUpdate": 1723454777591,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -31229,6 +31229,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "185.35",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "32c33631f2d99cc2ac72a2c4733bf9dae8970f5c",
+          "message": "fix(cjs): aovid generate assgin pattern if chunk imports nothing (#1959)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-08-12T08:58:59Z",
+          "tree_id": "182f5efa36853fee85161fb1303a5666d465583d",
+          "url": "https://github.com/rolldown/rolldown/commit/32c33631f2d99cc2ac72a2c4733bf9dae8970f5c"
+        },
+        "date": 1723454777581,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "399.26",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "611.10",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1026.07",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1436.04",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "127.29",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "190.21",
             "unit": "ms / ops"
           }
         ]
