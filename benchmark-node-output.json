@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1723479990625,
+  "lastUpdate": 1723484904579,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -31391,6 +31391,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "199.26",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ylei.mk@gmail.com",
+            "name": "ikkz",
+            "username": "ikkz"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3645f38014b06e5db80f87091f3d4d3cf4ffd41e",
+          "message": "feat: add wasm fallback plugin (#1957)\n\nresolves #1919",
+          "timestamp": "2024-08-13T01:42:03+08:00",
+          "tree_id": "7790c253fd50e95497878b622400352c8fdba6bc",
+          "url": "https://github.com/rolldown/rolldown/commit/3645f38014b06e5db80f87091f3d4d3cf4ffd41e"
+        },
+        "date": 1723484904570,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "394.92",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "610.25",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "988.58",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1391.71",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "127.04",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "184.43",
             "unit": "ms / ops"
           }
         ]
