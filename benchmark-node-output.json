@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1723433367952,
+  "lastUpdate": 1723433664139,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -31020,53 +31020,53 @@
       {
         "commit": {
           "author": {
-            "email": "i.heyunfei@gmail.com",
-            "name": "Yunfei He",
-            "username": "hyf0"
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
           },
           "committer": {
             "email": "noreply@github.com",
             "name": "GitHub",
             "username": "web-flow"
           },
-          "distinct": false,
-          "id": "b2f876653f69ed871ed5fd35df24a2595618dc5f",
-          "message": "feat(rolldown)!: don't replace `process.env.NODE_ENV` implicitly (#1952)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
-          "timestamp": "2024-08-12T03:15:50Z",
-          "tree_id": "978fe17122423478f86989bdac0ca607c1c84c75",
-          "url": "https://github.com/rolldown/rolldown/commit/b2f876653f69ed871ed5fd35df24a2595618dc5f"
+          "distinct": true,
+          "id": "eb78b810304852baf5bcaf816c81414fc5542661",
+          "message": "perf: ⚡️ use map store next count for chunk name (#1948)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-08-12T03:19:03Z",
+          "tree_id": "1e374dd04dbde2e93f4df05adb7dbcd4c88c8a83",
+          "url": "https://github.com/rolldown/rolldown/commit/eb78b810304852baf5bcaf816c81414fc5542661"
         },
-        "date": 1723433367943,
+        "date": 1723433664130,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x (default)",
-            "value": "396.34",
+            "value": "387.75",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap (default)",
-            "value": "613.17",
+            "value": "595.93",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify (default)",
-            "value": "1013.92",
+            "value": "961.76",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify-sourcemap (default)",
-            "value": "1436.86",
+            "value": "1386.13",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts (default)",
-            "value": "129.73",
+            "value": "126.40",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts-sourcemap (default)",
-            "value": "191.47",
+            "value": "184.24",
             "unit": "ms / ops"
           }
         ]
