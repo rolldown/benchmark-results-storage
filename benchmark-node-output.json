@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1723536719626,
+  "lastUpdate": 1723540974425,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -31715,6 +31715,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "186.15",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "559b42478ed51215203b2db08ca171f27db722a1",
+          "message": "feat(node/rolldown): add empty `PluginContext#addWatchFile` for shim (#1972)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nAdd empty function for PluginContext#addWatchFile, it could to avoid\nchanged vite universal plugin.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-08-13T09:09:43Z",
+          "tree_id": "771c89bf0c4ae02608fbcb9fc2d2a816827b10e5",
+          "url": "https://github.com/rolldown/rolldown/commit/559b42478ed51215203b2db08ca171f27db722a1"
+        },
+        "date": 1723540974415,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "389.08",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "598.73",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "974.64",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1368.71",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "126.64",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "187.68",
             "unit": "ms / ops"
           }
         ]
