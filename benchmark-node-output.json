@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1723571297676,
+  "lastUpdate": 1723603090889,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -31877,6 +31877,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "184.40",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1de875126a80618f24a6e9813dc8cb09b55a5d73",
+          "message": "chore: 🤖 update diagnostic message (#1976)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. This diagnostic is used after `load_source` so tweak the message into\n`load` instead of `resolve`\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-08-14T02:25:25Z",
+          "tree_id": "c78bbe1bcd5e28e0fe6eacc0bef146ff17e4f53f",
+          "url": "https://github.com/rolldown/rolldown/commit/1de875126a80618f24a6e9813dc8cb09b55a5d73"
+        },
+        "date": 1723603090879,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "391.96",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "605.65",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "988.85",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1388.59",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "127.85",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "188.77",
             "unit": "ms / ops"
           }
         ]
