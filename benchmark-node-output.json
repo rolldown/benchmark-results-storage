@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1723621744410,
+  "lastUpdate": 1723626890959,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -32093,6 +32093,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "189.55",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2eb06ef40cc19fb69bde2f9dece41479260e3fd2",
+          "message": "fix: remove redundant code in `export * from 'external'`    for esm format (#1974)\n\n<!-- Thank you for contributing! -->\n\n### Description\nClosed https://github.com/rolldown/rolldown/issues/1940\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-08-14T09:00:58Z",
+          "tree_id": "c71149541d8ee7a49717fdc7aea8ab6a426cda55",
+          "url": "https://github.com/rolldown/rolldown/commit/2eb06ef40cc19fb69bde2f9dece41479260e3fd2"
+        },
+        "date": 1723626890949,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "400.63",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "607.55",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "995.97",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1417.65",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "129.50",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "193.22",
             "unit": "ms / ops"
           }
         ]
