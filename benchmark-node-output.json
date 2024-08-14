@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1723603090889,
+  "lastUpdate": 1723619291374,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -31931,6 +31931,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "188.77",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "7086cmd@gmail.com",
+            "name": "Ethan Goh",
+            "username": "7086cmd"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "ac9a7e5d2ca8376a6454031fc5e983c120c4ffa1",
+          "message": "chore: only log files with spelling errors. (#1978)\n\n- With issues:\n```\n(base) ethangoh@Ethans-MacBook-Pro rolldown % pnpm lint-spell\n\n> monorepo@ lint-spell /Users/ethangoh/Developer/rolldown\n> cspell \"**\" --no-progress\n\nREADME.md:9:1 - Unknown word (slks)\nCSpell: Files checked: 1810, Issues found: 1 in 1 file.\n ELIFECYCLE  Command failed with exit code 1.\n```\n- Without issue:\n```\n(base) ethangoh@Ethans-MacBook-Pro rolldown % pnpm lint-spell\n\n> monorepo@ lint-spell /Users/ethangoh/Developer/rolldown\n> cspell \"**\" --no-progress\n\nCSpell: Files checked: 1810, Issues found: 0 in 0 files.\n```\n\nTo enhance the clarity of the outcome and pinpoint the underlying issues\n(spelling errors).",
+          "timestamp": "2024-08-14T06:54:07Z",
+          "tree_id": "4a612b5d9bbbaf4d51dc1432bc22efc825f3e4ff",
+          "url": "https://github.com/rolldown/rolldown/commit/ac9a7e5d2ca8376a6454031fc5e983c120c4ffa1"
+        },
+        "date": 1723619291354,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "526.51",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "767.15",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1494.54",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "2019.14",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "160.43",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "223.01",
             "unit": "ms / ops"
           }
         ]
