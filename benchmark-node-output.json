@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1723626890959,
+  "lastUpdate": 1723632666583,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -32147,6 +32147,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "193.22",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7ac138156b3c303ca184cc33264251dedcae9b32",
+          "message": "fix: ensure ordering of assign chunk name (#1981)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nThe esbuild using `Chunk#bits` to sorted chunks, but the order of\n`Chunk#bits` is not stable, eg `BitSet(0) 00000001_00000000` >\n`BitSet(8) 00000000_00000001`. It couldn't ensure the order of dynamic\nchunks and common chunks.\nConsider the compare `Chunk#exec_order` should be faster than\n`Chunk#bits`, we use `Chunk#exec_order` to sort chunks.\n Note Here could be make sure the order of chunks.\n - entry chunks are always before other chunks\n - static chunks are always before dynamic chunks\n - other chunks has stable order at per entry chunk level\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-08-14T10:37:11Z",
+          "tree_id": "8ab1e658a766ac1061dfc5d1f6ed869da0a36bac",
+          "url": "https://github.com/rolldown/rolldown/commit/7ac138156b3c303ca184cc33264251dedcae9b32"
+        },
+        "date": 1723632666573,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "391.47",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "609.48",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "995.94",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1401.80",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "126.28",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "188.07",
             "unit": "ms / ops"
           }
         ]
