@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1723619655944,
+  "lastUpdate": 1723621744410,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -32039,6 +32039,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "187.10",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "cc41c949e4003d6f7ae6a8b0f205111298a5a7c5",
+          "message": "feat: support `OutputOptions#externalLiveBindings` (#1979)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-08-14T07:34:53Z",
+          "tree_id": "6d1177136b676240f89054fee70836579bbc2bf1",
+          "url": "https://github.com/rolldown/rolldown/commit/cc41c949e4003d6f7ae6a8b0f205111298a5a7c5"
+        },
+        "date": 1723621744401,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "394.53",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "614.18",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "993.66",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1395.64",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "127.11",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "189.55",
             "unit": "ms / ops"
           }
         ]
