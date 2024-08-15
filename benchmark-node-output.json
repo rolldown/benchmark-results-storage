@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1723735959064,
+  "lastUpdate": 1723738106268,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -32579,6 +32579,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "194.77",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "7086cmd@gmail.com",
+            "name": "Ethan Goh",
+            "username": "7086cmd"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a82ccc6a9bd733ee326d28e8b57f4240993c5436",
+          "message": "fix(cli): `rolldown -c` should not print help messages (#1993)\n\nThe `rolldown -c` command, which previously printed the help message,\nappears to be experiencing an issue with option handling.",
+          "timestamp": "2024-08-15T15:55:32Z",
+          "tree_id": "739955b48e7e35b5ecedcc500f48f54bfd1187f3",
+          "url": "https://github.com/rolldown/rolldown/commit/a82ccc6a9bd733ee326d28e8b57f4240993c5436"
+        },
+        "date": 1723738106257,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "385.46",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "603.57",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1009.02",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1434.78",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "129.64",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "192.48",
             "unit": "ms / ops"
           }
         ]
