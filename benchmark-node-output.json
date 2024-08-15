@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1723632666583,
+  "lastUpdate": 1723698436225,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -32201,6 +32201,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "188.07",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "745c1a57e66433df7182b5f9f4aa65aa00aa001b",
+          "message": "refactor: 💡 extract pattern filter (#1985)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. `filter` with `include` and `exclude` will be used multiple times\nwhen rewrite plugin , so extract it into a util function.\n2.  move `js_regex` to `rolldown_utils` to avoid cyclic reference.\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-08-15T04:54:23Z",
+          "tree_id": "8fa5fde55086099b2dd6996cbc410bf6abd11315",
+          "url": "https://github.com/rolldown/rolldown/commit/745c1a57e66433df7182b5f9f4aa65aa00aa001b"
+        },
+        "date": 1723698436214,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "383.19",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "594.53",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "977.15",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1408.90",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "128.62",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "189.86",
             "unit": "ms / ops"
           }
         ]
