@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1723715895663,
+  "lastUpdate": 1723731783239,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -32417,6 +32417,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "185.10",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "7086cmd@gmail.com",
+            "name": "Ethan Goh",
+            "username": "7086cmd"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3c09445ddedd7e711ffda04ae602420d33a9e590",
+          "message": "chore: remove unused warning in wasi building. (#1988)\n\nRemove the warning:\n\n```\nwarning: unused import: `rolldown_plugin::Plugin`\n --> crates/rolldown_binding/src/options/plugin/parallel_js_plugin.rs:7:5\n  |\n7 | use rolldown_plugin::Plugin;\n  |     ^^^^^^^^^^^^^^^^^^^^^^^\n  |\n  = note: `#[warn(unused_imports)]` on by default\n```",
+          "timestamp": "2024-08-15T14:10:01Z",
+          "tree_id": "cff18e55d960ec3ce553d7d78eda295ffaeb18df",
+          "url": "https://github.com/rolldown/rolldown/commit/3c09445ddedd7e711ffda04ae602420d33a9e590"
+        },
+        "date": 1723731783228,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "383.29",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "601.87",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "992.09",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1397.12",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "127.42",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "185.87",
             "unit": "ms / ops"
           }
         ]
