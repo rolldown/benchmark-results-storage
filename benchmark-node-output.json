@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1723698436225,
+  "lastUpdate": 1723701474382,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -32255,6 +32255,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "189.86",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "7086cmd@gmail.com",
+            "name": "Ethan Goh",
+            "username": "7086cmd"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c8206787d038bb469f9797a1cd24db934f8c77a3",
+          "message": "feat: align cli options with unix ux patterns. (#1977)\n\nresolves #1924.\n\n```\nFast JavaScript/TypeScript bundler in Rust with Rollup-compatible API. (rolldown v0.12.2)                                                                       \n\nUSAGE rolldown -c <config> or rolldown <input> <options>\n                                                                                                                                                                \nOPTIONS                                                                                                                                                         \n                                                                                                                                                                \n  --config -c, <filename>     Path to the config file (default: rollup.config.js).                                                                              \n  --dir -d, <dir>             Output directory, defaults to dist.\n  --external -e, <external>   Module ids to exclude from the bundle. (multiple)\n  --format -f, <format>       Output format of the generated bundle (supports esm, cjs, and iife).\n  --globals -g, <globals>     Map of global variable names to their module name in the bundle in IIFE / UMD format. (multiple)\n  --help -h,                  Show help.\n  --minify -m,                Minify the bundled file.\n  --name -n, <name>           Name for UMD / IIFE format wrapper functions.\n  --platform -p, <platform>   Platform for which the code should be generated (node, browser, neutral).\n  --sourcemap -s, <sourcemap> Generate sourcemap (-s inline for inline, or pass the -s on the last argument if you want to generate .map file).\n  --version -v,               Show version number.\n  --asset-file-names <name>   .\n  --banner <banner>           Code to insert the top of the bundled file (outside the wrapper function).\n  --chunk-file-names <name>   .\n  --cwd <cwd>                 Current working directory.\n  --define <define>           Define global variables. (multiple)\n  --entry-file-names <name>   .\n  --es-module                 Always generate __esModule marks in non-ESM formats, defaults to if-default-prop (use --no-esModule to always disable).\n  --exports <exports>         Specify a export mode (auto, named, default, none).\n  --extend                    Extend global variable defined by name in IIFE or UMD formats.\n  --footer <footer>           Code to insert the bottom of the bundled file (outside the wrapper function).\n  --inject <inject>           Inject import statements on demand. (multiple)\n  --intro <intro>             Code to insert the top of the bundled file (inside the wrapper function).\n  --log-level <log-level>     Log level (silent, info, debug, warn).\n  --module-types <types>      Module types for customized extensions. (multiple)\n  --no-external-live-bindings Use external live bindings.\n  --no-treeshake              Enable treeshaking.\n  --outro <outro>             Code to insert the bottom of the bundled file (inside the wrapper function).\n  --shim-missing-exports      .\n  --sourcemap-ignore-list     .\n                                                                                                                                                                \nEXAMPLES                                                                                                                                                        \n                                                                                                                                                                \n  1. Bundle with a config file rolldown.config.mjs:                                                                                                             \n    rolldown -c rolldown.config.mjs                                                                                                                             \n                                                                                                                                                                \n  2. Bundle the src/main.ts to dist with cjs format:                                                                                                            \n    rolldown src/main.ts -d dist -f cjs                                                                                                                         \n                                                                                                                                                                \n  3. Bundle the src/main.ts and handle the .png assets to Data URL:                                                                                             \n    rolldown src/main.ts -d dist --moduleTypes .png=dataurl                                                                                                     \n                                                                                                                                                                \n  4. Bundle the src/main.tsx and minify the output with sourcemap:                                                                                              \n    rolldown src/main.tsx -d dist -m -s                                                                                                                         \n                                                                                                                                                                \n  5. Create self-executing IIFE using external jQuery as $ and _:                                                                                               \n    rolldown src/main.ts -d dist -n bundle -f iife -e jQuery,window._ -g jQuery=$                                                                               \n                                                                                                                                                                \nNOTES                                                                                                                                                           \n                                                                                                                                                                \n  * Due to the API limitation, you need to pass -s for .map sourcemap file as the last argument.                                                                \n  * If you are using the configuration, please pass the -c as the last argument if you ignore the default configuration file.                                   \n  * CLI options will override the configuration file.                                                                                                           \n  * For more information, please visit https://rolldown.rs/.                                                                                              \n```",
+          "timestamp": "2024-08-15T05:45:21Z",
+          "tree_id": "6eeed2b67b6c7e37e31bac4ba3f12b9549e7af4a",
+          "url": "https://github.com/rolldown/rolldown/commit/c8206787d038bb469f9797a1cd24db934f8c77a3"
+        },
+        "date": 1723701474372,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "396.47",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "604.00",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1009.15",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1417.29",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "127.03",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "187.37",
             "unit": "ms / ops"
           }
         ]
