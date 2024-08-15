@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1723731783239,
+  "lastUpdate": 1723734939465,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -32471,6 +32471,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "185.87",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0192266e3faa95f7ec56b8cf6427b7a60ddc712e",
+          "message": "chore: align with vite wasm helper plugin (#1990)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. ref\nhttps://github.com/rolldown/vite/blob/3937c611c221691d36642c9fb380f25ae37187d5/packages/vite/src/node/plugins/wasm.ts#L50-L77\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-08-15T15:02:11Z",
+          "tree_id": "f98ecc681b655670aa6a1e95bafdbf1bf9b12cf7",
+          "url": "https://github.com/rolldown/rolldown/commit/0192266e3faa95f7ec56b8cf6427b7a60ddc712e"
+        },
+        "date": 1723734939455,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "389.62",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "599.39",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "991.13",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1388.21",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "128.39",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "186.94",
             "unit": "ms / ops"
           }
         ]
