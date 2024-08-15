@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1723714554173,
+  "lastUpdate": 1723715895663,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -32363,6 +32363,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "193.23",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "laipichan@qq.com",
+            "name": "dalaoshu",
+            "username": "shulaoda"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d90802fb8b4ca82a8b6bc01db183c5487a65448c",
+          "message": "perf: improve generate_namespace_definition (#1986)\n\n<!-- Thank you for contributing! -->\n\n### Description\nRelated to #1861 \n\nhttps://github.com/rolldown/rolldown/blob/745c1a57e66433df7182b5f9f4aa65aa00aa001b/crates/rolldown/src/ecmascript/format/utils/namespace.rs#L49-L51\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-08-15T09:45:02Z",
+          "tree_id": "088744163bd431782e2d6e3a6e832a2d4d7e1036",
+          "url": "https://github.com/rolldown/rolldown/commit/d90802fb8b4ca82a8b6bc01db183c5487a65448c"
+        },
+        "date": 1723715895653,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "386.28",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "596.91",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "975.50",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1386.56",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "126.88",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "185.10",
             "unit": "ms / ops"
           }
         ]
