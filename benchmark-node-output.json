@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1723819367975,
+  "lastUpdate": 1723870644927,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -32903,6 +32903,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "183.71",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kermanx@qq.com",
+            "name": "_Kerman",
+            "username": "KermanX"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "dde9b33b409bfc909d089769d2817f178e00f30f",
+          "message": "feat: assignment expr side effect detector (#2004)\n\nThis PR implements the logic for `AssignmentExpression` in\n`SideEffectDetector`. Tests included.\n\n- Empty destructoring patterns like `[] = a`, `{} = a` are considered\nside-effect-less when `a` is a local variable. However, it seems that\nneither Rollup nor Esbuild considered this case.\n- Should expressions like `{ defineProperty: x } = Object` be specially\ntreated? This will introduce lots of complexity, but the usage seems too\nrare.\n\n---------\n\nCo-authored-by: IWANABETHATGUY <974153916@qq.com>",
+          "timestamp": "2024-08-17T04:44:30Z",
+          "tree_id": "33f2b6e32b2ace75bf27bcb039590ca08189a26e",
+          "url": "https://github.com/rolldown/rolldown/commit/dde9b33b409bfc909d089769d2817f178e00f30f"
+        },
+        "date": 1723870644916,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "392.40",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "608.43",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1010.10",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1403.29",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "130.69",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "190.44",
             "unit": "ms / ops"
           }
         ]
