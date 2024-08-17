@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1723907785815,
+  "lastUpdate": 1723911662292,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -33011,6 +33011,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "192.39",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1ed3ab8dd70465ce95cc38ec35023057e810831c",
+          "message": "ci: exit with none zero code when snapshots updated (only in github actions CI env). (#2006)\n\n<!-- Thank you for contributing! -->\r\n\r\n### Description\r\nClosed https://github.com/rolldown/rolldown/issues/2005\r\n<!-- Please insert your description here and provide especially info\r\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-08-18T00:15:40+08:00",
+          "tree_id": "955b66dcad7b03d27bc35ee5257239bb48d17311",
+          "url": "https://github.com/rolldown/rolldown/commit/1ed3ab8dd70465ce95cc38ec35023057e810831c"
+        },
+        "date": 1723911662282,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "383.45",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "592.56",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "961.39",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1363.66",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "123.61",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "182.59",
             "unit": "ms / ops"
           }
         ]
