@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1723911662292,
+  "lastUpdate": 1723914354344,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -33065,6 +33065,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "182.59",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "3fe402c075b4d7937b229bc6f71de243efded376",
+          "message": "test(rust): ignore `crates/rolldown/tests/rolldown/errors/unresolved_import/basic` (#2010)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-08-17T16:53:03Z",
+          "tree_id": "ae94369ae177e76f4984264858b1266208a010e6",
+          "url": "https://github.com/rolldown/rolldown/commit/3fe402c075b4d7937b229bc6f71de243efded376"
+        },
+        "date": 1723914354334,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "389.99",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "600.96",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "990.97",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1401.51",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "126.24",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "187.42",
             "unit": "ms / ops"
           }
         ]
