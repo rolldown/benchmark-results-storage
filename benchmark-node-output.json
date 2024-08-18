@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1723969512742,
+  "lastUpdate": 1723970115676,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -33173,6 +33173,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "191.83",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kermanx@qq.com",
+            "name": "_Kerman",
+            "username": "KermanX"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "ef084bf154b89ee4a65702dd0b46a4c9bdbcd159",
+          "message": "feat: implement the rest branches in side effect detector (#2009)\n\nThis PR implements all unimplemented side effect detectors except the\ntwo JSX-related ones. The JSX-related expressions are not implemented\nbecause I am not sure should JSX calls be always considered pure\n(although this seems true in esbuild). Tests included.",
+          "timestamp": "2024-08-18T08:18:03Z",
+          "tree_id": "9322f4aa9d1d33381ce98db1952ae606b0078ab9",
+          "url": "https://github.com/rolldown/rolldown/commit/ef084bf154b89ee4a65702dd0b46a4c9bdbcd159"
+        },
+        "date": 1723970115666,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "397.38",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "607.79",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "990.01",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1384.92",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "129.21",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "184.52",
             "unit": "ms / ops"
           }
         ]
