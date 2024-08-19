@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1724076039632,
+  "lastUpdate": 1724084474327,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -33767,6 +33767,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "182.11",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "laipichan@qq.com",
+            "name": "dalaoshu",
+            "username": "shulaoda"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c4aca984a910503273e4b2435fa13f8c5a68023c",
+          "message": "fix: same filenames cause bundle error (#1984)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nclose #1944 \n\nI have thought about it and feel that `@IWANABETHATGUY`'s viewpoint and\nsolution may be more reasonable.\n\n              Looks like `rollup` did not do chunk name deconflict.\n\n_Originally posted by @IWANABETHATGUY in\nhttps://github.com/rolldown/rolldown/issues/1944#issuecomment-2282812102_\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-08-19T16:07:36Z",
+          "tree_id": "525717bdab94754311fffc0b87e089fdebc45f67",
+          "url": "https://github.com/rolldown/rolldown/commit/c4aca984a910503273e4b2435fa13f8c5a68023c"
+        },
+        "date": 1724084474315,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "413.46",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "632.29",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1046.05",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1462.06",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "136.64",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "193.90",
             "unit": "ms / ops"
           }
         ]
