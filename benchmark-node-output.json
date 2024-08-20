@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1724138570618,
+  "lastUpdate": 1724161114045,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -33929,6 +33929,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "197.53",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "660c4bd406b9017a1c0a759b2a259bd82c97ce56",
+          "message": "chore: 🤖 try to use oxc builder alloc based api (#2026)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. try to use `oxc_ast` builder API in more case.\n2. align with `oxc_ast` naming convention, function return `Boxed` ast\nprefixed with `alloc_`\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-08-20T13:25:18Z",
+          "tree_id": "8f589640595f0e816fc5308bc0c17ac806aa17f4",
+          "url": "https://github.com/rolldown/rolldown/commit/660c4bd406b9017a1c0a759b2a259bd82c97ce56"
+        },
+        "date": 1724161114035,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "399.00",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "613.88",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1009.71",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1417.52",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "131.54",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "187.63",
             "unit": "ms / ops"
           }
         ]
