@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1724298883784,
+  "lastUpdate": 1724307694608,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -34091,6 +34091,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "185.61",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c85883bb5a2ff8631d318816ef186ce5e7e723bd",
+          "message": "feat: gracefully shutdown the process when panic in `fetch_all_modules` (#2036)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. try #2033  you will receive \n\n![image](https://github.com/user-attachments/assets/f85f4bce-f9eb-489c-8b22-9e800106313c)\nThis is because when there is a none recoverable error occurred in\n`fetch_all_modules`, the function will directly return\n\nhttps://github.com/rolldown/rolldown/blob/8e0cb613e4dd50b5f70a4a648ad72d243b80a432/crates/rolldown/src/module_loader/module_loader.rs#L286-L288\nThen all the pending task will fail to send `Msg` since the channel is\nclosed.\nThen the `expect` will trigger a panic, \n\nhttps://github.com/rolldown/rolldown/blob/8e0cb613e4dd50b5f70a4a648ad72d243b80a432/crates/rolldown/src/module_loader/module_task.rs#L60-L62\n2. This pr will wait for all tasks to be finished when meets a\n`Msg::Panic`\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-08-22T06:07:43Z",
+          "tree_id": "fb983a0e23fd8a09017276f50c38b49f3f67886d",
+          "url": "https://github.com/rolldown/rolldown/commit/c85883bb5a2ff8631d318816ef186ce5e7e723bd"
+        },
+        "date": 1724307694598,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "384.15",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "598.99",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "983.81",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1377.06",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "127.21",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "185.44",
             "unit": "ms / ops"
           }
         ]
