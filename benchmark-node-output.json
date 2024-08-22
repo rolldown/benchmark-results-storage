@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1724307694608,
+  "lastUpdate": 1724311911167,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -34145,6 +34145,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "185.44",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rainb@tfwno.gf",
+            "name": "Kreijstal",
+            "username": "Kreijstal"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e6b9f148b3e50a4db7ccf646e3d38c2dca607aaf",
+          "message": "fix: Allowing gcc builds on windows (#2034)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->\ngcc runs on windows, gcc does not accept /FORCE\n\n\n![image](https://github.com/user-attachments/assets/55f1eb19-284d-46cc-97ce-802a855de2a2)",
+          "timestamp": "2024-08-22T07:24:30Z",
+          "tree_id": "33b96ff72ac42689d77e6d73c994754d0e631d68",
+          "url": "https://github.com/rolldown/rolldown/commit/e6b9f148b3e50a4db7ccf646e3d38c2dca607aaf"
+        },
+        "date": 1724311911156,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "390.37",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "595.30",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "980.65",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1372.87",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "123.89",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "180.35",
             "unit": "ms / ops"
           }
         ]
