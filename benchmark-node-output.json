@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1724408675105,
+  "lastUpdate": 1724473497927,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -34469,6 +34469,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "186.58",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "sxzz@sxzz.moe",
+            "name": "Kevin Deng 三咲智子",
+            "username": "sxzz"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "5aa76dc6f3421373bb5053c34743ec5a4a99e1c1",
+          "message": "fix(packages/rolldown): export `package.json` (#2048)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->\n\n- Export `package.json` file to provide `version` field for downstream\nuse.\n- Fixes a minor issue on\n[publint](https://publint.dev/rolldown@0.12.2-snapshot-f90de4e-20240823002907).\n`The field value could be a full git URL like\n\"git+https://github.com/rolldown/rolldown.git\".`",
+          "timestamp": "2024-08-24T04:12:12Z",
+          "tree_id": "f4989480a3a11f419ee09a5372585e6a18232cbb",
+          "url": "https://github.com/rolldown/rolldown/commit/5aa76dc6f3421373bb5053c34743ec5a4a99e1c1"
+        },
+        "date": 1724473497916,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "406.89",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "625.04",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1045.89",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1470.19",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "136.51",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "195.66",
             "unit": "ms / ops"
           }
         ]
