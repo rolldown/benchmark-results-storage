@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1724554849033,
+  "lastUpdate": 1724564292948,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -34739,6 +34739,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "185.06",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e350abe0bd5ea6961b58b2d558f343aaf8390bf7",
+          "message": "fix: eval warning should only emit when used as callExpr (#2054)\n\n<!-- Thank you for contributing! -->\n\n### Description\nref:\nhttps://rollupjs.org/repl/?version=4.21.0&shareable=JTdCJTIyZXhhbXBsZSUyMiUzQW51bGwlMkMlMjJtb2R1bGVzJTIyJTNBJTVCJTdCJTIyY29kZSUyMiUzQSUyMiUyRiolMjAlNDBfX1BVUkVfXyUyMColMkYlMjBGb28oKS5iYXIoKSUzQiU1Q25ldmFsJTIyJTJDJTIyaXNFbnRyeSUyMiUzQXRydWUlMkMlMjJuYW1lJTIyJTNBJTIybWFpbi5qcyUyMiU3RCUyQyU3QiUyMmNvZGUlMjIlM0ElMjIlMkYlMkYlMjBtYXRocy5qcyU1Q24lNUNuJTJGJTJGJTIwVGhpcyUyMGZ1bmN0aW9uJTIwaXNuJ3QlMjB1c2VkJTIwYW55d2hlcmUlMkMlMjBzbyU1Q24lMkYlMkYlMjBSb2xsdXAlMjBleGNsdWRlcyUyMGl0JTIwZnJvbSUyMHRoZSUyMGJ1bmRsZS4uLiU1Q25leHBvcnQlMjBjb25zdCUyMHNxdWFyZSUyMCUzRCUyMHglMjAlM0QlM0UlMjB4JTIwKiUyMHglM0IlNUNuJTVDbiUyRiUyRiUyMFRoaXMlMjBmdW5jdGlvbiUyMGdldHMlMjBpbmNsdWRlZCU1Q24lMkYlMkYlMjByZXdyaXRlJTIwdGhpcyUyMGFzJTIwJTYwc3F1YXJlKHgpJTIwKiUyMHglNjAlNUNuJTJGJTJGJTIwYW5kJTIwc2VlJTIwd2hhdCUyMGhhcHBlbnMhJTVDbmV4cG9ydCUyMGNvbnN0JTIwY3ViZSUyMCUzRCUyMHglMjAlM0QlM0UlMjB4JTIwKiUyMHglMjAqJTIweCUzQiU1Q24lNUNuJTJGJTJGJTIwVGhpcyUyMCU1QyUyMnNpZGUlMjBlZmZlY3QlNUMlMjIlMjBjcmVhdGVzJTIwYSUyMGdsb2JhbCU1Q24lMkYlMkYlMjB2YXJpYWJsZSUyMGFuZCUyMHdpbGwlMjBub3QlMjBiZSUyMHJlbW92ZWQuJTVDbndpbmRvdy5lZmZlY3QxJTIwJTNEJTIwJ2NyZWF0ZWQnJTNCJTVDbiU1Q25jb25zdCUyMGluY2x1ZGVFZmZlY3QlMjAlM0QlMjBmYWxzZSUzQiU1Q25pZiUyMChpbmNsdWRlRWZmZWN0KSUyMCU3QiU1Q24lNUN0JTJGJTJGJTIwT24lMjB0aGUlMjBvdGhlciUyMGhhbmQlMkMlMjB0aGlzJTIwaXMlMjBuZXZlciU1Q24lNUN0JTJGJTJGJTIwZXhlY3V0ZWQlMjBhbmQlMjB0aHVzJTIwcmVtb3ZlZC4lNUNuJTVDdHdpbmRvdy5lZmZlY3QxJTIwJTNEJTIwJ25vdCUyMGNyZWF0ZWQnJTNCJTVDbiU3RCUyMiUyQyUyMmlzRW50cnklMjIlM0FmYWxzZSUyQyUyMm5hbWUlMjIlM0ElMjJtYXRocy5qcyUyMiU3RCU1RCUyQyUyMm9wdGlvbnMlMjIlM0ElN0IlMjJvdXRwdXQlMjIlM0ElN0IlMjJmb3JtYXQlMjIlM0ElMjJlcyUyMiU3RCUyQyUyMnRyZWVzaGFrZSUyMiUzQXRydWUlN0QlN0Q=\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-08-25T05:25:01Z",
+          "tree_id": "95ee78e6c4761a954e0709cb6c4bdc75a500008b",
+          "url": "https://github.com/rolldown/rolldown/commit/e350abe0bd5ea6961b58b2d558f343aaf8390bf7"
+        },
+        "date": 1724564292937,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "388.14",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "596.60",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "981.81",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1422.96",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "130.45",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "188.17",
             "unit": "ms / ops"
           }
         ]
