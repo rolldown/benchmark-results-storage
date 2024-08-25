@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1724606403416,
+  "lastUpdate": 1724615086935,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -34901,6 +34901,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "196.60",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8ea9f31b7332229db68a7a3782ac8167c6618306",
+          "message": "ci: enable forked repo writing benchmark comparsion comment (#2060)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. ref\nhttps://github.com/peter-evans/create-or-update-comment/issues/103#issuecomment-1041057863\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-08-25T19:31:30Z",
+          "tree_id": "27c03b005419ecbb33cb2cf34c6472c13b622034",
+          "url": "https://github.com/rolldown/rolldown/commit/8ea9f31b7332229db68a7a3782ac8167c6618306"
+        },
+        "date": 1724615086924,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "385.39",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "597.26",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "965.48",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1382.22",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "126.06",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "184.59",
             "unit": "ms / ops"
           }
         ]
