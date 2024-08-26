@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1724656394771,
+  "lastUpdate": 1724657777211,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -35171,6 +35171,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "200.97",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "j@dummett.org",
+            "name": "overlookmotel",
+            "username": "overlookmotel"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "94cb4340e087acd314bc086fe7d67bdf438d22ed",
+          "message": "perf: use `simdutf8` to validate UTF-8 when reading files (#2040)\n\n### Description\n\nI'm not familiar with Rolldown's codebase, so I'm not sure whether this\nfunction is the main one used to read source text from files - so this\nmay be in wrong place/not enough places.\n\n`std::fs::read_to_string` internally calls `std::str::from_utf8` to\ncheck that the file is valid UTF-8. `str::from_utf8` is not so efficient\nas it doesn't use SIMD. `simduft8` should be faster.\n\nI assume that this difference won't show up on benchmarks as they likely\nwon't include IO. But I'd hope it'd have an effect in the real world.\nHow would we go about testing that assumption? Are there any benchmarks\nwhich do exercise this function?",
+          "timestamp": "2024-08-26T07:17:23Z",
+          "tree_id": "2f1c91755e520f70607a94ae5f0124910b70bbc1",
+          "url": "https://github.com/rolldown/rolldown/commit/94cb4340e087acd314bc086fe7d67bdf438d22ed"
+        },
+        "date": 1724657777200,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "405.26",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "613.14",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1025.96",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1471.69",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "131.72",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "185.93",
             "unit": "ms / ops"
           }
         ]
