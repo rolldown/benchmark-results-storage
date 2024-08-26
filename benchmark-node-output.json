@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1724668545431,
+  "lastUpdate": 1724677278893,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -35333,6 +35333,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "185.26",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "80dc48d73b544a835292e0a2e6beede072c709be",
+          "message": "perf: ⚡️ reduce lock contention (#2072)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. Closed https://github.com/rolldown/rolldown/issues/2069\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-08-26T12:47:13Z",
+          "tree_id": "25dd928457833312f2b342fafa90306453204418",
+          "url": "https://github.com/rolldown/rolldown/commit/80dc48d73b544a835292e0a2e6beede072c709be"
+        },
+        "date": 1724677278883,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "375.38",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "579.91",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "933.80",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1360.05",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "125.72",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "184.60",
             "unit": "ms / ops"
           }
         ]
