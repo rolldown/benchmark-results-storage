@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1724677278893,
+  "lastUpdate": 1724684242061,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -35387,6 +35387,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "184.60",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "boshenc@gmail.com",
+            "name": "Boshen",
+            "username": "Boshen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b94ed74ce10893d7349d754b433527e3ad276aca",
+          "message": "chore: bump `oxc_resolver` to v1.11.0 (#2073)\n\nThis updates the remaining utf8 checking code\nhttps://github.com/oxc-project/oxc-resolver/pull/237\n\n\nBefore:\n\n<img width=\"1506\" alt=\"image\"\nsrc=\"https://github.com/user-attachments/assets/443c7f0e-d0da-40b8-8a45-19dc1d0dc3e7\">\n\nAfter:\n\n(`read_to_string` is gone, the cumulated time is a bit faster on a M2)\n\n<img width=\"1389\" alt=\"image\"\nsrc=\"https://github.com/user-attachments/assets/af86d463-911a-4532-acfd-3832f3bc5cfc\">",
+          "timestamp": "2024-08-26T14:41:05Z",
+          "tree_id": "53761d2eb1b49195959d57ae23c69bed7c92c427",
+          "url": "https://github.com/rolldown/rolldown/commit/b94ed74ce10893d7349d754b433527e3ad276aca"
+        },
+        "date": 1724684242050,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "394.53",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "606.37",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1022.53",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1487.35",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "134.12",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "193.60",
             "unit": "ms / ops"
           }
         ]
