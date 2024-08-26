@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1724684242061,
+  "lastUpdate": 1724689801808,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -35441,6 +35441,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "193.60",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6832084b7cd69daed9144ba365813bd3f280075c",
+          "message": "fix: undefined export var (#2055)\n\n<!-- Thank you for contributing! -->\n\n### Description\n**Before** this code snippet will panic, \n```js\nexport {\n  foo\n}\n```\n## Ref\n\nhttps://github.com/evanw/esbuild/blob/9c13ae1f06dfa909eb4a53882e3b7e4216a503fe/internal/js_parser/js_parser.go#L10047-L10050\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-08-26T16:07:42Z",
+          "tree_id": "86ad1d074f72095d41e29a4e8b9a0ffc5d66b578",
+          "url": "https://github.com/rolldown/rolldown/commit/6832084b7cd69daed9144ba365813bd3f280075c"
+        },
+        "date": 1724689801796,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "397.80",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "611.15",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1005.29",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1423.52",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "128.08",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "183.75",
             "unit": "ms / ops"
           }
         ]
