@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1724657777211,
+  "lastUpdate": 1724666637849,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -35225,6 +35225,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "185.93",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0f9391b9ac6b65bbe1aebf045d45d74a604772a2",
+          "message": "fix: external module side effects should respect hook returned side e… (#2068)\n\n…ffects\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-08-26T09:49:48Z",
+          "tree_id": "fbd3bfa9921503b46406af6604edffa203b4cbad",
+          "url": "https://github.com/rolldown/rolldown/commit/0f9391b9ac6b65bbe1aebf045d45d74a604772a2"
+        },
+        "date": 1724666637838,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "400.70",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "611.18",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "990.91",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1408.06",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "133.15",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "186.96",
             "unit": "ms / ops"
           }
         ]
