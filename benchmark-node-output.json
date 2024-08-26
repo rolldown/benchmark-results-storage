@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1724656032734,
+  "lastUpdate": 1724656394771,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -35117,6 +35117,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "184.58",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "boshenc@gmail.com",
+            "name": "Boshen",
+            "username": "Boshen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "759bc2ab8ed4aab6bf682543cbee27273338249e",
+          "message": "chore(rust): set release profile values explicitly (#2063)\n\nI think it's better to show these values explicitly, feel free to\ndisagree otherwise.",
+          "timestamp": "2024-08-26T06:54:56Z",
+          "tree_id": "a76f5eace91b1272a99986ad8e17f1a2e141879c",
+          "url": "https://github.com/rolldown/rolldown/commit/759bc2ab8ed4aab6bf682543cbee27273338249e"
+        },
+        "date": 1724656394760,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "412.53",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "621.86",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1013.00",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1435.19",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "135.48",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "200.97",
             "unit": "ms / ops"
           }
         ]
