@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1724730365071,
+  "lastUpdate": 1724730812727,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -35549,6 +35549,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "188.59",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ylei.mk@gmail.com",
+            "name": "ikkz",
+            "username": "ikkz"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "d023f2f95d604a3ab2ce0d627795fc8a3b77bd99",
+          "message": "feat: support function for entry/chunkFileNames (#1834)\n\nresolves https://github.com/rolldown/rolldown/issues/1728\n\nentryFileNames and chunkFileNames are closely related, so I implemented\nthem together\n\n---------\n\nCo-authored-by: Yunfei <i.heyunfei@gmail.com>",
+          "timestamp": "2024-08-27T03:37:03Z",
+          "tree_id": "9664be5f308d6af9e35de49141191ca6dd8ca641",
+          "url": "https://github.com/rolldown/rolldown/commit/d023f2f95d604a3ab2ce0d627795fc8a3b77bd99"
+        },
+        "date": 1724730812716,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "398.37",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "614.65",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1018.47",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1430.65",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "129.39",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "186.94",
             "unit": "ms / ops"
           }
         ]
