@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1724730812727,
+  "lastUpdate": 1724771857982,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -35603,6 +35603,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "186.94",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "boshenc@gmail.com",
+            "name": "Boshen",
+            "username": "Boshen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e7c2bffea38ac6149b8c106ded7239fb61b46096",
+          "message": "perf(sourcemap): do not allocate `ConcatSourceMapBuilder` unconditionally (#2078)\n\nI noticed `ConcatSourceMapBuilder::with_capacity` getting called\nunconditionally, resulting unnecessary memory allocation when sourcemap\nis turned off.",
+          "timestamp": "2024-08-27T15:03:54Z",
+          "tree_id": "d05259bb10718cc0811b00e27737e97768202136",
+          "url": "https://github.com/rolldown/rolldown/commit/e7c2bffea38ac6149b8c106ded7239fb61b46096"
+        },
+        "date": 1724771857970,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "394.64",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "612.21",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1011.51",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1421.85",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "130.25",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "185.45",
             "unit": "ms / ops"
           }
         ]
