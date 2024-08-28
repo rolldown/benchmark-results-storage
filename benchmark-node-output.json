@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1724771857982,
+  "lastUpdate": 1724818693660,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -35657,6 +35657,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "185.45",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "laipichan@qq.com",
+            "name": "dalaoshu",
+            "username": "shulaoda"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ea4965f7db76797b44041ee9fb79b3c5b58e50db",
+          "message": "feat: improve resolve error (#2076)\n\n<!-- Thank you for contributing! -->\n\n### Description\ncloses #2033 \n\n<img width=\"814\" alt=\"image\"\nsrc=\"https://github.com/user-attachments/assets/7358884a-1283-434a-a4de-c2a5b1a1f810\">\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-08-28T04:04:50Z",
+          "tree_id": "051e28e39224f18cf7ed176c6162396df6323e53",
+          "url": "https://github.com/rolldown/rolldown/commit/ea4965f7db76797b44041ee9fb79b3c5b58e50db"
+        },
+        "date": 1724818693648,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "383.93",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "587.25",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "956.19",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1374.36",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "124.90",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "183.36",
             "unit": "ms / ops"
           }
         ]
