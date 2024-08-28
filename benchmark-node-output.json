@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1724828916444,
+  "lastUpdate": 1724837540352,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -35765,6 +35765,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "203.75",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a5fe5aca0d3524630efb4e8726ef0f6817350b81",
+          "message": "chore: ⚡️ polish oxc resolve error (#2084)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. follow up of #2033\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-08-28T09:15:51Z",
+          "tree_id": "eec002916299cfe8ef5b6657e45250122e8b406c",
+          "url": "https://github.com/rolldown/rolldown/commit/a5fe5aca0d3524630efb4e8726ef0f6817350b81"
+        },
+        "date": 1724837540340,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "398.90",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "607.22",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1012.90",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1441.77",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "128.26",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "185.96",
             "unit": "ms / ops"
           }
         ]
