@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1724922590545,
+  "lastUpdate": 1724948159889,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -35927,6 +35927,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "192.61",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "33fca46a353afa47d0f35b0a723622e167ec97de",
+          "message": "fix(plugin/replace): handle backtrack limit exceeded error (#2088)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nSolves\nhttps://github.com/rolldown/rolldown/pull/2056#issuecomment-2316570663.\n\nThe cause is that `fancy_regex` will limit the times of doing backtrack.\nIf reach limit, `fancy_regex` will throw a error. The `continue` in old\ncode causes a infinite loop if there is error happed.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-08-29T16:02:04Z",
+          "tree_id": "b36b523c6fa6216381f8de695b2b50a02906ee8c",
+          "url": "https://github.com/rolldown/rolldown/commit/33fca46a353afa47d0f35b0a723622e167ec97de"
+        },
+        "date": 1724948159878,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "408.41",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "617.23",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1020.69",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1452.88",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "133.29",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "188.40",
             "unit": "ms / ops"
           }
         ]
