@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1724842173179,
+  "lastUpdate": 1724922590545,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -35873,6 +35873,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "181.93",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ylei.mk@gmail.com",
+            "name": "ikkz",
+            "username": "ikkz"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "12a6fc469aa1aacd2207ca127dbfc3e7056a146d",
+          "message": "test: add tests for replace plugin (#2074)\n\nrelated issue: #2057 \n\nmigrated from\nhttps://github.com/rollup/plugins/tree/master/packages/replace/test/fixtures/form\n\nThese tests have not been included in this pr:\n- replacement-function: will be added once I implement support for\nfunction as `Replacement`\n- observe-plugin-options: we already have separated `values` and plugin\noptions so it is unnecessary",
+          "timestamp": "2024-08-29T08:55:39Z",
+          "tree_id": "5847346720ba71dfd8142894bd364c82bec9f3d6",
+          "url": "https://github.com/rolldown/rolldown/commit/12a6fc469aa1aacd2207ca127dbfc3e7056a146d"
+        },
+        "date": 1724922590533,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "414.00",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "628.15",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1053.59",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1477.04",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "136.72",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "192.61",
             "unit": "ms / ops"
           }
         ]
