@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1724948159889,
+  "lastUpdate": 1725013312188,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -35981,6 +35981,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "188.40",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "7086cmd@gmail.com",
+            "name": "Ethan Goh",
+            "username": "7086cmd"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3f8d8a2535a56ee563ea41c162a96a1e98659d27",
+          "message": "chore: print seconds when build time exceeds 1 second. (#2092)\n\nresolves #2091 \nHowever, I am curious about how I can add tests.",
+          "timestamp": "2024-08-30T10:06:52Z",
+          "tree_id": "285f21ee1cf0bd7f14fe18e5749fa7f7e4417820",
+          "url": "https://github.com/rolldown/rolldown/commit/3f8d8a2535a56ee563ea41c162a96a1e98659d27"
+        },
+        "date": 1725013312177,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "390.23",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "602.95",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "979.11",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1401.47",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "124.37",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "184.08",
             "unit": "ms / ops"
           }
         ]
