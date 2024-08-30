@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1725013312188,
+  "lastUpdate": 1725050208719,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -36035,6 +36035,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "184.08",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ylei.mk@gmail.com",
+            "name": "ikkz",
+            "username": "ikkz"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "18ac29ca0d6997a74ca457f917daaae3f7773036",
+          "message": "feat(plugin/replace): prevent assignment (#2093)\n\nrelated issue: #2057\n\nThis pr implements the same function with rollup's preventAssignment:\nhttps://github.com/rollup/plugins/blob/master/packages/replace/src/index.js#L77-L82\n\nAnd part of the logic is put into the match loop, because of\n`fancy-regex`'s limitation that variable size of expression cannot be\nused in lookbehind (https://github.com/fancy-regex/fancy-regex/issues/74\nand https://github.com/fancy-regex/fancy-regex/issues/109)",
+          "timestamp": "2024-08-30T20:22:24Z",
+          "tree_id": "f2fdbf089118cb35717db68b50e80ce6f1db7e8a",
+          "url": "https://github.com/rolldown/rolldown/commit/18ac29ca0d6997a74ca457f917daaae3f7773036"
+        },
+        "date": 1725050208708,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "411.53",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "630.87",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1042.35",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1492.52",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "137.28",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "197.52",
             "unit": "ms / ops"
           }
         ]
