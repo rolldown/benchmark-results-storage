@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1725050208719,
+  "lastUpdate": 1725051055077,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -36089,6 +36089,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "197.52",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8b7734e56ec2e8ea2fca4ff55d782c74d6049ffe",
+          "message": "fix: entry chunk should be at first (#2089)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nThe rollup entry chunks should be at first, we need to make sure the\nbehavior.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-08-30T20:36:55Z",
+          "tree_id": "8c99030187f649628c5c50e7ff72e50a7166889e",
+          "url": "https://github.com/rolldown/rolldown/commit/8b7734e56ec2e8ea2fca4ff55d782c74d6049ffe"
+        },
+        "date": 1725051055066,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "396.63",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "604.83",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1001.33",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1427.52",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "127.96",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "184.57",
             "unit": "ms / ops"
           }
         ]
