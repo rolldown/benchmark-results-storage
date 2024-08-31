@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1725051055077,
+  "lastUpdate": 1725091880589,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -36143,6 +36143,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "184.57",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "dc98faa6248c9b5391acc79df2da6ec1212960fe",
+          "message": "fix: ensure referenced symbols by entry point chunk got deconflicted (#2094)\n\n<!-- Thank you for contributing! -->\n\n### Description\n- Fixes #1722\n- Fixes #2085\n- Closes https://github.com/rolldown/rolldown/pull/2087\n\nThis is yet another problem caused by forgetting sync symbols with other\nparts of bundler. I'm planing to refactor these logic, to make symbols\nwork automatically to prevent problems caused by forgetting.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->\n\n---------\n\nCo-authored-by: IWANABETHATGUY <iwanabethatguy@qq.com>",
+          "timestamp": "2024-08-31T07:57:22Z",
+          "tree_id": "cd69fbd11b956be489cc81240db1395a80a5527d",
+          "url": "https://github.com/rolldown/rolldown/commit/dc98faa6248c9b5391acc79df2da6ec1212960fe"
+        },
+        "date": 1725091880578,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "385.97",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "600.10",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "986.88",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1414.95",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "130.53",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "188.39",
             "unit": "ms / ops"
           }
         ]
