@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1725209062305,
+  "lastUpdate": 1725211296486,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -36845,6 +36845,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "187.90",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "laipichan@qq.com",
+            "name": "dalaoshu",
+            "username": "shulaoda"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "70a7e80d232015fe4750abed2b6d7068f8207ee3",
+          "message": "perf: use itoa for integer to string conversion (#2108)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nSupplement to PR #2107 \n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-09-01T17:08:24Z",
+          "tree_id": "379f318f545cc3ecae800e8f07fd6ad04ed42720",
+          "url": "https://github.com/rolldown/rolldown/commit/70a7e80d232015fe4750abed2b6d7068f8207ee3"
+        },
+        "date": 1725211296475,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "399.56",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "607.05",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "991.99",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1409.38",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "129.04",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "182.30",
             "unit": "ms / ops"
           }
         ]
