@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1725213792489,
+  "lastUpdate": 1725215480811,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -36953,6 +36953,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "191.58",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "e12f5a8437d4eaaf0787f76667393d75ac731967",
+          "message": "ci: rename `automate-labeling.yml` to `automate-jobs.yml` (#2116)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-09-01T18:01:57Z",
+          "tree_id": "6e69a76901b9eac33a9ca05d58786ea4212451cc",
+          "url": "https://github.com/rolldown/rolldown/commit/e12f5a8437d4eaaf0787f76667393d75ac731967"
+        },
+        "date": 1725215480799,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "389.62",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "599.34",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "986.22",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1398.42",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "127.45",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "186.59",
             "unit": "ms / ops"
           }
         ]
