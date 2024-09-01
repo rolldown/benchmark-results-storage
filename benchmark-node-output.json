@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1725194938780,
+  "lastUpdate": 1725201134803,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -36683,6 +36683,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "182.42",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "boshenc@gmail.com",
+            "name": "Boshen",
+            "username": "Boshen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c916947780f036779725d45729e7de65e4745abb",
+          "message": "perf(rolldown): use `itoa` for integer to string conversion (#2107)\n\n<img width=\"1428\" alt=\"image\"\nsrc=\"https://github.com/user-attachments/assets/3f10e605-b41d-4561-819b-95cfa74e53ef\">\n\n```rust\nlet i: u32 = 0;\nformat!(\"{i}\");\n```\n\nis really costly in Rust as it involves heap allocation.\n\n> This crate provides a fast conversion of integer primitives to decimal\nstrings.\n> The implementation comes straight from libcore but avoids the\nperformance penalty of going through core::fmt::Formatter.\n\nI haven't checked the rest of the codebase for such patterns, feel free\nto change them.",
+          "timestamp": "2024-09-01T14:18:14Z",
+          "tree_id": "3b8c2dcbc1d28497794feb4440dc9b85957eb46e",
+          "url": "https://github.com/rolldown/rolldown/commit/c916947780f036779725d45729e7de65e4745abb"
+        },
+        "date": 1725201134792,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "400.33",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "614.28",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1016.17",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1445.33",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "132.47",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "189.87",
             "unit": "ms / ops"
           }
         ]
