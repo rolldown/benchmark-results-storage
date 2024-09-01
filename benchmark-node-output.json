@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1725179914791,
+  "lastUpdate": 1725184128102,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -36467,6 +36467,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "188.31",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4c9feeb058f0212228e430450004967c99af9177",
+          "message": "fix: strict emit warning `commonjs var in esm` (#2101)\n\n<!-- Thank you for contributing! -->\n\n### Description\nref:\nhttps://esbuild.github.io/try/#YgAwLjIzLjEALS1idW5kbGUgLS1taW5pZnk9ZmFsc2UgLS1mb3JtYXQ9ZXNtAGUAZW50cnkuanMALyoqIERldGVjdCBmcmVlIHZhcmlhYmxlIGBleHBvcnRzYC4gKi8KdmFyIGZyZWVFeHBvcnRzID0gdHlwZW9mIGV4cG9ydHMgPT0gJ29iamVjdCcgJiYgZXhwb3J0cyAmJiAhZXhwb3J0cy5ub2RlVHlwZSAmJiBleHBvcnRzOwoKLyoqIERldGVjdCBmcmVlIHZhcmlhYmxlIGBtb2R1bGVgLiAqLwp2YXIgZnJlZU1vZHVsZSA9IGZyZWVFeHBvcnRzICYmIHR5cGVvZiBtb2R1bGUuZXhwb3J0cyA9PSAnb2JqZWN0JyAmJiBtb2R1bGUgJiYgIW1vZHVsZS5ub2RlVHlwZSAmJiBtb2R1bGU7CgovKiogRGV0ZWN0IHRoZSBwb3B1bGFyIENvbW1vbkpTIGV4dGVuc2lvbiBgbW9kdWxlLmV4cG9ydHNgLiAqLwp2YXIgbW9kdWxlRXhwb3J0cyA9IGZyZWVNb2R1bGUgJiYgZnJlZU1vZHVsZS5leHBvcnRzID09PSBmcmVlRXhwb3J0czsKCi8qKiBCdWlsdC1pbiB2YWx1ZSByZWZlcmVuY2VzLiAqLwp2YXIgQnVmZmVyID0gbW9kdWxlRXhwb3J0cyA/IHJvb3QuQnVmZmVyIDogdW5kZWZpbmVkOwoKLyogQnVpbHQtaW4gbWV0aG9kIHJlZmVyZW5jZXMgZm9yIHRob3NlIHdpdGggdGhlIHNhbWUgbmFtZSBhcyBvdGhlciBgbG9kYXNoYCBtZXRob2RzLiAqLwp2YXIgbmF0aXZlSXNCdWZmZXIgPSBCdWZmZXIgPyBCdWZmZXIuaXNCdWZmZXIgOiB1bmRlZmluZWQ7CgovKioKICogQ2hlY2tzIGlmIGB2YWx1ZWAgaXMgYSBidWZmZXIuCiAqCiAqIEBzdGF0aWMKICogQG1lbWJlck9mIF8KICogQHNpbmNlIDQuMy4wCiAqIEBjYXRlZ29yeSBMYW5nCiAqIEBwYXJhbSB7Kn0gdmFsdWUgVGhlIHZhbHVlIHRvIGNoZWNrLgogKiBAcmV0dXJucyB7Ym9vbGVhbn0gUmV0dXJucyBgdHJ1ZWAgaWYgYHZhbHVlYCBpcyBhIGJ1ZmZlciwgZWxzZSBgZmFsc2VgLgogKiBAZXhhbXBsZQogKgogKiBfLmlzQnVmZmVyKG5ldyBCdWZmZXIoMikpOwogKiAvLyA9PiB0cnVlCiAqCiAqIF8uaXNCdWZmZXIobmV3IFVpbnQ4QXJyYXkoMikpOwogKiAvLyA9PiBmYWxzZQogKi8KdmFyIGlzQnVmZmVyID0gbmF0aXZlSXNCdWZmZXIgfHwgc3R1YkZhbHNlOwoKZXhwb3J0IGRlZmF1bHQgaXNCdWZmZXI7CmV4cG9ydHMudGVzdC5yZXN1bHQgPSAxMDAwOwpleHBvcnRzLnRlc3QgPSAxMDAwOwptb2R1bGUueHh4eCA9IDEwMDA7CgAAYS5qcwBleHBvcnQgKiBmcm9tICcuL2IuanMnOwAAYi5qcwBleHBvcnQgKiBmcm9tICcuL2MuanMnAABjLmpzAG1vZHVsZS5leHBvcnRzID0gMTAwMA\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-09-01T09:31:50Z",
+          "tree_id": "4e8833b1c9a3ddc4afc0b6e2c270897b9503742a",
+          "url": "https://github.com/rolldown/rolldown/commit/4c9feeb058f0212228e430450004967c99af9177"
+        },
+        "date": 1725184128091,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "396.19",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "609.05",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "993.28",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1405.47",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "126.94",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "183.26",
             "unit": "ms / ops"
           }
         ]
