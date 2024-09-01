@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1725184128102,
+  "lastUpdate": 1725186592256,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -36521,6 +36521,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "183.26",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6b5d7dc97b47895bd8280d29c2a815e159fa6b8c",
+          "message": "fix: sourcemap inline url should relative to asset file (#2099)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-09-01T10:15:58Z",
+          "tree_id": "aa42dd2ee67ea20a9aa4773f1a46256590145f0f",
+          "url": "https://github.com/rolldown/rolldown/commit/6b5d7dc97b47895bd8280d29c2a815e159fa6b8c"
+        },
+        "date": 1725186592245,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "386.65",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "597.94",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "975.33",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1390.68",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "125.36",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "183.43",
             "unit": "ms / ops"
           }
         ]
