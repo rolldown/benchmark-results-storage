@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1725216143244,
+  "lastUpdate": 1725217693256,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -37061,6 +37061,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "182.73",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "664859ae61c923afee7a3c4c3ad01bdb55b4c906",
+          "message": "ci: only trigger autofix.ci by labeling (#2117)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n- If husky enabled, most of errors would be fixed locally\n- Shouldn't over-use github's machine for every commit\n- Unexpected autofix causes solving conflicts\n\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-09-01T18:39:37Z",
+          "tree_id": "00611469d581a090d11d7c8565edf4391211bb20",
+          "url": "https://github.com/rolldown/rolldown/commit/664859ae61c923afee7a3c4c3ad01bdb55b4c906"
+        },
+        "date": 1725217693245,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "389.74",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "597.29",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "987.76",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1420.40",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "126.74",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "184.15",
             "unit": "ms / ops"
           }
         ]
