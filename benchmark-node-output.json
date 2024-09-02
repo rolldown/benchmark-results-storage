@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1725224499322,
+  "lastUpdate": 1725258412324,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -37277,6 +37277,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "180.91",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "boshenc@gmail.com",
+            "name": "Boshen",
+            "username": "Boshen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b984da0ff3b9a1cdc7e12ef45b62cd90041f7b3f",
+          "message": "perf(rolldown): only recreate semantic data when ast is changed in pre_process_ecma_ast (#2113)\n\nSemantic data do not need to be recreated if ast is unchanged.\n\nI intend to improve this situation later on, but this is a good first\nstep.\n\n* https://github.com/oxc-project/oxc/issues/5390\n* https://github.com/oxc-project/backlog/issues/85",
+          "timestamp": "2024-09-02T06:13:04Z",
+          "tree_id": "551f0263a9f73b969855ff7be95f86f3412a2f1c",
+          "url": "https://github.com/rolldown/rolldown/commit/b984da0ff3b9a1cdc7e12ef45b62cd90041f7b3f"
+        },
+        "date": 1725258412312,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "357.31",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "567.01",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "941.35",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1367.69",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "127.11",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "184.90",
             "unit": "ms / ops"
           }
         ]
