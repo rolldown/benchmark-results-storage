@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1725275176932,
+  "lastUpdate": 1725281814432,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -37385,6 +37385,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "184.30",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a1fa701403452ee520e94aa3b5780a40c507b5de",
+          "message": "fix: should also care for `Chunk#name` for common chunks (#2123)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-09-02T12:43:09Z",
+          "tree_id": "2e94f7809577e8a31cc6c6cbe90c916e96aed52f",
+          "url": "https://github.com/rolldown/rolldown/commit/a1fa701403452ee520e94aa3b5780a40c507b5de"
+        },
+        "date": 1725281814420,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "369.94",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "582.43",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "976.71",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1409.34",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "135.87",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "194.82",
             "unit": "ms / ops"
           }
         ]
