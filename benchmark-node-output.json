@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1725258412324,
+  "lastUpdate": 1725275176932,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -37331,6 +37331,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "184.90",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ylei.mk@gmail.com",
+            "name": "ikkz",
+            "username": "ikkz"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ea76b061ebcaa64bdb96c7056b51d2f6ff9d0615",
+          "message": "feat(plugin/replace): objectGuards (#2121)\n\nRelated issue: #2057. This pr implements the same function with\n[rollup's](https://github.com/rollup/plugins/blob/master/packages/replace/README.md#objectguards)\n\nAdditionally, the rollup's `objectGuards` doesn't take effects actually,\neven in the test case's\n[snapshot](https://github.com/rollup/plugins/blob/master/packages/replace/test/snapshots/form.js.md?plain=1#L46).\nIt caused by the wrong implementation of function\n[`expandTypeofReplacements`](https://github.com/rollup/plugins/blob/master/packages/replace/src/index.js#L41).\nIn this pr, I rewrite this function and I plan to fix it in rollup",
+          "timestamp": "2024-09-02T10:52:42Z",
+          "tree_id": "f4dc8aae1789d7cc71dcb68266ce7ea4c3940acb",
+          "url": "https://github.com/rolldown/rolldown/commit/ea76b061ebcaa64bdb96c7056b51d2f6ff9d0615"
+        },
+        "date": 1725275176921,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "351.65",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "569.94",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "963.86",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1400.35",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "127.71",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "184.30",
             "unit": "ms / ops"
           }
         ]
