@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1725334818236,
+  "lastUpdate": 1725336872682,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -37709,6 +37709,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "188.39",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "boshenc@gmail.com",
+            "name": "Boshen",
+            "username": "Boshen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4872b6cffdbf9170f67dc7ea0dc180040c285bb1",
+          "message": "chore(rolldown): bump oxc to v0.26.0 (#2133)\n\nFull changelog: https://github.com/oxc-project/oxc/pull/5418",
+          "timestamp": "2024-09-03T03:59:10Z",
+          "tree_id": "f0fe1b0c17db2987c77fc48da28d5f848da688e1",
+          "url": "https://github.com/rolldown/rolldown/commit/4872b6cffdbf9170f67dc7ea0dc180040c285bb1"
+        },
+        "date": 1725336872671,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "351.40",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "557.45",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "923.58",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1328.38",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "124.15",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "179.83",
             "unit": "ms / ops"
           }
         ]
