@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1725342709342,
+  "lastUpdate": 1725347705149,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -37817,6 +37817,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "196.84",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "06b578c04491db1d2eb840bccaa1091f85f449a0",
+          "message": "fix(node/rolldown): mark all tsfn as weak to avoid long exit time (#2135)\n\n<!-- Thank you for contributing! -->\n\n### Description\n- Closes https://github.com/rolldown/rolldown/issues/928.\n- Closes https://github.com/rolldown/rolldown/pull/985.\n\nNotice that this will break the implementation of `ParallelPlugin` due\nto worker doesn't support creating weak tsfn\nhttps://github.com/rolldown/rolldown/pull/985#issuecomment-2081384205.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-09-03T07:01:08Z",
+          "tree_id": "c30d24fa4c16bde9e64742eebb6eca625c39ed64",
+          "url": "https://github.com/rolldown/rolldown/commit/06b578c04491db1d2eb840bccaa1091f85f449a0"
+        },
+        "date": 1725347705138,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "372.63",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "580.15",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "973.95",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1417.00",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "128.06",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "190.89",
             "unit": "ms / ops"
           }
         ]
