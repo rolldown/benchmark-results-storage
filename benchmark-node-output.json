@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1725371262190,
+  "lastUpdate": 1725389184170,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -38033,6 +38033,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "188.11",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "sxzz@sxzz.moe",
+            "name": "Kevin Deng 三咲智子",
+            "username": "sxzz"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "d24c3371798831915a1c5ae51c49c5664dbf7d6a",
+          "message": "fix(rolldown): remove `console.log` (#2145)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->\n\nRemove accidentally introduced `console.log`.",
+          "timestamp": "2024-09-03T18:32:55Z",
+          "tree_id": "c1493a08affeb4a9b31dffd3e92378098e5c5b29",
+          "url": "https://github.com/rolldown/rolldown/commit/d24c3371798831915a1c5ae51c49c5664dbf7d6a"
+        },
+        "date": 1725389184156,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "408.13",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "641.94",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1078.53",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1493.99",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "148.78",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "211.09",
             "unit": "ms / ops"
           }
         ]
