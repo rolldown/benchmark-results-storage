@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1725363951726,
+  "lastUpdate": 1725371262190,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -37979,6 +37979,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "179.98",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "a0e7c4da1a395bb02435142a4a9dd88755b966fa",
+          "message": "refactor:  reuse `normalizedStringOrRegex` in  transform plugin config  (#2143)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-09-03T13:33:40Z",
+          "tree_id": "7870bf9a1bc71b9f4c2dcf722768bf1e499097f5",
+          "url": "https://github.com/rolldown/rolldown/commit/a0e7c4da1a395bb02435142a4a9dd88755b966fa"
+        },
+        "date": 1725371262178,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "363.73",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "574.84",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "973.01",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1400.65",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "129.55",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "188.11",
             "unit": "ms / ops"
           }
         ]
