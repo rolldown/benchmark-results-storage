@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1725336872682,
+  "lastUpdate": 1725342709342,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -37763,6 +37763,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "179.83",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "laipichan@qq.com",
+            "name": "dalaoshu",
+            "username": "shulaoda"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "57ec86f3b9eb5777e0a63d2db9de2487038d18eb",
+          "message": "ci: fix convert stale labeled PR to draft (#2132)\n\n<!-- Thank you for contributing! -->\r\n\r\n### Description\r\ncloses #2130 \r\n\r\nDue to some reasons, create a new PR, related to #2131 .\r\n<!-- Please insert your description here and provide especially info\r\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-09-03T13:45:04+08:00",
+          "tree_id": "4649179cea0881845f818f09c090dc20e6049ce0",
+          "url": "https://github.com/rolldown/rolldown/commit/57ec86f3b9eb5777e0a63d2db9de2487038d18eb"
+        },
+        "date": 1725342709330,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "383.20",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "595.53",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1002.86",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1435.67",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "137.02",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "196.84",
             "unit": "ms / ops"
           }
         ]
