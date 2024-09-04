@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1725461911440,
+  "lastUpdate": 1725464109368,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -38357,6 +38357,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "192.71",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "laipichan@qq.com",
+            "name": "dalaoshu",
+            "username": "shulaoda"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5a6c541f5dc8fced9f258e05cc08194418b6a5f2",
+          "message": "chore: add husky pre-commit (#2140)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nRevert of #2106, closes #2104\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->\n\n---------\n\nCo-authored-by: IWANABETHATGUY <iwanabethatguy@qq.com>",
+          "timestamp": "2024-09-04T15:22:03Z",
+          "tree_id": "f559549608d05c9aee0faa2d1f7c59ff26aa10a5",
+          "url": "https://github.com/rolldown/rolldown/commit/5a6c541f5dc8fced9f258e05cc08194418b6a5f2"
+        },
+        "date": 1725464109356,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "362.09",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "577.81",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "988.59",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1407.53",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "127.93",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "189.33",
             "unit": "ms / ops"
           }
         ]
