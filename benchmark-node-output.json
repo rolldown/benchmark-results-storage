@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1725464109368,
+  "lastUpdate": 1725506356960,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -38411,6 +38411,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "189.33",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "bd94a75e0aa64dbc2ccf57e06378e23368f76862",
+          "message": "ci:  build examples in node testing workflow (#2165)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. make sure our `examples/*` is not broken\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-09-05T03:06:26Z",
+          "tree_id": "e2df5384baf96e16bbb8b150110669643bb2371f",
+          "url": "https://github.com/rolldown/rolldown/commit/bd94a75e0aa64dbc2ccf57e06378e23368f76862"
+        },
+        "date": 1725506356948,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "369.22",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "579.58",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "961.78",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1385.42",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "129.21",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "189.76",
             "unit": "ms / ops"
           }
         ]
