@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1725521104641,
+  "lastUpdate": 1725523197700,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -38573,6 +38573,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "188.63",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a557b512605b5722a7653c5d27e75abbdd0e90ec",
+          "message": "feat(rust/advance-chunks): should include matched module's dependencies too (#2161)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nConsider case\n\n```js\n// index.js\n\nimport { a } from './a'\nimport './b'\n\nconsole.log(a)\n\n// a.js\n\nexport const a = 'a\n\n// b.js\n\nimport { a } from './a'\nconsole.log(a)\n\n```\n\nIf we move `b.js` to a new chunk and don't touch `a.js`.\n\nThe output would be\n\n### main.js\n```js\n// a.js\n\nconst a = 'a'\n\n// index.js\n\nconsole.log(a)\n\n```\n\n### `b.js`\n\n```js\nimport { a } from './main'\n// Wrong here. Entry chunk `main.js` doesn't export `a`. Dependencies of the module in common chunk must be in common chunk too.\n\n// b.js\n\nconsole.log(a)\n\n```\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-09-05T07:46:37Z",
+          "tree_id": "4e7849789db0aab92a60e602290ccf3987fa3723",
+          "url": "https://github.com/rolldown/rolldown/commit/a557b512605b5722a7653c5d27e75abbdd0e90ec"
+        },
+        "date": 1725523197688,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "363.93",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "570.22",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "940.00",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1368.51",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "130.49",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "185.53",
             "unit": "ms / ops"
           }
         ]
