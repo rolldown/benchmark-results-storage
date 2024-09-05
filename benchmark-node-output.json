@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1725506356960,
+  "lastUpdate": 1725519533123,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -38465,6 +38465,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "189.76",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "071efd83bc24148c4a8aadac287f7c150be0d88d",
+          "message": "feat(rust/advance-chunks): A module could be catched by multiple match groups (#2155)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-09-05T06:43:48Z",
+          "tree_id": "5f02a49bb9fbe77327492e62e1dad57dc39fee95",
+          "url": "https://github.com/rolldown/rolldown/commit/071efd83bc24148c4a8aadac287f7c150be0d88d"
+        },
+        "date": 1725519533112,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "358.06",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "571.84",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "947.39",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1353.93",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "125.25",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "189.18",
             "unit": "ms / ops"
           }
         ]
