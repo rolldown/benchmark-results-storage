@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1725599129791,
+  "lastUpdate": 1725626938230,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -39113,6 +39113,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "189.80",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "boshenc@gmail.com",
+            "name": "Boshen",
+            "username": "Boshen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "04deb7fd6b3e744f24b7883238777cc861fab0cc",
+          "message": "chore(rolldown): oxc v0.27.0 (#2168)\n\nTest before publishing a new version.",
+          "timestamp": "2024-09-06T12:33:58Z",
+          "tree_id": "bd3ddeac5796517ce1aa24dd60f5ac8b44e79e23",
+          "url": "https://github.com/rolldown/rolldown/commit/04deb7fd6b3e744f24b7883238777cc861fab0cc"
+        },
+        "date": 1725626938219,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "374.47",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "599.00",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "985.39",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1415.05",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "131.59",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "182.48",
             "unit": "ms / ops"
           }
         ]
