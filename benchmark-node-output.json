@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1725626938230,
+  "lastUpdate": 1725700255444,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -39167,6 +39167,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "182.48",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "f112a124bd29f1e385c6cb28ea84f7eb7f199b72",
+          "message": "fix: deconflict asset file name (#2189)\n\n<!-- Thank you for contributing! -->\n\n### Description\nclose https://github.com/rolldown/rolldown/issues/2183\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-09-07T08:56:44Z",
+          "tree_id": "1f6faf13236d7fc01aff904afeb0ffae387c8849",
+          "url": "https://github.com/rolldown/rolldown/commit/f112a124bd29f1e385c6cb28ea84f7eb7f199b72"
+        },
+        "date": 1725700255432,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "353.87",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "567.08",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "946.98",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1381.51",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "129.07",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "187.38",
             "unit": "ms / ops"
           }
         ]
