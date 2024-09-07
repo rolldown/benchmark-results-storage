@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1725701055545,
+  "lastUpdate": 1725729792894,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -39275,6 +39275,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "185.80",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "afc4825fb4b726598edd9676487cd916f9eb75ca",
+          "message": "refactor: use `builder.void_zero` (#2191)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-09-07T17:09:22Z",
+          "tree_id": "27d0e0fd9f4a8c05dbf45b6ba6ce9f8dc4bb08fa",
+          "url": "https://github.com/rolldown/rolldown/commit/afc4825fb4b726598edd9676487cd916f9eb75ca"
+        },
+        "date": 1725729792883,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "359.67",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "564.80",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "944.45",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1384.01",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "129.37",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "181.23",
             "unit": "ms / ops"
           }
         ]
