@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1725871352782,
+  "lastUpdate": 1725874460310,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -39545,6 +39545,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "185.10",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "49a453a97b60459539b567147025c75c9209db73",
+          "message": "refactor:  remove unnecessary clone (#2195)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-09-09T09:19:59Z",
+          "tree_id": "27df910feefc92b520af3cb8a1bec0fb1b0f596c",
+          "url": "https://github.com/rolldown/rolldown/commit/49a453a97b60459539b567147025c75c9209db73"
+        },
+        "date": 1725874460298,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "368.22",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "578.90",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "952.21",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1368.53",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "127.79",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "185.17",
             "unit": "ms / ops"
           }
         ]
