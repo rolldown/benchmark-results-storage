@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1725865980744,
+  "lastUpdate": 1725867520309,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -39437,6 +39437,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "193.37",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e36915a37423fce39b373d702650c6ad1590ce92",
+          "message": "refactor(rolldown): don't check circular dependency by default (#2193)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-09-09T07:02:12Z",
+          "tree_id": "5c39c1f4dd5fb31c7cddd25ceeed69cc02588f32",
+          "url": "https://github.com/rolldown/rolldown/commit/e36915a37423fce39b373d702650c6ad1590ce92"
+        },
+        "date": 1725867520296,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "388.93",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "598.38",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "999.72",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1415.41",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "130.88",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "199.11",
             "unit": "ms / ops"
           }
         ]
