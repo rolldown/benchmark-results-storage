@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1725865254099,
+  "lastUpdate": 1725865980744,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -39383,6 +39383,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "188.32",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "b110ec32f8c1940f936381e538abece7f5525692",
+          "message": "feat(rust): add `checks` options to control if to emit some warnings (#2192)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-09-09T06:53:55Z",
+          "tree_id": "3c9f17ad66f3953693a5b9c6a5281eaf39087813",
+          "url": "https://github.com/rolldown/rolldown/commit/b110ec32f8c1940f936381e538abece7f5525692"
+        },
+        "date": 1725865980732,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "365.15",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "581.10",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "983.04",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1396.53",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "129.08",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "193.37",
             "unit": "ms / ops"
           }
         ]
