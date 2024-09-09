@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1725871060624,
+  "lastUpdate": 1725871352782,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -39507,44 +39507,44 @@
             "name": "GitHub",
             "username": "web-flow"
           },
-          "distinct": false,
-          "id": "775223864be4d2838cff97fa7b76cb7198adaf87",
-          "message": "fix: make sure asset reference id could be a valid identifier (#2198)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->\n\nclose https://github.com/rolldown/vite/pull/27#discussion_r1746521415\n\nref\nhttps://github.com/rollup/rollup/blob/master/src/utils/FileEmitter.ts#L300",
-          "timestamp": "2024-09-09T08:21:32Z",
-          "tree_id": "3b47da5295c3fd4fc1a077c4ce2ace331a3ff91d",
-          "url": "https://github.com/rolldown/rolldown/commit/775223864be4d2838cff97fa7b76cb7198adaf87"
+          "distinct": true,
+          "id": "648f6888fdff8761b9f6893f40fabcec1bd4c370",
+          "message": "feat: support closeBundle hook (#2197)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->\n\nThe pr intend to support closeBundle hook. It should be called at some\ncase.\n\n- If some error happened, ref\nhttps://github.com/rollup/rollup/blob/master/src/rollup/rollup.ts#L80\n- If `RollupBuild#close` is called, ref\nhttps://github.com/rollup/rollup/blob/master/src/rollup/rollup.ts#L95",
+          "timestamp": "2024-09-09T08:24:22Z",
+          "tree_id": "9ab49c97c4c89ae4ee121a4c9872c15c1a15ef70",
+          "url": "https://github.com/rolldown/rolldown/commit/648f6888fdff8761b9f6893f40fabcec1bd4c370"
         },
-        "date": 1725871060612,
+        "date": 1725871352770,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x (default)",
-            "value": "361.52",
+            "value": "370.08",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap (default)",
-            "value": "566.74",
+            "value": "583.26",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify (default)",
-            "value": "949.04",
+            "value": "961.30",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify-sourcemap (default)",
-            "value": "1372.77",
+            "value": "1391.64",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts (default)",
-            "value": "124.78",
+            "value": "124.49",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts-sourcemap (default)",
-            "value": "187.18",
+            "value": "185.10",
             "unit": "ms / ops"
           }
         ]
