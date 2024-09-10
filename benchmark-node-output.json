@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1725874460310,
+  "lastUpdate": 1725963907690,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -39599,6 +39599,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "185.17",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2a7bab10968c394983dedcca4873108a5f862692",
+          "message": "refactor(app): transform import declaration (#2199)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->\n\nBefore `const { default, a, b: b2 } = __static_import('xxx')` will make\nthe live binding invalid, so here fixed it.",
+          "timestamp": "2024-09-10T10:10:35Z",
+          "tree_id": "981a24a66b6252bbd0d4c36c8dd366dfa3f5dfc5",
+          "url": "https://github.com/rolldown/rolldown/commit/2a7bab10968c394983dedcca4873108a5f862692"
+        },
+        "date": 1725963907677,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "386.25",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "598.57",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "990.81",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1422.22",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "135.37",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "193.97",
             "unit": "ms / ops"
           }
         ]
