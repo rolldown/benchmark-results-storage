@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1725963907690,
+  "lastUpdate": 1725966055880,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -39653,6 +39653,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "193.97",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "34191b86993a0b44adfd88c3b71e7ba6d97b5cc9",
+          "message": "feat(app): add __esModule flag for esm module (#2201)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-09-10T10:47:21Z",
+          "tree_id": "eadb3956dd0228af78b25dc7ab5dd3ed9b13c6c7",
+          "url": "https://github.com/rolldown/rolldown/commit/34191b86993a0b44adfd88c3b71e7ba6d97b5cc9"
+        },
+        "date": 1725966055868,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "367.56",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "575.80",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "958.66",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1429.66",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "127.34",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "187.51",
             "unit": "ms / ops"
           }
         ]
