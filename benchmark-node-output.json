@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1725966055880,
+  "lastUpdate": 1726021958209,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -39707,6 +39707,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "187.51",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "boshenc@gmail.com",
+            "name": "Boshen",
+            "username": "Boshen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "38745660be4c94965069598cde60c864f55148d9",
+          "message": "perf(plugin_replace): set more reasonable number for regex `backtrack_limit` (#2202)\n\nSet `backtrack_limit` for `delimiters` and `lookahead` because they\ncontain backtracking pattern `!?` and `*`.\nCannot set the number too low or it will be ignored by\n`fancy_regex::Error::RuntimeError` in `try_replace`.\nSetting `backtrack_limit` to a large number will cause huge performance\nregression.\nSee\n<https://github.com/fancy-regex/fancy-regex/blob/main/PERFORMANCE.md#fancy-regex>.\n\n---\n\nBefore:\n\n24% program execution time\n\n\n![image](https://github.com/user-attachments/assets/bf1d32d7-c8f9-43e6-9b2f-46ad9120847a)\n\nAfter:\n\nIt's gone \n\n<img width=\"1430\" alt=\"image\"\nsrc=\"https://github.com/user-attachments/assets/bc95b19c-faeb-4b60-9023-3d823827216d\">",
+          "timestamp": "2024-09-11T02:17:13Z",
+          "tree_id": "a9d84efe565109191b289f3733d81adf0bcb7e2f",
+          "url": "https://github.com/rolldown/rolldown/commit/38745660be4c94965069598cde60c864f55148d9"
+        },
+        "date": 1726021958197,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "371.15",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "578.08",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "960.93",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1410.62",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "128.16",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "186.69",
             "unit": "ms / ops"
           }
         ]
