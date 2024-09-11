@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1726061690534,
+  "lastUpdate": 1726066690771,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -40031,6 +40031,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "190.21",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "boshenc@gmail.com",
+            "name": "Boshen",
+            "username": "Boshen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "bc047b55191b1cbdd7d08fcffeb0dfbdc515e90f",
+          "message": "test(rolldown): add shadowed variables cases for inject and define plugins (#2212)\n\ncloses #2203",
+          "timestamp": "2024-09-11T14:42:43Z",
+          "tree_id": "041cc54d75729e632c118fb54fe6dc40c80f9617",
+          "url": "https://github.com/rolldown/rolldown/commit/bc047b55191b1cbdd7d08fcffeb0dfbdc515e90f"
+        },
+        "date": 1726066690759,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "370.87",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "570.86",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "946.26",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1377.30",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "129.89",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "189.97",
             "unit": "ms / ops"
           }
         ]
