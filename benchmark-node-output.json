@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1726137486233,
+  "lastUpdate": 1726148143816,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -40355,6 +40355,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "194.01",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a1ed56af6da7232ae17a8ddea27c9196f9d1a65e",
+          "message": "fix: should use node interop for mjs or type module (#2220)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-09-12T13:20:40Z",
+          "tree_id": "91c2031274b5dc3dbf52fa92e881a1d263813834",
+          "url": "https://github.com/rolldown/rolldown/commit/a1ed56af6da7232ae17a8ddea27c9196f9d1a65e"
+        },
+        "date": 1726148143804,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "385.72",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "600.00",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1009.53",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1436.68",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "131.43",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "187.24",
             "unit": "ms / ops"
           }
         ]
