@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1726150746736,
+  "lastUpdate": 1726153825708,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -40463,6 +40463,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "180.79",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "ca6a4db6a7e10114d3ce702d7c9d25ed8b045fc8",
+          "message": "fix:  use is_reserved_keyword_or_global_object (#2222)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. follow todo, see oxc-project/oxc#4484\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-09-12T14:55:14Z",
+          "tree_id": "71de820d646816851517687ae4be77195d0904b6",
+          "url": "https://github.com/rolldown/rolldown/commit/ca6a4db6a7e10114d3ce702d7c9d25ed8b045fc8"
+        },
+        "date": 1726153825695,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "365.47",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "572.01",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "962.67",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1401.59",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "130.81",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "185.62",
             "unit": "ms / ops"
           }
         ]
