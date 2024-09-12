@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1726066690771,
+  "lastUpdate": 1726128526022,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -40085,6 +40085,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "189.97",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "10c9e4d674d0fc2afbd0f9a17b962b0788a6e2da",
+          "message": "refactor(app): store imports (#2214)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nBecause the `exportAllDecl` will generate two statements, so here using\nstored imports to including them.\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-09-12T07:54:35Z",
+          "tree_id": "11576800fb199baa434731d04fce07e857295083",
+          "url": "https://github.com/rolldown/rolldown/commit/10c9e4d674d0fc2afbd0f9a17b962b0788a6e2da"
+        },
+        "date": 1726128526009,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "361.70",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "574.71",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "951.19",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1361.29",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "125.24",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "188.42",
             "unit": "ms / ops"
           }
         ]
