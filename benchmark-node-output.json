@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1726159810627,
+  "lastUpdate": 1726162086363,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -40625,6 +40625,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "191.76",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3777bfb525ff0a93d308a710078c104946bfabda",
+          "message": "chore(deps): update dependency rust to v1.81.0 (#2180)\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [rust](https://redirect.github.com/rust-lang/rust) | minor | `1.80.1`\n-> `1.81.0` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>rust-lang/rust (rust)</summary>\n\n###\n[`v1.81.0`](https://redirect.github.com/rust-lang/rust/blob/HEAD/RELEASES.md#Version-1810-2024-09-05)\n\n[Compare\nSource](https://redirect.github.com/rust-lang/rust/compare/1.80.1...1.81.0)\n\n\\==========================\n\n<a id=\"1.81.0-Language\"></a>\n\n## Language\n\n- [Abort on uncaught panics in `extern \"C\"`\nfunctions.](https://redirect.github.com/rust-lang/rust/pull/116088/)\n- [Fix ambiguous cases of multiple `&` in elided self\nlifetimes.](https://redirect.github.com/rust-lang/rust/pull/117967/)\n- [Stabilize `#[expect]` for lints (RFC\n2383),](https://redirect.github.com/rust-lang/rust/pull/120924/) like\n`#[allow]` with a warning if the lint is *not* fulfilled.\n- [Change method resolution to constrain hidden types instead of\nrejecting method\ncandidates.](https://redirect.github.com/rust-lang/rust/pull/123962/)\n- [Bump `elided_lifetimes_in_associated_constant` to\ndeny.](https://redirect.github.com/rust-lang/rust/pull/124211/)\n- [`offset_from`: always allow pointers to point to the same\naddress.](https://redirect.github.com/rust-lang/rust/pull/124921/)\n- [Allow constraining opaque types during subtyping in the trait\nsystem.](https://redirect.github.com/rust-lang/rust/pull/125447/)\n- [Allow constraining opaque types during various unsizing\ncasts.](https://redirect.github.com/rust-lang/rust/pull/125610/)\n- [Deny keyword lifetimes\npre-expansion.](https://redirect.github.com/rust-lang/rust/pull/126762/)\n\n<a id=\"1.81.0-Compiler\"></a>\n\n## Compiler\n\n- [Make casts of pointers to trait objects\nstricter.](https://redirect.github.com/rust-lang/rust/pull/120248/)\n- [Check alias args for well-formedness even if they have escaping bound\nvars.](https://redirect.github.com/rust-lang/rust/pull/123737/)\n- [Deprecate no-op codegen option\n`-Cinline-threshold=...`.](https://redirect.github.com/rust-lang/rust/pull/124712/)\n- [Re-implement a type-size based\nlimit.](https://redirect.github.com/rust-lang/rust/pull/125507/)\n- [Properly account for alignment in `transmute` size\nchecks.](https://redirect.github.com/rust-lang/rust/pull/125740/)\n- [Remove the `box_pointers`\nlint.](https://redirect.github.com/rust-lang/rust/pull/126018/)\n- [Ensure the interpreter checks bool/char for validity when they are\nused in a\ncast.](https://redirect.github.com/rust-lang/rust/pull/126265/)\n- [Improve coverage instrumentation for functions containing nested\nitems.](https://redirect.github.com/rust-lang/rust/pull/127199/)\n-   Target changes:\n- [Add Tier 3 `no_std` Xtensa\ntargets:](https://redirect.github.com/rust-lang/rust/pull/125141/)\n`xtensa-esp32-none-elf`, `xtensa-esp32s2-none-elf`,\n`xtensa-esp32s3-none-elf`\n- [Add Tier 3 `std` Xtensa\ntargets:](https://redirect.github.com/rust-lang/rust/pull/126380/)\n`xtensa-esp32-espidf`, `xtensa-esp32s2-espidf`, `xtensa-esp32s3-espidf`\n- [Add Tier 3 i686 Redox OS\ntarget:](https://redirect.github.com/rust-lang/rust/pull/126192/)\n`i686-unknown-redox`\n- [Promote `arm64ec-pc-windows-msvc` to Tier\n2.](https://redirect.github.com/rust-lang/rust/pull/126039/)\n- [Promote `loongarch64-unknown-linux-musl` to Tier 2 with host\ntools.](https://redirect.github.com/rust-lang/rust/pull/126298/)\n- [Enable full tools and profiler for LoongArch Linux\ntargets.](https://redirect.github.com/rust-lang/rust/pull/127078/)\n- [Unconditionally warn on usage of\n`wasm32-wasi`.](https://redirect.github.com/rust-lang/rust/pull/126662/)\n(see compatibility note below)\n- Refer to Rust's \\[platform support page]\\[platform-support-doc] for\nmore information on Rust's tiered platform support.\n\n<a id=\"1.81.0-Libraries\"></a>\n\n## Libraries\n\n- [Split core's `PanicInfo` and std's\n`PanicInfo`.](https://redirect.github.com/rust-lang/rust/pull/115974/)\n(see compatibility note below)\n- [Generalize `{Rc,Arc}::make_mut()` to unsized\ntypes.](https://redirect.github.com/rust-lang/rust/pull/116113/)\n- [Replace sort implementations with stable `driftsort` and unstable\n`ipnsort`.](https://redirect.github.com/rust-lang/rust/pull/124032/) All\n`slice::sort*` and `slice::select_nth*` methods are expected to see\nsignificant performance improvements. See the [research\nproject](https://redirect.github.com/Voultapher/sort-research-rs) for\nmore details.\n- [Document behavior of `create_dir_all` with respect to empty\npaths.](https://redirect.github.com/rust-lang/rust/pull/125112/)\n- [Fix interleaved output in the default panic hook when multiple\nthreads panic\nsimultaneously.](https://redirect.github.com/rust-lang/rust/pull/127397/)\n\n<a id=\"1.81.0-Stabilized-APIs\"></a>\n\n## Stabilized APIs\n\n-\n[`core::error`](https://doc.rust-lang.org/stable/core/error/index.html)\n-\n[`hint::assert_unchecked`](https://doc.rust-lang.org/stable/core/hint/fn.assert_unchecked.html)\n- [`fs::exists`](https://doc.rust-lang.org/stable/std/fs/fn.exists.html)\n-\n[`AtomicBool::fetch_not`](https://doc.rust-lang.org/stable/core/sync/atomic/struct.AtomicBool.html#method.fetch_not)\n-\n[`Duration::abs_diff`](https://doc.rust-lang.org/stable/core/time/struct.Duration.html#method.abs_diff)\n-\n[`IoSlice::advance`](https://doc.rust-lang.org/stable/std/io/struct.IoSlice.html#method.advance)\n-\n[`IoSlice::advance_slices`](https://doc.rust-lang.org/stable/std/io/struct.IoSlice.html#method.advance_slices)\n-\n[`IoSliceMut::advance`](https://doc.rust-lang.org/stable/std/io/struct.IoSliceMut.html#method.advance)\n-\n[`IoSliceMut::advance_slices`](https://doc.rust-lang.org/stable/std/io/struct.IoSliceMut.html#method.advance_slices)\n-\n[`PanicHookInfo`](https://doc.rust-lang.org/stable/std/panic/struct.PanicHookInfo.html)\n-\n[`PanicInfo::message`](https://doc.rust-lang.org/stable/core/panic/struct.PanicInfo.html#method.message)\n-\n[`PanicMessage`](https://doc.rust-lang.org/stable/core/panic/struct.PanicMessage.html)\n\nThese APIs are now stable in const contexts:\n\n-\n[`char::from_u32_unchecked`](https://doc.rust-lang.org/stable/core/char/fn.from_u32\\_unchecked.html)\n(function)\n-\n[`char::from_u32_unchecked`](https://doc.rust-lang.org/stable/core/primitive.char.html#method.from_u32\\_unchecked)\n(method)\n-\n[`CStr::count_bytes`](https://doc.rust-lang.org/stable/core/ffi/c_str/struct.CStr.html#method.count_bytes)\n-\n[`CStr::from_ptr`](https://doc.rust-lang.org/stable/core/ffi/c_str/struct.CStr.html#method.from_ptr)\n\n<a id=\"1.81.0-Cargo\"></a>\n\n## Cargo\n\n- [Generated `.cargo_vcs_info.json` is always included, even when\n`--allow-dirty` is\npassed.](https://redirect.github.com/rust-lang/cargo/pull/13960/)\n- [Disallow `package.license-file` and `package.readme` pointing to\nnon-existent files during\npackaging.](https://redirect.github.com/rust-lang/cargo/pull/13921/)\n- [Disallow passing `--release`/`--debug` flag along with the\n`--profile`\nflag.](https://redirect.github.com/rust-lang/cargo/pull/13971/)\n- [Remove `lib.plugin` key support in `Cargo.toml`. Rust plugin support\nhas been deprecated for four years and was removed in\n1.75.0.](https://redirect.github.com/rust-lang/cargo/pull/13902/)\n\n<a id=\"1.81.0-Compatibility-Notes\"></a>\n\n## Compatibility Notes\n\n- Usage of the `wasm32-wasi` target will now issue a compiler warning\nand request users switch to the `wasm32-wasip1` target instead. Both\ntargets are the same, `wasm32-wasi` is only being renamed, and this\n[change to the WASI\ntarget](https://blog.rust-lang.org/2024/04/09/updates-to-rusts-wasi-targets.html)\nis being done to enable removing `wasm32-wasi` in January 2025.\n\n- We have renamed `std::panic::PanicInfo` to\n`std::panic::PanicHookInfo`. The old name will continue to work as an\nalias, but will result in a deprecation warning starting in Rust 1.82.0.\n\n`core::panic::PanicInfo` will remain unchanged, however, as this is now\na *different type*.\n\nThe reason is that these types have different roles:\n`std::panic::PanicHookInfo` is the argument to the [panic\nhook](https://doc.rust-lang.org/stable/std/panic/fn.set_hook.html) in\nstd context (where panics can have an arbitrary payload), while\n`core::panic::PanicInfo` is the argument to the\n[`#[panic_handler]`](https://doc.rust-lang.org/nomicon/panic-handler.html)\nin no_std context (where panics always carry a formatted *message*).\nSeparating these types allows us to add more useful methods to these\ntypes, such as `std::panic::PanicHookInfo::payload_as_str()` and\n`core::panic::PanicInfo::message()`.\n\n- The new sort implementations may panic if a type's implementation of\n[`Ord`](https://doc.rust-lang.org/std/cmp/trait.Ord.html) (or the given\ncomparison function) does not implement a [total\norder](https://en.wikipedia.org/wiki/Total_order) as the trait requires.\n`Ord`'s supertraits (`PartialOrd`, `Eq`, and `PartialEq`) must also be\nconsistent. The previous implementations would not \"notice\" any problem,\nbut the new implementations have a good chance of detecting\ninconsistencies, throwing a panic rather than returning knowingly\nunsorted data.\n\n- [In very rare cases, a change in the internal evaluation order of the\ntrait\nsolver may result in new fatal overflow\nerrors.](https://redirect.github.com/rust-lang/rust/pull/126128)\n\n<a id=\"1.81.0-Internal-Changes\"></a>\n\n## Internal Changes\n\nThese changes do not affect any public interfaces of Rust, but they\nrepresent\nsignificant improvements to the performance or internals of rustc and\nrelated\ntools.\n\n- [Add a Rust-for Linux `auto` CI job to check kernel\nbuilds.](https://redirect.github.com/rust-lang/rust/pull/125209/)\n\n</details>\n\n---\n\n### Configuration\n\n📅 **Schedule**: Branch creation - At any time (no schedule defined),\nAutomerge - At any time (no schedule defined).\n\n🚦 **Automerge**: Enabled.\n\n♻ **Rebasing**: Whenever PR is behind base branch, or you tick the\nrebase/retry checkbox.\n\n🔕 **Ignore**: Close this PR and you won't be reminded about this update\nagain.\n\n---\n\n- [ ] <!-- rebase-check -->If you want to rebase/retry this PR, check\nthis box\n\n---\n\nThis PR was generated by [Mend Renovate](https://mend.io/renovate/).\nView the [repository job\nlog](https://developer.mend.io/github/rolldown/rolldown).\n\n<!--renovate-debug:eyJjcmVhdGVkSW5WZXIiOiIzOC41OS4yIiwidXBkYXRlZEluVmVyIjoiMzguNTkuMiIsInRhcmdldEJyYW5jaCI6Im1haW4iLCJsYWJlbHMiOltdfQ==-->\n\n---------\n\nCo-authored-by: LongYinan <lynweklm@gmail.com>\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>\nCo-authored-by: Boshen <boshenc@gmail.com>",
+          "timestamp": "2024-09-12T17:14:27Z",
+          "tree_id": "960806fe67ee74cbd36f0e988922e3e4eed7f8af",
+          "url": "https://github.com/rolldown/rolldown/commit/3777bfb525ff0a93d308a710078c104946bfabda"
+        },
+        "date": 1726162086351,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "366.66",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "566.12",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "949.52",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1374.69",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "125.85",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "181.88",
             "unit": "ms / ops"
           }
         ]
