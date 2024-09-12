@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1726128526022,
+  "lastUpdate": 1726129730657,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -40139,6 +40139,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "188.42",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f93a551a67e4d1c7e6d11ab03bc6b6e95c3ca09c",
+          "message": "chore: remove redundant field in `importAnalysisPlugin` (#2216)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-09-12T08:07:05Z",
+          "tree_id": "1bbe908f32986f208fc959aa8c5ded48e1d2813e",
+          "url": "https://github.com/rolldown/rolldown/commit/f93a551a67e4d1c7e6d11ab03bc6b6e95c3ca09c"
+        },
+        "date": 1726129730643,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "381.62",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "601.22",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1005.52",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1438.15",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "140.19",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "195.24",
             "unit": "ms / ops"
           }
         ]
