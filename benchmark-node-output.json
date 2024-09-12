@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1726154536027,
+  "lastUpdate": 1726159810627,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -40571,6 +40571,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "198.71",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "lynweklm@gmail.com",
+            "name": "LongYinan",
+            "username": "Brooooooklyn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5ab3c7fb552e1d3b651d886702c7321c5b827dfe",
+          "message": "chore: upgrade napi version to fix cargo test on Win (#2223)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-09-12T16:35:46Z",
+          "tree_id": "fcf23b016d7ed1fd561db981ff050c221ef440a3",
+          "url": "https://github.com/rolldown/rolldown/commit/5ab3c7fb552e1d3b651d886702c7321c5b827dfe"
+        },
+        "date": 1726159810614,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "371.17",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "583.99",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "963.15",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1386.54",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "133.02",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "191.76",
             "unit": "ms / ops"
           }
         ]
