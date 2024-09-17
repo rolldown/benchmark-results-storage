@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1726578474847,
+  "lastUpdate": 1726579640149,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -41219,6 +41219,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "185.50",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7952415703b824224c60624e8ce84da3776a722f",
+          "message": "feat(rust): add `CssView` (#2248)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nI haven't though it throug, but `View` is basically a rough concept to\nrepresent that a module could be js, css and html module in the same\ntime.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-09-17T13:02:13Z",
+          "tree_id": "38877f99284703baa1675170fabd030b55c4fb0f",
+          "url": "https://github.com/rolldown/rolldown/commit/7952415703b824224c60624e8ce84da3776a722f"
+        },
+        "date": 1726579640136,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "370.91",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "586.51",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "987.31",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1406.91",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "124.90",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "187.25",
             "unit": "ms / ops"
           }
         ]
