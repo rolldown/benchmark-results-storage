@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1726308913312,
+  "lastUpdate": 1726556734895,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -41003,6 +41003,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "183.62",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ylei.mk@gmail.com",
+            "name": "ikkz",
+            "username": "ikkz"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "d1c7d04c551bd1cfdf261ff39293e310a0bb5417",
+          "message": "refactor(rust/napi): prefer using `Either<String, ThreadSafeFunction >` (#2240)\n\n`ThreadSafeFunction` can be used in `Either` after this\n[version](https://github.com/napi-rs/napi-rs/releases/tag/napi%403.0.0-alpha.9)\n. This pull request uses this feature to prevent passing env\nto`normalize_binding_options`.",
+          "timestamp": "2024-09-17T06:51:23Z",
+          "tree_id": "1f0e8360e7d7a2ca51cfff80674a24683510e169",
+          "url": "https://github.com/rolldown/rolldown/commit/d1c7d04c551bd1cfdf261ff39293e310a0bb5417"
+        },
+        "date": 1726556734881,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "372.12",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "582.94",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1000.29",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1424.27",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "130.07",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "188.95",
             "unit": "ms / ops"
           }
         ]
