@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1726557322972,
+  "lastUpdate": 1726566678123,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -41111,6 +41111,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "183.34",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "dab103ff12538a3f23ecbd94d939568a22bf6d24",
+          "message": "refactor:  remove unncecessary ts type import (#2249)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. see https://github.com/oxc-project/oxc/pull/5737 for more details.\n2. Reduce verbose ts ast node imports.\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-09-17T09:36:46Z",
+          "tree_id": "7dc55be087f76b9769d6c469a7a598e7810f08f1",
+          "url": "https://github.com/rolldown/rolldown/commit/dab103ff12538a3f23ecbd94d939568a22bf6d24"
+        },
+        "date": 1726566678110,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "374.54",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "586.27",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "989.50",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1413.92",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "125.98",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "187.56",
             "unit": "ms / ops"
           }
         ]
