@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1726731128761,
+  "lastUpdate": 1726755129529,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -41651,6 +41651,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "188.85",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ff62f77363600c181f1ea1afb08c89cb71cfcdea",
+          "message": "fix: alias plugin resolve should relative to `cwd` rather `importer`  (#2262)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. see\nhttps://stackblitz.com/edit/vitejs-vite-hts67j?file=vite.config.js,src%2Fhello.ts,src%2Findex.ts\nas an example\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-09-19T13:58:51Z",
+          "tree_id": "9138285d4bcf1f5cc135f6707d87c07bfde9df7e",
+          "url": "https://github.com/rolldown/rolldown/commit/ff62f77363600c181f1ea1afb08c89cb71cfcdea"
+        },
+        "date": 1726755129516,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "366.44",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "560.27",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "963.19",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1391.32",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "127.14",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "182.97",
             "unit": "ms / ops"
           }
         ]
