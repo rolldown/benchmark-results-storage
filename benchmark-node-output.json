@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1726715093356,
+  "lastUpdate": 1726731128761,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -41597,6 +41597,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "182.52",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "df113d5d5ea827f8762f2b8c7e70e1b156c93f6c",
+          "message": "fix:  module preload-polyfill plugin only intercept `RESOLVED_MODULE_PRELOAD_POLYFILL_ID` (#2261)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-09-19T07:17:42Z",
+          "tree_id": "d8c4704f07f5fce8fe1d9b61915b58f2ee94d89c",
+          "url": "https://github.com/rolldown/rolldown/commit/df113d5d5ea827f8762f2b8c7e70e1b156c93f6c"
+        },
+        "date": 1726731128748,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "376.66",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "579.40",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "991.95",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1408.81",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "128.04",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "188.85",
             "unit": "ms / ops"
           }
         ]
