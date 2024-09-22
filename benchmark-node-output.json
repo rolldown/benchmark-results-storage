@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1727023113844,
+  "lastUpdate": 1727024325901,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -42029,6 +42029,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "182.78",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c5d117bfe87210fe2cd2a09a08ceee700da3d995",
+          "message": "chore: esbuild diff tool (#2278)\n\n<!-- Thank you for contributing! -->\n\n## Description\n1. this is esbuild diff tool part one, only compare snapshots between\n`esbuild` and `rolldown`, and generate corresponding `${category}.md`,\nit will considering all diff as failed for now.\n2. you could ignore `esbuild-snapshots/**` it is copy from `esbuild`\nrepo.\n### TODO\n1. ast rewrite tool, rewrite known issues that did not affect\nsemantic(like will convert `console.log(xxx)` to `assert(xxx, 11`), etc\n3. custom bypass tool, some diff don't have patterns that need to be\nbypassed manually.\n4. Generate diff for each testcase.\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-09-22T16:44:09Z",
+          "tree_id": "ce6122cd9e865c8c00f1ac72562f36d85b5913e0",
+          "url": "https://github.com/rolldown/rolldown/commit/c5d117bfe87210fe2cd2a09a08ceee700da3d995"
+        },
+        "date": 1727024325887,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "378.46",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "579.70",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "973.77",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1399.02",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "128.77",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "188.12",
             "unit": "ms / ops"
           }
         ]
