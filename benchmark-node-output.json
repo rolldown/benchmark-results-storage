@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1727010737895,
+  "lastUpdate": 1727021705923,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -41921,6 +41921,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "189.63",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "bb4ff52a7c76353428bdfbc197d6e866fa242c1d",
+          "message": "refactor(rust): wrap ecma-related fields (#2275)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nWe need to mark `ecma_view` optional in the future, so we need to move\nall related fields to `ecma_view` first.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-09-22T16:01:18Z",
+          "tree_id": "37edb1149ddbb9b23cd6983440ec72e68ecb5c0d",
+          "url": "https://github.com/rolldown/rolldown/commit/bb4ff52a7c76353428bdfbc197d6e866fa242c1d"
+        },
+        "date": 1727021705910,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "388.75",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "595.06",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1061.38",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1503.94",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "132.22",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "191.23",
             "unit": "ms / ops"
           }
         ]
