@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1727021705923,
+  "lastUpdate": 1727023113844,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -41975,6 +41975,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "191.23",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fb639e49c8e013abb241dbd7682f5145659bcfba",
+          "message": "chore(rust): change `EcmaModule` to `NormalModule` (#2276)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nDue to the responsibility changed, `NormalModule` is more proper than\n`EcmaModule`.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-09-22T16:23:41Z",
+          "tree_id": "1df51533f5a7df642366b21d636aecf3111c1e05",
+          "url": "https://github.com/rolldown/rolldown/commit/fb639e49c8e013abb241dbd7682f5145659bcfba"
+        },
+        "date": 1727023113831,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "376.23",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "571.74",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "975.43",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1395.43",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "126.92",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "182.78",
             "unit": "ms / ops"
           }
         ]
