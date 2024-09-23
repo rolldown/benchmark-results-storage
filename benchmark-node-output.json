@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1727086694820,
+  "lastUpdate": 1727088050513,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -42245,6 +42245,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "190.96",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c85538e8044a69c2c29a52b9b8c355af5369fc64",
+          "message": "feat(cjs/output): generate proper property access pattern for exports (#2283)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-09-23T10:26:25Z",
+          "tree_id": "61327f34f23766996f17b1410e7cd28f864779ae",
+          "url": "https://github.com/rolldown/rolldown/commit/c85538e8044a69c2c29a52b9b8c355af5369fc64"
+        },
+        "date": 1727088050500,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "376.37",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "574.54",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "976.63",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1411.44",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "127.42",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "183.50",
             "unit": "ms / ops"
           }
         ]
