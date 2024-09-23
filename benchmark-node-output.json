@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1727095082505,
+  "lastUpdate": 1727128917951,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -42407,6 +42407,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "191.31",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "inottn@outlook.com",
+            "name": "inottn",
+            "username": "inottn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "351d2c77e8b554d9b55b98b71eacc656e6d91a12",
+          "message": "fix: resolve with cwd when context is empty string (#2080)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nfix #2067\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->\n\n---------\n\nCo-authored-by: Yunfei <i.heyunfei@gmail.com>",
+          "timestamp": "2024-09-23T21:47:14Z",
+          "tree_id": "233ed72b106cf9349b8f93e1f164b6d44cd3b30b",
+          "url": "https://github.com/rolldown/rolldown/commit/351d2c77e8b554d9b55b98b71eacc656e6d91a12"
+        },
+        "date": 1727128917935,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "398.36",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "611.62",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1079.20",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1525.94",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "139.07",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "206.51",
             "unit": "ms / ops"
           }
         ]
