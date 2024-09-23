@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1727075611117,
+  "lastUpdate": 1727086694820,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -42191,6 +42191,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "187.52",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c56991c0a1ea8fec5c2e6de3c1b5496ebbd6f486",
+          "message": "feat(node/experimental): add `disableLiveBindings` option (#2282)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-09-23T10:03:54Z",
+          "tree_id": "ef03a125fe39c225ad17a6f0172617688c5679cc",
+          "url": "https://github.com/rolldown/rolldown/commit/c56991c0a1ea8fec5c2e6de3c1b5496ebbd6f486"
+        },
+        "date": 1727086694806,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "385.75",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "597.46",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1040.28",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1468.92",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "131.34",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "190.96",
             "unit": "ms / ops"
           }
         ]
