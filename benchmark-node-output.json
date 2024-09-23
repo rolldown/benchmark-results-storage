@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1727088050513,
+  "lastUpdate": 1727090267196,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -42299,6 +42299,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "183.50",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b556e7715eac0bf1d30caf2fd83ecf8ae6d65b3a",
+          "message": "chore(esbuild_diff): update diff for each testcase (#2284)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. basic diff generation, needs more ast rewite, and bypass.\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-09-23T11:03:00Z",
+          "tree_id": "c6590a5b2b2302a95bb0baea9e8924a840df7196",
+          "url": "https://github.com/rolldown/rolldown/commit/b556e7715eac0bf1d30caf2fd83ecf8ae6d65b3a"
+        },
+        "date": 1727090267183,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "371.08",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "566.49",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "972.38",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1389.52",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "128.62",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "183.22",
             "unit": "ms / ops"
           }
         ]
