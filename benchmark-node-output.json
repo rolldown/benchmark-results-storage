@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1727175982343,
+  "lastUpdate": 1727177549439,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -42839,6 +42839,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "192.67",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "71d16fe8998381cb713ae98c509f2351dff9edd5",
+          "message": "fix:  load fallback plugin related issues (#2309)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. Fixed #2301 \n2. Fixed #2302\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-09-24T10:58:01Z",
+          "tree_id": "3d3b0f978a765650b4152fbcf45f744e4de9d97a",
+          "url": "https://github.com/rolldown/rolldown/commit/71d16fe8998381cb713ae98c509f2351dff9edd5"
+        },
+        "date": 1727177549425,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "398.78",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "601.86",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1071.57",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1488.75",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "137.03",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "192.52",
             "unit": "ms / ops"
           }
         ]
