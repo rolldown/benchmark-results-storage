@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1727175530130,
+  "lastUpdate": 1727175982343,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -42785,6 +42785,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "190.71",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "7086cmd@gmail.com",
+            "name": "Ethan Goh",
+            "username": "7086cmd"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "6e695339c1b6cb95033e1c6a3ce1948e68c1a03e",
+          "message": "fix: should trim in data url. (#2310)\n\nresolves #2300.",
+          "timestamp": "2024-09-24T10:45:08Z",
+          "tree_id": "72a7db950429c3f3b2b020b93f79c58b647cc2ac",
+          "url": "https://github.com/rolldown/rolldown/commit/6e695339c1b6cb95033e1c6a3ce1948e68c1a03e"
+        },
+        "date": 1727175982329,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "389.57",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "599.55",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1050.72",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1486.19",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "137.17",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "192.67",
             "unit": "ms / ops"
           }
         ]
