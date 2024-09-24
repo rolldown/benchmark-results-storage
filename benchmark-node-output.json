@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1727128917951,
+  "lastUpdate": 1727151821269,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -42461,6 +42461,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "206.51",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5815228d976a396b5ee02f27a65b0a543d0b206e",
+          "message": "fix:  remove none relative path alias replacement (#2289)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. Close #2288 \n2. Both webpack and rollup don't support none relative path alias\nreplacement by default\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-09-24T04:09:31Z",
+          "tree_id": "cb0ca94577b81e0c46d6909ff1f4fccd80fadb3d",
+          "url": "https://github.com/rolldown/rolldown/commit/5815228d976a396b5ee02f27a65b0a543d0b206e"
+        },
+        "date": 1727151821256,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "372.09",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "583.39",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "989.86",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1403.66",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "128.42",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "186.79",
             "unit": "ms / ops"
           }
         ]
