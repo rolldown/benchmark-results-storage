@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1727171050947,
+  "lastUpdate": 1727171418335,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -42677,6 +42677,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "199.41",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "50fa28433a4cf72d5f112499246ea4d0e37cbe83",
+          "message": "fix: `PluginContext#resolve` should care about `InputOptions#external` (#2307)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nclose https://github.com/rolldown/rolldown/issues/2071\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-09-24T09:34:17Z",
+          "tree_id": "34417f7d9c63bd26d6ea937ea56a6b07ae9e05f6",
+          "url": "https://github.com/rolldown/rolldown/commit/50fa28433a4cf72d5f112499246ea4d0e37cbe83"
+        },
+        "date": 1727171418322,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "372.65",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "569.11",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1003.38",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1426.97",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "128.71",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "185.64",
             "unit": "ms / ops"
           }
         ]
