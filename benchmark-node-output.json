@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1727284018972,
+  "lastUpdate": 1727285736064,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -43325,6 +43325,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "190.05",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "theoverlookmotel@gmail.com",
+            "name": "overlookmotel",
+            "username": "overlookmotel"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "84cb2a2e6aa4d7202aa6382a9fc0d0d188100cd4",
+          "message": "perf(plugin/replace): `expand_typeof_replacements` avoid temporary vecs (#2321)\n\n### Description\n\nPure refactor. Avoid temporary `Vec`s in `expand_typeof_replacements`.\n\nAlso avoid a pointless conversion of `Vec` to `HashMap` when that\n`HashMap` is immediately converted back to an iterator in the caller\nanyway.",
+          "timestamp": "2024-09-25T17:17:47Z",
+          "tree_id": "037f38de39da7242e8beaa9fdae6f15a2d0aa1b9",
+          "url": "https://github.com/rolldown/rolldown/commit/84cb2a2e6aa4d7202aa6382a9fc0d0d188100cd4"
+        },
+        "date": 1727285736051,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "386.85",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "595.35",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1058.27",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1481.12",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "131.12",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "189.18",
             "unit": "ms / ops"
           }
         ]
