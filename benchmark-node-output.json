@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1727285736064,
+  "lastUpdate": 1727287168508,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -43379,6 +43379,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "189.18",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "theoverlookmotel@gmail.com",
+            "name": "overlookmotel",
+            "username": "overlookmotel"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3899128e9d50b6d9dcfe5c49c203ce6cb7f611df",
+          "message": "fix(plugin/replace): fix `object_guards` option (#2322)\n\n### Description\n\n\n[@rollup/plugin-replace](https://www.npmjs.com/package/@rollup/plugin-replace)'s\ndocs give this example for `objectGuards` option:\n\n```js\nreplace({\n  values: {\n    'process.env.NODE_ENV': '\"production\"'\n  }\n});\n```\n```js\n// Input\nif (typeof process !== 'undefined' && process.env.NODE_ENV === 'production') {\n  console.log('production');\n}\n// Without `objectGuards`\nif (typeof process !== 'undefined' && 'production' === 'production') {\n  console.log('production');\n}\n// With `objectGuards`\nif ('object' !== 'undefined' && 'production' === 'production') {\n  console.log('production');\n}\n```\n\nRolldown's version was not following this behavior. The example above\nwas transformed to:\n\n```js\nif (typeof process !== \"undefined\" && true) {\n  console.log(\"production\");\n}\n```\n\nThis PR fixes that. The implementation now is almost identical to\n[Rollup's\nimplementation](https://github.com/rollup/plugins/blob/master/packages/replace/src/index.js).",
+          "timestamp": "2024-09-25T17:43:46Z",
+          "tree_id": "6f9ffa236db5b2e94607753c44b3c9ae3ebcc70d",
+          "url": "https://github.com/rolldown/rolldown/commit/3899128e9d50b6d9dcfe5c49c203ce6cb7f611df"
+        },
+        "date": 1727287168494,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "370.82",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "574.30",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1004.88",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1423.58",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "128.85",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "184.67",
             "unit": "ms / ops"
           }
         ]
