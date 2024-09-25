@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1727198643102,
+  "lastUpdate": 1727232010774,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -43055,6 +43055,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "188.42",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "17fefa4b32db05ea05bad02b6192df61c5ff7efa",
+          "message": "fix: glob import plugin support `./**.js` syntax (#2313)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. Closed #2298\n2. crate `glob` did not support this syntax, so did some hack\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-09-25T02:25:07Z",
+          "tree_id": "c5b8f15d0e4738606a580df233a54addf798917d",
+          "url": "https://github.com/rolldown/rolldown/commit/17fefa4b32db05ea05bad02b6192df61c5ff7efa"
+        },
+        "date": 1727232010761,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "368.37",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "570.51",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1013.79",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1432.72",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "128.97",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "186.95",
             "unit": "ms / ops"
           }
         ]
