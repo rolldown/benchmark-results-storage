@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1727232010774,
+  "lastUpdate": 1727233745770,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -43109,6 +43109,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "186.95",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "green@sapphi.red",
+            "name": "翠 / green",
+            "username": "sapphi-red"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "824315d5b242e46fa7ffee226735d84f641c737e",
+          "message": "fix: extend PluginContext with MinimalPluginContext (#2316)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nrollup's `PluginContext` type extends `MinimalPluginContext` type.\n\nhttps://github.com/rollup/rollup/blob/89a68c2a69eefaaf5544f83367f31d98360354ed/src/rollup/types.d.ts#L237\nVite's type augmentation relies on that fact.\n\nhttps://github.com/vitejs/vite/blob/08ff23319964903b9f380859c216b10e577ddb6f/packages/vite/src/node/plugin.ts#L81-L84\nBut rolldown's `PluginContext` type was not extending\n`MinimalPluginContext` type and the type augmentation was not working.\n\nThis PR makes `PluginContext` type to extend `MinimalPluginContext` type\nto improve compat.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-09-25T02:54:33Z",
+          "tree_id": "28db71eacbff5480e3d61e4950a183f044fdf703",
+          "url": "https://github.com/rolldown/rolldown/commit/824315d5b242e46fa7ffee226735d84f641c737e"
+        },
+        "date": 1727233745757,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "386.34",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "588.11",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1041.94",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1450.63",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "129.70",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "182.64",
             "unit": "ms / ops"
           }
         ]
