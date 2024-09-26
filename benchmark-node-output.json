@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1727337651524,
+  "lastUpdate": 1727341334390,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -43757,6 +43757,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "205.53",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "377883931b5f36f96a624024b9f39f7a5d4a7c39",
+          "message": "fix:  dicable dce when disable tree shake (#2335)\n\n<!-- Thank you for contributing! -->\n\n### Description\nIt would be better to disable DCE for this test, so can see the actual\noutput from replace plugin, but I couldn't figure our how to do that. In\nRollup, `treeshake: false` does that, but `treeshake:\nTreeshakeOptions::Boolean(false)` seemed to have no effect.\n\n_Originally posted by @overlookmotel in\nhttps://github.com/rolldown/rolldown/pull/2322#discussion_r1775296379_\n            \n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-09-26T08:47:42Z",
+          "tree_id": "4462e48bfd7fb7d1a29354316adc929a1ad47b08",
+          "url": "https://github.com/rolldown/rolldown/commit/377883931b5f36f96a624024b9f39f7a5d4a7c39"
+        },
+        "date": 1727341334378,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "369.68",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "575.19",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1017.10",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1455.22",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "126.94",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "180.90",
             "unit": "ms / ops"
           }
         ]
