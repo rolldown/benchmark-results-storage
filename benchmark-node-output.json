@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1727342943047,
+  "lastUpdate": 1727420439440,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -43865,6 +43865,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "186.86",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4cb3717f10dfb3f4dda273106b01720e202f6b04",
+          "message": "chore(esbuild-diff): bypass esbuild diff.md (#2343)\n\n<!-- Thank you for contributing! -->\r\n\r\n### Description\r\n1. add bypass mechanism to bypass some test case that semantic and\r\nruntime behavior same as esbuild, but it's impossible to ignore noise\r\nlike\r\n- deconflict order, we starts with `root` and esbuild starts with `leaf`\r\nmodule\r\n- esbuild cjs interop can't be recognized by cjs-module-lexer, our impl\r\nis compatible with it.\r\n<!-- Please insert your description here and provide especially info\r\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-09-27T14:54:52+08:00",
+          "tree_id": "028529e1906b3dd3803ff589bc787443af7a79e3",
+          "url": "https://github.com/rolldown/rolldown/commit/4cb3717f10dfb3f4dda273106b01720e202f6b04"
+        },
+        "date": 1727420439426,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "384.70",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "583.68",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1070.18",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1491.75",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "132.29",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "187.03",
             "unit": "ms / ops"
           }
         ]
