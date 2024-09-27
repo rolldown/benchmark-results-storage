@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1727420439440,
+  "lastUpdate": 1727426379172,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -43919,6 +43919,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "187.03",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "523b7713bd862e7b607759ad752dac884290639d",
+          "message": "chore(esbuild-diff): enable disabled tests (#2341)\n\n<!-- Thank you for contributing! -->\r\n\r\n### Description\r\n1. enable tests that prefix with `.` in importstar\r\n<!-- Please insert your description here and provide especially info\r\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-09-27T16:33:29+08:00",
+          "tree_id": "f338dc244bee54f8d42e3484171b4698b94cff42",
+          "url": "https://github.com/rolldown/rolldown/commit/523b7713bd862e7b607759ad752dac884290639d"
+        },
+        "date": 1727426379158,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "378.61",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "578.18",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1026.87",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1434.62",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "128.02",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "183.59",
             "unit": "ms / ops"
           }
         ]
