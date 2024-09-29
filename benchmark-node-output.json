@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1727582058457,
+  "lastUpdate": 1727595972449,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -44135,6 +44135,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "180.15",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "70ef2057aa1b67a3ab9a2a1cd51e988e340172ca",
+          "message": "fix(app): create variable default for export defualt expr (#2354)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-09-29T07:31:08Z",
+          "tree_id": "c804d71f8501ec3cf46b049420523ce516cbd4d0",
+          "url": "https://github.com/rolldown/rolldown/commit/70ef2057aa1b67a3ab9a2a1cd51e988e340172ca"
+        },
+        "date": 1727595972434,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "391.93",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "593.08",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1072.37",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1489.71",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "135.29",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "190.23",
             "unit": "ms / ops"
           }
         ]
