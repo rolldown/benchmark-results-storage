@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1727751164336,
+  "lastUpdate": 1727762918914,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -44567,6 +44567,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "187.43",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9a0db67ff95bada803d7352f0c658aeb62bc2dd2",
+          "message": "chore(deps): update rust crates (#2360)\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [append-only-vec](https://redirect.github.com/droundy/append-only-vec)\n| workspace.dependencies | patch | `0.1.5` -> `0.1.6` |\n| [async-trait](https://redirect.github.com/dtolnay/async-trait) |\nworkspace.dependencies | patch | `0.1.82` -> `0.1.83` |\n| [jsonschema](https://redirect.github.com/Stranger6667/jsonschema-rs) |\nworkspace.dependencies | minor | `0.19.0` -> `0.21.0` |\n| [regex](https://redirect.github.com/rust-lang/regex) |\nworkspace.dependencies | minor | `1.10.6` -> `1.11.0` |\n| [simdutf8](https://redirect.github.com/rusticstuff/simdutf8) |\nworkspace.dependencies | patch | `0.1.4` -> `0.1.5` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>dtolnay/async-trait (async-trait)</summary>\n\n###\n[`v0.1.83`](https://redirect.github.com/dtolnay/async-trait/releases/tag/0.1.83)\n\n[Compare\nSource](https://redirect.github.com/dtolnay/async-trait/compare/0.1.82...0.1.83)\n\n- Prevent needless_arbitrary_self_type lint being produced in generated\ncode\n([#&#8203;278](https://redirect.github.com/dtolnay/async-trait/issues/278))\n\n</details>\n\n<details>\n<summary>Stranger6667/jsonschema-rs (jsonschema)</summary>\n\n###\n[`v0.21.0`](https://redirect.github.com/Stranger6667/jsonschema-rs/blob/HEAD/CHANGELOG.md#0210---2024-09-29)\n\n**Important:** This release brings a complete rework of reference\nresolving which deprecates some older APIs.\nWhile backward compatibility is maintained for now, users are encouraged\nto update their code. See the [Migration Guide](MIGRATION.md) for\ndetails on transitioning to the new API.\n\n##### Added\n\n-   `$anchor` support.\n-   `$recursiveRef` & `$recursiveAnchor` support in Draft 2019-09.\n-   `$dynamicRef` & `$dynamicAnchor` support in Draft 2020-12.\n\n##### Changed\n\n- **BREAKING**: Treat `$ref` as URI, not URL and additionally normalize\nthem.\n[#&#8203;454](https://redirect.github.com/Stranger6667/jsonschema-rs/issues/454)\n-   **BREAKING**: Resolve all non-recursive references eagerly.\n- **BREAKING**: Disallow use of fragments in `$id`.\n[#&#8203;264](https://redirect.github.com/Stranger6667/jsonschema-rs/issues/264)\n\n##### Deprecated\n\n- `SchemaResolver` trait and `SchemaResolverError` in favor of a simpler\n`Retrieve` that works with `Box<dyn std::error::Error>`.\nIn turn, it also deprecates `ValidationOptions::with_resolver` in favor\nof `ValidationOptions::with_retriever`\n- `ValidationOptions::with_document` in favor of\n`ValidationOptions::with_resource`.\n\n##### Fixed\n\n- Infinite recursion in `unevaluatedProperties`.\n[#&#8203;420](https://redirect.github.com/Stranger6667/jsonschema-rs/issues/420)\n-   Cross-draft validation from newer to older ones.\n-   Changing base URI in folder.\n-   Location-independent identifier in remote resource.\n-   Missing some format validation for Draft 2020-12.\n-   Incomplete `iri` & `iri-reference` validation.\n\n##### Performance\n\n- Faster validation for `uri`, `iri`, `uri-reference`, and\n`iri-reference` formats.\n\n###\n[`v0.20.0`](https://redirect.github.com/Stranger6667/jsonschema-rs/blob/HEAD/CHANGELOG.md#0200---2024-09-18)\n\n**Important:** This release includes several deprecations and renames.\nWhile backward compatibility is maintained for now, users are encouraged\nto update their code. See the [Migration Guide](MIGRATION.md) for\ndetails on transitioning to the new API.\n\n##### Added\n\n-   New draft-specific modules for easier version-targeted validation:\n    -   `jsonschema::draft4`\n    -   `jsonschema::draft6`\n    -   `jsonschema::draft7`\n    -   `jsonschema::draft201909`\n    -   `jsonschema::draft202012`\nEach module provides `new()`, `is_valid()`, and `options()` functions.\n- `jsonschema::options()` function as a shortcut for\n`jsonschema::Validator::options()`, that allows for customization of the\nvalidation process.\n\n##### Changed\n\n-   Make `Debug` implementation for `SchemaNode` opaque.\n- Make `jsonschema::validator_for` and related functions return\n`ValidationError<'static>` in their `Err` variant.\nThis change makes possible to use the `?` operator to return errors from\nfunctions where the input schema is defined.\n\n##### Deprecated\n\n-   Rename `CompilationOptions` to `ValidationOptions` for clarity.\n- Rename `JSONSchema` to `Validator` for clarity.\n[#&#8203;424](https://redirect.github.com/Stranger6667/jsonschema-rs/issues/424)\n- Rename `JSONPointer` to `JsonPointer` for consistency with naming\nconventions.\n[#&#8203;424](https://redirect.github.com/Stranger6667/jsonschema-rs/issues/424)\n-   Rename `jsonschema::compile` to `jsonschema::validator_for`.\n-   Rename `CompilationOptions::compile` to `ValidationOptions::build`.\n\nOld names are retained for backward compatibility but will be removed in\na future release.\n\n##### Fixed\n\n- Location-independent references in remote schemas on drafts 4, 6, and\n7.\n\n</details>\n\n<details>\n<summary>rust-lang/regex (regex)</summary>\n\n###\n[`v1.11.0`](https://redirect.github.com/rust-lang/regex/blob/HEAD/CHANGELOG.md#1110-2024-09-29)\n\n[Compare\nSource](https://redirect.github.com/rust-lang/regex/compare/1.10.6...1.11.0)\n\n\\===================\nThis is a new minor release of `regex` that brings in an update to the\nUnicode Character Database. Specifically, this updates the Unicode data\nused by `regex` internally to the version 16 release.\n\nNew features:\n\n- [FEATURE\n#&#8203;1228](https://redirect.github.com/rust-lang/regex/pull/1228):\n    Add new `regex::SetMatches::matched_all` method.\n- [FEATURE\n#&#8203;1229](https://redirect.github.com/rust-lang/regex/pull/1229):\n    Update to Unicode Character Database (UCD) version 16.\n\n</details>\n\n<details>\n<summary>rusticstuff/simdutf8 (simdutf8)</summary>\n\n###\n[`v0.1.5`](https://redirect.github.com/rusticstuff/simdutf8/blob/HEAD/CHANGELOG.md#015---2024-09-22)\n\n[Compare\nSource](https://redirect.github.com/rusticstuff/simdutf8/compare/v0.1.4...v0.1.5)\n\n##### Bug fixes\n\n- Fix Undefined Behavior in WebAssembly SIMD128\n([#&#8203;86](https://redirect.github.com/rusticstuff/simdutf8/issues/86))\n(thanks [@&#8203;CryZe](https://redirect.github.com/CryZe))\n- Documentation and clippy fixes (thanks\n[@&#8203;rtfeldman](https://redirect.github.com/rtfeldman),\n[@&#8203;jqnatividad](https://redirect.github.com/jqnatividad),\n[@&#8203;rhysd](https://redirect.github.com/rhysd))\n\n##### Performance\n\n- WASM: Don't use u8x16\\_bitmask for ASCII Check\n([#&#8203;79](https://redirect.github.com/rusticstuff/simdutf8/issues/79))\n(thanks [@&#8203;CryZe](https://redirect.github.com/CryZe))\n\n</details>\n\n---\n\n### Configuration\n\n📅 **Schedule**: Branch creation - \"before 10am on monday\" in timezone\nAsia/Shanghai, Automerge - At any time (no schedule defined).\n\n🚦 **Automerge**: Enabled.\n\n♻ **Rebasing**: Whenever PR is behind base branch, or you tick the\nrebase/retry checkbox.\n\n👻 **Immortal**: This PR will be recreated if closed unmerged. Get\n[config\nhelp](https://redirect.github.com/renovatebot/renovate/discussions) if\nthat's undesired.\n\n---\n\n- [ ] <!-- rebase-check -->If you want to rebase/retry this PR, check\nthis box\n\n---\n\nThis PR was generated by [Mend Renovate](https://mend.io/renovate/).\nView the [repository job\nlog](https://developer.mend.io/github/rolldown/rolldown).\n\n<!--renovate-debug:eyJjcmVhdGVkSW5WZXIiOiIzOC45Ny4wIiwidXBkYXRlZEluVmVyIjoiMzguOTcuMCIsInRhcmdldEJyYW5jaCI6Im1haW4iLCJsYWJlbHMiOltdfQ==-->\n\n---------\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>\nCo-authored-by: IWANABETHATGUY <iwanabethatguy@qq.com>",
+          "timestamp": "2024-10-01T05:54:23Z",
+          "tree_id": "8de88f8c4546d1df194321d99aea4e98aa1c09c9",
+          "url": "https://github.com/rolldown/rolldown/commit/9a0db67ff95bada803d7352f0c658aeb62bc2dd2"
+        },
+        "date": 1727762918899,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "370.50",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "568.25",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1009.62",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1415.98",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "129.92",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "186.82",
             "unit": "ms / ops"
           }
         ]
