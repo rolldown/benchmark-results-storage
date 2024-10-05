@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1728112519013,
+  "lastUpdate": 1728112810783,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -44745,44 +44745,44 @@
             "name": "GitHub",
             "username": "web-flow"
           },
-          "distinct": false,
-          "id": "8f6ec5970aaf72d1e3635f044db8eb8f4aaed49b",
-          "message": "chore(rust): move `ImportKind` to `import_kind.rs` (#2373)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
-          "timestamp": "2024-10-05T06:57:40Z",
-          "tree_id": "b5eb442ce36b72b6334e7c051f78fe660f6fada8",
-          "url": "https://github.com/rolldown/rolldown/commit/8f6ec5970aaf72d1e3635f044db8eb8f4aaed49b"
+          "distinct": true,
+          "id": "248125117f048b113bb9cd3d23b7d318ccb8aefc",
+          "message": "feat(rust): add `rolldown_std_utils` crate to store utils/extensions for the rust std library (#2372)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n`rolldown_utils` is kind of swell. We need a crate to store utils code\nthat is `std` only. These code would be used widely, so it would be\nbetter don't put much third-party dependecies in `rolldown_std_utils` as\n`rolldown_utils` did.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-10-05T06:57:52Z",
+          "tree_id": "3518c8ba0888bff0d6c01ccb5cc663b54cd5c27e",
+          "url": "https://github.com/rolldown/rolldown/commit/248125117f048b113bb9cd3d23b7d318ccb8aefc"
         },
-        "date": 1728112518998,
+        "date": 1728112810768,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x (default)",
-            "value": "367.75",
+            "value": "376.77",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap (default)",
-            "value": "571.50",
+            "value": "578.50",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify (default)",
-            "value": "998.65",
+            "value": "1053.13",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify-sourcemap (default)",
-            "value": "1416.25",
+            "value": "1458.28",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts (default)",
-            "value": "127.16",
+            "value": "131.05",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts-sourcemap (default)",
-            "value": "178.85",
+            "value": "186.36",
             "unit": "ms / ops"
           }
         ]
