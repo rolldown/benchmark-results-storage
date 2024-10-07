@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1728284185186,
+  "lastUpdate": 1728305950600,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -44999,6 +44999,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "181.22",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "florian.verdonck@outlook.com",
+            "name": "Florian Verdonck",
+            "username": "nojaf"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "305f2d196f6a6a99808f4057f4424f0e773a91db",
+          "message": "chore(typo): wrong description of `-c` option (#2382)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nAfter looking at the help\n\n```\nbunx rolldown --help\nFast JavaScript/TypeScript bundler in Rust with Rollup-compatible API. (rolldown v0.13.2)                                                                                                                                                                             \n\nUSAGE rolldown -c <config> or rolldown <input> <options>\n                                                                                                                                                                                                                                                                      \nOPTIONS                                                                                                                                                                                                                                                               \n                                                                                                                                                                                                                                                                      \n  --config -c, <filename>     Path to the config file (default: rollup.config.js).   \n```\n\nI noticed that the default filename `rollup.config.js` did not working\nwhen trying `bunx rolldown -c`.",
+          "timestamp": "2024-10-07T12:44:03Z",
+          "tree_id": "5890288de49ad1db5a94cc128dcf876b33a241d9",
+          "url": "https://github.com/rolldown/rolldown/commit/305f2d196f6a6a99808f4057f4424f0e773a91db"
+        },
+        "date": 1728305950585,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "396.99",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "611.52",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1060.47",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1495.85",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "136.15",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "194.21",
             "unit": "ms / ops"
           }
         ]
