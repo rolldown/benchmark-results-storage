@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1728305950600,
+  "lastUpdate": 1728320432682,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -45053,6 +45053,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "194.21",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "d8b07cc139d1d4c55c2f4b2153aa1f0b9310ed1b",
+          "message": "feat(rust): use `SymbolRefDbForModule` while scanning oxc AST (#2380)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nWe gonna remove `AstSymbols` and use oxc's `SymbolTable`/`Semantic`\ndirectly.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-10-07T16:45:51Z",
+          "tree_id": "fb5bb3228a5ea74bee676db0e9f5df8098d199cc",
+          "url": "https://github.com/rolldown/rolldown/commit/d8b07cc139d1d4c55c2f4b2153aa1f0b9310ed1b"
+        },
+        "date": 1728320432666,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "378.85",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "594.42",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1049.22",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1465.41",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "132.83",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "191.82",
             "unit": "ms / ops"
           }
         ]
