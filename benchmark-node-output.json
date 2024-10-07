@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1728143510131,
+  "lastUpdate": 1728281615784,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -44837,6 +44837,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "189.50",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e514a0750500e49c89e37e82d31e7f820d617de1",
+          "message": "refactor(rust): remove `ModuleViewFactory` (#2377)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nIt is a wrong abstraction. No need to unite constructing `EcmaView` and\n`CssView` by `ModuleViewFactory`. They are different things.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-10-07T05:59:27Z",
+          "tree_id": "0e804e89fd3faac12186a49c3d6efbf87d4bf60b",
+          "url": "https://github.com/rolldown/rolldown/commit/e514a0750500e49c89e37e82d31e7f820d617de1"
+        },
+        "date": 1728281615769,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "381.31",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "579.07",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1049.82",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1455.24",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "129.40",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "187.07",
             "unit": "ms / ops"
           }
         ]
