@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1728281615784,
+  "lastUpdate": 1728282606496,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -44891,6 +44891,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "187.07",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c1fdd93f75a0b11f89f5b58a1e590d4ff844f5b4",
+          "message": "refactor(rust): change `Symbols` to `SymbolRefDb` (#2378)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n`SymbolTable` is already used by oxc. So we will use `XxxDb` style for\nindicate-based data design.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-10-07T06:09:15Z",
+          "tree_id": "12ed214b4965104320dd348065efffa9be9e3ac4",
+          "url": "https://github.com/rolldown/rolldown/commit/c1fdd93f75a0b11f89f5b58a1e590d4ff844f5b4"
+        },
+        "date": 1728282606481,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "377.22",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "585.78",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1044.22",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1456.88",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "130.00",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "187.10",
             "unit": "ms / ops"
           }
         ]
