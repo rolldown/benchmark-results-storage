@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1728392606859,
+  "lastUpdate": 1728394391071,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -45377,6 +45377,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "194.52",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "50d3fda8d6cab560f15117c06935e736ac33f533",
+          "message": "refactor(rust): add more OOD-style API on `SymbolRef` (#2388)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nThere will be more refactor on `SymbolRefDb` in the future. So I hope\n`SymbolRef` could be the carrier that expose public API. This way,\nfuture refactor will affects less code.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-10-08T13:12:35Z",
+          "tree_id": "b097394470527737a2c4c37b5030a7dfdfd78c8d",
+          "url": "https://github.com/rolldown/rolldown/commit/50d3fda8d6cab560f15117c06935e736ac33f533"
+        },
+        "date": 1728394391056,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "385.03",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "592.80",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1040.98",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1477.05",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "133.31",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "187.24",
             "unit": "ms / ops"
           }
         ]
