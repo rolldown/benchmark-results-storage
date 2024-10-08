@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1728324663245,
+  "lastUpdate": 1728387983421,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -45161,6 +45161,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "200.85",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e6164b1fa1bd200c1e3d1883f22446e355992ffd",
+          "message": "feat(output/cjs): on demand shorthand export pattern (#2383)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n```js\nexport const short1 = ''\n\nexport let short2 = ''\n\nexport function short3() {}\n\nexport class short4 {}\n\nexport let nonShort1 = ''\n// Trigger a re-assignment\nnonShort1 = ''\n\nexport function nonShort2() {}\n// Trigger a re-assignment\nnonShort2 = () => {}\n```\n\nwould become\n\n```js\n\"use strict\";\n//#region main.js\nconst short1 = \"\";\nlet short2 = \"\";\nfunction short3() {}\nclass short4 {}\nlet nonShort1 = \"\";\nnonShort1 = \"\";\nfunction nonShort2() {}\nnonShort2 = () => {};\n//#endregion\nObject.defineProperty(exports, 'nonShort1', {\n  enumerable: true,\n  get: function () {\n    return nonShort1;\n  }\n});\nObject.defineProperty(exports, 'nonShort2', {\n  enumerable: true,\n  get: function () {\n    return nonShort2;\n  }\n});\nexports.short1 = short1\nexports.short2 = short2\nexports.short3 = short3\nexports.short4 = short4\n```\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-10-08T11:31:50Z",
+          "tree_id": "d158b50494b27b42cbbdb7c7beb24006bc249306",
+          "url": "https://github.com/rolldown/rolldown/commit/e6164b1fa1bd200c1e3d1883f22446e355992ffd"
+        },
+        "date": 1728387983406,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "374.92",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "579.59",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1020.61",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1428.44",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "128.80",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "187.66",
             "unit": "ms / ops"
           }
         ]
