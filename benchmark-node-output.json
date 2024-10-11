@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1728562120324,
+  "lastUpdate": 1728629007687,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -45647,6 +45647,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "189.09",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e65437c3769000da02e8f9b09b99a0a59f3b9aae",
+          "message": "refactor(binding): remove BindingOutputs unsafe code (#2407)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n### Pervious Implment\n\nIt has larger overhead with transfer the larger data from rust side to\njs side, so https://github.com/rolldown/rolldown/pull/696 make the\n`BindingOutputChunk` fields lazily.\n\nBut it is difficult to mutate `BindingOutputs` from js side, here using\nunsafe code `std::mem::transmute` to make`&mut OutputChunk` static. It\ncould be work, but it is caused some memory issue at rolldown-vite\nworker test and vitepress.\n\n### The pr implement\n\nConsider avoid larger overhead with transfer the larger data from rust\nside to js side, here also keep logic of `BindingOutputChunk` fields\nlazily. Here only change `&mut OutputChunk` to `OutputChunk`, it is from\nclone. So the rust side has two `OutputChunk`.\nBecause the `BindingOutputChunk` take the `OutputChunk` ownership to js\nside, here couldn't directly use it after js side changed it. So here\ncollect the changed data at js side, then transfer the data to rust\nside, the rust side merge the changed data to original `OutputChunk`.\n\n> I have try to avoid clone using `BindingOutputs` owner\n`UniqueArc<OutputChunk>` and `BindingOutputChunk` owner\n`WeakRef<OutputChunk>`, make it could be mutated at rust side, but it is\nfailed with mutate operation at rolldown-vite, I'm not find reason about\nit, but the idea also is bad for the pr implement, it also could be\npanic..... The pr implement also could be remove `FinalBindingOutputs`\nbindings, it is a good way to avoid it.\n> Maybe we could using the idea to avoid clone and the mutate operation\nusing the pr implement.\n\nThe disadvantage is here need to transfer data from js side to rust\nside, the user maybe only changed one fileds, the pr implement need to\npass all fields to rust side, it also has space that can be optimized.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-10-11T06:28:16Z",
+          "tree_id": "fe70625fe4c6deb891c6fd570e9cda942b7c126e",
+          "url": "https://github.com/rolldown/rolldown/commit/e65437c3769000da02e8f9b09b99a0a59f3b9aae"
+        },
+        "date": 1728629007671,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "380.79",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "590.25",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1184.67",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1570.71",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "131.18",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "184.49",
             "unit": "ms / ops"
           }
         ]
