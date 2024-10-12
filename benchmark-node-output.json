@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1728653253513,
+  "lastUpdate": 1728701881461,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -45755,6 +45755,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "181.28",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ccb7689538aa28933f05c34ef7cc9a9beb07ad3c",
+          "message": "chore: enable esbuild glob and importstar_ts (#2408)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-10-12T02:42:49Z",
+          "tree_id": "efc879f2c803775bfef462383421f20db43934a1",
+          "url": "https://github.com/rolldown/rolldown/commit/ccb7689538aa28933f05c34ef7cc9a9beb07ad3c"
+        },
+        "date": 1728701881446,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "388.32",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "601.70",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1163.71",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1599.67",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "132.32",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "187.04",
             "unit": "ms / ops"
           }
         ]
