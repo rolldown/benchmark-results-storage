@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1728913449142,
+  "lastUpdate": 1728914004955,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -46187,6 +46187,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "202.65",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "47596c748fd9ca9914637ff8eceb7dc892b1c2e3",
+          "message": "chore(deps): update rust crates (#2430)\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [append-only-vec](https://redirect.github.com/droundy/append-only-vec)\n| workspace.dependencies | patch | `0.1.6` -> `0.1.7` |\n| [futures](https://rust-lang.github.io/futures-rs)\n([source](https://redirect.github.com/rust-lang/futures-rs)) |\nworkspace.dependencies | patch | `0.3.30` -> `0.3.31` |\n| [indexmap](https://redirect.github.com/indexmap-rs/indexmap) |\nworkspace.dependencies | minor | `2.5.0` -> `2.6.0` |\n| [jsonschema](https://redirect.github.com/Stranger6667/jsonschema-rs) |\nworkspace.dependencies | minor | `0.21.0` -> `0.23.0` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>rust-lang/futures-rs (futures)</summary>\n\n###\n[`v0.3.31`](https://redirect.github.com/rust-lang/futures-rs/blob/HEAD/CHANGELOG.md#0331---2024-10-05)\n\n[Compare\nSource](https://redirect.github.com/rust-lang/futures-rs/compare/0.3.30...0.3.31)\n\n- Fix use after free of task in `FuturesUnordered` when dropped future\npanics\n([#&#8203;2886](https://redirect.github.com/rust-lang/futures-rs/issues/2886))\n- Fix soundness bug in `task::waker_ref`\n([#&#8203;2830](https://redirect.github.com/rust-lang/futures-rs/issues/2830))\nThis is a breaking change but allowed because it is soundness bug fix.\n- Fix bugs in `AsyncBufRead::read_line` and `AsyncBufReadExt::lines`\n([#&#8203;2884](https://redirect.github.com/rust-lang/futures-rs/issues/2884))\n- Fix parsing issue in `select!`/`select_biased!`\n([#&#8203;2832](https://redirect.github.com/rust-lang/futures-rs/issues/2832))\nThis is technically a breaking change as it will now reject a very odd\nundocumented syntax that was previously accidentally accepted.\n- Work around issue due to upstream `Waker::will_wake` change\n([#&#8203;2865](https://redirect.github.com/rust-lang/futures-rs/issues/2865))\n- Add `stream::Iter::{get_ref,get_mut,into_inner}`\n([#&#8203;2875](https://redirect.github.com/rust-lang/futures-rs/issues/2875))\n- Add `future::AlwaysReady`\n([#&#8203;2825](https://redirect.github.com/rust-lang/futures-rs/issues/2825))\n- Relax trait bound on non-constructor methods of\n`io::{BufReader,BufWriter}`\n([#&#8203;2848](https://redirect.github.com/rust-lang/futures-rs/issues/2848))\n\n</details>\n\n<details>\n<summary>indexmap-rs/indexmap (indexmap)</summary>\n\n###\n[`v2.6.0`](https://redirect.github.com/indexmap-rs/indexmap/blob/HEAD/RELEASES.md#260-2024-10-01)\n\n[Compare\nSource](https://redirect.github.com/indexmap-rs/indexmap/compare/2.5.0...2.6.0)\n\n-   Implemented `Clone` for `map::IntoIter` and `set::IntoIter`.\n-   Updated the `hashbrown` dependency to version 0.15.\n\n</details>\n\n<details>\n<summary>Stranger6667/jsonschema-rs (jsonschema)</summary>\n\n###\n[`v0.23.0`](https://redirect.github.com/Stranger6667/jsonschema-rs/blob/HEAD/CHANGELOG.md#0230---2024-10-12)\n\n##### Added\n\n-   Partial support for `unevaluatedItems`, excluding references.\n\n##### Changed\n\n- Improve error messages on WASM.\n[#&#8203;568](https://redirect.github.com/Stranger6667/jsonschema-rs/issues/568)\n-   Improve error messages on URI resolving and parsing.\n-   **BREAKING**: Replace `JsonPointer` in favor of `Location`.\n\n##### Deprecated\n\n-   `PathChunkRef` in favor of `LocationSegment`.\n-   `JsonPointerNode` in favor of `LazyLocation`.\n\n##### Fixed\n\n- Resolving file references on Windows.\n[#&#8203;441](https://redirect.github.com/Stranger6667/jsonschema-rs/issues/441)\n- Missing annotations from by-reference applicators.\n[#&#8203;403](https://redirect.github.com/Stranger6667/jsonschema-rs/issues/403)\n- Relative keyword locations missing by-reference applicators (such as\n`$ref` or `$dynamicRef`).\n\n##### Performance\n\n-   Faster building of a validator.\n-   Speedup `hostname` & `idn-hostname` formats validation.\n-   Speedup `apply`.\n\n##### Removed\n\n-   `JsonPointerNode::to_vec` without a replacement.\n\n###\n[`v0.22.3`](https://redirect.github.com/Stranger6667/jsonschema-rs/blob/HEAD/CHANGELOG.md#0223---2024-10-05)\n\n##### Performance\n\n-   Speedup resolving.\n\n###\n[`v0.22.2`](https://redirect.github.com/Stranger6667/jsonschema-rs/blob/HEAD/CHANGELOG.md#0222---2024-10-04)\n\n##### Fixed\n\n-   ECMAScript 262 regex support.\n\n##### Performance\n\n- Speedup `json-pointer` and `relative-json-pointer` formats validation.\n\n###\n[`v0.22.1`](https://redirect.github.com/Stranger6667/jsonschema-rs/blob/HEAD/CHANGELOG.md#0221---2024-10-03)\n\n##### Fixed\n\n-   Removed `dbg!` macro.\n\n###\n[`v0.22.0`](https://redirect.github.com/Stranger6667/jsonschema-rs/blob/HEAD/CHANGELOG.md#0220---2024-10-03)\n\n##### Changed\n\n- Extend email validation.\n[#&#8203;471](https://redirect.github.com/Stranger6667/jsonschema-rs/issues/471)\n- **BREAKING**: Custom retrievers now receive `&Uri<&str>` instead of\n`&UriRef<&str>`\n-   Bump `once_cell` to `1.20`.\n-   Bump `regex` to `1.11`.\n\n##### Fixed\n\n-   `time` format validation (leap seconds and second fractions).\n-   `duration` format validation.\n- Panic on root `$id` without base.\n[#&#8203;547](https://redirect.github.com/Stranger6667/jsonschema-rs/issues/547)\n-   `hostname` format validation (double dot).\n- `idn-hostname` format validation.\n[#&#8203;101](https://redirect.github.com/Stranger6667/jsonschema-rs/issues/101)\n\n##### Performance\n\n-   Faster building of a validator.\n- Speedup `hostname`, `date`, `time`, `date-time`, and `duration`\nformats validation.\n- Cache regular expressions for `pattern`.\n[#&#8203;417](https://redirect.github.com/Stranger6667/jsonschema-rs/issues/417)\n\n</details>\n\n---\n\n### Configuration\n\n📅 **Schedule**: Branch creation - \"before 10am on monday\" in timezone\nAsia/Shanghai, Automerge - At any time (no schedule defined).\n\n🚦 **Automerge**: Enabled.\n\n♻ **Rebasing**: Whenever PR is behind base branch, or you tick the\nrebase/retry checkbox.\n\n👻 **Immortal**: This PR will be recreated if closed unmerged. Get\n[config\nhelp](https://redirect.github.com/renovatebot/renovate/discussions) if\nthat's undesired.\n\n---\n\n- [ ] <!-- rebase-check -->If you want to rebase/retry this PR, check\nthis box\n\n---\n\nThis PR was generated by [Mend Renovate](https://mend.io/renovate/).\nView the [repository job\nlog](https://developer.mend.io/github/rolldown/rolldown).\n\n<!--renovate-debug:eyJjcmVhdGVkSW5WZXIiOiIzOC4xMjAuMSIsInVwZGF0ZWRJblZlciI6IjM4LjEyMC4xIiwidGFyZ2V0QnJhbmNoIjoibWFpbiIsImxhYmVscyI6W119-->\n\n---------\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>\nCo-authored-by: IWANABETHATGUY <iwanabethatguy@qq.com>",
+          "timestamp": "2024-10-14T13:33:13Z",
+          "tree_id": "dcdac47508e2d8028a4bf05ebaaf093cf612885c",
+          "url": "https://github.com/rolldown/rolldown/commit/47596c748fd9ca9914637ff8eceb7dc892b1c2e3"
+        },
+        "date": 1728914004939,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "395.70",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "606.36",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1178.91",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1608.27",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "137.46",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "197.66",
             "unit": "ms / ops"
           }
         ]
