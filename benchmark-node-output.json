@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1728872699764,
+  "lastUpdate": 1728875453282,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -46025,6 +46025,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "192.70",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5b6497d675675a807a85ea7908422fbc46fcb389",
+          "message": "feat(css): should remove `at-import` statements in output (#2423)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-10-14T02:55:45Z",
+          "tree_id": "b5fa668071737bd272c88d0052fab9a3b6bbb8a8",
+          "url": "https://github.com/rolldown/rolldown/commit/5b6497d675675a807a85ea7908422fbc46fcb389"
+        },
+        "date": 1728875453266,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "367.73",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "581.48",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1114.27",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1552.39",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "130.99",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "185.75",
             "unit": "ms / ops"
           }
         ]
