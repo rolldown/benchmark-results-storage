@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1729004080829,
+  "lastUpdate": 1729008502354,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -46511,6 +46511,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "189.78",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "lynweklm@gmail.com",
+            "name": "LongYinan",
+            "username": "Brooooooklyn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1585b9b9cc240ab0153d4912eee263e59659ef6f",
+          "message": "chore: upgrade napi and napi-derive (#2437)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-10-15T15:53:02Z",
+          "tree_id": "2ca59f549e702c721d48755bb9921ca4be1b0368",
+          "url": "https://github.com/rolldown/rolldown/commit/1585b9b9cc240ab0153d4912eee263e59659ef6f"
+        },
+        "date": 1729008502338,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "403.14",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "600.89",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1200.78",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1636.88",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "137.36",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "195.26",
             "unit": "ms / ops"
           }
         ]
