@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1728981952811,
+  "lastUpdate": 1728988154983,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -46403,6 +46403,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "189.42",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a2b10d27971a33523d10676e5d8037e4827bdf5e",
+          "message": "fix: 🐛 should not always transform default specifier as `default as alias` (#2439)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. before we create chunk level import declaration, always use pattern\nlike `{x as alias}`.\n```js\nimport x from 'mod'\n\nconsole.log(x)\n```\nWe will bundle it into: \n\n```js\nimport {default as x} from 'mod'\n\nconsole.log(x)\n```\ncompare to esbuild: \n```js\nimport x from 'mod'\n```\nthis pr aligns it.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-10-15T10:14:17Z",
+          "tree_id": "ba5e5717016f97e844aa32e7fa876c7798a78c2a",
+          "url": "https://github.com/rolldown/rolldown/commit/a2b10d27971a33523d10676e5d8037e4827bdf5e"
+        },
+        "date": 1728988154966,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "378.87",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "590.18",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1152.07",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1575.55",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "130.81",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "190.11",
             "unit": "ms / ops"
           }
         ]
