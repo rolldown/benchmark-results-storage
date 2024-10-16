@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1729008502354,
+  "lastUpdate": 1729062787744,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -46565,6 +46565,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "195.26",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a881cf1fb52ddd84aebcaddf427ebac58a9e1ce4",
+          "message": "feat: export jsx related options (#2443)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nThe pr intend to export the jsx related options. The rust side using oxc\noptions to avoid duplicate code. The node side as compatible as possible\nto rollup jsx options, ref\nhttps://rollupjs.org/configuration-options/#jsx.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-10-16T06:58:09Z",
+          "tree_id": "8f23b18fbcc082992e0ef744aafa1cc2d1a98e1f",
+          "url": "https://github.com/rolldown/rolldown/commit/a881cf1fb52ddd84aebcaddf427ebac58a9e1ce4"
+        },
+        "date": 1729062787728,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "384.53",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "588.46",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1119.89",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1527.69",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "128.43",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "189.06",
             "unit": "ms / ops"
           }
         ]
