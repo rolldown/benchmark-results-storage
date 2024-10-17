@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1729153004364,
+  "lastUpdate": 1729153256587,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -46788,9 +46788,9 @@
       {
         "commit": {
           "author": {
-            "email": "iwanabethatguy@qq.com",
-            "name": "IWANABETHATGUY",
-            "username": "IWANABETHATGUY"
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
           },
           "committer": {
             "email": "noreply@github.com",
@@ -46798,43 +46798,43 @@
             "username": "web-flow"
           },
           "distinct": false,
-          "id": "d073abe25ace3d9d3c13f42eca0e8a631688da7c",
-          "message": "fix: 🐛 order of module namepspace object generation (#2450)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. this is the part of esbuild alignment.\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
-          "timestamp": "2024-10-17T07:58:01Z",
-          "tree_id": "a02714054980ce78b0ddf23cc41a6535be28cf9f",
-          "url": "https://github.com/rolldown/rolldown/commit/d073abe25ace3d9d3c13f42eca0e8a631688da7c"
+          "id": "254df72de3d37612738ca19b874a027b535b1e00",
+          "message": "refactor(rust): don't initialize symbol name repeatedly (#2448)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-10-17T08:05:08Z",
+          "tree_id": "a2576312d9b517ce9ff1ca621344766949ad2c50",
+          "url": "https://github.com/rolldown/rolldown/commit/254df72de3d37612738ca19b874a027b535b1e00"
         },
-        "date": 1729153004347,
+        "date": 1729153256571,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x (default)",
-            "value": "401.59",
+            "value": "386.58",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap (default)",
-            "value": "615.34",
+            "value": "601.87",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify (default)",
-            "value": "1223.22",
+            "value": "1152.59",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify-sourcemap (default)",
-            "value": "1656.89",
+            "value": "1578.32",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts (default)",
-            "value": "140.58",
+            "value": "131.24",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts-sourcemap (default)",
-            "value": "195.93",
+            "value": "188.93",
             "unit": "ms / ops"
           }
         ]
