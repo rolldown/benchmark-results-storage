@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1729075242399,
+  "lastUpdate": 1729148201703,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -46673,6 +46673,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "190.00",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "e4350e90486669099919a2c512b5c5efab75867e",
+          "message": "refactor(rust): add `SymbolNameRefToken` instead of abusing `SymbolRef` (#2446)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-10-17T06:40:46Z",
+          "tree_id": "f09087db2476d02651137a38a08071d9448c364f",
+          "url": "https://github.com/rolldown/rolldown/commit/e4350e90486669099919a2c512b5c5efab75867e"
+        },
+        "date": 1729148201687,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "384.68",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "597.62",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1135.35",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1554.31",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "129.86",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "190.66",
             "unit": "ms / ops"
           }
         ]
