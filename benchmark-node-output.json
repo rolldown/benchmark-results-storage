@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1729177223191,
+  "lastUpdate": 1729182014222,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -46943,6 +46943,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "194.02",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "a43d19cb3a113d47c3088dfb91a3c9574f32b4a6",
+          "message": "feat:  add jsx related options in rust side (#2454)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. Adding `jsx` related option in rust test side\n2. update some test configuration under esbuild.\n3. passing some esbuild tests\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-10-17T16:04:57Z",
+          "tree_id": "3804c4619f5cf7fe58a163523dfa2e9fd6516d90",
+          "url": "https://github.com/rolldown/rolldown/commit/a43d19cb3a113d47c3088dfb91a3c9574f32b4a6"
+        },
+        "date": 1729182014205,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "378.76",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "589.12",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1157.93",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1608.41",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "129.37",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "188.82",
             "unit": "ms / ops"
           }
         ]
