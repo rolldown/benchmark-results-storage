@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1729222370331,
+  "lastUpdate": 1729222643304,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -47058,9 +47058,9 @@
       {
         "commit": {
           "author": {
-            "email": "iwanabethatguy@qq.com",
-            "name": "IWANABETHATGUY",
-            "username": "IWANABETHATGUY"
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
           },
           "committer": {
             "email": "noreply@github.com",
@@ -47068,43 +47068,43 @@
             "username": "web-flow"
           },
           "distinct": false,
-          "id": "04634dc073fddf5e0b56fd5185e9076bec82b213",
-          "message": "fix: data url guess mime by extension (#2455)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
-          "timestamp": "2024-10-18T03:16:49Z",
-          "tree_id": "259cefd08627475215cff4ccf062ac293d9db822",
-          "url": "https://github.com/rolldown/rolldown/commit/04634dc073fddf5e0b56fd5185e9076bec82b213"
+          "id": "3008d46bb1abe8121a08e0dc62e28a33955a18a2",
+          "message": "refactor(rust): tweak `add_local_export` (#2457)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-10-18T03:18:49Z",
+          "tree_id": "0b54ff8609bf31a58bd13f81d6593f20d1457b43",
+          "url": "https://github.com/rolldown/rolldown/commit/3008d46bb1abe8121a08e0dc62e28a33955a18a2"
         },
-        "date": 1729222370316,
+        "date": 1729222643289,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x (default)",
-            "value": "369.04",
+            "value": "381.47",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap (default)",
-            "value": "577.13",
+            "value": "588.43",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify (default)",
-            "value": "1072.92",
+            "value": "1129.42",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify-sourcemap (default)",
-            "value": "1440.77",
+            "value": "1515.61",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts (default)",
-            "value": "123.25",
+            "value": "130.46",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts-sourcemap (default)",
-            "value": "179.38",
+            "value": "187.99",
             "unit": "ms / ops"
           }
         ]
