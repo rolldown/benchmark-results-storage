@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1729502251597,
+  "lastUpdate": 1729505782734,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -47591,6 +47591,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "191.46",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0b2e21252ece83f80072de555076c45f8e573523",
+          "message": "fix: rolldown can not write twice (#2477)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. https://doc.rust-lang.org/std/boxed/struct.Box.html#method.leak\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-10-21T10:02:39Z",
+          "tree_id": "7a805c406786cdd580156e3930cf92f59e6d633c",
+          "url": "https://github.com/rolldown/rolldown/commit/0b2e21252ece83f80072de555076c45f8e573523"
+        },
+        "date": 1729505782719,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "365.64",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "562.67",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1062.70",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1437.08",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "126.08",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "177.92",
             "unit": "ms / ops"
           }
         ]
