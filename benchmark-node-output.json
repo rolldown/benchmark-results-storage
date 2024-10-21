@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1729495327479,
+  "lastUpdate": 1729498891400,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -47375,6 +47375,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "175.93",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "a57b03ef5496f8a7c39ba96444a64cea89eee060",
+          "message": "ci: disable `just ued` ci check in windows platform (#2473)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-10-21T08:04:39Z",
+          "tree_id": "147c8b613231fcae7d3cf39685953fa636dcb88c",
+          "url": "https://github.com/rolldown/rolldown/commit/a57b03ef5496f8a7c39ba96444a64cea89eee060"
+        },
+        "date": 1729498891383,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "380.11",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "591.26",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1122.55",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1496.66",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "131.17",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "191.36",
             "unit": "ms / ops"
           }
         ]
