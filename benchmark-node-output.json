@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1729479309194,
+  "lastUpdate": 1729495327479,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -47321,6 +47321,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "197.01",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "01f0d17fbe3555aad3eb32fe498c4dbaf75d6426",
+          "message": "fix: toplevel class decl rewrite (#2465)\n\n<!-- Thank you for contributing! -->\r\n\r\n### Description\r\n1.Currently, only module that needs_wrap will rewrite `ClassDeclaration`\r\nto `VarDeclaration`, esbuild will try to rewrite all top level\r\nclassDeclaration\r\nhttps://github.com/evanw/esbuild/blob/d34e79e2a998c21bb71d57b92b0017ca11756912/internal/js_parser/js_parser_lower_class.go#L2028-L2043\r\n2. align with\r\nhttps://github.com/evanw/esbuild/blob/d34e79e2a998c21bb71d57b92b0017ca11756912/internal/js_parser/js_parser_lower_class.go#L2277-L2283\r\n<!-- Please insert your description here and provide especially info\r\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-10-21T15:16:34+08:00",
+          "tree_id": "762d75a309ea313136a2777145714fc2d03a2257",
+          "url": "https://github.com/rolldown/rolldown/commit/01f0d17fbe3555aad3eb32fe498c4dbaf75d6426"
+        },
+        "date": 1729495327464,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "371.84",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "568.49",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1079.80",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1434.93",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "127.26",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "175.93",
             "unit": "ms / ops"
           }
         ]
