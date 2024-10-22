@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1729583487445,
+  "lastUpdate": 1729587299176,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -47807,6 +47807,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "185.97",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "07c4bad9f9413a4fe7afc420948baa03309767ea",
+          "message": "chore: compat rollup watch:false (#2475)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nBecause the rolldown options is not support array of configurations, the\n`watch` `false` is nothing to do at now, here only make typing compat to\nrollup. ref https://rollupjs.org/configuration-options/#watch\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-10-22T08:36:29Z",
+          "tree_id": "d120952fb666eae13e98806f94341a78d3175766",
+          "url": "https://github.com/rolldown/rolldown/commit/07c4bad9f9413a4fe7afc420948baa03309767ea"
+        },
+        "date": 1729587299161,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "380.68",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "587.60",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1121.25",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1503.34",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "132.91",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "195.13",
             "unit": "ms / ops"
           }
         ]
