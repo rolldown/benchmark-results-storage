@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1729534990400,
+  "lastUpdate": 1729580209891,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -47699,6 +47699,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "188.25",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f41d8ae53299dfce3bdfc3733dd5c18796d7e90f",
+          "message": "fix: 🐛 side effects path (#2481)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. when test `side_effects` match against nearest `package.json` we\nshould use module path relative to **package** rather than path relative\nto `cwd` because the **glob** expr is based on package path\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-10-22T06:41:38Z",
+          "tree_id": "79b88d9b8d29511d3b3f48b9a331a10c27f78f62",
+          "url": "https://github.com/rolldown/rolldown/commit/f41d8ae53299dfce3bdfc3733dd5c18796d7e90f"
+        },
+        "date": 1729580209875,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "380.46",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "594.74",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1126.69",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1522.97",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "128.03",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "191.78",
             "unit": "ms / ops"
           }
         ]
