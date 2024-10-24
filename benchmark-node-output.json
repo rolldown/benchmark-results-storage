@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1729742266789,
+  "lastUpdate": 1729755922493,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -48185,6 +48185,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "190.78",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f56df8eb5986504055a0f1457aad1895a91816d1",
+          "message": "refactor: determine export kind of unknown ecma module in linking stage  (#2491)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. align with esbuild, almost all none js `module_type` should be\nlazy_export, the wrap kind should be determined during link stage.\n\n\nhttps://github.com/evanw/esbuild/blob/d34e79e2a998c21bb71d57b92b0017ca11756912/internal/bundler/bundler.go#L307-L317\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-10-24T07:29:29Z",
+          "tree_id": "c22740a6b323f5c82a51817410257af739a7eef9",
+          "url": "https://github.com/rolldown/rolldown/commit/f56df8eb5986504055a0f1457aad1895a91816d1"
+        },
+        "date": 1729755922477,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "382.60",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "595.45",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1154.71",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1527.42",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "130.38",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "188.88",
             "unit": "ms / ops"
           }
         ]
