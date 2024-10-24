@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1729759566650,
+  "lastUpdate": 1729763452005,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -48293,6 +48293,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "187.45",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7f66a5ec4e6277f402fba657a89ffec122d0dc10",
+          "message": "chore: convert rest none js related module type ast lazy export (#2492)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-10-24T09:35:47Z",
+          "tree_id": "0656d36f9ef9c925be42eda9f40e40cd334d5721",
+          "url": "https://github.com/rolldown/rolldown/commit/7f66a5ec4e6277f402fba657a89ffec122d0dc10"
+        },
+        "date": 1729763451989,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "385.62",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "589.64",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1191.11",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1558.64",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "130.53",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "193.13",
             "unit": "ms / ops"
           }
         ]
