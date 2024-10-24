@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1729791543962,
+  "lastUpdate": 1729792909308,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -48563,6 +48563,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "186.35",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "bd86cf2c210ba67b6c1b2cc90aa080eedb91576d",
+          "message": "refactor(error): remove `UnhandleableResult` (#2501)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nWe used to try to strongly distinguish two kinds of error.\n\n- Program error, not related to bundling, such as convert u64 to usize\nin u32-based platform\n- Business error, such as importing a file which doesn't exist while\nbundling.\n\nAfter a long time practicing, these two kinds of error aren't show much\ndifferences for writhing web bundler. In fact, they share a same and\nimportant characteristic which is to break the control flow.\n\nSo we don't need to make strong distinguish anymore and they are all\ntreated and handled by the same error mechanism in rolldown.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-10-24T17:47:56Z",
+          "tree_id": "e35a5e759a8ee8dc647cbbedb765d8c3f386841b",
+          "url": "https://github.com/rolldown/rolldown/commit/bd86cf2c210ba67b6c1b2cc90aa080eedb91576d"
+        },
+        "date": 1729792909292,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "393.29",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "591.53",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1185.52",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1570.61",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "134.35",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "188.84",
             "unit": "ms / ops"
           }
         ]
