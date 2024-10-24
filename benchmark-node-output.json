@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1729755922493,
+  "lastUpdate": 1729759566650,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -48239,6 +48239,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "188.88",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "176d6f9796d999e8e0d0a7ca3e573cbe48f089f3",
+          "message": "refactor: watcher event channel msg (#2493)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nBefore the windows ci failed by\n`tx.lock`(https://github.com/rolldown/rolldown/actions/runs/11456512537/job/31874824001),\ni changed it to `tx.blocking_lock`, but it make the `Watcher#invalidate`\nlogic not work, the behavior will be changed once build once. I try to\nadd test for it, but it is difficult because the different platforms\nemit change event is not stable.\n\n\nHere refactor it to avoid adding `Mutex` to `tx` by using\n`sync::mpsc::channel`, but it need to customer define close event.\n\nHere other things is stop thread when channel close.\n\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-10-24T08:30:37Z",
+          "tree_id": "cee36a19f4d147334f3aafa81639ef15acc5f8b9",
+          "url": "https://github.com/rolldown/rolldown/commit/176d6f9796d999e8e0d0a7ca3e573cbe48f089f3"
+        },
+        "date": 1729759566634,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "379.91",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "580.98",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1179.10",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1546.43",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "131.97",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "187.45",
             "unit": "ms / ops"
           }
         ]
