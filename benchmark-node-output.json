@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1729932814946,
+  "lastUpdate": 1729946190567,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -49049,6 +49049,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "197.29",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "lynweklm@gmail.com",
+            "name": "LongYinan",
+            "username": "Brooooooklyn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "75f1f8868db61f0ff9bc2cd3b00a7a7117f6d161",
+          "message": "ci: re-enable the wasi build test (#2510)",
+          "timestamp": "2024-10-26T12:22:21Z",
+          "tree_id": "4d930a3eb3dceeffea3cfbe71adc4a0beb299a97",
+          "url": "https://github.com/rolldown/rolldown/commit/75f1f8868db61f0ff9bc2cd3b00a7a7117f6d161"
+        },
+        "date": 1729946190551,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "380.09",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "582.55",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1172.02",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1548.68",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "131.36",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "189.32",
             "unit": "ms / ops"
           }
         ]
