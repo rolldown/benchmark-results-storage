@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1730001970253,
+  "lastUpdate": 1730047805543,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -49157,6 +49157,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "188.33",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "laipichan@qq.com",
+            "name": "dalaoshu",
+            "username": "shulaoda"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "be3527eefc1bb2a1ed9a576ab22f716e7d8b876b",
+          "message": "fix: `advancedChunks.groups[*].test` should be a `RegExp` (#2393)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\ncloses #2391 \n\nThis requires some modifications to struct `BindingStringOrRegex`, which\nwill take some time",
+          "timestamp": "2024-10-27T16:35:29Z",
+          "tree_id": "9bbb16b7b3963fcbfb38164d611f7d667c34aa8c",
+          "url": "https://github.com/rolldown/rolldown/commit/be3527eefc1bb2a1ed9a576ab22f716e7d8b876b"
+        },
+        "date": 1730047805526,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "377.27",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "583.95",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1173.85",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1558.48",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "131.77",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "187.40",
             "unit": "ms / ops"
           }
         ]
