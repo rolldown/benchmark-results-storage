@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1730103047120,
+  "lastUpdate": 1730113426431,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -49319,6 +49319,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "192.40",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "3d3001faa9a269e75ec529e0e74adc28d6e1dd0f",
+          "message": "chore(deps): update dependency tinybench to v3 (#2513)\n\nThis PR contains the following updates:\n\n| Package | Change | Age | Adoption | Passing | Confidence |\n|---|---|---|---|---|---|\n| [tinybench](https://redirect.github.com/tinylibs/tinybench) |\n[`^2.8.0` ->\n`^3.0.0`](https://renovatebot.com/diffs/npm/tinybench/2.9.0/3.0.0) |\n[![age](https://developer.mend.io/api/mc/badges/age/npm/tinybench/3.0.0?slim=true)](https://docs.renovatebot.com/merge-confidence/)\n|\n[![adoption](https://developer.mend.io/api/mc/badges/adoption/npm/tinybench/3.0.0?slim=true)](https://docs.renovatebot.com/merge-confidence/)\n|\n[![passing](https://developer.mend.io/api/mc/badges/compatibility/npm/tinybench/2.9.0/3.0.0?slim=true)](https://docs.renovatebot.com/merge-confidence/)\n|\n[![confidence](https://developer.mend.io/api/mc/badges/confidence/npm/tinybench/2.9.0/3.0.0?slim=true)](https://docs.renovatebot.com/merge-confidence/)\n|\n\n---\n\n### Release Notes\n\n<details>\n<summary>tinylibs/tinybench (tinybench)</summary>\n\n###\n[`v3.0.0`](https://redirect.github.com/tinylibs/tinybench/releases/tag/v3.0.0)\n\n[Compare\nSource](https://redirect.github.com/tinylibs/tinybench/compare/v2.9.0...v3.0.0)\n\n#####    🚨 Breaking Changes\n\n- Drop unmaintained node 16 support  -  by\n[@&#8203;jerome-benoit](https://redirect.github.com/jerome-benoit) in\n[https://github.com/tinylibs/tinybench/issues/116](https://redirect.github.com/tinylibs/tinybench/issues/116)\n[<samp>(5e08d)</samp>](https://redirect.github.com/tinylibs/tinybench/commit/5e08d7d)\n- Remove useless benchmark todos  -  by\n[@&#8203;jerome-benoit](https://redirect.github.com/jerome-benoit) in\n[https://github.com/tinylibs/tinybench/issues/118](https://redirect.github.com/tinylibs/tinybench/issues/118)\n[<samp>(434d0)</samp>](https://redirect.github.com/tinylibs/tinybench/commit/434d07f)\n- Remove \\*Concurrently methods  -  by\n[@&#8203;jerome-benoit](https://redirect.github.com/jerome-benoit) in\n[https://github.com/tinylibs/tinybench/issues/135](https://redirect.github.com/tinylibs/tinybench/issues/135)\n[<samp>(1297a)</samp>](https://redirect.github.com/tinylibs/tinybench/commit/1297a9b)\n- Fold warmup step into benchmark run  -  by\n[@&#8203;jerome-benoit](https://redirect.github.com/jerome-benoit) in\n[https://github.com/tinylibs/tinybench/issues/150](https://redirect.github.com/tinylibs/tinybench/issues/150)\n[<samp>(4fcd4)</samp>](https://redirect.github.com/tinylibs/tinybench/commit/4fcd45f)\n\n#####      API simplification details:\n\n- Bench concurrency setting is now controlled only at runtime via\n`concurreny` property. Any subsequent call to `run()` will apply it\n- Bench warmup is now done only at `run()` and controlled via benchmark\noptions and/or `warmup` property at runtime\n\n#####    🚀 Features\n\n- Compute and display median and median absolute deviation  -  by\n[@&#8203;jerome-benoit](https://redirect.github.com/jerome-benoit) in\n[https://github.com/tinylibs/tinybench/issues/89](https://redirect.github.com/tinylibs/tinybench/issues/89)\n[<samp>(46fbd)</samp>](https://redirect.github.com/tinylibs/tinybench/commit/46fbd0c)\n- Latency and throughput advanced statistics  -  by\n[@&#8203;jerome-benoit](https://redirect.github.com/jerome-benoit) in\n[https://github.com/tinylibs/tinybench/issues/119](https://redirect.github.com/tinylibs/tinybench/issues/119)\n[<samp>(70bc3)</samp>](https://redirect.github.com/tinylibs/tinybench/commit/70bc3ab)\n- Add name to Bench options  -  by\n[@&#8203;jerome-benoit](https://redirect.github.com/jerome-benoit) in\n[https://github.com/tinylibs/tinybench/issues/140](https://redirect.github.com/tinylibs/tinybench/issues/140)\n[<samp>(eedc1)</samp>](https://redirect.github.com/tinylibs/tinybench/commit/eedc1a3)\n\n#####    🐞 Bug Fixes\n\n- Silence tsup exports warning  -  by\n[@&#8203;jerome-benoit](https://redirect.github.com/jerome-benoit) in\n[https://github.com/tinylibs/tinybench/issues/114](https://redirect.github.com/tinylibs/tinybench/issues/114)\n[<samp>(b1cbf)</samp>](https://redirect.github.com/tinylibs/tinybench/commit/b1cbf04)\n- Accurate Student t-distribution table  -  by\n[@&#8203;jerome-benoit](https://redirect.github.com/jerome-benoit) in\n[https://github.com/tinylibs/tinybench/issues/90](https://redirect.github.com/tinylibs/tinybench/issues/90)\n[<samp>(1e749)</samp>](https://redirect.github.com/tinylibs/tinybench/commit/1e74996)\n- Add accurate percentiles approximation computation  -  by\n[@&#8203;jerome-benoit](https://redirect.github.com/jerome-benoit) in\n[https://github.com/tinylibs/tinybench/issues/87](https://redirect.github.com/tinylibs/tinybench/issues/87)\n[<samp>(ab467)</samp>](https://redirect.github.com/tinylibs/tinybench/commit/ab467e2)\n- Properly handle async function at all benchmark steps  -  by\n[@&#8203;jerome-benoit](https://redirect.github.com/jerome-benoit) and\n**Jérôme Benoit** in\n[https://github.com/tinylibs/tinybench/issues/133](https://redirect.github.com/tinylibs/tinybench/issues/133)\n[<samp>(50d00)</samp>](https://redirect.github.com/tinylibs/tinybench/commit/50d00d8)\n- Avoid duplicate call to benchmark related callbacks  -  by\n[@&#8203;jerome-benoit](https://redirect.github.com/jerome-benoit) and\n**Jérôme Benoit** in\n[https://github.com/tinylibs/tinybench/issues/134](https://redirect.github.com/tinylibs/tinybench/issues/134)\n[<samp>(581c2)</samp>](https://redirect.github.com/tinylibs/tinybench/commit/581c223)\n- Refine `Fn` type definition  -  by\n[@&#8203;jerome-benoit](https://redirect.github.com/jerome-benoit)\n[<samp>(c6062)</samp>](https://redirect.github.com/tinylibs/tinybench/commit/c606212)\n- Run simple-git-hooks at prepare  -  by\n[@&#8203;jerome-benoit](https://redirect.github.com/jerome-benoit)\n[<samp>(9a43f)</samp>](https://redirect.github.com/tinylibs/tinybench/commit/9a43f4a)\n- Ensure error events are sent  -  by\n[@&#8203;jerome-benoit](https://redirect.github.com/jerome-benoit) in\n[https://github.com/tinylibs/tinybench/issues/167](https://redirect.github.com/tinylibs/tinybench/issues/167)\n[<samp>(bde99)</samp>](https://redirect.github.com/tinylibs/tinybench/commit/bde9951)\n- **dependabot**: Add examples directory  -  by\n[@&#8203;jerome-benoit](https://redirect.github.com/jerome-benoit)\n[<samp>(29e44)</samp>](https://redirect.github.com/tinylibs/tinybench/commit/29e44b2)\n- **test**: Use proper expectation type  -  by\n[@&#8203;jerome-benoit](https://redirect.github.com/jerome-benoit)\n[<samp>(347a5)</samp>](https://redirect.github.com/tinylibs/tinybench/commit/347a5ff)\n\n#####    🏎 Performance\n\n- Bind timestamping function to their modules  -  by\n[@&#8203;jerome-benoit](https://redirect.github.com/jerome-benoit) in\n[https://github.com/tinylibs/tinybench/issues/149](https://redirect.github.com/tinylibs/tinybench/issues/149)\n[<samp>(d9a23)</samp>](https://redirect.github.com/tinylibs/tinybench/commit/d9a238a)\n\n#####     [View changes on\nGitHub](https://redirect.github.com/tinylibs/tinybench/compare/v2.9.0...v3.0.0)\n\n</details>\n\n---\n\n### Configuration\n\n📅 **Schedule**: Branch creation - \"before 10am on monday\" in timezone\nAsia/Shanghai, Automerge - At any time (no schedule defined).\n\n🚦 **Automerge**: Disabled by config. Please merge this manually once you\nare satisfied.\n\n♻ **Rebasing**: Whenever PR becomes conflicted, or you tick the\nrebase/retry checkbox.\n\n🔕 **Ignore**: Close this PR and you won't be reminded about this update\nagain.\n\n---\n\n- [ ] <!-- rebase-check -->If you want to rebase/retry this PR, check\nthis box\n\n---\n\nThis PR was generated by [Mend Renovate](https://mend.io/renovate/).\nView the [repository job\nlog](https://developer.mend.io/github/rolldown/rolldown).\n\n<!--renovate-debug:eyJjcmVhdGVkSW5WZXIiOiIzOC4xMjAuMSIsInVwZGF0ZWRJblZlciI6IjM4LjEyMC4xIiwidGFyZ2V0QnJhbmNoIjoibWFpbiIsImxhYmVscyI6W119-->\n\n---------\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>\nCo-authored-by: IWANABETHATGUY <iwanabethatguy@qq.com>",
+          "timestamp": "2024-10-28T10:48:15Z",
+          "tree_id": "52ee275bdeec99c22a8423b613c4661a23b9be1a",
+          "url": "https://github.com/rolldown/rolldown/commit/3d3001faa9a269e75ec529e0e74adc28d6e1dd0f"
+        },
+        "date": 1730113426414,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "439.34",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "598.08",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1264.16",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1665.01",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "136.17",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "197.82",
             "unit": "ms / ops"
           }
         ]
