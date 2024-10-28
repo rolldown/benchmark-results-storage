@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1730113426431,
+  "lastUpdate": 1730114210220,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -49373,6 +49373,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "197.82",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5fc923df94ca54c1fff35c5bc26d179813a9305d",
+          "message": "refactor: remove BindingTransformPluginContext unsafe code (#2515)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-10-28T10:57:20Z",
+          "tree_id": "a368c58ff5c0e34ac3bfd5f4124365abb048563b",
+          "url": "https://github.com/rolldown/rolldown/commit/5fc923df94ca54c1fff35c5bc26d179813a9305d"
+        },
+        "date": 1730114210202,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "385.10",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "584.59",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1190.83",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1641.11",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "129.84",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "190.25",
             "unit": "ms / ops"
           }
         ]
