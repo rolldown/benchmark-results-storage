@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1730114210220,
+  "lastUpdate": 1730256423993,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -49427,6 +49427,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "190.25",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "66c0f8789e03d0519fe42312cd65a9d25e899eef",
+          "message": "refactor:  remove unnecessary as_vec (#2521)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. since `oxc_index` already support rayon\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-10-30T02:32:19Z",
+          "tree_id": "d42688ae0f3f09c002db89a56021d465eb757b86",
+          "url": "https://github.com/rolldown/rolldown/commit/66c0f8789e03d0519fe42312cd65a9d25e899eef"
+        },
+        "date": 1730256423977,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "387.07",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "594.01",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1241.76",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1629.86",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "137.37",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "199.55",
             "unit": "ms / ops"
           }
         ]
