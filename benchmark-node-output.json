@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1730257916786,
+  "lastUpdate": 1730272981406,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -49535,6 +49535,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "182.42",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "liruifeng1024@gmail.com",
+            "name": "liruifengv",
+            "username": "liruifengv"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8ad02937f97c478e4a7d9e6807cee1f65f8e970a",
+          "message": "fix(cli): fix `-s` flag not working in cli & Update cli help info (#2517)\n\n<!-- Thank you for contributing! -->\r\n\r\n### Description\r\n\r\nChange the `-s` flag default to `true`.\r\n\r\n```\r\nor pass the -s on the last argument if you want to generate .map file).\r\n```\r\nAs the above description, just pass the `-s` flag will generate `.map`\r\nfile, so it default should be `true`.\r\n\r\nNow default is `false`, it not works!",
+          "timestamp": "2024-10-30T15:17:00+08:00",
+          "tree_id": "9d48332f1c7e679dad72c3a66ead9964064d3a56",
+          "url": "https://github.com/rolldown/rolldown/commit/8ad02937f97c478e4a7d9e6807cee1f65f8e970a"
+        },
+        "date": 1730272981389,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "402.46",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "601.24",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1255.46",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1653.74",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "138.20",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "196.38",
             "unit": "ms / ops"
           }
         ]
