@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1730354781218,
+  "lastUpdate": 1730359026393,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -49859,6 +49859,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "200.99",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tim@timfish.uk",
+            "name": "Tim Fish",
+            "username": "timfish"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0f1e936dd04edf28cc00637dfc8cad6b4f6c813a",
+          "message": "feat(sourcemap): Add support for injecting Debug IDs  (#2516)\n\nAdds support for injecting debug IDs into source files and sourcemaps as\nper the [TC39\nproposal](https://github.com/tc39/source-map/blob/main/proposals/debug-id.md).",
+          "timestamp": "2024-10-31T06:57:31Z",
+          "tree_id": "9e63bdba45321e0a81c4022b773fa63dd02901ea",
+          "url": "https://github.com/rolldown/rolldown/commit/0f1e936dd04edf28cc00637dfc8cad6b4f6c813a"
+        },
+        "date": 1730359026370,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "428.19",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "657.42",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1364.12",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1784.62",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "142.90",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "208.05",
             "unit": "ms / ops"
           }
         ]
