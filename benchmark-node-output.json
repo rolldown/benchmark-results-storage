@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1730342731168,
+  "lastUpdate": 1730344435498,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -49751,6 +49751,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "209.28",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d116b6be242be48fe23ccd3c0fc8e0c17bced3a5",
+          "message": "chore(deps): update rust crates (major) (#2529)\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [criterion2](https://bheisler.github.io/criterion.rs/book/index.html)\n([source](https://redirect.github.com/Boshen/criterion2.rs)) |\ndependencies | major | `1.0.0` -> `2.0.0` |\n| [notify](https://redirect.github.com/notify-rs/notify) |\nworkspace.dependencies | major | `6.1.1` -> `7.0.0` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>Boshen/criterion2.rs (criterion2)</summary>\n\n###\n[`v2.0.0`](https://redirect.github.com/Boshen/criterion2.rs/blob/HEAD/CHANGELOG.md#200---2024-10-31)\n\n[Compare\nSource](https://redirect.github.com/Boshen/criterion2.rs/compare/v1.1.1...v2.0.0)\n\n##### Other\n\n- Make filters to look for a substring unless exact is given\n([#&#8203;65](https://redirect.github.com/Boshen/criterion2.rs/pull/65))\n- *(deps)* update rust crates\n([#&#8203;64](https://redirect.github.com/Boshen/criterion2.rs/pull/64))\n- *(deps)* update rust crate serde_json to 1.0.132\n([#&#8203;63](https://redirect.github.com/Boshen/criterion2.rs/pull/63))\n- *(deps)* update dependency rust to v1.82.0\n([#&#8203;62](https://redirect.github.com/Boshen/criterion2.rs/pull/62))\n- *(deps)* update rust crate bpaf to 0.9.15\n([#&#8203;61](https://redirect.github.com/Boshen/criterion2.rs/pull/61))\n- *(deps)* update rust crate futures to 0.3.31\n([#&#8203;60](https://redirect.github.com/Boshen/criterion2.rs/pull/60))\n- *(deps)* update rust crate tempfile to 3.13.0\n([#&#8203;59](https://redirect.github.com/Boshen/criterion2.rs/pull/59))\n- *(deps)* update rust crates\n([#&#8203;57](https://redirect.github.com/Boshen/criterion2.rs/pull/57))\n\n</details>\n\n<details>\n<summary>notify-rs/notify (notify)</summary>\n\n###\n[`v7.0.0`](https://redirect.github.com/notify-rs/notify/blob/HEAD/CHANGELOG.md#notify-700-2024-10-25)\n\n[Compare\nSource](https://redirect.github.com/notify-rs/notify/compare/notify-6.1.1...notify-7.0.0)\n\n-   CHANGE: raise MSRV to 1.72 [#&#8203;569] [#&#8203;610] **breaking**\n-   CHANGE: move event type to notify-types crate [#&#8203;559]\n- CHANGE: flatten serialization of events and use camelCase\n[#&#8203;558]\n- CHANGE: remove internal use of crossbeam channels [#&#8203;569]\n[#&#8203;610]\n- CHANGE: rename feature `crossbeam` to `crossbeam-channel` and disable\nit by default [#&#8203;610] **breaking**\n-   CHANGE: upgrade mio to 1.0 [#&#8203;623]\n-   CHANGE: add log statements [#&#8203;499]\n- FIX: prevent UB with illegal instruction for the windows backend\n[#&#8203;604] [#&#8203;607]\n-   FIX: on Linux report deleted directories correctly [#&#8203;545]\n-   FIX: on Linux report access open events [#&#8203;612]\n-   FEATURE: enable kqueue on iOS [#&#8203;533]\n- MISC: various minor doc updates and fixes [#&#8203;535] [#&#8203;536]\n[#&#8203;543] [#&#8203;565] [#&#8203;592] [#&#8203;595]\n-   MISC: update inotify to 0.10 [#&#8203;547]\n\n[#&#8203;499]: https://redirect.github.com/notify-rs/notify/pull/499\n\n[#&#8203;533]: https://redirect.github.com/notify-rs/notify/pull/533\n\n[#&#8203;535]: https://redirect.github.com/notify-rs/notify/pull/535\n\n[#&#8203;536]: https://redirect.github.com/notify-rs/notify/pull/536\n\n[#&#8203;543]: https://redirect.github.com/notify-rs/notify/pull/543\n\n[#&#8203;545]: https://redirect.github.com/notify-rs/notify/pull/545\n\n[#&#8203;547]: https://redirect.github.com/notify-rs/notify/pull/547\n\n[#&#8203;558]: https://redirect.github.com/notify-rs/notify/pull/558\n\n[#&#8203;559]: https://redirect.github.com/notify-rs/notify/pull/559\n\n[#&#8203;565]: https://redirect.github.com/notify-rs/notify/pull/565\n\n[#&#8203;569]: https://redirect.github.com/notify-rs/notify/pull/569\n\n[#&#8203;592]: https://redirect.github.com/notify-rs/notify/pull/592\n\n[#&#8203;595]: https://redirect.github.com/notify-rs/notify/pull/595\n\n[#&#8203;604]: https://redirect.github.com/notify-rs/notify/pull/604\n\n[#&#8203;607]: https://redirect.github.com/notify-rs/notify/pull/607\n\n[#&#8203;610]: https://redirect.github.com/notify-rs/notify/pull/610\n\n[#&#8203;612]: https://redirect.github.com/notify-rs/notify/pull/612\n\n[#&#8203;623]: https://redirect.github.com/notify-rs/notify/pull/623\n\n</details>\n\n---\n\n### Configuration\n\n📅 **Schedule**: Branch creation - \"before 10am on monday\" in timezone\nAsia/Shanghai, Automerge - At any time (no schedule defined).\n\n🚦 **Automerge**: Enabled.\n\n♻ **Rebasing**: Whenever PR is behind base branch, or you tick the\nrebase/retry checkbox.\n\n👻 **Immortal**: This PR will be recreated if closed unmerged. Get\n[config\nhelp](https://redirect.github.com/renovatebot/renovate/discussions) if\nthat's undesired.\n\n---\n\n- [ ] <!-- rebase-check -->If you want to rebase/retry this PR, check\nthis box\n\n---\n\nThis PR was generated by [Mend Renovate](https://mend.io/renovate/).\nView the [repository job\nlog](https://developer.mend.io/github/rolldown/rolldown).\n\n<!--renovate-debug:eyJjcmVhdGVkSW5WZXIiOiIzOC4xMzUuMiIsInVwZGF0ZWRJblZlciI6IjM4LjEzNS4yIiwidGFyZ2V0QnJhbmNoIjoibWFpbiIsImxhYmVscyI6W119-->\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2024-10-31T02:54:14Z",
+          "tree_id": "0a82584776109b3c2ce890036542da581aa74fc7",
+          "url": "https://github.com/rolldown/rolldown/commit/d116b6be242be48fe23ccd3c0fc8e0c17bced3a5"
+        },
+        "date": 1730344435479,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "398.80",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "637.35",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1255.68",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1717.76",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "136.68",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "199.27",
             "unit": "ms / ops"
           }
         ]
