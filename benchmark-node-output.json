@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1730368470996,
+  "lastUpdate": 1730370069094,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -49967,6 +49967,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "204.29",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "cb9a52da1b381d38825ef6333a9f4f9aa1a1a7ea",
+          "message": "feat: print friendly msg for watch rebuild (#2533)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nThe pr print friendly msg for watch rebuild, here is example.\n\n```\nWaiting for changes...                                                                                                                   \nFound index.js changed, rebuilding...                                                                                                    \n✔ Rebuilt dist in 209.00 ms.                                                                                                            \n```\n\n\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-10-31T10:02:00Z",
+          "tree_id": "f803c1cf0d1871ee7a54c0c8b4dd87814a725809",
+          "url": "https://github.com/rolldown/rolldown/commit/cb9a52da1b381d38825ef6333a9f4f9aa1a1a7ea"
+        },
+        "date": 1730370069063,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "394.37",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "641.61",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1246.28",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1653.28",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "134.43",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "192.06",
             "unit": "ms / ops"
           }
         ]
