@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1730307432004,
+  "lastUpdate": 1730342731168,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -49697,6 +49697,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "201.44",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ce26138b981c11cdfecf5fa945ee000d37ed4252",
+          "message": "refactor:  `tweak_ast_for_scanning` function as a visitor (#2527)\n\n<!-- Thank you for contributing! -->\n\n### Description\nthere are several goals for this refactor.\n1. esbuild transpose `require(test ? 'a' : 'b')` to `test ? require('a')\n: require('b')`, we need to transpose it as well to support it. ref\nhttps://github.com/evanw/esbuild/commit/2bff66e2b6c7ba1b1b759ea682f4f1380d67c633\n2. We could merge the `EnsureSpanUnicueness` pass\nhttps://github.com/rolldown/rolldown/blob/b0f5cc83078ee63a99000afe6c1033bb9e80346e/crates/rolldown/src/utils/pre_process_ecma_ast.rs#L138-L140\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-10-31T02:26:29Z",
+          "tree_id": "5626472787bfebe6c663c12ed286a72dfb3edec5",
+          "url": "https://github.com/rolldown/rolldown/commit/ce26138b981c11cdfecf5fa945ee000d37ed4252"
+        },
+        "date": 1730342731149,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "390.78",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "632.77",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1235.38",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1766.75",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "140.75",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "209.28",
             "unit": "ms / ops"
           }
         ]
