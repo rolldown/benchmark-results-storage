@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1730378282697,
+  "lastUpdate": 1730392432797,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -50075,6 +50075,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "223.35",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6fce3c4f55dfd4c8d650ddc0d020822299a17f3f",
+          "message": "fix:  remove plain import decl if importee is side effects free (#2537)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-10-31T16:14:35Z",
+          "tree_id": "c81a8fe4b530dca3112fc3448ca6f9ea7b838e99",
+          "url": "https://github.com/rolldown/rolldown/commit/6fce3c4f55dfd4c8d650ddc0d020822299a17f3f"
+        },
+        "date": 1730392432777,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "399.94",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "632.38",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1239.11",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1651.25",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "139.75",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "201.48",
             "unit": "ms / ops"
           }
         ]
