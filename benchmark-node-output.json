@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1730359026393,
+  "lastUpdate": 1730368470996,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -49913,6 +49913,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "208.05",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "93929579699c290b3f6bd962d35bc99f5681d559",
+          "message": "fix: conditional expr import and require (#2532)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. related commit\nhttps://github.com/evanw/esbuild/commit/2bff66e2b6c7ba1b1b759ea682f4f1380d67c633\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-10-31T09:34:35Z",
+          "tree_id": "50e6439c18257cba44c2e138ca675a6190e655a6",
+          "url": "https://github.com/rolldown/rolldown/commit/93929579699c290b3f6bd962d35bc99f5681d559"
+        },
+        "date": 1730368470970,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "418.38",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "671.26",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1340.07",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1759.23",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "140.78",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "204.29",
             "unit": "ms / ops"
           }
         ]
