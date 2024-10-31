@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1730370069094,
+  "lastUpdate": 1730378282697,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -50021,6 +50021,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "192.06",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "92948a4dc2a2d27635d6b1a7f45533f603b6818e",
+          "message": "feat: Calling bundle.write multiple times with different output options (#2535)\n\n<!-- Thank you for contributing! -->\n\n### Description\nclose https://github.com/rolldown/rolldown/issues/2495\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->\n\n---------\n\nCo-authored-by: underfin <likui.underfin@gmail.com>",
+          "timestamp": "2024-10-31T12:17:54Z",
+          "tree_id": "3c5c82a28bfd4a382922a5950dbe0910176dc934",
+          "url": "https://github.com/rolldown/rolldown/commit/92948a4dc2a2d27635d6b1a7f45533f603b6818e"
+        },
+        "date": 1730378282676,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "425.01",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "672.91",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1350.13",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1812.50",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "148.29",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "223.35",
             "unit": "ms / ops"
           }
         ]
