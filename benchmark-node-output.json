@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1730437353104,
+  "lastUpdate": 1730443992790,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -50399,6 +50399,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "208.45",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0690eccc45842a2d1171d5a4fd970cb2901a14a6",
+          "message": "chore(node/hook-filter): improve jsdoc of id filter (#2544)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n- https://jsdoc.app/tags-example\n<img width=\"877\" alt=\"HapiGo_2024-11-01_14 11 17\"\nsrc=\"https://github.com/user-attachments/assets/98b45bd6-6d34-46ed-a8ec-75c3aa84a837\">\n\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-01T06:33:52Z",
+          "tree_id": "146152a1c7de8482720c3d028eeb3d578e5aebb2",
+          "url": "https://github.com/rolldown/rolldown/commit/0690eccc45842a2d1171d5a4fd970cb2901a14a6"
+        },
+        "date": 1730443992772,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "399.83",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "653.75",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1259.52",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1730.46",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "138.85",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "213.62",
             "unit": "ms / ops"
           }
         ]
