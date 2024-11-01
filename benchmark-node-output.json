@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1730431979299,
+  "lastUpdate": 1730433278651,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -50291,6 +50291,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "205.49",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "826b92018189c1f5e97eef1064f6a0a05ee55d58",
+          "message": "feat(node/hook-filter): improve dx of writting filter (#2542)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nSupport pattern\n\n```js\n{\n  filter: {\n    id: \".txt\",\n  }\n}\n\n// equals\n\n{\n  filter: {\n    id: [\".txt\"],\n  }\n}\n\n// equals\n\n{\n  filter: {\n    id: {\n      include: \".txt\",\n    },\n  }\n}\n\n// equals\n\n{\n  filter: {\n    id: {\n      include: [\".txt\"],\n    },\n  }\n}\n\n\n```\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-01T03:34:42Z",
+          "tree_id": "233e67437934f2b87798d4ea4958503c91e06287",
+          "url": "https://github.com/rolldown/rolldown/commit/826b92018189c1f5e97eef1064f6a0a05ee55d58"
+        },
+        "date": 1730433278632,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "402.43",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "652.34",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1255.70",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1736.94",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "139.00",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "216.16",
             "unit": "ms / ops"
           }
         ]
