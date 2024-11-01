@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1730433278651,
+  "lastUpdate": 1730437353104,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -50345,6 +50345,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "216.16",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "536638d5ca56ba799db584c3f3d5bade0522792f",
+          "message": "fix: update the rollup external test status (#2543)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-01T04:42:55Z",
+          "tree_id": "c1845d700b76b3e488b98409fad93fa26104135e",
+          "url": "https://github.com/rolldown/rolldown/commit/536638d5ca56ba799db584c3f3d5bade0522792f"
+        },
+        "date": 1730437353079,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "410.97",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "647.90",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1306.76",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1729.34",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "139.18",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "208.45",
             "unit": "ms / ops"
           }
         ]
