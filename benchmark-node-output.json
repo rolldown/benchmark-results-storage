@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1730568194539,
+  "lastUpdate": 1730570793927,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -50723,6 +50723,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "202.05",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e98762e38da2a75eaee01bdef459bda0d5920a6c",
+          "message": "refactor: replace `AseetSource` with `StrOrBytes` (#2558)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n`StrOrBytes` seems to be a more primitive, intuitive and reusage type\nthan `AseetSource`. So `AssetSource` got removed.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-02T17:27:48Z",
+          "tree_id": "ce3920cd8d72f0cab478d4dfc65c0312d9fab998",
+          "url": "https://github.com/rolldown/rolldown/commit/e98762e38da2a75eaee01bdef459bda0d5920a6c"
+        },
+        "date": 1730570793906,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "421.45",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "671.43",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1355.94",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1765.20",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "148.98",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "218.41",
             "unit": "ms / ops"
           }
         ]
