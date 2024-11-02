@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1730571653999,
+  "lastUpdate": 1730572537410,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -50831,6 +50831,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "211.43",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "918a4e030bd5c2f0c596c2017f37735422554413",
+          "message": "refactor: don't replace facade hash on binary data (#2560)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-02T18:09:55Z",
+          "tree_id": "d4b8a02ce5c2cce386c2cab3f18415c676bd1199",
+          "url": "https://github.com/rolldown/rolldown/commit/918a4e030bd5c2f0c596c2017f37735422554413"
+        },
+        "date": 1730572537390,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "399.89",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "639.24",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1254.82",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1717.12",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "137.84",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "211.67",
             "unit": "ms / ops"
           }
         ]
