@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1730565607741,
+  "lastUpdate": 1730568194539,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -50669,6 +50669,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "212.00",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "fca0a6b640ec356674d6bf57145f3203cd6a0ad0",
+          "message": "refactor: allow the content of `InstantiatedChunk` to be binary data (#2557)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-02T16:51:57Z",
+          "tree_id": "5c8a39304ad12a628c212f0584c114fdaf5923b5",
+          "url": "https://github.com/rolldown/rolldown/commit/fca0a6b640ec356674d6bf57145f3203cd6a0ad0"
+        },
+        "date": 1730568194517,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "419.47",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "662.36",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1335.71",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1776.45",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "156.04",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "202.05",
             "unit": "ms / ops"
           }
         ]
