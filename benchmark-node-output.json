@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1730572537410,
+  "lastUpdate": 1730622621703,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -50885,6 +50885,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "211.67",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9f9689d2dc12f8f9b4625186cbd67d5f166047ed",
+          "message": "feat(rust/test): show filename of binary files in snapshot (#2561)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-03T09:11:52Z",
+          "tree_id": "7fc17084cada1a1de4e7be0ea2c9f019c8cbd65e",
+          "url": "https://github.com/rolldown/rolldown/commit/9f9689d2dc12f8f9b4625186cbd67d5f166047ed"
+        },
+        "date": 1730622621678,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "399.30",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "633.44",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1248.63",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1669.23",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "133.81",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "208.14",
             "unit": "ms / ops"
           }
         ]
