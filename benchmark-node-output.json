@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1730631770647,
+  "lastUpdate": 1730638138345,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -51155,6 +51155,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "203.89",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "41782cd5468192b01d6a4d535291af0e2cb801d4",
+          "message": "feat: check resolved failed module is external with isResolved ture (#2570)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-03T12:29:32Z",
+          "tree_id": "ed6f1d392818042eb188a6cddf459663036a78a4",
+          "url": "https://github.com/rolldown/rolldown/commit/41782cd5468192b01d6a4d535291af0e2cb801d4"
+        },
+        "date": 1730638138325,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "390.63",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "632.74",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1230.01",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1682.27",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "134.25",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "211.07",
             "unit": "ms / ops"
           }
         ]
