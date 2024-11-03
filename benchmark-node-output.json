@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1730638138345,
+  "lastUpdate": 1730643505116,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -51209,6 +51209,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "211.07",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ea25158010d71a4f74470988c27e4218962ba0bc",
+          "message": "chore: improve error message of `validate_options_for_multi_chunk_output` (#2571)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nCopied from\n\n\nhttps://github.com/rollup/rollup/blob/4e8e5b40cf6eb1be278c9e2146c073db8ea603ec/src/Bundle.ts#L243\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-03T13:58:39Z",
+          "tree_id": "765c311d2b56a13bf08dca9e6728da107fbe2b4b",
+          "url": "https://github.com/rolldown/rolldown/commit/ea25158010d71a4f74470988c27e4218962ba0bc"
+        },
+        "date": 1730643505097,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "410.14",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "648.66",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1296.18",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1712.06",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "138.58",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "204.39",
             "unit": "ms / ops"
           }
         ]
