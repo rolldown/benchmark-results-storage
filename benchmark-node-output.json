@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1730626922840,
+  "lastUpdate": 1730629899425,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -51047,6 +51047,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "191.51",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a76662415c86fb5fe9883a6cc8ae35d457510975",
+          "message": "refactor(rust): make js and css chunk have their own unique names (#2564)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nThis PR make the js and css chunk not share the same `used_name_counts`,\nbecause they have their own unique extension `.js` and `.css`.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-03T10:10:26Z",
+          "tree_id": "5ffa8332f249b7cce0ae26611ce0298dc1584e51",
+          "url": "https://github.com/rolldown/rolldown/commit/a76662415c86fb5fe9883a6cc8ae35d457510975"
+        },
+        "date": 1730629899405,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "397.70",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "635.17",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1224.60",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1674.71",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "137.45",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "211.35",
             "unit": "ms / ops"
           }
         ]
