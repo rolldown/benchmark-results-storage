@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1730647502529,
+  "lastUpdate": 1730649154951,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -51317,6 +51317,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "206.83",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f535ab201a3116bc2fd55a94c893b062cbf1af6b",
+          "message": "chore(rolldown): revert oxc v0.35.0 (#2574)\" (#2575)\n\nThis reverts commit 82cdb6af0b72b756d7329ed8009f1879afe8465d.\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-03T15:32:48Z",
+          "tree_id": "765c311d2b56a13bf08dca9e6728da107fbe2b4b",
+          "url": "https://github.com/rolldown/rolldown/commit/f535ab201a3116bc2fd55a94c893b062cbf1af6b"
+        },
+        "date": 1730649154924,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "398.63",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "628.19",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1238.00",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1654.88",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "139.61",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "200.46",
             "unit": "ms / ops"
           }
         ]
