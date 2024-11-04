@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1730711855489,
+  "lastUpdate": 1730720960000,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -51749,6 +51749,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "203.41",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "58853fe594a7e7230a0fa689e4e19621594961c3",
+          "message": "fix: should reference importee namespace_object_ref for export all decl (#2585)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-04T11:29:04Z",
+          "tree_id": "90ad5732a34847a5e445c3e8e99b35181b2bd42b",
+          "url": "https://github.com/rolldown/rolldown/commit/58853fe594a7e7230a0fa689e4e19621594961c3"
+        },
+        "date": 1730720959979,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "398.89",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "647.25",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1247.48",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1736.66",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "146.97",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "224.04",
             "unit": "ms / ops"
           }
         ]
