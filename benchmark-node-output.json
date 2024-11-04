@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1730696842739,
+  "lastUpdate": 1730697847067,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -51641,6 +51641,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "220.24",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "efb48dd53c65c9764b6ba0528dfef3c513b828a7",
+          "message": "feat(asset): generate correct path for imported asset modules (#2573)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-04T04:56:30Z",
+          "tree_id": "29b586220af04cd87b8546e4c4f625d2f52dc565",
+          "url": "https://github.com/rolldown/rolldown/commit/efb48dd53c65c9764b6ba0528dfef3c513b828a7"
+        },
+        "date": 1730697847048,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "385.19",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "633.27",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1187.11",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1584.44",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "129.44",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "190.61",
             "unit": "ms / ops"
           }
         ]
