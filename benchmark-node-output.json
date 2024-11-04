@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1730725634459,
+  "lastUpdate": 1730727158989,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -51857,6 +51857,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "195.76",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "da393ca8d2a1b7b9bb255b4fcf29c59cc4593fd2",
+          "message": "fix: hashbang code generation (#2483)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. Before, we didn't handle `hashbang` and kept it as is, then let `oxc`\ngenerate it at the module level. However, if there are multiple modules\nwith hashbang, then a syntax will be raised\n[e.g.](https://oxc-project.github.io/oxc/playground/?code=3YCAAID6gICAgICAgICRCMLHCqOzQ%2FePs33VF20nRjvZPGHjK6NVbP%2BOYkjjnp2ajneuSMN4lq4M9qtRZz9233dFn8ZEcQDCqYIwB%2BliBTc2KVJdUkzo73ZtlTcrXJvcyCMio33NX398BwSA).\nThis pr fixes that issue.\nref\nhttps://github.com/evanw/esbuild/blob/d34e79e2a998c21bb71d57b92b0017ca11756912/internal/linker/linker.go#L5663-L5673\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-04T13:12:11Z",
+          "tree_id": "98e815f21f2a7e5ca19c06095308328ce1398827",
+          "url": "https://github.com/rolldown/rolldown/commit/da393ca8d2a1b7b9bb255b4fcf29c59cc4593fd2"
+        },
+        "date": 1730727158969,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "421.38",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "660.35",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1317.28",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1805.85",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "144.74",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "223.66",
             "unit": "ms / ops"
           }
         ]
