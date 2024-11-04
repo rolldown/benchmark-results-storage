@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1730695850847,
+  "lastUpdate": 1730696842739,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -51587,6 +51587,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "213.46",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "2ace0ebacedcf330bfd27c8029ce24c1925e09fb",
+          "message": "feat(rust): move `string_wizard` to the repo (#2572)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nTo have a quick development loop, it's better to move the\n`string_wizard` in the repo so we could modify it in time.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-04T04:40:29Z",
+          "tree_id": "3632f1d301ffbba19dd3f6ba88472207bc200b13",
+          "url": "https://github.com/rolldown/rolldown/commit/2ace0ebacedcf330bfd27c8029ce24c1925e09fb"
+        },
+        "date": 1730696842718,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "414.54",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "655.47",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1309.22",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1778.36",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "144.06",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "220.24",
             "unit": "ms / ops"
           }
         ]
