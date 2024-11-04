@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1730736930848,
+  "lastUpdate": 1730737964747,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -51965,6 +51965,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "212.63",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "378692a3fc6c50440b799eb53f728d4b14022db0",
+          "message": "feat(node): support `output.file` option (#2567)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n- closes https://github.com/rolldown/rolldown/issues/2224\n- closes https://github.com/rolldown/rolldown/pull/1393\n- closes https://github.com/rolldown/rolldown/issues/624\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-04T16:06:56Z",
+          "tree_id": "28abccb8707c919f3e451aab8b1786694ab9ef00",
+          "url": "https://github.com/rolldown/rolldown/commit/378692a3fc6c50440b799eb53f728d4b14022db0"
+        },
+        "date": 1730737964728,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "401.39",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "629.58",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1241.98",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1662.58",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "135.68",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "203.06",
             "unit": "ms / ops"
           }
         ]
