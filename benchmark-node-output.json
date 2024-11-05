@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1730808918715,
+  "lastUpdate": 1730816545931,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -52613,6 +52613,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "198.87",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c0920f299f1a8b7517713824ab0fe96771391ca7",
+          "message": "fix: mark some known global constructor as side effects free (#2610)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. part of https://github.com/rolldown/rolldown/issues/2603\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-05T14:02:50Z",
+          "tree_id": "042a96ba383d7c8306eb2907266aca7315ea27e5",
+          "url": "https://github.com/rolldown/rolldown/commit/c0920f299f1a8b7517713824ab0fe96771391ca7"
+        },
+        "date": 1730816545909,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "407.64",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "646.51",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1296.73",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1727.70",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "138.82",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "209.75",
             "unit": "ms / ops"
           }
         ]
