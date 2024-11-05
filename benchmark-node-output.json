@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1730802549486,
+  "lastUpdate": 1730802649331,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -52404,9 +52404,9 @@
       {
         "commit": {
           "author": {
-            "email": "likui.underfin@gmail.com",
-            "name": "underfin",
-            "username": "underfin"
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
           },
           "committer": {
             "email": "noreply@github.com",
@@ -52414,43 +52414,43 @@
             "username": "web-flow"
           },
           "distinct": false,
-          "id": "26a4031b47a274e419a9c21e3cf4e287ef9ef4d6",
-          "message": "fix(plugin): ensure correct execution order (#2602)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->\n\n- support js side hooks plugin order\n- disable `buildStart` hook run in parallel, it break plugin order\nbehavior. We could make the plugin run in parallel for supported hooks\nat future.\n- refactor plugin order test follow rollup test",
-          "timestamp": "2024-11-05T09:58:32Z",
-          "tree_id": "6411e91e7d945cd0f251944e4e48f068774fcd6d",
-          "url": "https://github.com/rolldown/rolldown/commit/26a4031b47a274e419a9c21e3cf4e287ef9ef4d6"
+          "id": "23a78feeba41e10392142690c2791d8958d60d8e",
+          "message": "refactor(rust): add `NormalModule::render` (#2591)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-05T09:59:13Z",
+          "tree_id": "a1fb3585f8c4e442e4bef9ac737688af6b125a37",
+          "url": "https://github.com/rolldown/rolldown/commit/23a78feeba41e10392142690c2791d8958d60d8e"
         },
-        "date": 1730802549467,
+        "date": 1730802649311,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x (default)",
-            "value": "401.13",
+            "value": "387.11",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap (default)",
-            "value": "632.93",
+            "value": "626.60",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify (default)",
-            "value": "1264.77",
+            "value": "1203.60",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify-sourcemap (default)",
-            "value": "1696.35",
+            "value": "1636.81",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts (default)",
-            "value": "136.81",
+            "value": "137.01",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts-sourcemap (default)",
-            "value": "202.30",
+            "value": "201.38",
             "unit": "ms / ops"
           }
         ]
