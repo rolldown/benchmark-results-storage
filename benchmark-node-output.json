@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1730802649331,
+  "lastUpdate": 1730805049332,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -52451,6 +52451,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "201.38",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "035c1135176491d2c8ed53c2f30883c22575b912",
+          "message": "refactor(rolldown_sourcemap): introduce lifetime on `SourceJoiner` (#2595)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nPreparation for https://github.com/rolldown/rolldown/pull/2596.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-05T10:20:51Z",
+          "tree_id": "3c2aa1e3f8046e14e28015d6831c32637d766158",
+          "url": "https://github.com/rolldown/rolldown/commit/035c1135176491d2c8ed53c2f30883c22575b912"
+        },
+        "date": 1730805049311,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "387.95",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "614.91",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1218.78",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1642.86",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "139.29",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "196.67",
             "unit": "ms / ops"
           }
         ]
