@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1730777314010,
+  "lastUpdate": 1730795223461,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -52181,6 +52181,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "193.39",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "829d80a08c5d3af4d1fe0279853b1c28b2ad4c1a",
+          "message": "feat: support css url import dependency (#2598)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. Use `Span` instead of `module_request_strart` since the span of URL\nis more complicated and can't use tricks to reduce memory.\n2. try to resolve\nhttps://github.com/rolldown/rolldown/blob/63875e40b7687f9917b70556c23f60e925b111aa/scripts/snap-diff/stats/aggregated-reason.md#L114-L114\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-05T08:08:28Z",
+          "tree_id": "30c666c68c76dae22d5f191c058972aada715cd9",
+          "url": "https://github.com/rolldown/rolldown/commit/829d80a08c5d3af4d1fe0279853b1c28b2ad4c1a"
+        },
+        "date": 1730795223440,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "409.57",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "645.60",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1278.96",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1728.85",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "142.20",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "216.48",
             "unit": "ms / ops"
           }
         ]
