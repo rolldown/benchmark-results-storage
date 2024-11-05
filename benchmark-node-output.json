@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1730773897818,
+  "lastUpdate": 1730774341530,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -52035,44 +52035,44 @@
             "name": "GitHub",
             "username": "web-flow"
           },
-          "distinct": false,
-          "id": "d13bed5523ec6750f9ad607b8a7afce417572c8e",
-          "message": "chore(string_wizard): make `MagicString#filename` private (#2592)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
-          "timestamp": "2024-11-05T02:12:10Z",
-          "tree_id": "2a8eb5bb9f470444091ad27eed42609b38d1b395",
-          "url": "https://github.com/rolldown/rolldown/commit/d13bed5523ec6750f9ad607b8a7afce417572c8e"
+          "distinct": true,
+          "id": "e15ac4be35f82755da570a29576e6f07e7f389ee",
+          "message": "chore(rust): rename `ecma_script.rs` to `ecmascript.rs` (#2588)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-05T02:17:11Z",
+          "tree_id": "131e2294175c543213fc7f75ad3f51a356d5c0ee",
+          "url": "https://github.com/rolldown/rolldown/commit/e15ac4be35f82755da570a29576e6f07e7f389ee"
         },
-        "date": 1730773897799,
+        "date": 1730774341511,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x (default)",
-            "value": "397.40",
+            "value": "395.02",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap (default)",
-            "value": "640.76",
+            "value": "631.48",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify (default)",
-            "value": "1237.81",
+            "value": "1224.28",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify-sourcemap (default)",
-            "value": "1662.83",
+            "value": "1666.16",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts (default)",
-            "value": "135.38",
+            "value": "135.53",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts-sourcemap (default)",
-            "value": "206.85",
+            "value": "212.40",
             "unit": "ms / ops"
           }
         ]
