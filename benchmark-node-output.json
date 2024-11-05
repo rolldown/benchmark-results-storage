@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1730807048544,
+  "lastUpdate": 1730808918715,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -52559,6 +52559,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "203.51",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2fc2e096a33196759c5a35753b3d01ceca3e7437",
+          "message": "refactor: should render output without taking ownerships (#2597)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n- It's not nescessay to take the ownership while rendering output. \n- Consider that `RenderedModuleSources` might be reused during different\nbuilds in the future.\n\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-05T11:51:42Z",
+          "tree_id": "e4a4344b727cf04eb42b7c9da20498c7ea862c50",
+          "url": "https://github.com/rolldown/rolldown/commit/2fc2e096a33196759c5a35753b3d01ceca3e7437"
+        },
+        "date": 1730808918695,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "399.10",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "642.69",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1233.04",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1667.11",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "139.88",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "198.87",
             "unit": "ms / ops"
           }
         ]
