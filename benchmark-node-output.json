@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1730910083867,
+  "lastUpdate": 1730912666888,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -53315,6 +53315,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "213.66",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "18ee4d3cad09be72c3f830bd1a2dce5dd749a1b5",
+          "message": "refactor: PluginContext#getModuleInfo (#2625)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->\n\nThe pr refactor the `PluginContext#getModuleInfo` implementation, using\n`PluginDriver#modules` to store module info table instead of using\nreference `ModuleTable`. It has some advantages.\n- remove unsafe reference `ModuleTable`\n- make https://github.com/rolldown/rolldown/issues/2392 has a chance\ncould be fixed.\n- make `PluginContext#load` logic easy to do, if the module already\nexit, here doesn't need to fetch it.\n\nHere maybe has some performance regression because we need to\n`set_module_info` when some fields change, but it is acceptable. Because\nthe operation almost happened at `ModuleTask`, only has overhead at\nrefresh `importers/dynamic_importers` at main thread.",
+          "timestamp": "2024-11-06T16:42:41Z",
+          "tree_id": "fafcfe0049cf83e091fce22d9163e21e7da2fdb8",
+          "url": "https://github.com/rolldown/rolldown/commit/18ee4d3cad09be72c3f830bd1a2dce5dd749a1b5"
+        },
+        "date": 1730912666865,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "432.78",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "673.48",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1435.24",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1850.04",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "145.19",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "225.98",
             "unit": "ms / ops"
           }
         ]
