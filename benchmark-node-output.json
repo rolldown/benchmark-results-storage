@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1730888804324,
+  "lastUpdate": 1730891315147,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -53099,6 +53099,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "203.92",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "ec0a0a11cb3269cf1d579703a2d73186b0a9ec13",
+          "message": "refactor(rolldown_sourcemap): tweak `line_count` related code (#2626)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n- use the faster `line_count` function in all places\n- only pre compute sourcemap data in parallel if necessary\n- hide the pre-compute logic inside the function, so people don't bother\nto understand why we compute it and pass it instead of compute it when\nwe needed.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-06T10:31:38Z",
+          "tree_id": "0f09b47c0f9bd247659040e3fb26d103577f0f4f",
+          "url": "https://github.com/rolldown/rolldown/commit/ec0a0a11cb3269cf1d579703a2d73186b0a9ec13"
+        },
+        "date": 1730891315126,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "400.06",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "647.77",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1265.41",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1686.85",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "137.95",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "203.69",
             "unit": "ms / ops"
           }
         ]
