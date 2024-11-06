@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1730881678678,
+  "lastUpdate": 1730882161310,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -52890,53 +52890,53 @@
       {
         "commit": {
           "author": {
-            "email": "i.heyunfei@gmail.com",
-            "name": "Yunfei He",
-            "username": "hyf0"
+            "email": "laipichan@qq.com",
+            "name": "dalaoshu",
+            "username": "shulaoda"
           },
           "committer": {
             "email": "noreply@github.com",
             "name": "GitHub",
             "username": "web-flow"
           },
-          "distinct": false,
-          "id": "a35fabae44ff84e7110a1f82921d2f6685b85923",
-          "message": "feat(rust): add `comments` option (#2614)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nSince we have a feature-complete js compiler, instead of using\n`legalComments`, we gonna have a more general name `comments` for\ncontrolling behavior related to comments. @yyx990803 cc\n\nThis PR adds two option:\n- Preserve all comments as possible\n- Remove all comments\n\nI'll add legal-comments-related feature in later PRs.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
-          "timestamp": "2024-11-06T08:02:57Z",
-          "tree_id": "fa9b5fd08f8f8f962d039223a2b6831686a8cf1f",
-          "url": "https://github.com/rolldown/rolldown/commit/a35fabae44ff84e7110a1f82921d2f6685b85923"
+          "distinct": true,
+          "id": "2863d649fb95a82da6c1b51f9b47638c5430c966",
+          "message": "feat: use `satisfies` keyword for `InputOptions` and `OutputOptions` (#2611)\n\n### Description\n\ncloses #2568",
+          "timestamp": "2024-11-06T08:03:27Z",
+          "tree_id": "4145fdef8b2732ae545eb0a1b2e22b19894f056a",
+          "url": "https://github.com/rolldown/rolldown/commit/2863d649fb95a82da6c1b51f9b47638c5430c966"
         },
-        "date": 1730881678660,
+        "date": 1730882161289,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x (default)",
-            "value": "394.39",
+            "value": "392.42",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap (default)",
-            "value": "645.57",
+            "value": "639.63",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify (default)",
-            "value": "1229.90",
+            "value": "1233.81",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify-sourcemap (default)",
-            "value": "1658.10",
+            "value": "1671.96",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts (default)",
-            "value": "138.66",
+            "value": "145.54",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts-sourcemap (default)",
-            "value": "201.47",
+            "value": "198.80",
             "unit": "ms / ops"
           }
         ]
