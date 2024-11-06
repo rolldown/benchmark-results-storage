@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1730885718386,
+  "lastUpdate": 1730888004907,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -52991,6 +52991,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "205.89",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "bfac196a22efc9038587aa1550bdd6163cbfb6a4",
+          "message": "refactor(node/types): remove unnecessary `OverwriteInputOptionsWithDoc` (#2630)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nWe now could write jsdoc directly after #2611. No need to have a new\ntype anymore.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-06T09:28:42Z",
+          "tree_id": "aabd6fa19a645d0e817ce600468c68524fc8236f",
+          "url": "https://github.com/rolldown/rolldown/commit/bfac196a22efc9038587aa1550bdd6163cbfb6a4"
+        },
+        "date": 1730888004890,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "398.33",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "624.33",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1268.51",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1683.74",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "136.07",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "201.72",
             "unit": "ms / ops"
           }
         ]
