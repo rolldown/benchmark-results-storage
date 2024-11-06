@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1730888004907,
+  "lastUpdate": 1730888804324,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -53045,6 +53045,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "201.72",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "3aa4f0ed244cc0fb53ed3c95c6320ca4477949c0",
+          "message": "fix: soucemap file should be a path basename (#2608)\n\n<!-- Thank you for contributing! -->\n\n### Description\nclose #2569. The soucemap `file` should be a path basename. ref\nhttps://github.com/rollup/rollup/blob/master/src/utils/collapseSourcemaps.ts#L223\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-06T09:49:58Z",
+          "tree_id": "450ac46de6b22cc141aaa7c219fb9ce4321acf33",
+          "url": "https://github.com/rolldown/rolldown/commit/3aa4f0ed244cc0fb53ed3c95c6320ca4477949c0"
+        },
+        "date": 1730888804292,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "392.54",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "640.97",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1222.35",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1662.98",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "135.02",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "203.92",
             "unit": "ms / ops"
           }
         ]
