@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1730863963523,
+  "lastUpdate": 1730880070247,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -52829,6 +52829,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "215.07",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8daf1a023b905bb35e0eecdce760bb760916a2d4",
+          "message": "fix: make sure the sort compare function satisfy `total order` (#2621)\n\n<!-- Thank you for contributing! -->\n\n### Description\naccording to the doc: \n> If the comparison function `compare` does not implement a [total\norder](https://en.wikipedia.org/wiki/Total_order) the resulting order\nof elements in the slice is unspecified. All original elements will\nremain in the slice and\nany possible modifications via interior mutability are observed in the\ninput. Same is true\nif `compare` panics.\n1. Closed https://github.com/rolldown/rolldown/issues/2616\n## Ref\n\nhttps://blog.rust-lang.org/2024/09/05/Rust-1.81.0.html#new-sort-implementations\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-06T07:41:56Z",
+          "tree_id": "2cdb38958edad421ef96b12fbd0132aab8af50e6",
+          "url": "https://github.com/rolldown/rolldown/commit/8daf1a023b905bb35e0eecdce760bb760916a2d4"
+        },
+        "date": 1730880070226,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "396.76",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "642.65",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1274.72",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1727.04",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "136.82",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "214.44",
             "unit": "ms / ops"
           }
         ]
