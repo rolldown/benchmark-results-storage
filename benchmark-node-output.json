@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1730912666888,
+  "lastUpdate": 1730952081734,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -53369,6 +53369,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "225.98",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "thesmartwon@pm.me",
+            "name": "thesmartwon",
+            "username": "thesmartwon"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "dc02f3d107f0349c33fa897b36eb908222a5b813",
+          "message": "fix: use timer instead of watcher worker (#2636)\n\n### Description\n\nHalf of #2634\n\nAlternative to #2635\n\nLet me know @underfin if this breaks something else, but I think it\nshould be functionally equivalent and avoid an extra thread...\n\n---------\n\nCo-authored-by: underfin <likui.underfin@gmail.com>",
+          "timestamp": "2024-11-07T03:41:28Z",
+          "tree_id": "dad107ed9763f82c35c94ffd84ebb96d1985f24e",
+          "url": "https://github.com/rolldown/rolldown/commit/dc02f3d107f0349c33fa897b36eb908222a5b813"
+        },
+        "date": 1730952081713,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "393.00",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "660.24",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1241.41",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1669.65",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "136.08",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "200.36",
             "unit": "ms / ops"
           }
         ]
