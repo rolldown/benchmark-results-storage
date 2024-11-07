@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1730975163591,
+  "lastUpdate": 1730987236480,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -53693,6 +53693,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "209.14",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "69b460b4f5eda1bb06eafe38eae05a796990e4ab",
+          "message": "chore(rust/test): use `kebab-case` on `Comments` (#2642)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-07T13:26:11Z",
+          "tree_id": "402b91259a919e290563ebd9596371fd8e04bbd9",
+          "url": "https://github.com/rolldown/rolldown/commit/69b460b4f5eda1bb06eafe38eae05a796990e4ab"
+        },
+        "date": 1730987236457,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "453.57",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "688.17",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1474.55",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1852.55",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "142.36",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "214.59",
             "unit": "ms / ops"
           }
         ]
