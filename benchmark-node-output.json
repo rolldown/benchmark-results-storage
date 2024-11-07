@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1730969388468,
+  "lastUpdate": 1730975163591,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -53639,6 +53639,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "209.27",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "laipichan@qq.com",
+            "name": "dalaoshu",
+            "username": "shulaoda"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "6f1cfafb8703fb580b817c4c9852c58812bae4a8",
+          "message": "feat: expose `cssEntryFileNames` and `cssChunkFileNames` options in js side (#2623)\n\n### Description\n\ncloses #2618",
+          "timestamp": "2024-11-07T10:05:45Z",
+          "tree_id": "ae06103e3c8fd87ba9a95a6e68f50b9172b67d39",
+          "url": "https://github.com/rolldown/rolldown/commit/6f1cfafb8703fb580b817c4c9852c58812bae4a8"
+        },
+        "date": 1730975163570,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "423.19",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "682.74",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1288.39",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1709.99",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "142.47",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "209.14",
             "unit": "ms / ops"
           }
         ]
