@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1731046606449,
+  "lastUpdate": 1731073726472,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -53963,6 +53963,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "262.71",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4f27567f431c5ea5f2ddf0a9267f254f694635f0",
+          "message": "chore: update esbuild inject tests related stats (#2662)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-08T13:29:16Z",
+          "tree_id": "0295f3a185e746244e7af97de0c7826ee2d60e2c",
+          "url": "https://github.com/rolldown/rolldown/commit/4f27567f431c5ea5f2ddf0a9267f254f694635f0"
+        },
+        "date": 1731073726430,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "422.18",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "682.28",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1290.95",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1790.62",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "148.55",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "233.83",
             "unit": "ms / ops"
           }
         ]
