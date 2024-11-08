@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1731073726472,
+  "lastUpdate": 1731083686121,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -54017,6 +54017,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "233.83",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "b739329778550bdf3ad6018a79854806e68cc7d1",
+          "message": "fix(rust): ensure filenames are valid for file systems (#2664)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nFixes https://github.com/rolldown/rolldown/issues/2659.\nCloses https://github.com/rolldown/rolldown/pull/2663.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-08T16:13:50Z",
+          "tree_id": "c9e1c2f190520f14b464fea121ddf4f9c889f413",
+          "url": "https://github.com/rolldown/rolldown/commit/b739329778550bdf3ad6018a79854806e68cc7d1"
+        },
+        "date": 1731083686098,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "433.79",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "670.70",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1449.07",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1881.06",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "149.39",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "226.52",
             "unit": "ms / ops"
           }
         ]
