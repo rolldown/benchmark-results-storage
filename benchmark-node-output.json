@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1731036924334,
+  "lastUpdate": 1731046606449,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -53909,6 +53909,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "204.99",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "evan@vuejs.org",
+            "name": "Evan You",
+            "username": "yyx990803"
+          },
+          "committer": {
+            "email": "evan@vuejs.org",
+            "name": "Evan You",
+            "username": "yyx990803"
+          },
+          "distinct": true,
+          "id": "01197ec5548a091f8f1c1b6f112c1d30e883b0d9",
+          "message": "docs: bump vitepress + add bluesky social link",
+          "timestamp": "2024-11-08T14:04:50+08:00",
+          "tree_id": "c804c9f33814ebfc07755cdb404512efd8b44cb5",
+          "url": "https://github.com/rolldown/rolldown/commit/01197ec5548a091f8f1c1b6f112c1d30e883b0d9"
+        },
+        "date": 1731046606426,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "456.92",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "666.13",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1478.31",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1898.37",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "350.40",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "262.71",
             "unit": "ms / ops"
           }
         ]
