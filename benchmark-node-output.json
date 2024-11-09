@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1731138225961,
+  "lastUpdate": 1731148539956,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -54125,6 +54125,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "207.34",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4152616c25a1cffdfd93337544f9e070a931bba0",
+          "message": "fix: remove '\\0' hack (#2667)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. not needed\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-09T10:15:58Z",
+          "tree_id": "410c7808d7e091bcf8916d86cbef7ec8f309ad0b",
+          "url": "https://github.com/rolldown/rolldown/commit/4152616c25a1cffdfd93337544f9e070a931bba0"
+        },
+        "date": 1731148539925,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "410.63",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "668.48",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1238.83",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1689.08",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "140.51",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "205.94",
             "unit": "ms / ops"
           }
         ]
