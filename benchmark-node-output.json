@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1731150009350,
+  "lastUpdate": 1731174026119,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -54233,6 +54233,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "234.13",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "cf2eed0948ee3e57f0db7340ae6ec4ae0bb8e8d8",
+          "message": "chore: add target for esbuild lowering testing (#2672)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-09T17:21:06Z",
+          "tree_id": "0ac34045d984b4f6c70cc7814ee61c78aec8fd73",
+          "url": "https://github.com/rolldown/rolldown/commit/cf2eed0948ee3e57f0db7340ae6ec4ae0bb8e8d8"
+        },
+        "date": 1731174026097,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "411.77",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "629.20",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1286.11",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1713.12",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "135.35",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "209.04",
             "unit": "ms / ops"
           }
         ]
