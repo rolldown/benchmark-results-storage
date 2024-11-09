@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1731148539956,
+  "lastUpdate": 1731150009350,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -54179,6 +54179,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "205.94",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "laipichan@qq.com",
+            "name": "dalaoshu",
+            "username": "shulaoda"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a5b38e3b7aec7b50420de2020aba8599955dbddc",
+          "message": "chore(cli): complete descriptions for the cli options (#2666)\n\n### Description\n\nComplete descriptions for the cli options, referencing descriptions from\n`esbuild` and `rollup`.\n\n\nhttps://github.com/rolldown/rolldown/blob/4f27567f431c5ea5f2ddf0a9267f254f694635f0/packages/rolldown/tests/cli/__snapshots__/cli-e2e.test.ts.snap#L8-L54",
+          "timestamp": "2024-11-09T10:38:35Z",
+          "tree_id": "501f58aeaed9e9da0c1b2076972d80310dd8b747",
+          "url": "https://github.com/rolldown/rolldown/commit/a5b38e3b7aec7b50420de2020aba8599955dbddc"
+        },
+        "date": 1731150009330,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "413.36",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "667.20",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1289.33",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1741.43",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "142.33",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "234.13",
             "unit": "ms / ops"
           }
         ]
