@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1731083686121,
+  "lastUpdate": 1731138225961,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -54071,6 +54071,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "226.52",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "laipichan@qq.com",
+            "name": "dalaoshu",
+            "username": "shulaoda"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a50a3b20ae1f334baa492ee86c307ce8bd3c94bd",
+          "message": "feat: support `output.hashCharacters` (#2647)\n\n### Description\n\ncloses #2646",
+          "timestamp": "2024-11-09T07:24:19Z",
+          "tree_id": "2abd7a043241b8f7f44209e1870e952fc1479705",
+          "url": "https://github.com/rolldown/rolldown/commit/a50a3b20ae1f334baa492ee86c307ce8bd3c94bd"
+        },
+        "date": 1731138225930,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "412.06",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "666.94",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1294.22",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1702.11",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "139.98",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "207.34",
             "unit": "ms / ops"
           }
         ]
