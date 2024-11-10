@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1731174026119,
+  "lastUpdate": 1731208601786,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -54287,6 +54287,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "209.04",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f3a159b51ce05b6b513d121d279cd3b9a799544a",
+          "message": "chore: enable rollup form test (#2661)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-10T02:53:59Z",
+          "tree_id": "05e830af6ab07841321c9d35fbfa80f1d9e731bc",
+          "url": "https://github.com/rolldown/rolldown/commit/f3a159b51ce05b6b513d121d279cd3b9a799544a"
+        },
+        "date": 1731208601764,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "401.39",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "675.90",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1268.13",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1703.29",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "146.85",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "197.04",
             "unit": "ms / ops"
           }
         ]
