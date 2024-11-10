@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1731219533940,
+  "lastUpdate": 1731223614908,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -54395,6 +54395,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "203.88",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "hi.ogawa.zz@gmail.com",
+            "name": "Hiroshi Ogawa",
+            "username": "hi-ogawa"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0f44c147b908a51786f859700a765bc0db8da91f",
+          "message": "fix: deconflict `__require` (#2675)\n\n### Description\n\nIt looks like `__require` is hard-coded on runtime side and don't get\nthrough deconflict. To fixed this, I used `canonical_name_for_runtime`\nsimilarly to other runtime variables.\n\n_input_\n\n```js\nexport const __require = \"test\";\nexport default () => require(\"test-dep\");\n```\n\n_output: before_ \n\n```js\n//#region rolldown:runtime\nvar __require$1 = ...\n\n//#endregion\n//#region main.js\nconst __require = \"test\";\nvar main_default = () => __require(\"test-dep\"); // 👈 doesn't reference `__require$1`\n```\n\n_output: after_\n\n```js\n//#region rolldown:runtime\nvar __require$1 = ...\n\n//#endregion\n//#region main.js\nconst __require = \"test\";\nvar main_default = () => __require$1(\"test-dep\");\n```",
+          "timestamp": "2024-11-10T07:07:25Z",
+          "tree_id": "40f012500fdc9f7f3a569bb7f9f9e77f5752dc27",
+          "url": "https://github.com/rolldown/rolldown/commit/0f44c147b908a51786f859700a765bc0db8da91f"
+        },
+        "date": 1731223614887,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "398.37",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "618.57",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1208.46",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1646.79",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "145.45",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "196.66",
             "unit": "ms / ops"
           }
         ]
