@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1731230924736,
+  "lastUpdate": 1731255680303,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -54557,6 +54557,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "231.23",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "laipichan@qq.com",
+            "name": "dalaoshu",
+            "username": "shulaoda"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a07909e8b18314f777d455f1b1a751824c5ab735",
+          "message": "chore: remove redundant types and reorganize files (#2682)\n\n### Description\n\nEssentially, it is a series of improvements derived from the first\nissue.\n\n- remove redundant type `StringOrRegExp`\n- reorganize `type-assert` to `types/assert.ts`\n- reorganize `normalizedStringOrRegex` to\n`utils/normalize-string-or-regex.ts`\n\nI'm considering whether we could merge `bindingify-output-options` and\n`normalize-output-options`, as `rollup` only has a single\n`normalize-output-options`. When developing the output functionality, I\noften forget to destructure and return the new option in one of them.\n(also `input-options`)",
+          "timestamp": "2024-11-10T16:02:27Z",
+          "tree_id": "a27a44f56e3ae1ddc341bb6465b13f2e0bd37965",
+          "url": "https://github.com/rolldown/rolldown/commit/a07909e8b18314f777d455f1b1a751824c5ab735"
+        },
+        "date": 1731255680281,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "396.27",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "648.96",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1207.32",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1636.13",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "135.32",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "192.01",
             "unit": "ms / ops"
           }
         ]
