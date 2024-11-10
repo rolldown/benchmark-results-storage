@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1731208601786,
+  "lastUpdate": 1731219533940,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -54341,6 +54341,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "197.04",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ylei.mk@gmail.com",
+            "name": "ikkz",
+            "username": "ikkz"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "66680f5a558934b515d64d146a132e9ed75199a0",
+          "message": "fix: check falsy plugin in options hook (#2670)\n\nAccording to rollup's document, `config.plugins` supports falsy values.\nAnd in rolldown's\n[code](https://github.com/rolldown/rolldown/blob/f3a159b51ce05b6b513d121d279cd3b9a799544a/packages/rolldown/src/utils/normalize-plugin-option.ts#L10),\nit indeed implement this feature.\n\nHowever, this\n[line](https://github.com/rolldown/rolldown/pull/2670/files#diff-48cd2591bdcb44946219841aaccab8eb2d54381960f9607cb7542c40f446d92eR105)\ndoesn't take possible falsy values into consideration, which cause's\nerror:\n```\nfile:///Users/miles/Desktop/projects/xxx/node_modules/.pnpm/rolldown@https+++pkg.pr.new+rolldown@a50a3b2/node_modules/rolldown/dist/shared/src_index-Nma-IVaO.mjs:997\n                if (\"_parallel\"in plugin) {\n                               ^\n\nTypeError: Cannot use 'in' operator to search for '_parallel' in false\n    at file:///Users/miles/Desktop/projects/xxx/node_modules/.pnpm/rolldown@https+++pkg.pr.new+rolldown@a50a3b2/node_modules/rolldown/dist/shared/src_index-Nma-IVaO.mjs:997:18\n    at Array.filter (<anonymous>)\n    at getObjectPlugins (file:///Users/miles/Desktop/projects/xxx/node_modules/.pnpm/rolldown@https+++pkg.pr.new+rolldown@a50a3b2/node_modules/rolldown/dist/shared/src_index-Nma-IVaO.mjs:996:17)\n    at PluginDriver.callOptionsHook (file:///Users/miles/Desktop/projects/xxx/node_modules/.pnpm/rolldown@https+++pkg.pr.new+rolldown@a50a3b2/node_modules/rolldown/dist/shared/src_index-Nma-IVaO.mjs:955:47)\n    at createBundler (file:///Users/miles/Desktop/projects/xxx/node_modules/.pnpm/rolldown@https+++pkg.pr.new+rolldown@a50a3b2/node_modules/rolldown/dist/shared/src_index-Nma-IVaO.mjs:2642:36)\n    at watch (file:///Users/miles/Desktop/projects/xxx/node_modules/.pnpm/rolldown@https+++pkg.pr.new+rolldown@a50a3b2/node_modules/rolldown/dist/shared/src_index-Nma-IVaO.mjs:2758:63)\n    at file:///Users/miles/Desktop/projects/xxx/cli.js:50:25\n```\n\nThis pr\n- add falsy types in config plugin's declaration\n- and check it at the necessary possible",
+          "timestamp": "2024-11-10T05:59:53Z",
+          "tree_id": "e15e0e81b738057c9daa1cee666d3f91c8a1b218",
+          "url": "https://github.com/rolldown/rolldown/commit/66680f5a558934b515d64d146a132e9ed75199a0"
+        },
+        "date": 1731219533919,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "407.33",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "628.75",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1255.14",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1693.92",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "136.87",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "203.88",
             "unit": "ms / ops"
           }
         ]
