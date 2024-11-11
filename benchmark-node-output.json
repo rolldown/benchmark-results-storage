@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1731330923428,
+  "lastUpdate": 1731337691862,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -54773,6 +54773,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "222.68",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "66e80881a3b4993632f0d482c8391442b62e6abc",
+          "message": "feat: Add option moduleSideEffectsRule for `treeshake.moduleSideEffects` (#2695)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. part of https://github.com/rolldown/rolldown/issues/2606\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-11T14:49:14Z",
+          "tree_id": "3afab430561c41c9ccf6caaf09a298c5c0926498",
+          "url": "https://github.com/rolldown/rolldown/commit/66e80881a3b4993632f0d482c8391442b62e6abc"
+        },
+        "date": 1731337691840,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "400.39",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "655.31",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1231.09",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1704.66",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "138.35",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "218.23",
             "unit": "ms / ops"
           }
         ]
