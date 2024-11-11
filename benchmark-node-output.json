@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1731255680303,
+  "lastUpdate": 1731312785816,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -54611,6 +54611,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "192.01",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "green@sapphi.red",
+            "name": "翠 / green",
+            "username": "sapphi-red"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "4eb7e29a227e2cbfcd164644af6394e9bd9e8fe5",
+          "message": "feat: allow runtime to load non JS configs (#2688)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nThis PR allows non-JS config files to be loaded by the runtime so that\nTS config files can be loaded for non-node runtimes that support TS or\nNode with `--experimental-strip-types` or Node with tsx.\n\nThe following command would now work with this PR:\n```bash\n$ NODE_OPTIONS='--import tsx' rolldown --config rollup.config.ts\n$ NODE_OPTIONS='--experimental-strip-types' rolldown --config rollup.config.ts\n```\n\nrefs #2400\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-11T07:53:48Z",
+          "tree_id": "c6f86b538280a079c0583ddd5290a43fef8916c9",
+          "url": "https://github.com/rolldown/rolldown/commit/4eb7e29a227e2cbfcd164644af6394e9bd9e8fe5"
+        },
+        "date": 1731312785782,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "413.67",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "666.88",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1296.85",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1797.02",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "145.28",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "229.93",
             "unit": "ms / ops"
           }
         ]
