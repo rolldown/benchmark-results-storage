@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1731406101643,
+  "lastUpdate": 1731406554918,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -54942,9 +54942,9 @@
       {
         "commit": {
           "author": {
-            "email": "likui.underfin@gmail.com",
-            "name": "underfin",
-            "username": "underfin"
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
           },
           "committer": {
             "email": "noreply@github.com",
@@ -54952,43 +54952,43 @@
             "username": "web-flow"
           },
           "distinct": true,
-          "id": "078a4ac099fa1d884b0dec6f723270a35b232056",
-          "message": "feat(watcher): handle watcher error (#2702)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nThe pr intends to handle the watcher error. Here has some changes.\n\n- emit error event if build error\n- handle recover error at watcher first build, it needs to record\n`PluginDirver#watch_files` if an error happened.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
-          "timestamp": "2024-11-12T09:48:04Z",
-          "tree_id": "7c0fda9622c4a8ce4f6751643ccebf9e05e11539",
-          "url": "https://github.com/rolldown/rolldown/commit/078a4ac099fa1d884b0dec6f723270a35b232056"
+          "id": "779c422b244b17b5ba12c57a79c4db74b0316312",
+          "message": "chore:  make error diagnostic snap stable (#2704)\n\n<!-- Thank you for contributing! -->\r\n\r\n### Description\r\n1. before the error diagnostics snap is unstable, this pr make it\r\nstable,\r\ncrates/rolldown_testing/src/integration_test.rs\r\n<!-- Please insert your description here and provide especially info\r\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-12T17:58:50+08:00",
+          "tree_id": "2ee92dd415314b3a5ed6197443f4d0410d47dd0d",
+          "url": "https://github.com/rolldown/rolldown/commit/779c422b244b17b5ba12c57a79c4db74b0316312"
         },
-        "date": 1731406101609,
+        "date": 1731406554897,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x (default)",
-            "value": "419.58",
+            "value": "430.42",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap (default)",
-            "value": "671.80",
+            "value": "689.60",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify (default)",
-            "value": "1290.73",
+            "value": "1393.20",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify-sourcemap (default)",
-            "value": "1771.86",
+            "value": "1799.92",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts (default)",
-            "value": "147.84",
+            "value": "152.16",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts-sourcemap (default)",
-            "value": "231.38",
+            "value": "220.03",
             "unit": "ms / ops"
           }
         ]
