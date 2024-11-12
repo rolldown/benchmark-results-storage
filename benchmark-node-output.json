@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1731343791165,
+  "lastUpdate": 1731396565504,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -54881,6 +54881,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "210.23",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "bc16ada28c7122bf0246e8e3f46bb180179d6729",
+          "message": "fix(watcher): only watch same file once (#2700)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nWatching the same files multiple times will cost more overhead, so here\navoid it.\n\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-12T07:09:46Z",
+          "tree_id": "02b82999ebf0c0ba67f82267c183aa1191c9668b",
+          "url": "https://github.com/rolldown/rolldown/commit/bc16ada28c7122bf0246e8e3f46bb180179d6729"
+        },
+        "date": 1731396565483,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "412.49",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "634.96",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1288.43",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1709.38",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "141.08",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "209.77",
             "unit": "ms / ops"
           }
         ]
