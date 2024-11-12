@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1731413877892,
+  "lastUpdate": 1731414384876,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -54996,53 +54996,53 @@
       {
         "commit": {
           "author": {
-            "email": "iwanabethatguy@qq.com",
-            "name": "IWANABETHATGUY",
-            "username": "IWANABETHATGUY"
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
           },
           "committer": {
             "email": "noreply@github.com",
             "name": "GitHub",
             "username": "web-flow"
           },
-          "distinct": false,
-          "id": "c40f53153cb9647d6b2a2f47ff85a25d1c7e0870",
-          "message": "feat: emit error diagnostic when assign to import (#2701)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. Part of https://github.com/rolldown/rolldown/issues/2607\n2. ref:\nhttps://github.com/evanw/esbuild/commit/394ff827ea819775ab54958e5c316df32a2be0aa#diff-06572a96a58dc510037d5efa622f9bec8519bc1beab13c9f251e97e657a9d4edR56\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
-          "timestamp": "2024-11-12T11:57:35Z",
-          "tree_id": "7dccb967d418f3b22d5f63f2da5071b180b1477b",
-          "url": "https://github.com/rolldown/rolldown/commit/c40f53153cb9647d6b2a2f47ff85a25d1c7e0870"
+          "distinct": true,
+          "id": "6bf4a3feaa0e75b81f509ee0cd96aa56fb02f262",
+          "message": "feat: support PluginContext.load (#2687)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nSupport `PluginContext.load`, ref\nhttps://rollupjs.org/plugin-development/#this-load. close\nhttps://github.com/rolldown/rolldown/issues/2355.\n\nThe pr using msg channel to hand extra modules need to load. Here need\nto use one channel to avoid\nhttps://github.com/rolldown/rolldown/pull/2687#discussion_r1836055076.\n\n> Here has a another way to do it. Using `load_via_plugins`, like\n`resolve_id_via_plugins`, but it need to a lot of change the relation\ncrate dependencies and meet a cycle dependencies problem at moving\n`create_ecma_view`, it is difficult to resolve. try here at\nhttps://github.com/rolldown/rolldown/pull/2690.\n\nThe pr implements it as much as possible, but it also has a problem,\nconsider some cases at here.\n- `ModuleTables` has not the module `A`, here only fetch it.\n- `ModuleTables` has module `A` and already fetched, here return already\nfetched result, using `PluginContext#modules`.\n- `ModuleTables` has module `A` but it is not fetched finished, here may\nlost result because here can't ensure the fetch time before the module\ntask is finished. The case maybe happend because it is run at parallel.\nWe could re-fetch it at the case, but it call the module-related hook\nagain, It could be put as low priority to resolve.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-12T12:02:13Z",
+          "tree_id": "be3efbfc4d6665cfbb8b3b51bce6268ac651c56d",
+          "url": "https://github.com/rolldown/rolldown/commit/6bf4a3feaa0e75b81f509ee0cd96aa56fb02f262"
         },
-        "date": 1731413877868,
+        "date": 1731414384853,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x (default)",
-            "value": "416.14",
+            "value": "406.45",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap (default)",
-            "value": "630.15",
+            "value": "669.43",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify (default)",
-            "value": "1271.79",
+            "value": "1242.60",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify-sourcemap (default)",
-            "value": "1726.34",
+            "value": "1719.50",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts (default)",
-            "value": "141.08",
+            "value": "141.46",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts-sourcemap (default)",
-            "value": "202.61",
+            "value": "207.58",
             "unit": "ms / ops"
           }
         ]
