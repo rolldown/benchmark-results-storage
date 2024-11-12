@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1731406554918,
+  "lastUpdate": 1731413877892,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -54989,6 +54989,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "220.03",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "c40f53153cb9647d6b2a2f47ff85a25d1c7e0870",
+          "message": "feat: emit error diagnostic when assign to import (#2701)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. Part of https://github.com/rolldown/rolldown/issues/2607\n2. ref:\nhttps://github.com/evanw/esbuild/commit/394ff827ea819775ab54958e5c316df32a2be0aa#diff-06572a96a58dc510037d5efa622f9bec8519bc1beab13c9f251e97e657a9d4edR56\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-12T11:57:35Z",
+          "tree_id": "7dccb967d418f3b22d5f63f2da5071b180b1477b",
+          "url": "https://github.com/rolldown/rolldown/commit/c40f53153cb9647d6b2a2f47ff85a25d1c7e0870"
+        },
+        "date": 1731413877868,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "416.14",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "630.15",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1271.79",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1726.34",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "141.08",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "202.61",
             "unit": "ms / ops"
           }
         ]
