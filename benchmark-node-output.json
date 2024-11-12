@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1731414384876,
+  "lastUpdate": 1731416820895,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -55043,6 +55043,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "207.58",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "efba2045f78996da1cc33f9116daaa6befa82379",
+          "message": "refactor: remove early return in visit member expr (#2703)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-12T12:46:14Z",
+          "tree_id": "25a1a540a1095629dc0ea8613259fc8fb271a7d7",
+          "url": "https://github.com/rolldown/rolldown/commit/efba2045f78996da1cc33f9116daaa6befa82379"
+        },
+        "date": 1731416820873,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "435.32",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "714.17",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1346.95",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1731.14",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "148.81",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "206.05",
             "unit": "ms / ops"
           }
         ]
