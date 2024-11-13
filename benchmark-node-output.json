@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1731475217252,
+  "lastUpdate": 1731481511226,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -55259,6 +55259,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "222.76",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "015d4f148cf4bf261f79f320022a0b8455b9a96c",
+          "message": "fix:  `forbid-const-assign` should considering all write scenario (#2715)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-13T06:43:04Z",
+          "tree_id": "da1d5253c35dad1ea82c842b7f6d15b819b659c4",
+          "url": "https://github.com/rolldown/rolldown/commit/015d4f148cf4bf261f79f320022a0b8455b9a96c"
+        },
+        "date": 1731481511204,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "408.08",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "634.09",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1331.98",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1693.93",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "133.99",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "201.78",
             "unit": "ms / ops"
           }
         ]
