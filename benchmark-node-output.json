@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1731491024699,
+  "lastUpdate": 1731493939343,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -55421,6 +55421,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "210.73",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "74eace99a2e66005ea8053960af0eecfb6cd47c2",
+          "message": "fix: preserve external module side effects at format umd/iife (#2719)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nHere is a example to show diff.\n\n``` .ts\n//  Input\nimport 'external'\n\n//  Output esm\nimport 'external'\n\n// Output iife\n(function (external){})(external)\n\n```\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-13T10:12:39Z",
+          "tree_id": "3e24b737d72e249d00f69d20a08bab47618f1af0",
+          "url": "https://github.com/rolldown/rolldown/commit/74eace99a2e66005ea8053960af0eecfb6cd47c2"
+        },
+        "date": 1731493939322,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "417.06",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "669.03",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1300.81",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1772.75",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "143.56",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "228.33",
             "unit": "ms / ops"
           }
         ]
