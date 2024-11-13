@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1731429193522,
+  "lastUpdate": 1731475217252,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -55205,6 +55205,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "236.58",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "45224c79471e67a2190bb5a9d636f9911e5bebcf",
+          "message": "feat: create module info before run load hook (#2714)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nclose https://github.com/rolldown/rolldown/issues/2392\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-13T05:00:16Z",
+          "tree_id": "b21bb303d63b8e6e6fdb3a8768fef064d191e6f8",
+          "url": "https://github.com/rolldown/rolldown/commit/45224c79471e67a2190bb5a9d636f9911e5bebcf"
+        },
+        "date": 1731475217231,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "388.32",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "645.47",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1185.79",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1659.17",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "136.10",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "222.76",
             "unit": "ms / ops"
           }
         ]
