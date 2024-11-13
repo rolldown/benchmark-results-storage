@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1731511087397,
+  "lastUpdate": 1731519718684,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -55583,6 +55583,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "214.35",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "d5e797ba540f1cfde8d35867c925e8954eff9268",
+          "message": "feat: dynamic tree shake await `ImportExpression` (#2723)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. Closed https://github.com/rolldown/rolldown/issues/1843\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-13T17:22:09Z",
+          "tree_id": "36780d70f49df58853d8dca56cbba5d8d5e27515",
+          "url": "https://github.com/rolldown/rolldown/commit/d5e797ba540f1cfde8d35867c925e8954eff9268"
+        },
+        "date": 1731519718661,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "411.84",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "667.28",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1265.27",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1746.26",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "143.61",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "230.56",
             "unit": "ms / ops"
           }
         ]
