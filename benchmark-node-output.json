@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1731481511226,
+  "lastUpdate": 1731483500029,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -55313,6 +55313,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "201.78",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "hi.ogawa.zz@gmail.com",
+            "name": "Hiroshi Ogawa",
+            "username": "hi-ogawa"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3d47bd0eb73a193ae25bbafcfba2532fa1bcd14a",
+          "message": "fix: preserve js plugin hook error stacktrace  (#2711)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n- Related https://github.com/rolldown/rolldown/issues/2551\n\nI'm not sure about the internal, but it looks like js error is stripped\naway during the conversion here.\n\nFor the example, now I get a following error\n\n```\n$ pnpm -C examples/basic-typescript build\n\n> @example/typescript@ build /home/hiroshi/code/others/rolldown/examples/basic-typescript\n> rolldown --config ./rolldown.config.js\n\nfile:///home/hiroshi/code/others/rolldown/examples/basic-typescript/rolldown.config.js:30\n  throw new Error('test error!')\n        ^\n\nError: test error!\n    at testMoreFn (file:///home/hiroshi/code/others/rolldown/examples/basic-typescript/rolldown.config.js:30:9)\n    at async testFn (file:///home/hiroshi/code/others/rolldown/examples/basic-typescript/rolldown.config.js:25:3)\n    at async PluginContext.resolveId (file:///home/hiroshi/code/others/rolldown/examples/basic-typescript/rolldown.config.js:17:9)\n    at async plugin (file:///home/hiroshi/code/others/rolldown/packages/rolldown/dist/shared/src_index-pEhJx8zp.mjs:1362:16)\n\nNode.js v18.20.5\n```",
+          "timestamp": "2024-11-13T07:09:18Z",
+          "tree_id": "017daf20745015c69614b83f432c4fdf216de7e4",
+          "url": "https://github.com/rolldown/rolldown/commit/3d47bd0eb73a193ae25bbafcfba2532fa1bcd14a"
+        },
+        "date": 1731483500007,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "406.44",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "665.33",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1254.87",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1734.38",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "143.64",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "227.51",
             "unit": "ms / ops"
           }
         ]
