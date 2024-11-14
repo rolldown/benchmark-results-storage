@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1731556290352,
+  "lastUpdate": 1731561352799,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -55745,6 +55745,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "200.97",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d53cb4ca68f1afc85ea795516f87a38b57dd3fc4",
+          "message": "fix: dynamic import tree shaking with eval should bailout (#2730)\n\n<!-- Thank you for contributing! -->\r\n\r\n### Description\r\n1. Closed #2724\r\n<!-- Please insert your description here and provide especially info\r\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-14T13:05:03+08:00",
+          "tree_id": "39706295f5fcd7c11505812dd49385c2a4d0667c",
+          "url": "https://github.com/rolldown/rolldown/commit/d53cb4ca68f1afc85ea795516f87a38b57dd3fc4"
+        },
+        "date": 1731561352778,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "407.53",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "673.78",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1258.92",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1711.08",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "140.92",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "207.94",
             "unit": "ms / ops"
           }
         ]
