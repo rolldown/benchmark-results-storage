@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1731561352799,
+  "lastUpdate": 1731573352373,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -55799,6 +55799,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "207.94",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "green@sapphi.red",
+            "name": "翠 / green",
+            "username": "sapphi-red"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1462a6eca69416b2ed24613150c305d8d1e59486",
+          "message": "fix: prefix-only module is a builtin module (#2729)\n\n<!-- Thank you for contributing! -->\r\n\r\n### Description\r\n\r\nThe list does not include prefix-only modules.\r\n\r\nhttps://nodejs.org/api/module.html#modulebuiltinmodules:~:text=Note%3A%20the%20list%20doesn%27t%20contain%20prefix%2Donly%20modules%20like%20node%3Atest.\r\n\r\n<!-- Please insert your description here and provide especially info\r\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-14T16:24:54+08:00",
+          "tree_id": "f2a5ddf5042284600a9e5b7fb267240ab2a4abab",
+          "url": "https://github.com/rolldown/rolldown/commit/1462a6eca69416b2ed24613150c305d8d1e59486"
+        },
+        "date": 1731573352351,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "406.30",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "660.85",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1239.85",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1694.73",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "139.56",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "202.74",
             "unit": "ms / ops"
           }
         ]
