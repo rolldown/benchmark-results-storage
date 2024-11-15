@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1731664725019,
+  "lastUpdate": 1731667208808,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -56231,6 +56231,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "221.51",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c3ee7ad69ab8a8f4d4ea1cfe86cd6a9c1a0c2b86",
+          "message": "fix(new_url): generate correct path for nested paths (#2749)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n- Fixes https://github.com/rolldown/rolldown/issues/2742.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-15T10:19:57Z",
+          "tree_id": "3cb220bc97903acbf325358ef0206245948eac16",
+          "url": "https://github.com/rolldown/rolldown/commit/c3ee7ad69ab8a8f4d4ea1cfe86cd6a9c1a0c2b86"
+        },
+        "date": 1731667208785,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "408.46",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "626.09",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1285.65",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1681.14",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "136.88",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "205.27",
             "unit": "ms / ops"
           }
         ]
