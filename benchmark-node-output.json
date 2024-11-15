@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1731657493830,
+  "lastUpdate": 1731659347539,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -56069,6 +56069,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "202.36",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2b4f224f665006daaccc8755847cc17607efa33a",
+          "message": "fix: align resolve behavior of `new URL(..., import.met.url)` with webpack (#2738)\n\n<!-- Thank you for contributing! -->\r\n\r\n### Description\r\n\r\nSo the behavior is for bare identifier, bundler will resolve it as\r\nrelative path first instead of npm modules. It means that `foo` would be\r\nresolve to `./foo.js` first. It'll hide the npm module `foo`.\r\n\r\nMore contexts:\r\n\r\n- To prevent the above behavior, parcel supports [`npm:xxx`\r\npattern](https://parceljs.org/blog/v2/#new-npm%3A-scheme) to force\r\nresolve to node modules first. Eg: `new URL(\"npm:foo\",\r\nimport.meta.url)`.\r\n\r\nThis behavior is not supported by rolldown. We'll wait users feedbacks\r\nand see if we need to support this feature.\r\n\r\n<!-- Please insert your description here and provide especially info\r\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-15T16:18:05+08:00",
+          "tree_id": "e6e1bd9cb16ced5a99ea1766c2961d9b585b5b6b",
+          "url": "https://github.com/rolldown/rolldown/commit/2b4f224f665006daaccc8755847cc17607efa33a"
+        },
+        "date": 1731659347516,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "397.50",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "659.44",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1222.03",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1674.84",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "138.99",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "205.42",
             "unit": "ms / ops"
           }
         ]
