@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1731641230957,
+  "lastUpdate": 1731643614792,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -55961,6 +55961,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "211.98",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "im@petrov.engineer",
+            "name": "Anton Petrov",
+            "username": "eolme"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "cce5cdea08e472d456348605a0daf2914f2bb123",
+          "message": "feat: expose closed property and support using for RolldownBuild (#2732)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nReference for closed property:\n[rollup/src/rollup/types.d.ts#RollupBuild](https://github.com/rollup/rollup/blob/ae1d14b7855ff6568a6697d37271a5eb4d8e2d3e/src/rollup/types.d.ts#L920)\n\nCommit with Symbol.asyncDispose:\nhttps://github.com/rollup/rollup/commit/06b28cc000732e88bb0b90ff7ba37c674c3d7653",
+          "timestamp": "2024-11-15T03:35:16Z",
+          "tree_id": "b19ee2063c6c327aa685014ddfe2af1b5d86e99d",
+          "url": "https://github.com/rolldown/rolldown/commit/cce5cdea08e472d456348605a0daf2914f2bb123"
+        },
+        "date": 1731643614770,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "416.19",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "674.86",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1281.27",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1782.55",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "146.01",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "235.24",
             "unit": "ms / ops"
           }
         ]
