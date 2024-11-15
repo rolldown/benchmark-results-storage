@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1731659347539,
+  "lastUpdate": 1731663369288,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -56123,6 +56123,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "205.42",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "green@sapphi.red",
+            "name": "翠 / green",
+            "username": "sapphi-red"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ed6bd06c076480be5f604c1096351344e1ffd6e4",
+          "message": "ci: fix metric CI pnpm version (#2748)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nFixes CI failures like\nhttps://github.com/rolldown/rolldown/actions/runs/11852689856/job/33031527451\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-15T09:04:42Z",
+          "tree_id": "ee360d810838ef6ddca4916c8e84e224c905e1d9",
+          "url": "https://github.com/rolldown/rolldown/commit/ed6bd06c076480be5f604c1096351344e1ffd6e4"
+        },
+        "date": 1731663369261,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "404.44",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "629.44",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1252.49",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1682.52",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "137.28",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "204.01",
             "unit": "ms / ops"
           }
         ]
