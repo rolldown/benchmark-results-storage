@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1731671347894,
+  "lastUpdate": 1731673763160,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -56393,6 +56393,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "232.95",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "30d96e528ccb6fc812b7dcc0feff8b490f4b0bee",
+          "message": "refactor: merge `handle_new_url_with_string_literal_and_import_meta_url` test and rewrite in single pass (#2754)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. merge `handle_new_url_with_string_literal_and_import_meta_url` test\nand rewrite, reuse pattern matched var should also perf a little\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-15T12:10:03Z",
+          "tree_id": "970587853bd9d5815f3482ccca2d0da9a760c23f",
+          "url": "https://github.com/rolldown/rolldown/commit/30d96e528ccb6fc812b7dcc0feff8b490f4b0bee"
+        },
+        "date": 1731673763139,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "401.50",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "657.30",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1243.82",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1709.97",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "138.49",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "221.79",
             "unit": "ms / ops"
           }
         ]
