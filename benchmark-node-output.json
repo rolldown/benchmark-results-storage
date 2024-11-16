@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1731767579632,
+  "lastUpdate": 1731772765518,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -56663,6 +56663,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "220.47",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "laipichan@qq.com",
+            "name": "dalaoshu",
+            "username": "shulaoda"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "146ecd842f4f6e068464408992b4c3a66dca9ac0",
+          "message": "feat: support `RenderedModule.renderedLength` (#2697)\n\n### Description\n\ncloses #2686\n\nThere are still two remaining issues:\n\n- Our `codegen` differs from `rollup`, and it appends `\\n` by default at\nthe end\n- The chunk traversal order in our implementation does not match that of\n`rollup`\n\nThis is just a simple attempt, and feel free to close it at any time.\n\n---------\n\nCo-authored-by: Yunfei <i.heyunfei@gmail.com>",
+          "timestamp": "2024-11-16T15:39:38Z",
+          "tree_id": "e5fd5205b31e18c67453d1a10d661eb7682b4df8",
+          "url": "https://github.com/rolldown/rolldown/commit/146ecd842f4f6e068464408992b4c3a66dca9ac0"
+        },
+        "date": 1731772765496,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "435.24",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "664.74",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1295.54",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1714.61",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "144.08",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "204.94",
             "unit": "ms / ops"
           }
         ]
