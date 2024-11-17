@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1731834002623,
+  "lastUpdate": 1731844987419,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -56825,6 +56825,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "202.92",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "29be5d97767b74011a9fefe4572ed578e6a41cee",
+          "message": "fix: keep external module live bindings at format cjs/umd/iife (#2756)\n\n<!-- Thank you for contributing! -->\r\n\r\n### Description\r\n\r\n<!-- Please insert your description here and provide especially info\r\nabout the \"what\" this PR is solving -->\r\n\r\n---------\r\n\r\nCo-authored-by: Yunfei <i.heyunfei@gmail.com>",
+          "timestamp": "2024-11-17T19:51:29+08:00",
+          "tree_id": "12b277b12ba981c067a4f48a19763ce8bfaa3431",
+          "url": "https://github.com/rolldown/rolldown/commit/29be5d97767b74011a9fefe4572ed578e6a41cee"
+        },
+        "date": 1731844987396,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "462.50",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "690.78",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1435.51",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1829.37",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "153.94",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "227.90",
             "unit": "ms / ops"
           }
         ]
