@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1731772765518,
+  "lastUpdate": 1731811128511,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -56717,6 +56717,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "204.94",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "62642342656e24a9b35a5088099c9e96fe15b277",
+          "message": "perf(rolldown_sourcemap): pre-allocate memory in `join` method (#2766)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nLocal benchmark data\n\n```\n// Without pre-allocation\njoin/join               time:   [1.7542 ms 1.8115 ms 1.8710 ms]\n\n\n// With pre-allocation\njoin/join               time:   [323.86 µs 324.37 µs 325.07 µs]\n                        change: [−83.121% −82.664% −82.187%] (p = 0.00 < 0.05)\n                        Performance has improved.\nFound 3 outliers among 100 measurements (3.00%)\n  2 (2.00%) high mild\n  1 (1.00%) high severe\n```\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-17T02:19:21Z",
+          "tree_id": "e22922c157d7183e522a502adce3d07cc2253958",
+          "url": "https://github.com/rolldown/rolldown/commit/62642342656e24a9b35a5088099c9e96fe15b277"
+        },
+        "date": 1731811128476,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "440.64",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "672.47",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1318.70",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1768.24",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "149.48",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "212.30",
             "unit": "ms / ops"
           }
         ]
