@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1731811128511,
+  "lastUpdate": 1731834002623,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -56771,6 +56771,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "212.30",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "hi.ogawa.zz@gmail.com",
+            "name": "Hiroshi Ogawa",
+            "username": "hi-ogawa"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a618dcbaf69d64406e89effe8c6f2d5943a0992a",
+          "message": "fix: preserve more js plugin hook errors (#2759)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n- closes https://github.com/rolldown/rolldown/issues/2551\n\nLet me try this again. It looks like `resolveId` handled by\nhttps://github.com/rolldown/rolldown/issues/2551 wasn't actually a main\nerror handling code path. Instead, there is `Vec<BuildDiagnostic>` which\nneeds to be resurfaced back as js errors.\n\n~I couldn't find a way to aggregate multiple error objects back to js\nside, so for now I'm handling at most single js error, which I think is\nsufficient for many cases.~\n\n_todo_\n\n- how to handle multiple errors/diagnostics?\n- rollup doesn't have such concept and they can throw only single\n`RollupError`. Currently Vite's error handling is based on that model\n(cf. https://github.com/vitejs/vite/pull/16540)\n- esbuild returns each error detail in `Error.errors: types.Message[]`.\nAdditionally they use `Error.message` to include a summary with up-to-5\nerror messages combined.\nhttps://github.com/evanw/esbuild/blob/9eca46464ed5615cb36a3beb3f7a7b9a8ffbe7cf/lib/shared/common.ts#L1673-L1683\n  - I did something similar to esbuild.",
+          "timestamp": "2024-11-17T08:40:37Z",
+          "tree_id": "230c8de714b9d20491f69755c1c306d551211860",
+          "url": "https://github.com/rolldown/rolldown/commit/a618dcbaf69d64406e89effe8c6f2d5943a0992a"
+        },
+        "date": 1731834002590,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "426.50",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "665.75",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1291.37",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1682.77",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "145.27",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "202.92",
             "unit": "ms / ops"
           }
         ]
