@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1731844987419,
+  "lastUpdate": 1731854309897,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -56879,6 +56879,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "227.90",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1b6179c68beb1a0e8048941702d1a8137a6aa76f",
+          "message": "fix(interop): improve compatibility of esm imports cjs (#2769)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nIn nodejs\n\n```\nimport foo from './foo.cjs'\nconsole.log(foo)\n```\n\n`foo` == `module.exports` in `foo.cjs`\n\n---\n\nIn rolldown,\n\n```\nimport foo from './foo.cjs'\nconsole.log(foo)\n```\n\nis converted to\n\n```\nvar import_foo = __toESM(require_foo());\nconsole.log(foo.default)\n```\n\nWithout this PR,\n\n`foo.default` == `module.exports.default`\n\nWith this PR,\n\n`foo.default` == `module.exports`\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-17T14:18:45Z",
+          "tree_id": "89d70f562d7cf099da66b2598035adcd5baa4d14",
+          "url": "https://github.com/rolldown/rolldown/commit/1b6179c68beb1a0e8048941702d1a8137a6aa76f"
+        },
+        "date": 1731854309875,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "431.51",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "668.74",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1286.50",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1704.42",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "147.45",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "207.61",
             "unit": "ms / ops"
           }
         ]
