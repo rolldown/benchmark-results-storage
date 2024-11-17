@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1731854309897,
+  "lastUpdate": 1731863224879,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -56933,6 +56933,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "207.61",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "lynweklm@gmail.com",
+            "name": "LongYinan",
+            "username": "Brooooooklyn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b676fe3ce4636631511ac620c54a486b9e2f95e7",
+          "message": "perf: improve the String concatenation performance (#2763)\n\nConsidering\n```rust\n  let base64 = \"base64\".repeat(1000);\n\n  let mime_ext = MimeExt { mime: \"image/png\".parse().unwrap(), is_utf8_encoded: true };\n\n  // Mix of String and str\n  group.bench_function(\"mixed_types_concat\", |b| {\n    let mime_ext_string = mime_ext.to_string();\n    b.iter(|| black_box(concat_string!(\"data:\", mime_ext_string, \";base64,\", base64)));\n  });\n  group.bench_function(\"mixed_types_format\", |b| {\n    b.iter(|| black_box(format!(\"data:{mime_ext};base64,{base64}\")));\n  });\n```\n\n`concat_string` is 2x faster than `format!`\n\n```\nconcat_string/mixed_types_concat\n                        time:   [98.035 ns 101.56 ns 105.10 ns]\n                        change: [+8.7720% +13.706% +18.797%] (p = 0.00 < 0.05)\n                        Performance has regressed.\nconcat_string/mixed_types_format\n                        time:   [217.54 ns 221.50 ns 225.72 ns]\n                        change: [+2.2251% +4.5076% +6.7315%] (p = 0.00 < 0.05)\n                        Performance has regressed.\n```",
+          "timestamp": "2024-11-17T16:47:09Z",
+          "tree_id": "846131914f66c1786c7313ec99425c5e9554c5f3",
+          "url": "https://github.com/rolldown/rolldown/commit/b676fe3ce4636631511ac620c54a486b9e2f95e7"
+        },
+        "date": 1731863224843,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "437.50",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "676.33",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1297.19",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1746.47",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "148.62",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "213.18",
             "unit": "ms / ops"
           }
         ]
