@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1731916379406,
+  "lastUpdate": 1731920433856,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -57257,6 +57257,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "213.60",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9eb710321b65a61d8c3c18a027799db9c3c5c774",
+          "message": "fix: avoid unresolved promise if load same id at concurrent (#2777)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nclose https://github.com/rolldown/rolldown/issues/2751\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-18T08:38:16Z",
+          "tree_id": "29c150b724a776dc70c958672abd0fb9860f69c8",
+          "url": "https://github.com/rolldown/rolldown/commit/9eb710321b65a61d8c3c18a027799db9c3c5c774"
+        },
+        "date": 1731920433833,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "452.74",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "679.07",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1392.61",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1825.44",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "153.11",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "223.37",
             "unit": "ms / ops"
           }
         ]
