@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1731920433856,
+  "lastUpdate": 1731925655614,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -57311,6 +57311,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "223.37",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "hi.ogawa.zz@gmail.com",
+            "name": "Hiroshi Ogawa",
+            "username": "hi-ogawa"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "c908f9ed9914898b4c906e4a1f8f5e0f10ecffb2",
+          "message": "fix: enhance js plugin hook error like rollup (#2767)\n\n### Description\n\n- related https://github.com/rolldown/rolldown/issues/2551\n\nAs requested in https://github.com/rolldown/rolldown/issues/2551, this\nautomatically injects plugin, hook name, etc.. to errors thrown by js\nplugin. I also updated error summary formatting to include those\ndetails.\n\n<details><summary>Example</summary>\n\nFor the following plugin:\n\n```js\n  plugins: [\n    {\n      name: 'my-plugin',\n      transform() {\n        this.error(\"my-error\", 2)\n      }\n    }\n  ]\n```\n\nBuild error now shows this:\n\n```\n$ pnpm -C examples/basic-typescript build\n\n> @example/typescript@ build /home/hiroshi/code/others/rolldown/examples/basic-typescript\n> rolldown --config ./rolldown.config.js\n\nfile:///home/hiroshi/code/others/rolldown/packages/rolldown/dist/shared/src_index-f-_TEmuT.mjs:168\n                const wrapper = new Error(summary);\n                                ^\n\nError: Build failed with 1 error:\n[plugin my-plugin] /home/hiroshi/code/others/rolldown/examples/basic-typescript/index.ts:1:2\nRollupError: my-error\n1: import { hello } from './hello'\n     ^\n2: \n3: console.log(hello())\n    at error (file:///home/hiroshi/code/others/rolldown/packages/rolldown/dist/shared/src_index-f-_TEmuT.mjs:817:24)\n    at TransformPluginContext.error (file:///home/hiroshi/code/others/rolldown/packages/rolldown/dist/shared/src_index-f-_TEmuT.mjs:1321:11)\n    at TransformPluginContext.transform (file:///home/hiroshi/code/others/rolldown/examples/basic-typescript/rolldown.config.js:17:14)\n    at plugin (file:///home/hiroshi/code/others/rolldown/packages/rolldown/dist/shared/src_index-f-_TEmuT.mjs:1537:25)\n\n    at handleOutputErrors (file:///home/hiroshi/code/others/rolldown/packages/rolldown/dist/shared/src_index-f-_TEmuT.mjs:168:19)\n    at transformToRollupOutput (file:///home/hiroshi/code/others/rolldown/packages/rolldown/dist/shared/src_index-f-_TEmuT.mjs:152:2)\n    at RolldownBuild.write (file:///home/hiroshi/code/others/rolldown/packages/rolldown/dist/shared/src_index-f-_TEmuT.mjs:2907:10)\n    at async bundleInner (file:///home/hiroshi/code/others/rolldown/packages/rolldown/dist/esm/cli.mjs:393:23) {\n  errors: [Getter/Setter]\n}\n\nNode.js v20.18.0\n```\n\nwhich previously was\n\n```\n$ pnpm -C examples/basic-typescript build\n\n> @example/typescript@ build /home/hiroshi/code/others/rolldown/examples/basic-typescript\n> rolldown --config ./rolldown.config.js\n\nfile:///home/hiroshi/code/others/rolldown/packages/rolldown/dist/shared/src_index-BcFJfRrY.mjs:169\n                const wrapper = new Error(summary);\n                                ^\n\nError: Build failed with 1 error:\nRollupError: my-error\n    at error (file:///home/hiroshi/code/others/rolldown/packages/rolldown/dist/shared/src_index-BcFJfRrY.mjs:790:24)\n    at TransformPluginContext.error (file:///home/hiroshi/code/others/rolldown/packages/rolldown/dist/shared/src_index-BcFJfRrY.mjs:1294:11)\n    at TransformPluginContext.transform (file:///home/hiroshi/code/others/rolldown/examples/basic-typescript/rolldown.config.js:17:14)\n    at plugin (file:///home/hiroshi/code/others/rolldown/packages/rolldown/dist/shared/src_index-BcFJfRrY.mjs:1490:30)\n\n    at handleOutputErrors (file:///home/hiroshi/code/others/rolldown/packages/rolldown/dist/shared/src_index-BcFJfRrY.mjs:169:19)\n    at transformToRollupOutput (file:///home/hiroshi/code/others/rolldown/packages/rolldown/dist/shared/src_index-BcFJfRrY.mjs:152:2)\n    at RolldownBuild.write (file:///home/hiroshi/code/others/rolldown/packages/rolldown/dist/shared/src_index-BcFJfRrY.mjs:2786:10)\n    at async bundleInner (file:///home/hiroshi/code/others/rolldown/packages/rolldown/dist/esm/cli.mjs:393:23) {\n  errors: [Getter/Setter]\n}\n```\n\n</details>",
+          "timestamp": "2024-11-18T10:07:02Z",
+          "tree_id": "5d04d006db053e0ef7683826980a4f5dc5d42a51",
+          "url": "https://github.com/rolldown/rolldown/commit/c908f9ed9914898b4c906e4a1f8f5e0f10ecffb2"
+        },
+        "date": 1731925655591,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "426.15",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "664.41",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1313.99",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1753.82",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "149.11",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "212.24",
             "unit": "ms / ops"
           }
         ]
