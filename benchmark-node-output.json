@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1731926173933,
+  "lastUpdate": 1731928632698,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -57365,6 +57365,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "204.95",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "31f81af1672feeadaa30ff373175e5347f9ff279",
+          "message": "refactor: render chunk imports for format esm (#2780)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->\n\n\n\nConsider the external imports is different at different format, Here\nseparate it to avoid over-abstraction, i will remove\n`collect_render_chunk_imports` usage.\n# Esm \n- The import star decl need to generate \n- The import named decl need to generate\n# Other format\nonly have generate one stmt, like `const external = require('external')`",
+          "timestamp": "2024-11-18T10:37:35Z",
+          "tree_id": "0a6582073a8244fec40b31e7abf8a44734cd5b8b",
+          "url": "https://github.com/rolldown/rolldown/commit/31f81af1672feeadaa30ff373175e5347f9ff279"
+        },
+        "date": 1731928632675,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "456.16",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "675.24",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1344.89",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1791.75",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "152.66",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "218.17",
             "unit": "ms / ops"
           }
         ]
