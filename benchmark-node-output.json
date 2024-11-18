@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1731928632698,
+  "lastUpdate": 1731935247002,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -57419,6 +57419,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "218.17",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0e16a9a3009ed6308410bb85ba056122041679bc",
+          "message": "fix(watcher): run first build after listener is attached (#2782)\n\n<!-- Thank you for contributing! -->\n\n### Description\nclose https://github.com/rolldown/rolldown/issues/2779\n\nHere using `process.nextTick` to ensure the behavior, it follows rollup\nhttps://github.com/rollup/rollup/blob/master/src/watch/watch.ts#L54\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-18T12:47:06Z",
+          "tree_id": "7423c971dc6c7cd7094a819641a1ca32b17c2164",
+          "url": "https://github.com/rolldown/rolldown/commit/0e16a9a3009ed6308410bb85ba056122041679bc"
+        },
+        "date": 1731935246979,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "426.42",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "671.65",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1313.50",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1761.19",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "146.17",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "210.06",
             "unit": "ms / ops"
           }
         ]
