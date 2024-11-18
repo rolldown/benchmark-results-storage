@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1731903370007,
+  "lastUpdate": 1731915187789,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -57149,6 +57149,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "208.11",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a44c4721c29679ff35cb38a9a1d485b0bcb4b624",
+          "message": "fix(interop): improve compatibility of `.cts` and `.mts` imports cjs (#2770)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-18T07:13:17Z",
+          "tree_id": "0bcb12d7d8acdb2829ae8733974b4d4c46cce587",
+          "url": "https://github.com/rolldown/rolldown/commit/a44c4721c29679ff35cb38a9a1d485b0bcb4b624"
+        },
+        "date": 1731915187754,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "425.35",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "656.35",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1299.40",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1702.78",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "145.11",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "208.91",
             "unit": "ms / ops"
           }
         ]
