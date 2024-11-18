@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1731863224879,
+  "lastUpdate": 1731897260285,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -56987,6 +56987,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "213.18",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "hi.ogawa.zz@gmail.com",
+            "name": "Hiroshi Ogawa",
+            "username": "hi-ogawa"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ac8b28af5ada3c021a53e1a3f370d90d62428fee",
+          "message": "fix: correctly collect Result without flatten (#2771)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nMinor fix up for https://github.com/rolldown/rolldown/pull/2759. I\ndidn't mean to skip errors by `flat_map` and I just learned I can\n`collect` the results.",
+          "timestamp": "2024-11-18T02:14:19Z",
+          "tree_id": "0a0f77df44791d30b48f97f3f547c5b70b4335da",
+          "url": "https://github.com/rolldown/rolldown/commit/ac8b28af5ada3c021a53e1a3f370d90d62428fee"
+        },
+        "date": 1731897260262,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "426.09",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "660.30",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1306.46",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1706.60",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "145.70",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "204.81",
             "unit": "ms / ops"
           }
         ]
