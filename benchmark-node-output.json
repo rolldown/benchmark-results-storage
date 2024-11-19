@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1731997571670,
+  "lastUpdate": 1732001089808,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -57581,6 +57581,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "225.38",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "15acadc2d58b1b6a750f4eab11e9511d49240729",
+          "message": "refactor(cjs): render external module imports (#2783)\n\n<!-- Thank you for contributing! -->\n\n### Description\nclose https://github.com/rolldown/rolldown/issues/2768\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-19T06:45:31Z",
+          "tree_id": "7921b537c69789344aef6ab739408b9f35821834",
+          "url": "https://github.com/rolldown/rolldown/commit/15acadc2d58b1b6a750f4eab11e9511d49240729"
+        },
+        "date": 1732001089785,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "432.71",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "674.34",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1292.62",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1743.56",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "147.02",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "210.87",
             "unit": "ms / ops"
           }
         ]
