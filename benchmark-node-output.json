@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1731935247002,
+  "lastUpdate": 1731995531618,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -57473,6 +57473,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "210.06",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4e24977b9b2291fc6de1703fe551bc9dfbc70375",
+          "message": "refactor(rust): derive `Clone` on `BundlerOptions` (#2784)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nThis is used support the need that is creating different bundler with\nsmall differences, such as two bundlers, one for server, one for client.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-19T05:31:51Z",
+          "tree_id": "811be914ad333eb2cb5fe42bb037242ef19c8f3b",
+          "url": "https://github.com/rolldown/rolldown/commit/4e24977b9b2291fc6de1703fe551bc9dfbc70375"
+        },
+        "date": 1731995531597,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "436.99",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "681.00",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1317.10",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1752.86",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "148.52",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "210.91",
             "unit": "ms / ops"
           }
         ]
