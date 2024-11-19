@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1732015830187,
+  "lastUpdate": 1732021470962,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -57743,6 +57743,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "203.70",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fc84d177d2e8b84f9ad49cf379acbc137f5806e2",
+          "message": "refactor: scope hoisting finalizer (#2798)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-19T12:44:45Z",
+          "tree_id": "0f717b50e5bfc2e49ed24751f7d5a8e6bff65170",
+          "url": "https://github.com/rolldown/rolldown/commit/fc84d177d2e8b84f9ad49cf379acbc137f5806e2"
+        },
+        "date": 1732021470938,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "430.87",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "673.62",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1328.26",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1774.08",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "147.95",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "210.45",
             "unit": "ms / ops"
           }
         ]
