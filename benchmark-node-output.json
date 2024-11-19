@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1732001089808,
+  "lastUpdate": 1732001470173,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -57588,53 +57588,53 @@
       {
         "commit": {
           "author": {
-            "email": "likui.underfin@gmail.com",
-            "name": "underfin",
-            "username": "underfin"
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
           },
           "committer": {
             "email": "noreply@github.com",
             "name": "GitHub",
             "username": "web-flow"
           },
-          "distinct": false,
-          "id": "15acadc2d58b1b6a750f4eab11e9511d49240729",
-          "message": "refactor(cjs): render external module imports (#2783)\n\n<!-- Thank you for contributing! -->\n\n### Description\nclose https://github.com/rolldown/rolldown/issues/2768\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
-          "timestamp": "2024-11-19T06:45:31Z",
-          "tree_id": "7921b537c69789344aef6ab739408b9f35821834",
-          "url": "https://github.com/rolldown/rolldown/commit/15acadc2d58b1b6a750f4eab11e9511d49240729"
+          "distinct": true,
+          "id": "8ef1b106a4796c54a04d018e317a29c41cb75009",
+          "message": "test(rust): allow to run `_test.mjs` in any format, prepare to deprecate `_test.cjs` (#2788)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n- To reduce complexity, `_test.cjs` is gonna be removed.\n- Only 16 tests is using `_test.cjs`, it won't be big affect and can be\nreplaced with `_test.mjs`\n- `_test.mjs` is more powerful than `_test.cjs`.\n  - You could `import './foo.cjs'` directly\n  - Or using TLA: `await import('./foo.cjs')`\n  - Or using `createRequire`: `require('./foo.cjs')`\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-19T07:00:29Z",
+          "tree_id": "d8a62304786b49d8169960e5f5a9c91c161806a1",
+          "url": "https://github.com/rolldown/rolldown/commit/8ef1b106a4796c54a04d018e317a29c41cb75009"
         },
-        "date": 1732001089785,
+        "date": 1732001470151,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x (default)",
-            "value": "432.71",
+            "value": "425.88",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap (default)",
-            "value": "674.34",
+            "value": "659.57",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify (default)",
-            "value": "1292.62",
+            "value": "1301.26",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify-sourcemap (default)",
-            "value": "1743.56",
+            "value": "1721.14",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts (default)",
-            "value": "147.02",
+            "value": "143.31",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts-sourcemap (default)",
-            "value": "210.87",
+            "value": "204.88",
             "unit": "ms / ops"
           }
         ]
