@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1731995531618,
+  "lastUpdate": 1731997571670,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -57527,6 +57527,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "210.91",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f65c8761c4a9984744220f5d1a13b6b7604fc8cb",
+          "message": "fix: generate correct chunk imports (#2787)\n\n<!-- Thank you for contributing! -->\n\n### Description\nclose https://github.com/rolldown/rolldown/issues/2786\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-19T06:06:16Z",
+          "tree_id": "f6ea9abcf3cdc06c87272b3d48cda4e66616bf51",
+          "url": "https://github.com/rolldown/rolldown/commit/f65c8761c4a9984744220f5d1a13b6b7604fc8cb"
+        },
+        "date": 1731997571646,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "453.87",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "687.37",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1374.32",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1802.34",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "154.18",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "225.38",
             "unit": "ms / ops"
           }
         ]
