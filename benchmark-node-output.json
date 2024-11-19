@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1732001470173,
+  "lastUpdate": 1732013684784,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -57635,6 +57635,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "204.88",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "38d0a883c69ac5702a076c75388cfce14d74f4e3",
+          "message": "refactor: render externals at format iife/umd (#2793)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-19T10:34:36Z",
+          "tree_id": "492438283ee93ad1b43fef64ddde313ca76be419",
+          "url": "https://github.com/rolldown/rolldown/commit/38d0a883c69ac5702a076c75388cfce14d74f4e3"
+        },
+        "date": 1732013684761,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "431.03",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "670.45",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1319.11",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1734.61",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "146.76",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "209.84",
             "unit": "ms / ops"
           }
         ]
