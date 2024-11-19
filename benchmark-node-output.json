@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1732013684784,
+  "lastUpdate": 1732015830187,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -57689,6 +57689,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "209.84",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a0d0d4211951b1897fa8221f6614bed76797eb22",
+          "message": "fix(cjs): should generate correct expr for reference cross chunk symbols (#2796)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nRoot cause is that the final pattern of symbol might ends up with a\n`MemeberExpression` instead of pure identifer.\n\nSeems all places use `SymbolRefDb#canonical_name_for` and\n`ScopeHoistingFinalizer#canonical_name_for` need to refactored.\n\n@underfin cc\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-19T11:01:07Z",
+          "tree_id": "1f42d5327e632781b2b1040b9b7d7d96b353f279",
+          "url": "https://github.com/rolldown/rolldown/commit/a0d0d4211951b1897fa8221f6614bed76797eb22"
+        },
+        "date": 1732015830167,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "426.59",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "655.57",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1295.67",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1693.55",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "146.02",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "203.70",
             "unit": "ms / ops"
           }
         ]
