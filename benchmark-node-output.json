@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1732096309020,
+  "lastUpdate": 1732102833924,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -58013,6 +58013,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "207.30",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "190644b563cee5e725ddc665f904f672a6d7cb90",
+          "message": "test: make watcher test stable (#2810)\n\n<!-- Thank you for contributing! -->\r\n\r\n### Description\r\n\r\nHere using retry sometimes to make the test stable. The `perf)watching\r\nsame file multiply times` is removed, because it is meaningless at here,\r\ni will add benchmark to instead of it at next.\r\n<!-- Please insert your description here and provide especially info\r\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-20T19:22:10+08:00",
+          "tree_id": "8fc2081a693db231e02ad81b2114a02b2461e294",
+          "url": "https://github.com/rolldown/rolldown/commit/190644b563cee5e725ddc665f904f672a6d7cb90"
+        },
+        "date": 1732102833900,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "434.95",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "668.74",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1315.18",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1782.69",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "151.25",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "216.36",
             "unit": "ms / ops"
           }
         ]
