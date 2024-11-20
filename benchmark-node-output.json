@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1732108365731,
+  "lastUpdate": 1732108509654,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -58128,53 +58128,53 @@
       {
         "commit": {
           "author": {
-            "email": "laipichan@qq.com",
-            "name": "dalaoshu",
-            "username": "shulaoda"
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
           },
           "committer": {
             "email": "noreply@github.com",
             "name": "GitHub",
             "username": "web-flow"
           },
-          "distinct": false,
-          "id": "172a5a10e034981a8b8d74caee17317b4a3573af",
-          "message": "feat: enable `inlineDynamicImports` automatically if format is `iffe` or `umd` (#2808)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\ncloses #2792 \n\nCurrently, there are some issues with triggering the warning.",
-          "timestamp": "2024-11-20T12:36:12Z",
-          "tree_id": "0f046758ace6e14645b799b64e43e05f70d65cb5",
-          "url": "https://github.com/rolldown/rolldown/commit/172a5a10e034981a8b8d74caee17317b4a3573af"
+          "distinct": true,
+          "id": "72b0ce40cee3d80473eb4e7de8c8994e3d6dc3d0",
+          "message": "refactor: module finalizer visit expr (#2811)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. Simplify `VisitExpr` \n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-20T12:39:01Z",
+          "tree_id": "63f9dfb077d61d1523d5a3d43c8afc67a6b000b5",
+          "url": "https://github.com/rolldown/rolldown/commit/72b0ce40cee3d80473eb4e7de8c8994e3d6dc3d0"
         },
-        "date": 1732108365708,
+        "date": 1732108509632,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x (default)",
-            "value": "459.44",
+            "value": "430.08",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap (default)",
-            "value": "682.50",
+            "value": "676.01",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify (default)",
-            "value": "1397.16",
+            "value": "1306.10",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify-sourcemap (default)",
-            "value": "1814.67",
+            "value": "1746.50",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts (default)",
-            "value": "157.24",
+            "value": "146.84",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts-sourcemap (default)",
-            "value": "221.55",
+            "value": "211.02",
             "unit": "ms / ops"
           }
         ]
