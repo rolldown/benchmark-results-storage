@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1732108509654,
+  "lastUpdate": 1732111088399,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -58175,6 +58175,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "211.02",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "d730ef2487169cb1f35b292acdda66b3c7077960",
+          "message": "refactor: remove redundant pattern match check in module finalizer (#2812)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-20T13:37:51Z",
+          "tree_id": "2de2a5ed92486137eb4c3388d34226cc28245790",
+          "url": "https://github.com/rolldown/rolldown/commit/d730ef2487169cb1f35b292acdda66b3c7077960"
+        },
+        "date": 1732111088377,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "431.68",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "668.68",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1295.99",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1761.27",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "150.02",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "211.37",
             "unit": "ms / ops"
           }
         ]
