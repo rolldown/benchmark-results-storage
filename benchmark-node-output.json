@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1732183875701,
+  "lastUpdate": 1732184543496,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -58614,9 +58614,9 @@
       {
         "commit": {
           "author": {
-            "email": "i.heyunfei@gmail.com",
-            "name": "Yunfei He",
-            "username": "hyf0"
+            "email": "laipichan@qq.com",
+            "name": "dalaoshu",
+            "username": "shulaoda"
           },
           "committer": {
             "email": "noreply@github.com",
@@ -58624,43 +58624,43 @@
             "username": "web-flow"
           },
           "distinct": false,
-          "id": "d7adf58c9116595db30353f86f751dc888b450b1",
-          "message": "feat: set unspecified platform to `node` if format is `cjs` (#2837)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
-          "timestamp": "2024-11-21T09:47:58Z",
-          "tree_id": "4b7a5268b10ad16ce9bf819b9ed61320f7d2a2ae",
-          "url": "https://github.com/rolldown/rolldown/commit/d7adf58c9116595db30353f86f751dc888b450b1"
+          "id": "8e8bf5775ed51ef80c1f3a63fa4474a90fb628a7",
+          "message": "feat: don't normalize options on js side - part1 (#2836)\n\n### Description\n\nRelated to #2835 \n\n@hyf0 I've noticed that modifying each option seems to be quite simple.\nIs there anything else I haven't considered? Do I still need to break\nthem down into individual smaller PRs?",
+          "timestamp": "2024-11-21T09:50:34Z",
+          "tree_id": "c69157d0aa6abc8654e53294df34e0228367f32c",
+          "url": "https://github.com/rolldown/rolldown/commit/8e8bf5775ed51ef80c1f3a63fa4474a90fb628a7"
         },
-        "date": 1732183875678,
+        "date": 1732184543473,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x (default)",
-            "value": "437.70",
+            "value": "441.64",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap (default)",
-            "value": "673.20",
+            "value": "677.49",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify (default)",
-            "value": "1347.72",
+            "value": "1380.05",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify-sourcemap (default)",
-            "value": "1779.44",
+            "value": "1836.16",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts (default)",
-            "value": "151.56",
+            "value": "153.48",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts-sourcemap (default)",
-            "value": "216.94",
+            "value": "219.32",
             "unit": "ms / ops"
           }
         ]
