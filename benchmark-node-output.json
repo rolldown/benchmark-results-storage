@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1732166003693,
+  "lastUpdate": 1732179467153,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -58553,6 +58553,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "217.57",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1ae6760fa540f8c608143849c4bf56ae806ef348",
+          "message": "fix(inlineDynamicImports): don't normalize `inlineDynamicImports` on js side (#2834)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nFixes https://github.com/rolldown/rolldown/issues/2832.\n\nhttps://github.com/rolldown/rolldown/issues/1041 need to move forward I\nguess.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-21T08:37:17Z",
+          "tree_id": "8b310057b5a908f9c160251d17196d35c6695256",
+          "url": "https://github.com/rolldown/rolldown/commit/1ae6760fa540f8c608143849c4bf56ae806ef348"
+        },
+        "date": 1732179467129,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "435.91",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "668.63",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1354.56",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1824.36",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "150.36",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "220.29",
             "unit": "ms / ops"
           }
         ]
