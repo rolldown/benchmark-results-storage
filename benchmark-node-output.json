@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1732158925661,
+  "lastUpdate": 1732159819260,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -58283,6 +58283,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "225.98",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "aea17c98e23cbfeb3d9f9e3ff427ab3bc2db43f9",
+          "message": "refactor(test): remove support for `_test.cjs` (#2819)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nFollow up of https://github.com/rolldown/rolldown/pull/2788.\n\n- `_test.mjs` could be used under any format now.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-21T02:59:11Z",
+          "tree_id": "c275bbca6c9136e08a5b3722b3633e2df575f7d7",
+          "url": "https://github.com/rolldown/rolldown/commit/aea17c98e23cbfeb3d9f9e3ff427ab3bc2db43f9"
+        },
+        "date": 1732159819239,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "422.16",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "660.43",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1296.58",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1691.63",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "144.22",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "206.75",
             "unit": "ms / ops"
           }
         ]
