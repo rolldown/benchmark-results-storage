@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1732164818185,
+  "lastUpdate": 1732166003693,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -58499,6 +58499,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "206.95",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0b8dbaa8548bd64f59a1281bcd5f8ca6326d3935",
+          "message": "fix(iife): should ensure exectution if entry module is wrapped (#2822)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nAll `bundler_esm_cjs_tests` tests with `iife` format are passed\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-21T04:23:42Z",
+          "tree_id": "b55c6f201edcc9ec161478cd065508e34023bf8e",
+          "url": "https://github.com/rolldown/rolldown/commit/0b8dbaa8548bd64f59a1281bcd5f8ca6326d3935"
+        },
+        "date": 1732166003669,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "445.75",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "673.94",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1385.33",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1798.23",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "151.90",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "217.57",
             "unit": "ms / ops"
           }
         ]
