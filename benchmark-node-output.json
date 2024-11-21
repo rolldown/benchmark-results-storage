@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1732195652969,
+  "lastUpdate": 1732196879003,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -58931,6 +58931,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "204.93",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "laipichan@qq.com",
+            "name": "dalaoshu",
+            "username": "shulaoda"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7383e19f0b76ce72f5175bf0e8a82892972f72d4",
+          "message": "feat: support function for `output.globals` (#2818)\n\n### Description\n\nAlign with\n[rollup#output-globals](https://rollupjs.org/configuration-options/#output-globals)\n\n\nhttps://github.com/rolldown/rolldown/blob/ab438c355063765640db18cb03b8d08fa2eee39d/packages/rolldown/src/utils/normalize-output-options.ts#L46-L47",
+          "timestamp": "2024-11-21T13:18:04Z",
+          "tree_id": "58ee8f1637856382d96d29dc99a1f645b9dd7e77",
+          "url": "https://github.com/rolldown/rolldown/commit/7383e19f0b76ce72f5175bf0e8a82892972f72d4"
+        },
+        "date": 1732196878980,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "440.83",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "671.36",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1325.73",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1716.84",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "144.40",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "209.00",
             "unit": "ms / ops"
           }
         ]
