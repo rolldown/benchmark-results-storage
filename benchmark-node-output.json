@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1732164734746,
+  "lastUpdate": 1732164818185,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -58462,43 +58462,43 @@
             "username": "web-flow"
           },
           "distinct": false,
-          "id": "51ba0b12e570c11f9818ed1f0072bf86b9159488",
-          "message": "refactor(plugin/vite-resolve): remove unnecessary generics type (#2825)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
-          "timestamp": "2024-11-21T04:01:35Z",
-          "tree_id": "f051b6a0835d04edf7d4dc1129b166300d707a6a",
-          "url": "https://github.com/rolldown/rolldown/commit/51ba0b12e570c11f9818ed1f0072bf86b9159488"
+          "id": "edb9100f881dc569a90a242b28b3bbefeb3b62aa",
+          "message": "refactor(plugin/vite-resolve): implement AdditionalOptions from u8 (#2824)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-21T04:10:35Z",
+          "tree_id": "dc7a552246c2a64595096421de0496121e853daf",
+          "url": "https://github.com/rolldown/rolldown/commit/edb9100f881dc569a90a242b28b3bbefeb3b62aa"
         },
-        "date": 1732164734711,
+        "date": 1732164818162,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x (default)",
-            "value": "428.80",
+            "value": "424.99",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap (default)",
-            "value": "657.50",
+            "value": "661.89",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify (default)",
-            "value": "1292.45",
+            "value": "1306.32",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify-sourcemap (default)",
-            "value": "1713.72",
+            "value": "1713.74",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts (default)",
-            "value": "145.78",
+            "value": "143.91",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts-sourcemap (default)",
-            "value": "206.79",
+            "value": "206.95",
             "unit": "ms / ops"
           }
         ]
