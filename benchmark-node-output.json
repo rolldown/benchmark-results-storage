@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1732190951813,
+  "lastUpdate": 1732193805425,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -58823,6 +58823,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "222.77",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ea3f0939c45c08d8c276c292883405fd1fd608e9",
+          "message": "fix(use_strict): shouldn't care about empty modules (#2844)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n- Fixes https://github.com/rolldown/rolldown/issues/2826.\n- For reference:\nhttps://github.com/rolldown/rolldown/blob/ab515a716f4145f91138eeb498a94aa25ba364b2/docs/guide/in-depth/use-strict.md\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-21T12:35:24Z",
+          "tree_id": "1193acd5875fd41bebbff2e9836bf1cc16215cf6",
+          "url": "https://github.com/rolldown/rolldown/commit/ea3f0939c45c08d8c276c292883405fd1fd608e9"
+        },
+        "date": 1732193805404,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "433.53",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "672.16",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1313.86",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1742.77",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "146.41",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "210.08",
             "unit": "ms / ops"
           }
         ]
