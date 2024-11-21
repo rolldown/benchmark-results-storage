@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1732193805425,
+  "lastUpdate": 1732195652969,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -58877,6 +58877,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "210.08",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2504a6462da4d605cf05c044f5759bc3f2afcfdc",
+          "message": "refactor: watcher emitter (#2823)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nclose https://github.com/rolldown/rolldown/issues/2806\n\nUsing `channel` to do it. when receiving msg only call binding function\nonce.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-21T13:03:58Z",
+          "tree_id": "e9276dd887f3af70dab77aacce94b171d0e2db31",
+          "url": "https://github.com/rolldown/rolldown/commit/2504a6462da4d605cf05c044f5759bc3f2afcfdc"
+        },
+        "date": 1732195652945,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "422.71",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "659.18",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1305.66",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1714.02",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "144.11",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "204.93",
             "unit": "ms / ops"
           }
         ]
