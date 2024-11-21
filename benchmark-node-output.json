@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1732161966029,
+  "lastUpdate": 1732163889516,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -58391,6 +58391,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "206.84",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "08c110477b5ab90eac35c5d25162d28446277322",
+          "message": "test(interop): enable `bundler_esm_cjs_tests` with `iife` format (#2821)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nFailed tests are marked with `FIXME` comment.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-21T03:47:55Z",
+          "tree_id": "5c08185576a4f885e9ad0fc85af59bac6838d859",
+          "url": "https://github.com/rolldown/rolldown/commit/08c110477b5ab90eac35c5d25162d28446277322"
+        },
+        "date": 1732163889481,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "429.78",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "669.03",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1298.90",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1720.21",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "140.90",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "200.71",
             "unit": "ms / ops"
           }
         ]
