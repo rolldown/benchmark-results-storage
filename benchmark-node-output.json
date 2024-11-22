@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1732279372064,
+  "lastUpdate": 1732289632369,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -59471,6 +59471,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "209.88",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "laipichan@qq.com",
+            "name": "dalaoshu",
+            "username": "shulaoda"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "db4090bfd161fc7f2857ba686dd7d77379e9401b",
+          "message": "feat: don't normalize options on js side - part4 (#2870)\n\n### Description\n\nRelated to #2835\n\nI'm uncertain whether we should remove the current\n`NormalizedInputOptions` and `NormalizedOutputOptions` and replace them\nwith `InputOptions` and `OutputOptions`. If this change is necessary, it\nwould be the final part.",
+          "timestamp": "2024-11-22T15:11:18Z",
+          "tree_id": "8140d40443e0ceab4887dda1f694b77cfe224e25",
+          "url": "https://github.com/rolldown/rolldown/commit/db4090bfd161fc7f2857ba686dd7d77379e9401b"
+        },
+        "date": 1732289632346,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "431.94",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "670.51",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1313.39",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1760.59",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "145.69",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "205.40",
             "unit": "ms / ops"
           }
         ]
