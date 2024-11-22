@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1732276425190,
+  "lastUpdate": 1732277852782,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -59363,6 +59363,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "196.31",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "green@sapphi.red",
+            "name": "翠 / green",
+            "username": "sapphi-red"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d6cedcbd68ab245fcc1b0eb0c9ab83ebc619b657",
+          "message": "feat(plugin/vite-resolve): implement more logics for `createIdResolver` (#2869)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nImplemented logics that are needed to make `createIdResolver` work.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-22T11:39:53Z",
+          "tree_id": "feaf29c701d7f21013aa9ab895f500fa6c50016f",
+          "url": "https://github.com/rolldown/rolldown/commit/d6cedcbd68ab245fcc1b0eb0c9ab83ebc619b657"
+        },
+        "date": 1732277852750,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "426.90",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "659.73",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1278.45",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1675.73",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "143.78",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "202.16",
             "unit": "ms / ops"
           }
         ]
