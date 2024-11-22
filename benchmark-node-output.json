@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1732262676415,
+  "lastUpdate": 1732276030790,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -59309,6 +59309,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "202.78",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "laipichan@qq.com",
+            "name": "dalaoshu",
+            "username": "shulaoda"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "db2f6dea3c37ecfb65133a92e07942242c3c9890",
+          "message": "feat: don't normalize options on js side - part3 (#2858)\n\n### Description\n\nRelated to #2835 \n\nThe `onLog` has a deep coupling with `PluginContext`, which might make\nit more complex, so I'm not sure if it's worth doing.\n\nThe simpler approach is to directly add a static `onLog` method to\n`PluginContext`.",
+          "timestamp": "2024-11-22T11:14:13Z",
+          "tree_id": "b79aaea5a077fa6f5103f7b11afef7c22c8ed6aa",
+          "url": "https://github.com/rolldown/rolldown/commit/db2f6dea3c37ecfb65133a92e07942242c3c9890"
+        },
+        "date": 1732276030767,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "431.44",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "668.65",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1297.08",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1751.49",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "144.91",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "205.75",
             "unit": "ms / ops"
           }
         ]
