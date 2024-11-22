@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1732254287977,
+  "lastUpdate": 1732256391546,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -59147,6 +59147,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "203.99",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0a21a7ca4136c267018eb6962ef7700cdd9c0df4",
+          "message": "fix: side effects detect of destructing array (#2853)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-22T05:58:26Z",
+          "tree_id": "8dcfdd1a977d815eb0fb474ac22a7cb5549206e3",
+          "url": "https://github.com/rolldown/rolldown/commit/0a21a7ca4136c267018eb6962ef7700cdd9c0df4"
+        },
+        "date": 1732256391523,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "443.86",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "677.24",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1318.70",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1786.01",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "155.50",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "220.22",
             "unit": "ms / ops"
           }
         ]
