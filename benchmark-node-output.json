@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1732252228006,
+  "lastUpdate": 1732254287977,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -59093,6 +59093,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "213.43",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "laipichan@qq.com",
+            "name": "dalaoshu",
+            "username": "shulaoda"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b73bbbad319dbfdae3b5276bd9e39b5a0b5cb79b",
+          "message": "feat: don't normalize options on js side - part2 (#2848)\n\n### Description\n\nI found that removing `normalizeInputOptions` is a bit tricky because it\nis tightly coupled with the `Plugin` on the js side.\n\nI reviewed the context of issue #1041, but I'm still unsure if I'm on\nthe right track. Therefore, I'm submitting this PR to ensure that what\nI'm doing is correct. I would appreciate it if you could point out the\nnext steps I should take.\n\n\n> I also think about it before, we could using original `external`\noption to improve it. If the user not changed normalized `external`\noption, we just using original `external` option to binding option, it\ncould be `array|function`.\n> \n> \n> \n> I think about this too. But it requires us to change the definition of\n`NormalizedInputOptions`. If this is acceptable, we could just use\n`InputOptions` as the `NormalizedInputOptions`. I kind of feel that this\nmakes the normalization step in js side meaningless, so I didn't propose\nthis way.\n_Originally posted by @hyf0 in\n[#1041](https://github.com/rolldown/rolldown/issues/1041#issuecomment-2098313025)_",
+          "timestamp": "2024-11-22T05:22:28Z",
+          "tree_id": "7b97964f23cb92301b2edaf6617d7b1447b45342",
+          "url": "https://github.com/rolldown/rolldown/commit/b73bbbad319dbfdae3b5276bd9e39b5a0b5cb79b"
+        },
+        "date": 1732254287943,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "437.00",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "673.19",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1298.51",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1730.70",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "142.96",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "203.99",
             "unit": "ms / ops"
           }
         ]
