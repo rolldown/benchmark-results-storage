@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1732256391546,
+  "lastUpdate": 1732257406923,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -59201,6 +59201,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "220.22",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "hi.ogawa.zz@gmail.com",
+            "name": "Hiroshi Ogawa",
+            "username": "hi-ogawa"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "33e058435a858d7e8c7fcf2572d4c534a4af393f",
+          "message": "fix(string_wizard): output source map with utf16-based location (#2854)\n\n### Description\n\n- Related https://github.com/rolldown/rolldown/issues/2737\n\nAssuming `MagicString::update` API is byte-based index, I fixed how it's\nemitted during `MagicString::source_map`. I couldn't find a way to reuse\nexisting `len_utf16` aggregation in other places, so I added a extra\npath just for `chunk.start`. Not sure if this is the best way. Please\nlet me know if there's a different idea.",
+          "timestamp": "2024-11-22T06:11:08Z",
+          "tree_id": "de512d15e9551d96641da0a19c226b224a3bc4b4",
+          "url": "https://github.com/rolldown/rolldown/commit/33e058435a858d7e8c7fcf2572d4c534a4af393f"
+        },
+        "date": 1732257406900,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "436.67",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "670.78",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1321.96",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1756.46",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "148.90",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "209.78",
             "unit": "ms / ops"
           }
         ]
