@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1732276030790,
+  "lastUpdate": 1732276425190,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -59325,44 +59325,44 @@
             "name": "GitHub",
             "username": "web-flow"
           },
-          "distinct": false,
-          "id": "db2f6dea3c37ecfb65133a92e07942242c3c9890",
-          "message": "feat: don't normalize options on js side - part3 (#2858)\n\n### Description\n\nRelated to #2835 \n\nThe `onLog` has a deep coupling with `PluginContext`, which might make\nit more complex, so I'm not sure if it's worth doing.\n\nThe simpler approach is to directly add a static `onLog` method to\n`PluginContext`.",
-          "timestamp": "2024-11-22T11:14:13Z",
-          "tree_id": "b79aaea5a077fa6f5103f7b11afef7c22c8ed6aa",
-          "url": "https://github.com/rolldown/rolldown/commit/db2f6dea3c37ecfb65133a92e07942242c3c9890"
+          "distinct": true,
+          "id": "9f9d29ac96944e86c2265a5d47a99e1b9b4be6b3",
+          "message": "fix: prevent crashes with dynamic imports using variable paths when `inlineDynamicImports` is enabled (#2865)\n\n### Description\n\ncloses #2833",
+          "timestamp": "2024-11-22T11:14:21Z",
+          "tree_id": "5d84b445e387fee905cce005b06777779448533a",
+          "url": "https://github.com/rolldown/rolldown/commit/9f9d29ac96944e86c2265a5d47a99e1b9b4be6b3"
         },
-        "date": 1732276030767,
+        "date": 1732276425165,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x (default)",
-            "value": "431.44",
+            "value": "418.52",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap (default)",
-            "value": "668.65",
+            "value": "649.15",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify (default)",
-            "value": "1297.08",
+            "value": "1260.12",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify-sourcemap (default)",
-            "value": "1751.49",
+            "value": "1683.45",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts (default)",
-            "value": "144.91",
+            "value": "138.06",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts-sourcemap (default)",
-            "value": "205.75",
+            "value": "196.31",
             "unit": "ms / ops"
           }
         ]
