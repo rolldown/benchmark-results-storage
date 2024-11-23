@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1732349491092,
+  "lastUpdate": 1732355408776,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -59633,6 +59633,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "199.80",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "267fa51f54b16ebca98ba9d6c176c5804291f580",
+          "message": "chore(node): move builtin-plugin related files to `builtin-plugin` folder (#2876)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nBuiltin-plugin play a very important role in rolldown, so it's worth to\nhave standalone folder to store related stuff.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-23T09:29:12Z",
+          "tree_id": "4de02718b1edf52e3bde49c18b06c182af07d3dd",
+          "url": "https://github.com/rolldown/rolldown/commit/267fa51f54b16ebca98ba9d6c176c5804291f580"
+        },
+        "date": 1732355408754,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "423.53",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "673.51",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1298.04",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1705.61",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "144.62",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "206.45",
             "unit": "ms / ops"
           }
         ]
