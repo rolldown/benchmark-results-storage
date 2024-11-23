@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1732363336331,
+  "lastUpdate": 1732364744420,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -59903,6 +59903,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "204.15",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "52e0d11c4e3b655f4d6e76226b2e70086d41de44",
+          "message": "refactor(node/builtin-plugin): remove unnecessary class defs (#2883)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-23T12:05:50Z",
+          "tree_id": "ccbaf9d800479ed3ef404acaa0d67b1922deb0b5",
+          "url": "https://github.com/rolldown/rolldown/commit/52e0d11c4e3b655f4d6e76226b2e70086d41de44"
+        },
+        "date": 1732364744394,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "427.12",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "661.91",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1292.05",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1711.89",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "143.53",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "203.88",
             "unit": "ms / ops"
           }
         ]
