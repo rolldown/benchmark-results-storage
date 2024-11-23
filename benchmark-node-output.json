@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1732361343733,
+  "lastUpdate": 1732363336331,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -59849,6 +59849,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "205.16",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9eb9d3c3689f417bdfa27b36663dce735a2f1883",
+          "message": "refactor(builtin-plugin): use meaningful words as the name of builtin plugins (#2882)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nDone by copilot\n\n<img width=\"690\" alt=\"HapiGo_2024-11-23_18 12 14\"\nsrc=\"https://github.com/user-attachments/assets/8293253e-a7bc-4fd3-bde8-f750ee3ef309\">\n\n- Closes https://github.com/rolldown/rolldown/issues/2879.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-23T11:41:54Z",
+          "tree_id": "490580ff5e6dc49e48c2cc1589dce10b6d54abb7",
+          "url": "https://github.com/rolldown/rolldown/commit/9eb9d3c3689f417bdfa27b36663dce735a2f1883"
+        },
+        "date": 1732363336309,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "424.41",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "671.54",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1264.75",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1696.41",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "143.74",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "204.15",
             "unit": "ms / ops"
           }
         ]
