@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1732460497943,
+  "lastUpdate": 1732462568493,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -60443,6 +60443,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "201.51",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b5df4085531864f5278e777c20007d7f191d4a46",
+          "message": "feat(node/rollup-compat): Be compatable with rollup's `NormalizedOutputOptions#format` (#2900)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nCloses https://github.com/rolldown/rolldown/issues/2867.\n\nNotice this PR includes `app` format\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-24T15:14:56Z",
+          "tree_id": "85280e004b4385c9cecf1ad5726e27170c34bf36",
+          "url": "https://github.com/rolldown/rolldown/commit/b5df4085531864f5278e777c20007d7f191d4a46"
+        },
+        "date": 1732462568469,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "420.97",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "660.15",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1284.20",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1704.67",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "142.44",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "200.04",
             "unit": "ms / ops"
           }
         ]
