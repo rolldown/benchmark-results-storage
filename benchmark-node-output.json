@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1732443928870,
+  "lastUpdate": 1732445784113,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -60065,6 +60065,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "204.57",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "d3893b8ca50855859f528eb7ade578362c11b27a",
+          "message": "refactor(node): make `MinimalPluginContext` not rely on `NormalizedInputOptions` (#2890)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-24T10:30:40Z",
+          "tree_id": "878f3bc885a1187de0eeabd5f528fadc788dbe1e",
+          "url": "https://github.com/rolldown/rolldown/commit/d3893b8ca50855859f528eb7ade578362c11b27a"
+        },
+        "date": 1732445784090,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "426.55",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "656.79",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1306.25",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1721.29",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "144.06",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "205.25",
             "unit": "ms / ops"
           }
         ]
