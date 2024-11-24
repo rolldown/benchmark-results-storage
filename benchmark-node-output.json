@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1732364744420,
+  "lastUpdate": 1732434842600,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -59957,6 +59957,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "203.88",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "44c964de945dcccdebb0d2650c72d0f7c895d77d",
+          "message": "refactor(node/bindingify-plugin): consolidate parameters into a single interface (#2887)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nThis allows us to modify passing args more easily.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-24T07:27:16Z",
+          "tree_id": "d3bd02986dc7259370e2b5eddb65bce465204e6d",
+          "url": "https://github.com/rolldown/rolldown/commit/44c964de945dcccdebb0d2650c72d0f7c895d77d"
+        },
+        "date": 1732434842576,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "417.86",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "666.76",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1277.55",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1703.16",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "143.89",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "202.77",
             "unit": "ms / ops"
           }
         ]
