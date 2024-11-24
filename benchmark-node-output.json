@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1732448191450,
+  "lastUpdate": 1732449821950,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -60173,6 +60173,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "204.27",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "laipichan@qq.com",
+            "name": "dalaoshu",
+            "username": "shulaoda"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "f10a6bc9f7d9f0061a15a6f3373411af97d3f4c6",
+          "message": "chore: remove the side effects of `just test` (#2896)\n\n### Description\n\nI don't know if you've encountered this issue, but every time I run\n`just test` locally on `windows` and try to commit, it always causes\nextra snapshot updates.\n\n\n![SKM9027MA5`J}4C9Y9IU@36](https://github.com/user-attachments/assets/7015c45e-76c3-4be4-893b-68eb7fcbd46d)",
+          "timestamp": "2024-11-24T11:40:01Z",
+          "tree_id": "427cda24e1c8bb0e410f58f7dc4c4f1fe28b52b8",
+          "url": "https://github.com/rolldown/rolldown/commit/f10a6bc9f7d9f0061a15a6f3373411af97d3f4c6"
+        },
+        "date": 1732449821927,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "421.86",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "656.79",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1297.57",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1702.70",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "142.79",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "202.92",
             "unit": "ms / ops"
           }
         ]
