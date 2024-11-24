@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1732445858215,
+  "lastUpdate": 1732448191450,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -60119,6 +60119,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "187.51",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "dfc043d0a16693f3589523bf6c022d6ad679b74c",
+          "message": "refactor(node): pass `NormalizedOptions` from rust to js (#2892)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-24T11:13:01Z",
+          "tree_id": "8a1766538874dfafebdcdee0f011a6c7d902ad4c",
+          "url": "https://github.com/rolldown/rolldown/commit/dfc043d0a16693f3589523bf6c022d6ad679b74c"
+        },
+        "date": 1732448191428,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "421.25",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "666.13",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1315.43",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1738.60",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "140.36",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "204.27",
             "unit": "ms / ops"
           }
         ]
