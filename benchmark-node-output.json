@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1732457070954,
+  "lastUpdate": 1732457474504,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -60288,9 +60288,9 @@
       {
         "commit": {
           "author": {
-            "email": "i.heyunfei@gmail.com",
-            "name": "Yunfei He",
-            "username": "hyf0"
+            "email": "laipichan@qq.com",
+            "name": "dalaoshu",
+            "username": "shulaoda"
           },
           "committer": {
             "email": "noreply@github.com",
@@ -60298,43 +60298,43 @@
             "username": "web-flow"
           },
           "distinct": false,
-          "id": "01d1e62aff7409672920935514ec8a0a979481b4",
-          "message": "chore(rust): rename `BindingNormalizedInputOptions` to `BindingNormalizedOptions` (#2897)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nPart of https://github.com/rolldown/rolldown/issues/1041. No need to add\nan extra `BindingNormalizedOutputOptions`, we could just reuse the\ncurrent one.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
-          "timestamp": "2024-11-24T13:26:41Z",
-          "tree_id": "9b8f7dbaa45bc3a173d9b6937a09c9399379829c",
-          "url": "https://github.com/rolldown/rolldown/commit/01d1e62aff7409672920935514ec8a0a979481b4"
+          "id": "5e804dba5b1991a81c1b4f66394ce938f08575e5",
+          "message": "feat: use better diagnostic for `ReplaceGlobalDefinesConfig` (#2884)\n\n### Description\n\nRelated PR https://github.com/oxc-project/oxc/pull/7439\n\nI'm not sure if it's worth adding a `EventKind::InvalidDefineConfig` for\n`ReplaceGlobalDefinesConfig`.\n\n\nhttps://github.com/rolldown/rolldown/blob/52e0d11c4e3b655f4d6e76226b2e70086d41de44/crates/rolldown/src/module_loader/module_loader.rs#L89-L96",
+          "timestamp": "2024-11-24T13:28:47Z",
+          "tree_id": "5cef8659b318e41b184c5158c25173144362a3d3",
+          "url": "https://github.com/rolldown/rolldown/commit/5e804dba5b1991a81c1b4f66394ce938f08575e5"
         },
-        "date": 1732457070928,
+        "date": 1732457474480,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x (default)",
-            "value": "431.01",
+            "value": "428.03",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap (default)",
-            "value": "661.29",
+            "value": "668.00",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify (default)",
-            "value": "1288.58",
+            "value": "1339.86",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify-sourcemap (default)",
-            "value": "1715.68",
+            "value": "1777.64",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts (default)",
-            "value": "144.37",
+            "value": "145.65",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts-sourcemap (default)",
-            "value": "205.30",
+            "value": "208.01",
             "unit": "ms / ops"
           }
         ]
