@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1732528166643,
+  "lastUpdate": 1732538539344,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -60821,6 +60821,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "210.28",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "green@sapphi.red",
+            "name": "翠 / green",
+            "username": "sapphi-red"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "446dca97812df7581cbdf5469cfc74fc3ffceb96",
+          "message": "refactor(node): make builtin plugin callable internally (#2917)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nImplemented what was suggested in\nhttps://github.com/rolldown/rolldown/pull/2876#discussion_r1855146143\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-25T12:17:25Z",
+          "tree_id": "93cdf4da0b9c0e791712edfdcb042aa3c98b2b6b",
+          "url": "https://github.com/rolldown/rolldown/commit/446dca97812df7581cbdf5469cfc74fc3ffceb96"
+        },
+        "date": 1732538539314,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "609.44",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "949.70",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "2396.98",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "2933.08",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "203.04",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "297.17",
             "unit": "ms / ops"
           }
         ]
