@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1732517311041,
+  "lastUpdate": 1732519663695,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -60605,6 +60605,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "215.69",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b1c61585ce933b3a547e4ebe197db22a4c954871",
+          "message": "fix: the defalut value of  should be empty object (#2910)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-25T07:01:58Z",
+          "tree_id": "0f379f0da3fc32c09961f119b22c8083a8ed6127",
+          "url": "https://github.com/rolldown/rolldown/commit/b1c61585ce933b3a547e4ebe197db22a4c954871"
+        },
+        "date": 1732519663674,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "428.29",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "674.11",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1327.35",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1760.56",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "147.32",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "213.11",
             "unit": "ms / ops"
           }
         ]
