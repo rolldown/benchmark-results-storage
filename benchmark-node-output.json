@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1732558121497,
+  "lastUpdate": 1732558422260,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -60882,53 +60882,53 @@
       {
         "commit": {
           "author": {
-            "email": "i.heyunfei@gmail.com",
-            "name": "Yunfei He",
-            "username": "hyf0"
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
           },
           "committer": {
             "email": "noreply@github.com",
             "name": "GitHub",
             "username": "web-flow"
           },
-          "distinct": false,
-          "id": "84f2980b89c039bcdfe736656807a251e7be4e14",
-          "message": "chore(node): rename `runtime-without-comments.js` with `runtime-base.js` (#2919)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nPart of https://github.com/rolldown/rolldown/issues/2685.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
-          "timestamp": "2024-11-25T17:44:03Z",
-          "tree_id": "26b1db8843867356bb757bf3d5a288c7d0e0c576",
-          "url": "https://github.com/rolldown/rolldown/commit/84f2980b89c039bcdfe736656807a251e7be4e14"
+          "distinct": true,
+          "id": "ba3d73a8f7dcc9f8740244c05354914c14d69945",
+          "message": "fix: lazy export json module (#2918)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. There are still some issues need to addressed, but the pr is already\nlarge enough, I will left them into rest pr.\n    - on demand quoted binding identifier\n    - legal binding ident should be shorthand\n2. this pr should fix all wraper related issue.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-25T17:45:41Z",
+          "tree_id": "0f60528a5ba3289734970edd77f82d04ca49334c",
+          "url": "https://github.com/rolldown/rolldown/commit/ba3d73a8f7dcc9f8740244c05354914c14d69945"
         },
-        "date": 1732558121470,
+        "date": 1732558422236,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x (default)",
-            "value": "424.60",
+            "value": "459.44",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap (default)",
-            "value": "661.37",
+            "value": "693.37",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify (default)",
-            "value": "1313.73",
+            "value": "1417.58",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify-sourcemap (default)",
-            "value": "1734.67",
+            "value": "1836.39",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts (default)",
-            "value": "143.20",
+            "value": "156.24",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts-sourcemap (default)",
-            "value": "206.33",
+            "value": "220.07",
             "unit": "ms / ops"
           }
         ]
