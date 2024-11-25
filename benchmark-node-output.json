@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1732517084756,
+  "lastUpdate": 1732517311041,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -60558,53 +60558,53 @@
       {
         "commit": {
           "author": {
-            "email": "green@sapphi.red",
-            "name": "翠 / green",
-            "username": "sapphi-red"
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
           },
           "committer": {
             "email": "noreply@github.com",
             "name": "GitHub",
             "username": "web-flow"
           },
-          "distinct": false,
-          "id": "b6dc60ac84299cc03d3d67a472565d7cf82431ad",
-          "message": "feat(rust): pass `NormalizedOutputOptions` in `renderChunk` hook (#2909)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nThis was needed for Vite.\n\nrefs #2902, #2906\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
-          "timestamp": "2024-11-25T06:25:29Z",
-          "tree_id": "71945a0c5374c13e0232bd013601f94f2d6b337f",
-          "url": "https://github.com/rolldown/rolldown/commit/b6dc60ac84299cc03d3d67a472565d7cf82431ad"
+          "distinct": true,
+          "id": "b6759598e00971a10057e8a1810e6e19f28250bf",
+          "message": "chore(exmaples): add `unplugin-isolated-decl` example (#2905)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n\nWith\nhttps://github.com/rolldown/rolldown/blob/788d7fc54b5beb0adb9003056e214139d1a4a2d8/.github/workflows/reusable-node-test.yml#L47\n\nOur examples are like simple version ecosystem test. We might need a\nreal one soon.\n\n- Fixes https://github.com/rolldown/rolldown/issues/2885\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-25T06:26:31Z",
+          "tree_id": "31dc4847e5aa3a59c5f05987f06a640363150731",
+          "url": "https://github.com/rolldown/rolldown/commit/b6759598e00971a10057e8a1810e6e19f28250bf"
         },
-        "date": 1732517084731,
+        "date": 1732517311017,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x (default)",
-            "value": "439.09",
+            "value": "436.17",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap (default)",
-            "value": "674.05",
+            "value": "678.77",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify (default)",
-            "value": "1315.60",
+            "value": "1290.14",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify-sourcemap (default)",
-            "value": "1760.28",
+            "value": "1739.29",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts (default)",
-            "value": "147.88",
+            "value": "147.24",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts-sourcemap (default)",
-            "value": "210.65",
+            "value": "215.69",
             "unit": "ms / ops"
           }
         ]
