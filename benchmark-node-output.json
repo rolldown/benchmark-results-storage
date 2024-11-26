@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1732621902559,
+  "lastUpdate": 1732623414393,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -61631,6 +61631,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "214.94",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3a91360d3b774db2520abc69bfd2cc6d930a2577",
+          "message": "fix: ensure transform hook return vaild sourcemap to binding (#2939)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nThe `transform` hook maybe return an invalid sourcemap, the added test\nis an example, it used the `sourceIndex`, but not the `sources` field.\nThe pr fixed it to avoid failed at\n`rolldown_sourcemap::SourceMap::from_json`.\n\nThe rust side already has the feature at\n`crates/rolldown_plugin/src/plugin_driver/build_hooks.rs#transform`, it\nalso is valid if the rust plugins provider an invalid sourcemap. Maybe\nwe could remove it at rust side if we could ensure a valid sourcemap, i\nthink it could be preserved at now because it is sugar to usage.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-26T11:53:19Z",
+          "tree_id": "7406b3372680d30dfa2d791b44a3db53ebd5d17e",
+          "url": "https://github.com/rolldown/rolldown/commit/3a91360d3b774db2520abc69bfd2cc6d930a2577"
+        },
+        "date": 1732623414369,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "421.89",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "664.17",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1322.83",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1730.49",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "143.89",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "204.67",
             "unit": "ms / ops"
           }
         ]
