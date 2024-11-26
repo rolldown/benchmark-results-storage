@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1732560314870,
+  "lastUpdate": 1732592066046,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -60983,6 +60983,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "211.16",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "hi.ogawa.zz@gmail.com",
+            "name": "Hiroshi Ogawa",
+            "username": "hi-ogawa"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "11a6693e1cb8f7377531859a272d6d66eb9fa1a2",
+          "message": "fix(cjs): fix named default export (#2923)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n- Closes\nhttps://github.com/rolldown/rolldown/issues/2903#issuecomment-2496018956\n(2nd part of the issue)\n\nNot fully understood the logic but this seemed like a minor typo.\n\nFor reference, here are other bundlers output:\n- [rollup\nrepl](https://rollupjs.org/repl/?version=4.27.4&shareable=JTdCJTIyZXhhbXBsZSUyMiUzQW51bGwlMkMlMjJtb2R1bGVzJTIyJTNBJTVCJTdCJTIyY29kZSUyMiUzQSUyMmV4cG9ydCUyMCU3QiUyMGRlZmF1bHQlMjAlN0QlMjBmcm9tJTIwJ25vZGUlM0FwYXRoJyUzQiUyMiUyQyUyMmlzRW50cnklMjIlM0F0cnVlJTJDJTIybmFtZSUyMiUzQSUyMm1haW4uanMlMjIlN0QlNUQlMkMlMjJvcHRpb25zJTIyJTNBJTdCJTIyb3V0cHV0JTIyJTNBJTdCJTIyZXNNb2R1bGUlMjIlM0ElMjJpZi1kZWZhdWx0LXByb3AlMjIlMkMlMjJleHBvcnRzJTIyJTNBJTIyYXV0byUyMiUyQyUyMmZvcm1hdCUyMiUzQSUyMmNqcyUyMiU3RCU3RCU3RA==)\n- [esbuild\ntry](https://esbuild.github.io/try/#YgAwLjI0LjAALS1mb3JtYXQ9Y2pzAGUAZW50cnkuanMAZXhwb3J0IHsgZGVmYXVsdCB9IGZyb20gJ25vZGU6cGF0aCc)",
+          "timestamp": "2024-11-26T03:13:54Z",
+          "tree_id": "091abe8f9b6cb49aa5e3915330ab4985c6b7d272",
+          "url": "https://github.com/rolldown/rolldown/commit/11a6693e1cb8f7377531859a272d6d66eb9fa1a2"
+        },
+        "date": 1732592066020,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "444.21",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "670.14",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1295.84",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1753.13",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "146.57",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "208.56",
             "unit": "ms / ops"
           }
         ]
