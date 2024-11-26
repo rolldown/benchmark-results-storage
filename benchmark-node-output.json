@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1732615209195,
+  "lastUpdate": 1732615690091,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -61368,9 +61368,9 @@
       {
         "commit": {
           "author": {
-            "email": "iwanabethatguy@qq.com",
-            "name": "IWANABETHATGUY",
-            "username": "IWANABETHATGUY"
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
           },
           "committer": {
             "email": "noreply@github.com",
@@ -61378,43 +61378,43 @@
             "username": "web-flow"
           },
           "distinct": false,
-          "id": "3082c8a36378b9a851cffa4df03812e563c7a366",
-          "message": "chore: update esbuild tests stats for json-loader (#2932)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
-          "timestamp": "2024-11-26T09:26:49Z",
-          "tree_id": "1135e6c0d721db45eada517d26e55d4c59232c10",
-          "url": "https://github.com/rolldown/rolldown/commit/3082c8a36378b9a851cffa4df03812e563c7a366"
+          "id": "56a43879df624ad7c9e943819c74a4d997256bf3",
+          "message": "chore(node): remove useless `build.config.ts` (#2934)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nPart of https://github.com/rolldown/rolldown/issues/2522. Just a clean\nup.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-26T09:42:08Z",
+          "tree_id": "a6c5ac6728bb5789601285e72c477d555c974f73",
+          "url": "https://github.com/rolldown/rolldown/commit/56a43879df624ad7c9e943819c74a4d997256bf3"
         },
-        "date": 1732615209173,
+        "date": 1732615690067,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x (default)",
-            "value": "422.55",
+            "value": "442.40",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap (default)",
-            "value": "657.23",
+            "value": "678.67",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify (default)",
-            "value": "1260.05",
+            "value": "1348.07",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify-sourcemap (default)",
-            "value": "1678.36",
+            "value": "1773.76",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts (default)",
-            "value": "144.00",
+            "value": "152.13",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts-sourcemap (default)",
-            "value": "203.34",
+            "value": "218.57",
             "unit": "ms / ops"
           }
         ]
