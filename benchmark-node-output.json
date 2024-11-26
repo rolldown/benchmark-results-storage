@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1732617687149,
+  "lastUpdate": 1732620566101,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -61523,6 +61523,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "212.63",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f64fe3655d062a1a349bc26942b3c8e09cbe0618",
+          "message": "refactor(node): inline `locate-character` pkg (#2936)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nThe reason is quite complicated. In short, this package is a esm only\npackage while we are running rolldown using tsx under cjs mode.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-26T11:09:26Z",
+          "tree_id": "065f2fbf291daaacb03b0cd23b7e4cfb24bad0cf",
+          "url": "https://github.com/rolldown/rolldown/commit/f64fe3655d062a1a349bc26942b3c8e09cbe0618"
+        },
+        "date": 1732620566078,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "427.18",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "667.47",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1308.78",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1689.19",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "144.69",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "203.63",
             "unit": "ms / ops"
           }
         ]
