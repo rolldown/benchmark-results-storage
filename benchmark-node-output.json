@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1732610675674,
+  "lastUpdate": 1732612403240,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -61307,6 +61307,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "215.36",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f9591cc6833cdc6003f44113da47319b40e944d6",
+          "message": "fix: use objectProperty shorthand for json ObjectExpression when key is a valid identifier name (#2930)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-26T08:40:56Z",
+          "tree_id": "dc2d6225ac0557e0792fbd94e00bf5f97db184f7",
+          "url": "https://github.com/rolldown/rolldown/commit/f9591cc6833cdc6003f44113da47319b40e944d6"
+        },
+        "date": 1732612403217,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "437.62",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "672.73",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1319.43",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1734.84",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "147.27",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "212.10",
             "unit": "ms / ops"
           }
         ]
