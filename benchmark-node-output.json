@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1732595187939,
+  "lastUpdate": 1732605737284,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -61091,6 +61091,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "205.41",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "154d96fd48ba998a4dafd1953e97ce4e9447d927",
+          "message": "feat: give warnings for input plugin hooks used at output plugin (#2927)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-26T07:02:18Z",
+          "tree_id": "3f4d4fd84d6d59e3fb3cf4fa4590f39e352646d3",
+          "url": "https://github.com/rolldown/rolldown/commit/154d96fd48ba998a4dafd1953e97ce4e9447d927"
+        },
+        "date": 1732605737260,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "434.15",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "671.04",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1310.49",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1744.79",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "146.82",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "207.66",
             "unit": "ms / ops"
           }
         ]
