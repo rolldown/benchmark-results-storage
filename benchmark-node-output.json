@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1732605737284,
+  "lastUpdate": 1732608156825,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -61145,6 +61145,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "207.66",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "8f9ccbcde694d96a106d9d07e59b28f3d17ea10b",
+          "message": "fix(cjs): should generate correct cross chunk symbol references (#2926)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n- Working on https://github.com/rolldown/rolldown/issues/2522.\n- Related to\nhttps://github.com/rolldown/rolldown/pull/2796#issue-2671507357.\n\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-26T07:34:07Z",
+          "tree_id": "b9f537076ebdaaecd9ae58e7b1cd0824caf64aec",
+          "url": "https://github.com/rolldown/rolldown/commit/8f9ccbcde694d96a106d9d07e59b28f3d17ea10b"
+        },
+        "date": 1732608156801,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "453.36",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "688.96",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1367.96",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1821.87",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "156.47",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "226.62",
             "unit": "ms / ops"
           }
         ]
