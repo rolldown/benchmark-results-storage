@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1732626331357,
+  "lastUpdate": 1732630159926,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -61739,6 +61739,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "203.53",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "d1fd231f2f7d1b229d8702672f92b0fbffd20ee1",
+          "message": "fix: should use computed prop if json key is __proto__ (#2941)\n\n<!-- Thank you for contributing! -->\n\n### Description\nref: \n\nhttps://github.com/evanw/esbuild/commit/4780075ace9f5f59b61018326ec57da624a7d7a2#diff-58e541e6e2d17614efb5fc6c2a9e4151f54f5c599a0f0acde43bca8da970be64R1674\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-26T13:45:09Z",
+          "tree_id": "537f8275930eec44e5aba98735a96d66bc8da5e4",
+          "url": "https://github.com/rolldown/rolldown/commit/d1fd231f2f7d1b229d8702672f92b0fbffd20ee1"
+        },
+        "date": 1732630159891,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "439.57",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "686.79",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1347.25",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1763.27",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "152.25",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "214.08",
             "unit": "ms / ops"
           }
         ]
