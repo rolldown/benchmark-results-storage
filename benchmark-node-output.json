@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1732630159926,
+  "lastUpdate": 1732630587092,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -61746,53 +61746,53 @@
       {
         "commit": {
           "author": {
-            "email": "iwanabethatguy@qq.com",
-            "name": "IWANABETHATGUY",
-            "username": "IWANABETHATGUY"
+            "email": "ylei.mk@gmail.com",
+            "name": "ikkz",
+            "username": "ikkz"
           },
           "committer": {
             "email": "noreply@github.com",
             "name": "GitHub",
             "username": "web-flow"
           },
-          "distinct": false,
-          "id": "d1fd231f2f7d1b229d8702672f92b0fbffd20ee1",
-          "message": "fix: should use computed prop if json key is __proto__ (#2941)\n\n<!-- Thank you for contributing! -->\n\n### Description\nref: \n\nhttps://github.com/evanw/esbuild/commit/4780075ace9f5f59b61018326ec57da624a7d7a2#diff-58e541e6e2d17614efb5fc6c2a9e4151f54f5c599a0f0acde43bca8da970be64R1674\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
-          "timestamp": "2024-11-26T13:45:09Z",
-          "tree_id": "537f8275930eec44e5aba98735a96d66bc8da5e4",
-          "url": "https://github.com/rolldown/rolldown/commit/d1fd231f2f7d1b229d8702672f92b0fbffd20ee1"
+          "distinct": true,
+          "id": "0535a45140334005d359aa8f11bf9c1acd7c3e52",
+          "message": "feat: pass normalized fields from rust to js (#2938)\n\nPart of #2906",
+          "timestamp": "2024-11-26T13:52:51Z",
+          "tree_id": "1d7eda6e38cda57738afb8123cac1ca1d9e1a1f8",
+          "url": "https://github.com/rolldown/rolldown/commit/0535a45140334005d359aa8f11bf9c1acd7c3e52"
         },
-        "date": 1732630159891,
+        "date": 1732630587059,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x (default)",
-            "value": "439.57",
+            "value": "452.47",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap (default)",
-            "value": "686.79",
+            "value": "684.57",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify (default)",
-            "value": "1347.25",
+            "value": "1339.60",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify-sourcemap (default)",
-            "value": "1763.27",
+            "value": "1753.20",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts (default)",
-            "value": "152.25",
+            "value": "143.56",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts-sourcemap (default)",
-            "value": "214.08",
+            "value": "200.83",
             "unit": "ms / ops"
           }
         ]
