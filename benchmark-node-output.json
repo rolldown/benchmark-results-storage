@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1732592066046,
+  "lastUpdate": 1732595187939,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -61037,6 +61037,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "208.56",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "b2016349c8e021250ddb52262a2220ef711dd79e",
+          "message": "fix: ensure support nest and async plugins (#2924)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-26T04:05:57Z",
+          "tree_id": "7be6d3fb7854120d01886cae8906015e181dac69",
+          "url": "https://github.com/rolldown/rolldown/commit/b2016349c8e021250ddb52262a2220ef711dd79e"
+        },
+        "date": 1732595187912,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "430.02",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "669.95",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1278.93",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1735.85",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "146.27",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "205.41",
             "unit": "ms / ops"
           }
         ]
