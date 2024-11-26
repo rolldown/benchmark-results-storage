@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1732608991439,
+  "lastUpdate": 1732610675674,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -61253,6 +61253,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "223.17",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f5d9d9c4528cf0b941281d45e54ce976e6691159",
+          "message": "feat: give specific default plugin name (#2929)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nNormalize plugin name to instead of `unknown`, follow rollup\nhttps://github.com/rollup/rollup/blob/master/src/rollup/rollup.ts#L167.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-26T07:52:52Z",
+          "tree_id": "99d1c347ebaa5b48dccfb910fb19440df5bc779b",
+          "url": "https://github.com/rolldown/rolldown/commit/f5d9d9c4528cf0b941281d45e54ce976e6691159"
+        },
+        "date": 1732610675650,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "436.26",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "681.00",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1330.42",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1765.31",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "152.28",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "215.36",
             "unit": "ms / ops"
           }
         ]
