@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1732701730920,
+  "lastUpdate": 1732706393517,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -62117,6 +62117,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "201.16",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "620fbbdc4c81262ad263cb251ef71bf7e20f9106",
+          "message": "chore(node): make `rolldown/tests` as a standalone package (#2959)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nThis is a preparation for later PRs. The purpose is to forbid the\nsharing context between code in `src` and `tests`.\n\n- For example. we don't allow to write `@src` in `src` code due to some\nreasons, but it's ok to write in `tests`.\n- we have auto completions for `import.meta.viteMeta` in `src` code. But\nit's only exist in `tests` code.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-27T10:53:14Z",
+          "tree_id": "03abe890448f7cc8c568f60713e329a06c194369",
+          "url": "https://github.com/rolldown/rolldown/commit/620fbbdc4c81262ad263cb251ef71bf7e20f9106"
+        },
+        "date": 1732706393491,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "431.64",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "676.44",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1310.70",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1774.02",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "150.86",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "210.52",
             "unit": "ms / ops"
           }
         ]
