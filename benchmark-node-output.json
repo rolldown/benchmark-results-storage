@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1732685401908,
+  "lastUpdate": 1732701254122,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -62063,6 +62063,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "196.87",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "46f2f937146b710f4da4a588eb4afb470297c829",
+          "message": "fix: avoid overwrite ModuleOptions#meta (#2954)\n\n<!-- Thank you for contributing! -->\n\n### Description\nfollow https://github.com/rollup/rollup/blob/master/src/Module.ts#L1011\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-27T09:26:41Z",
+          "tree_id": "b2b9f06118d13447120372346462cb463b44648d",
+          "url": "https://github.com/rolldown/rolldown/commit/46f2f937146b710f4da4a588eb4afb470297c829"
+        },
+        "date": 1732701254093,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "443.37",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "678.40",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1348.45",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1777.65",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "152.55",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "219.66",
             "unit": "ms / ops"
           }
         ]
