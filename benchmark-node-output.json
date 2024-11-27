@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1732719305664,
+  "lastUpdate": 1732728724038,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -62441,6 +62441,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "216.59",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5e571e40e4e89b8a26bc27c470ead93a8533dcf3",
+          "message": "feat: treated facade default export ref as never get reassigned (#2966)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-27T17:09:04Z",
+          "tree_id": "5d1a9cf52c83cae21e15551ce6f9e985727ed7a3",
+          "url": "https://github.com/rolldown/rolldown/commit/5e571e40e4e89b8a26bc27c470ead93a8533dcf3"
+        },
+        "date": 1732728724010,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "433.04",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "673.22",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1309.18",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1739.73",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "148.20",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "209.81",
             "unit": "ms / ops"
           }
         ]
