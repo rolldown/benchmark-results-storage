@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1732709802832,
+  "lastUpdate": 1732712211868,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -62279,6 +62279,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "210.53",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "2a78642231c7caafa80459255c8ea91a013e544e",
+          "message": "chore(node): standalone type check on `rolldown-tests` (#2961)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nAchieve the goal said in https://github.com/rolldown/rolldown/pull/2959.\n\n> - For example. we don't allow to write `@src` in `src` code due to\nsome reasons, but it's ok to write in `tests`.\n> - we have auto completions for `import.meta.viteMeta` in `src` code.\nBut it's only exist in `tests` code.\n\n\n- Clean import.meta\n\n<img width=\"586\" alt=\"image\"\nsrc=\"https://github.com/user-attachments/assets/98709807-daff-4d7a-84f7-6ae916389fc3\">\n\n- No `@` aliasing.\n\n<img width=\"613\" alt=\"image\"\nsrc=\"https://github.com/user-attachments/assets/80cc14ea-d761-4f34-aae1-73004df2f9c6\">\n\n\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-27T12:07:10Z",
+          "tree_id": "4264c1ab67150175eeb9e95cd112cf35520e8998",
+          "url": "https://github.com/rolldown/rolldown/commit/2a78642231c7caafa80459255c8ea91a013e544e"
+        },
+        "date": 1732712211840,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "426.18",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "671.16",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1282.11",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1713.33",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "143.77",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "201.58",
             "unit": "ms / ops"
           }
         ]
