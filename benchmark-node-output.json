@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1732713348932,
+  "lastUpdate": 1732714030231,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -62340,53 +62340,53 @@
       {
         "commit": {
           "author": {
-            "email": "laipichan@qq.com",
-            "name": "dalaoshu",
-            "username": "shulaoda"
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
           },
           "committer": {
             "email": "noreply@github.com",
             "name": "GitHub",
             "username": "web-flow"
           },
-          "distinct": false,
-          "id": "b01e74ae9612d719375b5dcfbbca67be2365e503",
-          "message": "chore: remove unnecessary `@ts-ignore` (#2944)\n\n### Description\n\nI will work on resolving the ts type issues related to `filter` next PR.\n\n\nhttps://github.com/rolldown/rolldown/blob/0535a45140334005d359aa8f11bf9c1acd7c3e52/packages/rolldown/src/plugin/bindingify-build-hooks.ts#L163-L165",
-          "timestamp": "2024-11-27T12:38:34Z",
-          "tree_id": "1b3ca15652af02c1d8e4369d783b4710b0cd7556",
-          "url": "https://github.com/rolldown/rolldown/commit/b01e74ae9612d719375b5dcfbbca67be2365e503"
+          "distinct": true,
+          "id": "f9e04bb4982e309103ab88e814d963f6efe1b7ff",
+          "message": "refactor(rust): make `SharedOptions` always exist on `AstScanner` (#2955)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n- Just improve the dx of using options in `AstScanner` and reduce some\n`is_some_and()` calls.\n\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-27T12:51:19Z",
+          "tree_id": "86dc7d00927989ab27013ea6b2411f8e27827197",
+          "url": "https://github.com/rolldown/rolldown/commit/f9e04bb4982e309103ab88e814d963f6efe1b7ff"
         },
-        "date": 1732713348906,
+        "date": 1732714030203,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x (default)",
-            "value": "438.19",
+            "value": "451.84",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap (default)",
-            "value": "676.41",
+            "value": "685.76",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify (default)",
-            "value": "1306.45",
+            "value": "1413.51",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify-sourcemap (default)",
-            "value": "1731.49",
+            "value": "1818.32",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts (default)",
-            "value": "147.75",
+            "value": "153.33",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts-sourcemap (default)",
-            "value": "209.94",
+            "value": "221.07",
             "unit": "ms / ops"
           }
         ]
