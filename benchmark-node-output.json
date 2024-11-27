@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1732712211868,
+  "lastUpdate": 1732713348932,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -62333,6 +62333,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "201.58",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "laipichan@qq.com",
+            "name": "dalaoshu",
+            "username": "shulaoda"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "b01e74ae9612d719375b5dcfbbca67be2365e503",
+          "message": "chore: remove unnecessary `@ts-ignore` (#2944)\n\n### Description\n\nI will work on resolving the ts type issues related to `filter` next PR.\n\n\nhttps://github.com/rolldown/rolldown/blob/0535a45140334005d359aa8f11bf9c1acd7c3e52/packages/rolldown/src/plugin/bindingify-build-hooks.ts#L163-L165",
+          "timestamp": "2024-11-27T12:38:34Z",
+          "tree_id": "1b3ca15652af02c1d8e4369d783b4710b0cd7556",
+          "url": "https://github.com/rolldown/rolldown/commit/b01e74ae9612d719375b5dcfbbca67be2365e503"
+        },
+        "date": 1732713348906,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "438.19",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "676.41",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1306.45",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1731.49",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "147.75",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "209.94",
             "unit": "ms / ops"
           }
         ]
