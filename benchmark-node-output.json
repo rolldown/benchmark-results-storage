@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1732728724038,
+  "lastUpdate": 1732780631314,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -62495,6 +62495,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "209.81",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "green@sapphi.red",
+            "name": "翠 / green",
+            "username": "sapphi-red"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "e4c6b324b288d03dd04360d0ef44e948291617a1",
+          "message": "refactor(plugin/vite-resolve): use oxc-resolver to resolve optional peer dep value from package.json (#2970)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nRemoved the custom package.json resolving logic and use oxc-resolver for\nthat (adds a cache too).\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-28T07:34:28Z",
+          "tree_id": "01f95345b5c5a88a0b34ddada5fe199dd157c475",
+          "url": "https://github.com/rolldown/rolldown/commit/e4c6b324b288d03dd04360d0ef44e948291617a1"
+        },
+        "date": 1732780631287,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "442.49",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "687.44",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1272.33",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1721.69",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "146.24",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "204.73",
             "unit": "ms / ops"
           }
         ]
