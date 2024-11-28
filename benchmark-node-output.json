@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1732788951682,
+  "lastUpdate": 1732795148123,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -62711,6 +62711,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "219.27",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "da31a863f54fff3ae0f94cd0465fb295f35b695d",
+          "message": "fix: top level this substitution (#2978)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. left issues `this` expr is replaced by define plugin will not be\nprocessed, because the span issues, I will address it in another pr.\n\n## Ref\n\nhttps://github.com/evanw/esbuild/blob/d34e79e2a998c21bb71d57b92b0017ca11756912/internal/js_parser/js_parser.go#L12551-L12604\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-28T11:36:20Z",
+          "tree_id": "25141f870b18e9b37b9c65bb4785d41e8aa17568",
+          "url": "https://github.com/rolldown/rolldown/commit/da31a863f54fff3ae0f94cd0465fb295f35b695d"
+        },
+        "date": 1732795148097,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "434.30",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "673.24",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1320.55",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1760.96",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "149.71",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "212.12",
             "unit": "ms / ops"
           }
         ]
