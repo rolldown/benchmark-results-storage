@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1732785909939,
+  "lastUpdate": 1732786608646,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -62603,6 +62603,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "205.10",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "green@sapphi.red",
+            "name": "翠 / green",
+            "username": "sapphi-red"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c936d12e9c8a4140173b31a5b30aed312d44287c",
+          "message": "chore: fix build script on Node 22 (#2976)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nThe script did not work in Node 22 due to\nhttps://github.com/privatenumber/tsx/issues/679.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-28T09:11:32Z",
+          "tree_id": "878f5fc2162830bf4a8737865050221f9f37b074",
+          "url": "https://github.com/rolldown/rolldown/commit/c936d12e9c8a4140173b31a5b30aed312d44287c"
+        },
+        "date": 1732786608619,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "430.46",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "670.27",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1335.10",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1752.55",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "147.22",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "213.17",
             "unit": "ms / ops"
           }
         ]
