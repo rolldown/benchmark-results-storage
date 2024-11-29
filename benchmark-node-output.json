@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1732808748980,
+  "lastUpdate": 1732867937764,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -62873,6 +62873,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "203.67",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8d5a47027a5b8945462b215358205e7eecd508a2",
+          "message": "refactor: using reference at generate diagnostic (#2972)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nRefactor it because the `BuildEnd#error` need to use it, prepare for\nhttps://github.com/rolldown/rolldown/pull/2973.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-11-29T07:50:06Z",
+          "tree_id": "ba971bcc4ca715f3716b5e6974b6f46c8ab65a7e",
+          "url": "https://github.com/rolldown/rolldown/commit/8d5a47027a5b8945462b215358205e7eecd508a2"
+        },
+        "date": 1732867937737,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "421.48",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "661.18",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1280.33",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1656.11",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "143.77",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "203.07",
             "unit": "ms / ops"
           }
         ]
