@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1732867937764,
+  "lastUpdate": 1732874775150,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -62927,6 +62927,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "203.07",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "laipichan@qq.com",
+            "name": "dalaoshu",
+            "username": "shulaoda"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e3bc3ab097b3c82001e72c20c2ee4e4ba4040f09",
+          "message": "chore: remove the `@ts-ignore` of plugin filter (#2981)\n\n### Description\n\nRelated to #2944",
+          "timestamp": "2024-11-29T09:42:49Z",
+          "tree_id": "1eba9e4802b772cb0625f3c1d6eff3bec8fc42cd",
+          "url": "https://github.com/rolldown/rolldown/commit/e3bc3ab097b3c82001e72c20c2ee4e4ba4040f09"
+        },
+        "date": 1732874775124,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "430.42",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "666.29",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1338.09",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1749.99",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "146.39",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "205.54",
             "unit": "ms / ops"
           }
         ]
