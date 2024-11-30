@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1732957546970,
+  "lastUpdate": 1732963918401,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -63197,6 +63197,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "205.67",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "hi.ogawa.zz@gmail.com",
+            "name": "Hiroshi Ogawa",
+            "username": "hi-ogawa"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "12d7e715c271cf65dfd6e83de49626b59ffb15df",
+          "message": "feat: expose app format option for hmr prototype (#2994)\n\n### Description\n\nCurrently I'm trying a different approach from hmr-poc branch for\nimplementing hmr. For this approach, for now I only need isolating\nmodule finalizer logic, so exposing current app format is sufficient to\nmake prototype as in https://github.com/hi-ogawa/vite/pull/6.\n\nSince this PR's change is fairly minimal, I'm hoping that we can merge\nthis to main, so that I can experiment further on the nightly release\nand iterate on it.\n\n---\n\nFor the context, the idea I'm exploring is to give up `HmrModuleLoader`\nfor now as I see some limitations (see\nhttps://github.com/rolldown/rolldown/issues/2866), but instead, always\ndo a full build and extract hmr chunk by comparing `chunk.modules`\nbetween two builds, which is fortunately available for js api.",
+          "timestamp": "2024-11-30T10:30:20Z",
+          "tree_id": "9f6b8aff47bb455cdab13f030fcda882f9c3f70b",
+          "url": "https://github.com/rolldown/rolldown/commit/12d7e715c271cf65dfd6e83de49626b59ffb15df"
+        },
+        "date": 1732963918375,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "416.51",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "653.63",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1304.92",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1684.80",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "143.57",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "199.86",
             "unit": "ms / ops"
           }
         ]
