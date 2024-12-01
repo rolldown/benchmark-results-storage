@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1733066339518,
+  "lastUpdate": 1733068730221,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -63413,6 +63413,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "209.76",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d42ea8ac87fad48544adac9bf7d607aab9e4c516",
+          "message": "fix(cjs): `import(...)` should have the same result as esm output (#2999)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nFixes https://github.com/rolldown/rolldown/issues/2859.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-12-01T15:35:31Z",
+          "tree_id": "62d07a4ffe40a59d97143c9d256d92f75e0581b9",
+          "url": "https://github.com/rolldown/rolldown/commit/d42ea8ac87fad48544adac9bf7d607aab9e4c516"
+        },
+        "date": 1733068730195,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "442.54",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "684.09",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1324.30",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1741.15",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "145.83",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "211.99",
             "unit": "ms / ops"
           }
         ]
