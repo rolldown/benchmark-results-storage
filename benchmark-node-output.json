@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1733045119388,
+  "lastUpdate": 1733066339518,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -63359,6 +63359,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "196.96",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "d9d3131125b7b71766797cbb5d54bf1c93cf141b",
+          "message": "refactor(rust): remove unproper usage related to `ModuleId` (#3001)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nPart of https://github.com/rolldown/rolldown/issues/3000.\n\n`ModuleId` is so far made of by `resourceId` only. But we will laterly\nadd `ModuleType` as part of it in #3000.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-12-01T14:55:51Z",
+          "tree_id": "5ac03bf880e662980c9843ae608aefa849fd06b0",
+          "url": "https://github.com/rolldown/rolldown/commit/d9d3131125b7b71766797cbb5d54bf1c93cf141b"
+        },
+        "date": 1733066339488,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "449.95",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "683.59",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1371.48",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1801.96",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "151.65",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "209.76",
             "unit": "ms / ops"
           }
         ]
