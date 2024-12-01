@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1732963918401,
+  "lastUpdate": 1733037285513,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -63251,6 +63251,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "199.86",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "hi.ogawa.zz@gmail.com",
+            "name": "Hiroshi Ogawa",
+            "username": "hi-ogawa"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0628d1b9cc376452f2237f4da7c315f6da98d017",
+          "message": "fix: handle \"\\0\" in `chunk.modules` object key (#2991)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n- Workaround for https://github.com/rolldown/rolldown/issues/1115\n\nI was looking into this, but It looks like napi-rs just introduced\n`node_api_create_property_key_utf8` for js object key conversion in\nhttps://github.com/napi-rs/napi-rs/pull/2358 (though it's gated under\nexperimental features and node version detection).\n\nI'm not sure if this change will be needed but perhaps some tests are\nnice to have, so just preparing a draft PR here.",
+          "timestamp": "2024-12-01T06:53:31Z",
+          "tree_id": "420dd9ac1131a77fb1c0b6a578c9ab7e3a129f12",
+          "url": "https://github.com/rolldown/rolldown/commit/0628d1b9cc376452f2237f4da7c315f6da98d017"
+        },
+        "date": 1733037285487,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "418.62",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "659.42",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1253.45",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1694.71",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "140.09",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "197.30",
             "unit": "ms / ops"
           }
         ]
