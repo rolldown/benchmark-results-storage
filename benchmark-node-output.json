@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1733037285513,
+  "lastUpdate": 1733045119388,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -63305,6 +63305,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "197.30",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "hi.ogawa.zz@gmail.com",
+            "name": "Hiroshi Ogawa",
+            "username": "hi-ogawa"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a468d5ff7a8bbb3930691ee370d5aaa6685c8c17",
+          "message": "perf(string_wizard): skip line break mappings (#2998)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nAnother one I thought I would port from magic-string:\n- https://github.com/Rich-Harris/magic-string/pull/284",
+          "timestamp": "2024-12-01T09:03:28Z",
+          "tree_id": "d3b451840e14b85d801471c2a672c886889d31a0",
+          "url": "https://github.com/rolldown/rolldown/commit/a468d5ff7a8bbb3930691ee370d5aaa6685c8c17"
+        },
+        "date": 1733045119362,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "416.45",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "650.78",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1253.25",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1717.22",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "137.54",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "196.96",
             "unit": "ms / ops"
           }
         ]
