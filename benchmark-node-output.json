@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1733124027977,
+  "lastUpdate": 1733134533432,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -63575,6 +63575,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "209.73",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "green@sapphi.red",
+            "name": "翠 / green",
+            "username": "sapphi-red"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "ff1fc6c1c8ce3e07f8859e3a274a8dfdba2b055f",
+          "message": "perf: use fxhash for `HashMap`s (#2988)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nThis PR needs https://github.com/napi-rs/napi-rs/pull/2374.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-12-02T09:46:54Z",
+          "tree_id": "18116fe2ea995407eb4c4eb98deccc7a71bd8dcb",
+          "url": "https://github.com/rolldown/rolldown/commit/ff1fc6c1c8ce3e07f8859e3a274a8dfdba2b055f"
+        },
+        "date": 1733134533405,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "432.71",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "681.52",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1314.63",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1742.17",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "145.80",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "220.47",
             "unit": "ms / ops"
           }
         ]
