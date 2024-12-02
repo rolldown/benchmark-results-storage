@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1733157655076,
+  "lastUpdate": 1733161372540,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -63791,6 +63791,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "203.09",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a31a24408f0c892228003804a38b3a3c86a00690",
+          "message": "ci: enable `Node Test` on node 18, 20 and 22 (#3016)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nCloses https://github.com/rolldown/rolldown/issues/1378.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-12-02T17:18:08Z",
+          "tree_id": "2250c5159963149ba24a79a31230da3a87e45976",
+          "url": "https://github.com/rolldown/rolldown/commit/a31a24408f0c892228003804a38b3a3c86a00690"
+        },
+        "date": 1733161372505,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "431.11",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "669.20",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1311.52",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1746.78",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "148.52",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "224.09",
             "unit": "ms / ops"
           }
         ]
