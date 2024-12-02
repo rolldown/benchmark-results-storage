@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1733155675874,
+  "lastUpdate": 1733157655076,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -63737,6 +63737,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "212.25",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b1c9cf26fffcbc670e221d0445719bb9f048624c",
+          "message": "feat(node): support multiple outputs with one call for `build` API (#3015)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-12-02T16:15:38Z",
+          "tree_id": "9292c4195a2aaab9a6a1d869f58cf63adb290401",
+          "url": "https://github.com/rolldown/rolldown/commit/b1c9cf26fffcbc670e221d0445719bb9f048624c"
+        },
+        "date": 1733157655048,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "429.82",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "663.59",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1334.20",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1774.57",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "142.04",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "203.09",
             "unit": "ms / ops"
           }
         ]
