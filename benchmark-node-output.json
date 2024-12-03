@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1733225857047,
+  "lastUpdate": 1733230122065,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -64115,6 +64115,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "203.82",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b2570e7b7095d8713e975a51da12b952ad3c0ccf",
+          "message": "refactor: watch api (#3007)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nThe pr intends to make compatible with `rollup.watch`, it doesn't need\nto `await`. Other things export `RolldownWatcher` instead of `Watcher`\nto avoid internal changes affect user interface.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-12-03T12:26:30Z",
+          "tree_id": "b219519c7c70f828603dbcc81af9e3dacdc31470",
+          "url": "https://github.com/rolldown/rolldown/commit/b2570e7b7095d8713e975a51da12b952ad3c0ccf"
+        },
+        "date": 1733230122037,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "451.13",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "696.10",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1356.37",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1768.94",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "150.03",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "213.89",
             "unit": "ms / ops"
           }
         ]
