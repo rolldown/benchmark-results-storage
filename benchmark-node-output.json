@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1733204184255,
+  "lastUpdate": 1733207344428,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -63953,6 +63953,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "216.36",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d31b48b04519c5c0a6be58d77cb284e79ababeb9",
+          "message": "fix: make chunk export symbol deconflict stable (#3022)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. related to https://github.com/rolldown/rolldown/issues/2655\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-12-03T06:05:41Z",
+          "tree_id": "6c2f93fa3699ed6ebfa84e08b6337429c7312bba",
+          "url": "https://github.com/rolldown/rolldown/commit/d31b48b04519c5c0a6be58d77cb284e79ababeb9"
+        },
+        "date": 1733207344400,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "422.10",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "669.43",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1326.08",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1789.04",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "149.20",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "225.77",
             "unit": "ms / ops"
           }
         ]
