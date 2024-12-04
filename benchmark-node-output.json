@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1733298857178,
+  "lastUpdate": 1733301818704,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -64331,6 +64331,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "198.90",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "071807eef70c5143bf55a371a6cd7f5b500ebd7b",
+          "message": "feat: module side effects function type binding (#3030)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. closed #2606 \n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-12-04T08:11:47Z",
+          "tree_id": "185bf513741a9606d5c83a9e2b5efcc3ba20a5ee",
+          "url": "https://github.com/rolldown/rolldown/commit/071807eef70c5143bf55a371a6cd7f5b500ebd7b"
+        },
+        "date": 1733301818676,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "426.31",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "662.07",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1302.29",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1749.94",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "145.41",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "207.78",
             "unit": "ms / ops"
           }
         ]
