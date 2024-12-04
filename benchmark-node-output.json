@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1733319702037,
+  "lastUpdate": 1733321554906,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -64439,6 +64439,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "203.04",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "sxzz@sxzz.moe",
+            "name": "Kevin Deng 三咲智子",
+            "username": "sxzz"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "c235a89b4d8891cd499ec67a13a3d9215a86195e",
+          "message": "feat(rolldown_plugin_transform): support both target & browserslist (#3042)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->\n\nSupport both `target` & `browserslist`, and it's required by downstream\nhttps://github.com/sxzz/tsdown",
+          "timestamp": "2024-12-04T13:48:18Z",
+          "tree_id": "91531aa7f559f755c849e21f561ec60ce33176bb",
+          "url": "https://github.com/rolldown/rolldown/commit/c235a89b4d8891cd499ec67a13a3d9215a86195e"
+        },
+        "date": 1733321554878,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "426.88",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "668.11",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1319.98",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1744.27",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "143.26",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "218.44",
             "unit": "ms / ops"
           }
         ]
