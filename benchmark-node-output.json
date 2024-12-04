@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1733341027719,
+  "lastUpdate": 1733343331273,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -64601,6 +64601,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "198.22",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "993c4a159141247b3e07f4094d68600007d4745b",
+          "message": "chore(deps): update rust crates (#3044)\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [anyhow](https://redirect.github.com/dtolnay/anyhow) |\nworkspace.dependencies | patch | `1.0.93` -> `1.0.94` |\n| [indexmap](https://redirect.github.com/indexmap-rs/indexmap) |\nworkspace.dependencies | minor | `2.6.0` -> `2.7.0` |\n| [itoa](https://redirect.github.com/dtolnay/itoa) |\nworkspace.dependencies | patch | `1.0.13` -> `1.0.14` |\n|\n[lightningcss](https://redirect.github.com/parcel-bundler/lightningcss)\n| workspace.dependencies | patch | `1.0.0-alpha.60` -> `1.0.0-alpha.61`\n|\n| [rustc-hash](https://redirect.github.com/rust-lang/rustc-hash) |\nworkspace.dependencies | minor | `2.0.0` -> `2.1.0` |\n| [tokio](https://tokio.rs)\n([source](https://redirect.github.com/tokio-rs/tokio)) |\nworkspace.dependencies | minor | `1.41.1` -> `1.42.0` |\n| [tracing](https://tokio.rs)\n([source](https://redirect.github.com/tokio-rs/tracing)) |\nworkspace.dependencies | patch | `0.1.40` -> `0.1.41` |\n| [tracing-subscriber](https://tokio.rs)\n([source](https://redirect.github.com/tokio-rs/tracing)) |\nworkspace.dependencies | patch | `0.3.18` -> `0.3.19` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>dtolnay/anyhow (anyhow)</summary>\n\n###\n[`v1.0.94`](https://redirect.github.com/dtolnay/anyhow/releases/tag/1.0.94)\n\n[Compare\nSource](https://redirect.github.com/dtolnay/anyhow/compare/1.0.93...1.0.94)\n\n-   Documentation improvements\n\n</details>\n\n<details>\n<summary>indexmap-rs/indexmap (indexmap)</summary>\n\n###\n[`v2.7.0`](https://redirect.github.com/indexmap-rs/indexmap/blob/HEAD/RELEASES.md#270-2024-11-30)\n\n[Compare\nSource](https://redirect.github.com/indexmap-rs/indexmap/compare/2.6.0...2.7.0)\n\n- Added methods `Entry::insert_entry` and `VacantEntry::insert_entry`,\nreturning\n    an `OccupiedEntry` after insertion.\n\n</details>\n\n<details>\n<summary>dtolnay/itoa (itoa)</summary>\n\n###\n[`v1.0.14`](https://redirect.github.com/dtolnay/itoa/releases/tag/1.0.14)\n\n[Compare\nSource](https://redirect.github.com/dtolnay/itoa/compare/1.0.13...1.0.14)\n\n- Work around bad IDE suggestion\n([#&#8203;56](https://redirect.github.com/dtolnay/itoa/issues/56))\n\n</details>\n\n<details>\n<summary>rust-lang/rustc-hash (rustc-hash)</summary>\n\n###\n[`v2.1.0`](https://redirect.github.com/rust-lang/rustc-hash/blob/HEAD/CHANGELOG.md#210)\n\n[Compare\nSource](https://redirect.github.com/rust-lang/rustc-hash/compare/v2.0.0...v2.1.0)\n\n-   Implement `Clone` for `FxRandomState`\n-   Implement `Clone` for `FxSeededState`\n-   Use SPDX license expression in license field\n\n</details>\n\n<details>\n<summary>tokio-rs/tokio (tokio)</summary>\n\n###\n[`v1.42.0`](https://redirect.github.com/tokio-rs/tokio/releases/tag/tokio-1.42.0):\nTokio v1.42.0\n\n[Compare\nSource](https://redirect.github.com/tokio-rs/tokio/compare/tokio-1.41.1...tokio-1.42.0)\n\n##### 1.42.0 (Dec 3rd, 2024)\n\n##### Added\n\n-   io: add `AsyncFd::{try_io, try_io_mut}` ([#&#8203;6967])\n\n##### Fixed\n\n- io: avoid `ptr->ref->ptr` roundtrip in RegistrationSet\n([#&#8203;6929])\n- runtime: do not defer `yield_now` inside `block_in_place`\n([#&#8203;6999])\n\n##### Changes\n\n-   io: simplify io readiness logic ([#&#8203;6966])\n\n##### Documented\n\n- net: fix docs for `tokio::net::unix::{pid_t, gid_t, uid_t}`\n([#&#8203;6791])\n-   time: fix a typo in `Instant` docs ([#&#8203;6982])\n\n[#&#8203;6791]: https://redirect.github.com/tokio-rs/tokio/pull/6791\n\n[#&#8203;6929]: https://redirect.github.com/tokio-rs/tokio/pull/6929\n\n[#&#8203;6966]: https://redirect.github.com/tokio-rs/tokio/pull/6966\n\n[#&#8203;6967]: https://redirect.github.com/tokio-rs/tokio/pull/6967\n\n[#&#8203;6982]: https://redirect.github.com/tokio-rs/tokio/pull/6982\n\n[#&#8203;6999]: https://redirect.github.com/tokio-rs/tokio/pull/6999\n\n</details>\n\n<details>\n<summary>tokio-rs/tracing (tracing)</summary>\n\n###\n[`v0.1.41`](https://redirect.github.com/tokio-rs/tracing/releases/tag/tracing-0.1.41):\ntracing 0.1.41\n\n[Compare\nSource](https://redirect.github.com/tokio-rs/tracing/compare/tracing-0.1.40...tracing-0.1.41)\n\n\\[ [crates.io][crate-0.1.41] ] | \\[ [docs.rs][docs-0.1.41] ]\n\nThis release updates the `tracing-core` dependency to\n[v0.1.33][core-0.1.33] and\nthe `tracing-attributes` dependency to [v0.1.28][attrs-0.1.28].\n\n##### Added\n\n-   **core**: Add index API for `Field` ([#&#8203;2820])\n- **core**: Allow `&[u8]` to be recorded as event/span field\n([#&#8203;2954])\n\n##### Changed\n\n-   Bump MSRV to 1.63 ([#&#8203;2793])\n-   **core**: Use const `thread_local`s when possible ([#&#8203;2838])\n\n##### Fixed\n\n-   Removed core imports in macros ([#&#8203;2762])\n- **attributes**: Added missing RecordTypes for instrument\n([#&#8203;2781])\n- **attributes**: Change order of async and unsafe modifier\n([#&#8203;2864])\n-   Fix missing field prefixes ([#&#8203;2878])\n-   **attributes**: Extract match scrutinee ([#&#8203;2880])\n-   Fix non-simple macro usage without message ([#&#8203;2879])\n- Fix event macros with constant field names in the first position\n([#&#8203;2883])\n-   Allow field path segments to be keywords ([#&#8203;2925])\n-   **core**: Fix missed `register_callsite` error ([#&#8203;2938])\n- **attributes**: Support const values for `target` and `name`\n([#&#8203;2941])\n- Prefix macro calls with ::core to avoid clashing with local macros\n([#&#8203;3024])\n\n[#&#8203;2762]: https://redirect.github.com/tokio-rs/tracing/pull/2762\n\n[#&#8203;2781]: https://redirect.github.com/tokio-rs/tracing/pull/2781\n\n[#&#8203;2793]: https://redirect.github.com/tokio-rs/tracing/pull/2793\n\n[#&#8203;2820]: https://redirect.github.com/tokio-rs/tracing/pull/2820\n\n[#&#8203;2838]: https://redirect.github.com/tokio-rs/tracing/pull/2838\n\n[#&#8203;2864]: https://redirect.github.com/tokio-rs/tracing/pull/2864\n\n[#&#8203;2878]: https://redirect.github.com/tokio-rs/tracing/pull/2878\n\n[#&#8203;2879]: https://redirect.github.com/tokio-rs/tracing/pull/2879\n\n[#&#8203;2880]: https://redirect.github.com/tokio-rs/tracing/pull/2880\n\n[#&#8203;2883]: https://redirect.github.com/tokio-rs/tracing/pull/2883\n\n[#&#8203;2925]: https://redirect.github.com/tokio-rs/tracing/pull/2925\n\n[#&#8203;2938]: https://redirect.github.com/tokio-rs/tracing/pull/2938\n\n[#&#8203;2941]: https://redirect.github.com/tokio-rs/tracing/pull/2941\n\n[#&#8203;2954]: https://redirect.github.com/tokio-rs/tracing/pull/2954\n\n[#&#8203;3024]: https://redirect.github.com/tokio-rs/tracing/pull/3024\n\n[attrs-0.1.28]:\nhttps://redirect.github.com/tokio-rs/tracing/releases/tag/tracing-attributes-0.1.28\n\n[core-0.1.33]:\nhttps://redirect.github.com/tokio-rs/tracing/releases/tag/tracing-core-0.1.33\n\n[docs-0.1.41]: https://docs.rs/tracing/0.1.41/tracing/\n\n[crate-0.1.41]: https://crates.io/crates/tracing/0.1.41\n\n</details>\n\n---\n\n### Configuration\n\n📅 **Schedule**: Branch creation - \"before 10am on monday\" in timezone\nAsia/Shanghai, Automerge - At any time (no schedule defined).\n\n🚦 **Automerge**: Enabled.\n\n♻ **Rebasing**: Whenever PR is behind base branch, or you tick the\nrebase/retry checkbox.\n\n👻 **Immortal**: This PR will be recreated if closed unmerged. Get\n[config\nhelp](https://redirect.github.com/renovatebot/renovate/discussions) if\nthat's undesired.\n\n---\n\n- [ ] <!-- rebase-check -->If you want to rebase/retry this PR, check\nthis box\n\n---\n\nThis PR was generated by [Mend Renovate](https://mend.io/renovate/).\nView the [repository job\nlog](https://developer.mend.io/github/rolldown/rolldown).\n\n<!--renovate-debug:eyJjcmVhdGVkSW5WZXIiOiIzOS40Mi40IiwidXBkYXRlZEluVmVyIjoiMzkuNDIuNCIsInRhcmdldEJyYW5jaCI6Im1haW4iLCJsYWJlbHMiOltdfQ==-->\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2024-12-04T19:52:04Z",
+          "tree_id": "efbeffcc631160b24224aa8248e5a0b3d2a78b62",
+          "url": "https://github.com/rolldown/rolldown/commit/993c4a159141247b3e07f4094d68600007d4745b"
+        },
+        "date": 1733343331243,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "428.88",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "666.61",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1283.57",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1719.47",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "143.26",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "205.55",
             "unit": "ms / ops"
           }
         ]
