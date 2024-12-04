@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1733327293297,
+  "lastUpdate": 1733341027719,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -64547,6 +64547,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "226.48",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "boshenc@gmail.com",
+            "name": "Boshen",
+            "username": "Boshen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4f74c94d86d9c2a4896b763916a095c55908e986",
+          "message": "ci: rerun `cargo-deny` when `deny.yml` changes (#3045)",
+          "timestamp": "2024-12-04T19:14:41Z",
+          "tree_id": "3878909525b7f787bed768af26a675210e5baad9",
+          "url": "https://github.com/rolldown/rolldown/commit/4f74c94d86d9c2a4896b763916a095c55908e986"
+        },
+        "date": 1733341027691,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "418.84",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "654.31",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1278.52",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1698.01",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "159.48",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "198.22",
             "unit": "ms / ops"
           }
         ]
