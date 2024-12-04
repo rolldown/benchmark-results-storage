@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1733301818704,
+  "lastUpdate": 1733319702037,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -64385,6 +64385,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "207.78",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "laipichan@qq.com",
+            "name": "dalaoshu",
+            "username": "shulaoda"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "84043fc3adbd03f0e267c4360a27621625a98881",
+          "message": "chore: improve cli bundle command (#3033)\n\n### Description\n\nWe now support `output.file`, so I have made improvements to it and\naligned it with `rollup`.\n\n\nhttps://github.com/rolldown/rolldown/blob/176666fa328cf77657addaa04787061e9ac836b1/packages/rolldown/src/cli/commands/bundle.ts#L33",
+          "timestamp": "2024-12-04T13:19:27Z",
+          "tree_id": "fc6a83cb14419152401c32d17b815c5885c22cf9",
+          "url": "https://github.com/rolldown/rolldown/commit/84043fc3adbd03f0e267c4360a27621625a98881"
+        },
+        "date": 1733319702008,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "430.97",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "673.71",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1331.96",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1753.68",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "145.50",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "203.04",
             "unit": "ms / ops"
           }
         ]
