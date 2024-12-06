@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1733482067679,
+  "lastUpdate": 1733489295727,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -65195,6 +65195,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "214.91",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "laipichan@qq.com",
+            "name": "dalaoshu",
+            "username": "shulaoda"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1257295c6d64577507c73214e129dce1e4bfbe33",
+          "message": "test: handle external dynamic import in `plugin/resolve-id/basic` (#3068)\n\n### Description\n\nIt can now be properly enabled.\n\n\nhttps://github.com/rolldown/rolldown/blob/60d7b16675a18df42e3cec0a5b74d0838e65694c/packages/rolldown/tests/fixtures/plugin/resolve-id/basic/_config.ts#L39",
+          "timestamp": "2024-12-06T12:18:48Z",
+          "tree_id": "2cf7bbb3f51b01359d0047fe9dc89b6af3b28bb5",
+          "url": "https://github.com/rolldown/rolldown/commit/1257295c6d64577507c73214e129dce1e4bfbe33"
+        },
+        "date": 1733489295700,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "426.21",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "675.00",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1140.16",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1553.75",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "146.10",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "232.99",
             "unit": "ms / ops"
           }
         ]
