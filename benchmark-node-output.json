@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1733418117251,
+  "lastUpdate": 1733454559376,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -64817,6 +64817,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "227.83",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "hi.ogawa.zz@gmail.com",
+            "name": "Hiroshi Ogawa",
+            "username": "hi-ogawa"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5815d0f6310bb54bb05bc0d38e642eae8561441b",
+          "message": "fix: propagate augmented hash to parent chunks (#3059)\n\n### Description\n\n- closes https://github.com/rolldown/rolldown/issues/3049\n\n---------\n\nCo-authored-by: Yunfei <i.heyunfei@gmail.com>",
+          "timestamp": "2024-12-06T02:48:01Z",
+          "tree_id": "29d0f3203a322a2f6ef09501c282dfdfbc985642",
+          "url": "https://github.com/rolldown/rolldown/commit/5815d0f6310bb54bb05bc0d38e642eae8561441b"
+        },
+        "date": 1733454559282,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "430.09",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "662.22",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1136.00",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1562.97",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "146.79",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "222.77",
             "unit": "ms / ops"
           }
         ]
