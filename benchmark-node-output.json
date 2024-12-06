@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1733462121198,
+  "lastUpdate": 1733463596540,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -64979,6 +64979,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "206.72",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "hi.ogawa.zz@gmail.com",
+            "name": "Hiroshi Ogawa",
+            "username": "hi-ogawa"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "56ab08d58c391e7468c18aae579a637531e80983",
+          "message": "chore: cleanup napi-rs artifacts (#3058)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nI don't know what's going on, but there were many duplicate entries in\n`binding.d.ts` and `wasi` files. After cleaning up `target` dir locally\nand re-running `just build`, I got something clean, so I pushed it here.\nIs this just me or maybe napi-rs cache issue? :thinking:\n\n---\n\nLooking at the published version\nhttps://unpkg.com/browse/rolldown@0.15.0-snapshot-22747a3-20241206003640/dist/types/binding.d.ts,\nit has a same content as this PR (i.e. without duplicate entries).",
+          "timestamp": "2024-12-06T04:52:17Z",
+          "tree_id": "24db936010f01d2f62db64f0f3b7137e10b5727f",
+          "url": "https://github.com/rolldown/rolldown/commit/56ab08d58c391e7468c18aae579a637531e80983"
+        },
+        "date": 1733463596511,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "422.22",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "668.91",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1129.21",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1537.34",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "142.58",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "236.85",
             "unit": "ms / ops"
           }
         ]
