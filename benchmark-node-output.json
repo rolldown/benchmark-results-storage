@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1733494480413,
+  "lastUpdate": 1733559671399,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -65303,6 +65303,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "217.35",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c66278bb5c3bdff4e294a5a5728701c7840476b2",
+          "message": "perf: remove sub optimal par_bridge (#3072)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-12-07T07:57:49Z",
+          "tree_id": "1edd9056f3a4188e5bb77abf5408ec539bb4f0a5",
+          "url": "https://github.com/rolldown/rolldown/commit/c66278bb5c3bdff4e294a5a5728701c7840476b2"
+        },
+        "date": 1733559671371,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "433.48",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "678.67",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1133.65",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1561.36",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "146.74",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "218.65",
             "unit": "ms / ops"
           }
         ]
