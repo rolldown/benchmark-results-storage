@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1733666957747,
+  "lastUpdate": 1733674019138,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -65519,6 +65519,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "219.08",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "de64ad96e4c827cf0908e64ca879a9c8837c9869",
+          "message": "feat: emit error for non-resolved absolute path (#3080)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nA further step for #3074. Both for improving UX by emitting errors for\nnon-resolved __file__ paths.\n\nFor non-file paths, such as `foo`, rolldown will only emit warnings and\nauto external it.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-12-08T15:41:09Z",
+          "tree_id": "ade25a4a83a05959093dc69ceb28f3a899bf9234",
+          "url": "https://github.com/rolldown/rolldown/commit/de64ad96e4c827cf0908e64ca879a9c8837c9869"
+        },
+        "date": 1733674019112,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "424.10",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "674.53",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1146.67",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1569.40",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "148.06",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "217.35",
             "unit": "ms / ops"
           }
         ]
