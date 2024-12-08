@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1733559671399,
+  "lastUpdate": 1733632115702,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -65357,6 +65357,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "218.65",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e1b52fc64b8e71c6b015f192d88d59dc3f6336d1",
+          "message": "feat: emit error for non-resolved relative path (#3074)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nCloses https://github.com/rolldown/rolldown/issues/1174.\n\nClean up old issues. The behavior of this PR is already confirmed by the\nteam. I just lack of time to do it.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-12-08T04:01:23Z",
+          "tree_id": "605550b4b484c90680678710f598208b285e9a20",
+          "url": "https://github.com/rolldown/rolldown/commit/e1b52fc64b8e71c6b015f192d88d59dc3f6336d1"
+        },
+        "date": 1733632115675,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "427.82",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "672.23",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1133.68",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1540.51",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "146.18",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "230.80",
             "unit": "ms / ops"
           }
         ]
