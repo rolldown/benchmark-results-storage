@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1733716214420,
+  "lastUpdate": 1733719757406,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -65627,6 +65627,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "230.41",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3ab9463d41cc153db60cf039d7a1ff9313e1bca1",
+          "message": "feat(watcher): support multiply watch options (#3037)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nThe `Bundler::watch` api is not suitable for watcher if it is multiply\nwatch options, so here add a new `BindingWatcher`. The binding the\nmultiply `Bundler` to create `BindingWatcher` is impossible, so here\npass binding multiply options to create it.\n\nThe rollup is create `chokidar` for each `Bundler`, it has more overhead\nat rolldown, because we need to create thread to listen event. So the\n`notify` option is used for all `Bundler`, i will check it at next.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-12-09T04:26:47Z",
+          "tree_id": "62edc738639ec238a35be38c35deb155184dea7d",
+          "url": "https://github.com/rolldown/rolldown/commit/3ab9463d41cc153db60cf039d7a1ff9313e1bca1"
+        },
+        "date": 1733719757377,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "431.07",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "678.28",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1136.92",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1580.61",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "146.79",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "223.30",
             "unit": "ms / ops"
           }
         ]
