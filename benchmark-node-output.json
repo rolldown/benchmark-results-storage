@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1733742933438,
+  "lastUpdate": 1733747585043,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -65843,6 +65843,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "228.72",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d1cf2f85b3ffad14a1e771fd707282e7e2461042",
+          "message": "fix: dedupe external import binding for format `esm` (#3082)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. fixed https://github.com/rolldown/rolldown/issues/1548\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-12-09T12:10:29Z",
+          "tree_id": "37231d07814336fb1d2e5f0bb6aa1277a28eda98",
+          "url": "https://github.com/rolldown/rolldown/commit/d1cf2f85b3ffad14a1e771fd707282e7e2461042"
+        },
+        "date": 1733747585015,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "422.58",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "673.13",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1137.92",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1540.52",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "144.46",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "223.85",
             "unit": "ms / ops"
           }
         ]
