@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1733719757406,
+  "lastUpdate": 1733728719273,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -65681,6 +65681,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "223.30",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "040a62c3ccfddbc068a745c5d96dbab0e36763aa",
+          "message": "refactor: extract render_modules_with_peek_runtime_module_at_first (#3083)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-12-09T06:57:18Z",
+          "tree_id": "7fb4ff0c35a5766c309c63999d3dd05c9814963c",
+          "url": "https://github.com/rolldown/rolldown/commit/040a62c3ccfddbc068a745c5d96dbab0e36763aa"
+        },
+        "date": 1733728719242,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "414.08",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "661.21",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1125.30",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1558.03",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "141.72",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "206.57",
             "unit": "ms / ops"
           }
         ]
