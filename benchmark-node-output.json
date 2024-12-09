@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1733737898309,
+  "lastUpdate": 1733742933438,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -65789,6 +65789,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "217.37",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b12b20ad9e37651895c14bb418801858ab32587d",
+          "message": "feat(cjs): support disable polyfill `require` by `OutputOptiond#polyfillRequire: 'false'` (#3091)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. closed https://github.com/rolldown/rolldown/issues/2684\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-12-09T10:54:17Z",
+          "tree_id": "59f6a99f226a40f8921b84097cc6c41ac1b9615a",
+          "url": "https://github.com/rolldown/rolldown/commit/b12b20ad9e37651895c14bb418801858ab32587d"
+        },
+        "date": 1733742933409,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "414.96",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "658.77",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1115.64",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1527.34",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "143.59",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "228.72",
             "unit": "ms / ops"
           }
         ]
