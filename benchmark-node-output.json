@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1733834485902,
+  "lastUpdate": 1733841565832,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -66437,6 +66437,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "230.80",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "b30cd890d92c9b6cf00823c3436250baa8222e99",
+          "message": "fix: should create one sourcemap if transform hook not return (#3107)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nPartially closed https://github.com/rolldown/rolldown/issues/3092. The\n`oxc_sourcemap#lookup_source_view_token` issue i will fix it at next.\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-12-10T14:17:14Z",
+          "tree_id": "4e071e2a914461a9dfdb527f92cdc77c5ffb8602",
+          "url": "https://github.com/rolldown/rolldown/commit/b30cd890d92c9b6cf00823c3436250baa8222e99"
+        },
+        "date": 1733841565801,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "434.91",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "680.78",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1159.95",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1576.17",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "149.20",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "222.85",
             "unit": "ms / ops"
           }
         ]
