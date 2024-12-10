@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1733852029022,
+  "lastUpdate": 1733852422040,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -66498,9 +66498,9 @@
       {
         "commit": {
           "author": {
-            "email": "boshenc@gmail.com",
-            "name": "Boshen",
-            "username": "Boshen"
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
           },
           "committer": {
             "email": "noreply@github.com",
@@ -66508,43 +66508,43 @@
             "username": "web-flow"
           },
           "distinct": true,
-          "id": "d79cf259fe2380f0244b63d9710f2922f497ee08",
-          "message": "chore(rolldown): oxc v0.40.1 (#3104)",
-          "timestamp": "2024-12-11T01:23:01+08:00",
-          "tree_id": "060dda706b6b633042d47f2b2c4ae19b9a95c056",
-          "url": "https://github.com/rolldown/rolldown/commit/d79cf259fe2380f0244b63d9710f2922f497ee08"
+          "id": "3cea4f524287e68bec9d0996c3fb395951bf851a",
+          "message": "chore: publish `string_wizard@0.0.24` (#3113)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-12-11T01:26:17+08:00",
+          "tree_id": "6a397a56bbd48d6ef9f809f578a1b290a5b8d60d",
+          "url": "https://github.com/rolldown/rolldown/commit/3cea4f524287e68bec9d0996c3fb395951bf851a"
         },
-        "date": 1733852028995,
+        "date": 1733852422013,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x (default)",
-            "value": "430.56",
+            "value": "436.30",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap (default)",
-            "value": "674.55",
+            "value": "687.59",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify (default)",
-            "value": "1154.92",
+            "value": "1119.00",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify-sourcemap (default)",
-            "value": "1578.50",
+            "value": "1572.32",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts (default)",
-            "value": "142.83",
+            "value": "146.35",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts-sourcemap (default)",
-            "value": "221.61",
+            "value": "219.76",
             "unit": "ms / ops"
           }
         ]
