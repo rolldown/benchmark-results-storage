@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1733758554332,
+  "lastUpdate": 1733802238711,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -65951,6 +65951,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "217.81",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "f116c07113b40b2effd340d293880de3e64ed04c",
+          "message": "chore(types): make types friendly to `isolatedDeclarations` (#3095)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n- All changes are just adding explicit types.\n\nOnly 12 errors left and they are related to schemas. It's quite hard to\nadd explicit types for these schemas. Inferred types are to complex.\n```\nFound 12 errors in 5 files.\n\nErrors  Files\n     1  src/cli/arguments/schema.ts:7\n     5  src/log/logging.ts:10\n     2  src/options/input-options-schema.ts:106\n     1  src/options/output-options-schema.ts:167\n     3  src/treeshake/module-side-effects.ts:7\n```\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-12-10T03:22:34Z",
+          "tree_id": "37fe8ea388a5ba14c18b0109910719041e8fbd42",
+          "url": "https://github.com/rolldown/rolldown/commit/f116c07113b40b2effd340d293880de3e64ed04c"
+        },
+        "date": 1733802238681,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "435.69",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "685.53",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1138.58",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1567.14",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "150.52",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "224.33",
             "unit": "ms / ops"
           }
         ]
