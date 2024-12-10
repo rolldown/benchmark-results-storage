@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1733828384306,
+  "lastUpdate": 1733834485902,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -66383,6 +66383,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "214.47",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "laipichan@qq.com",
+            "name": "dalaoshu",
+            "username": "shulaoda"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c6abcf97b69f7ac4896b76fcb6241a4d910ac032",
+          "message": "refactor: remove all derived `Deserialize` in `rolldown_binding` crate (#3110)\n\n### Description\n\ncloses #3109",
+          "timestamp": "2024-12-10T12:19:58Z",
+          "tree_id": "07b9a43bc5fc144cae8b3542a3e24dcae1497f48",
+          "url": "https://github.com/rolldown/rolldown/commit/c6abcf97b69f7ac4896b76fcb6241a4d910ac032"
+        },
+        "date": 1733834485873,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "421.40",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "668.77",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1143.91",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1538.94",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "146.24",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "230.80",
             "unit": "ms / ops"
           }
         ]
