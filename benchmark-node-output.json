@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1733816695221,
+  "lastUpdate": 1733818569186,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -66221,6 +66221,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "224.34",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "91abb747362292f7660c76dbe14e4adb372c76cf",
+          "message": "chore(types): emit isolated declarations by tsc (#3097)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nUsing `unplugin-isolated-decl` throws errors. And the error got hidden\nby\n\n\n![image.png](https://graphite-user-uploaded-assets-prod.s3.amazonaws.com/o9Sx4N6VeLaL704bt9iT/4c0e4b3c-1a68-45f9-876f-7a5ea6dd927d.png).\n\nSo we still using tsc to emit types for now.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-12-10T07:25:25Z",
+          "tree_id": "80fd9eb1ca66b901deb2acd45872b6c10ff8b656",
+          "url": "https://github.com/rolldown/rolldown/commit/91abb747362292f7660c76dbe14e4adb372c76cf"
+        },
+        "date": 1733818569158,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "426.28",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "672.17",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1136.89",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1567.40",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "145.95",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "228.20",
             "unit": "ms / ops"
           }
         ]
