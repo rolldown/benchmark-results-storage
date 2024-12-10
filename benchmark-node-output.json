@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1733802238711,
+  "lastUpdate": 1733802940763,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -66005,6 +66005,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "224.33",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fe1540953158f69416a34edf2b187a618a1682e2",
+          "message": "feat: give warning for multiply notify option (#3085)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nrelated https://github.com/rolldown/rolldown/pull/3037.\n\nThe rollup is create chokidar for each Bundler, it has more overhead at\nrolldown, because we need to create thread to listen event. So the\nnotify option is used for all Bundler, here give warning for multiply\nnotify options.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-12-10T03:29:47Z",
+          "tree_id": "234f56411a3d8be32fd16190021417df66edca71",
+          "url": "https://github.com/rolldown/rolldown/commit/fe1540953158f69416a34edf2b187a618a1682e2"
+        },
+        "date": 1733802940735,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "420.58",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "678.32",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1108.14",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1586.17",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "145.04",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "213.38",
             "unit": "ms / ops"
           }
         ]
