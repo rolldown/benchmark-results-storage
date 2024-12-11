@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1733905665056,
+  "lastUpdate": 1733933217057,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -66815,6 +66815,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "225.04",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ab7b6b4dedcb2cbeaadb404a234d44efbc8cc100",
+          "message": "chore(ci/publish): improve canary version releasing (#3125)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nWhat this PR does:\n\n- Canary version pattern is now `version+commit.[commitHash]` and follow\nthe rule of\n[semver](https://semver.org/#:~:text=Build%20metadata%20MAY%20be%20denoted%20by%20appending%20a%20plus%20sign%20and%20a%20series%20of%20dot%20separated%20identifiers%20immediately%20following%20the%20patch%20or%20pre%2Drelease%20version.).\nEg: 0.15.1+commit.1234567. Closes\nhttps://github.com/rolldown/rolldown/issues/1402.\n- Since we use commit hash as the part of canary version, now unchanged\ncode won't be publish duplicately.\n- Prepare fix for https://github.com/rolldown/rolldown/issues/1579.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-12-11T23:56:31+08:00",
+          "tree_id": "0ae0e153e4eeefed75a21457b822163fd964d181",
+          "url": "https://github.com/rolldown/rolldown/commit/ab7b6b4dedcb2cbeaadb404a234d44efbc8cc100"
+        },
+        "date": 1733933217028,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "418.45",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "669.64",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1119.46",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1541.34",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "143.41",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "234.86",
             "unit": "ms / ops"
           }
         ]
