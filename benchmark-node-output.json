@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1733852422040,
+  "lastUpdate": 1733887619200,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -66545,6 +66545,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "219.76",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "laipichan@qq.com",
+            "name": "dalaoshu",
+            "username": "shulaoda"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "bddc84cf7921cc9eadfab57792fdc53dbedfbb83",
+          "message": "chore(deps): bump oxlint to v0.15.0 (#3115)\n\n### Description\n\nRelated to https://github.com/oxc-project/oxc/pull/7720\n\nChangelog:\nhttps://github.com/oxc-project/oxc/releases/tag/oxlint_v0.15.0\n\nThe main task is to restore the rule that was temporarily disabled in\n#3066.",
+          "timestamp": "2024-12-11T03:05:25Z",
+          "tree_id": "8495eab53e22e77f238257cf29689688dc8a4093",
+          "url": "https://github.com/rolldown/rolldown/commit/bddc84cf7921cc9eadfab57792fdc53dbedfbb83"
+        },
+        "date": 1733887619172,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "419.14",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "672.79",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1112.78",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1528.18",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "145.77",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "218.45",
             "unit": "ms / ops"
           }
         ]
