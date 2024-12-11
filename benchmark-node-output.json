@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1733899357065,
+  "lastUpdate": 1733899571761,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -66660,53 +66660,53 @@
       {
         "commit": {
           "author": {
-            "email": "likui.underfin@gmail.com",
-            "name": "underfin",
-            "username": "underfin"
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
           },
           "committer": {
             "email": "noreply@github.com",
             "name": "GitHub",
             "username": "web-flow"
           },
-          "distinct": false,
-          "id": "1ae46b7234656774fcf10edaa601488265ee562c",
-          "message": "fix: buildEnd hook should handle buildStart hook error (#3117)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
-          "timestamp": "2024-12-11T06:20:53Z",
-          "tree_id": "2c1a537b4c481ee5f158e673e12378dc74acec2b",
-          "url": "https://github.com/rolldown/rolldown/commit/1ae46b7234656774fcf10edaa601488265ee562c"
+          "distinct": true,
+          "id": "6d5c8ffe99f9607958d95c451c841338690f3a09",
+          "message": "fix: remove lazy parse expr hack (#3118)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. Closed https://github.com/rolldown/rolldown/issues/3102\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-12-11T06:24:32Z",
+          "tree_id": "ed85e364a8af61d030b54d83260a3bd6afb2b7c3",
+          "url": "https://github.com/rolldown/rolldown/commit/6d5c8ffe99f9607958d95c451c841338690f3a09"
         },
-        "date": 1733899357036,
+        "date": 1733899571733,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x (default)",
-            "value": "430.30",
+            "value": "425.32",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap (default)",
-            "value": "683.29",
+            "value": "674.79",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify (default)",
-            "value": "1169.97",
+            "value": "1127.76",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify-sourcemap (default)",
-            "value": "1559.82",
+            "value": "1531.64",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts (default)",
-            "value": "145.93",
+            "value": "143.97",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts-sourcemap (default)",
-            "value": "221.78",
+            "value": "215.25",
             "unit": "ms / ops"
           }
         ]
