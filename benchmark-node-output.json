@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1733903202574,
+  "lastUpdate": 1733905665056,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -66761,6 +66761,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "228.30",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5407b76498f9134bdc91d4821fd403e0d3711ae0",
+          "message": "fix: renderError hook should handle renderStart hook error (#3121)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-12-11T08:05:16Z",
+          "tree_id": "5ea83fd5e333b18e1093309395cfdea60562251a",
+          "url": "https://github.com/rolldown/rolldown/commit/5407b76498f9134bdc91d4821fd403e0d3711ae0"
+        },
+        "date": 1733905665028,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "426.47",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "675.54",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1142.25",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1566.67",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "146.13",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "225.04",
             "unit": "ms / ops"
           }
         ]
