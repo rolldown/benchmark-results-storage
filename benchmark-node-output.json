@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1734005723416,
+  "lastUpdate": 1734012240199,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -67139,6 +67139,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "220.09",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "boshenc@gmail.com",
+            "name": "Boshen",
+            "username": "Boshen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1265c2c7955eeb6f7a5c3878b8d02af19457987b",
+          "message": "feat(string_wizard): add `serde` feature (#3140)\n\nWhen `string_wizard` is used inside `oxc`, and with `oxc_index` having\nthe `serde` feature enabled, feature unification breaks apart. And there\nis no way to force enable a dependencie's dependency's feature. This is\nthe last resort :-(\n\n```\nerror[E0433]: failed to resolve: use of undeclared crate or module `serde`\n --> crates/string_wizard/src/chunk.rs:5:1\n  |\n5 | / oxc_index::define_index_type! {\n6 | |     pub struct ChunkIdx = u32;\n7 | | }\n  | |_^ use of undeclared crate or module `serde`\n  |\n  = note: this error originates in the macro `$crate::__internal_maybe_index_impl_serde` which comes from the expansion of the macro `oxc_index::define_index_type` (in Nightly builds, run with -Z macro-backtrace for more info)\n```",
+          "timestamp": "2024-12-12T13:41:33Z",
+          "tree_id": "fc839b6e4d9e54e1cf77ef4cf70394e7f6d1f350",
+          "url": "https://github.com/rolldown/rolldown/commit/1265c2c7955eeb6f7a5c3878b8d02af19457987b"
+        },
+        "date": 1734012240167,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "430.88",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "676.03",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1157.35",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1591.32",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "169.89",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "210.45",
             "unit": "ms / ops"
           }
         ]
