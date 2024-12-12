@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1734003439939,
+  "lastUpdate": 1734005723416,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -67085,6 +67085,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "220.87",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "laipichan@qq.com",
+            "name": "dalaoshu",
+            "username": "shulaoda"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7fe1cd01f0598359488ab5a5f0c4df6bfc8087d7",
+          "message": "chore: move `PathBufExt` and `PathExt` to `rolldown_std_utils` (#3138)\n\n## Description\n\nRelated to #2372\n\nBoth `PathBufExt` and `PathExt` are extensions of the rust standard\nlibrary. Therefore, I recommend placing them in `rolldown_std_utils`\ninstead of `rolldown_utils`.\n\nFeel free to close this, as it's just my personal suggestion.",
+          "timestamp": "2024-12-12T11:52:24Z",
+          "tree_id": "b7a80e63fd59cdbff25390543b57f5a5ffde4329",
+          "url": "https://github.com/rolldown/rolldown/commit/7fe1cd01f0598359488ab5a5f0c4df6bfc8087d7"
+        },
+        "date": 1734005723387,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "428.78",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "678.51",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1156.90",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1581.92",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "150.16",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "220.09",
             "unit": "ms / ops"
           }
         ]
