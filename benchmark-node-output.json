@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1733933217057,
+  "lastUpdate": 1733972540587,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -66869,6 +66869,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "234.86",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "39f9197fe06acaab0d49206d02051696dc283bb3",
+          "message": "fix(node): print correct version for nightly/canary (#3126)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nFixes #1579.\n\n<img width=\"267\" alt=\"image\"\nsrc=\"https://github.com/user-attachments/assets/699d4200-32bc-42f6-a6ab-748707a5be48\"\n/>\n\n<img width=\"776\" alt=\"image\"\nsrc=\"https://github.com/user-attachments/assets/31d5deb5-2bbd-482d-8349-5a3232dab41d\"\n/>\n\nhttps://stackblitz.com/edit/github-28npuusr?file=package.json\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-12-12T02:40:02Z",
+          "tree_id": "b85e3c884c8a9db04f434e626257bf90a91c40ce",
+          "url": "https://github.com/rolldown/rolldown/commit/39f9197fe06acaab0d49206d02051696dc283bb3"
+        },
+        "date": 1733972540558,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "436.32",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "678.94",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1149.71",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1568.63",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "148.65",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "226.95",
             "unit": "ms / ops"
           }
         ]
