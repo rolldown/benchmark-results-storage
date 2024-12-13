@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1734062821657,
+  "lastUpdate": 1734083391326,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -67247,6 +67247,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "235.97",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "laipichan@qq.com",
+            "name": "dalaoshu",
+            "username": "shulaoda"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "61429b163da3bb2f748a1bb14d8475bb71dc3d8d",
+          "message": "refactor: improve dx in `ScanStage#scan` (#3148)\n\n### Description\n\n- Replace `anyhow::format_err!` with `anyhow::anyhow!` for consistency,\nsince `format_err` is an alias within `anyhow`.\n- Simplify the error return types of `resolve_user_defined_entries` and\n`fetch_all_modules`, as their errors will be uniformly handled by the\n`BuildResult<ScanStageOutput>` return type in `scan`.\n- Simplify `return Err(anyhow::anyhow!(..).into());` to\n`Err(anyhow::anyhow!(..))?;`.\n\nThe modification to simplify the error return type of\n`fetch_all_modules` might have drawbacks, as we may need the `Result`\nreturn type in other places used in the future?\n\nBTW, I noticed that `ModuleLoaderOutput` and `ScanStageOutput` have\nidentical fields. Should we unify them? However, keeping them separate\nmight be better, as we may need to change them independently in the\nfuture.\n\nFeel free to close this, as these are just some personal suggestions I\nhad while learning `rolldown`.",
+          "timestamp": "2024-12-13T09:28:26Z",
+          "tree_id": "69aeeff2fc545a6722ff5ca138c95e82157546b8",
+          "url": "https://github.com/rolldown/rolldown/commit/61429b163da3bb2f748a1bb14d8475bb71dc3d8d"
+        },
+        "date": 1734083391297,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "419.12",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "667.33",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1101.32",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1550.49",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "144.25",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "210.60",
             "unit": "ms / ops"
           }
         ]
