@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1734105366795,
+  "lastUpdate": 1734233405688,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -67463,6 +67463,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "223.99",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "hi.ogawa.zz@gmail.com",
+            "name": "Hiroshi Ogawa",
+            "username": "hi-ogawa"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ddbe0a9e8252f61380a4a5b57d82e32a00d0791b",
+          "message": "test: rename test fixture \"repro\" to \"transform-empty-mappings\" (#3155)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nI forgot to name it properly before pushing\nhttps://github.com/rolldown/rolldown/pull/3114 :sweat_smile:",
+          "timestamp": "2024-12-15T03:07:47Z",
+          "tree_id": "2e49b391b99354500b1801936681896660f2f423",
+          "url": "https://github.com/rolldown/rolldown/commit/ddbe0a9e8252f61380a4a5b57d82e32a00d0791b"
+        },
+        "date": 1734233405659,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "426.05",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "677.18",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1144.37",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1577.41",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "144.52",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "219.34",
             "unit": "ms / ops"
           }
         ]
