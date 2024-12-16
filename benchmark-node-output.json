@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1734317427934,
+  "lastUpdate": 1734361959851,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -67625,6 +67625,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "210.79",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "laipichan@qq.com",
+            "name": "dalaoshu",
+            "username": "shulaoda"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a519f4c704baf83ad0f4dce383cdcc88783c15ef",
+          "message": "refactor: improve the error handling of `RuntimeModuleTask#run` (#3162)\n\n### Description\n\nCurrently, if an error occurs in `RuntimeModuleTask#run`, it will never\nbe handled (except in the case of `wasm`).\n\n\nhttps://github.com/rolldown/rolldown/blob/e8033ef406271a01080fc8a07d426eb9387e2a05/crates/rolldown/src/module_loader/runtime_module_task.rs#L61-L67\n\nhttps://github.com/rolldown/rolldown/blob/e8033ef406271a01080fc8a07d426eb9387e2a05/crates/rolldown/src/module_loader/module_loader.rs#L112-L122\n\n\nWhile we know that `RuntimeModuleTask#run` is unlikely to fail under\nnormal circumstances, if an error does occur, the entire program will\nnever be able to terminate properly because `remaining > 0` will be\nalways.\n\nTherefore, I aligned it with `ModuleTask#run` to ensure that errors are\nhandled correctly.",
+          "timestamp": "2024-12-16T14:49:18Z",
+          "tree_id": "f2efe2a966119cc1b372e3da334ed4669c246560",
+          "url": "https://github.com/rolldown/rolldown/commit/a519f4c704baf83ad0f4dce383cdcc88783c15ef"
+        },
+        "date": 1734361959824,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "421.23",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "665.54",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1117.14",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1511.05",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "142.50",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "215.65",
             "unit": "ms / ops"
           }
         ]
