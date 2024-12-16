@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1734313901284,
+  "lastUpdate": 1734317427934,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -67571,6 +67571,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "217.89",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "e8033ef406271a01080fc8a07d426eb9387e2a05",
+          "message": "chore(deps): update npm packages (major) (#3158)\n\nThis PR contains the following updates:\n\n| Package | Change | Age | Adoption | Passing | Confidence |\n|---|---|---|---|---|---|\n|\n[@rollup/plugin-node-resolve](https://redirect.github.com/rollup/plugins/tree/master/packages/node-resolve/#readme)\n([source](https://redirect.github.com/rollup/plugins/tree/HEAD/packages/node-resolve))\n| [`^15.2.3` ->\n`^16.0.0`](https://renovatebot.com/diffs/npm/@rollup%2fplugin-node-resolve/15.3.0/16.0.0)\n|\n[![age](https://developer.mend.io/api/mc/badges/age/npm/@rollup%2fplugin-node-resolve/16.0.0?slim=true)](https://docs.renovatebot.com/merge-confidence/)\n|\n[![adoption](https://developer.mend.io/api/mc/badges/adoption/npm/@rollup%2fplugin-node-resolve/16.0.0?slim=true)](https://docs.renovatebot.com/merge-confidence/)\n|\n[![passing](https://developer.mend.io/api/mc/badges/compatibility/npm/@rollup%2fplugin-node-resolve/15.3.0/16.0.0?slim=true)](https://docs.renovatebot.com/merge-confidence/)\n|\n[![confidence](https://developer.mend.io/api/mc/badges/confidence/npm/@rollup%2fplugin-node-resolve/15.3.0/16.0.0?slim=true)](https://docs.renovatebot.com/merge-confidence/)\n|\n| [unbuild](https://redirect.github.com/unjs/unbuild) | [`^2.0.0` ->\n`^3.0.0`](https://renovatebot.com/diffs/npm/unbuild/2.0.0/3.0.1) |\n[![age](https://developer.mend.io/api/mc/badges/age/npm/unbuild/3.0.1?slim=true)](https://docs.renovatebot.com/merge-confidence/)\n|\n[![adoption](https://developer.mend.io/api/mc/badges/adoption/npm/unbuild/3.0.1?slim=true)](https://docs.renovatebot.com/merge-confidence/)\n|\n[![passing](https://developer.mend.io/api/mc/badges/compatibility/npm/unbuild/2.0.0/3.0.1?slim=true)](https://docs.renovatebot.com/merge-confidence/)\n|\n[![confidence](https://developer.mend.io/api/mc/badges/confidence/npm/unbuild/2.0.0/3.0.1?slim=true)](https://docs.renovatebot.com/merge-confidence/)\n|\n\n---\n\n### Release Notes\n\n<details>\n<summary>rollup/plugins (@&#8203;rollup/plugin-node-resolve)</summary>\n\n###\n[`v16.0.0`](https://redirect.github.com/rollup/plugins/blob/HEAD/packages/node-resolve/CHANGELOG.md#v1600)\n\n*2024-12-15*\n\n##### Breaking Changes\n\n- feat!: set development or production condition\n([#&#8203;1823](https://redirect.github.com/rollup/plugins/issues/1823))\n\n###\n[`v15.3.1`](https://redirect.github.com/rollup/plugins/blob/HEAD/packages/node-resolve/CHANGELOG.md#v1531)\n\n*2024-12-15*\n\n##### Updates\n\n- refactor: replace `test` with `includes`\n([#&#8203;1787](https://redirect.github.com/rollup/plugins/issues/1787))\n\n</details>\n\n<details>\n<summary>unjs/unbuild (unbuild)</summary>\n\n###\n[`v3.0.1`](https://redirect.github.com/unjs/unbuild/blob/HEAD/CHANGELOG.md#v301)\n\n[Compare\nSource](https://redirect.github.com/unjs/unbuild/compare/v3.0.0...v3.0.1)\n\n[compare\nchanges](https://redirect.github.com/unjs/unbuild/compare/v3.0.0...v3.0.1)\n\n##### 🩹 Fixes\n\n- **rollup:** De-default default export from stub\n([#&#8203;455](https://redirect.github.com/unjs/unbuild/pull/455))\n\n##### 🏡 Chore\n\n- Update changeloge.md\n([577b841](https://redirect.github.com/unjs/unbuild/commit/577b841))\n\n##### ❤️ Contributors\n\n-   Daniel Roe ([@&#8203;danielroe](http://github.com/danielroe))\n-   Pooya Parsa ([@&#8203;pi0](http://github.com/pi0))\n\n###\n[`v3.0.0`](https://redirect.github.com/unjs/unbuild/blob/HEAD/CHANGELOG.md#v300)\n\n[Compare\nSource](https://redirect.github.com/unjs/unbuild/compare/v2.0.0...v3.0.0)\n\nSee [github release\nnotes](https://redirect.github.com/unjs/unbuild/releases/edit/v3.0.0).\n\n</details>\n\n---\n\n### Configuration\n\n📅 **Schedule**: Branch creation - \"before 11am on monday\" in timezone\nAsia/Shanghai, Automerge - \"before 11am on monday\" in timezone\nAsia/Shanghai.\n\n🚦 **Automerge**: Enabled.\n\n♻ **Rebasing**: Whenever PR is behind base branch, or you tick the\nrebase/retry checkbox.\n\n👻 **Immortal**: This PR will be recreated if closed unmerged. Get\n[config\nhelp](https://redirect.github.com/renovatebot/renovate/discussions) if\nthat's undesired.\n\n---\n\n- [ ] <!-- rebase-check -->If you want to rebase/retry this PR, check\nthis box\n\n---\n\nThis PR was generated by [Mend Renovate](https://mend.io/renovate/).\nView the [repository job\nlog](https://developer.mend.io/github/rolldown/rolldown).\n\n<!--renovate-debug:eyJjcmVhdGVkSW5WZXIiOiIzOS41OC4xIiwidXBkYXRlZEluVmVyIjoiMzkuNTguMSIsInRhcmdldEJyYW5jaCI6Im1haW4iLCJsYWJlbHMiOltdfQ==-->\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2024-12-16T02:26:27Z",
+          "tree_id": "e739ed238499cc568350f3de23926337980df18f",
+          "url": "https://github.com/rolldown/rolldown/commit/e8033ef406271a01080fc8a07d426eb9387e2a05"
+        },
+        "date": 1734317427907,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "415.60",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "655.78",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1097.14",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1501.85",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "142.36",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "210.79",
             "unit": "ms / ops"
           }
         ]
