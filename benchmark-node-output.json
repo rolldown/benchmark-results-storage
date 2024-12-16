@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1734233405688,
+  "lastUpdate": 1734313901284,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -67517,6 +67517,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "219.34",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "laipichan@qq.com",
+            "name": "dalaoshu",
+            "username": "shulaoda"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "29d147d56bbeee73e0b84445649ad538a64a118a",
+          "message": "refactor: improve the DX of `ModuleTask` (#3154)\n\n### Description\n\n1. Simplify the error return type\n2. Declare variable before use",
+          "timestamp": "2024-12-16T01:29:52Z",
+          "tree_id": "76daeebb6097c63bfba8dac291d5dbf0bee8a2d1",
+          "url": "https://github.com/rolldown/rolldown/commit/29d147d56bbeee73e0b84445649ad538a64a118a"
+        },
+        "date": 1734313901254,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "445.84",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "691.60",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1154.11",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1613.80",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "173.29",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "217.89",
             "unit": "ms / ops"
           }
         ]
