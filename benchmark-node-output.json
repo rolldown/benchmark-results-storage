@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1734408653725,
+  "lastUpdate": 1734412939661,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -67895,6 +67895,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "232.34",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "265fbf5f57cce8b78502ad8cf73a4e52580381d4",
+          "message": "refactor(node): using prototype define methods for PluginContext (#3166)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nHere has the benchmark `prototype-vs-this`\n- create method and call it, see https://jsperf.app/prototype-vs-this \n- create method, see https://jsperf.app/prototype-vs-this/67\n\nUsing prototype-defined methods always wins.\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-12-17T05:00:35Z",
+          "tree_id": "a15453d39880eab349a4e8674646d6bd66d980af",
+          "url": "https://github.com/rolldown/rolldown/commit/265fbf5f57cce8b78502ad8cf73a4e52580381d4"
+        },
+        "date": 1734412939632,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "423.31",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "679.62",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1162.10",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1575.78",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "148.57",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "232.62",
             "unit": "ms / ops"
           }
         ]
