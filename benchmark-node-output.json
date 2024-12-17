@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1734412939661,
+  "lastUpdate": 1734415136161,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -67949,6 +67949,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "232.62",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "laipichan@qq.com",
+            "name": "dalaoshu",
+            "username": "shulaoda"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "c414a7f3fae169a7f1fc92695291289e2f02278e",
+          "message": "chore(deps): bump oxlint to v0.15.3 (#3169)\n\n### Description\n\nChangelog:\nhttps://github.com/oxc-project/oxc/releases/tag/oxlint_v0.15.3\n\nThe `import/named` rule seems to be unstable. I will report this issue\nin `oxc` later. For now, let's temporarily ignore it.\n\n```bash\n  ! eslint-plugin-import(named): named import \"createApp\" not found\n   ,-[examples/basic-vue/index.js:1:10]\n 1 | import { createApp } from 'vue'\n   :          ^^^^^^^^^\n 2 | \n   `----\n  help: does \"vue\" have the export \"createApp\"?\n```\n\n@Boshen cc\n\nThis change seems to have been introduced in [oxlint\nv0.15.0](https://github.com/oxc-project/oxc/releases/tag/oxlint_v0.15.0).\nI suspect it might be a regression caused by the fix for\n`import/namespace`.",
+          "timestamp": "2024-12-17T05:33:37Z",
+          "tree_id": "05fcdc1b2570fb1cddc4313559eade81a46d7430",
+          "url": "https://github.com/rolldown/rolldown/commit/c414a7f3fae169a7f1fc92695291289e2f02278e"
+        },
+        "date": 1734415136134,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "411.64",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "659.50",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1133.07",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1505.36",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "141.06",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "233.45",
             "unit": "ms / ops"
           }
         ]
