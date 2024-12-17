@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1734407345935,
+  "lastUpdate": 1734408653725,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -67841,6 +67841,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "218.59",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "laipichan@qq.com",
+            "name": "dalaoshu",
+            "username": "shulaoda"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b798ac59de8e1eb0fb8278e5c2c4935e34c186a4",
+          "message": "refactor: simplify return type of `resolve_user_defined_entries` (#3165)\n\n### Description\n\nWe have implemented our own `DiagnosableResolveError` which is from\n`oxc_resolver::ResolveError`, but its applicability was too limited, so\nI decided to retain the original error handling logic, which is based on\nerrors converted from `anyhow::Error`.\n\n\nhttps://github.com/rolldown/rolldown/blob/a519f4c704baf83ad0f4dce383cdcc88783c15ef/crates/rolldown_error/src/events/resolve_error.rs#L7-L13\n\n---------\n\nCo-authored-by: Yunfei <i.heyunfei@gmail.com>",
+          "timestamp": "2024-12-17T03:43:08Z",
+          "tree_id": "889f7db7cc2cb96f2dd1e4a1912f656191b2145f",
+          "url": "https://github.com/rolldown/rolldown/commit/b798ac59de8e1eb0fb8278e5c2c4935e34c186a4"
+        },
+        "date": 1734408653697,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "423.21",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "666.54",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1127.88",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1533.37",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "146.51",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "232.34",
             "unit": "ms / ops"
           }
         ]
