@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1734399314943,
+  "lastUpdate": 1734402268265,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -67733,6 +67733,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "224.98",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "boshenc@gmail.com",
+            "name": "Boshen",
+            "username": "Boshen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ff1ed90bc5c30a31b3a66b23e71f69fab163406f",
+          "message": "perf(rolldown): remove `AppendOnlyVec` from `reference_needed_symbols` (#3164)\n\n![image](https://github.com/user-attachments/assets/56768f04-2945-48f9-8d4f-f6b0dfcd9260)",
+          "timestamp": "2024-12-17T02:02:17Z",
+          "tree_id": "459b09ed79d39aeeac0473868ff542a3872051da",
+          "url": "https://github.com/rolldown/rolldown/commit/ff1ed90bc5c30a31b3a66b23e71f69fab163406f"
+        },
+        "date": 1734402268236,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "426.34",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "674.16",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1136.80",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1580.52",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "147.92",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "235.85",
             "unit": "ms / ops"
           }
         ]
