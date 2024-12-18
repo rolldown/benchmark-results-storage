@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1734501980786,
+  "lastUpdate": 1734509582183,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -68111,6 +68111,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "209.04",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4e41a08a3b4763c3435dd87ba493cb78d0faabe7",
+          "message": "fix: watch files after scan stage (#3149)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nclose https://github.com/rolldown/rolldown/issues/2830. Follow rollup\nwatching after scan\nhttps://github.com/rollup/rollup/blob/master/src/watch/watch.ts#L209.\n\nHere add a `Bundler#bundle_write` to give a chance to watching files\nafter scan.\n\nThe watch tests create different dir for different tests, avoiding the\nun-relate test failing the other test.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-12-18T07:50:09Z",
+          "tree_id": "818b6cf1259a775bf645ef89393c5c655ab62615",
+          "url": "https://github.com/rolldown/rolldown/commit/4e41a08a3b4763c3435dd87ba493cb78d0faabe7"
+        },
+        "date": 1734509582153,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "434.15",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "683.25",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1130.64",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1556.26",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "147.76",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "222.85",
             "unit": "ms / ops"
           }
         ]
