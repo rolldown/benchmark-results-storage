@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1734584251359,
+  "lastUpdate": 1734595827711,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -68381,6 +68381,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "211.28",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "bd5a0b2645844bfca2bdf97e6e105047733206a9",
+          "message": "chore: using tokio spawn direcly (#3186)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n\nhttps://github.com/rolldown/rolldown/actions/runs/12405352410/job/34632058134?pr=3186\n - @example/typescript 159.06 ms\n - @example/vue 184.27 ms\n - @example/rollup-plugin-esbuild 196.25 ms\n\ncompare https://github.com/rolldown/rolldown/pull/3183\n- @example/typescript 118.25 ms\n- @example/vue 178.84 ms\n- @example/rollup-plugin-esbuild 177.91 ms\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-12-19T07:49:15Z",
+          "tree_id": "90db7f273df80d9dfbf49845608896e1300c4502",
+          "url": "https://github.com/rolldown/rolldown/commit/bd5a0b2645844bfca2bdf97e6e105047733206a9"
+        },
+        "date": 1734595827678,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "413.66",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "660.44",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1105.43",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1517.80",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "143.27",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "215.75",
             "unit": "ms / ops"
           }
         ]
