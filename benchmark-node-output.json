@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1734605856078,
+  "lastUpdate": 1734667067005,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -68489,6 +68489,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "220.96",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "green@sapphi.red",
+            "name": "翠 / green",
+            "username": "sapphi-red"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f85bcfa2aea16327ec3fb77119ce08e96802a007",
+          "message": "fix(node): make `name` property required for plugins (#3192)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n`name` is required for rollup\n\nhttps://github.com/rollup/rollup/blob/7a8ac460c62b0406a749e367dbd0b74973282449/src/rollup/types.d.ts#L518\n\n`name` is useful for debugging purpose.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-12-19T11:19:06Z",
+          "tree_id": "1d4bd742f187cf2f96fb0d9371811856b6f86c47",
+          "url": "https://github.com/rolldown/rolldown/commit/f85bcfa2aea16327ec3fb77119ce08e96802a007"
+        },
+        "date": 1734667066977,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "435.40",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "680.08",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1125.83",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1577.00",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "147.82",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "222.00",
             "unit": "ms / ops"
           }
         ]
