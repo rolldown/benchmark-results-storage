@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1734667067005,
+  "lastUpdate": 1734708120338,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -68543,6 +68543,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "222.00",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "10b045b0abbad0889df45d0204e9053154cecef0",
+          "message": "refactor(rust): stop taking internal reference of oxc's `SymbolTable` (#3193)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nCloses https://github.com/rolldown/rolldown/issues/3188.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-12-20T14:59:11Z",
+          "tree_id": "c53fce837c8df807c236a56ed2bd457924ea217c",
+          "url": "https://github.com/rolldown/rolldown/commit/10b045b0abbad0889df45d0204e9053154cecef0"
+        },
+        "date": 1734708120308,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "441.53",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "701.55",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1162.84",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1610.65",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "165.14",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "215.06",
             "unit": "ms / ops"
           }
         ]
