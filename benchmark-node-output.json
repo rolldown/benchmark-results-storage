@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1734708120338,
+  "lastUpdate": 1734775539486,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -68597,6 +68597,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "215.06",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "boshenc@gmail.com",
+            "name": "Boshen",
+            "username": "Boshen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "09cccaf1ea6fce5db63123a0e0266283beaeabd9",
+          "message": "chore(rolldown): oxc v0.43.0 (#3196)",
+          "timestamp": "2024-12-21T09:43:49Z",
+          "tree_id": "31534544dc76feea61090eab4cb66fb3c37f6372",
+          "url": "https://github.com/rolldown/rolldown/commit/09cccaf1ea6fce5db63123a0e0266283beaeabd9"
+        },
+        "date": 1734775539455,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "416.81",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "662.08",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1117.06",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1530.34",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "146.53",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "216.87",
             "unit": "ms / ops"
           }
         ]
