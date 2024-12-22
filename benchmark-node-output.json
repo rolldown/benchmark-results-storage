@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1734775539486,
+  "lastUpdate": 1734856685647,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -68651,6 +68651,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "216.87",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7a360ce2c7fdd1fbcd7724f7e3a679cf3265c3ed",
+          "message": "fix(iife/umd): named exports if module wrapped (#3195)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->\n\n---------\n\nCo-authored-by: Yunfei <i.heyunfei@gmail.com>",
+          "timestamp": "2024-12-22T08:15:09Z",
+          "tree_id": "33f2cce860ead529140e6e316ce070f44aa5f2d7",
+          "url": "https://github.com/rolldown/rolldown/commit/7a360ce2c7fdd1fbcd7724f7e3a679cf3265c3ed"
+        },
+        "date": 1734856685619,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "418.02",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "669.65",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1122.52",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1522.40",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "144.41",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "208.45",
             "unit": "ms / ops"
           }
         ]
