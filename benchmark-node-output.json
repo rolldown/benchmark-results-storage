@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1734945629219,
+  "lastUpdate": 1734946752347,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -68813,6 +68813,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "201.83",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "769b62a0fd8576f84d4e0fd1b597a57483b560a4",
+          "message": "chore: remove unnecessary cspell directive (#3207)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-12-23T17:28:28+08:00",
+          "tree_id": "bb2f03cfbdd4773acc511f54a2c2a3fa897e5922",
+          "url": "https://github.com/rolldown/rolldown/commit/769b62a0fd8576f84d4e0fd1b597a57483b560a4"
+        },
+        "date": 1734946752318,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "429.05",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "662.94",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1131.22",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1584.49",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "144.18",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "222.75",
             "unit": "ms / ops"
           }
         ]
