@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1734945388728,
+  "lastUpdate": 1734945629219,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -68776,43 +68776,43 @@
             "username": "web-flow"
           },
           "distinct": false,
-          "id": "527bbe0adda30799a1fd1ce4ad614f0ce24eff61",
-          "message": "fix: merge external string alias import (#3205)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. naming style just follow rollup\nhttps://rollupjs.org/repl/?version=4.29.1&shareable=JTdCJTIyZXhhbXBsZSUyMiUzQW51bGwlMkMlMjJtb2R1bGVzJTIyJTNBJTVCJTdCJTIyY29kZSUyMiUzQSUyMmltcG9ydCUyMGNsc3glMjQxJTJDJTIwJTdCJTIwJ2RlZmF1bHQlMjB0ZXN0JyUyMGFzJTIwY2xzeCUyQyUyMCdkZWZhdWx0JTIwdGVzdCclMjBhcyUyMGNsc3gyJTJDJTIwJTdEJTIwZnJvbSUyMCU1QyUyMmNsc3glNUMlMjIlM0IlNUNuY2xzeCgpJTNCJTVDbmNsc3glMjQxKCklM0IlNUNuY2xzeDIoKSUzQiU1Q24lNUNuJTIyJTJDJTIyaXNFbnRyeSUyMiUzQXRydWUlMkMlMjJuYW1lJTIyJTNBJTIybWFpbi5qcyUyMiU3RCUyQyU3QiUyMmNvZGUlMjIlM0ElMjJpbXBvcnQlMjBjbHN4JTI0MSUyQyUyMCU3QiUyMCdkZWZhdWx0JTIwdGVzdCclMjBhcyUyMGNsc3glMkMlMjBkZWZhdWx0JTIwYXMlMjBjbHN4JTI0MiUyQyUyMGRlZmF1bHQlMjBhcyUyMGNsc3glMjQzJTJDJTIwZGVmYXVsdCUyMGFzJTIwY2xzeCUyNDQlMkMlMjBkZWZhdWx0JTIwYXMlMjBjbHN4JTI0NSUyQyUyMGRlZmF1bHQlMjBhcyUyMGNsc3glMjQ2JTJDJTIwZGVmYXVsdCUyMGFzJTIwY2xzeCUyNDclMjAlN0QlMjBmcm9tJTIwJTVDJTIyY2xzeCU1QyUyMiUzQiU1Q25jbHN4KCklM0IlNUNuY2xzeCUyNDEoKSUzQiUyMiUyQyUyMmlzRW50cnklMjIlM0FmYWxzZSUyQyUyMm5hbWUlMjIlM0ElMjJxdXguanMlMjIlN0QlNUQlMkMlMjJvcHRpb25zJTIyJTNBJTdCJTdEJTdE\n2. Closed #3199\n## Credits\nhttps://github.com/rolldown/rolldown/pull/3205 @hyf0 \n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
-          "timestamp": "2024-12-23T08:50:47Z",
-          "tree_id": "c340b5eb58e0ff6acd56044553145a230f1dd171",
-          "url": "https://github.com/rolldown/rolldown/commit/527bbe0adda30799a1fd1ce4ad614f0ce24eff61"
+          "id": "bc45e1edc5d16946bd3100fb02e49a96ad50dd47",
+          "message": "refactor: move ScopeHoistingFinalizer utils to mod.rs (#3206)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. Make `impl_visit_mut.rs` it self as simple as possible,before\nmigration.\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-12-23T08:55:44Z",
+          "tree_id": "b147684c1bd5c572c45ecaa0341877451ad777eb",
+          "url": "https://github.com/rolldown/rolldown/commit/bc45e1edc5d16946bd3100fb02e49a96ad50dd47"
         },
-        "date": 1734945388696,
+        "date": 1734945629189,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x (default)",
-            "value": "425.97",
+            "value": "412.69",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap (default)",
-            "value": "674.83",
+            "value": "661.05",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify (default)",
-            "value": "1104.04",
+            "value": "1106.24",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify-sourcemap (default)",
-            "value": "1535.90",
+            "value": "1513.25",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts (default)",
-            "value": "145.49",
+            "value": "144.04",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts-sourcemap (default)",
-            "value": "226.90",
+            "value": "201.83",
             "unit": "ms / ops"
           }
         ]
