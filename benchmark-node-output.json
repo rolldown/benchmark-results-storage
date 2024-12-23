@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1734946752347,
+  "lastUpdate": 1734962938375,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -68867,6 +68867,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "222.75",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "115fece594597c3167b2bd2e990360984f826d45",
+          "message": "ci(release): generate npm provenance for non-normal version (#3209)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nCloses https://github.com/rolldown/rolldown/issues/3202.\n\nhttps://www.npmjs.com/package/rolldown/v/0.15.1-commit.47f9075\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-12-23T13:47:18Z",
+          "tree_id": "4b46998c0c8f03aae604cbee0e926f0262d8e14e",
+          "url": "https://github.com/rolldown/rolldown/commit/115fece594597c3167b2bd2e990360984f826d45"
+        },
+        "date": 1734962938344,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "447.44",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "696.87",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1128.16",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1593.04",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "167.37",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "218.25",
             "unit": "ms / ops"
           }
         ]
