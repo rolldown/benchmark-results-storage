@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1734856685647,
+  "lastUpdate": 1734942341051,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -68705,6 +68705,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "208.45",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2e7b4b6c061eb77cd93cf7325d9f61da1d3698ea",
+          "message": "fix: merge external default import (#3203)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. part of https://github.com/rolldown/rolldown/issues/3199\n2. will try to merge two `external` default import if they are in same\nchunk\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-12-23T08:02:55Z",
+          "tree_id": "4d1fe9fb4effb575c57db9776baef3544deb6269",
+          "url": "https://github.com/rolldown/rolldown/commit/2e7b4b6c061eb77cd93cf7325d9f61da1d3698ea"
+        },
+        "date": 1734942341022,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "417.51",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "670.58",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1108.10",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1526.44",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "144.60",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "223.86",
             "unit": "ms / ops"
           }
         ]
