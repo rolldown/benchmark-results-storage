@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1735019587471,
+  "lastUpdate": 1735033429082,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -69029,6 +69029,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "212.04",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "bf559a316bae7a219673ee5549d2caab11c1415c",
+          "message": "chore(cjs): add line break for common chunk exports (#3213)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-12-24T09:22:40Z",
+          "tree_id": "c0de6dd490aae46ac672f5f4e927fd561f6c6f51",
+          "url": "https://github.com/rolldown/rolldown/commit/bf559a316bae7a219673ee5549d2caab11c1415c"
+        },
+        "date": 1735033429053,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "418.99",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "661.54",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1110.80",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1488.47",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "143.24",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "199.86",
             "unit": "ms / ops"
           }
         ]
