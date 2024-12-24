@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1735033429082,
+  "lastUpdate": 1735040436062,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -69083,6 +69083,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "199.86",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f9fc700f00b9a4ef3659c70d2be4d7cd61b492c8",
+          "message": "fix(interop): should detect importer is esm module (#3212)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nThe interop should detect importer module is esm if imported is cjs\nmodule, the https://github.com/rolldown/rolldown/pull/2769 only fixed\nwith `import` case, not updated `reexports` and `dynamic import` case,\nthe pr fixed other cases.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-12-24T11:19:21Z",
+          "tree_id": "c31afe681a063272b383fa864d0f2587f3476a5c",
+          "url": "https://github.com/rolldown/rolldown/commit/f9fc700f00b9a4ef3659c70d2be4d7cd61b492c8"
+        },
+        "date": 1735040436035,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "415.79",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "671.89",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1123.17",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1535.37",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "142.57",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "215.56",
             "unit": "ms / ops"
           }
         ]
