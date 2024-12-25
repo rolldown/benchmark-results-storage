@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1735126175885,
+  "lastUpdate": 1735130766958,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -69245,6 +69245,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "210.35",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "aafbb17789b21e1dc749bc660128cfae71c9120b",
+          "message": "fix(cli): with `--file` or `-o`, shouldn't print bundle output to stdout (#3228)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-12-25T12:24:47Z",
+          "tree_id": "a40c9f72ded65e4ec8d3efdde2f1008060bcaeaf",
+          "url": "https://github.com/rolldown/rolldown/commit/aafbb17789b21e1dc749bc660128cfae71c9120b"
+        },
+        "date": 1735130766928,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "423.64",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "668.06",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1118.80",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1516.06",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "146.68",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "238.15",
             "unit": "ms / ops"
           }
         ]
