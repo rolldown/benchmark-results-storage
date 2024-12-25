@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1735040436062,
+  "lastUpdate": 1735123798809,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -69137,6 +69137,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "215.56",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b4fb6d6013bf013fc2e51c83cb5f34fd2f24ff21",
+          "message": "chore: make ecma_ast cloneable (#3223)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-12-25T10:26:48Z",
+          "tree_id": "de5ff011668549ddfc2b0fcfa799a735284ad507",
+          "url": "https://github.com/rolldown/rolldown/commit/b4fb6d6013bf013fc2e51c83cb5f34fd2f24ff21"
+        },
+        "date": 1735123798781,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "426.78",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "669.15",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1108.31",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1552.79",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "153.18",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "225.55",
             "unit": "ms / ops"
           }
         ]
