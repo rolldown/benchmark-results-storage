@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1735295087866,
+  "lastUpdate": 1735299913429,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -69677,6 +69677,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "211.32",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "laipichan@qq.com",
+            "name": "dalaoshu",
+            "username": "shulaoda"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "f90856ad7b4a028369dcd2627c860343910d1333",
+          "message": "feat(cli): resolve `rolldown.config` by default when `-c` is unspecified (#3250)\n\n### Description\n\nRelated to #3248",
+          "timestamp": "2024-12-27T11:23:37Z",
+          "tree_id": "26ddc56f8205270455b26a5c285f4bf3c0ea8a9b",
+          "url": "https://github.com/rolldown/rolldown/commit/f90856ad7b4a028369dcd2627c860343910d1333"
+        },
+        "date": 1735299913396,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "420.05",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "662.19",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1125.56",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1501.70",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "143.94",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "215.17",
             "unit": "ms / ops"
           }
         ]
