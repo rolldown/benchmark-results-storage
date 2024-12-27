@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1735281416094,
+  "lastUpdate": 1735295087866,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -69623,6 +69623,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "215.87",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b59a08400c7f4bddffcd8a0be36adb9e56f9ab54",
+          "message": "chore: add target lowering test case. (#3251)\n\n<!-- Thank you for contributing! -->\n\n### Description\nrelated https://github.com/rolldown/rolldown/issues/3243\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-12-27T10:03:20Z",
+          "tree_id": "10600cf0c617d308d8d1fcce19c902ca0548365f",
+          "url": "https://github.com/rolldown/rolldown/commit/b59a08400c7f4bddffcd8a0be36adb9e56f9ab54"
+        },
+        "date": 1735295087837,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "417.01",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "659.59",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1126.20",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1505.43",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "144.17",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "211.32",
             "unit": "ms / ops"
           }
         ]
