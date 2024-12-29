@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1735299913429,
+  "lastUpdate": 1735466173279,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -69731,6 +69731,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "215.17",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "laipichan@qq.com",
+            "name": "dalaoshu",
+            "username": "shulaoda"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b36d6e1b98bb31e633a3b0a8a0c0e3ef13480b4c",
+          "message": "refactor(rust): tweak code of `rolldown_binding` (#3260)\n\n### Description\n\nBefore starting on #3255, improve the DX of `rolldown_binding`.",
+          "timestamp": "2024-12-29T09:35:30Z",
+          "tree_id": "cd346f9b55843732e7e15adc05ed1bd9a459378a",
+          "url": "https://github.com/rolldown/rolldown/commit/b36d6e1b98bb31e633a3b0a8a0c0e3ef13480b4c"
+        },
+        "date": 1735466173248,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "418.44",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "669.26",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1112.50",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1495.11",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "145.12",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "217.63",
             "unit": "ms / ops"
           }
         ]
