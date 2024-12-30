@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1735473293355,
+  "lastUpdate": 1735541388879,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -69839,6 +69839,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "213.38",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "laipichan@qq.com",
+            "name": "dalaoshu",
+            "username": "shulaoda"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "aa629285544fe03856d2de13eecd47029f69a27b",
+          "message": "chore(justfile): fix test-update (#3262)\n\n### Description\n\nSeems this PR breaks `just test-node rolldown --update` @underfin cc\n\n_Originally posted by @hyf0 in\nhttps://github.com/rolldown/rolldown/issues/3178#issuecomment-2562646748_\n            \n\nI don't know why it needs to be split. \nPerhaps we can control whether to run the watch-specific test cases\nseparately using the `-t` command.",
+          "timestamp": "2024-12-30T06:28:25Z",
+          "tree_id": "8181e6ac785f6bf19d2a96e4f2ec029454b074e8",
+          "url": "https://github.com/rolldown/rolldown/commit/aa629285544fe03856d2de13eecd47029f69a27b"
+        },
+        "date": 1735541388849,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "411.35",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "664.27",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1092.66",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1463.49",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "142.34",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "198.33",
             "unit": "ms / ops"
           }
         ]
