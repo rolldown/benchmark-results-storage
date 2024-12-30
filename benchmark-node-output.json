@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1735541820012,
+  "lastUpdate": 1735578465152,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -69893,6 +69893,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "200.71",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f1c6bdf7c66d24958f85d3327e523ba690e7b7a9",
+          "message": "chore: reduce node benchmark iteration time (#3273)\n\n<!-- Thank you for contributing! -->\n\n### Description\nthe default bench iteration time is too high, so reduce iteration time\nto avoid github CI auto terminated.\nref\nhttps://github.com/tinylibs/tinybench/blob/main/src/constants.ts#L1034-L1038\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2024-12-30T16:50:43Z",
+          "tree_id": "b7cf816e24cc73da4d8490ca61fe5e69bd86ac51",
+          "url": "https://github.com/rolldown/rolldown/commit/f1c6bdf7c66d24958f85d3327e523ba690e7b7a9"
+        },
+        "date": 1735578465127,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "378.49",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "591.55",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "982.60",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1335.50",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "129.02",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "185.53",
             "unit": "ms / ops"
           }
         ]
