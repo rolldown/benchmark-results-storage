@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1735617287480,
+  "lastUpdate": 1735662708490,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -70055,6 +70055,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "187.69",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "laipichan@qq.com",
+            "name": "dalaoshu",
+            "username": "shulaoda"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "ffbc6572d77d2ef050b17fb8f848c4e783800723",
+          "message": "chore: update `.prettierignore` and `rolldown-binding.wasi` (#3278)\n\n### Description\n\nRelated to #3267\n\nAfter completing the relevant tests, run `just lint`:\n\n```bash\n[lint-prettier] [warn] packages/rolldown/tests/cli/fixtures/config-multiply-options/watch-dist-options/cjs.js\n[lint-prettier] [warn] packages/rolldown/tests/cli/fixtures/config-multiply-options/watch-dist-options/esm.js\n[lint-prettier] [warn] packages/rolldown/tests/cli/fixtures/config-multiply-output/watch-dist-output/cjs.js\n[lint-prettier] [warn] packages/rolldown/tests/cli/fixtures/config-multiply-output/watch-dist-output/esm.js\n[lint-prettier] [warn] Code style issues found in 4 files. Run Prettier with --write to fix.\n[lint-prettier]  ELIFECYCLE  Command failed with exit code 1.\nERROR: \"lint-prettier\" exited with 1.\n```",
+          "timestamp": "2024-12-31T16:14:30Z",
+          "tree_id": "623a81a402b9e5fa0221a22f019aed65f574c291",
+          "url": "https://github.com/rolldown/rolldown/commit/ffbc6572d77d2ef050b17fb8f848c4e783800723"
+        },
+        "date": 1735662708457,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "391.56",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "616.44",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1041.07",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1375.05",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "133.38",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "197.02",
             "unit": "ms / ops"
           }
         ]
