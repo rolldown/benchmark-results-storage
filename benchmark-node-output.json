@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1735662708490,
+  "lastUpdate": 1735662792276,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -70071,44 +70071,44 @@
             "name": "GitHub",
             "username": "web-flow"
           },
-          "distinct": false,
-          "id": "ffbc6572d77d2ef050b17fb8f848c4e783800723",
-          "message": "chore: update `.prettierignore` and `rolldown-binding.wasi` (#3278)\n\n### Description\n\nRelated to #3267\n\nAfter completing the relevant tests, run `just lint`:\n\n```bash\n[lint-prettier] [warn] packages/rolldown/tests/cli/fixtures/config-multiply-options/watch-dist-options/cjs.js\n[lint-prettier] [warn] packages/rolldown/tests/cli/fixtures/config-multiply-options/watch-dist-options/esm.js\n[lint-prettier] [warn] packages/rolldown/tests/cli/fixtures/config-multiply-output/watch-dist-output/cjs.js\n[lint-prettier] [warn] packages/rolldown/tests/cli/fixtures/config-multiply-output/watch-dist-output/esm.js\n[lint-prettier] [warn] Code style issues found in 4 files. Run Prettier with --write to fix.\n[lint-prettier]  ELIFECYCLE  Command failed with exit code 1.\nERROR: \"lint-prettier\" exited with 1.\n```",
-          "timestamp": "2024-12-31T16:14:30Z",
-          "tree_id": "623a81a402b9e5fa0221a22f019aed65f574c291",
-          "url": "https://github.com/rolldown/rolldown/commit/ffbc6572d77d2ef050b17fb8f848c4e783800723"
+          "distinct": true,
+          "id": "65e3d8ad8d736fc23feb6edf0a911f9505dee529",
+          "message": "perf: improve hook filter related logic in `rolldown_binding` (#3266)\n\n### Description\n\nRelated to #3265",
+          "timestamp": "2024-12-31T16:15:45Z",
+          "tree_id": "9aee2ed09cddec48e541bd7a8bd45102b5ef0a9f",
+          "url": "https://github.com/rolldown/rolldown/commit/65e3d8ad8d736fc23feb6edf0a911f9505dee529"
         },
-        "date": 1735662708457,
+        "date": 1735662792251,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x (default)",
-            "value": "391.56",
+            "value": "364.28",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap (default)",
-            "value": "616.44",
+            "value": "593.21",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify (default)",
-            "value": "1041.07",
+            "value": "978.45",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify-sourcemap (default)",
-            "value": "1375.05",
+            "value": "1355.42",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts (default)",
-            "value": "133.38",
+            "value": "132.59",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts-sourcemap (default)",
-            "value": "197.02",
+            "value": "190.18",
             "unit": "ms / ops"
           }
         ]
