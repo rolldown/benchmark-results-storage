@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1735800662117,
+  "lastUpdate": 1735801132033,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -70271,6 +70271,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "186.48",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "82b4e3062abaa7e4acf3ee1eea0553c7fd8ef13a",
+          "message": "feat: give error when using both the file and the dir option (#3282)\n\n<!-- Thank you for contributing! -->\n\n### Description\nrelated https://github.com/rolldown/rolldown/issues/3281\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-01-02T06:41:48Z",
+          "tree_id": "815d009c384b4fa3c6ceb3da5d633e0d4dd0fdff",
+          "url": "https://github.com/rolldown/rolldown/commit/82b4e3062abaa7e4acf3ee1eea0553c7fd8ef13a"
+        },
+        "date": 1735801132008,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "384.21",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "598.62",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1020.39",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1363.22",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "136.45",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "192.92",
             "unit": "ms / ops"
           }
         ]
