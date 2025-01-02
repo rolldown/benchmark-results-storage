@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1735786561908,
+  "lastUpdate": 1735798226561,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -70163,6 +70163,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "187.24",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "laipichan@qq.com",
+            "name": "dalaoshu",
+            "username": "shulaoda"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d16adbc046309a82e5d9050f0f52e754c61edd2b",
+          "message": "chore(rolldown_binding): remove unnecessary `type_aliases.rs` (#3280)\n\n### Description\n\nManaging `type_aliases.rs` in the project root is less ideal than moving\nit to `types/mod.rs`, making the structure clearer and more organized.\n\nI'm not sure if it is a good idea and it's just my personal suggestion.\nFeel free to close it if it's not suitable.",
+          "timestamp": "2025-01-02T05:53:36Z",
+          "tree_id": "03c4a4c1eb30ab0cd5b5a6c15b13dc7b0373fdfd",
+          "url": "https://github.com/rolldown/rolldown/commit/d16adbc046309a82e5d9050f0f52e754c61edd2b"
+        },
+        "date": 1735798226533,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "373.47",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "586.62",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "986.39",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1346.95",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "129.11",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "217.21",
             "unit": "ms / ops"
           }
         ]
