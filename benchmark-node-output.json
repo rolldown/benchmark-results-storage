@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1735662792276,
+  "lastUpdate": 1735786561908,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -70109,6 +70109,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "190.18",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "laipichan@qq.com",
+            "name": "dalaoshu",
+            "username": "shulaoda"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "149566a616f4fb29e0ea41a9fd8fa5d1ba8ce9c4",
+          "message": "refactor(rolldown_binding): replace unnecessary `TryFrom` with `From` (#3279)\n\n### Description\n\nRelated to #3266",
+          "timestamp": "2025-01-02T02:38:26Z",
+          "tree_id": "b752093f083a3102835977ce50f24e4710679405",
+          "url": "https://github.com/rolldown/rolldown/commit/149566a616f4fb29e0ea41a9fd8fa5d1ba8ce9c4"
+        },
+        "date": 1735786561883,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "380.94",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "586.67",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "986.76",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1346.76",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "131.79",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "187.24",
             "unit": "ms / ops"
           }
         ]
