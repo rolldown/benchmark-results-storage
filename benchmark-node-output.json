@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1735801132033,
+  "lastUpdate": 1735895223918,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -70325,6 +70325,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "192.92",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "31cc7b82e265ae53797ffabf7dda4c02a1c12b8b",
+          "message": "fix(splitting): ensure correct __export symbol reference (#3289)\n\n<!-- Thank you for contributing! -->\n\n### Description\nclose https://github.com/rolldown/rolldown/issues/3288\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-01-03T08:50:25Z",
+          "tree_id": "656a5f358b2a1fe6953a2955e51beabbca543dc7",
+          "url": "https://github.com/rolldown/rolldown/commit/31cc7b82e265ae53797ffabf7dda4c02a1c12b8b"
+        },
+        "date": 1735895223892,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "364.25",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "585.70",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "982.09",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1332.31",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "128.34",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "189.48",
             "unit": "ms / ops"
           }
         ]
