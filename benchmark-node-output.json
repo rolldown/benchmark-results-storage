@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1735907795874,
+  "lastUpdate": 1735977276890,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -70433,6 +70433,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "192.88",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "laipichan@qq.com",
+            "name": "dalaoshu",
+            "username": "shulaoda"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "14e7cc69f882e2e1646083eee1784374b38eb9c7",
+          "message": "chore(infra): migrate the output schemas from `zod` to `valibot` (#3291)\n\n### Description\n\nRelated to #3099",
+          "timestamp": "2025-01-04T07:37:33Z",
+          "tree_id": "e74c322ea32d8c54611ce6e507f9f258eab97f70",
+          "url": "https://github.com/rolldown/rolldown/commit/14e7cc69f882e2e1646083eee1784374b38eb9c7"
+        },
+        "date": 1735977276865,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "376.92",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "594.76",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1003.80",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1372.34",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "135.59",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "197.05",
             "unit": "ms / ops"
           }
         ]
