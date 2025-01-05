@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1735977276890,
+  "lastUpdate": 1736062932599,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -70487,6 +70487,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "197.05",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5571513ecf6c6e642e9e7b588acf1b299f38d43c",
+          "message": "perf: parallel `to_module_info` (#3293)\n\n<!-- Thank you for contributing! -->\n\n### Description\n**Before** \n\n![image](https://github.com/user-attachments/assets/9e7f0585-6a28-4a0b-91f0-d5a91b0ed79d),\n**After**\n\n![image](https://github.com/user-attachments/assets/f1ba6e97-36b5-4f49-9e95-374f8823d902)\n\nSince most of the time came from `to_module_info` and `sorting` of\n`importers`, lock contention overhead is relatively small. The larger\nthe project, the more significant the effect.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-01-05T07:24:52Z",
+          "tree_id": "40a163efe44e58c155d589b3f13427ebbec9e2e9",
+          "url": "https://github.com/rolldown/rolldown/commit/5571513ecf6c6e642e9e7b588acf1b299f38d43c"
+        },
+        "date": 1736062932575,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "356.94",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "575.25",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "966.99",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1301.00",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "127.00",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "181.95",
             "unit": "ms / ops"
           }
         ]
