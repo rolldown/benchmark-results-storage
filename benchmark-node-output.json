@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1736131886060,
+  "lastUpdate": 1736139682252,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -70649,6 +70649,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "184.23",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "laipichan@qq.com",
+            "name": "dalaoshu",
+            "username": "shulaoda"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d1d4e0b04e6427a427b831005be738dae6f6f179",
+          "message": "chore(infra): remove all zod-related code (#3299)\n\n### Description\n\nRelated to #3099",
+          "timestamp": "2025-01-06T04:44:43Z",
+          "tree_id": "f58f4187190cd6b9cb490c18a173ebb16e498c7a",
+          "url": "https://github.com/rolldown/rolldown/commit/d1d4e0b04e6427a427b831005be738dae6f6f179"
+        },
+        "date": 1736139682226,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "365.03",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "588.73",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1000.43",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1352.32",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "131.60",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "192.52",
             "unit": "ms / ops"
           }
         ]
