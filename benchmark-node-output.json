@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1736139682252,
+  "lastUpdate": 1736148071829,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -70703,6 +70703,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "192.52",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "laipichan@qq.com",
+            "name": "dalaoshu",
+            "username": "shulaoda"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "45c13f90f006748d7929037e6b5f1a6d383d8e30",
+          "message": "refactor(infra): change schema name from camelCase to PascalCase (#3300)\n\n### Description\n\ncloses #3099 \n\nThe related task has been completed, and I have aligned the schema\nnaming convention with `valibot`.",
+          "timestamp": "2025-01-06T07:04:03Z",
+          "tree_id": "0ff837aa1e6aa39c82671f71f8ef69b1622f2244",
+          "url": "https://github.com/rolldown/rolldown/commit/45c13f90f006748d7929037e6b5f1a6d383d8e30"
+        },
+        "date": 1736148071803,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "369.44",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "602.92",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1012.32",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1366.89",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "130.18",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "190.36",
             "unit": "ms / ops"
           }
         ]
