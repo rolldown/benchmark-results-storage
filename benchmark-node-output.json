@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1736148071829,
+  "lastUpdate": 1736217229062,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -70757,6 +70757,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "190.36",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "laipichan@qq.com",
+            "name": "dalaoshu",
+            "username": "shulaoda"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7aeb64c9d9813d64aceea7fff9f0741dcefe1f42",
+          "message": "chore: move `module-side-effects.ts` to `types` (#3303)\n\n### Description\n\nAfter #3299, the `rolldown/treeshake` directory only contains\n`module-side-effects.ts`, which only involves type exports. Therefore,\nit is unnecessary as a standalone directory and can be moved to the\n`types` directory.",
+          "timestamp": "2025-01-07T02:16:48Z",
+          "tree_id": "e17499fa9816723201cc82eb6973bc6a1367500f",
+          "url": "https://github.com/rolldown/rolldown/commit/7aeb64c9d9813d64aceea7fff9f0741dcefe1f42"
+        },
+        "date": 1736217229036,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "395.98",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "608.13",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1016.43",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1379.82",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "138.42",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "192.19",
             "unit": "ms / ops"
           }
         ]
