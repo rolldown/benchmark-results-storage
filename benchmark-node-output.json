@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1736217229062,
+  "lastUpdate": 1736223312822,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -70811,6 +70811,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "192.19",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "a1fb0ffbcac5259a3b78a4d8dfa46b9a5862827c",
+          "message": "fix: make outdir behavior compatible with rollup if file is used (#3304)\n\n<!-- Thank you for contributing! -->\n\n### Description\nclose https://github.com/rolldown/rolldown/issues/3240\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-01-07T03:58:38Z",
+          "tree_id": "f520e19c58a5c50c1eabc890aa7e93e8e9fd5918",
+          "url": "https://github.com/rolldown/rolldown/commit/a1fb0ffbcac5259a3b78a4d8dfa46b9a5862827c"
+        },
+        "date": 1736223312798,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "372.59",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "591.92",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "998.05",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1374.48",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "129.33",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "188.55",
             "unit": "ms / ops"
           }
         ]
