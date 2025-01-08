@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1736305455247,
+  "lastUpdate": 1736308606290,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -71081,6 +71081,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "192.76",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "laipichan@qq.com",
+            "name": "dalaoshu",
+            "username": "shulaoda"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "de99c4598d155fd8308238c1585a9740cae88777",
+          "message": "refactor(rust): merge duplicate branches and reuse common logic (#3311)\n\n### Description\n\nThe branches `if matches!(importee.exports_kind, ExportsKind::CommonJs)`\nand `if rec.meta.contains(ImportRecordMeta::IS_REQUIRE_UNUSED)` share\nthe same logic, so we can merge them.\n\nAdditionally, both branches use the same `wrap_ref_call_expr`, which can\nbe defined outside the branches for reuse.",
+          "timestamp": "2025-01-08T03:39:01Z",
+          "tree_id": "c023012c7052834cb04475bf7a044ec237fbebc2",
+          "url": "https://github.com/rolldown/rolldown/commit/de99c4598d155fd8308238c1585a9740cae88777"
+        },
+        "date": 1736308606265,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "369.02",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "592.46",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1014.88",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1368.48",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "136.95",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "191.63",
             "unit": "ms / ops"
           }
         ]
