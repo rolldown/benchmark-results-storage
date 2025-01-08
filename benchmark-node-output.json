@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1736305277793,
+  "lastUpdate": 1736305455247,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -71044,43 +71044,43 @@
             "username": "web-flow"
           },
           "distinct": false,
-          "id": "a2eee8a5219363ef0f2406593dcd565f8c842542",
-          "message": "refactor(rolldown_sourcemap): tweak `line_count` related code (#3310)\n\n### Description\n\nRelated to #2626\n\nSince all the logic involving `lines_count` has already been inlined\ninto the `Source` trait of `rolldown_sourcemap`, there is no need to\nexpose `lines_count` anymore.",
-          "timestamp": "2025-01-08T02:44:42Z",
-          "tree_id": "97d3a5417fe7d655e270bd29149a3c3f44b78631",
-          "url": "https://github.com/rolldown/rolldown/commit/a2eee8a5219363ef0f2406593dcd565f8c842542"
+          "id": "18da9cb0cd5486965b2fa2ec16f09ca4cd7f3963",
+          "message": "refactor(rust): move `call_expression_ext.rs` to `rolldown_ecmascript_utils` (#3309)\n\n### Description\n\nTo centralize the management of ECMAScript AST extensions.",
+          "timestamp": "2025-01-08T02:45:23Z",
+          "tree_id": "3a77580d52424ce90b3682be9460338992bce590",
+          "url": "https://github.com/rolldown/rolldown/commit/18da9cb0cd5486965b2fa2ec16f09ca4cd7f3963"
         },
-        "date": 1736305277759,
+        "date": 1736305455210,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x (default)",
-            "value": "385.14",
+            "value": "377.49",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap (default)",
-            "value": "598.15",
+            "value": "589.09",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify (default)",
-            "value": "1025.24",
+            "value": "988.77",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify-sourcemap (default)",
-            "value": "1371.37",
+            "value": "1362.89",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts (default)",
-            "value": "134.02",
+            "value": "133.14",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts-sourcemap (default)",
-            "value": "216.43",
+            "value": "192.76",
             "unit": "ms / ops"
           }
         ]
