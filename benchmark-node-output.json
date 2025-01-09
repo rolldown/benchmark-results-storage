@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1736399016203,
+  "lastUpdate": 1736400490756,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -71189,6 +71189,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "182.20",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "cf4c254ef613ca8dca381ca1831d9f9c122e3d13",
+          "message": "feat: eliminate unnecessary default property access (#3312)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n\nTo ensure that the behavior remains consistent with the previous interop\nbehavior after removing the `default` property access, we need to\nidentify all cases where `import_default_alias.default ==\nimport_default_alias`. This can be inferred from the runtime.\n\n```js\nvar __toESM = (mod, isNodeMode, target) => {\n    return (\n        (target = mod != null ? __create(__getProtoOf(mod)) : {}),\n        __copyProps(\n            isNodeMode || !mod || !mod.__esModule\n                ? __defProp(target, \"default\", {\n                        value: mod,\n                        enumerable: true,\n                    })\n                : target,\n            mod,\n        )\n    );\n};\n```\n\nIt is not difficult to see that the conditions are:\n1. `isNodeMode` is `true || 1`\n2. The module itself is an empty module\n3. `mod.__esModule` is false\n\nCondition one can be obtained from [this\nlink](https://github.com/rolldown/rolldown/blob/eb47e2a4b5e07de61e6eb8101f4f07ecbf7c9c30/crates/rolldown_common/src/module/normal_module.rs?plain=1#L191-L201).\nCondition two can be inferred through analysis; an empty module will\ndefault to being treated as `esm`, so the only case is `module.exports =\nundefined`.\nCondition three can also be inferred through analysis, almost done in\nhttps://github.com/rolldown/rolldown/pull/3257.\n\nHowever, it is important to note that when accessing the property\n`default` after `import_default_alias`, an unsafe situation may arise.\nFor example:\n```js\n// index.js\nimport foo from './foo.js';\nconsole.log(foo.default.bar === 123);\n// foo.js\nmodule.exports = { default: { bar: 123 } };\n```\n\nHere, condition 1 is not satisfied, condition 2 is not satisfied, but\ncondition 3 is satisfied. Therefore, after `__toEsm`, the `mod` object\nwill be transformed into:\n```js\n{\n  default: { default: { bar: 123 } }\n}\n```\nIn this case, `foo.default.bar` is no longer equal to\n`foo.default.default.bar`. Specifically,\n`foo.default.bar === undefined`, \n`foo.default.default.bar === 123`.\n\n\n--- \n\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-01-09T05:11:14Z",
+          "tree_id": "4d6115c52ccdf7cdbc8641299582be9839572d45",
+          "url": "https://github.com/rolldown/rolldown/commit/cf4c254ef613ca8dca381ca1831d9f9c122e3d13"
+        },
+        "date": 1736400490731,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "368.14",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "584.49",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1003.64",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1337.13",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "130.92",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "184.86",
             "unit": "ms / ops"
           }
         ]
