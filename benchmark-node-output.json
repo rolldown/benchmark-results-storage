@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1736400490756,
+  "lastUpdate": 1736414264151,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -71243,6 +71243,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "184.86",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "42ee4c997588b2ee205eceae36b48a18c95aed96",
+          "message": "refactor: es module flag analyzer (#3315)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. extract common function\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-01-09T09:00:53Z",
+          "tree_id": "a81ab868871ddb91849651f58fb69c5b5c7041e4",
+          "url": "https://github.com/rolldown/rolldown/commit/42ee4c997588b2ee205eceae36b48a18c95aed96"
+        },
+        "date": 1736414264125,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "361.72",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "585.97",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "985.55",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1340.16",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "129.23",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "189.49",
             "unit": "ms / ops"
           }
         ]
