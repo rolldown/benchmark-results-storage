@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1736484995482,
+  "lastUpdate": 1736486980878,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -71405,6 +71405,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "176.65",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "laipichan@qq.com",
+            "name": "dalaoshu",
+            "username": "shulaoda"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8bb8e93c9dddd911d3781ebba2571b996537799a",
+          "message": "perf(link_stage): improve `LinkStage#sort_modules` (#3318)\n\n### Description\n\n- Remove unnecessary `executed_ids.insert(id);`\n- Remove meaningless\n`executed_ids.shrink_to(self.module_table.modules.len())`\n- Remove unnecessary\n`circular_dependencies.into_iter().collect::<Vec<_>>()` and `.copied()`",
+          "timestamp": "2025-01-10T05:07:13Z",
+          "tree_id": "9bcfc326ea4b412772ae03ee2b7a7ad0bb011d73",
+          "url": "https://github.com/rolldown/rolldown/commit/8bb8e93c9dddd911d3781ebba2571b996537799a"
+        },
+        "date": 1736486980848,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "371.30",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "600.92",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1024.74",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1368.50",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "129.94",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "190.77",
             "unit": "ms / ops"
           }
         ]
