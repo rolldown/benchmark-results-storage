@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1736505439193,
+  "lastUpdate": 1736594322707,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -71567,6 +71567,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "188.33",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "laipichan@qq.com",
+            "name": "dalaoshu",
+            "username": "shulaoda"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "67a005188f1c82b8b8bec6a333fc95a35f5291d7",
+          "message": "refactor(rust): remove unnecessary `CssModule` (#3334)\n\n### Description\n\nRelated to #1551 \n\nWe introduced it earlier, but it seems to remain unused. So, I'm\ncreating a PR to point out it. If it's intended for future use, feel\nfree to close the PR.\n\nThis may be related to `rolldown_css`, which we introduced but haven't\nreally used yet.",
+          "timestamp": "2025-01-11T11:02:39Z",
+          "tree_id": "92d84936f815ed92c1df50e66c1a3601ff0a86ae",
+          "url": "https://github.com/rolldown/rolldown/commit/67a005188f1c82b8b8bec6a333fc95a35f5291d7"
+        },
+        "date": 1736594322681,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "368.33",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "579.21",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "993.17",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1322.29",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "125.21",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "184.71",
             "unit": "ms / ops"
           }
         ]
