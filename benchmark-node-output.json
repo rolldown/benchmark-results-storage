@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1736760979108,
+  "lastUpdate": 1736766361447,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -72215,6 +72215,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "185.95",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "dc3fc06bccdda2d342c2da25c2e6bfee93b8d9cb",
+          "message": "feat: support PluginContext emitChunk (#3327)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nThe `PluginContext#emitChunk` is used to add an extra entry point at\nrollup. Its special feature is that you can specify the filename of the\nentry chunk. It generates a specified entry name at the\nmodule-federation remote. Here is an example. We need to generate a\nchunk with `filename: 'remoteEntry.js'`.\n\n``` .js\n{\n    filename: 'remoteEntry.js',\n    exposes: { './App': './src/App', }\n}\n```\n\nIt is a children method of `emitFile` with `type: 'chunk'` at rollup,\nref https://rollupjs.org/plugin-development/#this-emitfile. But here is\nthe difficult to make the method to sync. So here add an async\n`emitChunk` method at the pr, i will try to make it to sync at the\nfuture.\n\nThe rollup generate specified chunk name implementation is add the\n`fileName` to `Moudle#chunkFileNames` and use it generate chunk at\nhttps://github.com/rollup/rollup/blob/master/src/Chunk.ts#L420\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-01-13T10:47:59Z",
+          "tree_id": "9a03b66ee2e176e0691e7f129b81ae56782150d4",
+          "url": "https://github.com/rolldown/rolldown/commit/dc3fc06bccdda2d342c2da25c2e6bfee93b8d9cb"
+        },
+        "date": 1736766361417,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "361.78",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "593.31",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1093.30",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1442.74",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "123.45",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "180.10",
             "unit": "ms / ops"
           }
         ]
