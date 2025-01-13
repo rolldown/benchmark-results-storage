@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1736744961861,
+  "lastUpdate": 1736751226048,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -71999,6 +71999,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "178.90",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "hi.ogawa.zz@gmail.com",
+            "name": "Hiroshi Ogawa",
+            "username": "hi-ogawa"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "b8f0e19b2e6b0024e61ae07496a0f988bc195925",
+          "message": "fix(plugin/json): tree shake json named exports (#3346)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nThis was once fixed in https://github.com/rolldown/rolldown/pull/2029,\nbut https://github.com/rolldown/rolldown/pull/3103 added another\n`JSON.parse` without pure comment.\n\nSomeone noticed the same bug on Vite\nhttps://github.com/vitejs/vite/pull/19189, so I ported to here.",
+          "timestamp": "2025-01-13T06:37:31Z",
+          "tree_id": "6bc9120cc75788c59c8023f866379980dc303be5",
+          "url": "https://github.com/rolldown/rolldown/commit/b8f0e19b2e6b0024e61ae07496a0f988bc195925"
+        },
+        "date": 1736751226019,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "373.39",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "624.24",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1140.36",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1441.82",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "132.35",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "186.03",
             "unit": "ms / ops"
           }
         ]
