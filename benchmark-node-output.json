@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1736740514966,
+  "lastUpdate": 1736744961861,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -71945,6 +71945,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "186.03",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6d849eaa8f567e187769fddd3d79057f87a530ca",
+          "message": "perf: cache raw_source and module_type (#3341)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. Caching `load_source` result could reducing interaction with file\nsystem\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-01-13T13:03:24+08:00",
+          "tree_id": "27623ed7ecfb4e6acfd0868919c5f52a699a9370",
+          "url": "https://github.com/rolldown/rolldown/commit/6d849eaa8f567e187769fddd3d79057f87a530ca"
+        },
+        "date": 1736744961832,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "373.47",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "606.27",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1147.79",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1448.88",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "125.64",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "178.90",
             "unit": "ms / ops"
           }
         ]
