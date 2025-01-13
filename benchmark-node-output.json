@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1736757937604,
+  "lastUpdate": 1736760979108,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -72161,6 +72161,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "182.04",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ae34f383870acad76e829fc1ab6700b7723ef59b",
+          "message": "fix(cli): call options hook once with multiply output (#3348)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nclose https://github.com/rolldown/rolldown/issues/3316\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-01-13T09:19:28Z",
+          "tree_id": "1a09759a71c91fa14d03a725e5a1acba7e0a1f58",
+          "url": "https://github.com/rolldown/rolldown/commit/ae34f383870acad76e829fc1ab6700b7723ef59b"
+        },
+        "date": 1736760979075,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "375.51",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "613.04",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1121.94",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1485.23",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "127.43",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "185.95",
             "unit": "ms / ops"
           }
         ]
