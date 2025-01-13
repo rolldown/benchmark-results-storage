@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1736738283075,
+  "lastUpdate": 1736739360351,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -71837,6 +71837,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "186.29",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5ea5182adc7ceb89a71d22132276ecc8dd3054fc",
+          "message": "chore(deps): update rust crates (#3297)\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [async-trait](https://redirect.github.com/dtolnay/async-trait) |\nworkspace.dependencies | patch | `0.1.83` -> `0.1.84` |\n| [insta](https://insta.rs/)\n([source](https://redirect.github.com/mitsuhiko/insta)) |\nworkspace.dependencies | minor | `1.41.1` -> `1.42.0` |\n| [itertools](https://redirect.github.com/rust-itertools/itertools) |\nworkspace.dependencies | minor | `0.13.0` -> `0.14.0` |\n| [jsonschema](https://redirect.github.com/Stranger6667/jsonschema) |\nworkspace.dependencies | patch | `0.28.0` -> `0.28.1` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>dtolnay/async-trait (async-trait)</summary>\n\n###\n[`v0.1.84`](https://redirect.github.com/dtolnay/async-trait/releases/tag/0.1.84)\n\n[Compare\nSource](https://redirect.github.com/dtolnay/async-trait/compare/0.1.83...0.1.84)\n\n- Support `impl Trait` in return type\n([#&#8203;282](https://redirect.github.com/dtolnay/async-trait/issues/282))\n\n</details>\n\n<details>\n<summary>mitsuhiko/insta (insta)</summary>\n\n###\n[`v1.42.0`](https://redirect.github.com/mitsuhiko/insta/blob/HEAD/CHANGELOG.md#1420)\n\n[Compare\nSource](https://redirect.github.com/mitsuhiko/insta/compare/1.41.1...1.42.0)\n\n- Text snapshots no longer contain `snapshot_type: text` in their\nmetadata. For\ncontext, we originally added this in the prior release (1.41.0) to\nsupport\nbinary snapshots, but some folks disliked the diff noise on any snapshot\nchanges, and the maintainers' weighted votes favored reverting. I\napologize\nthat this will cause some additional churn for those who used `cargo\ntest --force-update-snapshots` to update their snapshots to the 1.41\nformat;\nrunning this again with 1.42 will remove those metadata entries. To\nconfirm:\nthis doesn't affect whether snapshot tests pass or fail — the worst\nimpact is\nsome additional diffs in metadata.\n[#&#8203;690](https://redirect.github.com/mitsuhiko/insta/issues/690)\n-   Pending snapshots are no longer removed throughout the workspace by\n`cargo-insta` before running tests. Instead, running a test will\noverwrite or\nremove its own pending snapshot. To remove all pending snapshots, use\n`cargo\ninsta reject` or run tests with `--unreferenced=delete`.\n[#&#8203;651](https://redirect.github.com/mitsuhiko/insta/issues/651)\n-   `insta::internals::SettingsBindDropGuard` (returned from\n`Settings::bind_to_scope`) no longer implements `Send`. This was\nincorrect and\nany tests relying on this behavior where not working properly. Fixes\n[#&#8203;694](https://redirect.github.com/mitsuhiko/insta/issues/694) in\n[#&#8203;695](https://redirect.github.com/mitsuhiko/insta/issues/695) by\n[@&#8203;jalil-salame](https://redirect.github.com/jalil-salame)\n\n</details>\n\n<details>\n<summary>rust-itertools/itertools (itertools)</summary>\n\n###\n[`v0.14.0`](https://redirect.github.com/rust-itertools/itertools/blob/HEAD/CHANGELOG.md#0140)\n\n[Compare\nSource](https://redirect.github.com/rust-itertools/itertools/compare/v0.13.0...v0.14.0)\n\n##### Breaking\n\n- Increased MSRV to 1.63.0\n([#&#8203;960](https://redirect.github.com/rust-itertools/itertools/issues/960))\n- Removed generic parameter from `cons_tuples`\n([#&#8203;988](https://redirect.github.com/rust-itertools/itertools/issues/988))\n\n##### Added\n\n- Added `array_combinations`\n([#&#8203;991](https://redirect.github.com/rust-itertools/itertools/issues/991))\n- Added `k_smallest_relaxed` and variants\n([#&#8203;925](https://redirect.github.com/rust-itertools/itertools/issues/925))\n- Added `next_array` and `collect_array`\n([#&#8203;560](https://redirect.github.com/rust-itertools/itertools/issues/560))\n- Implemented `DoubleEndedIterator` for `FilterOk`\n([#&#8203;948](https://redirect.github.com/rust-itertools/itertools/issues/948))\n- Implemented `DoubleEndedIterator` for `FilterMapOk`\n([#&#8203;950](https://redirect.github.com/rust-itertools/itertools/issues/950))\n\n##### Changed\n\n- Allow `Q: ?Sized` in `Itertools::contains`\n([#&#8203;971](https://redirect.github.com/rust-itertools/itertools/issues/971))\n- Improved hygiene of `chain!`\n([#&#8203;943](https://redirect.github.com/rust-itertools/itertools/issues/943))\n- Improved `into_group_map_by` documentation\n([#&#8203;1000](https://redirect.github.com/rust-itertools/itertools/issues/1000))\n- Improved `tree_reduce` documentation\n([#&#8203;955](https://redirect.github.com/rust-itertools/itertools/issues/955))\n- Improved discoverability of `merge_join_by`\n([#&#8203;966](https://redirect.github.com/rust-itertools/itertools/issues/966))\n- Improved discoverability of `take_while_inclusive`\n([#&#8203;972](https://redirect.github.com/rust-itertools/itertools/issues/972))\n- Improved documentation of `find_or_last` and `find_or_first`\n([#&#8203;984](https://redirect.github.com/rust-itertools/itertools/issues/984))\n- Prevented exponentially large type sizes in `tuple_combinations`\n([#&#8203;945](https://redirect.github.com/rust-itertools/itertools/issues/945))\n- Added `track_caller` attr for `asser_equal`\n([#&#8203;976](https://redirect.github.com/rust-itertools/itertools/issues/976))\n\n##### Notable Internal Changes\n\n- Fixed clippy lints\n([#&#8203;956](https://redirect.github.com/rust-itertools/itertools/issues/956),\n[#&#8203;987](https://redirect.github.com/rust-itertools/itertools/issues/987),\n[#&#8203;1008](https://redirect.github.com/rust-itertools/itertools/issues/1008))\n- Addressed warnings within doctests\n([#&#8203;964](https://redirect.github.com/rust-itertools/itertools/issues/964))\n- CI: Run most tests with miri\n([#&#8203;961](https://redirect.github.com/rust-itertools/itertools/issues/961))\n- CI: Speed up \"cargo-semver-checks\" action\n([#&#8203;938](https://redirect.github.com/rust-itertools/itertools/issues/938))\n- Changed an instance of `default_features` in `Cargo.toml` to\n`default-features`\n([#&#8203;985](https://redirect.github.com/rust-itertools/itertools/issues/985))\n\n</details>\n\n<details>\n<summary>Stranger6667/jsonschema (jsonschema)</summary>\n\n###\n[`v0.28.1`](https://redirect.github.com/Stranger6667/jsonschema/blob/HEAD/CHANGELOG.md#0281---2024-12-31)\n\n##### Fixed\n\n- Handle fragment references within `$id`-anchored subschemas.\n[#&#8203;640](https://redirect.github.com/Stranger6667/jsonschema/issues/640)\n\n</details>\n\n---\n\n### Configuration\n\n📅 **Schedule**: Branch creation - \"before 11am on monday\" in timezone\nAsia/Shanghai, Automerge - \"before 11am on monday\" in timezone\nAsia/Shanghai.\n\n🚦 **Automerge**: Enabled.\n\n♻ **Rebasing**: Whenever PR is behind base branch, or you tick the\nrebase/retry checkbox.\n\n👻 **Immortal**: This PR will be recreated if closed unmerged. Get\n[config\nhelp](https://redirect.github.com/renovatebot/renovate/discussions) if\nthat's undesired.\n\n---\n\n- [ ] <!-- rebase-check -->If you want to rebase/retry this PR, check\nthis box\n\n---\n\nThis PR was generated by [Mend Renovate](https://mend.io/renovate/).\nView the [repository job\nlog](https://developer.mend.io/github/rolldown/rolldown).\n\n<!--renovate-debug:eyJjcmVhdGVkSW5WZXIiOiIzOS44NS4wIiwidXBkYXRlZEluVmVyIjoiMzkuODUuMCIsInRhcmdldEJyYW5jaCI6Im1haW4iLCJsYWJlbHMiOltdfQ==-->\n\n---------\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>\nCo-authored-by: IWANABETHATGUY <iwanabethatguy@qq.com>",
+          "timestamp": "2025-01-13T03:02:37Z",
+          "tree_id": "681f602e7ac5db017dd88f85a3ebf4462ea1186c",
+          "url": "https://github.com/rolldown/rolldown/commit/5ea5182adc7ceb89a71d22132276ecc8dd3054fc"
+        },
+        "date": 1736739360322,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "363.60",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "615.25",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1116.39",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1452.73",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "128.95",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "178.92",
             "unit": "ms / ops"
           }
         ]
