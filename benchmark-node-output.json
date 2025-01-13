@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1736751226048,
+  "lastUpdate": 1736754011152,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -72053,6 +72053,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "186.03",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "chenhaojie.chj@alibaba-inc.com",
+            "name": "hj",
+            "username": "Cecil0o0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6300e0f06462c57b032a5fed2c31a48fde81f480",
+          "message": "chore(build): colorize starting segment of every each line. (#3347)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->\n\n\n![image](https://github.com/user-attachments/assets/2a6ee210-05c4-47c1-a202-94dbeeb2aae0)\n\nchoose green color for semantic color of `success/done`, and then\ncolorize starting segment to identify a positive status for a line of\ninstruction such as `Cleaning` or `Copying`.",
+          "timestamp": "2025-01-13T07:24:31Z",
+          "tree_id": "58a953dfbe38cf7a133769199b2d2750d96d67f3",
+          "url": "https://github.com/rolldown/rolldown/commit/6300e0f06462c57b032a5fed2c31a48fde81f480"
+        },
+        "date": 1736754011123,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "369.82",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "611.23",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1089.87",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1430.80",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "130.52",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "181.09",
             "unit": "ms / ops"
           }
         ]
