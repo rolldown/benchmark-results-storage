@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1736643124497,
+  "lastUpdate": 1736731601194,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -71675,6 +71675,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "187.69",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "23bd67041f66d3fa01c86cecd20f09f018e46195",
+          "message": "chore(deps): update autofix-ci/action digest to 551dded (#3345)",
+          "timestamp": "2025-01-13T09:20:49+08:00",
+          "tree_id": "31345a7f0bd762e6b0c0ea29db6bfbf41b99b62b",
+          "url": "https://github.com/rolldown/rolldown/commit/23bd67041f66d3fa01c86cecd20f09f018e46195"
+        },
+        "date": 1736731601163,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "389.89",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "620.34",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1161.09",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1484.99",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "132.84",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "183.82",
             "unit": "ms / ops"
           }
         ]
