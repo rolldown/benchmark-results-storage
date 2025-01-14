@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1736849234256,
+  "lastUpdate": 1736850403728,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -72485,6 +72485,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "178.11",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "298dd8b76baee89ee54093d9bebe7604d95fee3d",
+          "message": "refactor: make PluginContext#emitChunk to be sync (#3351)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nMake the `PluginContext#emitChunk` to be sync, make it compatible with\nrollup.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-01-14T10:04:37Z",
+          "tree_id": "67ad34ccfb9d174daf7e3cc73fc001ed0a1a8474",
+          "url": "https://github.com/rolldown/rolldown/commit/298dd8b76baee89ee54093d9bebe7604d95fee3d"
+        },
+        "date": 1736850403699,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "371.23",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "600.63",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1083.51",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1477.48",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "131.09",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "177.37",
             "unit": "ms / ops"
           }
         ]
