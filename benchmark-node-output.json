@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1736775510980,
+  "lastUpdate": 1736838660320,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -72323,6 +72323,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "178.78",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "56fdfc59180a744206c95a68c65225bf9f751340",
+          "message": "chore: Use more noticible color for warning logging. (#3349)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. Closed #3277\n\n\n![image.png](https://graphite-user-uploaded-assets-prod.s3.amazonaws.com/DaCYGtH24FteGhZViwCT/d1ef615f-1a99-40fe-8aca-217d82d882b8.png)\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-01-14T06:54:32Z",
+          "tree_id": "25dbf6baba4c14e2a2626dba19ea5327ec377eac",
+          "url": "https://github.com/rolldown/rolldown/commit/56fdfc59180a744206c95a68c65225bf9f751340"
+        },
+        "date": 1736838660289,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "369.90",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "596.13",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1124.37",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1469.90",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "128.40",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "179.20",
             "unit": "ms / ops"
           }
         ]
