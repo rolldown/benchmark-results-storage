@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1736913149403,
+  "lastUpdate": 1736922368953,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -72593,6 +72593,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "204.98",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "04d005ab3f03d1ba271f3850b09527ddd8c24fe9",
+          "message": "refactor: resolve emit chunk id (#3356)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nHere should avoid using `PluginContext.resolve` to resolve id, it don't\nneed to care about `skip_self` things, it will increase complex for it,\nref https://github.com/rolldown/rolldown/pull/3330/files#r1915880632.\nThe rollup only resolve it with `resolve_id_with_plugins`, ref\nhttps://github.com/rollup/rollup/blob/master/src/ModuleLoader.ts#L670.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-01-15T06:09:13Z",
+          "tree_id": "43c2e14c7128458d7b101dcae1db5c9f7aa87cea",
+          "url": "https://github.com/rolldown/rolldown/commit/04d005ab3f03d1ba271f3850b09527ddd8c24fe9"
+        },
+        "date": 1736922368923,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "366.24",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "602.19",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1010.96",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1359.70",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "126.87",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "180.87",
             "unit": "ms / ops"
           }
         ]
