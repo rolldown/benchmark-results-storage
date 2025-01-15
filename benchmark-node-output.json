@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1736922368953,
+  "lastUpdate": 1736930426174,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -72647,6 +72647,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "180.87",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "400b5e4a3c7955feab5833bb287c36fb82c7ebbf",
+          "message": "feat: merge generated `__toESM` calls of cjs modules (#3343)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nContinue of https://github.com/rolldown/rolldown/pull/3216.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-01-15T08:20:58Z",
+          "tree_id": "b66cd3405d844b3ebfb8e84694fa713c03bd6c5e",
+          "url": "https://github.com/rolldown/rolldown/commit/400b5e4a3c7955feab5833bb287c36fb82c7ebbf"
+        },
+        "date": 1736930426143,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "379.10",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "622.39",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1056.76",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1441.52",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "132.85",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "187.90",
             "unit": "ms / ops"
           }
         ]
