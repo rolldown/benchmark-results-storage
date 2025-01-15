@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1736932122103,
+  "lastUpdate": 1736955279313,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -72755,6 +72755,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "177.98",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "laipichan@qq.com",
+            "name": "dalaoshu",
+            "username": "shulaoda"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "35fb1f881c48fcabe7137ba20e90d02d58cd3c5e",
+          "message": "perf(link_stage): improve `LinkStage#wrap_modules` (#3321)\n\n### Description\n\nWhen `need_to_wrap` is `true`, `wrap_module_recursively` is executed,\ncausing `module.import_records.iter()` to be processed repeatedly. We\ncan optimize this to avoid redundant iterations.\n\n\nhttps://github.com/rolldown/rolldown/blob/42ee4c997588b2ee205eceae36b48a18c95aed96/crates/rolldown/src/stages/link_stage/wrapping.rs#L89-L101",
+          "timestamp": "2025-01-15T15:17:35Z",
+          "tree_id": "f9048d4732b23bd7889b7ececb48f7623d194e52",
+          "url": "https://github.com/rolldown/rolldown/commit/35fb1f881c48fcabe7137ba20e90d02d58cd3c5e"
+        },
+        "date": 1736955279283,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "393.99",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "635.10",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1116.29",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1468.71",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "133.19",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "191.31",
             "unit": "ms / ops"
           }
         ]
