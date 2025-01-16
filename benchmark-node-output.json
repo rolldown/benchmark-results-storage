@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1737013105123,
+  "lastUpdate": 1737036024890,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -72863,6 +72863,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "180.38",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0c4eccf83bf79ae1d7e3bd2e9fc12966697be7ed",
+          "message": "refactor: rename esmodule flag analyzer to cjs ast analyzer (#3368)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-01-16T21:54:10+08:00",
+          "tree_id": "ff7b7b0a509e0654933340700a10a98dc16812c6",
+          "url": "https://github.com/rolldown/rolldown/commit/0c4eccf83bf79ae1d7e3bd2e9fc12966697be7ed"
+        },
+        "date": 1737036024860,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "367.71",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "603.39",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1108.87",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1430.36",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "128.42",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "181.55",
             "unit": "ms / ops"
           }
         ]
