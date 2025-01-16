@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1736955279313,
+  "lastUpdate": 1737013105123,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -72809,6 +72809,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "191.31",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1c2ef25de32a0d49b2bbfa4b3a0050a7d3c578a2",
+          "message": "feat(advanced-chunks): support `minModuleSize` and `maxModuleSize` options (#3361)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n- It's an option for filter out modules based on their sizes.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-01-16T07:21:45Z",
+          "tree_id": "a83a20c6a62e05300595dbe5742cf19d23810c41",
+          "url": "https://github.com/rolldown/rolldown/commit/1c2ef25de32a0d49b2bbfa4b3a0050a7d3c578a2"
+        },
+        "date": 1737013105096,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "371.91",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "571.86",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1027.60",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1359.64",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "128.44",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "180.38",
             "unit": "ms / ops"
           }
         ]
