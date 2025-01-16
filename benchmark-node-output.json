@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1737040396217,
+  "lastUpdate": 1737047234045,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -72971,6 +72971,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "183.85",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4f553596cbf103169546e8c8c1f15368ed262640",
+          "message": "fix: bailout module.exports for eliminate interop default property access (#3369)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. The interop for `module.exports` case is complex, it is hard to makes\nsure it is safe to optimize, so only optimize the interop `default`\nproperty access, if all exports from the target cjs module is static\n`exports.prop`, or it `module.exports = require('./mod'),\nfor the second condition, it is used to make sure the react pattern is\noptimized.\n2. When cjs module use `module.exports` to export a function, e.g.\n```js\n// index.js\niimport mod from './cjs.js'\n\nconsole.log(mod.call({}, 1, 2))\n\n// cjs.js\n\nmodule.exports = function (a, b) {\n  return a  + b\n}\n```\n\nafter bundle, \n\n```js\n// cjs.js\nvar require_cjs = __commonJS({\n  \"cjs.js\"(exports, module) {\n    module.exports = function(a, b) {\n      return a + b;\n    };\n  }\n});\n\n// entry.js\nvar import_cjs = __toESM(require_cjs());\nconsole.log(import_cjs.default.call({}, 1, 2));\n```\nthe `import_cjs` now is \n```bash\nFunction { default: [Function (anonymous)] }\n```\nSo `import_cjs.xxx` no more eq to `import_cjs.default.xxx`\n\nIf `module.exports` is assigned with a object literal, for most cases it\nshould worked except when one property is\n`__esModule`, due to the cjs is so dynamic, bailout for `module.exports`\nassignmentExpr for now, for `React` case it should still worked.\n3. Closed #3364\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-01-16T16:46:38Z",
+          "tree_id": "bc7e010013a030a1d3c3a4ff67b40cf5dd4781ad",
+          "url": "https://github.com/rolldown/rolldown/commit/4f553596cbf103169546e8c8c1f15368ed262640"
+        },
+        "date": 1737047234015,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "366.21",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "579.06",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1044.25",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1360.39",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "131.21",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "177.85",
             "unit": "ms / ops"
           }
         ]
