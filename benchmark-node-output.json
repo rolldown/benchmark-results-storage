@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1737110697170,
+  "lastUpdate": 1737130744666,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -73349,6 +73349,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "179.63",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "lynweklm@gmail.com",
+            "name": "LongYinan",
+            "username": "Brooooooklyn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e753edd14a50b45a6c2612c1bf186a3f55bb4501",
+          "message": "refactor: convert to TypeScript monorepo (#3376)\n\nConvert to the TypeScript monorepo, use `@oxc-node/core` to run `.ts`\nfiles",
+          "timestamp": "2025-01-17T16:02:50Z",
+          "tree_id": "a0037915430004d61560b6b056b158be8a96c8d0",
+          "url": "https://github.com/rolldown/rolldown/commit/e753edd14a50b45a6c2612c1bf186a3f55bb4501"
+        },
+        "date": 1737130744633,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "380.94",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "584.16",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1049.49",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1422.58",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "128.50",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "179.25",
             "unit": "ms / ops"
           }
         ]
