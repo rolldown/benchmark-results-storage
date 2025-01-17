@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1737094311032,
+  "lastUpdate": 1737099589916,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -73133,6 +73133,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "179.67",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "26622568+alpheustangs@users.noreply.github.com",
+            "name": "Alpheus",
+            "username": "alpheustangs"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f24e4969c4849c4b8d3e3fb2d29ee0977f5ca7ce",
+          "message": "feat: export `RolldownPluginOption` type (#3360)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->\n\nExport `RolldownPluginOption` type in case it will be used.\n\n```ts\nimport { defineConfig } from \"rolldown\";\n\nexport default defineConfig({\n    // plugins?: RolldownPluginOption;\n    plugins: [],\n});\n```",
+          "timestamp": "2025-01-17T15:33:57+08:00",
+          "tree_id": "721e12b8f3895008c04a056a4e5e3310f95d6047",
+          "url": "https://github.com/rolldown/rolldown/commit/f24e4969c4849c4b8d3e3fb2d29ee0977f5ca7ce"
+        },
+        "date": 1737099589886,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "360.61",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "581.85",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1035.48",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1370.57",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "125.36",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "179.19",
             "unit": "ms / ops"
           }
         ]
