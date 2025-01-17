@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1737047234045,
+  "lastUpdate": 1737093602986,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -73025,6 +73025,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "177.85",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "lynweklm@gmail.com",
+            "name": "LongYinan",
+            "username": "Brooooooklyn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "20a18e98567374d324fb949ef7fd23de5d349d28",
+          "message": "chore: npm packages Lockfile maintenance (#3372)\n\nnpm lockfile maintenance\n\n---------\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2025-01-17T05:44:09Z",
+          "tree_id": "ff13de5225fdc7f37032b894160c93f7fb945ac1",
+          "url": "https://github.com/rolldown/rolldown/commit/20a18e98567374d324fb949ef7fd23de5d349d28"
+        },
+        "date": 1737093602956,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "368.83",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "607.42",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1087.78",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1410.82",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "133.97",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "191.79",
             "unit": "ms / ops"
           }
         ]
