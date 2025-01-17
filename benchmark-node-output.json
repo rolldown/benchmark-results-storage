@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1737130744666,
+  "lastUpdate": 1737133112928,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -73403,6 +73403,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "179.25",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5bb588b1002a7c54ceae10a63bfd8f8935c4c68d",
+          "message": "feat(mf): load remote entry module (#3366)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-01-17T16:42:02Z",
+          "tree_id": "c67c62b37d1e6e893ca655035c6fa20ac73c9ccb",
+          "url": "https://github.com/rolldown/rolldown/commit/5bb588b1002a7c54ceae10a63bfd8f8935c4c68d"
+        },
+        "date": 1737133112896,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "373.51",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "589.74",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1052.01",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1429.80",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "127.10",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "182.75",
             "unit": "ms / ops"
           }
         ]
