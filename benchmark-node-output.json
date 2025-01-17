@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1737102823239,
+  "lastUpdate": 1737107477435,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -73241,6 +73241,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "183.74",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a65dcfedf5d6f2c52fbd173131ed5284567eb82f",
+          "message": "fix: extract `RestElement` in `ObjectPattern`  (#3374)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. Closed https://github.com/rolldown/rolldown/issues/3331\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-01-17T09:32:38Z",
+          "tree_id": "580c8cef6bd3d7018583519de55b11a1cdb39779",
+          "url": "https://github.com/rolldown/rolldown/commit/a65dcfedf5d6f2c52fbd173131ed5284567eb82f"
+        },
+        "date": 1737107477401,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "455.08",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "732.32",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1444.93",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1766.60",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "150.71",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "210.11",
             "unit": "ms / ops"
           }
         ]
