@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1737387495893,
+  "lastUpdate": 1737388999930,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -73943,6 +73943,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "184.21",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4986046f594c5fb6663ca7b5bf31663d4e35903e",
+          "message": "fix: sort function panic due to user-provided comparison function does not correctly implement a total order  (#3384)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. fix\nhttps://github.com/vitejs/vite-ecosystem-ci/blob/rolldown-vite/README-temp.md#analog,\nuser-provided comparison function does not correctly implement a total\norder\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-01-20T15:44:19Z",
+          "tree_id": "d068eb17562dd27d9477e293fe4bc60d43aae547",
+          "url": "https://github.com/rolldown/rolldown/commit/4986046f594c5fb6663ca7b5bf31663d4e35903e"
+        },
+        "date": 1737388999897,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "366.73",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "598.98",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1028.33",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1398.64",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "127.33",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "180.28",
             "unit": "ms / ops"
           }
         ]
