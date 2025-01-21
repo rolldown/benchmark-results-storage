@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1737426810967,
+  "lastUpdate": 1737480088134,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -74213,6 +74213,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "200.49",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2666b23f71d04ba843fa47e3b3f8a4e3938aa8df",
+          "message": "refactor: split `ast_scope` from `ecma_view` (#3393)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-01-21T17:04:23Z",
+          "tree_id": "5636ffcb80c121c9cf5df98f0c3cc2d580c59e96",
+          "url": "https://github.com/rolldown/rolldown/commit/2666b23f71d04ba843fa47e3b3f8a4e3938aa8df"
+        },
+        "date": 1737480088103,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "391.72",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "612.81",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1103.41",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1457.72",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "131.51",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "187.98",
             "unit": "ms / ops"
           }
         ]
