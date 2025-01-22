@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1737531301410,
+  "lastUpdate": 1737537418276,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -74429,6 +74429,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "178.40",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5deb2793fc9176d31796f224645dccd3890fa1dc",
+          "message": "fix: shouldn't generate unused `__toESM` calls (#3401)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nCloses https://github.com/rolldown/rolldown/issues/3359\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-01-22T08:59:16Z",
+          "tree_id": "09eeee85e8fa7ef2ea04835f71fc05fa39666483",
+          "url": "https://github.com/rolldown/rolldown/commit/5deb2793fc9176d31796f224645dccd3890fa1dc"
+        },
+        "date": 1737537418247,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "367.92",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "581.23",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1041.53",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1415.19",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "130.47",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "176.45",
             "unit": "ms / ops"
           }
         ]
