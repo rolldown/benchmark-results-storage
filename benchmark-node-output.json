@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1737626587150,
+  "lastUpdate": 1737633064716,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -74591,6 +74591,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "181.93",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9db3240ead7d63651b38ac3ec7495e83c07e1c8f",
+          "message": "feat: PluginContext.getFileName using emitted chunk reference id (#3409)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nUsing emitChunk reference id to call `getFileName`, the filename of\n`name` chunk has some cases at rollup.\n- before `render_chunk` hook,  the filename is not generated.\n- between `render_chunk` hook and `generate_bundle` hook，the filename is\npreliminary filename\n- `generate_bundle` hook, the filename is final filename.\n\nThe filename of `fileName` chunk always is  the user provider filename.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-01-23T11:34:15Z",
+          "tree_id": "165ec296df62fce0ccb2618365b92fd1d884e2e5",
+          "url": "https://github.com/rolldown/rolldown/commit/9db3240ead7d63651b38ac3ec7495e83c07e1c8f"
+        },
+        "date": 1737633064682,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "369.76",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "593.81",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1077.07",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1461.67",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "129.12",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "181.54",
             "unit": "ms / ops"
           }
         ]
