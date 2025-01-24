@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1737734651452,
+  "lastUpdate": 1737736351416,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -74807,6 +74807,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "187.49",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3cbc6f8b4c8302833546df144f5f5cd7b226403e",
+          "message": "feat(node): init `test-dev-server` package (#3419)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n- It's called `test-dev-server` instead of `rolldown-dev-server`,\nbecause it's not gonna be used in production.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-01-24T16:16:23Z",
+          "tree_id": "a010e901abae1eece40eee3ec1610ef288529538",
+          "url": "https://github.com/rolldown/rolldown/commit/3cbc6f8b4c8302833546df144f5f5cd7b226403e"
+        },
+        "date": 1737736351386,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "385.58",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "592.57",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "987.35",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1401.37",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "130.08",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "181.53",
             "unit": "ms / ops"
           }
         ]
