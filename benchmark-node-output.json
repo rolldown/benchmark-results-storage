@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1737736351416,
+  "lastUpdate": 1737738004628,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -74861,6 +74861,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "181.53",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "811389e6abbfe349d909e435fd812849e4a05dd2",
+          "message": "chore(node): add `react-hmr` example (#3420)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-01-24T16:42:50Z",
+          "tree_id": "9e38b558ed7e8c6bf0ed71e904240d1f52c99c8e",
+          "url": "https://github.com/rolldown/rolldown/commit/811389e6abbfe349d909e435fd812849e4a05dd2"
+        },
+        "date": 1737738004598,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "411.58",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "632.64",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1037.21",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1418.30",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "138.44",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "189.74",
             "unit": "ms / ops"
           }
         ]
