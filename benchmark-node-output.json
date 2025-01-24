@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1737705374495,
+  "lastUpdate": 1737734651452,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -74753,6 +74753,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "182.68",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1abfb8bb9a9533e16499510f50eaacf2a323fbe2",
+          "message": "feat: support sanitizeFileName (#3418)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nsupport sanitizeFileName for rolldown vite ecosystem ci nuxt usage,\nhttps://github.com/vitejs/vite-ecosystem-ci/blob/rolldown-vite/README-temp.md#nuxt.\n\nref https://rollupjs.org/configuration-options/#output-sanitizefilename\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-01-24T15:47:02Z",
+          "tree_id": "cde6899f738a0c37596a423110a0dae638a1fc77",
+          "url": "https://github.com/rolldown/rolldown/commit/1abfb8bb9a9533e16499510f50eaacf2a323fbe2"
+        },
+        "date": 1737734651420,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "377.87",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "631.98",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1020.01",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1396.46",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "131.93",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "187.49",
             "unit": "ms / ops"
           }
         ]
