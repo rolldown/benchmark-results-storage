@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1737741031074,
+  "lastUpdate": 1737797981045,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -74969,6 +74969,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "187.36",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "54fd0f1d20b412b33cce40d7f5cd9a054716b57c",
+          "message": "fix: should generate correct pattern for cross chunk symbols (#3296)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-01-25T09:23:19Z",
+          "tree_id": "5b2a4ba3d7a844d1f2ec86d543e406b3ad7e39a9",
+          "url": "https://github.com/rolldown/rolldown/commit/54fd0f1d20b412b33cce40d7f5cd9a054716b57c"
+        },
+        "date": 1737797981018,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "356.52",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "558.23",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "903.60",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1293.12",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "120.99",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "173.61",
             "unit": "ms / ops"
           }
         ]
