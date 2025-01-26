@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1737807296670,
+  "lastUpdate": 1737890889467,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -75077,6 +75077,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "178.32",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "71eabeac1306089a9c4c92b6b4897e9c19f6d08d",
+          "message": "feat(hmr): add `experimental#development_mode` (#3424)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n- This is not the final form for enabling HMR.\n- I'm also considering `format: 'esm-dev'`. However, the final form is\nonly a big deal when we release it officially. Let's not worry about it\ntoo much for now.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-01-26T11:11:42Z",
+          "tree_id": "e518837235b4b39fec39d14f618edac7ffd735fe",
+          "url": "https://github.com/rolldown/rolldown/commit/71eabeac1306089a9c4c92b6b4897e9c19f6d08d"
+        },
+        "date": 1737890889436,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "372.50",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "573.01",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "981.51",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1382.64",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "126.41",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "180.01",
             "unit": "ms / ops"
           }
         ]
