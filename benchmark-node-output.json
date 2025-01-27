@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1737965154540,
+  "lastUpdate": 1737967979370,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -75347,6 +75347,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "189.20",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "green@sapphi.red",
+            "name": "翠 / green",
+            "username": "sapphi-red"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "08405052a565df618fc8c9b979b39efa4190b9b0",
+          "message": "chore: remove unnecessary node_modules (#3430)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nThis symlinks caused `git status` to hang forever on Windows 😅\nI'm not sure why these were not gitignored.",
+          "timestamp": "2025-01-27T08:36:11Z",
+          "tree_id": "9ca14b27ef6a31da45f929ab878dcf1cce623a01",
+          "url": "https://github.com/rolldown/rolldown/commit/08405052a565df618fc8c9b979b39efa4190b9b0"
+        },
+        "date": 1737967979340,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "364.81",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "607.26",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "973.11",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1334.94",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "130.57",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "180.34",
             "unit": "ms / ops"
           }
         ]
