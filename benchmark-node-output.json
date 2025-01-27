@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1737893565882,
+  "lastUpdate": 1737945332505,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -75239,6 +75239,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "182.10",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "89db1f3553e69e7157a11ae196a6a690ec6d1c99",
+          "message": "fix(splitting): indirect external symbol (#3405)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nfix nuxt + rolldown crashes\nat crates/rolldown_common/src/types/symbol_ref_db.rs, ref\nhttps://github.com/vitejs/vite-ecosystem-ci/blob/rolldown-vite/README-temp.md#nuxt.\n\nThe issue happened because we merge all external symbol to one, but not\nconsider the exported external symbol is could split, the referenced\nexternal symbol is used other chunks exported symbols, the symbol is not\ndeconflicted at importer chunk.\n\nThe pr intend to avoid connecting cross module symbols from external\nmodules, it will ensure correctness for calculate cross module symbols.\nHere is a [esbuild\nrepl](https://hyrious.me/esbuild-repl/?version=0.24.0&b=e%00entry.js%00import+%7B+read+%7D+from+%27.%2Findirect%27%0A%0Aconsole.log%28read%29%0A%0Aimport%28%27.%2Findirect%27%29&b=%00indirect.js%00export+%7B+read+%7D+from+%22node%3Aassert%22%3B&o=%7B%0A++bundle%3A+true%2C%0A++outdir%3A+%27dist%27%2C%0A++external%3A+%5B%27node%3Aassert%27%5D%2C%0A++format%3A+%27esm%27%2C%0A++keepNames%3A+true%2C%0A++splitting%3A+true%0A%7D).\nIt meaning we only merge import symbols from external modules, if it is\nexported, it can't be merged.\n\n\n\n<br class=\"Apple-interchange-newline\">\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-01-27T02:19:20Z",
+          "tree_id": "7636deed08a4023b9242b3bc93a5f3b83a30289e",
+          "url": "https://github.com/rolldown/rolldown/commit/89db1f3553e69e7157a11ae196a6a690ec6d1c99"
+        },
+        "date": 1737945332480,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "397.11",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "619.31",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1075.17",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1448.16",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "135.81",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "185.45",
             "unit": "ms / ops"
           }
         ]
