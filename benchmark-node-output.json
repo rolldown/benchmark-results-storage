@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1737945332505,
+  "lastUpdate": 1737965154540,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -75293,6 +75293,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "185.45",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2410ee7927cacdc687ea3089ba6bade26f574bdd",
+          "message": "fix: consider require `ExpressionIdentfier` as a import record (#3428)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. Closed #3395\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-01-27T15:59:35+08:00",
+          "tree_id": "11cfbcc6a6d83608615df1726fe2216cf648a986",
+          "url": "https://github.com/rolldown/rolldown/commit/2410ee7927cacdc687ea3089ba6bade26f574bdd"
+        },
+        "date": 1737965154508,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "382.86",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "591.15",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1012.55",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1399.57",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "134.52",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "189.20",
             "unit": "ms / ops"
           }
         ]
