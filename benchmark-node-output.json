@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1737971418299,
+  "lastUpdate": 1737979511220,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -75563,6 +75563,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "178.90",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "bc5b1e73d48107643150d5492cd3b82c4484c0b9",
+          "message": "fix:  windows panic (#3436)\n\n<!-- Thank you for contributing! -->\n\n### Description\nclose https://github.com/rolldown/rolldown/issues/3434\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-01-27T11:48:24Z",
+          "tree_id": "5c06cd966d64f4164ec9ba168be980f284f61642",
+          "url": "https://github.com/rolldown/rolldown/commit/bc5b1e73d48107643150d5492cd3b82c4484c0b9"
+        },
+        "date": 1737979511187,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "379.37",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "591.78",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "987.43",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1374.26",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "129.32",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "181.90",
             "unit": "ms / ops"
           }
         ]
