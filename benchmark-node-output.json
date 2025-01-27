@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1737969934394,
+  "lastUpdate": 1737970421626,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -75455,6 +75455,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "186.62",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "lynweklm@gmail.com",
+            "name": "LongYinan",
+            "username": "Brooooooklyn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "d1ffa0b9601a999f9d4c4b9605dc3c319b444d6e",
+          "message": "chore(deps): update dependency vite to v6.0.9 [security] (#3432)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2025-01-27T09:14:14Z",
+          "tree_id": "0eb6c62d4771e78b07320faec105083467b3a114",
+          "url": "https://github.com/rolldown/rolldown/commit/d1ffa0b9601a999f9d4c4b9605dc3c319b444d6e"
+        },
+        "date": 1737970421595,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "384.73",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "601.14",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "990.17",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1367.24",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "132.68",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "189.53",
             "unit": "ms / ops"
           }
         ]
