@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1737979511220,
+  "lastUpdate": 1738036888625,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -75617,6 +75617,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "181.90",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "laipichan@qq.com",
+            "name": "dalaoshu",
+            "username": "shulaoda"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "2d52a9882276887e318b4b3c4fa6e4ea49270b1e",
+          "message": "refactor(rust): simplify the usage of `ModuleId::new` (#3440)\n\n### Description\n\nSince `ModuleId::new` is defined as `pub fn new(value: impl\nInto<ArcStr>) -> Self`, and `ArcStr` implements `From<&ArcStr>`, we can\nsimplify its usage. The behavior remains exactly the same before and\nafter simplification.",
+          "timestamp": "2025-01-28T03:44:57Z",
+          "tree_id": "94120303dee2e1b49d8efa4c790177e4b7ed1b94",
+          "url": "https://github.com/rolldown/rolldown/commit/2d52a9882276887e318b4b3c4fa6e4ea49270b1e"
+        },
+        "date": 1738036888594,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "368.69",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "585.43",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "998.02",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1367.32",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "126.10",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "178.75",
             "unit": "ms / ops"
           }
         ]
