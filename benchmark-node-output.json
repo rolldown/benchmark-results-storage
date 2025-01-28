@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1738036888625,
+  "lastUpdate": 1738072398382,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -75671,6 +75671,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "178.75",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "green@sapphi.red",
+            "name": "翠 / green",
+            "username": "sapphi-red"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "afa3746e41d5dd4b62dba900b18b0f3c654f38c8",
+          "message": "feat: allow mutating `chunk.isEntry` (#3446)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nnuxt mutates it here:\nhttps://github.com/nuxt/nuxt/blob/f90ed0ff67c8ec3e284baed44c8e27e4171941ed/packages/nuxt/src/components/plugins/islands-transform.ts#L222-L223",
+          "timestamp": "2025-01-28T21:47:15+08:00",
+          "tree_id": "f971079334b73137677d38c270112b13314650d2",
+          "url": "https://github.com/rolldown/rolldown/commit/afa3746e41d5dd4b62dba900b18b0f3c654f38c8"
+        },
+        "date": 1738072398351,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "377.07",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "599.67",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1058.40",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1397.33",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "136.35",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "185.69",
             "unit": "ms / ops"
           }
         ]
