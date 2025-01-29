@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1738072398382,
+  "lastUpdate": 1738113845435,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -75725,6 +75725,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "185.69",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "hi.ogawa.zz@gmail.com",
+            "name": "Hiroshi Ogawa",
+            "username": "hi-ogawa"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e9daf9390ddb692f2d4e672eebb83b9a0dc2385d",
+          "message": "fix: add `sequential?: boolean` type for rollup compat (#3442)\n\n### Description\n\nI added a fake \"deprecated\" type to reduce a churn due to ecosystem\nfailing by ts error (see\nhttps://github.com/vitejs/vite-ecosystem-ci/blob/rolldown-vite/README-temp.md\nand also my plugin hit by this too\nhttps://github.com/hi-ogawa/vite-plugins/pull/673).\n\nAs I wrote in\nhttps://github.com/rolldown/rolldown/issues/3337#issuecomment-2586039789,\nRolldown's plugin hook always works same as rollup's `sequential: true`\nand this behavior is likely good for the ecosystem since people mostly\nneeded `sequential: true` to avoid running `writeBundle` hooks in\nparallel on rollup.\n\nI think the test added in https://github.com/rolldown/rolldown/pull/1913\nalready verifies such sequential behavior.",
+          "timestamp": "2025-01-29T01:07:45Z",
+          "tree_id": "43bd2b8df567eb698b36554617c02dab1f9db8bb",
+          "url": "https://github.com/rolldown/rolldown/commit/e9daf9390ddb692f2d4e672eebb83b9a0dc2385d"
+        },
+        "date": 1738113845404,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "365.97",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "621.21",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "979.04",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1344.52",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "127.65",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "181.49",
             "unit": "ms / ops"
           }
         ]
