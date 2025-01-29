@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1738113845435,
+  "lastUpdate": 1738127082755,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -75779,6 +75779,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "181.49",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "laipichan@qq.com",
+            "name": "dalaoshu",
+            "username": "shulaoda"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "d704e3bb492c894783685ddfb7fb31c2dc5ba78c",
+          "message": "refactor(rust): remove unnecessary `module_idx` (#3449)\n\n### Description\n\n`NormalModuleTaskResult#module_idx` is unnecessary.",
+          "timestamp": "2025-01-29T04:48:38Z",
+          "tree_id": "fc4ac5e7fb82b802bdf30b69849b4edcc1ad0588",
+          "url": "https://github.com/rolldown/rolldown/commit/d704e3bb492c894783685ddfb7fb31c2dc5ba78c"
+        },
+        "date": 1738127082723,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "382.89",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "592.13",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1012.41",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1381.97",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "132.87",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "183.58",
             "unit": "ms / ops"
           }
         ]
