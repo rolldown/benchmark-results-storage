@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1738161562871,
+  "lastUpdate": 1738252726458,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -75941,6 +75941,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "187.80",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "hi.ogawa.zz@gmail.com",
+            "name": "Hiroshi Ogawa",
+            "username": "hi-ogawa"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "fdb55d537d1502c9fab0c91365d6c802cc71214b",
+          "message": "fix: deconflict export alias (#3457)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n- Closes https://github.com/rolldown/rolldown/issues/3438\n\nI copied a deconflict loop from chunk-level renamer:\n\n\nhttps://github.com/rolldown/rolldown/blob/8655a95035ff4c9f00a9862d4c035ad503025aee/crates/rolldown/src/utils/renamer.rs#L75-L91",
+          "timestamp": "2025-01-30T15:42:02Z",
+          "tree_id": "82db5cd552e32efd1d059acaf100ca02dcb6dd08",
+          "url": "https://github.com/rolldown/rolldown/commit/fdb55d537d1502c9fab0c91365d6c802cc71214b"
+        },
+        "date": 1738252726426,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "375.36",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "575.59",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "974.98",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1381.89",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "127.74",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "185.26",
             "unit": "ms / ops"
           }
         ]
