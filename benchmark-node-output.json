@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1738292018677,
+  "lastUpdate": 1738293857262,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -76157,6 +76157,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "177.82",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "laipichan@qq.com",
+            "name": "dalaoshu",
+            "username": "shulaoda"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d8624bbabfe1353e85ee8984544da1b2f94a4c33",
+          "message": "feat: support `require` with a `TemplateLiteral` argument (#3450)\n\n### Description\n\ncloses #3447",
+          "timestamp": "2025-01-31T11:18:13+08:00",
+          "tree_id": "564de8ed77697fa025102c95fa5dca0628b2ac1d",
+          "url": "https://github.com/rolldown/rolldown/commit/d8624bbabfe1353e85ee8984544da1b2f94a4c33"
+        },
+        "date": 1738293857231,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "368.16",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "589.93",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "995.36",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1321.10",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "129.34",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "179.48",
             "unit": "ms / ops"
           }
         ]
