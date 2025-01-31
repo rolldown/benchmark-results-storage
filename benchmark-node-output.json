@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1738326925683,
+  "lastUpdate": 1738327252690,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -76443,44 +76443,44 @@
             "name": "GitHub",
             "username": "web-flow"
           },
-          "distinct": false,
-          "id": "287a616883fd028f5000942b7aaeff4126f4d3d4",
-          "message": "fix: auto polyfill import.meta.* in none esm format (#3454)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. Closed https://github.com/rolldown/rolldown/issues/3413\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
-          "timestamp": "2025-01-31T12:18:58Z",
-          "tree_id": "f6cde1392ac8ac24c1cc281d85cb698937eb640b",
-          "url": "https://github.com/rolldown/rolldown/commit/287a616883fd028f5000942b7aaeff4126f4d3d4"
+          "distinct": true,
+          "id": "e048f557aa4b84f870b58fce76b28c7b0810253e",
+          "message": "fix: cli doesn't show config loading error details (#3464)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. Since the upstream pr has been merged, we could recover the usage of\n`consola`\n   Closed https://github.com/rolldown/rolldown/issues/2705\n\nref: https://github.com/unjs/consola/pull/308\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-01-31T12:24:56Z",
+          "tree_id": "d06c1ff85bf20c4da8b608dcc6a4b93927c85527",
+          "url": "https://github.com/rolldown/rolldown/commit/e048f557aa4b84f870b58fce76b28c7b0810253e"
         },
-        "date": 1738326925652,
+        "date": 1738327252658,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x (default)",
-            "value": "370.11",
+            "value": "363.37",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap (default)",
-            "value": "584.73",
+            "value": "574.52",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify (default)",
-            "value": "967.17",
+            "value": "963.29",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify-sourcemap (default)",
-            "value": "1331.43",
+            "value": "1358.57",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts (default)",
-            "value": "127.08",
+            "value": "124.60",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts-sourcemap (default)",
-            "value": "181.80",
+            "value": "177.49",
             "unit": "ms / ops"
           }
         ]
