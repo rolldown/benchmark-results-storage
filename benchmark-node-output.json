@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1738318252117,
+  "lastUpdate": 1738322487161,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -76373,6 +76373,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "182.23",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "laipichan@qq.com",
+            "name": "dalaoshu",
+            "username": "shulaoda"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "27b67b890732d46d420223a85c25e4b0b735e630",
+          "message": "refactor(rust): improve the DX of `ModuleTask#run_inner` (#3463)\n\n### Description\n\n- Avoiding the destructuring and reinitialization of `ecma_related`.\n- Avoiding duplicate calculation of `stable_id`.\n- Avoiding source clone in `create_ecma_view`.",
+          "timestamp": "2025-01-31T11:05:10Z",
+          "tree_id": "f3bb43e29cc246bed57ecae95c2ad173e1022b74",
+          "url": "https://github.com/rolldown/rolldown/commit/27b67b890732d46d420223a85c25e4b0b735e630"
+        },
+        "date": 1738322487130,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "372.16",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "585.53",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "962.22",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1361.15",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "126.51",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "181.05",
             "unit": "ms / ops"
           }
         ]
