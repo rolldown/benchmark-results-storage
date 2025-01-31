@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1738322487161,
+  "lastUpdate": 1738326925683,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -76427,6 +76427,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "181.05",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "287a616883fd028f5000942b7aaeff4126f4d3d4",
+          "message": "fix: auto polyfill import.meta.* in none esm format (#3454)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. Closed https://github.com/rolldown/rolldown/issues/3413\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-01-31T12:18:58Z",
+          "tree_id": "f6cde1392ac8ac24c1cc281d85cb698937eb640b",
+          "url": "https://github.com/rolldown/rolldown/commit/287a616883fd028f5000942b7aaeff4126f4d3d4"
+        },
+        "date": 1738326925652,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "370.11",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "584.73",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "967.17",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1331.43",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "127.08",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "181.80",
             "unit": "ms / ops"
           }
         ]
