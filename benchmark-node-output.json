@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1738301557758,
+  "lastUpdate": 1738318252117,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -76319,6 +76319,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "181.73",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "hi.ogawa.zz@gmail.com",
+            "name": "Hiroshi Ogawa",
+            "username": "hi-ogawa"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "73116ab642701be42eda64761074e383a9ae801a",
+          "message": "fix: chunk sorting total order (#3451)\n\n### Description\n\n- Closes\nhttps://github.com/rolldown/rolldown/issues/3429#issuecomment-2618556361\n\nThere's a total order violation as explained in\nhttps://github.com/rolldown/rolldown/issues/3429#issuecomment-2618556361.\nI'm not entirely sure about the original comment's intent, but I\ninterpreted in a following way and fixed the sorting accordingly.\n\n```\nEntryPoint (is_user_defined: true) < EntryPoint (is_user_defined: false) or Common\n[order by chunk index]               [order by exec order]\n```",
+          "timestamp": "2025-01-31T09:54:18Z",
+          "tree_id": "4dbdd0168901825e778906dd87f49cc1cee33f28",
+          "url": "https://github.com/rolldown/rolldown/commit/73116ab642701be42eda64761074e383a9ae801a"
+        },
+        "date": 1738318252086,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "377.10",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "598.63",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "996.24",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1393.72",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "129.69",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "182.23",
             "unit": "ms / ops"
           }
         ]
