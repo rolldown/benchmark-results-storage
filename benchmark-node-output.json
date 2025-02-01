@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1738391023244,
+  "lastUpdate": 1738394493833,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -76589,6 +76589,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "181.44",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "laipichan@qq.com",
+            "name": "dalaoshu",
+            "username": "shulaoda"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fa3280f623a0852955567d84ab277993c855cd8b",
+          "message": "refactor(rust): remove unnecessary code (#3468)\n\n### Description\n\n- Remove unnecessary `BuildResult` in `PreProcessEcmaAst#build`.\n- Remove unnecessary clippy allow directives.",
+          "timestamp": "2025-02-01T07:03:52Z",
+          "tree_id": "f64732d22a5a1cd6e5b30b4aab0dced8a689e20e",
+          "url": "https://github.com/rolldown/rolldown/commit/fa3280f623a0852955567d84ab277993c855cd8b"
+        },
+        "date": 1738394493802,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "367.45",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "568.63",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "991.91",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1373.63",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "130.35",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "176.80",
             "unit": "ms / ops"
           }
         ]
