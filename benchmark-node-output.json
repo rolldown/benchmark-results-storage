@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1738327252690,
+  "lastUpdate": 1738388013237,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -76481,6 +76481,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "177.49",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "laipichan@qq.com",
+            "name": "dalaoshu",
+            "username": "shulaoda"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "768412149b1740410426ae0788aca4fe290cce6e",
+          "message": "refactor(rust): simplify the logic of `pre_process_source` (#3466)\n\n### Description\n\n- Simplify the logic of  `pre_process_source`.",
+          "timestamp": "2025-02-01T05:16:58Z",
+          "tree_id": "07ab05509176e013b45dd581fa9addbd02c865c2",
+          "url": "https://github.com/rolldown/rolldown/commit/768412149b1740410426ae0788aca4fe290cce6e"
+        },
+        "date": 1738388013205,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "405.68",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "624.17",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1094.48",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1470.42",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "138.47",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "191.54",
             "unit": "ms / ops"
           }
         ]
