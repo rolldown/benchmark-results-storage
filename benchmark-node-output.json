@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1738394493833,
+  "lastUpdate": 1738408876254,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -76643,6 +76643,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "176.80",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "laipichan@qq.com",
+            "name": "dalaoshu",
+            "username": "shulaoda"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "cdeedacc6fc7ac10ecb41246072c5262b59d4efd",
+          "message": "perf(rust): avoid unnecessary `into_owned` on `Cow<str>` (#3470)\n\n### Description\n\nAvoid unnecessary `into_owned` on `Cow<str>`.",
+          "timestamp": "2025-02-01T11:04:21Z",
+          "tree_id": "775c8fc084c9cbd968116c8da98b193378b95b81",
+          "url": "https://github.com/rolldown/rolldown/commit/cdeedacc6fc7ac10ecb41246072c5262b59d4efd"
+        },
+        "date": 1738408876223,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "366.34",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "580.95",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "999.60",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1380.93",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "132.71",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "185.20",
             "unit": "ms / ops"
           }
         ]
