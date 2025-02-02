@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1738408876254,
+  "lastUpdate": 1738467008331,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -76697,6 +76697,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "185.20",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "cfcc101dc6973ca1636f4cf55a88cd462f70a283",
+          "message": "fix: replace all global `require` to `__require` when necessary (#3469)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. Closed https://github.com/rolldown/rolldown/issues/3465\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-02-02T03:13:29Z",
+          "tree_id": "f358bf64e041fe4fbf4cc9c27d834830e1b2ce53",
+          "url": "https://github.com/rolldown/rolldown/commit/cfcc101dc6973ca1636f4cf55a88cd462f70a283"
+        },
+        "date": 1738467008300,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "364.83",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "588.08",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1011.20",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1370.61",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "126.14",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "184.77",
             "unit": "ms / ops"
           }
         ]
