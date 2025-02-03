@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1738490330668,
+  "lastUpdate": 1738548317659,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -76913,6 +76913,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "182.14",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "hi.ogawa.zz@gmail.com",
+            "name": "Hiroshi Ogawa",
+            "username": "hi-ogawa"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4ccaf24ced490c6ad9c89e3e2d9c2fbe40d5e420",
+          "message": "fix: escape import/export module name and json key (#3458)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n- Closes https://github.com/rolldown/rolldown/issues/3456\n\nI used `serde_json::to_string` for escaping json string. I think this\nshould get the job done, but I'm not sure if the extra dependency should\nbe avoided in rolldown util.\n(I think what this need is just a small escaping utility\nhttps://github.com/serde-rs/json/blob/1174c5f57db44c26460951b525c6ede50984b655/src/ser.rs#L2063,\nso copying this code might be an option? :thinking: )",
+          "timestamp": "2025-02-03T01:48:54Z",
+          "tree_id": "97d6b3f36d2e5d3ab3689519d1deef74e5a13ee4",
+          "url": "https://github.com/rolldown/rolldown/commit/4ccaf24ced490c6ad9c89e3e2d9c2fbe40d5e420"
+        },
+        "date": 1738548317627,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "372.72",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "591.99",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1006.45",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1364.37",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "131.51",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "187.33",
             "unit": "ms / ops"
           }
         ]
