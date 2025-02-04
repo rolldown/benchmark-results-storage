@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1738596315254,
+  "lastUpdate": 1738660072754,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -77129,6 +77129,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "180.55",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "green@sapphi.red",
+            "name": "翠 / green",
+            "username": "sapphi-red"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "06372d4d745305280c68004eed25e60cafcacee3",
+          "message": "ci: update corepack in FreeBSD to fix keyid mismatch error (#3487)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nI didn't try it, but it should fix the error.\n\nclose https://github.com/rolldown/rolldown/issues/3485\nrefs https://github.com/nodejs/corepack/issues/612",
+          "timestamp": "2025-02-04T08:51:18Z",
+          "tree_id": "5aaf97bc2e493a6510875a3eebce89a504468dc5",
+          "url": "https://github.com/rolldown/rolldown/commit/06372d4d745305280c68004eed25e60cafcacee3"
+        },
+        "date": 1738660072723,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "360.57",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "570.89",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1036.62",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1394.76",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "125.53",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "177.34",
             "unit": "ms / ops"
           }
         ]
