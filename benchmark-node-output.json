@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1738725739941,
+  "lastUpdate": 1738725965049,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -77190,9 +77190,9 @@
       {
         "commit": {
           "author": {
-            "email": "i.heyunfei@gmail.com",
-            "name": "Yunfei He",
-            "username": "hyf0"
+            "email": "laipichan@qq.com",
+            "name": "dalaoshu",
+            "username": "shulaoda"
           },
           "committer": {
             "email": "noreply@github.com",
@@ -77200,43 +77200,43 @@
             "username": "web-flow"
           },
           "distinct": false,
-          "id": "1452a1380ea05881658948695d5ef94e025c8b6d",
-          "message": "chore(experimental): rename `development_mode` to `hmr` (#3490)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
-          "timestamp": "2025-02-05T03:05:15Z",
-          "tree_id": "3f5866d05db73bbf9f3e0df1efab4f3d97dc36d9",
-          "url": "https://github.com/rolldown/rolldown/commit/1452a1380ea05881658948695d5ef94e025c8b6d"
+          "id": "8b5ca7cefa276d80125d35ab0ed844524457fb65",
+          "message": "refactor(rust): simplify `scan_ast` and `make_ecma_ast` (#3489)\n\n### Description\n\nConcentrate the required variables from `AstScanner` into the scan\nresult.",
+          "timestamp": "2025-02-05T03:08:48Z",
+          "tree_id": "5c6c8f0c311e73d96e5ae87831eb1ed1eee7604b",
+          "url": "https://github.com/rolldown/rolldown/commit/8b5ca7cefa276d80125d35ab0ed844524457fb65"
         },
-        "date": 1738725739908,
+        "date": 1738725965016,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x (default)",
-            "value": "370.26",
+            "value": "383.97",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap (default)",
-            "value": "586.79",
+            "value": "608.34",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify (default)",
-            "value": "1035.82",
+            "value": "1055.07",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify-sourcemap (default)",
-            "value": "1401.38",
+            "value": "1479.88",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts (default)",
-            "value": "126.62",
+            "value": "129.94",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts-sourcemap (default)",
-            "value": "180.96",
+            "value": "191.90",
             "unit": "ms / ops"
           }
         ]
