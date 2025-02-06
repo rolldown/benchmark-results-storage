@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1738779355733,
+  "lastUpdate": 1738805583700,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -77399,6 +77399,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "178.23",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b03d4df0d67f19d2a513e8d53563051cd0b1d588",
+          "message": "chore: patch ariadne (#3497)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. use patched `ariadne`\n2. make some refactor\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-02-06T09:27:00+08:00",
+          "tree_id": "3a5fef7c34e7d7c2f8bb172a0ed180caf05a1796",
+          "url": "https://github.com/rolldown/rolldown/commit/b03d4df0d67f19d2a513e8d53563051cd0b1d588"
+        },
+        "date": 1738805583668,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "378.27",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "598.17",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1057.13",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1440.22",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "135.17",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "187.82",
             "unit": "ms / ops"
           }
         ]
