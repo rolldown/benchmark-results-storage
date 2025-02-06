@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1738829177706,
+  "lastUpdate": 1738832395119,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -77831,6 +77831,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "190.88",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "9c0032c9f72034b63637756a528ea5ba0407a273",
+          "message": "fix(node): tsc build only emit declaration (#3509)\n\n<!-- Thank you for contributing! -->\n\n### Description\nclose https://github.com/rolldown/rolldown/issues/3506, ref\nhttps://www.typescriptlang.org/tsconfig/#emitDeclarationOnly.\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-02-06T08:42:58Z",
+          "tree_id": "ae275d5963cbbf7506c7b129242842a04319e9a9",
+          "url": "https://github.com/rolldown/rolldown/commit/9c0032c9f72034b63637756a528ea5ba0407a273"
+        },
+        "date": 1738832395087,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "378.32",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "603.74",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1044.92",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1448.23",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "127.49",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "184.80",
             "unit": "ms / ops"
           }
         ]
