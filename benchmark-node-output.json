@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1738848749323,
+  "lastUpdate": 1738861974174,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -77993,6 +77993,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "183.59",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "558ea78f5fb0784b3806fd712a94fc1e2f249325",
+          "message": "fix: syntax error when use top level await with `strict_execution_order` option (#3512)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. related to https://github.com/rolldown/rolldown/issues/3448\n2. part of https://github.com/rolldown/rolldown/issues/3131\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-02-06T16:56:12Z",
+          "tree_id": "8475828d8fa68dc0d4dd1dd60afc358835289739",
+          "url": "https://github.com/rolldown/rolldown/commit/558ea78f5fb0784b3806fd712a94fc1e2f249325"
+        },
+        "date": 1738861974142,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "365.39",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "573.20",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "985.05",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1408.53",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "126.02",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "177.61",
             "unit": "ms / ops"
           }
         ]
