@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1738832811425,
+  "lastUpdate": 1738848749323,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -77939,6 +77939,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "180.76",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "laipichan@qq.com",
+            "name": "dalaoshu",
+            "username": "shulaoda"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ebe47524d4c4ff93c6d0ec719c43d5be8c1fc59b",
+          "message": "refactor(rust): inline unnecessary `scan_ast` (#3511)\n\n### Description\n\nSince `scan_ast` is already simple enough, we can inline it.",
+          "timestamp": "2025-02-06T21:26:06+08:00",
+          "tree_id": "1726729ea821f97d9830408a6d8ecf6b849fb66e",
+          "url": "https://github.com/rolldown/rolldown/commit/ebe47524d4c4ff93c6d0ec719c43d5be8c1fc59b"
+        },
+        "date": 1738848749291,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "372.81",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "598.27",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1047.98",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1422.68",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "130.16",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "183.59",
             "unit": "ms / ops"
           }
         ]
