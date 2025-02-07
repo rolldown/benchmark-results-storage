@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1738920100992,
+  "lastUpdate": 1738926114614,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -78209,6 +78209,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "181.05",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "32880da1ff944adc143b4461d31b708e1b67c43c",
+          "message": "fix(node): add rolldown dist typing check (#3516)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nclose https://github.com/rolldown/rolldown/issues/3407. The error\nhappened because the rolldown package added `type: module` at\nhttps://github.com/rolldown/rolldown/pull/3376, it will make typing\ncheck failed at `node16`, ref\nhttps://www.typescriptlang.org/docs/handbook/modules/reference.html#module-format-detection.\n\nThe `type: module` added by using oxc-node build, if changed build file\nto `build.mts` will caused error at\nhttps://github.com/oxc-project/oxc-node/issues/45. So i revert it to\n`tsx` build. Here also add `build-types-check` to avoid regression.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-02-07T10:44:50Z",
+          "tree_id": "fcb77b3388e2c26ca0b58ceff454cd039b8bfe58",
+          "url": "https://github.com/rolldown/rolldown/commit/32880da1ff944adc143b4461d31b708e1b67c43c"
+        },
+        "date": 1738926114582,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "379.78",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "585.02",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1069.39",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1448.04",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "130.14",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "181.90",
             "unit": "ms / ops"
           }
         ]
