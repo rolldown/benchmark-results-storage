@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1738944854114,
+  "lastUpdate": 1738945730222,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -78317,6 +78317,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "197.20",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "370af620d44f342c6f2b35408f3486736d02a584",
+          "message": "perf: should not invalidate ModuleOptions if mutate `ModuleInfo` has same id with hook param (#3519)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. for case in\nhttps://github.com/rolldown/rolldown/blob/dc850922593f74f5c5dba55856fb36085b9076af/packages/rolldown/tests/fixtures/tree-shake/module-side-effects-proxy/_config.ts?plain=1#L12-L15,\nwe the state between js and rust actually is synced, so we could avoid\nre assign `defer_sync_scan_data` in `fetch_all_modules`\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-02-07T16:07:55Z",
+          "tree_id": "513e1d2a5bd740cea2ab7439a850c47c98da8602",
+          "url": "https://github.com/rolldown/rolldown/commit/370af620d44f342c6f2b35408f3486736d02a584"
+        },
+        "date": 1738945730189,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "382.17",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "607.80",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1094.70",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1454.54",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "132.40",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "186.73",
             "unit": "ms / ops"
           }
         ]
