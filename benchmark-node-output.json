@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1738945730222,
+  "lastUpdate": 1738947316136,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -78371,6 +78371,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "186.73",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "f65bde39e6c7e332ba86265a5a5c4e7d40c1ccd6",
+          "message": "fix: sync other moduleSideEffects value in ModuleInfo (#3520)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. Closed #2781\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-02-07T16:39:03Z",
+          "tree_id": "a6e606d40614bcfcac05ac9201d0a60c3c677b74",
+          "url": "https://github.com/rolldown/rolldown/commit/f65bde39e6c7e332ba86265a5a5c4e7d40c1ccd6"
+        },
+        "date": 1738947316103,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "367.47",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "574.53",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "981.26",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1393.97",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "128.98",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "177.25",
             "unit": "ms / ops"
           }
         ]
