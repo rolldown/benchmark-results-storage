@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1738905587013,
+  "lastUpdate": 1738920100992,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -78155,6 +78155,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "185.02",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "hi.ogawa.zz@gmail.com",
+            "name": "Hiroshi Ogawa",
+            "username": "hi-ogawa"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "478b91d4800ed7fb81c72f8ae57cf83770fe3374",
+          "message": "refactor: reuse code for chunk relative path logic (#3515)\n\n### Description\n\nMinor cleanup as I mentioned in\nhttps://github.com/rolldown/rolldown/pull/3488#discussion_r1942094168",
+          "timestamp": "2025-02-07T17:15:42+08:00",
+          "tree_id": "88e4c292ee2e22040d63b8f4bc84c5e375cc04fa",
+          "url": "https://github.com/rolldown/rolldown/commit/478b91d4800ed7fb81c72f8ae57cf83770fe3374"
+        },
+        "date": 1738920100960,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "368.40",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "578.46",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1045.48",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1395.37",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "126.03",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "181.05",
             "unit": "ms / ops"
           }
         ]
