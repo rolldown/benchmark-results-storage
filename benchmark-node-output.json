@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1739013062844,
+  "lastUpdate": 1739034374157,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -78479,6 +78479,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "181.04",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "52119c74ee42c59ef0913ff22eff7d100823cdc8",
+          "message": "fix(hash): should compute cross chunk dependecis in stable order (#3524)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n- Closes #3453\n\nI test 5 times locally and all works fine.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-02-08T16:49:48Z",
+          "tree_id": "13c45349de79fbaa68444eac0456817038b94dcd",
+          "url": "https://github.com/rolldown/rolldown/commit/52119c74ee42c59ef0913ff22eff7d100823cdc8"
+        },
+        "date": 1739034374126,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "367.70",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "586.32",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1003.70",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1419.94",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "125.90",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "180.88",
             "unit": "ms / ops"
           }
         ]
