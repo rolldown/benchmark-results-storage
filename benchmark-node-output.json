@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1739034374157,
+  "lastUpdate": 1739084313335,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -78533,6 +78533,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "180.88",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ece5e773b52c236e15278d08560c787feb6056bb",
+          "message": "fix: stackoverflow when update cjs module meta (#3530)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. related to https://github.com/rolldown/rolldown/issues/3529, only\nfixed segment fault in\nhttps://github.com/thecrypticace/rolldown-cjs-bug/blob/main/rolldown.config.mjs#L14-L19\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-02-09T14:52:33+08:00",
+          "tree_id": "d80287be800e7e8ff43d2a35809756f213dba499",
+          "url": "https://github.com/rolldown/rolldown/commit/ece5e773b52c236e15278d08560c787feb6056bb"
+        },
+        "date": 1739084313304,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "361.44",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "570.77",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "986.12",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1385.13",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "124.28",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "177.41",
             "unit": "ms / ops"
           }
         ]
