@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1739084313335,
+  "lastUpdate": 1739104876894,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -78587,6 +78587,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "177.41",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c2bcb3d232db048314649959a0ce3c09b8db7d7e",
+          "message": "fix: add wrong is_cjs_reexport flag (#3532)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-02-09T12:24:44Z",
+          "tree_id": "08896b1ae6f334e2586c9789ce0cc2b199bc5693",
+          "url": "https://github.com/rolldown/rolldown/commit/c2bcb3d232db048314649959a0ce3c09b8db7d7e"
+        },
+        "date": 1739104876863,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "363.81",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "566.00",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "979.64",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1357.78",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "124.54",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "174.83",
             "unit": "ms / ops"
           }
         ]
