@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1739208115494,
+  "lastUpdate": 1739218705154,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -79235,6 +79235,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "184.55",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d9529e77119a4d5396fe1682f6276997ab8c0294",
+          "message": "feat: expose more fine-grained minify option (#3542)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. Closed https://github.com/rolldown/rolldown/pull/3145\n2. credit for @sapphi-red , the original is pretty stale, and it is from\na forked repo, so I can't rebase it.\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-02-10T20:00:37Z",
+          "tree_id": "963c778bae3f287055a0a43b16170db682154808",
+          "url": "https://github.com/rolldown/rolldown/commit/d9529e77119a4d5396fe1682f6276997ab8c0294"
+        },
+        "date": 1739218705119,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "393.41",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "612.11",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1078.79",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1464.15",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "141.67",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "196.70",
             "unit": "ms / ops"
           }
         ]
