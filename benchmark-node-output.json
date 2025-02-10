@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1739159432295,
+  "lastUpdate": 1739161426954,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -78803,6 +78803,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "178.85",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9c3c2e6512ff699d1998ca19e32c39b84e8d717f",
+          "message": "feat(tla): support TLA while enabling strict execution order (#3528)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nCloses https://github.com/rolldown/rolldown/issues/3131\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-02-10T04:06:48Z",
+          "tree_id": "372e2ae3fbb6f4cfea13de954e98d843cf1890d3",
+          "url": "https://github.com/rolldown/rolldown/commit/9c3c2e6512ff699d1998ca19e32c39b84e8d717f"
+        },
+        "date": 1739161426922,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "370.44",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "589.47",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1049.55",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1416.62",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "124.39",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "180.06",
             "unit": "ms / ops"
           }
         ]
