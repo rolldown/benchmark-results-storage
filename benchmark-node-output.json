@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1739164135097,
+  "lastUpdate": 1739166072665,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -78911,6 +78911,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "186.72",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "deaa40cfc01d6e89331b8e9c6a8d02c28b54601e",
+          "message": "feat(tla): remove redundant `await` before `__toESM` (#3538)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-02-10T05:24:34Z",
+          "tree_id": "31bdccecd4a574aac98914f58934a08f98353500",
+          "url": "https://github.com/rolldown/rolldown/commit/deaa40cfc01d6e89331b8e9c6a8d02c28b54601e"
+        },
+        "date": 1739166072633,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "388.17",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "589.59",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1055.29",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1424.38",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "127.59",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "183.16",
             "unit": "ms / ops"
           }
         ]
