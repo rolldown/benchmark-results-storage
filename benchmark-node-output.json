@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1739166072665,
+  "lastUpdate": 1739182909759,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -78965,6 +78965,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "183.16",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "424d868be7336426ebe90d8760e970c072175166",
+          "message": "chore: remove redundant bitflags setter (#3540)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-02-10T18:13:54+08:00",
+          "tree_id": "cdbead99c8d3d0c9401fb5bc9e612c8266afc90d",
+          "url": "https://github.com/rolldown/rolldown/commit/424d868be7336426ebe90d8760e970c072175166"
+        },
+        "date": 1739182909728,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "368.05",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "603.71",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1040.26",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1417.69",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "126.55",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "181.73",
             "unit": "ms / ops"
           }
         ]
