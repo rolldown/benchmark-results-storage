@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1739184515206,
+  "lastUpdate": 1739185426166,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -79073,6 +79073,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "181.90",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f5acbf684bf545e57470f4ee91abf2b578c941a5",
+          "message": "refactor(mf): ensure shared module excute order if it is splitted (#3523)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-02-10T10:43:19Z",
+          "tree_id": "76a17d872d49df355e0eceb3b83c698f9dde96c6",
+          "url": "https://github.com/rolldown/rolldown/commit/f5acbf684bf545e57470f4ee91abf2b578c941a5"
+        },
+        "date": 1739185426133,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "380.78",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "603.04",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1085.58",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1446.05",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "130.32",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "188.20",
             "unit": "ms / ops"
           }
         ]
