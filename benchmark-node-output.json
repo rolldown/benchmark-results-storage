@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1739274828520,
+  "lastUpdate": 1739274944359,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -79629,44 +79629,44 @@
             "name": "GitHub",
             "username": "web-flow"
           },
-          "distinct": false,
-          "id": "0bbdb3845f7d80f64600eb32ebf21c303444cf04",
-          "message": "ci: fix `Publish to pkg.pr.new` workflow (#3553)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
-          "timestamp": "2025-02-11T11:36:34Z",
-          "tree_id": "737c30ea8e24bc5086d304a6bceffdabea443b84",
-          "url": "https://github.com/rolldown/rolldown/commit/0bbdb3845f7d80f64600eb32ebf21c303444cf04"
+          "distinct": true,
+          "id": "747e54d54fc7aeaf6567666b879b8c12bac89849",
+          "message": "fix(tla): detecting TLA in top level block scope (#3552)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-02-11T11:37:32Z",
+          "tree_id": "81ff540b757ed78fd817083a9ef420b1261d2b56",
+          "url": "https://github.com/rolldown/rolldown/commit/747e54d54fc7aeaf6567666b879b8c12bac89849"
         },
-        "date": 1739274828485,
+        "date": 1739274944323,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x (default)",
-            "value": "383.71",
+            "value": "380.31",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap (default)",
-            "value": "608.78",
+            "value": "620.86",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify (default)",
-            "value": "1094.10",
+            "value": "1089.55",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify-sourcemap (default)",
-            "value": "1476.91",
+            "value": "1495.60",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts (default)",
-            "value": "137.27",
+            "value": "131.82",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts-sourcemap (default)",
-            "value": "189.73",
+            "value": "187.16",
             "unit": "ms / ops"
           }
         ]
