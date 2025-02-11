@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1739258502585,
+  "lastUpdate": 1739259501079,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -79397,6 +79397,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "178.01",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "lynweklm@gmail.com",
+            "name": "LongYinan",
+            "username": "Brooooooklyn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "cd88ae0485f30bf9c714f1eed6f1a43ecb059a27",
+          "message": "chore(deps): update dependency esbuild to ^0.25.0 [security] (#3547)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2025-02-11T07:03:32Z",
+          "tree_id": "3e7454b13d656329166b03a32d1e7981e5db223c",
+          "url": "https://github.com/rolldown/rolldown/commit/cd88ae0485f30bf9c714f1eed6f1a43ecb059a27"
+        },
+        "date": 1739259501026,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "391.63",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "594.54",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1038.89",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1422.61",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "130.15",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "195.86",
             "unit": "ms / ops"
           }
         ]
