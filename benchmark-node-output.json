@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1739269231755,
+  "lastUpdate": 1739269713966,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -79559,6 +79559,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "182.70",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "011af3468126f70e108ceeb89762ccbdebae91de",
+          "message": "fix(manifestPlugin): manifest fileds should be camelCase (#3551)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n\nref\nhttps://github.com/vitejs/vite/blob/main/packages/vite/src/node/plugins/manifest.ts#L26\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-02-11T10:08:12Z",
+          "tree_id": "d00d9a80cd23840b27208dff1da5fd0074a1d353",
+          "url": "https://github.com/rolldown/rolldown/commit/011af3468126f70e108ceeb89762ccbdebae91de"
+        },
+        "date": 1739269713934,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "376.50",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "594.21",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1060.08",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1452.19",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "127.77",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "183.66",
             "unit": "ms / ops"
           }
         ]
