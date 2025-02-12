@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1739284132788,
+  "lastUpdate": 1739345795849,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -79721,6 +79721,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "179.30",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "boshenc@gmail.com",
+            "name": "Boshen",
+            "username": "Boshen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5e09058228d1a20a72087e04845c4868a2abdaa4",
+          "message": "chore(rolldown): oxc v0.50.0 (#3557)\n\ncloses #3556\n\n---------\n\nCo-authored-by: IWANABETHATGUY <iwanabethatguy@qq.com>",
+          "timestamp": "2025-02-12T07:18:46Z",
+          "tree_id": "7105554bd69a06097224bff8b104696d69ddf908",
+          "url": "https://github.com/rolldown/rolldown/commit/5e09058228d1a20a72087e04845c4868a2abdaa4"
+        },
+        "date": 1739345795813,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "381.40",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "606.11",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1093.08",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1475.22",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "138.01",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "198.20",
             "unit": "ms / ops"
           }
         ]
