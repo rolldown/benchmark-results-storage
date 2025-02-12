@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1739349825602,
+  "lastUpdate": 1739353829097,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -79829,6 +79829,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "181.50",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "green@sapphi.red",
+            "name": "翠 / green",
+            "username": "sapphi-red"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1e69bf0a19f62d06057a4f497c03b1b2650d8962",
+          "message": "feat: export hookFilter extension types (#3562)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nSo that I can use it here\n\nhttps://github.com/vitejs/vite/blob/b44e3d43db65babe1c32e143964add02e080dc15/packages/vite/src/node/plugin.ts#L98\nand also to implement filter on Vite's plugin container side later.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-02-12T17:44:15+08:00",
+          "tree_id": "aba878317dc0acb92951ee4743c10902ea29c746",
+          "url": "https://github.com/rolldown/rolldown/commit/1e69bf0a19f62d06057a4f497c03b1b2650d8962"
+        },
+        "date": 1739353829064,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "380.85",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "588.52",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1078.66",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1424.86",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "128.69",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "186.93",
             "unit": "ms / ops"
           }
         ]
