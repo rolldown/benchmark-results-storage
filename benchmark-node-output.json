@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1739432029799,
+  "lastUpdate": 1739449319705,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -80207,6 +80207,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "184.60",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "942e094e77c9c8c9007a28cbe4a5111f0f412a3a",
+          "message": "chore: remove redundant dependency (#3572)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. The two function has same functionality\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-02-13T12:04:08Z",
+          "tree_id": "ac2b84000c5dfc617a331859babfb15aa629530c",
+          "url": "https://github.com/rolldown/rolldown/commit/942e094e77c9c8c9007a28cbe4a5111f0f412a3a"
+        },
+        "date": 1739449319672,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "373.71",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "581.67",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1027.62",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1429.11",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "125.68",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "182.87",
             "unit": "ms / ops"
           }
         ]
