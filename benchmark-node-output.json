@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1739364244272,
+  "lastUpdate": 1739419338678,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -79991,6 +79991,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "185.14",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "89eac9e18764816e422384b06df114bd3907c99b",
+          "message": "fix: top level this substitution (#3567)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. ref\nhttps://hyrious.me/esbuild-repl/?version=0.23.0&b=e%00entry.js%00class+BaseNode+extends+Callable+%7B%0A++%2F%2F+should+not+be+replaced%0A++referencesById+%3D+children.reduce%28%28result%2C+child%29+%3D%3E+Object.assign%28result%2C+child.referencesById%29%2C+%7B+%5Bthis.id%5D%3A+this+%7D%29%3B%0A++%2F%2F+should+replace%0A++%5Bthis.id%5D+%3D+this%3B%0A%7D%0A%0Aconsole.log%28%60BaseNode%3A+%60%2C+BaseNode%29%0A%0A&b=%00file.js%00&o=%7B%0A++treeShaking%3A+true%2C%0A++external%3A+%5B%22c%22%2C+%22a%22%2C+%22b%22%5D%2C%0A%22bundle%22%3A+true%2C%0Aformat%3A+%22esm%22%0A%7D\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-02-13T03:45:28Z",
+          "tree_id": "d1a496d40928c9a9105ce4dc8890b4cda5af7c9e",
+          "url": "https://github.com/rolldown/rolldown/commit/89eac9e18764816e422384b06df114bd3907c99b"
+        },
+        "date": 1739419338647,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "371.07",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "586.21",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1045.23",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1376.35",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "126.94",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "179.57",
             "unit": "ms / ops"
           }
         ]
