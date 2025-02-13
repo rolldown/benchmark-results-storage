@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1739426422035,
+  "lastUpdate": 1739432029799,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -80153,6 +80153,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "181.91",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "66aa97d9c66a3a8f1e808397e2d30d982580b284",
+          "message": "feat(mf): support cjs shared module (#3565)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-02-13T07:15:58Z",
+          "tree_id": "d2b6ed88d2a49bf404d7cc4ff1f56efdf0d274d6",
+          "url": "https://github.com/rolldown/rolldown/commit/66aa97d9c66a3a8f1e808397e2d30d982580b284"
+        },
+        "date": 1739432029767,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "368.62",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "592.36",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1014.58",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1397.69",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "131.31",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "184.60",
             "unit": "ms / ops"
           }
         ]
