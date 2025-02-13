@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1739419338678,
+  "lastUpdate": 1739420749852,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -80045,6 +80045,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "179.57",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "cf442e9ca23c3226150aa15cac6b51b73e25934f",
+          "message": "feat(mf): support remote expose module is cjs (#3563)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-02-13T04:04:16Z",
+          "tree_id": "7468e61f7deb19412b00cfc5284a9bd1a1783b35",
+          "url": "https://github.com/rolldown/rolldown/commit/cf442e9ca23c3226150aa15cac6b51b73e25934f"
+        },
+        "date": 1739420749817,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "370.39",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "581.41",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1048.40",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1427.87",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "127.34",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "182.13",
             "unit": "ms / ops"
           }
         ]
