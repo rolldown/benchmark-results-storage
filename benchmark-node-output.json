@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1739514287946,
+  "lastUpdate": 1739520498360,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -80639,6 +80639,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "180.79",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fc7dd8c08276139982957582a191269175140c73",
+          "message": "feat(mf): support webpack dst remote (#3580)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-02-14T07:50:40Z",
+          "tree_id": "49986675be68c7844667fc4661c0bebd9e187f6a",
+          "url": "https://github.com/rolldown/rolldown/commit/fc7dd8c08276139982957582a191269175140c73"
+        },
+        "date": 1739520498327,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "373.30",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "578.81",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1026.30",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1392.71",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "127.80",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "176.61",
             "unit": "ms / ops"
           }
         ]
