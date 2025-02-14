@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1739505013665,
+  "lastUpdate": 1739514287946,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -80585,6 +80585,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "180.45",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "laipichan@qq.com",
+            "name": "dalaoshu",
+            "username": "shulaoda"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b759014b12e7c10480d0713f55b1bd767e30aa8a",
+          "message": "refactor(rust): improve `FilenameTemplate#render` (#3576)\n\n### Description\n\nThe `replace_all_placeholder` function offers better performance\ncompared to a standard `replace` operation.\n\n- Avoid performing multiple redundant searches for `hash` patterns.\n- Avoid incorrect matches such as `[hash:]`, `[hash:o]`.",
+          "timestamp": "2025-02-14T06:06:45Z",
+          "tree_id": "ec533c7dba287abc5bd3f947a7367c25fd0d02ed",
+          "url": "https://github.com/rolldown/rolldown/commit/b759014b12e7c10480d0713f55b1bd767e30aa8a"
+        },
+        "date": 1739514287913,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "371.92",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "580.79",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1010.44",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1405.36",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "127.02",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "180.79",
             "unit": "ms / ops"
           }
         ]
