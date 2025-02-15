@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1739615195860,
+  "lastUpdate": 1739618684107,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -80909,6 +80909,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "183.48",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "659cbd3d42aab91d37db215b46ab1e3c8f2fd559",
+          "message": "fix: making return type compatible with rollup/parseAst (#3586)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. see\nhttps://github.com/rollup/rollup/blob/master/src/utils/parseAst.ts\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-02-15T11:08:11Z",
+          "tree_id": "5dc82eab7d007fc1195e688a4ecc05d9fa87c2e2",
+          "url": "https://github.com/rolldown/rolldown/commit/659cbd3d42aab91d37db215b46ab1e3c8f2fd559"
+        },
+        "date": 1739618684071,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "375.86",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "607.86",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1016.44",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1385.10",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "124.37",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "180.34",
             "unit": "ms / ops"
           }
         ]
