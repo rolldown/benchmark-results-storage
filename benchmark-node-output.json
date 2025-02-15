@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1739608965901,
+  "lastUpdate": 1739613798919,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -80801,6 +80801,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "181.68",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "laipichan@qq.com",
+            "name": "dalaoshu",
+            "username": "shulaoda"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a7e403efbcd6ae65cbd511241a747afe323b8312",
+          "message": "fix(rust): dynamically importing `JSON` with `output.advancedChunks.groups` (#3584)\n\n### Description\n\ncloses #3437 \n\nThis issue was exposed after #3343. We will create the wrapper again in\n`create_exports_for_ecma_modules`, so the `__esm`'s `referenced_symbols`\nwill not be affected by being cleared in `generate_lazy_export` (only\njson).",
+          "timestamp": "2025-02-15T09:47:10Z",
+          "tree_id": "d76c119d3434effe752a755789f88a9a8706e002",
+          "url": "https://github.com/rolldown/rolldown/commit/a7e403efbcd6ae65cbd511241a747afe323b8312"
+        },
+        "date": 1739613798886,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "363.79",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "561.87",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "998.14",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1394.56",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "123.90",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "178.28",
             "unit": "ms / ops"
           }
         ]
