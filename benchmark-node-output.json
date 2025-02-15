@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1739613798919,
+  "lastUpdate": 1739615195860,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -80855,6 +80855,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "178.28",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0bfe751df53e2286992286b2abf2c17288527cb8",
+          "message": "fix: NormalizedOutputOptions option (#3582)\n\n<!-- Thank you for contributing! -->\n\n### Description\nincluding filenames/addons/plugins/sourcemapPathTransform/globals\noptions.\n\nclose  https://github.com/rolldown/rolldown/issues/3445\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-02-15T10:10:21Z",
+          "tree_id": "1d7bba60e4f83bc4438b8806c85363cc6b2e673a",
+          "url": "https://github.com/rolldown/rolldown/commit/0bfe751df53e2286992286b2abf2c17288527cb8"
+        },
+        "date": 1739615195826,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "373.75",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "595.52",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1043.87",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1405.22",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "128.99",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "183.48",
             "unit": "ms / ops"
           }
         ]
