@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1739681982724,
+  "lastUpdate": 1739687412108,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -81125,6 +81125,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "187.24",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b0898a8695d8ec4d0ea29577a7b204d84694f3fb",
+          "message": "perf: reduce memory alloc for StmtInfo (#3590)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-02-16T06:04:10Z",
+          "tree_id": "4b5b1f20410aa2269856a66d477fda6bad20216d",
+          "url": "https://github.com/rolldown/rolldown/commit/b0898a8695d8ec4d0ea29577a7b204d84694f3fb"
+        },
+        "date": 1739687412075,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "361.42",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "578.50",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1015.67",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1394.23",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "126.98",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "181.48",
             "unit": "ms / ops"
           }
         ]
