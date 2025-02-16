@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1739695792070,
+  "lastUpdate": 1739715286909,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -81395,6 +81395,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "187.58",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3a58602ca9eb1d875f59fea0c71b4a689872f6ec",
+          "message": "feat(hmr): register module exports in runtime (#3594)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-02-16T13:58:11Z",
+          "tree_id": "8de9ba18aa1f923c4e1c41175436dc4863871850",
+          "url": "https://github.com/rolldown/rolldown/commit/3a58602ca9eb1d875f59fea0c71b4a689872f6ec"
+        },
+        "date": 1739715286869,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "351.06",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "593.51",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "975.91",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1316.59",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "119.63",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "173.47",
             "unit": "ms / ops"
           }
         ]
