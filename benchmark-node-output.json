@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1739727069371,
+  "lastUpdate": 1739727181046,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -81456,53 +81456,53 @@
       {
         "commit": {
           "author": {
-            "email": "iwanabethatguy@qq.com",
-            "name": "IWANABETHATGUY",
-            "username": "IWANABETHATGUY"
+            "email": "i.heyunfei@gmail.com",
+            "name": "Yunfei He",
+            "username": "hyf0"
           },
           "committer": {
             "email": "noreply@github.com",
             "name": "GitHub",
             "username": "web-flow"
           },
-          "distinct": false,
-          "id": "8385e61db5964548ccdb0963016364cb16b4f95c",
-          "message": "chore: use rolldown-ariadne (#3597)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. closed #3589 \n2. closed #3499 \n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
-          "timestamp": "2025-02-16T17:14:25Z",
-          "tree_id": "779c60bc282e0e68517bed11147590be8c6893ce",
-          "url": "https://github.com/rolldown/rolldown/commit/8385e61db5964548ccdb0963016364cb16b4f95c"
+          "distinct": true,
+          "id": "1910872a4cf7e3a44a02b1f9463e2fd3ee6efdaa",
+          "message": "feat(hmr): ensure HMR runtime included (#3595)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-02-16T17:14:41Z",
+          "tree_id": "c8bc479a83908bcb55e6098edbf43a57b25d6f9f",
+          "url": "https://github.com/rolldown/rolldown/commit/1910872a4cf7e3a44a02b1f9463e2fd3ee6efdaa"
         },
-        "date": 1739727069340,
+        "date": 1739727181014,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x (default)",
-            "value": "373.17",
+            "value": "379.93",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap (default)",
-            "value": "588.45",
+            "value": "580.60",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify (default)",
-            "value": "1011.71",
+            "value": "1029.86",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify-sourcemap (default)",
-            "value": "1412.26",
+            "value": "1421.93",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts (default)",
-            "value": "126.68",
+            "value": "125.97",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts-sourcemap (default)",
-            "value": "181.08",
+            "value": "181.45",
             "unit": "ms / ops"
           }
         ]
