@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1739639209211,
+  "lastUpdate": 1739681982724,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -81071,6 +81071,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "181.61",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5b26e29e5eaa6a7dd9069808227d2fda8006483a",
+          "message": "feat: add base transform options (#3564)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. This is part of auto merge `tsconfig` to `transform_options`\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-02-16T04:41:27Z",
+          "tree_id": "d16560b3aa9c23736bf9a9adf1d47ec740493200",
+          "url": "https://github.com/rolldown/rolldown/commit/5b26e29e5eaa6a7dd9069808227d2fda8006483a"
+        },
+        "date": 1739681982690,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "380.28",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "590.73",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1078.99",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1456.75",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "129.24",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "187.24",
             "unit": "ms / ops"
           }
         ]
