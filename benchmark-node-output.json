@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1739778407935,
+  "lastUpdate": 1739781148232,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -81611,6 +81611,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "184.47",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f00dbdcdb563dfce7ab018310f2e0d08480e279c",
+          "message": "chore: pin pnpm version to avoid break netlify build (#3603)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. netlify build is broken again see\nhttps://github.com/rolldown/rolldown/pull/3599#issuecomment-2661915468,\nI pin the pnpm for now to avoid broken netlify build\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-02-17T08:14:26Z",
+          "tree_id": "326453ed4a19774d07acd7fb2b15131b5e3b0677",
+          "url": "https://github.com/rolldown/rolldown/commit/f00dbdcdb563dfce7ab018310f2e0d08480e279c"
+        },
+        "date": 1739781148200,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "363.78",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "582.46",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1023.66",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1407.43",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "131.69",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "177.54",
             "unit": "ms / ops"
           }
         ]
