@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1739766782632,
+  "lastUpdate": 1739778407935,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -81557,6 +81557,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "181.38",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "48b1b863e9fddeccbdbbd98641bb28597506e8f5",
+          "message": "fix: avoid call outputOptions hook at close (#3601)\n\n<!-- Thank you for contributing! -->\n\n### Description\nclose https://github.com/rolldown/rolldown/issues/3570\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-02-17T07:29:53Z",
+          "tree_id": "ff1d8ccd3b9a0adaf441e6b7389c141127ea14df",
+          "url": "https://github.com/rolldown/rolldown/commit/48b1b863e9fddeccbdbbd98641bb28597506e8f5"
+        },
+        "date": 1739778407901,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "375.30",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "588.61",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1056.38",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1428.78",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "127.60",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "184.47",
             "unit": "ms / ops"
           }
         ]
