@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1739951826001,
+  "lastUpdate": 1739953767381,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -81881,6 +81881,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "180.67",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1bc5dbb35a95352769683f06e7d31f618a380789",
+          "message": "chore: explicit configure oxc-minify (#3616)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. `oxc-minify` did not enable all options by default, so we need to\nmanually enable it.\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-02-19T08:10:09Z",
+          "tree_id": "da664dadf57cd20d15bdc2fd8c63beebd989aa5e",
+          "url": "https://github.com/rolldown/rolldown/commit/1bc5dbb35a95352769683f06e7d31f618a380789"
+        },
+        "date": 1739953767339,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "507.03",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "769.00",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1680.89",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "2072.95",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "160.97",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "223.19",
             "unit": "ms / ops"
           }
         ]
