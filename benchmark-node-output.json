@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1739978969950,
+  "lastUpdate": 1739981586962,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -82205,6 +82205,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "177.33",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "jrh.mjr@gmail.com",
+            "name": "Jeremiasz Major",
+            "username": "jrmajor"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "725c56662d82f008b8e734b77b36ba908392d86b",
+          "message": "chore: fix vitest warnings (#3626)\n\n### Description\n\nFixes the following warning:\n`Promise returned by expect(actual).toMatchFileSnapshot(expected) was\nnot awaited. Vitest currently auto-awaits hanging assertions at the end\nof the test, but this will cause the test to fail in Vitest 3. Please\nremember to await the assertion.`",
+          "timestamp": "2025-02-19T15:55:43Z",
+          "tree_id": "ead8ea308a1aa8424a67197d03817a571901122b",
+          "url": "https://github.com/rolldown/rolldown/commit/725c56662d82f008b8e734b77b36ba908392d86b"
+        },
+        "date": 1739981586928,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "382.31",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "596.71",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1092.24",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1467.26",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "129.95",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "187.23",
             "unit": "ms / ops"
           }
         ]
