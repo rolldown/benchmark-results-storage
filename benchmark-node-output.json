@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1739967685875,
+  "lastUpdate": 1739971705719,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -82043,6 +82043,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "180.68",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "jrh.mjr@gmail.com",
+            "name": "Jeremiasz Major",
+            "username": "jrmajor"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "59c5da53e6f459f929a7040ae7f160f76ffacd33",
+          "message": "fix: glob import from parent dir (#3614)\n\n### Description\n\nIf `import.meta.glob` pattern starts with `../`, it's currently resolved\nrelative to current dir instead of parent dir.",
+          "timestamp": "2025-02-19T13:11:18Z",
+          "tree_id": "1dd7746e533bfe2f6cfb6f950e4620627a884ac1",
+          "url": "https://github.com/rolldown/rolldown/commit/59c5da53e6f459f929a7040ae7f160f76ffacd33"
+        },
+        "date": 1739971705686,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "376.06",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "593.76",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1027.57",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1409.90",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "126.98",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "182.23",
             "unit": "ms / ops"
           }
         ]
