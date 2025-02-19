@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1739876840847,
+  "lastUpdate": 1739948656308,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -81773,6 +81773,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "177.91",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b17487de653e95fb5d236055c218c4b0a2c5281d",
+          "message": "feat(watcher): debounce invalidate (#3607)\n\n<!-- Thank you for contributing! -->\n\n### Description\nrelated to https://github.com/rolldown/rolldown/issues/2831\n\nHere i try to some ways to debounce.\n- notify-debouncer-full, it break wasi build, need to fork and resolve\nissue\n- using https://docs.rs/set_timeout/latest/set_timeout/, the set timeout\nclosure is not running, I'm not debugger it\n- using `std::thread::sleep` is a simple implement\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-02-19T06:44:21Z",
+          "tree_id": "63e5f977146e788cf479e6eec5adb43378c236d1",
+          "url": "https://github.com/rolldown/rolldown/commit/b17487de653e95fb5d236055c218c4b0a2c5281d"
+        },
+        "date": 1739948656275,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "373.28",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "578.48",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1004.67",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1392.12",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "125.39",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "178.82",
             "unit": "ms / ops"
           }
         ]
