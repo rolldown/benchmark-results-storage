@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1740071154834,
+  "lastUpdate": 1740074877546,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -82583,6 +82583,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "190.83",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8219a835bd92d5f7eaa924cd01f8e6719a828ca5",
+          "message": "fix: chunk.modules should order by exec_order (#3638)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. Closed https://github.com/rolldown/rolldown/issues/3636\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-02-20T17:46:07Z",
+          "tree_id": "2a1131bb235c46caf5962a75f1a5d78d57271427",
+          "url": "https://github.com/rolldown/rolldown/commit/8219a835bd92d5f7eaa924cd01f8e6719a828ca5"
+        },
+        "date": 1740074877512,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "376.03",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "593.26",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1037.43",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1426.67",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "126.96",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "182.45",
             "unit": "ms / ops"
           }
         ]
