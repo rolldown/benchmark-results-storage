@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1740054133202,
+  "lastUpdate": 1740055486736,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -82475,6 +82475,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "189.22",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2382047bfa55c4eb7aaed466c34a1212a0c71a23",
+          "message": "fix: don't enable drop_console when compress is true (#3639)\n\n<!-- Thank you for contributing! -->\n\n### Description\n1. Closed https://github.com/rolldown/rolldown/issues/3637\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-02-20T12:22:21Z",
+          "tree_id": "026d50fa6a713eee3b16f76f3aeebf78af71ec50",
+          "url": "https://github.com/rolldown/rolldown/commit/2382047bfa55c4eb7aaed466c34a1212a0c71a23"
+        },
+        "date": 1740055486703,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "383.19",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "613.07",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1089.79",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1451.72",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "128.08",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "183.30",
             "unit": "ms / ops"
           }
         ]
