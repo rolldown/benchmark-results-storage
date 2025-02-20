@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1740046804627,
+  "lastUpdate": 1740054133202,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -82421,6 +82421,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "184.35",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "jrh.mjr@gmail.com",
+            "name": "Jeremiasz Major",
+            "username": "jrmajor"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7defeabb31232079dc6196861406af49de945bfa",
+          "message": "test: port glob import test from vite (#3621)\n\n### Description\n\nNot sure whether we want to port this test or create new ones. Feel free\nto reject this PR.",
+          "timestamp": "2025-02-20T12:04:16Z",
+          "tree_id": "3c92c6410febda376ff4a5874d8012ffb6e248b7",
+          "url": "https://github.com/rolldown/rolldown/commit/7defeabb31232079dc6196861406af49de945bfa"
+        },
+        "date": 1740054133168,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "386.09",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "591.78",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1022.72",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1437.28",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "130.52",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "189.22",
             "unit": "ms / ops"
           }
         ]
