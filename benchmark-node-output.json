@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1740076593647,
+  "lastUpdate": 1740122117579,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -82691,6 +82691,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "184.84",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "335d3d6a6b3b45838f628958bff0735d40d2b1e5",
+          "message": "fix(minify): disable top_level option for iife format (#3647)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nclose https://github.com/rolldown/rolldown/issues/3646. \n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-02-21T06:57:14Z",
+          "tree_id": "950270a419d17744f878425446287ada03be5aba",
+          "url": "https://github.com/rolldown/rolldown/commit/335d3d6a6b3b45838f628958bff0735d40d2b1e5"
+        },
+        "date": 1740122117546,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "382.40",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "593.13",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1053.04",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1448.85",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "130.09",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "184.13",
             "unit": "ms / ops"
           }
         ]
