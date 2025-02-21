@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1740133392910,
+  "lastUpdate": 1740133659479,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -82816,43 +82816,43 @@
             "username": "web-flow"
           },
           "distinct": false,
-          "id": "806ed8f27f1cd4bb0ebf4e34e8baa18cafbfbd09",
-          "message": "chore: avoid init class public fileds (#3651)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\navoid gnereate code like this.\n\n``` .js\nvar BuiltinPlugin = class {\n\tconstructor(name, _options) {\n\t\tthis.name = name;\n\t\tthis._options = _options;\n\t\tthis.name = name;\n\t\tthis._options = _options;\n\t}\n};\n```\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
-          "timestamp": "2025-02-21T09:57:26Z",
-          "tree_id": "129d700404a491b08c752b496dab9d37a454bab8",
-          "url": "https://github.com/rolldown/rolldown/commit/806ed8f27f1cd4bb0ebf4e34e8baa18cafbfbd09"
+          "id": "23ba9ab92055f3353f4fe0b551676ac21f55d23a",
+          "message": "feat(mf): add pre order to the resolve_id_meta (#3652)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-02-21T10:00:34Z",
+          "tree_id": "9bf4b687dd612638f171251db3d2848987e0d2e8",
+          "url": "https://github.com/rolldown/rolldown/commit/23ba9ab92055f3353f4fe0b551676ac21f55d23a"
         },
-        "date": 1740133392876,
+        "date": 1740133659446,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x (default)",
-            "value": "372.61",
+            "value": "371.17",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap (default)",
-            "value": "593.63",
+            "value": "582.16",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify (default)",
-            "value": "1001.57",
+            "value": "1032.89",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify-sourcemap (default)",
-            "value": "1409.41",
+            "value": "1467.54",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts (default)",
-            "value": "129.65",
+            "value": "130.41",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts-sourcemap (default)",
-            "value": "183.83",
+            "value": "189.96",
             "unit": "ms / ops"
           }
         ]
