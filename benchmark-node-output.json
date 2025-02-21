@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1740122117579,
+  "lastUpdate": 1740125073099,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -82745,6 +82745,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "184.13",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "green@sapphi.red",
+            "name": "翠 / green",
+            "username": "sapphi-red"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "d6a33365d1e17a040dc19aefe5a53ca4d43bb7e1",
+          "message": "feat(node): make `parseAst` compatible with rollup (#3649)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nBased on the discussions in #3630, this PR makes `parseAst`'s default\nsettings compatible with rollup. I also changed the parameter order to\nbe the same with rollup.\n\nclose #3630\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-02-21T07:47:41Z",
+          "tree_id": "fb844e11a2b3541007b39533a36806a93c235cd8",
+          "url": "https://github.com/rolldown/rolldown/commit/d6a33365d1e17a040dc19aefe5a53ca4d43bb7e1"
+        },
+        "date": 1740125073065,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "371.36",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "615.92",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1026.62",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1388.78",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "129.20",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "179.82",
             "unit": "ms / ops"
           }
         ]
