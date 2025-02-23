@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1740312370849,
+  "lastUpdate": 1740312673492,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -83086,43 +83086,43 @@
             "username": "web-flow"
           },
           "distinct": false,
-          "id": "6a33390fc943c6f930788c573a2ab48b97a0b0f6",
-          "message": "chore(deps): bump `fast-glob` to v0.4.4 (#3664)\n\n### Description\n\nRelated to https://github.com/shulaoda/fast-glob/pull/10\n\nFixed some matching issues.",
-          "timestamp": "2025-02-23T11:44:20Z",
-          "tree_id": "97f48a9760081fe419d86aa333128fa1286be42a",
-          "url": "https://github.com/rolldown/rolldown/commit/6a33390fc943c6f930788c573a2ab48b97a0b0f6"
+          "id": "6e16c3c605978dbe4d8e6878799b78de204f0b4d",
+          "message": "perf(rust): improve `get_lived_entry` (#3665)\n\n### Description\n\nUse `any` instead of `filter`.",
+          "timestamp": "2025-02-23T11:53:17Z",
+          "tree_id": "9541400bbc78eb0dc59cf523a33e773f5797b69c",
+          "url": "https://github.com/rolldown/rolldown/commit/6e16c3c605978dbe4d8e6878799b78de204f0b4d"
         },
-        "date": 1740312370815,
+        "date": 1740312673459,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x (default)",
-            "value": "374.96",
+            "value": "374.63",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap (default)",
-            "value": "595.26",
+            "value": "586.49",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify (default)",
-            "value": "1030.63",
+            "value": "1053.31",
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify-sourcemap (default)",
-            "value": "1433.39",
+            "value": "1454.39",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts (default)",
-            "value": "125.75",
+            "value": "127.25",
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts-sourcemap (default)",
-            "value": "179.68",
+            "value": "182.54",
             "unit": "ms / ops"
           }
         ]
