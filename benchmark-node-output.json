@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1740369698000,
+  "lastUpdate": 1740389992460,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -83447,6 +83447,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": "180.53",
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "likui.underfin@gmail.com",
+            "name": "underfin",
+            "username": "underfin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "bf9a0c5284b05838ed168ba862e5e4f1b5f983e1",
+          "message": "refactor(mf): avoid intercept load host entry (#3673)\n\n<!-- Thank you for contributing! -->\n\n### Description\n\nUsing different way to make sure to execute init host at first, it could\navoid the rolldown-vite HTML plugin edge case.\n\n<!-- Please insert your description here and provide especially info\nabout the \"what\" this PR is solving -->",
+          "timestamp": "2025-02-24T09:22:26Z",
+          "tree_id": "68cbee4ad22157795d627c5aa60d385cacb93429",
+          "url": "https://github.com/rolldown/rolldown/commit/bf9a0c5284b05838ed168ba862e5e4f1b5f983e1"
+        },
+        "date": 1740389992426,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": "375.74",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": "589.84",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": "1079.68",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": "1406.97",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": "133.27",
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": "180.26",
             "unit": "ms / ops"
           }
         ]
