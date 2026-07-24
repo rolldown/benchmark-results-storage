@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1784880682165,
+  "lastUpdate": 1784911624402,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -263753,6 +263753,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 169.61,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "hyfdev",
+            "username": "hyfdev"
+          },
+          "committer": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "hyfdev",
+            "username": "hyfdev"
+          },
+          "distinct": false,
+          "id": "7e13de41f98c3f8a49a57caf119b214360379201",
+          "message": "fix(code-splitting): align dynamicImports metadata with the rewritten import() specifier (#10430)\n\nThe emitted code and the chunk metadata could disagree about which file a dynamic import loads. The code was always right; `chunk.dynamicImports` was wrong. This PR makes the metadata name the same file the emitted `import()` names.\n\n```js\n// a.js — emitted code (correct)\nimport(\"./chunks/target.js\")\n\n// a.js — metadata before this PR (wrong)\ndynamicImports: [\"chunks/dyn.js\"]\n```\n\n### Problem\n\nA dynamically imported module becomes a dynamic entry. Normally its body lives in its own entry chunk, so the file you import is the file that holds the code — no ambiguity. The two diverge when only a facade file remains at the entry (importing the body chunk and triggering init) while the body is hosted elsewhere:\n\n- order-wrap entry facades under `strictExecutionOrder`;\n- with strict order off: facade elimination skipped (top-level await anywhere in the graph, or `chunkOptimization.mergeCommonChunks: false`) while a manual group — or a chunk shared by static+dynamic importers — hosts the body.\n\nThe root cause is two different lookup tables: the finalizer rewrites the `import()` specifier through `entry_module_to_entry_chunk` (→ the facade), while `collect_depended_symbols` recorded the metadata edge from `module_to_chunk[importee]` (→ the body chunk).\n\nRuntime behavior is unaffected; only metadata consumers get the wrong edge: `build.manifest` (backend preload tags point at the body chunk and miss the facade — an extra request waterfall), the devtools chunk graph, and the bundle analyzer. Vite's `__vitePreload` and SSR manifest re-parse the emitted code, so runtime preloading was never affected.\n\n### Fix\n\nRecord the edge through the same mapping the finalizer uses: `entry_module_to_entry_chunk` first, `module_to_chunk` as fallback. When the mapping is present, every rewrite path derives the emitted path from it; when it is absent the finalizer emits `void 0`, and the fallback keeps today's metadata byte-for-byte. `cross_chunk_dynamic_imports` feeds only metadata surfaces (RollupRenderedChunk, `OutputChunk.dynamicImports`, devtools trace), so emitted code cannot change.\n\nTwo pre-existing wrinkles are deliberately left alone (a mapping-absent `void 0` import and a same-chunk merged entry can still record an edge with no emitted request): both record identically before and after this change; tracked in #10294.\n\n### Validation\n\n- Two vitest fixtures (`output/dynamic-imports-metadata/{strict-facade,kept-facade-tla}`) pin both shapes from the public JS API surface: red on an unfixed build (`['chunks/dyn.js']` / `['chunks/grp.js']` recorded while the code names the facade), green with the fix. The dual static+dynamic combo was verified with a one-off probe on both builds.\n- Full Rust fixture sweep (`--include-ignored`): failure list identical to unmodified main on the same machine (the pre-existing local environment set), zero snapshot changes. clippy and fmt clean.\n\nPart of #10294.",
+          "timestamp": "2026-07-24T16:18:58Z",
+          "tree_id": "4b2aab0e2b21397680e079f59bda51ba9b19e84b",
+          "url": "https://github.com/rolldown/rolldown/commit/7e13de41f98c3f8a49a57caf119b214360379201"
+        },
+        "date": 1784911624321,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 608.35,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 934.63,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 788.53,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 975.55,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 124.31,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 158.71,
             "unit": "ms / ops"
           }
         ]
