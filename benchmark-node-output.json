@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1784950443176,
+  "lastUpdate": 1784951931595,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -263861,6 +263861,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 173.1,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "lynweklm@gmail.com",
+            "name": "Brooooooklyn",
+            "username": "Brooooooklyn"
+          },
+          "committer": {
+            "email": "lynweklm@gmail.com",
+            "name": "Brooooooklyn",
+            "username": "Brooooooklyn"
+          },
+          "distinct": false,
+          "id": "927a328880d5616106156eee1fb304c7f9bcd2cf",
+          "message": "chore: publint/package-metadata fixes and small correctness fixes (#10344)\n\n### Description\n\nStandalone extraction from #10268 (part of breaking that PR into reviewable pieces). Four independent, verified-on-main fixes:\n\n**Package metadata / publint**\n\n- Ship `LICENSE` and `THIRD-PARTY-LICENSE` in the published `rolldown` and `@rolldown/browser` tarballs. The publish workflow (`.github/workflows/publish-to-npm.yml`) copies both files into every package directory before publishing, but they were missing from the `files` arrays — so `THIRD-PARTY-LICENSE` was silently dropped from the tarballs (`LICENSE` only survived because npm auto-includes it). Verified with `npm pack --dry-run` before/after.\n- Add the missing `types` condition to `@rolldown/browser`'s `.` export so TypeScript resolves declarations for the root entry under `moduleResolution: bundler`/`node16` (the top-level `types` field is ignored once `exports` exists).\n- Remove `\"preinstall\": \"npx only-allow pnpm\"` from `@rolldown/browser`. Lifecycle scripts ship with the published package, so this runs on consumers' machines and breaks `npm install` / `yarn add` of `@rolldown/browser`. The repo-level pnpm guard remains enforced by the root `packageManager` field.\n\n**Small correctness fixes**\n\n- `bindingify-output-hooks.ts`: `renderStart` and `renderError` handlers were called without `await` inside their async wrappers, so async hook implementations were not awaited (the bundle could proceed mid-hook) and rejections became unhandled. All other output hooks already `await`.\n- `cli/commands/bundle.ts`: replace `process.exit(1)` with `process.exitCode = 1; return;` in the \"No output generated\" path, so the `await using build` disposer runs and stdio flushes before the process exits.\n\n### Test Plan\n\n- `pnpm --filter rolldown build-native:debug` (includes `tsc -p tsconfig.check.json`) — passes\n- `pnpm --filter rolldown publint` — passes (only the pre-existing `sideEffects` suggestion)\n- `npm pack --dry-run` with the CI license-copy step simulated: both packages now include `LICENSE` + `THIRD-PARTY-LICENSE`; on main, `THIRD-PARTY-LICENSE` is dropped\n- `vitest run fixture.test.ts fixtures-concurrent.test.ts` — 415 passed\n- `vitest run error/error.test.ts` — 12 passed\n- `pnpm run test:cli` (`cli-e2e.test.ts`) — 61 passed, 1 skipped\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\n<!-- CURSOR_SUMMARY -->\n---\n\n> [!NOTE]\n> **Low Risk**\n> Mostly packaging and small CLI/plugin-hook correctness fixes; hook awaiting slightly changes timing for async `renderStart`/`renderError` plugins but aligns with intended Rollup semantics.\n>\n> **Overview**\n> **Publishing** for `rolldown` and `@rolldown/browser` now explicitly includes `LICENSE` and `THIRD-PARTY-LICENSE` in the `files` list so CI-copied license files are not dropped from npm tarballs. `@rolldown/browser` adds a `types` condition on the root `.` export for modern TypeScript resolution, and drops the published `preinstall` `only-allow pnpm` script so npm/yarn consumers can install the package.\n>\n> **Runtime behavior:** `renderStart` and `renderError` plugin hooks now `await` their handlers, matching other output hooks so async plugins finish before the bundle continues and rejections are handled. The CLI “no output generated” path sets `process.exitCode = 1` and returns instead of calling `process.exit(1)`, so the `await using` build disposer runs and stdio can flush.\n>\n> <sup>Reviewed by [Cursor Bugbot](https://cursor.com/bugbot) for commit 075c98112783229ae327eb5a7a1d936f091a6dcb. Bugbot is set up for automated code reviews on this repo. Configure [here](https://www.cursor.com/dashboard/bugbot).</sup>\n<!-- /CURSOR_SUMMARY -->",
+          "timestamp": "2026-07-25T03:48:08Z",
+          "tree_id": "68492bfc15bd3b3d2bb3d3875c66a224c5640fcc",
+          "url": "https://github.com/rolldown/rolldown/commit/927a328880d5616106156eee1fb304c7f9bcd2cf"
+        },
+        "date": 1784951931498,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 714.28,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 917.35,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 907.89,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 1079.43,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 146.93,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 173.93,
             "unit": "ms / ops"
           }
         ]
