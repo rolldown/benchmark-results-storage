@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1784951931595,
+  "lastUpdate": 1784976858876,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -263915,6 +263915,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 173.93,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "hyfdev",
+            "username": "hyfdev"
+          },
+          "committer": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "hyfdev",
+            "username": "hyfdev"
+          },
+          "distinct": false,
+          "id": "959002b2cef2a0163f59dff214bc9e170b321f83",
+          "message": "fix(code-splitting): keep CommonJS modules wrapped under strict execution order (#10405)\n\n## Bug\n\nTwo mutually unreachable CommonJS entries, co-located by a `codeSplitting` group, in cjs output with `strictExecutionOrder: true`:\n\n```js\n// effect.js (entry A)\nconsole.log('effect');\nmodule.exports = { name: 'effect' };\n\n// silent.js (entry B, no relation to A)\nmodule.exports = { name: 'silent' };\n```\n\n```js\n// rolldown.config\n{\n  input: { effect: './effect.js', silent: './silent.js' },\n  output: {\n    format: 'cjs',\n    strictExecutionOrder: true,\n    codeSplitting: { groups: [{ name: 'common' }] },\n  },\n}\n```\n\nCurrent main emits both entry bodies raw in the group chunk:\n\n```js\n// common.js\nconsole.log('effect');               // entry A's top level\nmodule.exports = { name: 'effect' };\nmodule.exports = { name: 'silent' }; // clobbers the line above\n\n// silent.js (entry facade)\nrequire(\"./common.js\");              // runs A's side effects; exports lost\n```\n\n`require('./silent.js')` executes entry A and returns `{}`. This build is byte-identical to the `strictExecutionOrder: false` output — strict silently stops engaging. v1.2.0 is correct:\n\n```js\n// common.js (v1.2.0)\nvar require_effect = __commonJSMin((exports, module) => { console.log('effect'); module.exports = { name: 'effect' }; });\nvar require_silent = __commonJSMin((exports, module) => { module.exports = { name: 'silent' }; });\nObject.defineProperty(exports, \"require_effect\", { get: () => require_effect });\nObject.defineProperty(exports, \"require_silent\", { get: () => require_silent });\n\n// silent.js (v1.2.0 entry facade)\nmodule.exports = require(\"./common.js\").require_silent();\n```\n\nUnreleased regression, bisected with the execution-order fuzzer's directed control (`cross-entry-cjs-output-strict`):\n\n| build | result |\n| --- | --- |\n| v1.2.0 (npm) | pass |\n| `ce98ae798` (parent of the #10104 squash) | pass |\n| `1d86ffe06` (#10104) | events-reordered |\n| current `main` | events-reordered |\n\n## Cause\n\nA CommonJS module has exactly one deferral mechanism: its `__commonJS` wrapper. Two rules decide who gets one, and after #10104 a never-imported CommonJS module falls through both:\n\n- **Interop wrapping (link stage)** wraps a CJS module only when something imports or requires it. A CJS *entry* in cjs output has no importer, keeps `WrapKind::None`, and renders raw.\n- **Order wrapping (generate stage)** is ESM-only: `is_order_wrap_eligible` requires `ExportsKind::Esm | None`, and the lowering synthesizes only `init_*`/`__esm` wrappers.\n\nPre-#10104, `wrap_modules` closed this gap — under `strictExecutionOrder` every CommonJS module was forced to `WrapKind::Cjs`. #10104 deleted that override together with the ESM wrap-all logic it replaced, although its own stated non-goal was \"Changing CJS or require-of-ESM interop output when no order wrapper is selected\". This restores the CJS half only; the ESM half is genuinely owned by order analysis now.\n\n## Why this must live at the link stage, not in order lowering\n\nThe natural question is why order lowering doesn't just handle the case itself — it runs post-chunking and can see the hazardous placement. Detection is not the problem; repair is:\n\n- **For CommonJS, representation *is* deferral.** An ESM order wrapper is a side-effect trigger (`init_x()`); a CJS wrapper must materialize and return `module.exports`, with `module`/`exports` rebound to closure parameters, a `module.exports = require_x()` entry facade, and live getter exports. That is the interop `WrapKind::Cjs` pathway — order lowering has no CJS-shaped tool.\n- **`wrap_kind()` is immutable after linking, by #10104's own design.** `OrderWrapState` holds all late state explicitly *without changing link-stage `WrapKind`*, and the module finalizer, `render_chunk_exports`, and `compute_cross_chunk_links` all dispatch on `wrap_kind()`. Wrapping CJS late would either mutate that sealed fact or thread a second wrap-kind channel through every consumer — duplicating existing interop machinery.\n- **The gate — strict plus configured `codeSplitting` groups — is the semantically correct condition.** Without strict, a lone CJS entry rendering raw is the intended minimal output. Under strict, the hazard still needs adverse placement: the only mechanism that can move a never-imported CommonJS module out of its own entry chunk is a group capture (standard chunk assignment keeps an entry with its exclusive dependencies, and every chunk-optimizer merge path either requires the entry chunk to have been emptied by a capture first or degenerates to \"loading the chunk *is* executing that entry\"). Placement itself is invisible to the link stage, but the groups config is not. With groups configured, `strictExecutionOrder` is exactly the user's opt-in to \"stay correct under any placement, pay the wrapper bytes\" — the same reasoning as wrap-all deferring hazard-free ESM modules.\n\nWithout groups the raw body is load-bearing, not just byte-smaller: review surfaced that the wrapper's synthetic `module`/`exports` parameters break a standalone CJS entry's Node module contract — `exports: 'named'` output collapses to `{ default: getter }`, `module.filename` reads undefined, `module.parent` loses its value, and `require.main === module` turns false — all of which the raw form preserves. The first revision of this PR wrapped unconditionally under strict and regressed exactly that; the gate restores main's behavior for every no-groups config.\n\nCost: under strict with groups configured, a never-imported CJS entry is wrapped even when no group actually captures it — identical to every released version's output under groups. If that ever matters, the refinement is a generate-stage *render* downgrade backed by a placement proof (the same conservative-first pattern as the planned `init_*` hoisted-form narrowing), not a late wrap channel.\n\n## Tests\n\n`function/experimental/strict_execution_order/cjs_entry_group_isolation` — the shape above, wrap-all and on-demand cells. Snapshot pins the wrapped shape; `_test.mjs` executes the output: requiring the silent entry must run no foreign top level and both entries must keep their own `module.exports`. Red on main without the fix. No existing fixture combined CommonJS-source entries with cjs-format strict output, which is why #10104's snapshot audit could not see this.\n\n`standalone_cjs_entry_named_exports` and `standalone_cjs_entry_node_module` (from review, thanks @IWANABETHATGUY) pin the no-groups arm in the same wrap-all and on-demand cells: a standalone CJS entry under strict must keep rendering raw, preserving its named-exports shape and Node module identity (`module.filename`, `module.parent`, `require.main === module`, both required and run as the CLI). Red on this PR's first revision, green on main and on the gated fix.\n\n## Validation\n\n- Full integration fixture suite and workspace unit tests pass with no snapshot changes outside the new fixture; clippy `-D warnings` and `cargo fmt --check` clean.\n- Execution-order fuzzer current-target audit against this branch: `cross-entry-cjs-output-strict` flips to pass. The two `cjs-output-facade-cycle` strict controls (uninitialized-wrapper-export finding from the same fuzzer list) also flip to pass — a wrapped entry is reached through a live getter instead of a not-yet-installed export. That finding's `strictExecutionOrder: false` arm is out of scope here. `family-a-existing-seed` stays known-red (separate bug).\n- A four-cell matrix ({cjs,esm} × {seo:true,false}) reproduces v1.2.0 behavior exactly: cjs+strict isolated with correct exports, esm cells clean, cjs+seo:false unchanged (#9998).\n- After gating on groups: full suite green again with the `cjs_entry_group_isolation` snapshot byte-identical, so every groups-present config keeps the first revision's output; no-groups configs are byte-identical to main by construction (the force-wrap block is skipped entirely). The fuzzer results above all exercise group configs and are unaffected.\n\nTracked in #10294 (execution-order fuzzer findings, CJS-output strict cross-entry leak). Related: #10104 (introducing change), #9998 (the pre-existing seo:false arm of the same co-location root, unchanged here), #9997 (the original strict isolation guarantee), #10401 (closed chunking-side pin for the facade-cycle shape; this change is the \"wrap captured entries\" direction recorded there).",
+          "timestamp": "2026-07-25T10:42:50Z",
+          "tree_id": "f96f4450aa28c08a893903e4e8dfbab1bb936a3b",
+          "url": "https://github.com/rolldown/rolldown/commit/959002b2cef2a0163f59dff214bc9e170b321f83"
+        },
+        "date": 1784976858770,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 748.28,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 958.94,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 961.14,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 1141.59,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 145.62,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 169.5,
             "unit": "ms / ops"
           }
         ]
