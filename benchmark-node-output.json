@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1784995095640,
+  "lastUpdate": 1784996515148,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -264023,6 +264023,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 173.2,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2d46d62eb4d7fcb92772d7334c04865d84a3625b",
+          "message": "perf: cache the resolved glob matcher for Id/ImporterId filters (#10410)\n\n> **Stacked on top of #10408** (base branch `perf/js-hook-filter-eval`).\nReview/merge that one first; the diff here is just the glob-matcher\ncache.\n\n## What this solves\n\nFor a `string` (glob) `id`/`importerId` filter, `get_matcher_string`\nallocates on **every module tested** when the glob is *relative*: it\ndoes `Path::join(cwd, glob)` + normalize to anchor the glob to cwd.\n`IdMatcher` now memoizes the resolved matcher so that resolution happens\n**once** instead of once per module.\n\n- Relative-glob `id` filter: **~1246 ns → ~562 ns** per 8 ids (measured\nlocally; no bench committed).\n- `**`-prefixed / absolute globs and regex ids: unchanged (they never\nallocated per call).\n\n## The cwd-correctness design (the fix for the earlier revert)\n\nThe first attempt cached the cwd-resolved matcher on a plain `OnceLock`\nkeyed on the **first cwd seen**, which baked in a \"cwd constant per\ncompiled filter\" assumption and changed relative-glob matching if that\nfilter was ever evaluated under a different cwd. That was reverted.\n\nThis version caches by **classifying the glob**, so nothing\ncwd-dependent is ever assumed:\n\n```rust\nenum ResolvedGlob {\n  CwdIndependent(Box<str>),                       // `**` / absolute: valid for any cwd\n  ScopedToCwd { cwd: Box<str>, matcher: Box<str> }, // relative: valid only for this cwd\n}\n```\n\n- **`**` / absolute globs** resolve independently of cwd → cached once,\nreused for any cwd.\n- **Relative globs** are cached together with the cwd they were resolved\nfor. If a later call presents a different cwd, we **re-resolve from\nscratch** (never returning a stale, wrong-cwd matcher).\n\nSo matching is **behaviorally identical to resolving on every call** —\nthe cache only removes the repeated allocation in the common case where\ncwd is constant for a build. It's a lock-free `OnceLock`, so it's safe\nunder the concurrent (rayon) filter path, and the common `**`/absolute\ncase is routed around the cwd comparison entirely (zero regression).\n\n## Note on `fast_glob`\n\n`fast_glob` (1.0.1) exposes only `glob_match(pattern, path)` — there's\nno compiled-matcher type to cache, so the only hoistable per-call cost\nis the string resolution above. (If we later switch to a crate with a\ncompiled `GlobMatcher`, the glob *parsing* per call could also be\nhoisted — that's a separate change.)\n\n## Tests\n\n- `id_matcher_relative_glob_is_cwd_correct` — evaluates one `IdMatcher`\nunder two different cwds and asserts each resolves correctly. This\n**fails** against the earlier baking cache and passes here.\n- Existing `test_filter_expr_interpreter` / `parse_test` continue to\nexercise the `Id`/`ImporterId` path through `IdMatcher`.\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)",
+          "timestamp": "2026-07-26T00:16:21+08:00",
+          "tree_id": "2c57c8697de866b5aaaef37d8d71e68b4baf06f3",
+          "url": "https://github.com/rolldown/rolldown/commit/2d46d62eb4d7fcb92772d7334c04865d84a3625b"
+        },
+        "date": 1784996515053,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 646.98,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 898.74,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 832.59,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 1041.14,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 130.16,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 163.49,
             "unit": "ms / ops"
           }
         ]
