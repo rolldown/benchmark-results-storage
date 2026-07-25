@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1784976858876,
+  "lastUpdate": 1784995095640,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -263969,6 +263969,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 169.5,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "59e6b04036a7703e2243927eda0b890db0f09cb3",
+          "message": "fix(filter): treat missing hook inputs as non-matches, not panics (#10443)\n\n## What\n\n`filter_expr_interpreter` unwrapped `id` and `code` with `expect`, but\nhooks pass `None` for the inputs they don't have:\n\n| hook | `id` | `code` | `moduleType` |\n|---|---|---|---|\n| `resolveId` | specifier | **None** | **None** |\n| `load` | id | **None** | **None** |\n| `transform` | id | code | moduleType |\n| `renderChunk` | **None** | code | **None** |\n\nEach hook's `filter` is typed as an arbitrary\n`TopLevelFilterExpression[]`, and binding validation only rejects\n`importerId` (`assertNoImporterId`). So a leaf reading an input its hook\nnever supplies is reachable, and panics rather than simply not matching:\n\n```js\n// plugin with a renderChunk filter -- `id` is None here\n{ renderChunk: { filter: [include(id(/\\.css$/))] } }\n// => panics: `id` should not be none\n```\n\nThis makes `Code`/`Id`/`Query` report \"no match\" when their input is\nunavailable, matching what `ImporterId` already did for `None`:\n\n```rust\n// When importer_id is None (e.g., entry files), return false (no match)\nmatch importer_id {\n  Some(importer) => id_pattern.test(importer, &StringOrRegexMatchKind::Id(cwd)),\n  None => false,\n}\n```\n\n## Why \"no match\" rather than an error\n\nEvery case that changes behaviour is one that panics today, so nothing\nthat currently works can regress. Rejecting these at bindingify time\n(the way `importerId` and string-`id` already are) is defensible too,\nbut that is a wider validation surface — it would also have to decide\nwhat to do about `moduleType` in a `load` filter, which is silently\nnon-matching today. This change fixes the crash without expanding\nvalidation; tightening it can follow separately.\n\n## Tests\n\nTwo regression tests covering both directions — a missing `id`\n(`renderChunk`) and a missing `code` (`resolveId`/`load`). Both fail\nwith the original `expect` panic and pass with the fix.",
+          "timestamp": "2026-07-25T23:52:44+08:00",
+          "tree_id": "21bfcd72b3b683c5cbe8cb27b07a278a399591df",
+          "url": "https://github.com/rolldown/rolldown/commit/59e6b04036a7703e2243927eda0b890db0f09cb3"
+        },
+        "date": 1784995095541,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 742.68,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 966.2,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 953.62,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 1134.56,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 141.5,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 173.2,
             "unit": "ms / ops"
           }
         ]
