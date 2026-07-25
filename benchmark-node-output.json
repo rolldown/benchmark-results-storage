@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1784911624402,
+  "lastUpdate": 1784950443176,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -263807,6 +263807,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 158.71,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "distinct": false,
+          "id": "87b02390f1db224b5d2507c3a0a5b128e97f8aeb",
+          "message": "test(treeshake): reduce manual-pure fixture to a minimal smoke test, move matrix to unit tests (#10436)\n\nFollow-up to #10427 / #10432 (both merged).\n\nThere's exactly one JS-side `manualPureFunctions` test — the `manual-pure-functions` fixture (added in #10427). It re-tested the retain/remove behavior matrix that the Rust `stmt_eval_analyzer` unit tests already own. A JS fixture only needs to smoke-test that the option is wired through the pipeline; the exhaustive behavior belongs in fast, precise Rust unit tests.\n\n## Changes\n\n- **Fixture → minimal smoke test.** `main.js` is now a single case: a listed function's call (`` styled.div`...` ``) is dropped, leaving just `import \"styled-components\";`. That alone proves the `manualPureFunctions` option reaches the pipeline — without it, the call would be retained. Snapshot regenerated against a fresh debug build.\n- **Rust unit test.** `test_manual_pure_chains_without_eager_children_are_side_effect_free` covers the removed shapes (`make.div`, `` make.div`x` ``, `make?.div()`, `make()()`, `make().div()`) that previously had end-to-end-only coverage. The retained-child and spread matrices were already unit-tested (`test_manual_pure_chains_keep_eager_child_side_effects`, `test_manual_pure_chains_drop_side_effect_free_spreads`).\n\nTest-only; no behavior change.",
+          "timestamp": "2026-07-25T03:23:01Z",
+          "tree_id": "af72aec0d0a738fd64676cb49903980c05f77bf5",
+          "url": "https://github.com/rolldown/rolldown/commit/87b02390f1db224b5d2507c3a0a5b128e97f8aeb"
+        },
+        "date": 1784950443078,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 729.65,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 922.8,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 922.49,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 1089.99,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 150.86,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 173.1,
             "unit": "ms / ops"
           }
         ]
