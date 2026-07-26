@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1785051481002,
+  "lastUpdate": 1785081064190,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -264347,6 +264347,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 158.71,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "hyfdev",
+            "username": "hyfdev"
+          },
+          "committer": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "hyfdev",
+            "username": "hyfdev"
+          },
+          "distinct": false,
+          "id": "06846e797e5ea28e9764a3d21e1ca8c5de8703c6",
+          "message": "fix(code-splitting): fold the runtime chunk back after order lowering (#10414)\n\n### Problem\n\nFirst P1 item of #10294: `ensure_runtime_module_for_order_wraps` unconditionally evicts a co-hosted runtime module onto a standalone `rolldown-runtime` chunk (and mints one when the runtime was unplaced), even when every helper consumer lives in a single chunk. `issues/9463` ships a `rolldown-runtime.js` whose only content is two helper re-exports consumed exclusively by `common~a~b~shared.js` — one extra request per page load for nothing, in both wrap modes.\n\nThe eviction itself is justified: the baseline merge proof (`try_merge_runtime_chunk`, called from `generate_chunks` and the chunk optimizer) runs **before** order analysis, so nothing it proved covers the helper demand order lowering adds (`__esm`/`__esmMin` per wrapper, `__toCommonJS`/`__reExport` per lowered overlay). What was missing is re-running the proof afterwards: by the end of lowering the full demand is materialized in `OrderWrapState`, so the complete post-lowering consumer set is knowable.\n\n### Fix\n\n`ensure_runtime_module_for_order_wraps` keeps its normalize-to-standalone behavior unchanged, then re-runs the merge proof with the post-lowering consumer set:\n\n- New `OrderWrapState::runtime_helper_consumer_chunks` collects the order-introduced consumers: each wrapper's synthetic `init_*` statement renders in its assigned chunk, and each overlay's lowered import/require glue renders in the importer's chunk. Pre-lowering demand is re-collected by `collect_runtime_consumer_chunks`'s own scan (chunk helper bits, interop wrappers, statement-level runtime symbol references), and stale/tombstoned chunks are filtered by the existing `post_chunk_optimization_operations` guard.\n- `try_merge_runtime_chunk` gains a `RuntimeMergeCascade` parameter. The two pre-existing call sites use `Full` (byte-identical cascade). The post-lowering fold uses `SingleConsumerOnly`, and two deliberate restrictions apply:\n  - **Sole-consumer hosts only.** A dominator merge turns transitive reachability into a direct import whose exec-order sort position can hoist the host past sibling imports, and a bitset host can gain a brand-new consumer edge — either way the chunk-evaluation order deviates from what the on-demand analysis proved against the pre-fold edge set. A sole-consumer merge only removes that consumer's edge to an inert runtime-only chunk, so evaluation order is preserved by construction (this also makes the TLA/signature/cycle guards trivially satisfied, and keeps the existing sole-consumer allowance for manual group chunks).\n  - **Esm output only.** Under cjs output, `compute_cross_chunk_links` later gives every ESM-exports entry chunk — including the zero-module order facades — a `__toCommonJS` demand that is invisible at fold time; folding would hand an entry chunk with no visible demand a brand-new `require` edge into a user chunk. Every other post-fold demand source was audited to be either Esm-excluded or already represented in the fold-time consumer set.\n- In `SingleConsumerOnly` mode the merge tail skips `target_chunk.bits.union(...)`: the sole consumer's own bits are already exact (the runtime becomes internal to it), while the order-time standalone chunk carries synthetic all-live-union bits whose widening would leak into bits-derived chunk names.\n\nNon-esm formats and `strictExecutionOrder: false` builds are byte-for-byte untouched; the fold only runs from the order-wrap path (non-empty plan).\n\n### Output shape\n\n`issues/9463` (acceptance): `rolldown-runtime.js` disappears and the helpers inline into `common~a~b~shared.js` in both cells; same for `issues/9463_plain_group`, `issues/9463_three_entries`, and `strict_execution_order/concatenate_basic` (wrap-all cells fold into `main2.js`). 40 snapshots change, all strict-mode fixtures, all the same shape: the standalone runtime chunk is gone and its (actually demanded) helpers render inside the sole consumer — `issues/5870` and `mixed_static_dynamic_same_target` also drop a previously exported-but-unconsumed `__exportAll`, since the host renders only demanded statements.\n\nOne snapshot-cosmetic note: in fixtures where the runtime region folds ahead of a synthetic wrapper rendered without its own region markers (pre-existing quirk), the `HIDDEN [\\0rolldown/runtime.js]` replacement visually swallows the following wrapper in the snapshot (`top_level_await_syntax`). The raw emitted chunk was dumped and verified correct — `init_foo` is present; only the snapshot display collapses it.\n\n### Validation\n\n- Full integration suite + workspace tests: failure list byte-identical to unmodified main (verified by stash-and-rerun on the same machine; the only local failures are the pre-existing css/legal-comments/esbuild-diff environment set).\n- Execution-order fuzzer (rolldown-order-fuzzer) against this build, 300 cases across three cells: mixed 112/120, pure-ESM 83/100, wrap-all 71/80. The same three campaigns (same seeds and flags) were then run against an unmodified-main build of this worktree: the failing seed sets are identical and every one of the 34 failures carries a byte-identical verdict signature (the known Family-A / event-reorder arms tracked in #10294) — zero failure signatures introduced or altered by this change.\n\nPart of #10294.",
+          "timestamp": "2026-07-26T15:40:11Z",
+          "tree_id": "2adb7eee75eb230a6113d88a94f70fbe89014799",
+          "url": "https://github.com/rolldown/rolldown/commit/06846e797e5ea28e9764a3d21e1ca8c5de8703c6"
+        },
+        "date": 1785081064093,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 665.64,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 948.8,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 867.19,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 1043.69,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 133.5,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 159.14,
             "unit": "ms / ops"
           }
         ]
