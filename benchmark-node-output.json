@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1785050145892,
+  "lastUpdate": 1785051481002,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -264293,6 +264293,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 173.53,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "s@sraj.me",
+            "name": "Shantanu Raj",
+            "username": "shantanuraj"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c9a0282b83a42e7a068b47f8c883eb14a7f719c5",
+          "message": "fix(import-glob): escape generated string literals (#10438)\n\n- Escape module specifiers and object keys emitted by the native Vite\nimport-glob plugin.\n- Unescaped quotes in matched file names produced invalid JavaScript\nduring builds.\n\nCloses #10437",
+          "timestamp": "2026-07-26T07:32:35Z",
+          "tree_id": "c8c913b79fe7b069a8a8414d8552d057516d4f0f",
+          "url": "https://github.com/rolldown/rolldown/commit/c9a0282b83a42e7a068b47f8c883eb14a7f719c5"
+        },
+        "date": 1785051480905,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 617.77,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 912.58,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 790.21,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 977.67,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 123.18,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 158.71,
             "unit": "ms / ops"
           }
         ]
