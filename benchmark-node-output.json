@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1785049204172,
+  "lastUpdate": 1785050145892,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -264239,6 +264239,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 187.47,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nicolas.polum@outlook.com",
+            "name": "Nic Polumeyv",
+            "username": "Nic-Polumeyv"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "afb50b92c0a1b59e16d6425a1e89831977e4167a",
+          "message": "refactor(plugin): share asset emission helpers between copy_module and asset_module (#10450)\n\n#9601 patched the same placeholder machinery in both plugins at once.\nThis moves it into rolldown_plugin_utils, behavior unchanged. The parse\nhalf is split out per review.",
+          "timestamp": "2026-07-26T07:10:00Z",
+          "tree_id": "f1c70054cff39730420785ba9543b947590262b1",
+          "url": "https://github.com/rolldown/rolldown/commit/afb50b92c0a1b59e16d6425a1e89831977e4167a"
+        },
+        "date": 1785050145735,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 670.93,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 975.93,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 883.73,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 1107.77,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 131.98,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 173.53,
             "unit": "ms / ops"
           }
         ]
