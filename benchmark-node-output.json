@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1785047712713,
+  "lastUpdate": 1785048345655,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -264131,6 +264131,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 175.9,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nicolas.polum@outlook.com",
+            "name": "Nic Polumeyv",
+            "username": "Nic-Polumeyv"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c60dd092997a4909e3067427518c3b7eebdd175b",
+          "message": "refactor(plugin): dedupe hook binding boilerplate (#10428)\n\nThe four addon hook copies accumulated one at a time (#1419, #1713,\n#1763), and the same guard/normalize/meta shell repeated around all 20\nhook bindings. The commits are independent in case the later ones go\nfurther than wanted.\n\n---------\n\nCo-authored-by: IWANABETHATGUY <iwanabethatguy@qq.com>",
+          "timestamp": "2026-07-26T06:39:52Z",
+          "tree_id": "c50311998da123fcf5ea7673512697b0fe2d0b3c",
+          "url": "https://github.com/rolldown/rolldown/commit/c60dd092997a4909e3067427518c3b7eebdd175b"
+        },
+        "date": 1785048345554,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 772.6,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 998.48,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 1043.32,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 1218.56,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 162.67,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 185.47,
             "unit": "ms / ops"
           }
         ]
