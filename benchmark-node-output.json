@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1784996515148,
+  "lastUpdate": 1785047712713,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -264077,6 +264077,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 163.49,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nicolas.polum@outlook.com",
+            "name": "Nic Polumeyv",
+            "username": "Nic-Polumeyv"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9a39a5144e5f880ab37256d1250f0cac4d26f7f5",
+          "message": "refactor(plugin): share the oxc parse preamble between import-glob and dynamic-import-vars (#10452)\n\n#10057 and #10396 each had to patch this identical parse preamble in\nboth plugins. Split from #10450.",
+          "timestamp": "2026-07-26T06:29:34Z",
+          "tree_id": "cff730b6b96aba91660640bad224a4bf058f6e02",
+          "url": "https://github.com/rolldown/rolldown/commit/9a39a5144e5f880ab37256d1250f0cac4d26f7f5"
+        },
+        "date": 1785047712615,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 761.95,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 968.59,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 996.15,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 1121.13,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 145.45,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 175.9,
             "unit": "ms / ops"
           }
         ]
