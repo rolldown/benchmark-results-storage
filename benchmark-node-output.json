@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1785048345655,
+  "lastUpdate": 1785049204172,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -264185,6 +264185,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 185.47,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "hyfdev",
+            "username": "hyfdev"
+          },
+          "committer": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "hyfdev",
+            "username": "hyfdev"
+          },
+          "distinct": false,
+          "id": "213b1699768c73b57d757b9a4df1e511ec12a99e",
+          "message": "fix(preserve-modules): don't assume every chunk mirrors a module (#10442)\n\n## Summary\n\n`preserveModules` emits one chunk per module, and the export-naming pass in `compute_cross_chunk_links` relies on that: to decide whether a chunk export should be named `default`, it reaches for `chunk.entry_module(&self.link_output.module_table).unwrap()`.\n\nSynthetic chunks break the assumption. `strictExecutionOrder` splits the shared `rolldown-runtime` chunk that holds `__esmMin`; that chunk mirrors no user module and is `ChunkKind::Common`, so the lookup returns `None`:\n\n```\nthread 'rolldown-worker' panicked at crates/rolldown/src/stages/generate_stage/compute_cross_chunk_links.rs:1299:65:\ncalled `Option::unwrap()` on a `None` value\n```\n\nAny `preserveModules` build with `strictExecutionOrder` and more than one emitted chunk hits it — a two-module entry is enough:\n\n```js\n// dep.js\nexport default function dep() { return 'D'; }\n// main.js\nimport dep from './dep.js';\nconsole.log(dep());\n```\n\n```js\nawait (await rolldown({ input: './main.js' }))\n  .generate({ format: 'esm', preserveModules: true, strictExecutionOrder: true }); // panics\n```\n\n## Fix\n\nA chunk with no entry module has no module default export to rename, so ask the question instead of asserting the answer — `is_some_and` in place of `unwrap`.\n\nBehaviour for chunks that *do* mirror a module is unchanged: the condition is identical whenever `entry_module()` is `Some`, and no existing snapshot moves. The only chunks reaching the new branch are ones that previously panicked.\n\nThe sibling `entry_module(...).expect(...)` a little earlier in the same function is already guarded by an `if let ChunkKind::EntryPoint { .. }`, so it is sound and left alone.\n\n## Tests\n\nNew fixture `misc/preserve_modules/strict_execution_order_runtime_chunk`, run under both wrap-all and `onDemandWrapping`. It builds a static import with a default export plus a dynamic import, so the output has a per-module file, a `default` export to name, and the split runtime chunk. `_test.mjs` asserts the modules evaluate in source order.\n\nWithout the source change the fixture panics at the line above; with it, it passes. `dep.js` still exports `default`, so the naming path this code exists for is covered rather than merely bypassed.\n\nFull Rust integration suite: 1892 passed, with the only 4 failures (`cjs_module_lexer_compat` ×3, `npm_packages/util_deprecate`) failing identically on unpatched `main` in the same tree — they need npm packages this worktree does not have installed.\n\n## Relationship to #10441\n\nIndependent, and this PR is based on `main` rather than stacked. The panicking chunk is the synthetic runtime chunk, which #10441 does not touch; the panic reproduces identically with and without that PR, and the fix is in a different function.\n\nOne thing reviewers should know: this fixture's snapshot shows `preserveModules` currently emitting *two* files for an order-wrapped entry — `main.js` plus `_virtual/main.js` — because the entry facade splits unconditionally. That contradicts the one-file-per-module contract, and it is exactly what #10441 fixes. Whichever lands second will regenerate this snapshot with the facades gone. That is a snapshot update, not a conflict.",
+          "timestamp": "2026-07-26T06:49:47Z",
+          "tree_id": "632b959ee8a66e7405848b1d237052ca5ae36851",
+          "url": "https://github.com/rolldown/rolldown/commit/213b1699768c73b57d757b9a4df1e511ec12a99e"
+        },
+        "date": 1785049204071,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 767.33,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 981,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 959.84,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 1122.75,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 162,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 187.47,
             "unit": "ms / ops"
           }
         ]
