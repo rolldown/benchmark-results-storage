@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1785081064190,
+  "lastUpdate": 1785085442347,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -264401,6 +264401,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 159.14,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "hyfdev",
+            "username": "hyfdev"
+          },
+          "committer": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "hyfdev",
+            "username": "hyfdev"
+          },
+          "distinct": false,
+          "id": "9c1c54fafdcb3e838785c1ae4cc0f3fbad180a49",
+          "message": "fix(code-splitting): only split an entry facade when something else can load its chunk (#10441)\n\n## Summary\n\nUnder `strictExecutionOrder` (SEO), an entry's body moves into `init_E()` and the entry chunk carries a top-level `init_E()` call. That inline trigger is only safe while the chunk hosting `E` is loaded *solely to enter* `E`. Once another chunk imports that chunk, the entry's program runs during an unrelated load — which is exactly what SEO exists to prevent. The facade split moves the trigger into its own file when that happens.\n\n`create_order_wrap_entry_facades` asked that question only of interop-wrapped entries, and only under `onDemandWrapping`. **Every order-wrapped entry split unconditionally**, so each one cost an extra chunk even when nothing but the entry itself could ever load it — including every dynamic entry, i.e. one extra file per lazy route.\n\nThis PR gates all three facade sources on one predicate — *can anything else load this chunk?* — answered from the real cross-chunk link computation instead of a prediction.\n\nMeasured on a generated 120-lazy-route app:\n\n| | `main` | this PR |\n| --- | --- | --- |\n| SEO off | 146 chunks | 146 |\n| `strictExecutionOrder` (wrap-all) | **268** (+122) | **147** (+1) |\n| `strictExecutionOrder` + `onDemandWrapping` | **267** (+121) | **147** (+1) |\n\nRaw JS bytes in wrap-all: 96,326 → 82,870 (−14%). The `+1` in both fixed columns is the runtime chunk. The executed output of all three modes is byte-identical before and after.\n\nRelates to #10294. Independent of #10433, which addresses a different facade case.\n\n## Why the decision could not read facts before\n\nThe facade decision sits in `finalize_chunk_plan`, which runs *before* `compute_cross_chunk_links`. The only edge set available was `predicted_static_import_edges` — computed with an **empty** `OrderWrapState`, i.e. \"what would the edges be if nothing were wrapped\" — and in wrap-all mode not computed at all (`wrap_all_order_analysis` filled `import_edges` with empty sets, which the `!on_demand ||` short-circuit papered over).\n\n## Alternatives explored\n\nTwo ways of re-deriving the missing edges were tried and rejected, both unsound in the same way:\n\n1. **Scan the module graph** for chunks that some included module in another chunk statically imports into. Misses `init_*` obligations that reach their target *through a non-included forwarder* — `collect_order_wrap_esm_init_targets` descends into the import records of a tree-shaken forwarder, so both hops have a non-included endpoint and the scan skips them. Produces an entry whose program runs during another entry's load.\n2. **Reuse `post_lowering_import_edges`** (the emergent-cycle fixpoint's projection). That projection deliberately omits interop `WrapKind::Esm` overlay edges and consumption-gated hops, because for *cycle detection* projecting them would fabricate a cycle and over-wrap. Omissions that are safe there are unsafe here: it drops a needed facade and breaks `retained_star_renamed_cycle` at runtime.\n\nThe lesson is that any hand-rolled reachability scan silently misses an edge source, and a missed edge is an execution-order bug with no signal. So this PR asks the real computation rather than re-deriving it.\n\n## How the query is made possible\n\n`collect_depended_symbols` does not only read the chunk graph — it writes each declared symbol's owning chunk back into the shared symbol database, and `compute_chunk_imports` reads that ownership back to resolve which chunk a depended symbol is imported from. The write is load-bearing *within* one pass, so the pass cannot be made read-only by dropping it.\n\nIt can be scoped instead. `SymbolChunkOwnership::Scoped` records the previous owner of every symbol the pass assigns; the caller restores them afterwards, leaving the symbol database exactly as it found it. `lowered_static_import_edges` drives the pass with the fully lowered `OrderWrapState` and the real final init metadata, so every edge source the final pass registers — value references, `init_*` forwarding, retained re-export overlays, transitive init obligations — is present, with no approximation.\n\n**Why deciding before the facades exist is sound.** A facade is an empty chunk that takes over the entry role from the implementation chunk: it adds exactly one importer of that chunk (itself), and it inherits — never widens — the outgoing edges the implementation chunk had as an entry chunk. So for every *other* chunk the relation \"some chunk other than me imports me\" is unchanged, and all facade decisions can be taken together from one pre-facade snapshot.\n\n## Ordering changes\n\nThree passes move ahead of the query, none of which depends on facades existing:\n\n- `ensure_runtime_module_for_order_wraps` — resolving a depended symbol to its chunk requires the runtime module to already sit in one, and order wrappers demand runtime helpers. A facade chunk copies its implementation chunk's bits, so the runtime chunk's bit union is unchanged.\n- `restore_order_wrap_entry_facades` — `compute_chunk_imports` **skips chunks marked `Removed`**, so restoring afterwards would hide the edge from a resurrected facade to the chunk hosting its implementation, and an entry sharing that chunk would keep an inline trigger that the restored facade's load then fires. This one is not hypothetical: an earlier revision of this PR hit it, and the fixture suite did not catch it.\n- `finalized_module_namespace_ref_usage` — so the query sees the namespaces the final link pass will see rather than the provisional pre-lowering set. No output changes from this today; it closes the gap rather than fixing an observed failure.\n\nRestoring stays **ungated**. Unlike splitting, it exists because a chunk can host only one entry's top-level trigger, so an entry merged into another entry's chunk has no trigger at all without its own file.\n\n## Tests\n\n### The regression test that was missing\n\nThe over-split was invisible to every existing test, and that is the more important thing to fix: an\noutput-correctness test cannot see it, because the over-split bundle still *runs* correctly — it just\nships one extra file per entry. `packages/rolldown/tests/behaviors/strict-execution-order-entry-facade.test.ts`\npins the **shape** of the output instead, keying on the property that defines a facade: a chunk\nholding zero modules, existing only to host an entry's `init_*()` trigger.\n\nBoth directions are pinned, so the budget check cannot be satisfied by simply never splitting:\n\n| | assertion |\n| --- | --- |\n| six lazy routes over a shared library | no facade, and no chunk beyond the shared runtime |\n| two entries, one sharing a chunk with a module the other imports | the facade is still emitted, and the chunk holding the entry's own module is no longer an entry chunk |\n\nEach runs under wrap-all and `onDemandWrapping`. **Against the parent commit all four fail** — seven\nfacades for the lazy-route app, and `['b', 'e']` instead of `['e']` for the shared-chunk app.\n\nThe manual group in the lazy-route app is load-bearing: it makes the chunk-driven evaluation order\ndiffer from source order, which is what puts modules on the on-demand plan. Without it on-demand\nfinds no hazard, wraps nothing, and the shape does not exercise entry splitting at all.\n\n### Execution-order coverage\n\nNew fixture `function/experimental/strict_execution_order/entry_shared_chunk_facade`: entry `e` shares a chunk with `shared.js`, which entry `b` imports. The facade must be kept, and `_test.mjs` asserts `e`'s program does not run while `b` is loading. Forcing the predicate to return an empty edge set makes it fail with `['E body', 'S body', 'B body S']` — the violation this PR must not introduce.\n\nExisting coverage that pins the discrimination in both directions: `m4_dynamic_facade_race` keeps `target.js`'s facade (its chunk also hosts `observer.js`) while dropping `a2.js`/`b2.js`; `dynamic_target_in_entry_chunk` keeps `a.js`'s and drops `c.js`'s.\n\n89 snapshots update, removing 207 emitted assets. No fixture loses a facade it needs — every strict fixture executes its output under Node.\n\n- Rust integration suite: 1896 passed / 0 failed, identical to `main` on the same machine.\n- Node suite: 913 passed / 0 failed.\n\n## Reviewer attention\n\n- **The soundness argument for a pre-facade snapshot** (the \"How the query is made possible\" section) is the load-bearing claim. If a facade can widen the set of chunks that import some *other* chunk, the decision would need a fixpoint.\n- **The restore/query ordering** — the removed-chunk skip in `compute_chunk_imports` is easy to miss and produces a silent wrong answer.\n- **Build time.** Strict mode now runs one extra `compute_wrapped_esm_init_metadata` and one extra `compute_cross_chunk_link_state`. On the 120-route app, wrap-all median 63.9ms → 67.6ms (~+6%); SEO-off is unchanged. Partly offset downstream by 45% fewer chunks to name, render and hash; the balance on a large app is worth a look.\n\n## Unrelated pre-existing bug found while testing\n\n`preserveModules` + `strictExecutionOrder` panics on `main` at `chunk.entry_module(...).unwrap()` in `render_chunk_exports`, because strict lowering demotes an entry chunk to `Common` while `preserve_modules` assumes every chunk has an entry module. Behaviour is identical before and after this PR; filing separately.",
+          "timestamp": "2026-07-26T16:52:33Z",
+          "tree_id": "88c04452b62cfd94d981ec6107673a0350178f0e",
+          "url": "https://github.com/rolldown/rolldown/commit/9c1c54fafdcb3e838785c1ae4cc0f3fbad180a49"
+        },
+        "date": 1785085442242,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 754.21,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 955.25,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 939.58,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 1133.65,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 145.07,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 174.85,
             "unit": "ms / ops"
           }
         ]
