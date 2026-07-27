@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1785139574052,
+  "lastUpdate": 1785173628547,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -264833,6 +264833,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 183.45,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "hyfdev",
+            "username": "hyfdev"
+          },
+          "committer": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "hyfdev",
+            "username": "hyfdev"
+          },
+          "distinct": false,
+          "id": "c909488a00640f0c38709ae8b923ceba6575db56",
+          "message": "fix(code-splitting): let a cross-chunk dynamic importer carry the order trigger (#10456)\n\n#10433 lets a dynamic import collapse inline when chunking already placed the target in the importer's own chunk, and the collapse carries the target's deferred initialization. A cross-chunk dynamic importer was left keeping its facade chunk. It does not need one: the cross-chunk rewrite emits `import('./host.js').then(n => (n.init_x(), n.namespace))`, which carries the trigger just as well. Both arms already share that shape through the `esm_init_target` view, so this only stops asking for a file.\n\nEmitted JS files, same Vite, only the rolldown package swapped:\n\n| project | `strictExecutionOrder` off | before | after |\n| --- | ---: | ---: | ---: |\n| lobehub | 1517 | 2584 (+1067) | **1576 (+59)** |\n| ComfyUI_frontend | 521 | 521 (+0) | 521 (+0) |\n| plane | 923 | 924 (+1) | 924 (+1) |\n\nThe 1008 files that come off lobehub are one restored facade per lazy route. ComfyUI_frontend and plane are unchanged: neither has a dynamic entry the chunk optimizer merged away, so neither restored a facade to begin with.\n\nlobehub's residual +59 is the other facade source, `create_order_wrap_entry_facades`, and is out of scope here. Those entries still have a chunk of their own, so declining to split one leaves its inline `init_E()` at the top of a chunk other chunks import — the hazard the split exists for. Reaching them needs the chunk demoted without a facade emitted, which is a separate change.\n\n## Motivation\n\nA restored facade exists so a merged entry's trigger has a load site of its own. When every live importer of that entry is a dynamic one, every entry path into it is an `import()` whose rewrite can run the trigger, so the load site is redundant — the facade is a file whose whole body is `init_x()`.\n\nThis is also what `strictExecutionOrder` did before #10104. That release drove SEO through `WrapKind::Esm`, so a merged dynamic entry took the same cross-chunk rewrite and shipped no facade; `v1.2.0` emits `import(\\`./FileViewer-9VJj0tgR.js\\`).then(e => (e.r(), e.n))` on lobehub and 1471 JS files, 47 fewer than with the flag off. #10104 moved order wrapping onto its own plan, where `wrap_kind` stays `None`, and routed those entries to facade restoration instead.\n\nUnchanged: a module with no dynamic importer has no call site to carry anything, and an emitted chunk still needs a real file for its reference id to resolve to. Two more shapes cannot carry the trigger either, and keep their facade for the same reason: a two-argument `import()`, whose specifier `try_rewrite_import_expression` never rewrites, so a file has to stay at the name the source wrote; and a host chunk that could expose a callable `then` to a cross-chunk importer, where promise resolution assimilates the chunk namespace as a thenable and the rewrite's extraction callback never receives it. The `then` check reads both the source-level export alias and the declaring symbol name, since a common chunk emits cross-chunk exports under the latter.\n\n## What this gives up\n\nThe trigger now runs in the rewrite's `.then`, one microtask after the host chunk settles, instead of inside a facade's own evaluation. A microtask already queued when the chunk settles therefore observes the target uninitialized. `m4_dynamic_facade_race` measures exactly that and its runtime oracle changes:\n\n```\nbefore: ['target', 'checkpoint:true']\nafter:  ['checkpoint:false', 'target']\n```\n\nWhat an importer sees is unaffected — by the time its own `await` resumes, the target has run — and `cross_chunk_dynamic_importer_uses_call_site_trigger` still asserts at runtime that entering `b` initializes the target without running entry `a`. Counting execution-order violations in lobehub's emitted output (a chunk whose inline `__esm` init another chunk statically imports) gives 58 with the flag off and 0 both before and after this PR.\n\nSo the trade is 1008 files against that one microtask, on the same side of it that shipped in 1.2.0.\n\n## Tests\n\n- `wrapped_dynamic_entry_keeps_facade_after_manual_chunk_merge` becomes `wrapped_dynamic_entry_uses_the_call_site_trigger_after_manual_chunk_merge`: `a` imports the host chunk, the rewrite carries the trigger, and no `target.js` is emitted.\n- `cross_chunk_dynamic_importer_keeps_facade` becomes `cross_chunk_dynamic_importer_uses_call_site_trigger`. Its runtime assertions are unchanged; only the facade in its snapshot is gone.\n- `m4_dynamic_facade_race` records the microtask ordering above.\n- `dynamic_import_options`, `dynamic_import_then_export` and `dynamic_import_then_export_alias` cover the two keep-facade cases above at runtime; all three came out of review feedback on this PR.\n- Full suite: no other test changes, and no new failures.",
+          "timestamp": "2026-07-27T17:18:42Z",
+          "tree_id": "5115be8083cef55599ad04b55c09d68914157277",
+          "url": "https://github.com/rolldown/rolldown/commit/c909488a00640f0c38709ae8b923ceba6575db56"
+        },
+        "date": 1785173628460,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 657.05,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 891.45,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 810.08,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 1043.27,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 120.16,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 144.41,
             "unit": "ms / ops"
           }
         ]
