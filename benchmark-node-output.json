@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1785133934585,
+  "lastUpdate": 1785134754767,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -264671,6 +264671,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 181.31,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tbvjaos510@naver.com",
+            "name": "peter",
+            "username": "tbvjaos510"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "826859e734bbe3b9d250c8c92afea64678c9fbdc",
+          "message": "fix(dev): keep the export name of `export * as ns from` (#10476)\n\nIn dev mode, `export * as ns from './dep.js'` silently loses its export\nname. The eagerly bundled output of the same build is correct, which is\nwhat makes this look like a bug rather than a missing feature.\n\n```js\n// dep.js\nexport const value = 'from-dep'\n// reexport.js\nexport * as NS from './dep.js'\n// main.js\nimport { NS } from './reexport.js'\nNS.value // TypeError: Cannot read properties of undefined\n```\n\n## The two statements share one AST node\n\n`export * from './dep.js'` and `export * as ns from './dep.js'` both\nparse to `ExportAllDeclaration`; they differ only by whether `exported`\nis set. `HmrAstFinalizer` never read that field, so the named form fell\nthrough to the anonymous star re-export path and was finalized as:\n\n```js\nvar __rolldown_exports__ = __rolldown_runtime__.__exportAll({})\n__rolldown_runtime__.__reExport(__rolldown_exports__, import_dep)\n```\n\nThat is the semantics of the *unnamed* form — `dep`'s own exports are\nspread onto this module, and the name `ns` never comes into existence. A\nconsumer importing `ns` gets `undefined`, with no error at build time.\n\nThe fix binds the importee's namespace object to that single export name\ninstead, and only when `exported` is present. The unnamed form keeps\ntaking `create_re_export_call_stmt`, byte for byte.\n\nExport names that are not valid identifiers are handled: `export * as\n\"not-an-ident\" from './dep.js'` is legal ES2022, so the property is\nemitted in computed form via the existing `is_validate_identifier_name`\ncheck rather than as a bare key.\n\n## Tests\n\nTwo separate paths reach this finalizer, and both were broken. Each is\npinned by its own test:\n\n- `crates/rolldown/tests/rolldown/topics/hmr/export_star_as` — the HMR\npatch path. The snapshot shows the export name surviving into the patch.\n- `packages/rolldown/tests/dev/dev-lazy-compile.test.ts` — the\nlazy-chunk path, where the re-exported module is reachable *only*\nthrough the namespace re-export, so nothing else can pull it in.\n\nBoth fail on `main` and pass with this change; reverting only the\nfinalizer hunk turns both red again.\n\nThe lazy-chunk case is a dev-engine test rather than a Rust fixture\nbecause lazy compilation is not reachable from the fixture config\n(`lazyBarrel` is a different feature). `cargo test --workspace` and the\nNode.js suite pass, with no other snapshot changes.\n\n## Documentation\n\n`internal-docs/lazy-compilation/implementation.md` gains Issue 11,\nfollowing the format already used there for Issues 1-10, per `AGENTS.md`\n(\"Keep in sync: if your changes affect a doc, update it in the same\nchange\").\n\n## Alternatives considered\n\n- **Emitting `__reExport` and then aliasing the name on top.** Works for\nthe common case, but it leaks `dep`'s own exports onto the re-exporting\nmodule as a side effect — the exact bug, just harder to see.\n- **Handling this in the shared finalizer instead.**\n`ScopeHoistingFinalizer` already gets this right; the defect is specific\nto the HMR/dev path, so widening the change would touch a correct code\npath for no reason.\n\n## Worth a closer look\n\n- **Only the dev/HMR finalizer changes.** Production scope hoisting was\nalready correct, so there is no user-facing change to `build`.\n- **How it surfaced.** Found through Vite's `experimental.bundledDev`\nwith lazy compilation, where a UI library re-exported as a namespace\narrived as `undefined` at runtime. The HMR patch path is affected\nidentically, so this is not Vite-specific.\n\n## AI disclosure\n\nThis PR was developed with AI assistance. The diagnosis, the fix, and\nboth tests were reviewed and validated by me against a real project\nbefore submission.\n\n---------\n\nSigned-off-by: andrew <andywangsy@gmail.com>\nCo-authored-by: peter <peter@tossinvest.com>\nCo-authored-by: andrew <andywangsy@gmail.com>",
+          "timestamp": "2026-07-27T06:40:36Z",
+          "tree_id": "7f8be41b9e010ebc67a821075bb66ffddf69db73",
+          "url": "https://github.com/rolldown/rolldown/commit/826859e734bbe3b9d250c8c92afea64678c9fbdc"
+        },
+        "date": 1785134754683,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 628.79,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 909.21,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 845.5,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 1050.64,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 131.45,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 168.15,
             "unit": "ms / ops"
           }
         ]
