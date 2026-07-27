@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1785101604200,
+  "lastUpdate": 1785133234735,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -264563,6 +264563,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 178.21,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "ab721e9b19fad76a026007e300543e308b0f2f89",
+          "message": "feat(plugin): surface output-option callbacks in [PLUGIN_TIMINGS] (#10411)\n\nExtends the `[PLUGIN_TIMINGS]` report to account for user output-option\ncallbacks that run directly in the Rust core instead of through the\nplugin driver — notably the `output.codeSplitting` / `advancedChunks`\n`groups[].name` chunk classifier — which were previously invisible even\nwhen they dominate a build.\n\nRecords these in `HookTimingCollector` alongside the existing\nwhole-build aggregates (precedent: `link_stage_micros`) and merges them\ninto `get_plugin_timings_info` so they surface as rows in the same\nbreakdown. Because the set of core-invoked callbacks is known\nstatically, each gets a fixed `AtomicU64` field rather than a dynamic\nmap — no per-call allocation or hashing on the hot path. Timing is\nrecorded at the classifier call site with the existing `start_timing()`\nidiom, so it is zero-overhead unless `checks.pluginTimings` is enabled.\nAdds a unit test.\n\n<!--\n- What is this PR solving? Write a clear and concise description.\n- Reference the issues it solves (e.g. `fixes #123`).\n- What other alternatives have you explored?\n- Are there any parts you think require more attention from reviewers?\n\nAlso, please make sure you do the following:\n\n- Read the Contributing Guidelines at\nhttps://rolldown.rs/contribution-guide/.\n- Check that there isn't already a PR that solves the problem the same\nway. If you find a duplicate, please help us review it.\n- Update the corresponding documentation if needed.\n- Include relevant tests that fail without this PR but pass with it. If\nthe tests are not included, explain why.\n\nThank you for contributing to Rolldown!\n-->",
+          "timestamp": "2026-07-27T14:14:50+08:00",
+          "tree_id": "b5e590e73efd26e24a3149f4b4bb3f98f4c5d1e9",
+          "url": "https://github.com/rolldown/rolldown/commit/ab721e9b19fad76a026007e300543e308b0f2f89"
+        },
+        "date": 1785133234636,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 762.71,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 969.5,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 971.52,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 1147.27,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 167.21,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 199.62,
             "unit": "ms / ops"
           }
         ]
