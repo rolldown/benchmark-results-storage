@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1785134754767,
+  "lastUpdate": 1785135257692,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -264725,6 +264725,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 168.15,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "165626830+shulaoda@users.noreply.github.com",
+            "name": "shulaoda",
+            "username": "shulaoda"
+          },
+          "committer": {
+            "email": "165626830+shulaoda@users.noreply.github.com",
+            "name": "shulaoda",
+            "username": "shulaoda"
+          },
+          "distinct": false,
+          "id": "0452cecfa258719b185bb127eed303ab94c97831",
+          "message": "feat(dev): expose `disableWatcher` through the dev engine bindings (#10474)\n\n## Problem\n\n`DevWatchOptions` has a `disableWatcher` option that swaps the file system watcher for a no-op one (`dev_engine.rs:101-105`). It works, and rolldown's own Rust integration tests use it, but a JS caller cannot reach it: `BindingDevWatchOptions` has no such field and the binding hard-codes `disable_watcher: None` when it builds the options.\n\nSo `dev()` has no way to turn the watcher off. Vite's bundled dev needs exactly that to honor `server.watch: null`, which today silently keeps watching in full bundle mode.\n\n## Related Issues\n\nUnblocks the \"expose watcher options on the Vite side\" item in #10019. The Vite side maps `server.watch` onto these options and needs this released before it can honor `server.watch: null`.",
+          "timestamp": "2026-07-27T06:41:28Z",
+          "tree_id": "fcb051db0e4ba69839cf7791218458d075f5c930",
+          "url": "https://github.com/rolldown/rolldown/commit/0452cecfa258719b185bb127eed303ab94c97831"
+        },
+        "date": 1785135257593,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 786.09,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 988.01,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 987.29,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 1142.48,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 174.52,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 213.61,
             "unit": "ms / ops"
           }
         ]
