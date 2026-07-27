@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1785135257692,
+  "lastUpdate": 1785139574052,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -264779,6 +264779,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 213.61,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "martijn@martijnwalraven.com",
+            "name": "Martijn Walraven",
+            "username": "martijnwalraven"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "85a7a11afcfa466c21d9d29478edd4d8fe27a5cc",
+          "message": "fix(binding): forward resolveId options.kind to callable builtin plugins (#10440)\n\n### Description\n\nProgrammatic `resolveId` calls on callable builtin plugins (`rolldown/experimental`, the path Vite 8's plugin container uses) hardcoded `kind: ImportKind::Import` at the JS→native boundary: `BindingHookJsResolveIdOptions` carried only `isEntry`/`scan`/`custom`, so `options.kind` was silently discarded and a `require-call` resolution could never select the `require` exports condition (details and repro in #10403).\n\nPer the direction agreed in the issue, this PR:\n\n- adds an optional `kind` field to `BindingHookJsResolveIdOptions`, with the same vocabulary and doc comment as the existing `BindingHookResolveIdExtraArgs.kind` and `BindingPluginContextResolveOptions.importKind`;\n- maps it onto `ImportKind` with the existing `TryFrom<&str>` impl and uses it in place of the hardcoded value in `BindingCallableBuiltinPlugin::resolve_id` — absent `kind` still defaults to `ImportKind::Import`, so existing callers are unaffected;\n- rejects an invalid `kind` with an `InvalidArg` error (raised before the async block, so the async-runtime acquire/release pairing is untouched).\n\nThe `packages/rolldown/src/binding.d.cts` hunk is the regenerated napi output from `just build-rolldown`.\n\nFixes #10403.\n\n### Tests\n\nA new `packages/rolldown/tests/builtin-plugin/vite-resolve.test.ts` drives `viteResolvePlugin(...)`'s `resolveId` against a new dual-format fixture package (`exports: { import, require }`): `kind: 'require-call'` resolves the `require` entry (fails without this PR — it resolved the `import` entry), `kind: 'import-statement'` and absent `kind` resolve the `import` entry, and an invalid `kind` rejects. The fixture follows the existing `package-fixtures` + `link:` convention, with the matching `knip.jsonc` ignore entry.\n\n### AI disclosure\n\nAuthored with Claude Code (Claude Fable 5), under my direction and review.\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-authored-by: Claude Fable 5 <noreply@anthropic.com>\nCo-authored-by: Jerry Zhao <165626830+shulaoda@users.noreply.github.com>",
+          "timestamp": "2026-07-27T15:59:17+08:00",
+          "tree_id": "85930248d3f40db2efaf8c6ee56f97b54dd20ffc",
+          "url": "https://github.com/rolldown/rolldown/commit/85a7a11afcfa466c21d9d29478edd4d8fe27a5cc"
+        },
+        "date": 1785139573958,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 728,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 905.57,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 930.93,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 1077.85,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 146.53,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 183.45,
             "unit": "ms / ops"
           }
         ]
