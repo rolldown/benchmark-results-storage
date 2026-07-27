@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1785133234735,
+  "lastUpdate": 1785133934585,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -264617,6 +264617,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 199.62,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "hyfdev",
+            "username": "hyfdev"
+          },
+          "committer": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "hyfdev",
+            "username": "hyfdev"
+          },
+          "distinct": false,
+          "id": "158bc5b83d6ecf7387b90de5054bd65ddf68ac45",
+          "message": "refactor(code-splitting): derive symbol chunk ownership as pass-local link data (#10449)\n\nAsking the cross-chunk link computation a question used to change the state it answers from: the what-if passes — the wrapping prediction and the entry-facade edge query of #10441 — had to write into the shared ownership records they read, then undo their own writes by hand. This PR makes asking side-effect-free by construction: a pass derives ownership as data local to itself, only the final pass commits it, and the compiler now enforces what a doc comment used to promise.\n\n```rust\n// before — the edge query undoes its own writes, in reverse, by hand\nlet mut journal = Vec::new();\nlet state = self.compute_cross_chunk_link_state(…, Scoped(&mut journal));\nfor (symbol_ref, previous_chunk_idx) in journal.into_iter().rev() {\n  symbols.get_mut(symbol_ref).chunk_idx = previous_chunk_idx;\n}\n\n// after — asking cannot write, so there is nothing to undo\nlet state = self.compute_cross_chunk_link_state(…); // &self\n```\n\n## Motivation\n\nThe cost of the old shape was a silent-failure class, not a bug today. The undo was complete only while the pass contained exactly one write; nothing stopped a future edit from adding a second one the journal does not cover. An incomplete undo leaves values behind that later reads can pick up, and what ships is misresolved cross-chunk imports or a wrong facade decision — with no test signal unless a fixture happens to traverse the exact path. Reviewing #10441 meant manually enumerating every mutation site in the pass to prove the undo complete, and that proof expires with every future edit to the pass.\n\nThe old shape also leaked between passes even when nothing went wrong. The prediction pass committed provisional ownership it had no way to retract, so stale values sat in the shared records until the final pass overwrote them — the runtime-module spot-clean exists solely to patch the cases where overwriting was not enough (its three call sites now overwrite `None` with `None`; see non-goals).\n\nThe coupling itself: the collect step (`collect_depended_symbols`, which derives each declared symbol's owning chunk) wrote its derivation into the shared symbol database because the import-resolution step (`compute_chunk_imports`) reads ownership back later in the same pass. The write was load-bearing within one pass, so no caller could simply skip it — every caller had to either keep it (and pollute) or undo it (and be provably complete).\n\nEmitted output is unaffected. The downstream consumers of committed ownership — the CJS cross-chunk reference rendering in the module finalizer and the chunk-export generator — read identical values at identical times.\n\n## Change\n\nOwnership becomes a value the pass returns instead of state it writes, and committing becomes the final caller's single explicit act. The collect step builds that value — a pass-local `SymbolChunkTable` — from the per-chunk symbol lists it already materialized.\n\n- The import-resolution step resolves a depended symbol through the table, falling back to the database value on a miss — exactly the write-then-read union it replaces, so behavior is unchanged by construction.\n- A pass whose answer is never committed (the prediction, the facade edge query) drops its table on return. The `SymbolChunkOwnership` enum, the journal, and its reverse replay are deleted.\n- The final `compute_cross_chunk_links` flushes its table in one place, ahead of every downstream reader, and the whole pass chain down from `compute_cross_chunk_link_state` (including `analyze_execution_order`) becomes `&self`.\n- The one-chunk-per-symbol debug assert now checks within the pass's own derivation instead of against whatever an earlier pass left behind, removing its only false-positive source.\n\nAlternative weighed: a two-impl ownership view — the committing pass reading the flushed database directly, monomorphized separately from the table-reading query — would keep the final pass's resolve a direct field read instead of an `FxHashMap` probe. Not taken: it doubles the read-path surface for a cost that should be noise (one probe per depended-symbol resolve plus one map build per pass). CodSpeed on this PR is the check, and the view design stays the escalation path if the strict-mode benchmarks disagree.\n\nNon-goal: removing the now-inert runtime-module spot-clean (`clear_module_symbol_chunk_indices`). With no provisional writes left to clean up, its three call sites overwrite `None` with `None`; deleting them wants its own verification, so they stay untouched here.\n\n## Validation\n\nA behavior-preserving refactor pins itself on the existing suite, and the suite is built to catch exactly the drift this change could introduce: any output difference surfaces as a snapshot diff. 1896 integration tests pass with zero snapshot modifications; `cargo clippy --all-targets` and `cargo fmt --check` are clean. (`test262_module_code` fails locally only because this worktree has no test262 submodule checkout — the panic fires before any bundling runs; CI executes it with submodules.) Unverified locally and delegated to CI: the CodSpeed benchmarks for the probe-vs-field-read cost above.\n\nStacked on #10441.",
+          "timestamp": "2026-07-27T06:20:52Z",
+          "tree_id": "4f9328ed820ee3423c966da1665d9ad295110dda",
+          "url": "https://github.com/rolldown/rolldown/commit/158bc5b83d6ecf7387b90de5054bd65ddf68ac45"
+        },
+        "date": 1785133934490,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 736.11,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 934.51,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 947.38,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 1096.78,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 161.24,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 181.31,
             "unit": "ms / ops"
           }
         ]
