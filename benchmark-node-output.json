@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1785173628547,
+  "lastUpdate": 1785207423581,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -264887,6 +264887,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 144.41,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "hyfdev",
+            "username": "hyfdev"
+          },
+          "committer": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "hyfdev",
+            "username": "hyfdev"
+          },
+          "distinct": false,
+          "id": "7166d9dcf6291f650f6aa7b7f2ce75ba88d9c3ea",
+          "message": "fix(code-splitting): collect top-level eager order reasons in every strict build (#10463)\n\n`add_top_level_eager_order_reasons` ran only when `experimental.onDemandWrapping` was set, which left `EcmaViewMeta::ExecutionOrderSensitive` less complete in the default strict plan than in the selective one. That walk exists because a pure annotation answers a different question than execution order asks: it says a statement is safe to *drop* when nothing uses it, not that the statement is safe to *run at a different time* when it is kept. A top-level statement tree-shaking treats as pure — a `manualPureFunctions`-tagged call in a class static initializer that reads mutable global state, say — still observes its own position once the module is included. So the plan that defers every eligible module was working from a weaker signal than the plan that derives its wrapping from the analysis, for a fact that is a property of the module rather than of the plan.\n\n## What reads the signal\n\n`ExecutionOrderSensitive` is not read only by the wrap planner. `sort_chunk_modules` splits a chunk's modules into the leaf ones — no import records and no `ExecutionOrderSensitive` — and the rest, then hoists that leaf group and sorts it by module id rather than by execution order under `experimental.chunkModulesOrder: 'module-id'`. That consumer has no idea which plan produced the wrap set, so as things stand the same module lands in the leaf group under the default plan and outside it under `onDemandWrapping`, on a question about the module's own content.\n\nUnder the default plan the difference is textual for now, and deliberately so: `wrap_all_order_analysis` defers every eligible module, so nothing evaluates at chunk top level and hoisting a leaf cannot move an evaluation. It stops being textual as soon as something reads sensitivity to make a decision under that plan, which is what #10454's exemption for a merged-away entry with an unobservable load does. Landing the completeness first keeps that PR's rule reading the same signal the selective plan already reads.\n\n## The change\n\nGate the walk on `strictExecutionOrder` rather than on strict plus on-demand wrapping. Non-strict builds keep the old behaviour on purpose: `add_top_level_eager_order_reasons` only ever adds order reasons and never touches the tree-shaking flags, so running it without the flag could only make a build that never asked for an order guarantee pay for one. The three comments that scoped the walk to on-demand builds are updated to match.\n\nMeasured on its own, with #10454's entry rule disabled: ComfyUI_frontend and plane are byte-identical, and lobehub is byte-identical raw, with gzip and brotli moving by 30 and 59 bytes out of 19 MB.\n\nExtracted from #10454 so it can land on its own; #10454 drops these hunks when it rebases, and its `order_analysis.rs` change is what reads `is_strict_on_demand_wrapping_enabled` again. Until then the accessor has no in-repo caller, so its doc comment now describes the mode it names rather than the walk it used to gate.\n\n## Tests\n\n`test_extended_top_level_reasons_do_not_leak_to_default_or_wrap_all` becomes `test_extended_top_level_reasons_do_not_leak_to_the_non_strict_default` and now covers both halves at the analyzer level: the non-strict default still collects no reasons, and the two strict plans — wrap-all and on-demand — collect the same one. The full `-p rolldown` suite passes with no snapshot changes.",
+          "timestamp": "2026-07-28T02:43:42Z",
+          "tree_id": "d2f8382127106af50f78ec6ee3dcba96bf693981",
+          "url": "https://github.com/rolldown/rolldown/commit/7166d9dcf6291f650f6aa7b7f2ce75ba88d9c3ea"
+        },
+        "date": 1785207423085,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 722.38,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 961.45,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 887.04,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 1164.51,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 156.81,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 171.08,
             "unit": "ms / ops"
           }
         ]
