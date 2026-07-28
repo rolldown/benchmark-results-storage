@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1785220983113,
+  "lastUpdate": 1785222059437,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -265211,6 +265211,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 177.53,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "hyfdev",
+            "username": "hyfdev"
+          },
+          "committer": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "hyfdev",
+            "username": "hyfdev"
+          },
+          "distinct": false,
+          "id": "21df584f9b4e7bc7d380d888b88d327ad2641ab5",
+          "message": "fix(code-splitting): never name an internal chunk export `then` (#10480)\n\nA chunk is loaded through `import('./chunk.js')`, whose promise resolves with the chunk namespace. Promise resolution assimilates any value with a callable `then` as a thenable, so a chunk that exports `then` hijacks every dynamic import of itself — including the `.then((n) => n.ns)` the finalizer generates to reach a merged dynamic entry, whose callback then receives whatever the exported `then` resolved with instead of the namespace. With `minifyInternalExports: false` an internal cross-chunk export named `then` reaches the host namespace directly or through an alias, since a cross-chunk export is emitted under the declaring symbol's name (`export { then as hostThen }` still emits `then`).\n\n`deconflict_exported_names` now reserves `then` before naming bundler-owned internal exports, so they deconflict to `then$1` like any other collision, and the minified-name generator skips the literal `then` (unreachable in practice at four characters, but the generator is the only other source of internal names). Names the user can observe keep whatever they declare: an entry chunk's public exports arrive with predefined names and are emitted verbatim, and an `emitFile`-preserved export keeps `then` only when `then` is the exported name itself — a preserve-name module whose local `then` leaves under an alias deconflicts like any other symbol, so it cannot hand `then` to the chunk (and two preserved modules cannot emit a duplicate one; the second falls back to the resolver).\n\nNo snapshot churn: the full fixture sweep produces exactly the same set of snapshots as `main`, so no existing fixture had an internal export named `then`.\n\n#10456's strict-side guard stays for what renaming can't reach: an entry's own public `then` and `export * from` an external module.",
+          "timestamp": "2026-07-28T06:49:23Z",
+          "tree_id": "1f76e277527998aaf3a3abfd41f0832603ecc466",
+          "url": "https://github.com/rolldown/rolldown/commit/21df584f9b4e7bc7d380d888b88d327ad2641ab5"
+        },
+        "date": 1785222059340,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 741.5,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 911.66,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 941.12,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 1091.49,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 146.59,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 181.12,
             "unit": "ms / ops"
           }
         ]
