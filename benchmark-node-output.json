@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1785216729324,
+  "lastUpdate": 1785217149879,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -265049,6 +265049,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 180.6,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "hyfdev",
+            "username": "hyfdev"
+          },
+          "committer": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "hyfdev",
+            "username": "hyfdev"
+          },
+          "distinct": false,
+          "id": "17f582468ea8c4c34ffa8b1860d890bfd96cc1e6",
+          "message": "fix(code-splitting): avoid creating call-site-triggered entry facades (#10485)\n\nWith strict execution order, a dynamically imported entry can still emit a one-purpose facade file even when every live import can initialize it directly. This PR removes those redundant files in both strict modes while preserving the value and initialization observed by the importing promise.\n\n```js\n// before: the import loads a separate file whose only effect is activation\nawait import(\"./page-b2.js\");\n// page-b2.js\nimport { t as init_page_b } from \"./page-b.js\";\ninit_page_b();\n\n// after: the import activates the implementation directly\nawait import(\"./page-b.js\").then((n) => (n.t(), n.n));\n// page-b2.js is not emitted\n```\n\n## Problem\n\nEach affected dynamic entry adds one emitted chunk and an extra module load without adding user code. On LobeHub wrap-all, #10456 still emits 1577 chunks, 59 more than the non-strict build; 58 of those are these activation-only facades.\n\nThe extra file appears when strict execution order wraps a pure dynamic entry whose implementation still owns its entry chunk. It can happen in both wrap-all and on-demand modes; wrap-all reaches it more often because it wraps every eligible module.\n\nStrict lowering has two ways for such a facade to survive. The restore pass (which revives a facade removed by chunk optimization) already uses the call-site trigger policy from #10456. The creation pass, `create_order_wrap_entry_facades` (which splits an inline entry initializer into its own file), still decides from chunk loading alone and never asks whether every live `import()` can carry that initializer. The same output shape therefore keeps or removes a facade depending on which pass produced it.\n\nCollapsing the facade also means the implementation chunk must publish the namespace value that the facade used to return. That interface cannot be reconstructed from a stale retained-symbol set: aliases can widen it beyond the dynamic import's actual export usage, and a getter such as `x: () => x` can be rendered even when `x` is neither declared nor imported in the chunk. Reading or spreading that namespace then throws a `ReferenceError`.\n\nNon-strict builds are unaffected. Strict builds still retain a real facade for user or emitted entries, entries without a live `import()` call site, two-argument `import()`, TLA-tainted targets, host namespaces that may expose callable `then`, entries whose direct or transitive export-star chain reaches an external module, and facades already restored because another collapse proof failed.\n\nFor the dynamic entries that do collapse, output-hook metadata changes with the file topology: the implementation is reported as a common chunk, so `isDynamicEntry` becomes `false`, `facadeModuleId` becomes `null`, and `exports` reports the common chunk's emitted linkage names instead of the facade's entry export list. Manifest and plugin consumers that key on entry metadata will therefore stop seeing a separate dynamic entry for exactly these removed facades; this is the same contract choice already made for optimizer-removed facades in #10456.\n\n## Fix\n\nUse the same call-site proof when creating and restoring strict entry facades. When a pure dynamic entry has an initializer and every surviving `import()` can be rewritten safely, its implementation becomes a common chunk, each import points to that chunk and runs the initializer before resolving, and no separate facade is emitted.\n\nRemoving the facade also removes the namespace object it would have exported. Strict lowering now records the exact export names selected by `DynamicImportExportsUsage` and materializes that narrowed interface in the implementation chunk. Its synthetic statement references every non-inlined binding behind those getters, allowing normal cross-chunk linking to keep, export, and import each getter target after the entry becomes a common chunk. Smart inline constants omit that reference only when the individual binding is actually safe to inline. If the namespace also has a real semantic consumer, that complete interface overrides the narrowing. This keeps the `ExportAll` runtime demand without turning a synthetic narrow namespace into an opaque user namespace read or initializing unrelated re-exports.\n\nEntry-level external stars are rendered on the facade chunk and keep that facade in every format. ESM would lose its chunk-level `export * from \"external\"` statement after reclassification. CJS-like formats would replace the facade's deduplicated `Object.keys` merge with one module-local `__reExport` per direct record; that differs for primitive module values and duplicate records, while a transitive external star is not available from the entry module's direct records at all. The provisional chunk's `entry_level_external_module_idx` covers both direct and transitive chains, so one format-independent guard preserves the complete interface and its existing merge behavior.\n\nThis deliberately takes the same ordering tradeoff as #10456: the initializer runs in the rewritten import's promise continuation, one microtask after the host chunk settles, instead of during facade-module evaluation. The importing promise still resolves only after initialization, but a microtask queued during host evaluation can observe the target before it runs. Keeping the facade would preserve that timing but keep all 58 files; using different timing solely based on which lowering pass produced the facade would be inconsistent.\n\nEntries with no `import()` call site, including the remaining LobeHub HTML entry, are intentionally unchanged. LobeHub therefore moves from 1577 to 1519 chunks rather than to the 1518-chunk non-strict baseline.\n\nThe analogous external-star loss in the pre-existing non-strict chunk optimizer is not changed here. It already reproduces on `main` without strict execution order and is being fixed independently in #10492, rather than adding another dependency to this stack.\n\n## Validation\n\n- `retained_star_renamed_cycle` now spreads the emitted synthetic namespace at runtime and asserts its exact keys are `['_', 'common']`. This fails on the reviewed revision because the namespace contains a dangling `x` getter and an alias-widened `commonLeaf` getter.\n- New `retained_star_opaque_cycle` spreads the source-level dynamic namespace and asserts the complete interface. Its snapshots pin the cross-chunk import that backs `x`, so a genuine semantic namespace consumer cannot be accidentally narrowed.\n- New `retained_star_smart_constant_cycle` pins the smart inline-constant boundary in both strict modes: a getter's backing reference is omitted only when that exact constant can actually be inlined.\n- The direct and transitive ESM external-star fixtures are red without the guard because the resolved `import()` namespace loses `externalValue`. With the guard, each snapshot retains a facade carrying `export * from \"external\"`, and runtime assertions observe `x === 1`, `externalValue === 42`, and the expected initialization order.\n- New `cjs_dynamic_entry_external_star_keeps_facade` pins why direct CJS stars also keep the facade: a duplicated Proxy external is enumerated once, while a primitive external contributes its enumerable `0` and `1` keys. A collapsed module-local namespace would enumerate the Proxy twice and omit the primitive keys.\n- New `cjs_dynamic_entry_transitive_external_star` reproduces the reported `target -> barrel -> external` loss. It is red before the guard with `undefined !== 42`; the fixed snapshot retains the facade's chunk-level external merge and the runtime assertion observes `externalValue === 42`.\n- The related retained-star, fanout, namespace, and external-star fixtures pass, as do all 12 strict-order invariant tests.\n- LobeHub wrap-all emits 1518 `.js` files and one `.mjs`; all 1519 pass `node --check`. Expanding the external-star guard to every format does not change this ESM measurement, so all 58 chunk reductions remain. This measurement covers production output topology and syntax, not browser E2E behavior.\n- The output-hook metadata change is source-verified but is not pinned by a dedicated plugin or manifest fixture in this PR.\n- Targeted clippy for Rolldown, the all-features workspace check, Rust and repository formatting, filename lint, and `git diff --check` pass. Full-workspace clippy remains locally blocked by the pre-existing reasonless `#[ignore]` generated in the isolated-declaration test.\n\nPart of #10294.",
+          "timestamp": "2026-07-28T05:26:47Z",
+          "tree_id": "8cf921dc3fc13450a3cc6ccce3b426b6f82ba9c1",
+          "url": "https://github.com/rolldown/rolldown/commit/17f582468ea8c4c34ffa8b1860d890bfd96cc1e6"
+        },
+        "date": 1785217149782,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 747.28,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 924.84,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 968.32,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 1115.17,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 157.21,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 179.16,
             "unit": "ms / ops"
           }
         ]
