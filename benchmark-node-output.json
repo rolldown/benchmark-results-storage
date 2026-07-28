@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1785215282528,
+  "lastUpdate": 1785216729324,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -264995,6 +264995,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 194.54,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49056869+sapphi-red@users.noreply.github.com",
+            "name": "sapphi-red",
+            "username": "sapphi-red"
+          },
+          "committer": {
+            "email": "49056869+sapphi-red@users.noreply.github.com",
+            "name": "sapphi-red",
+            "username": "sapphi-red"
+          },
+          "distinct": false,
+          "id": "c77790c8604f91c09680adacf8f83b5e67e55e90",
+          "message": "refactor(rollup-tests): avoid relying on `NODE_PATH` env var resolution (#10496)\n\n`packages/rollup-tests` was relying on the legacy `NODE_PATH` env var behavior.\n\n`node_modules` in `rollup` directory is not generated since it's not included in the pnpm workspace and we also don't run `npm install` in that directory.\nBut `rollup-tests` was working because the dependencies used in the tests were installed somewhere else in the workspace and existed in `node_modules/.pnpm/node_modules` and the tests were using `require`. pnpm injects `node_modules/.pnpm/node_modules` to `NODE_PATH` env var by default ([`extendNodePath`](https://pnpm.io/settings#extendnodepath)) and `require` support it. But it's not supported by `import`.\n\nIn https://github.com/rolldown/rolldown/pull/10494, Rollup started to use `import` for magic-string probably because it is now ESM-only. That change caused the test to fail.\n\nThis PR sets `extendNodePath: false` and adds the dependencies in a more explicit way.",
+          "timestamp": "2026-07-28T05:20:26Z",
+          "tree_id": "9e3f726862feb785b51a1b2bd6d423786403b8d2",
+          "url": "https://github.com/rolldown/rolldown/commit/c77790c8604f91c09680adacf8f83b5e67e55e90"
+        },
+        "date": 1785216729226,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 722.78,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 894.97,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 909.31,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 1076.1,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 148.34,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 180.6,
             "unit": "ms / ops"
           }
         ]
