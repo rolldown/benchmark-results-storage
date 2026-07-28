@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1785207423581,
+  "lastUpdate": 1785215282528,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -264941,6 +264941,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 171.08,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "165626830+shulaoda@users.noreply.github.com",
+            "name": "Jerry Zhao",
+            "username": "shulaoda"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1b1a8603d41a21625686be7195664bd6c0aced58",
+          "message": "chore(deps): upgrade oxc to 0.142.0 (#10497)\n\nUpgrades oxc from `0.141.0` to `0.142.0` (npm catalog and Rust crates).\n`oxc_resolver` and `oxc_resolver_napi` were already on the latest\n`11.24.2` and are unchanged.\n\n`oxc-minify` is not a dependency of this repo, so there was nothing to\nbump for it. `oxc_napi` and `oxc_str` are bumped alongside the rest\nsince they ship in lockstep.\n\n### Dropping the direct `oxc_ast` dependency\n\n0.142.0 removes the old `AstBuilder` API outright, so the\n`disable_old_builder` feature enabled in #10316 no longer exists. `cargo\nupdate` fails with `oxc_ast does not have that feature`.\n\nNothing imports `oxc_ast` directly, since code goes through\n`oxc::ast::…`. The dependency existed only to flip that feature. So\ninstead of just dropping the flag, this removes the workspace entry, the\n`rolldown_ecmascript` dependency line, and the now unused\n`[package.metadata.cargo-shear] ignored = [\"oxc_ast\"]` block.\n\nNo Rust source changes were needed. `cargo check` was clean on the first\npass.\n\n### Snapshot churn\n\nThe three `esbuild/lower/lower_using*` snapshots reflect a diagnostic\nimprovement in oxc. `Using declaration cannot appear in the bare case\nstatement` is now `'using' declaration …` or `'await using' declaration\n…`, which distinguishes the two forms. Diagnostic emission order also\nchanged. Cosmetic only.\n\n`embedded_helpers.rs` was regenerated. Only the version string and\nhelper path prefix changed, so the runtime helper bodies are byte\nidentical between 0.141.0 and 0.142.0.\n\n### Verification\n\n`just roll` passes end to end (Rust tests, Node tests, all lint stages,\nesbuild diff).",
+          "timestamp": "2026-07-28T13:00:38+08:00",
+          "tree_id": "f7c7e487c67ef47e0b2e11c16fbde493e9d47003",
+          "url": "https://github.com/rolldown/rolldown/commit/1b1a8603d41a21625686be7195664bd6c0aced58"
+        },
+        "date": 1785215282430,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 763.16,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 957.27,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 962.85,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 1135.98,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 168.12,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 194.54,
             "unit": "ms / ops"
           }
         ]
