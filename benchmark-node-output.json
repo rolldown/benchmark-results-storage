@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1785218367080,
+  "lastUpdate": 1785220983113,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -265157,6 +265157,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 153.88,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "andywangsy@gmail.com",
+            "name": "h-a-n-a",
+            "username": "h-a-n-a"
+          },
+          "committer": {
+            "email": "andywangsy@gmail.com",
+            "name": "h-a-n-a",
+            "username": "h-a-n-a"
+          },
+          "distinct": false,
+          "id": "388476912639c30d76ea2ac2bfe70be7c16040b2",
+          "message": "feat(dev): support `hotUpdate` hook (#10305)\n\nAdds a dev-only `hotUpdate` plugin hook to the HMR engine. It works like Vite's hook of the same name. The Vite side is vitejs/vite#22956, which runs Vite's `hotUpdate` / `handleHotUpdate` hooks on top of this hook in bundled dev.\n\n## Problem\n\nWhen a file changes, the engine can only find modules the graph knows about: the file's own module, and modules that watched the file with `addWatchFile`. Plugins often know more. A config file may affect many modules. A content file may not be a module at all. Vite plugins express this knowledge with the `hotUpdate` hook. Without the same hook, these plugins cannot work on the rolldown dev engine.\n\n## Design\n\n```mermaid\nflowchart LR\n  A[file change] --> B[default affected set<br/>own module and transform deps]\n  B --> C[hotUpdate chain<br/>each plugin may replace the set]\n  C --> D[re-fetch, walk, patch<br/>existing steps, unchanged]\n```\n\nThe hook edits the input of the update pipeline. It does not change how the pipeline works. It runs once per changed file, after the engine builds the default affected set, and before any module is re-fetched. Everything after that point — re-fetch, boundary walk, patch, delivery — stays the same.\n\nThe main design rules:\n\n- **Vite behavior, engine-level types.** The chain works like Vite's: plugins run in hook order, each plugin gets the current set and may replace it, an empty array suppresses the update for this file, and no return passes the set through. But the engine uses plain module ids, not module node objects. Node objects belong to the framework layer — the adapter in vitejs/vite#22956 translates between the two.\n- **The engine does not override an explicit plugin choice.** Modules returned by a hook skip the \"output unchanged\" check. That check is only safe when \"same output\" means \"nothing happened\". That is true for a normal edit, but not for a hook result — the change may live outside the module's code. Example: a module reads `config.json` at runtime. When a plugin maps a `config.json` edit to that module, re-running the module is the whole point, and its unchanged code proves nothing. Vite always ships hook-returned modules for the same reason.\n- **Engine internals stay hidden.** Hooks never see lazy-compilation proxies or runtime modules, and cannot return them. Unknown ids are dropped with a debug log. A plugin cannot break the graph.\n- **A hook cannot block error recovery.** Files queued for retry after a failed build are added before the suppress decision. So clients stuck on an error overlay always get the recovery build.\n- **No hook, no cost.** If no plugin registers the hook, the whole path is skipped. If plugins return nothing, the default flow — including the \"output unchanged\" check — works as before.\n- **No `read()` on the engine hook.** Reading the changed file from disk is a framework-layer concern — the disk content may not match what the plugin pipeline produces. Per review, `read` lives only in the Vite adapter (vitejs/vite#22956), which keeps Vite's retry behavior (vitejs/vite#610).\n- **No time limit on the chain.** Same as Vite: a hook that never finishes blocks that update.\n\n## What this enables\n\nThrough the Vite adapter, Vite plugins with either hook run on bundled dev without changes. The browser tests in this PR cover the common plugin patterns: replacing the set (tailwind-style config mapping), buffering with `moduleGraph.invalidateModule` plus an empty return, custom messages with `read()` and `hot.send` (markdown-pages style), the legacy shared-context `read` chain (unocss with plugin-vue), file-to-submodule expansion (SFC style), and `invalidateAll` as a full rebuild plus reload.\n\n## Tests\n\n- Unit: hidden-id filtering (runtime and lazy-proxy ids are hidden; real files and virtual modules are not).\n- Browser end-to-end, six playgrounds:\n  - `hmr-hot-update-hook` — the raw hook: replace, suppress, unknown ids dropped, an empty default set for a file with no module, decline, proof that a hook-selected module ships even when its output did not change, and proof that a suppressing hook cannot block error recovery.\n  - `hmr-hot-update-hook-chain` — each plugin receives the set as edited by the plugins before it.\n  - `hmr-hot-update-hook-delete` — delete events reach the hook; a replacement returned for a delete ships as-is.\n  - `hmr-hot-update-hook-error` — a throwing hook fails the round, and the failed edit is not retried.\n  - `hmr-hot-update-hook-vite` — the Vite adapter (8 specs), covering the plugin patterns listed above.\n  - `hmr-delete-self-watched` — a module that watches its own file adds no extra failure mode on delete.\n- A skipped engine test for #10487 (deleting a still-imported file on the raw engine): it asserts the desired behavior and is un-skipped by the resolver-cache fix.\n\n## Not in this PR, planned next\n\n- Directory support for `addWatchFile` (Rollup allows directories; needed to watch files that do not exist yet).\n- `import.meta.glob` updates in the native plugin, built on top of that.",
+          "timestamp": "2026-07-28T06:30:59Z",
+          "tree_id": "64ad05ca14e1197a3f18e765cb449d358a0ccadb",
+          "url": "https://github.com/rolldown/rolldown/commit/388476912639c30d76ea2ac2bfe70be7c16040b2"
+        },
+        "date": 1785220983014,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 746.46,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 979.84,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 956.23,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 1115.64,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 146.19,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 177.53,
             "unit": "ms / ops"
           }
         ]
