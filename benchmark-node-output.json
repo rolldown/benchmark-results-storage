@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1785225731848,
+  "lastUpdate": 1785249338378,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -265373,6 +265373,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 201.31,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "hyfdev",
+            "username": "hyfdev"
+          },
+          "committer": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "hyfdev",
+            "username": "hyfdev"
+          },
+          "distinct": false,
+          "id": "ddf4bccff1767949d79c23ba2de2f45fc582a89c",
+          "message": "fix(code-splitting): point a two-argument dynamic import at the chunk that holds the module (#10479)\n\nA dynamic import written with a second argument — `import('./target.js', {})`, or anything carrying `with { type: … }` — keeps the specifier the source wrote, while the module it names ships inside the bundle under a different name. Loading such a build fails with `ERR_MODULE_NOT_FOUND`. This makes a two-argument call produce exactly what the same call without the second argument produces.\n\n```js\n// input\nexport const loaded = import('./target.js', {}).then((target) => target.value);\n```\n\n```js\n// before — the bundle emits target-oUvUsQEi.js, and nothing is at ./target.js\nconst loaded = import(\"./target.js\", {}).then((target) => target.value);\n\n// after\nconst loaded = import(\"./target-oUvUsQEi.js\").then((target) => target.value);\n```\n\n## Problem\n\nNothing unusual is needed to hit this: default output settings, no code-splitting configuration, one call site. The failure gets quieter when the target is inlined rather than given its own chunk — with\n\n```js\nexport const loaded = import('./data.json', { with: { type: 'json' } });\n```\n\nthe JSON module is inlined into the importing chunk and no file is emitted for it at all, yet the call still names `./data.json`. In a directory where the source tree sits next to the output, that resolves to the original file and the build silently ends up with two copies of the module instead of failing. CJS output has a third shape: the same call also escapes the `import()` → `require()` conversion, so a CJS bundle ships a native `import()` at that site.\n\nThe dynamic-import rewrite in the module finalizer — the pass that redirects a call at the chunk that ends up holding the module, collapses it when importer and target share a chunk, and converts it for CJS output — returns early whenever the call has a second argument, before it touches the specifier. Nothing downstream picks the call up again. The early return carries no recorded rationale; it predates the current control flow and reads as \"not handled yet\".\n\nThat leaves two-argument calls as the only place where import attributes mean anything for a bundled module. Everywhere else they are inert: they are read only when rendering an import of an *external* module, they select no loader (a `.txt` file holding JSON and marked `type: 'json'` still loads as text), they do not affect module identity (the same module imported with and without attributes yields one instance), and a static attributed import of a bundled module already drops them.\n\nOnly call sites with a second argument are affected. External and unresolved targets are not — that is where attributes are load-bearing and the current behavior is correct — and neither are calls whose specifier is not statically known.\n\n## Fix\n\nWhen the target is a module rolldown bundles, drop the second argument and let the call take the ordinary path.\n\nThe specifier is then redirected at the chunk that emits the module, the merged-entry collapse and namespace extraction apply, and CJS output converts the call like any other — none of that machinery changes, it simply stops being skipped. Dropping the attributes is what the rest of the pipeline already does for bundled modules, so the result is byte-identical to writing the call without its second argument. External targets, unresolved targets, and computed specifiers keep bailing, and an external call is now explicitly protected from the CJS `require()` conversion, which cannot carry attributes.\n\n**Why not keep a file at the name the source wrote.** The first revision of this PR did that: it stopped the chunk optimizer from merging away an entry named by a two-argument call. That only helps when the emitted filename happens to equal the path the source wrote — with hashed names or a chunk subdirectory the specifier still dangles — it costs a merge that was otherwise sound, and it cannot address the inlined case at all, where by construction no file carries that name. This supersedes it: the guard is removed, along with the equivalent guard merged in #10456 and the import-record flag both used.\n\n**Non-goals.** Making attributes meaningful for bundled modules — selecting a module type, distinguishing instances per attribute, warning on conflicting attributes the way Rollup does — is a separate and much larger change; this only stops treating a two-argument call as unrewritable. An options *expression* with side effects is no longer evaluated when the target is bundled; the argument is spec'd as an object literal carrying `with`, and such a call site does not load today anyway.\n\n## Validation\n\nNew fixtures, each red before the finalizer change and green after:\n\n- `topics/dynamic_import_options/hashed_chunk_names` — default hashed names, nothing merged. `ERR_MODULE_NOT_FOUND` before; resolves and returns the value after. This is the case the removed guard could never fix.\n- `topics/dynamic_import_options/json_module_attribute` — `with { type: 'json' }` on an inlined JSON module. Points at the emitting chunk with no `with` clause, and asserts the data at runtime.\n- `topics/dynamic_import_options/cjs_format` — pins that the call converts like a one-argument one instead of staying a native `import()`. Its CJS cell was runtime-green before, because Node's ESM loader resolves the CJS chunk anyway; only the snapshot catches this one.\n- `topics/dynamic_import_options/external_target_keeps_attributes` and `…/non_static_specifier_in_cjs` — the two deliberate bails. Byte-identical output before and after.\n- `chunk_merging/dynamic_import_with_options_rewrites_specifier` (repurposed from `…_keeps_entry`) — the merged case now collapses into the host chunk instead of keeping a facade.\n- `packages/rolldown/tests/…/dynamic-imports-metadata/options-import` — `dynamicImports` names the chunk the call now points at.\n- `strict_execution_order_invariants/dynamic_import_options` — updated: no facade, specifier rewritten, trigger carried, runtime assertions unchanged.\n\n`chunk_merging/tree_shaken_options_import_does_not_keep_entry` is deleted; it pinned the removed guard's liveness rule.\n\nOne test on `main` depended on the old behavior and had to be rebuilt: `late_order_wrapping_revalidates_output_file` used a two-argument import to keep a graph single-chunk through chunk optimization and multi-chunk only after order lowering. It now gets that shape from an emitted chunk for the entry module plus a manual group, and is verified non-vacuous — the same build succeeds with `strictExecutionOrder` off.\n\nExactly one pre-existing snapshot changes (the repurposed fixture above); everything else is new files. Full Rust suite matches the baseline failure set by name, and the Node suite is green (883 passed).",
+          "timestamp": "2026-07-28T14:20:01Z",
+          "tree_id": "9a0aeb373c773793a5914957770c8a0cc9b54a9e",
+          "url": "https://github.com/rolldown/rolldown/commit/ddf4bccff1767949d79c23ba2de2f45fc582a89c"
+        },
+        "date": 1785249338281,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 735.05,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 898.84,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 920.67,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 1083.61,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 160.24,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 191.9,
             "unit": "ms / ops"
           }
         ]
