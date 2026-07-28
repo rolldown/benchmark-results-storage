@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1785222059437,
+  "lastUpdate": 1785224844732,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -265265,6 +265265,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 181.12,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "hyfdev",
+            "username": "hyfdev"
+          },
+          "committer": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "hyfdev",
+            "username": "hyfdev"
+          },
+          "distinct": false,
+          "id": "556f2c22f0ae876746be1f323a3fe55f8734c59e",
+          "message": "docs(code-splitting): record the thenable-namespace rule (#10502)\n\nFollow-ups from #10480's review (https://github.com/rolldown/rolldown/pull/10480#issuecomment-5100864763) that missed the merge.\n\n- The two `then`-hazard fixtures only loaded the dynamic importer, so the chunk that imports the renamed binding was never linked at runtime — a producer/consumer disagreement on the new name would have stayed green. Both `_test.mjs` now load `b.js` and assert the re-exported binding arrived.\n- `internal-docs/code-splitting/design.md` gains a \"Thenable chunk namespaces\" section: the assimilation mechanism, why the defense splits by name ownership (bundler-owned names are never `then`; user-observable ones keep the facade instead), and which case deliberately keeps `then` (the target's own export — native `import()` behaves the same). The reservation site in `deconflict_exported_names` points at it.\n- The generator comment claimed `then` needs ~14M names; that is where five-character names begin. It first appears at value 443,179.",
+          "timestamp": "2026-07-28T07:35:20Z",
+          "tree_id": "5f92cd85810efe0528187af16345bdb46642950f",
+          "url": "https://github.com/rolldown/rolldown/commit/556f2c22f0ae876746be1f323a3fe55f8734c59e"
+        },
+        "date": 1785224844633,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 812.99,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 1029.91,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 1033.18,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 1214.15,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 168.99,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 200.27,
             "unit": "ms / ops"
           }
         ]
