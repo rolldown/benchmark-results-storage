@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1785224844732,
+  "lastUpdate": 1785225731848,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -265319,6 +265319,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 200.27,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "0ce3ec756e2710bbfb23fe848f99864683bd5b33",
+          "message": "fix(common): align is_path_fragment with Rollup's isPathFragment (#10398)\n\nFollow-up polish on #10377 (thanks @Nic-Polumeyv), which ported Rollup's\n`isPathFragment` to the JS `emitFile` validation. This brings the Rust\n`is_path_fragment` — used by the native render-time and emit-time checks\n— in line with it, so both layers agree on every input.\n\n## Problem\n\n`is_path_fragment` matched `./` and `../` by prefix and then fell back\nto `Path::new(name).is_absolute()`, which resolves differently depending\non the **host OS** and is narrower than Rollup's predicate in both\ndirections:\n\n| name | Rollup | before (Unix host) | before (Windows host) | after |\n| --- | --- | --- | --- | --- |\n| `C:/windows`, `F:\\test.ext` | reject | **accept** | reject | reject |\n| `\\server\\share`, `\\|foo` | reject | **accept** | **accept** | reject |\n| `..y`, `..y.js` | reject | **accept** | **accept** | reject |\n| `.x`, `.foo` | accept | accept | accept | accept |\n| `C:relative` | accept | accept | accept | accept |\n\nTwo consequences:\n\n1. **The same config could pass on Linux CI and fail on a Windows\nmachine** (or vice versa) — a `chunkFileNames` of `F:\\out\\[name].js` was\nsilently accepted on Unix.\n2. **The native check disagreed with the JS check** added in #10377:\n`emitFile({ name: '..y' })` was rejected in JS, but the same string\nflowing through the render-time `[name]` substitution was accepted by\nRust.\n\n## Change\n\nPort Rollup's predicate directly, matching on bytes so the result no\nlonger depends on the host OS:\n\n- `rollup/src/utils/relativeId.ts` — `isPathFragment`\n- `rollup/src/utils/path.ts` — `ABSOLUTE_PATH_REGEX =\n/^(?:\\/|(?:[A-Za-z]:)?[/\\\\|])/`\n\nThe doc comment on each copy now points at the Rollup source and at the\nother copy, so the two are maintained as a pair. The JS side in\n`packages/rolldown/src/utils/misc.ts` is unchanged in behavior — only\nthe cross-reference comments were added.\n\nUnit tests in `filename_template.rs` are extended with the Rollup-parity\ncases above, including the ones that only differ on one host\n(`F:\\test.ext`, `\\server\\share`, `\\|foo`) so they're now pinned on every\nplatform.\n\n## Behavior change\n\n`..y` is now a path fragment, which is what Rollup does — verified\nagainst `rollup@4.62.3` (latest), which fails the identical build with\n`code: VALIDATION_ERROR`:\n\n```\nInvalid substitution \"..y\" for placeholder \"[name]\" in \"output.entryFileNames\" pattern, can be neither absolute nor relative path.\n```\n\nTwo test updates fall out:\n\n- **`issues/5557`** imported both `./.x.js` and `./..y.js`. The issue is\nabout `.`-prefixed specifiers keeping their `./` prefix, which `./.x.js`\ncovers on its own; the `..y.js` half is moved out.\n- **`errors/preserve_modules_dot_dot_name`** (new) pins the `..y.js`\ncase as an error under `preserveModules`, where the derived `[name]` is\n`..y`:\n\n  ```\n[INVALID_OPTION] Invalid substitution \"..y\" for placeholder \"[name]\" in\n\"entryFileNames\" pattern, can be neither absolute nor relative paths.\n  ```\n\n## Known gap this does *not* close\n\nAligning the predicate aligns *detection*, not the whole\n`preserveModules` behavior. Comparing against Rollup on a matrix of\nnames × module contents shows two remaining divergences worth flagging\nfor reviewers:\n\n- **Rolldown inlines modules Rollup preserves.** Under\n`preserveModules`, a module whose export is a const literal is inlined\ninto its importer, so no `[name]` is ever derived for it and the check\nnever runs — the build succeeds where Rollup errors. Only when the\nmodule survives inlining (a `function` export, or\n`optimization.inlineConst: false`) does rolldown reject it too. That's\nwhy the new fixture sets `inlineConst: false`. So whether rolldown\naccepts a `..y.js` module currently depends on its *content*, not just\nits name.\n- **The error code and wording differ.** Both reject at the same point,\nbut:\n\n  | | Rollup 4.62.3 | rolldown |\n  | --- | --- | --- |\n  | `code` | `VALIDATION_ERROR` | `INVALID_OPTION` |\n  | pattern named as | `output.entryFileNames` | `entryFileNames` |\n| tail | `…neither absolute nor relative path.` | `…neither absolute nor\nrelative path**s**.` |\n\nBoth are pre-existing and out of scope here, but they're the reason this\nPR is framed as aligning the predicate rather than \"matching Rollup's\n`preserveModules`\".",
+          "timestamp": "2026-07-28T15:56:21+08:00",
+          "tree_id": "13592b169f4d493e706026f0d606c30b4a0fe022",
+          "url": "https://github.com/rolldown/rolldown/commit/0ce3ec756e2710bbfb23fe848f99864683bd5b33"
+        },
+        "date": 1785225731746,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 772.41,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 971.48,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 1000.26,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 1158.26,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 161.38,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 201.31,
             "unit": "ms / ops"
           }
         ]
