@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1785311134152,
+  "lastUpdate": 1785312461755,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -265697,6 +265697,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 191.04,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tbvjaos510@naver.com",
+            "name": "peter",
+            "username": "tbvjaos510"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "dfb19fbd0905d53166dce911e5ed84c52694cd66",
+          "message": "fix(dev): resolve re-exports from externals through a real import (#10489)\n\nFixes #10478.\n\n## What's broken\n\nThe dev runtime registry holds the modules this build wrapped. An\nexternal is by definition not one of them, so `loadExports('<external\nid>')` finds nothing, warns `Module <id> not found`, and returns `{}` —\nit does not throw. The import arm of `HmrAstFinalizer` knew that and\nemitted a real import statement, hoisted outside the wrapper. The three\nre-export arms asked the registry instead:\n\n```js\n// input: export { ok as assertOk } from 'node:assert'\n__rolldown_runtime__.registerFactory(\"lazy.js\", \"esm\", (function(__rolldown_module_id__) {\n\tvar __rolldown_exports__ = __rolldown_runtime__.__exportAll({ assertOk: () => import_node_assert_00.ok });\n\t// …\n\tvar import_node_assert_00 = __rolldown_runtime__.loadExports(\"node:assert\");  // {}\n}));\n```\n\nEvery re-exported name reads as `undefined`, with nothing failing at\nbuild time.\n\nThe second symptom is worse. When a module both imports and re-exports\nthe same external, both arms name the binding through\n`ensure_static_import_info` — so they agree on the name — but they\ndeduplicate against different sets (`self.imports` vs\n`generated_static_import_stmts_from_external`), so both emit a\ndeclaration. The real import sits at chunk top level and the `var`\ninside the factory, which is legal shadowing rather than a redeclaration\nerror. Every reference in the module body then reads the empty object,\nincluding the ones that were working before.\n\n## Root cause\n\nFour statement kinds need the same thing — a local binding for the\nimportee's namespace — and each decided how to obtain it on its own.\nOnly one of the four knew about externals.\n\n## The fix\n\nAll four now route through one `create_importee_binding_stmt`:\n`loadExports` for a normal module, a real import statement for an\nexternal. The two deduplication sets become disjoint by construction, so\nthe shadowing `var` has no path to being emitted.\n\n`create_load_exports_call_stmt` now takes a `&NormalModule` rather than\na `&Module`, which makes \"ask the registry for an external\" a compile\nerror rather than a rule to remember. It also removes a\n`Module::External => None` interop arm that is now unreachable.\n\n## Scope\n\nOnly the module-wrapper path (HMR patches, lazy chunks) changes. Scope\nhoisting already resolved all four forms correctly, so the initial dev\nbundle and production builds were never affected — in the new fixture's\nsnapshot the eager output and the patch sit side by side, and the patch\nnow matches what the eager output always had.\n\nNo existing snapshot moved, which is also the answer to why this\nsurvived: no fixture reached this path.\n\n## Tests\n\n- `crates/rolldown/tests/rolldown/topics/hmr/reexport_external/` — all\nthree re-export forms plus the import-and-re-export shadowing case,\nagainst `node:assert` and `node:util`. The fixture executes, and it runs\nits assertions twice against the same expectations: first on the eagerly\nbundled output, then again once every module has been re-emitted as a\nwrapper. So the wrapper is held to what scope hoisting already\nsatisfies, instead of to a second set of numbers written by hand.\n- `packages/rolldown/tests/dev/dev-lazy-compile.test.ts` — the\nlazy-chunk path, which reaches the same finalizer by a different route.\nAsserts exactly one `import * as … from \"external-dep\"`, no\n`loadExports(\"external-dep\")`, and no `var` redeclaring that binding.\n\nBoth fail against the finalizer as it stands on `main` and pass with\nthis change; reverting only the finalizer hunk turns both red again.\n\n## Alternatives considered\n\n- **Give each re-export arm its own `Module::External` branch**,\nmirroring the import arm. Fixes the empty re-exports, but leaves the\nsame decision written in four places — which is what produced the bug —\nand does not fix the shadowing, since the two deduplication sets stay\nindependent.\n- **Merge the two deduplication sets into one.** Fixes the shadowing but\nnot the empty re-exports. Once the two module kinds route separately the\nsets are disjoint anyway, so merging them would hide the invariant\nrather than enforce it.\n- **Register externals in the dev runtime registry** so `loadExports`\nworks for them. An external is resolved by the host, so the runtime\nwould have to import it anyway, and this would change the registry\ncontract for every consumer to fix one caller.\n\n## Worth a closer look\n\n- The `&NormalModule` signature change is the part I would most like a\nsecond opinion on. It is what turns this from a fix into an invariant,\nbut it does narrow a public-ish helper inside the crate.\n- `export * from 'ext'` is lowered as a real `import * as` plus\n`__reExport`, matching what scope hoisting emits for the same input. It\ncannot be a top-level `export * from` because a wrapper's exports object\nis a runtime value.\n\n## Docs\n\n`internal-docs/lazy-compilation/implementation.md` gains Issue 12, in\nthe format the file already uses for Issues 1–11.\n\n## AI disclosure\n\nWritten with AI assistance. I reproduced the bug, reviewed the fix and\nboth tests, and verified them against a real project before submitting.\n\n---------\n\nCo-authored-by: peter <peter@tossinvest.com>",
+          "timestamp": "2026-07-29T08:01:57Z",
+          "tree_id": "c9571e5bf434132a2e7a8f1e1887a71a0b970c69",
+          "url": "https://github.com/rolldown/rolldown/commit/dfb19fbd0905d53166dce911e5ed84c52694cd66"
+        },
+        "date": 1785312461660,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 745.09,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 941.21,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 968.43,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 1109.94,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 146.5,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 171.16,
             "unit": "ms / ops"
           }
         ]
