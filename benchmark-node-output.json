@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1785303732181,
+  "lastUpdate": 1785306303994,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -265589,6 +265589,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 204.39,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "hyfdev",
+            "username": "hyfdev"
+          },
+          "committer": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "hyfdev",
+            "username": "hyfdev"
+          },
+          "distinct": false,
+          "id": "9fef0099f2f600bf532ce00d3ffb3926f5641330",
+          "message": "fix(code-splitting): route CJS barrel initialization per consumer (#10488)\n\nWith `strictExecutionOrder`, importing one binding from an otherwise re-export-only barrel could initialize unrelated CommonJS re-exports and pull lazy-route code into the initial load. This PR makes each consumer initialize only the exports it can statically reach while preserving complete namespace and cycle semantics.\n\n```js\n// barrel.js\nexport { cn } from './cn.js';\nexport { default as cloneDeep } from './clone.cjs';\n\n// main.js\nimport { cn } from './barrel.js';\nexport const loadRoute = () => import('./route.js');\n\n// route.js\nimport { cloneDeep } from './barrel.js';\n\n// Before: loading main.js also initialized clone.cjs.\n// After: clone.cjs waits until loadRoute() loads route.js.\n```\n\n## Problem\n\nThe regression occurs in strict-order builds when tree shaking retains different exports from the same re-export-only barrel for eager and lazy consumers, especially when one re-export needs generated CommonJS interop. Both wrap-all and on-demand strict modes could put the lazy leaf in the eager entry's static closure.\n\nGenerated CommonJS interop previously gave the barrel one shared initialization body. Every consumer therefore initialized that body as a unit, and pre-chunk reachability followed the barrel's bundle-wide dependency union instead of the leaves selected by that consumer.\n\nNon-strict builds are unaffected. The narrower routing is limited to tree-shaken source modules made entirely of direct re-exports; shapes whose evaluation cannot be safely split retain the existing behavior.\n\n## Fix\n\nKeep eligible re-export-only barrels as routing points and make generated CommonJS interop independently callable for each re-export record.\n\nEach CommonJS re-export now has a memoized carrier beside its importee. Named imports and statically resolved namespace members select only their leaf and, when needed, its carrier; opaque namespace uses expand that consumer's complete statically known leaf/carrier list without disabling routing for other consumers. Effectful carriers become unconditional only when every forwarding hop retains their side effects, and selected leaves and carriers remain in source order.\n\nThe same importer-local resolution drives pre-chunk placement, on-demand cycle projection, cross-chunk registration, and final emission. Non-routing wrappers that materialize a consumer-local namespace initialize its complete ordered target list inside their existing module guard and at the original re-export position. A consumer-local entry instead invokes that list from its entry prologue, or from the rewritten `import()` call site when its dynamic-entry facade is collapsed, so namespace getters cannot observe uninitialized leaves or carriers.\n\nThe conservative monolithic path remains for tree-shaking-disabled builds, modules with local executable bodies, synchronous `import`/`require` SCCs, direct opaque CommonJS `require()` targets, top-level await, dynamic exports, CJS `export *`, missing-export shims, and concatenated wrappers. Keeping synchronous SCCs monolithic preserves one evaluating guard across dependency traversal and the module body.\n\n## Validation\n\nThe directed fixtures cover the behavior at observable boundaries:\n\n- `cjs_reexport_barrel_consumer_local` and `cjs_reexport_barrel_namespace_routing` are red on `main` and green here for named imports, static namespace members, opaque namespace expansion, and lazy-route isolation.\n- `cjs_reexport_barrel_per_record_chunks` and `cjs_reexport_barrel_shared_importee` pin per-record carrier identity and placement, including multiple records that reach the same CommonJS module.\n- `cjs_reexport_barrel_effectful_carrier` and `cjs_reexport_barrel_side_effect_boundary` pin source ordering and nested `moduleSideEffects` boundaries.\n- `cjs_reexport_barrel_monolithic_require_namespace`, `cjs_reexport_barrel_monolithic_esm_namespace`, and `cjs_reexport_barrel_nested_namespace` were red in the initial implementation and are green in the final revision for complete namespaces above consumer-local routes and nested waypoint reachability.\n- `cjs_reexport_barrel_cycle_fallback`, `cjs_reexport_barrel_require_cycle_fallback`, and `cjs_reexport_barrel_require_fallback` lock the conservative path. The require fallback now observes the unrelated CommonJS leaf before the eager entry body and confirms that the later lazy route does not initialize it twice.\n\nOn the recorded vue-vben-admin reproduction, initial-load gzip changes from 615,917 B before the fix to 81,271 B in wrap-all and 80,692 B in on-demand; strict mode off is 61,780 B.\n\nChecks run on the final rebased commit:\n\n- strict-execution-order fixtures: 95/95 passed\n- strict-execution-order invariant fixtures: 5/5 passed\n- strict-execution-order Rust invariant tests: 12/12 passed\n- `cargo test -p rolldown --lib`: 104/104 passed\n- `cargo clippy -p rolldown --all-targets -- --deny warnings`\n- `cargo fmt --all -- --check`\n- `just lint-repo`\n\nThe order fuzzer also found no new divergence for seeds 1000-1099 across wrap-all/on-demand and mixed/pure-ESM inputs; all four cells retained the known 97/3 baseline. Full Node, WASI, and Vite suites were not run locally and remain covered by CI.\n\nPart of #10294.",
+          "timestamp": "2026-07-29T06:02:50Z",
+          "tree_id": "79527e80d5ca7dcbab855db5ad2d17f4224b6e8b",
+          "url": "https://github.com/rolldown/rolldown/commit/9fef0099f2f600bf532ce00d3ffb3926f5641330"
+        },
+        "date": 1785306303855,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 741.9,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 932.09,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 948.05,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 1104.03,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 159.34,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 178.01,
             "unit": "ms / ops"
           }
         ]
