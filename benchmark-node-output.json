@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1785290853391,
+  "lastUpdate": 1785303732181,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -265535,6 +265535,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 136.99,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49056869+sapphi-red@users.noreply.github.com",
+            "name": "sapphi-red",
+            "username": "sapphi-red"
+          },
+          "committer": {
+            "email": "49056869+sapphi-red@users.noreply.github.com",
+            "name": "sapphi-red",
+            "username": "sapphi-red"
+          },
+          "distinct": false,
+          "id": "f5a53205e0e56af3db69a2b7bd06bc0205836a66",
+          "message": "docs: clarify slash normalization for id hook filter (#10511)\n\n<!--\n- What is this PR solving? Write a clear and concise description.\n- Reference the issues it solves (e.g. `fixes #123`).\n- What other alternatives have you explored?\n- Are there any parts you think require more attention from reviewers?\n\nAlso, please make sure you do the following:\n\n- Read the Contributing Guidelines at https://rolldown.rs/contribution-guide/.\n- Check that there isn't already a PR that solves the problem the same way. If you find a duplicate, please help us review it.\n- Update the corresponding documentation if needed.\n- Include relevant tests that fail without this PR but pass with it. If the tests are not included, explain why.\n\nThank you for contributing to Rolldown!\n-->",
+          "timestamp": "2026-07-29T05:30:29Z",
+          "tree_id": "42208bf7ba045eb48dbab93232950ac1be072a4f",
+          "url": "https://github.com/rolldown/rolldown/commit/f5a53205e0e56af3db69a2b7bd06bc0205836a66"
+        },
+        "date": 1785303732082,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 758.27,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 945.48,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 958.67,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 1116.35,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 167.34,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 204.39,
             "unit": "ms / ops"
           }
         ]
