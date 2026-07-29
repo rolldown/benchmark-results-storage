@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1785312461755,
+  "lastUpdate": 1785319179933,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -265751,6 +265751,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 171.16,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49056869+sapphi-red@users.noreply.github.com",
+            "name": "sapphi-red",
+            "username": "sapphi-red"
+          },
+          "committer": {
+            "email": "49056869+sapphi-red@users.noreply.github.com",
+            "name": "sapphi-red",
+            "username": "sapphi-red"
+          },
+          "distinct": false,
+          "id": "8ff3e2ed2858265c76f89044006af24cf415c715",
+          "message": "refactor(dev): make it easier to customize the runtime (#10338)\n\nExport the HMR runtime from `rolldown/experimental/runtime` so that Vite can import it and construct the runtime on their own.\nThis will allow Vite to remove the hacky code.",
+          "timestamp": "2026-07-29T09:43:29Z",
+          "tree_id": "85a95d6fe03f99f5ee4e3f6476d81fd6da5cdde9",
+          "url": "https://github.com/rolldown/rolldown/commit/8ff3e2ed2858265c76f89044006af24cf415c715"
+        },
+        "date": 1785319179825,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 799.09,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 1006.97,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 1011.33,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 1186.66,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 155.81,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 193.28,
             "unit": "ms / ops"
           }
         ]
