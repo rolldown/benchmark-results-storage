@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1785306303994,
+  "lastUpdate": 1785311134152,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -265643,6 +265643,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 178.01,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "hyfdev",
+            "username": "hyfdev"
+          },
+          "committer": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "hyfdev",
+            "username": "hyfdev"
+          },
+          "distinct": false,
+          "id": "fceac4c9c81607d1c2c0c601d759ac7f2fb2a2d6",
+          "message": "refactor(code-splitting): declare CJS carrier namespaces initializer-free (#10513)\n\nA CJS re-export carrier's namespace was the one closure-assigned hoisted binding in strict output declared with an initializer. It is now declared initializer-free, like every other binding that is assigned inside an init closure:\n\n```diff\n- var import_clone_deep = void 0;\n+ var import_clone_deep;\n```\n\nSemantics are unchanged — `var` declarations have no temporal dead zone, so both forms read `undefined` before the carrier runs — and the change exists only in strict-execution-order output.\n\n## Motivation\n\nThe two forms are equivalent today because the declaration provably executes before any carrier call (carriers are never minted for cyclic importees; those shapes fall back to a monolithic barrel, pinned by the `*_cycle_fallback` fixtures). The initializer-free form is the safer shape by construction: `= void 0` is a real assignment, so any future statement reordering that ran the declaration after the carrier initialized would silently wipe the namespace back to `undefined` behind the memoized guard — a bare declaration cannot. It also matches how every other closure-assigned hoisted binding in scope-hoisted output is declared; the initializer only existed because the statement factory required one.\n\n## Changes\n\nThe statement factory gains an initializer-free variant (`new_var_decl_no_init`) and the carrier declaration uses it. From the same review pass: the finalizer branch that handled a carrier's wrapper resolving through another chunk's CJS entry namespace — unreachable, because a carrier is emitted by its own importee's finalizer and is therefore always a same-chunk reference — is replaced by a `debug_assert!` stating that argument.\n\n## Validation\n\n- Snapshot-only: 28 changed lines across 9 strict fixtures, every one a `var x = void 0;` → `var x;` declaration.\n- strict-execution-order fixtures: 101/101; `cargo test -p rolldown --lib`: 104/104\n- `cargo clippy -p rolldown -p rolldown_ecmascript_utils --all-targets -- --deny warnings`; `cargo fmt --all -- --check`\n- Non-strict output is untouched: carriers exist only in strict builds.\n\nPart of #10294.",
+          "timestamp": "2026-07-29T07:33:22Z",
+          "tree_id": "db68506dc08e4dc8ca3d3471c5d9b7a44ec097d6",
+          "url": "https://github.com/rolldown/rolldown/commit/fceac4c9c81607d1c2c0c601d759ac7f2fb2a2d6"
+        },
+        "date": 1785311134052,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 791.43,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 990.07,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 1037.92,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 1221.99,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 167.62,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 191.04,
             "unit": "ms / ops"
           }
         ]
