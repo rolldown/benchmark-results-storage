@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1785261563252,
+  "lastUpdate": 1785290853391,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -265481,6 +265481,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 197.51,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "boshenc@gmail.com",
+            "name": "Boshen",
+            "username": "Boshen"
+          },
+          "committer": {
+            "email": "boshenc@gmail.com",
+            "name": "Boshen",
+            "username": "Boshen"
+          },
+          "distinct": false,
+          "id": "f1970f8af98b1ca6156d77cfba21349768a3b3eb",
+          "message": "perf: use VisitJsMut in JavaScript-only AST passes (#10507)\n\nUse Oxc's `VisitJsMut` for mutable JavaScript-only AST passes to avoid monomorphizing pure TypeScript traversal.\n\nThe macOS arm64 release binding shrinks from 16,391,760 to 16,342,112 bytes (−49,648 bytes, −0.303%).\n\nValidated with `just lint-rust` and `just test-rust`.",
+          "timestamp": "2026-07-29T01:56:12Z",
+          "tree_id": "cd0a19bb3b5bc2d49c62fdb636f0a467c326edf8",
+          "url": "https://github.com/rolldown/rolldown/commit/f1970f8af98b1ca6156d77cfba21349768a3b3eb"
+        },
+        "date": 1785290853311,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 605.09,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 863.65,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 785.53,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 941.62,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 115.22,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 136.99,
             "unit": "ms / ops"
           }
         ]
