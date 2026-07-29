@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1785321688736,
+  "lastUpdate": 1785323380151,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -265859,6 +265859,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 173.8,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a120530b52da245fe2d9fe0481ac96601b882c08",
+          "message": "fix(external): keep `__toESM` when the importing module is tree-shaken (#10516)\n\nFixes #10069.\n\nDefault-importing a CJS external, re-exporting it, then reading it back\nproduced `Cannot read properties of undefined` in CJS output.\n\n## The bug\n\n`import d from 'external'; export { d }` links the shim's symbol to a\n`NamespaceAlias`, so tree-shaking follows that alias straight to the\nexternal namespace and never enqueues the shim's declaring statement.\nWith a side-effect-free external the shim is dropped entirely, and two\nthings break:\n\n- `RuntimeHelper::ToEsm` is registered against the now-dead import\nstatement and discarded with it.\n- `render_cjs_chunk_imports` derived `needs_interop` from\n`chunk.direct_imports_from_external_modules`, which is built only from\nmodules present in the chunk, so the external landed in the indirect\nbucket unwrapped.\n\nThe finalizer still rendered `<external_ns>.default`, so the output read\n`.default` off the raw CommonJS exports and got `undefined`.\n\nIntroduced by #6751 (\"skip `__toESM` when not needed to reduce output\nsize\"), first shipped broken in 1.0.0-beta.46 — verified by bisecting\npublished npm builds.\n\n## The fix\n\nThe question \"is this external read as an ES module?\" can only be\nanswered *after* linking resolves the reference, so the inclusion pass\nrecords it — the one pass that walks the reference at that point. The\nrecord is keyed by **observer**: the module holding the surviving\nreference, not the importer that wrote the `import`, since the importer\nis routinely the shim that gets dropped while an observer has included\ncode by construction and therefore lands in a chunk.\n\nRendering then resolves observers to chunks, which decides both\nquestions per chunk:\n\n- **Which chunks wrap** — only those an observer landed in. A chunk\nholding just a named import reads the CommonJS object directly; wrapping\nit would change namespace identity and descriptor shape, and fire extra\n`ownKeys` traps on a Proxy-based export.\n- **Which mode** — modes are aggregated per observer. Unioning\nbundle-wide would make separate `.mjs` and `.js` chunks both look\nmixed-mode and emit `__toESM(mod, 1)` *and* `__toESM(mod)` for one live\nbinding.\n\nAn observer that ends up without a live chunk cannot be attributed, so\nevery chunk emitting that external honours it. This fallback is\nload-bearing: narrowing it away under-approximates, which is what\nproduced the bug.\n\nDeconflicting and the cjs/iife/umd renderers share one mode derivation\n(`chunk_external_interop_modes`). Deriving it in two places is how they\ndrifted apart — deconflicting filtered out named-only specifiers and the\nrenderers did not, so a chunk could be planned single-mode then rendered\n`__toESM(mod, 1)` because an unrelated *named-only* importer happened to\nbe ESM.\n\n## Notes for review\n\n- `issues/4585` regains its `__toESM` call, restoring the output it had\nbefore #6751. That fixture sets `expectExecuted: false`, which is how it\nkept snapshotting the broken form for months. The new fixtures assert\nexecutably against real `node:https`.\n- Node-mode provenance is recovered by walking the symbol link chain\nback to the importing module, since linking collapses the re-export\nchain onto the external's namespace symbol.\n- **Known limitation, not fixed here:** one consumer reaching an\nexternal through both a `.mjs` and a `.js` shim collapses to a single\ncanonical symbol, so one reference reads a wrapper that does not match\nits shim's format. A real fix needs per-reference provenance in the\nfinalizer. Observable only for an external declaring `__esModule` *and*\nowning a `default`; `dual_provenance_through_shims_of_different_formats`\ncharacterizes it.\n\nDesign rationale is in\n`internal-docs/runtime-helpers/implementation.md`.",
+          "timestamp": "2026-07-29T19:03:36+08:00",
+          "tree_id": "897d8070e4464ad3598a83cf0f4fad5df29c78ee",
+          "url": "https://github.com/rolldown/rolldown/commit/a120530b52da245fe2d9fe0481ac96601b882c08"
+        },
+        "date": 1785323380053,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 735.04,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 923.57,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 937.39,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 1108.63,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 159.23,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 187.47,
             "unit": "ms / ops"
           }
         ]
