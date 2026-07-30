@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1785330881696,
+  "lastUpdate": 1785409887328,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -265967,6 +265967,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 189.13,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "165626830+shulaoda@users.noreply.github.com",
+            "name": "IWANABETHATGUY",
+            "username": "shulaoda"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "ff108d6a0ae0b03a4afcbfcf148ac0d97aef31f9",
+          "message": "refactor(plugin): give the build's own clocks their own type (#10520)\n\nFirst of four. Pure refactor — no behaviour change — to make the three\nPRs above it smaller.\n\n## What\n\n`HookTimingCollector` held two things that are not the same kind of\nthing:\n\n- what each plugin's hooks cost, accumulated per call, keyed by\n`PluginIdx`;\n- the build's total and link-stage wall clocks, set exactly once each.\n\nThe second pair also answers a different question. `plugins_are_slow`\ndecides whether the build is worth reporting on *at all*, and it is\nasked before any per-plugin number is looked at — it does not read the\nplugin map.\n\nSo they split. `BuildTimings` owns the two clocks and the gate, and sits\non `PluginDriver` beside the collector.\n\n## Also\n\n`is_plugin_bound(total, link)` exposes the same test over totals the\ncaller supplies. Nothing needs that yet; #10521 does, because a build\nthat produced several outputs has to sum its clocks before asking.\n\nThe gate now has unit tests — the fast-build floor, the ratio, and the\ncases where there is no ratio to take. It had none before.\n\n## Not in scope\n\nThe threshold itself (3s, 100×) is unchanged, as is every caller. If\nthis PR changes what any build reports, it is wrong.",
+          "timestamp": "2026-07-30T19:05:46+08:00",
+          "tree_id": "82be703bbb68e01a568b5e2e5a9b582c50b9752f",
+          "url": "https://github.com/rolldown/rolldown/commit/ff108d6a0ae0b03a4afcbfcf148ac0d97aef31f9"
+        },
+        "date": 1785409887232,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 731.69,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 923.06,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 923.68,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 1068.55,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 148.36,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 175.32,
             "unit": "ms / ops"
           }
         ]
