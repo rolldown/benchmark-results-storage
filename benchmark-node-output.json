@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1785409887328,
+  "lastUpdate": 1785430273085,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -266021,6 +266021,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 175.32,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49056869+sapphi-red@users.noreply.github.com",
+            "name": "sapphi-red",
+            "username": "sapphi-red"
+          },
+          "committer": {
+            "email": "49056869+sapphi-red@users.noreply.github.com",
+            "name": "sapphi-red",
+            "username": "sapphi-red"
+          },
+          "distinct": false,
+          "id": "b91d21ab265e5bab33407941ab421edd47b0cf84",
+          "message": "chore(deps): update @napi-rs/wasm-runtime to 1.2.1 (#10545)\n\nThis PR tries to fix the following error:\n\n```\nRun node scripts/misc/check-wasi-binding-deps.mjs\n@rolldown/browser's installed runtime deps do not satisfy @rolldown/binding-wasm32-wasi:\n\n  @napi-rs/wasm-runtime\n    binding declares: ^1.2.1\n    browser resolved: 1.2.0\n\nThe generated binding is the source of truth. Bump the corresponding entry in pnpm-workspace.yaml (if referenced via `catalog:`) or in packages/browser/package.json so the resolved version falls within the binding range.\n```\n\nhttps://github.com/rolldown/rolldown/actions/runs/30537233872/job/90859713825\n\nMaybe related to #10525",
+          "timestamp": "2026-07-30T16:33:45Z",
+          "tree_id": "8822ef2bb76e6b9de2131f010db78d5ce8075d0a",
+          "url": "https://github.com/rolldown/rolldown/commit/b91d21ab265e5bab33407941ab421edd47b0cf84"
+        },
+        "date": 1785430273002,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 631.59,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 871.37,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 798.14,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 987.29,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 126.16,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 140.89,
             "unit": "ms / ops"
           }
         ]
