@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1785505532103,
+  "lastUpdate": 1785513680458,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -266507,6 +266507,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 177.72,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49957209+sekyungk@users.noreply.github.com",
+            "name": "Sekyung Kim",
+            "username": "sekyungk"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "11e008bd27a4774b7b47bde5dc767844e44d44da",
+          "message": "fix(transform): transformer gate skips newer syntax that oxc can lower (#10564)\n\n## Summary\n\n- Run the Oxc transformer for JavaScript files when the target lacks\nExplicit Resource Management (`using` declarations).\n- Simplify `should_transform_js()`. Its `Normal`/`Raw` arms always\nreturned the same result. Now it checks `self.target` directly.\n- Add an es2024 regression fixture.\n\n## Problem\n\n`should_transform_js()` only checked whether the target needed Unicode\nSets RegExp transformed. Targets such as Chrome 133 support Unicode Sets\nRegExp but not Explicit Resource Management, so the transformer never\nran and `using` declarations were emitted unchanged. To fix this, it now\nalso checks whether the target needs Explicit Resource Management\nlowered.\n\nAlong the way, `should_transform_js()` itself is cleaned up. The env\nflags that the `Normal` variant used to read are computed from the same\n`target` by oxc's `EnvOptions::from(EngineTargets)` via `has_feature()`,\nso they always agree with the `Raw` variant's\n`self.target.has_feature()` checks by construction (tsconfig merging\nnever touches `target`). The per-variant branching is replaced with a\nsingle expression over `self.target`.\n\nThe new es2024 fixture verifies that `using` is lowered through the\ndefault build path.\n\n## AI usage\n\nDrafted with Codex and double-checked with Claude. I reviewed and\nverified all changes myself.\n\n---------\n\nCo-authored-by: IWANABETHATGUY <iwanabethatguy@qq.com>",
+          "timestamp": "2026-07-31T15:49:21Z",
+          "tree_id": "48a989c8076ab493a177ac56870b5e9506070865",
+          "url": "https://github.com/rolldown/rolldown/commit/11e008bd27a4774b7b47bde5dc767844e44d44da"
+        },
+        "date": 1785513680358,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 795.01,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 980.68,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 979.21,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 1115.93,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 154.35,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 192.01,
             "unit": "ms / ops"
           }
         ]
