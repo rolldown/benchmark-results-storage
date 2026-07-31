@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1785430273085,
+  "lastUpdate": 1785464538316,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -266075,6 +266075,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 140.89,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49056869+sapphi-red@users.noreply.github.com",
+            "name": "sapphi-red",
+            "username": "sapphi-red"
+          },
+          "committer": {
+            "email": "49056869+sapphi-red@users.noreply.github.com",
+            "name": "sapphi-red",
+            "username": "sapphi-red"
+          },
+          "distinct": false,
+          "id": "dd4dece05001c29b09cf2cebd61a3a5b56676f58",
+          "message": "fix(browser): avoid using node builtin modules (#10542)\n\nAvoid using node builtin modules in browser builds.\n\nfixes https://github.com/rolldown/rolldown/issues/10535\n\nrefs #10338",
+          "timestamp": "2026-07-31T02:10:00Z",
+          "tree_id": "0046e78a132ef594d25fddaf9d2138ce0235ed49",
+          "url": "https://github.com/rolldown/rolldown/commit/dd4dece05001c29b09cf2cebd61a3a5b56676f58"
+        },
+        "date": 1785464538218,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 724.75,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 901.91,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 916.69,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 1078.7,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 148.92,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 188.19,
             "unit": "ms / ops"
           }
         ]
