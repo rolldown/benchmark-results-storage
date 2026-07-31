@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1785471092772,
+  "lastUpdate": 1785472281883,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -266291,6 +266291,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 194.21,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "78d6f144d8e58e9fca1947284a66b25008aaff2d",
+          "message": "perf(plugin): clock the build only when it is being measured (#10558)\n\nSits on #10509.\n\n## What\n\n`BuildTimings` took an `Instant` on every build, whether or not anyone\nwould read it.\n\nBefore #10520 the two clocks lived on the hook timing collector, which\nonly existed when timing was on — so the `Option<Instant>` it handed\nback *was* the gate. Giving the clocks their own type dropped that, and\n`bundle.rs` went to a bare `std::time::Instant::now()` in three places.\n\nThe gate goes back, this time owned by the type that needs it:\n\n- `BuildTimings::new(measured)` — decided once, where the driver is\nbuilt.\n- `start()` returns `Option<Instant>`: `None` when the build is not\nbeing measured.\n- `record_total` / `record_link_stage` take what `start()` gave and do\nnothing with `None`.\n\nThe call sites read as they did before the split.\n\n## What decides it\n\n`options.plugin_timings`. The JavaScript side registers that callback\nonly when `measureTimings && checks.pluginTimings !== false`, so its\npresence is already how this side knows a report is coming. The two\nhalves cannot disagree about whether a build is measured, because a\nreport needs both of them.\n\n## Tests\n\nTwo added: a build that is not measured hands back no instant and stores\nnothing; a measured one does start a clock. The existing gate tests are\nunchanged.\n\n## Not in scope\n\nThe threshold and the ratio, and what any measured build reports. If\nthis PR changes what a build with `checks.pluginTimings` on reports, it\nis wrong.",
+          "timestamp": "2026-07-31T12:25:31+08:00",
+          "tree_id": "66ad52928e330646cf4fca624fa279cccc446776",
+          "url": "https://github.com/rolldown/rolldown/commit/78d6f144d8e58e9fca1947284a66b25008aaff2d"
+        },
+        "date": 1785472281775,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 737.51,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 918.06,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 922.76,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 1083.8,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 150.63,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 175.3,
             "unit": "ms / ops"
           }
         ]
