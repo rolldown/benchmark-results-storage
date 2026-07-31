@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1785464538316,
+  "lastUpdate": 1785468759655,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -266129,6 +266129,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 188.19,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "3cd34f2a09e93c3d689770536e1d6f8ab8b578b4",
+          "message": "fix(plugin): report plugin timings after closeBundle has run (#10521)\n\nSecond of four. Stacked on #10520.\n\n## The bug\n\n`closeBundle` is instrumented like every other hook — `output_hooks.rs`\nbrackets the call and records it. But the warning is pushed into\n`output.warnings` from `Bundle::write` / `Bundle::generate`, and those\nreturn **before** `BundleHandle::close()` invokes the hook.\n\nSo its cost is measured and then thrown away. A plugin whose expense is\nconcentrated in `closeBundle` can never appear in `[PLUGIN_TIMINGS]`,\nhowever slow it is.\n\n## The fix\n\nEmit from `BindingBundler::close` instead, after the cleanup future\nresolves. It still goes through the existing `handle_warnings`, so\n`checks.pluginTimings` filters it like any other check and the message\nrenders through `Diagnostic::render_batch` as before.\n\n## What deferring forces\n\nOne `RolldownBuild` may `generate` more than once. Until now each output\nemitted its own self-consistent report; a single report at close has to\naccount for all of them. So `BindingBundler` keeps every `BundleHandle`\nrather than only the last, and:\n\n- **the gate** sums the build and link clocks across all outputs —\notherwise a slow first output followed by a fast one would fall under\nthe 3s floor and be suppressed entirely;\n- **the rows** merge the per-plugin summaries by name — each output has\nits own driver and so its own `PluginIdx`, so the same plugin arrives\nonce per output and would otherwise compete with itself for the five-row\ncap and halve its own share.\n\n## Verification\n\nA plugin whose only cost is a slow `closeBundle`, alongside another that\nmakes the build qualify:\n\n```\n[PLUGIN_TIMINGS] Your build spent significant time in plugin `slow-closebundle`.\n```\n\nBefore this PR it is absent from the report entirely. Plus unit tests\nfor the cross-output merge.",
+          "timestamp": "2026-07-31T11:25:16+08:00",
+          "tree_id": "d1b6f47ae7294ac87e2040fbc5ea229d2dd5468e",
+          "url": "https://github.com/rolldown/rolldown/commit/3cd34f2a09e93c3d689770536e1d6f8ab8b578b4"
+        },
+        "date": 1785468759561,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 730.05,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 919.36,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 921.67,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 1082.94,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 146.47,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 179.04,
             "unit": "ms / ops"
           }
         ]
