@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1785504445228,
+  "lastUpdate": 1785505532103,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -266453,6 +266453,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 156.39,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "347cb3b0c4f4f92685d99d35c4e8b485887a36d2",
+          "message": "perf(external): drop the runtime import from chunks that never wrap (#10517)\n\nStacked on #10516 — review that one first.\n\nA chunk that does not wrap an external still emitted a useless import of\nthe runtime chunk:\n\n```js\nObject.defineProperty(exports, Symbol.toStringTag, { value: \"Module\" });\nrequire(\"./rolldown-runtime.js\");        // nothing is used from it\nlet node_https = require(\"node:https\");\nexports.foo = node_https.request;\n```\n\n## Why it happened\n\nNot an empty cross-chunk import. The chunk really did import `__toESM`,\nso it rendered `const require_rolldown_runtime = require(...)`; DCE then\ndropped the unused binding and kept the side-effectful call. The import\nexisted because `patch_module_dependencies` set `reads_external_as_esm`\nfrom the bundle-wide record, so a module reading only a *name* off the\nexternal still demanded the helper and put it in its chunk's depended\nsymbols.\n\n## The fix\n\nDerive that edge from the same observer set the renderers use, so a\nmodule demands `__toESM` only when it is an observer. Both decisions now\ncome from one source, which is what makes narrowing safe: the chunk that\nwraps is exactly the chunk that depends on the runtime.\n\nUnder-supplying is the dangerous direction — a chunk that wraps without\nthe edge references a helper it never imported and finalization panics —\nso an observer that is not included keeps the previous bundle-wide\nbehaviour, matching rendering's own unattributable fallback. Chunks do\nnot exist yet at that point, so `is_included` stands in for \"will have a\nchunk\".\n\nThis only became safe once #10516 made rendering observer-attributed.\nNarrowing this edge before that reintroduces the panic, which is why it\nis a separate commit rather than part of the fix below it.\n\n## Result\n\n`external_interop_only_reachable_via_entry_export` shows the payoff —\nwith only `entry-a` demanding the helper, the runtime stops being shared\nand folds into `entry-a`, so the separate runtime chunk disappears\nentirely:\n\n```js\n// entry-a.js\nlet node_https = require(\"node:https\");\nnode_https = __toESM(node_https);\n\n// entry-b.js\nlet node_https = require(\"node:https\");\nexports.foo = node_https.request;\n```\n\n`named-user` in `reexport_default_import_of_external_multi_chunk` loses\nits bare `require` the same way; that fixture's `_test.mjs` still\nasserts the values executably.\n\nThose two snapshots are the only output changes. The fixture comment and\ninternal doc previously stated this edge had to stay bundle-wide with\nthe bare `require` as an accepted cost — true when written, so both are\nupdated.\n\n---------\n\nCo-authored-by: autofix-ci[bot] <114827586+autofix-ci[bot]@users.noreply.github.com>",
+          "timestamp": "2026-07-31T21:39:45+08:00",
+          "tree_id": "4138f9b41b4a750c0808fcd6f81606b16023bed2",
+          "url": "https://github.com/rolldown/rolldown/commit/347cb3b0c4f4f92685d99d35c4e8b485887a36d2"
+        },
+        "date": 1785505531989,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 755.81,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 965.47,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 965.04,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 1130.84,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 156.87,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 177.72,
             "unit": "ms / ops"
           }
         ]
