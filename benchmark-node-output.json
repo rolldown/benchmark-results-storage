@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1785492997924,
+  "lastUpdate": 1785504445228,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -266399,6 +266399,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 135.68,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "hello@nicr.dev",
+            "name": "Nicolò Ribaudo",
+            "username": "nicolo-ribaudo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e273daa6af7d01e6b55ac0d91bb99cc6a62aca80",
+          "message": "feat(code-splitting): support inlining of shared deps in dynamic entries (#10526)\n\nThis PR fixes #10263 by aligning Rolldown's behavior with Rollup's:\nmodules can be inlined into dynamic entry chunks, but when doing so we\nmust generate a fake namespace object that we use at the dynamic import\nsite, to avoid exposing the extra exports.\n\n\nThis is my first time contributing to Rolldown. I split this PR into\nthree commits hoping that it makes things easier to review:\n- the first one adds a test showing the current behavior (wrong)\n- the second one moves some existing code into a shared helper because I\nneed to re-use it for the third commit (it's the code to generate the\nfake namespace objects). I used an LLM to help extracting this code.\n- the third commit implements the actual fix.\n\nI also used an LLM to figure out where to even make this change, and to\ngenerate the extra tests included in the last commit.",
+          "timestamp": "2026-07-31T13:20:14Z",
+          "tree_id": "d9294f00b2a57b0683ca3bca5b653a7c5a2986e0",
+          "url": "https://github.com/rolldown/rolldown/commit/e273daa6af7d01e6b55ac0d91bb99cc6a62aca80"
+        },
+        "date": 1785504445119,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 662.16,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 948.72,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 841.45,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 1044.35,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 133.04,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 156.39,
             "unit": "ms / ops"
           }
         ]
