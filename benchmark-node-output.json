@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1785470142855,
+  "lastUpdate": 1785471092772,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -266237,6 +266237,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 200.89,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "84d18c323217754b9f81519b4481278fd7918d54",
+          "message": "feat(plugin): time the user callbacks configured on the options (#10509)\n\nStacked on #10508, which moves the measurement into the JavaScript\ncallback. This adds the callbacks that are not plugin hooks.\n\n## Problem\n\nPlugin hooks are not the only JavaScript the bundler calls. Every\noption-level callback crosses the same boundary, and any of them can\ndominate a build while belonging to no plugin's rows — a heavy\n`codeSplitting.name` in a real project was what prompted this.\n\nSixteen of them reach napi unwrapped, so none could appear in\n`[PLUGIN_TIMINGS]` at all. (`groups[].name` is the seventeenth and lands\nin #10508, because `main` already times it there and that PR removes the\nRust-side timing it relies on.)\n\n## What is now measured\n\nAudited from the Rust side — every field on `BindingInputOptions` /\n`BindingOutputOptions` typed as a JS callback — rather than by reading\nthe TypeScript, so the list is complete rather than the ones I happened\nto think of:\n\n| | |\n|---|---|\n| **output** | `codeSplitting` `groups[].test`, `entryFileNames`,\n`chunkFileNames`, `assetFileNames`, `sourcemapFileNames`,\n`sanitizeFileName`, `banner`/`footer`/`intro`/`outro` and their `post`\nvariants, `globals`, `paths`, `sourcemapPathTransform`,\n`sourcemapIgnoreList` |\n| **input** | `external`, `treeshake.moduleSideEffects` |\n\n`external` runs once per import specifier and\n`treeshake.moduleSideEffects` once per module — the same fan-out as the\nclassifier, so both are just as capable of dominating a build.\n\nThey report under `output options` / `input options`, and rows carry a\n`kind` discriminator supplied by the wrapping call site — not derived\nfrom the owner's name, since a plugin may legally be called `output\noptions`.\n\n## Two things worth review attention\n\n**`assetFileNames` and `sanitizeFileName` have two call paths.** Besides\nthe binding, `PluginContextImpl` calls the user's option *directly* for\n`this.emitFile`. Wrapping at each consumer would count one call in two\nplaces, so those two are measured once in `createBundlerOptions` and\npassed on already wrapped.\n\n**Rows can now sum past 100%.** `this.emitFile` inside `buildStart`\ninvokes `assetFileNames`, so the nested time belongs to both rows. The\nheadline figure is the union of every span, so it cannot exceed the\nbuild. Documented in the check's docs.\n\n## Verification\n\nEach callback made individually expensive enough to clear the one-second\nrow floor, so the wiring is checked by execution rather than by\ninspection:\n\n```\n  - virtual-fs buildStart                        - output options intro\n  - output options paths                         - output options chunkFileNames\n  - output options sanitizeFileName              - output options entryFileNames\n  - input options treeshake.moduleSideEffects    - output options outro\n  - input options external                       - output options footer\n  - output options codeSplitting groups[].name   - output options banner\n  - output options codeSplitting groups[].test   - output options assetFileNames\n  - output options globals                       - output options sourcemapFileNames\n```\n\nThe motivating case in isolation: 61 calls, 3.1s, `output options\ncodeSplitting groups[].name` at 60% of a 5.1s build.\n\n**Two exceptions, stated rather than implied:** `sourcemapPathTransform`\nand `sourcemapIgnoreList` are wrapped but I could not get the core to\ninvoke them under `generate` with `sourcemap: true` — zero calls. They\nare used in `process_code_and_sourcemap.rs`, so they are presumably\nreached on another path; wrapped either way, but unverified by\nexecution.",
+          "timestamp": "2026-07-31T12:05:15+08:00",
+          "tree_id": "54805df89bc2f616231259f000de587297730712",
+          "url": "https://github.com/rolldown/rolldown/commit/84d18c323217754b9f81519b4481278fd7918d54"
+        },
+        "date": 1785471092675,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 751.14,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 923.85,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 939.89,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 1111.49,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 155.78,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 194.21,
             "unit": "ms / ops"
           }
         ]
