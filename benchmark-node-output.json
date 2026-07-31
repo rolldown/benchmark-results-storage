@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1785472281883,
+  "lastUpdate": 1785492997924,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -266345,6 +266345,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 175.3,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "hyfdev",
+            "username": "hyfdev"
+          },
+          "committer": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "hyfdev",
+            "username": "hyfdev"
+          },
+          "distinct": false,
+          "id": "7221254f4ebb6ef4298a4ce576e5499f6831e85d",
+          "message": "fix(code-splitting): materialize consumer-local barrel routing when the order-wrap plan is empty (#10544)\n\nWith `strictExecutionOrder`, a CJS multi-entry build whose entries `require()` ESM forwarders into one shared re-export-only barrel over CJS leaves emits chunks that `require()` each other in a cycle and crash at startup:\n\n```\nTypeError: require_barrel.init_barrel is not a function\n```\n\nFixes #10515. Regression from #10488, shipped in v1.2.1.\n\n## Problem\n\nConsumer-local re-export routing is computed in three places: the pre-chunk placement probe, the on-demand projector probes, and real lowering. The probes run `consumer_local_reexport_plan` unconditionally, and its eligibility never reads the order-wrap plan — but real lowering sits behind the `plan.is_empty()` short-circuit in `apply_order_wraps`.\n\nWhen every reachable ESM module is already interop-wrapped (the CJS entries `require()` the forwarders), the order-wrap plan is empty. Chunk placement has already routed each barrel leaf to only its consuming entry's chunk, while emission keeps the barrel's monolithic interop body referencing the per-entry `require_*` wrappers — so the emitted chunks require each other in a startup cycle.\n\nThe on-demand carrier force-add cannot rescue this: an interop-wrapped barrel never passes `is_order_wrap_eligible`, so the final plan can stay empty even when the wrap-all plan is not. That also rules out fixing this on the probe side — the probe runs before chunking, while the on-demand plan is only computed from the chunk graph afterwards.\n\n## Fix\n\nCompute the consumer-local plan before the short-circuit and take the fast path only when both the order-wrap plan and the consumer-local plan are empty. Real lowering then materializes exactly the routes placement consumed, in both strict modes, and `lower_order_state` receives the precomputed plan instead of recomputing it.\n\nOne exception keeps an existing contract: with code splitting disabled and at most one entry, placement has a single reachability bit, so the probe's routes moved nothing, and an inert on-demand plan keeps its promise of flag-off-equivalent output (pinned by `cjs_reexport_barrel_code_splitting_disabled` from #10514). The disabled option alone is not a sufficient key — only dynamic entries are dropped in disabled mode, so a plugin-emitted chunk still adds a second entry whose per-entry placement consumes the probe's routes — hence the exception is keyed on entry count as well.\n\n## Test\n\n- `cjs_reexport_barrel_probe_plan_divergence`: the seven-file reproduction from #10515, wrap-all + on-demand variants. Crashes on current `main`, passes with the fix; the barrel becomes an empty routing waypoint and each entry initializes only its own leaf through a per-record memoized carrier.\n- `cjs_reexport_barrel_on_demand_inert_plan`: adds a plain-ESM third entry so the wrap-all plan is non-empty while the on-demand plan stays empty — the shape a probe-side gate could not fix. On current `main` the wrap-all variant passes and the on-demand variant crashes; both pass with the fix.\n- No existing snapshot changes — every previously covered configuration emits byte-identical output.",
+          "timestamp": "2026-07-31T10:04:03Z",
+          "tree_id": "27f05157a7a022412906b5c68f77a8b61f15e11c",
+          "url": "https://github.com/rolldown/rolldown/commit/7221254f4ebb6ef4298a4ce576e5499f6831e85d"
+        },
+        "date": 1785492997837,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 627.64,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 862.1,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 790.88,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 1017.24,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 118.64,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 135.68,
             "unit": "ms / ops"
           }
         ]
