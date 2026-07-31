@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1785468759655,
+  "lastUpdate": 1785470142855,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -266183,6 +266183,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 179.04,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "hyfdev",
+            "username": "hyfdev"
+          },
+          "committer": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "hyfdev",
+            "username": "hyfdev"
+          },
+          "distinct": false,
+          "id": "ed4e7cca35c75ceeeccf7f80fd20cdb22bd71b44",
+          "message": "fix(plugin): include external dynamic imports in chunk metadata (#10557)\n\nExternal `import()` targets are missing from the `dynamicImports` metadata delivered to plugins.\nThis PR reports retained external targets in both `renderChunk` and `generateBundle`.\n\n```js\n// input\nvoid import('node:path');\n\n// before\nchunk.dynamicImports; // []\n\n// after\nchunk.dynamicImports; // ['node:path']\n```\n\n## Problem\n\nThe omission occurs when a dynamic import resolves to an external module and survives tree-shaking. Internal dynamic chunks continue to be reported, and generated import code is unaffected.\n\nThe chunk-linking stage, which derives chunk dependencies for plugin metadata, only carried cross-chunk targets. Those targets exist for internal chunks, leaving external dynamic-import targets unavailable when the rendered and final output metadata is built.\n\n## Fix\n\nRecord retained external dynamic-import targets per chunk and add them to the metadata used by both hooks.\n\nThe result remains a deterministic, de-duplicated dependency list. This intentionally does not make `dynamicImports` a per-call trace: source-call ordering and repeated calls are not part of the compatibility contract.\n\n## Validation\n\n- Added a plugin fixture that failed before the fix with `[]` and now observes `['node:path']` in both `renderChunk` and `generateBundle`.\n- `just build-rolldown`\n- `RUST_BACKTRACE=1 ROLLDOWN_TEST=1 vp exec --filter rolldown-tests -- vitest run fixtures-concurrent.test.ts --reporter verbose --hideSkippedTests --testNamePattern 'plugin/render-chunk/render-chunk-external|output/dynamic-imports-metadata'`\n- `cargo clippy -p rolldown -p rolldown_common --all-targets -- --deny warnings`\n- `vp check packages/rolldown/tests/fixtures/plugin/render-chunk/render-chunk-external-dynamic-import/_config.ts`\n\nFull `just test-rust` remains unverified in this worktree because its `test262` submodule is absent.\n\nFixes #10546",
+          "timestamp": "2026-07-31T03:41:57Z",
+          "tree_id": "a195127ccb2309069a409fc45f80ea2dc4ee3129",
+          "url": "https://github.com/rolldown/rolldown/commit/ed4e7cca35c75ceeeccf7f80fd20cdb22bd71b44"
+        },
+        "date": 1785470142737,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 700.97,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 993,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 892.71,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 1072.82,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 209.26,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 200.89,
             "unit": "ms / ops"
           }
         ]
