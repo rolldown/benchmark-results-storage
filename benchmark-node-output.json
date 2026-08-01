@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1785597097528,
+  "lastUpdate": 1785598347845,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -266669,6 +266669,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 154.4,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ae86ef67bf08681835b3ef5e284e1c006374f7e3",
+          "message": "chore(deps): update dependency vite-plus to v0.2.7 (#10568)\n\nThis PR contains the following updates:\n\n| Package | Change |\n[Age](https://docs.renovatebot.com/merge-confidence/) |\n[Adoption](https://docs.renovatebot.com/merge-confidence/) |\n[Passing](https://docs.renovatebot.com/merge-confidence/) |\n[Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [vite-plus](https://viteplus.dev/guide)\n([source](https://redirect.github.com/voidzero-dev/vite-plus/tree/HEAD/packages/cli))\n| [`0.2.6` →\n`0.2.7`](https://renovatebot.com/diffs/npm/vite-plus/0.2.6/0.2.7) |\n![age](https://developer.mend.io/api/mc/badges/age/npm/vite-plus/0.2.7?slim=true)\n|\n![adoption](https://developer.mend.io/api/mc/badges/adoption/npm/vite-plus/0.2.7?slim=true)\n|\n![passing](https://developer.mend.io/api/mc/badges/compatibility/npm/vite-plus/0.2.6/0.2.7?slim=true)\n|\n![confidence](https://developer.mend.io/api/mc/badges/confidence/npm/vite-plus/0.2.6/0.2.7?slim=true)\n|\n\n---\n\n### Release Notes\n\n<details>\n<summary>voidzero-dev/vite-plus (vite-plus)</summary>\n\n###\n[`v0.2.7`](https://redirect.github.com/voidzero-dev/vite-plus/releases/tag/v0.2.7):\nvite-plus v0.2.7: Clearer guidance for built-in commands and scripts\n\n[Compare\nSource](https://redirect.github.com/voidzero-dev/vite-plus/compare/v0.2.6...v0.2.7)\n\nThis release points users to `vpr <name>` when a Vite+ built-in command\nand package script share a name, adds concurrency control to `vp pack`,\nand smooths migrations and package-manager setup.\n\n##### Highlights\n\n- Point users to `vpr <name>` when a Vite+ built-in command and\n`package.json` script share a name\n([#&#8203;2259](https://redirect.github.com/voidzero-dev/vite-plus/pull/2259),\n[#&#8203;2262](https://redirect.github.com/voidzero-dev/vite-plus/pull/2262),\n[#&#8203;2265](https://redirect.github.com/voidzero-dev/vite-plus/pull/2265),\n[vite-task#570](https://redirect.github.com/voidzero-dev/vite-task/pull/570)),\nby [@&#8203;wan9chi](https://redirect.github.com/wan9chi)\n- Add `--concurrency` to `vp pack` to limit parallel Rolldown builds,\nand update tsdown `0.22.13` -> `0.22.14` and Vite DevTools `0.4.2` ->\n`0.4.5`\n([#&#8203;2233](https://redirect.github.com/voidzero-dev/vite-plus/pull/2233)),\nby\n[@&#8203;voidzero-guard](https://redirect.github.com/voidzero-guard)\\[bot]\n- Add read-only Svelte rune globals to migrated Oxlint overrides,\npreventing false `no-undef` errors\n([#&#8203;2192](https://redirect.github.com/voidzero-dev/vite-plus/pull/2192)),\nby [@&#8203;naokihaba](https://redirect.github.com/naokihaba)\n- Install package managers from npm tarballs with nonstandard top-level\ndirectories, fixing Yarn 1.22.19 installation\n([#&#8203;2264](https://redirect.github.com/voidzero-dev/vite-plus/pull/2264)),\nby [@&#8203;TheAlexLichter](https://redirect.github.com/TheAlexLichter)\n\n##### Fixes & Enhancements\n\n- Prevent the Oxc language server from crashing when contributors open\nthe Vite+ workspace in VS Code\n([#&#8203;2245](https://redirect.github.com/voidzero-dev/vite-plus/pull/2245)),\nby [@&#8203;jong-kyung](https://redirect.github.com/jong-kyung)\n\n##### Docs\n\n- Document the full procedure for removing Vite+ commit hooks\n([#&#8203;2218](https://redirect.github.com/voidzero-dev/vite-plus/pull/2218)),\nby [@&#8203;TheAlexLichter](https://redirect.github.com/TheAlexLichter)\n- Document per-process and per-machine ways to disable Vite+ commit\nhooks without uninstalling them\n([#&#8203;2230](https://redirect.github.com/voidzero-dev/vite-plus/pull/2230)),\nby [@&#8203;TheAlexLichter](https://redirect.github.com/TheAlexLichter)\n- Clarify when to use built-in `vp` commands versus package scripts\nthrough `vp run` or `vpr`, including migration and agent guidance\n([#&#8203;2255](https://redirect.github.com/voidzero-dev/vite-plus/pull/2255)),\nby [@&#8203;wan9chi](https://redirect.github.com/wan9chi)\n- Document GitLab CI/CD setup with the reusable `setup-vp` template\n([#&#8203;2258](https://redirect.github.com/voidzero-dev/vite-plus/pull/2258)),\nby [@&#8203;naokihaba](https://redirect.github.com/naokihaba)\n\n##### Chore\n\n- Run Semgrep security scans on pull requests and pushes to `main`\n([#&#8203;2223](https://redirect.github.com/voidzero-dev/vite-plus/pull/2223)),\nby [@&#8203;Boshen](https://redirect.github.com/Boshen)\n- Re-enable Vitest browser-mode CLI snapshot coverage on every supported\nplatform\n([#&#8203;2275](https://redirect.github.com/voidzero-dev/vite-plus/pull/2275)),\nby [@&#8203;wan9chi](https://redirect.github.com/wan9chi)\n- Stabilize Windows CLI snapshot tests for interrupted installs and\nbrowser port fallback\n([#&#8203;2282](https://redirect.github.com/voidzero-dev/vite-plus/pull/2282)),\nby [@&#8203;wan9chi](https://redirect.github.com/wan9chi)\n- Replace deprecated shared JavaScript and TypeScript VS Code settings\nwith their current `js/ts.*` names\n([#&#8203;2246](https://redirect.github.com/voidzero-dev/vite-plus/pull/2246)),\nby [@&#8203;jong-kyung](https://redirect.github.com/jong-kyung)\n\n##### Bundled Versions\n\n| Tool | Version | Source |\n| --------------- | ---------- |\n-------------------------------------------------------------------------------------------------\n|\n| vite | `8.1.5` |\n[`5e7fe12`](https://redirect.github.com/vitejs/vite/commit/5e7fe129a4dde4f41934083b25e490059985f4e6)\n|\n| rolldown | `1.2.0` |\n[`03e1e34`](https://redirect.github.com/rolldown/rolldown/commit/03e1e3422cd85495c9863ff3bc3b24212d9f4be2)\n|\n| tsdown | `0.22.14` | [npm](https://npmx.dev/package/tsdown/v/0.22.14)\n|\n| vitest | `4.1.10` | [npm](https://npmx.dev/package/vitest/v/4.1.10) |\n| oxlint | `1.75.0` | [npm](https://npmx.dev/package/oxlint/v/1.75.0) |\n| oxlint-tsgolint | `7.0.2001` |\n[npm](https://npmx.dev/package/oxlint-tsgolint/v/7.0.2001) |\n| oxfmt | `0.60.0` | [npm](https://npmx.dev/package/oxfmt/v/0.60.0) |\n\n##### Upgrade\n\n```bash\nvp upgrade\n```\n\n**Full Changelog**:\n<https://github.com/voidzero-dev/vite-plus/compare/v0.2.6...v0.2.7>\n\n##### Published Packages\n\n- `@voidzero-dev/vite-plus-core@0.2.7`\n- `vite-plus@0.2.7`\n\n##### Installation\n\n**macOS/Linux:**\n\n```bash\ncurl -fsSL https://vite.plus | bash\n```\n\n**Windows:**\n\n```powershell\nirm https://vite.plus/ps1 | iex\n```\n\nOr download and run `vp-setup.exe` from the assets below.\n\nView the full commit:\n[`c17e1c3`](https://redirect.github.com/voidzero-dev/vite-plus/commit/c17e1c3c7cf859a29dd32eb60e82dc8157449ac2)\n\n**Docker:**\n\n```bash\ndocker run --rm -it -v \"$PWD:/app\" -w /app ghcr.io/voidzero-dev/vite-plus:0.2.7 vp build\n```\n\nRun any `vp` command without installing it; see the [Docker\nguide](https://viteplus.dev/guide/docker) for more.\n\n</details>\n\n---\n\n### Configuration\n\n📅 **Schedule**: (in timezone Asia/Shanghai)\n\n- Branch creation\n  - At any time (no schedule defined)\n- Automerge\n  - At any time (no schedule defined)\n\n🚦 **Automerge**: Disabled by config. Please merge this manually once you\nare satisfied.\n\n♻ **Rebasing**: Whenever PR is behind base branch, or you tick the\nrebase/retry checkbox.\n\n🔕 **Ignore**: Close this PR and you won't be reminded about this update\nagain.\n\n---\n\n- [ ] <!-- rebase-check -->If you want to rebase/retry this PR, check\nthis box\n\n---\n\nThis PR was generated by [Mend Renovate](https://mend.io/renovate/).\nView the [repository job\nlog](https://developer.mend.io/github/rolldown/rolldown).\n\n<!--renovate-debug:eyJjcmVhdGVkSW5WZXIiOiI0NC4zLjIiLCJ1cGRhdGVkSW5WZXIiOiI0NC4zLjIiLCJ0YXJnZXRCcmFuY2giOiJtYWluIiwibGFiZWxzIjpbXX0=-->\n\n---------\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>\nCo-authored-by: Jerry Zhao <165626830+shulaoda@users.noreply.github.com>",
+          "timestamp": "2026-08-01T23:25:23+08:00",
+          "tree_id": "6502d63e572efb1c6c3f4ca1a2108fd7d105fc23",
+          "url": "https://github.com/rolldown/rolldown/commit/ae86ef67bf08681835b3ef5e284e1c006374f7e3"
+        },
+        "date": 1785598347748,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 735.25,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 931.15,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 930.38,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 1100.8,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 146.85,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 177.92,
             "unit": "ms / ops"
           }
         ]
