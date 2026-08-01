@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1785596487801,
+  "lastUpdate": 1785597097528,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -266615,6 +266615,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 139.35,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4600ca175919cc1873881d406f15e407183049de",
+          "message": "chore(deps): update dependency rolldown-plugin-dts to v0.27.14 (#10531)\n\nThis PR contains the following updates:\n\n| Package | Change |\n[Age](https://docs.renovatebot.com/merge-confidence/) |\n[Adoption](https://docs.renovatebot.com/merge-confidence/) |\n[Passing](https://docs.renovatebot.com/merge-confidence/) |\n[Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n|\n[rolldown-plugin-dts](https://redirect.github.com/sxzz/rolldown-plugin-dts)\n| [`0.27.6` →\n`0.27.14`](https://renovatebot.com/diffs/npm/rolldown-plugin-dts/0.27.6/0.27.14)\n|\n![age](https://developer.mend.io/api/mc/badges/age/npm/rolldown-plugin-dts/0.27.14?slim=true)\n|\n![adoption](https://developer.mend.io/api/mc/badges/adoption/npm/rolldown-plugin-dts/0.27.14?slim=true)\n|\n![passing](https://developer.mend.io/api/mc/badges/compatibility/npm/rolldown-plugin-dts/0.27.6/0.27.14?slim=true)\n|\n![confidence](https://developer.mend.io/api/mc/badges/confidence/npm/rolldown-plugin-dts/0.27.6/0.27.14?slim=true)\n|\n\n---\n\n### Release Notes\n\n<details>\n<summary>sxzz/rolldown-plugin-dts (rolldown-plugin-dts)</summary>\n\n###\n[`v0.27.14`](https://redirect.github.com/sxzz/rolldown-plugin-dts/releases/tag/v0.27.14)\n\n[Compare\nSource](https://redirect.github.com/sxzz/rolldown-plugin-dts/compare/v0.27.13...v0.27.14)\n\n#####    🚨 Breaking Changes\n\n- Rework `volarPlugins` into `customLanguages`  -  by\n[@&#8203;sxzz](https://redirect.github.com/sxzz)\n[<samp>(e9ffc)</samp>](https://redirect.github.com/sxzz/rolldown-plugin-dts/commit/e9ffcfb)\n\n#####     [View changes on\nGitHub](https://redirect.github.com/sxzz/rolldown-plugin-dts/compare/v0.27.13...v0.27.14)\n\n###\n[`v0.27.13`](https://redirect.github.com/sxzz/rolldown-plugin-dts/releases/tag/v0.27.13)\n\n[Compare\nSource](https://redirect.github.com/sxzz/rolldown-plugin-dts/compare/v0.27.12...v0.27.13)\n\n#####    🚀 Features\n\n- Optional volar `proxyCreateProgram`  -  by\n[@&#8203;sxzz](https://redirect.github.com/sxzz)\n[<samp>(08da9)</samp>](https://redirect.github.com/sxzz/rolldown-plugin-dts/commit/08da93a)\n\n#####     [View changes on\nGitHub](https://redirect.github.com/sxzz/rolldown-plugin-dts/compare/v0.27.12...v0.27.13)\n\n###\n[`v0.27.12`](https://redirect.github.com/sxzz/rolldown-plugin-dts/releases/tag/v0.27.12)\n\n[Compare\nSource](https://redirect.github.com/sxzz/rolldown-plugin-dts/compare/v0.27.11...v0.27.12)\n\n*No significant changes*\n\n#####     [View changes on\nGitHub](https://redirect.github.com/sxzz/rolldown-plugin-dts/compare/v0.27.11...v0.27.12)\n\n###\n[`v0.27.11`](https://redirect.github.com/sxzz/rolldown-plugin-dts/releases/tag/v0.27.11)\n\n[Compare\nSource](https://redirect.github.com/sxzz/rolldown-plugin-dts/compare/v0.27.10...v0.27.11)\n\n#####    🐞 Bug Fixes\n\n- Move `@astrojs/ts-plugin` to devDependencies  -  by\n[@&#8203;sxzz](https://redirect.github.com/sxzz)\n[<samp>(0a4f7)</samp>](https://redirect.github.com/sxzz/rolldown-plugin-dts/commit/0a4f71f)\n\n#####     [View changes on\nGitHub](https://redirect.github.com/sxzz/rolldown-plugin-dts/compare/v0.27.10...v0.27.11)\n\n###\n[`v0.27.10`](https://redirect.github.com/sxzz/rolldown-plugin-dts/releases/tag/v0.27.10)\n\n[Compare\nSource](https://redirect.github.com/sxzz/rolldown-plugin-dts/compare/v0.27.9...v0.27.10)\n\n#####    🚀 Features\n\n- Support volar plugin  -  by\n[@&#8203;sxzz](https://redirect.github.com/sxzz)\n[<samp>(15795)</samp>](https://redirect.github.com/sxzz/rolldown-plugin-dts/commit/15795be)\n- Support multiple volar plugins  -  by\n[@&#8203;sxzz](https://redirect.github.com/sxzz)\n[<samp>(7cb4e)</samp>](https://redirect.github.com/sxzz/rolldown-plugin-dts/commit/7cb4ee8)\n\n#####     [View changes on\nGitHub](https://redirect.github.com/sxzz/rolldown-plugin-dts/compare/v0.27.9...v0.27.10)\n\n###\n[`v0.27.9`](https://redirect.github.com/sxzz/rolldown-plugin-dts/releases/tag/v0.27.9)\n\n[Compare\nSource](https://redirect.github.com/sxzz/rolldown-plugin-dts/compare/v0.27.8...v0.27.9)\n\n#####    🐞 Bug Fixes\n\n- Validate options closes\n[#&#8203;276](https://redirect.github.com/sxzz/rolldown-plugin-dts/issues/276)\n -  by [@&#8203;sxzz](https://redirect.github.com/sxzz) in\n[#&#8203;276](https://redirect.github.com/sxzz/rolldown-plugin-dts/issues/276)\n[<samp>(18ef4)</samp>](https://redirect.github.com/sxzz/rolldown-plugin-dts/commit/18ef4e3)\n- Allow TypeScript \\~7.0 only  -  by\n[@&#8203;sxzz](https://redirect.github.com/sxzz)\n[<samp>(71e6c)</samp>](https://redirect.github.com/sxzz/rolldown-plugin-dts/commit/71e6c17)\n\n#####     [View changes on\nGitHub](https://redirect.github.com/sxzz/rolldown-plugin-dts/compare/v0.27.8...v0.27.9)\n\n###\n[`v0.27.8`](https://redirect.github.com/sxzz/rolldown-plugin-dts/releases/tag/v0.27.8)\n\n[Compare\nSource](https://redirect.github.com/sxzz/rolldown-plugin-dts/compare/v0.27.7...v0.27.8)\n\n#####    🚀 Features\n\n- Add `logger` option, outout tsgo version  -  by\n[@&#8203;sxzz](https://redirect.github.com/sxzz)\n[<samp>(7936f)</samp>](https://redirect.github.com/sxzz/rolldown-plugin-dts/commit/7936fb5)\n\n#####     [View changes on\nGitHub](https://redirect.github.com/sxzz/rolldown-plugin-dts/compare/v0.27.7...v0.27.8)\n\n###\n[`v0.27.7`](https://redirect.github.com/sxzz/rolldown-plugin-dts/releases/tag/v0.27.7)\n\n[Compare\nSource](https://redirect.github.com/sxzz/rolldown-plugin-dts/compare/v0.27.6...v0.27.7)\n\n*No significant changes*\n\n#####     [View changes on\nGitHub](https://redirect.github.com/sxzz/rolldown-plugin-dts/compare/v0.27.6...v0.27.7)\n\n</details>\n\n---\n\n### Configuration\n\n📅 **Schedule**: (in timezone Asia/Shanghai)\n\n- Branch creation\n  - At any time (no schedule defined)\n- Automerge\n  - At any time (no schedule defined)\n\n🚦 **Automerge**: Disabled by config. Please merge this manually once you\nare satisfied.\n\n♻ **Rebasing**: Whenever PR is behind base branch, or you tick the\nrebase/retry checkbox.\n\n🔕 **Ignore**: Close this PR and you won't be reminded about this update\nagain.\n\n---\n\n- [ ] <!-- rebase-check -->If you want to rebase/retry this PR, check\nthis box\n\n---\n\nThis PR was generated by [Mend Renovate](https://mend.io/renovate/).\nView the [repository job\nlog](https://developer.mend.io/github/rolldown/rolldown).\n\n<!--renovate-debug:eyJjcmVhdGVkSW5WZXIiOiI0My4yODAuMCIsInVwZGF0ZWRJblZlciI6IjQ0LjMuMiIsInRhcmdldEJyYW5jaCI6Im1haW4iLCJsYWJlbHMiOltdfQ==-->\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>\nCo-authored-by: Jerry Zhao <165626830+shulaoda@users.noreply.github.com>",
+          "timestamp": "2026-08-01T23:06:00+08:00",
+          "tree_id": "6467bfa8397a826d5c6b42ac5afe019372149bd1",
+          "url": "https://github.com/rolldown/rolldown/commit/4600ca175919cc1873881d406f15e407183049de"
+        },
+        "date": 1785597097439,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 666.8,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 927.62,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 857.5,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 1090.3,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 130.5,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 154.4,
             "unit": "ms / ops"
           }
         ]
