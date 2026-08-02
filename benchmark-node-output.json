@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1785682646720,
+  "lastUpdate": 1785695693061,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -266777,6 +266777,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 174.67,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d94ded19e0e6cdac544d6084e8367c00fd6dbe56",
+          "message": "chore(deps): update rust crates (#10581)\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n|\n[json-strip-comments](https://redirect.github.com/oxc-project/json-strip-comments)\n| workspace.dependencies | patch | `3.1.1` → `3.1.2` |\n| [jsonschema](https://redirect.github.com/Stranger6667/jsonschema) |\nworkspace.dependencies | patch | `0.49.1` → `0.49.3` |\n| [schemars](https://graham.cool/schemars/)\n([source](https://redirect.github.com/GREsau/schemars)) |\nworkspace.dependencies | patch | `1.2.1` → `1.2.2` |\n| [testing_macros](https://redirect.github.com/swc-project/swc) |\nworkspace.dependencies | patch | `1.0.1` → `1.0.2` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>oxc-project/json-strip-comments (json-strip-comments)</summary>\n\n###\n[`v3.1.2`](https://redirect.github.com/oxc-project/json-strip-comments/blob/HEAD/CHANGELOG.md#312---2026-07-27)\n\n[Compare\nSource](https://redirect.github.com/oxc-project/json-strip-comments/compare/json-strip-comments-v3.1.1...json-strip-comments-v3.1.2)\n\n##### Other\n\n- *(json-strip-comments)* exclude extraneous files from published\npackage\n([#&#8203;209](https://redirect.github.com/oxc-project/json-strip-comments/pull/209))\n- *(deps)* update rust crates\n([#&#8203;210](https://redirect.github.com/oxc-project/json-strip-comments/pull/210))\n- *(deps)* update semgrep/semgrep docker tag to v1.171.0\n([#&#8203;211](https://redirect.github.com/oxc-project/json-strip-comments/pull/211))\n- *(semgrep)* add scan workflow\n([#&#8203;208](https://redirect.github.com/oxc-project/json-strip-comments/pull/208))\n- *(deps)* update actions/setup-node action to v7\n([#&#8203;207](https://redirect.github.com/oxc-project/json-strip-comments/pull/207))\n- *(deps)* update actions/setup-node action to v6.5.0\n([#&#8203;206](https://redirect.github.com/oxc-project/json-strip-comments/pull/206))\n- *(deps)* update dependency rust to v1.97.1\n([#&#8203;205](https://redirect.github.com/oxc-project/json-strip-comments/pull/205))\n- update sponsor section\n- *(deps)* update rust crates\n([#&#8203;203](https://redirect.github.com/oxc-project/json-strip-comments/pull/203))\n- *(deps)* update codspeedhq/action action to v4.18.5\n([#&#8203;202](https://redirect.github.com/oxc-project/json-strip-comments/pull/202))\n- *(deps)* update dependency rust to v1.97.0\n([#&#8203;201](https://redirect.github.com/oxc-project/json-strip-comments/pull/201))\n- restore original Apache-2.0 license\n([#&#8203;200](https://redirect.github.com/oxc-project/json-strip-comments/pull/200))\n- *(deps)* update rust to v1.96.1\n([#&#8203;199](https://redirect.github.com/oxc-project/json-strip-comments/pull/199))\n- standardize rustfmt config\n- normalize README sponsor section\n- configure clippy exported api lint\n([#&#8203;196](https://redirect.github.com/oxc-project/json-strip-comments/pull/196))\n- add crates environment to release workflow\n- *(deps)* update github actions\n([#&#8203;193](https://redirect.github.com/oxc-project/json-strip-comments/pull/193))\n- use codspeed simulation mode\n([#&#8203;192](https://redirect.github.com/oxc-project/json-strip-comments/pull/192))\n- use codspeed mode input\n([#&#8203;191](https://redirect.github.com/oxc-project/json-strip-comments/pull/191))\n- enable codspeed simulation\n([#&#8203;190](https://redirect.github.com/oxc-project/json-strip-comments/pull/190))\n- *(deps)* update rust crates\n([#&#8203;189](https://redirect.github.com/oxc-project/json-strip-comments/pull/189))\n- *(deps)* update github actions\n([#&#8203;188](https://redirect.github.com/oxc-project/json-strip-comments/pull/188))\n- *(deps)* update rust crates\n([#&#8203;187](https://redirect.github.com/oxc-project/json-strip-comments/pull/187))\n- *(deps)* update github actions to v4.17.5\n([#&#8203;186](https://redirect.github.com/oxc-project/json-strip-comments/pull/186))\n- *(deps)* update github actions to v4.17.0\n([#&#8203;185](https://redirect.github.com/oxc-project/json-strip-comments/pull/185))\n- *(deps)* update rust crates\n([#&#8203;183](https://redirect.github.com/oxc-project/json-strip-comments/pull/183))\n- *(deps)* update github actions\n([#&#8203;182](https://redirect.github.com/oxc-project/json-strip-comments/pull/182))\n- *(deps)* update dependency rust to v1.96.0\n([#&#8203;181](https://redirect.github.com/oxc-project/json-strip-comments/pull/181))\n- *(deps)* update rust crates\n([#&#8203;180](https://redirect.github.com/oxc-project/json-strip-comments/pull/180))\n- *(deps)* update github actions\n([#&#8203;179](https://redirect.github.com/oxc-project/json-strip-comments/pull/179))\n- switch security workflow to ubuntu-latest\n([#&#8203;178](https://redirect.github.com/oxc-project/json-strip-comments/pull/178))\n- update packageManager to pnpm 11.0.4\n([#&#8203;177](https://redirect.github.com/oxc-project/json-strip-comments/pull/177))\n- *(deps)* update github actions\n([#&#8203;176](https://redirect.github.com/oxc-project/json-strip-comments/pull/176))\n- *(deps)* update pnpm/action-setup action to v6.0.4\n([#&#8203;175](https://redirect.github.com/oxc-project/json-strip-comments/pull/175))\n- *(deps)* update github actions\n([#&#8203;174](https://redirect.github.com/oxc-project/json-strip-comments/pull/174))\n- *(deps)* update github-actions\n([#&#8203;172](https://redirect.github.com/oxc-project/json-strip-comments/pull/172))\n\n</details>\n\n<details>\n<summary>Stranger6667/jsonschema (jsonschema)</summary>\n\n###\n[`v0.49.3`](https://redirect.github.com/Stranger6667/jsonschema/blob/HEAD/CHANGELOG.md#0493---2026-08-02)\n\n##### Added\n\n- Canonicalization of a recursive schema with no finite witness, which\nnow folds to `false`.\n- Canonicalization of `$dynamicRef` and `$recursiveRef`, which resolve\nthrough the dynamic scope and stay symbolic like any other reference. A\ndangling `$dynamicRef` errors rather than staying `Raw`.\n- Canonicalization of `minContains` under `uniqueItems`, where a demand\nasking for more matches than its own schema has distinct values now\nfolds to `false`.\n- Canonicalization of a Draft 4 `patternProperties` coverage closed by\n`additionalProperties: false`, spelled as the closed map it was parsed\nfrom.\n- Canonicalization of a `oneOf` whose branches repeat, where a repeated\nbranch can never contribute exactly one match.\n- Canonicalization of a `$ref` whose target is an empty schema, which\nnow folds to `false`.\n- Canonicalization of `unevaluatedItems` beside `allOf`, where every\nbranch must pass and so the indexes they evaluate are known without the\ninstance.\n- Canonicalization of `unevaluatedProperties` beside `allOf`, where\nevery branch must pass and so what they evaluate is known without the\ninstance.\n- Canonicalization of a Draft 4 `type` list holding `integer` beside\nother types with `enum`, which previously modeled only when spelled as\nan `allOf`.\n- Canonicalization of `patternProperties` patterns matching finitely\nmany keys, such as `^a$` and `^(a|b)$`.\n- Canonicalization of `unevaluatedProperties` and `unevaluatedItems`\nwhen no in-place applicator sits beside them.\n\n##### Fixed\n\n- `additionalItems` values that are not schemas silently ignored beside\nan array-form `items` (they should fail the build like\n`additionalProperties`).\n- `additionalItems` beside a boolean `items` rejecting every instance,\nsuch as `{\"additionalItems\": false, \"items\": false}`.\n- `additionalItems` beside a non-array `items` value failing schema\ncompilation with an error blaming `additionalItems` (the keyword should\nbe ignored).\n- Draft 4 rejecting a size bound at or past `2^64`, such as\n`{\"maxItems\": 18446744073709551616}`.\n- An integer past the `f64` range admitted by a fractional bound it\nexceeds, such as `1e400` under `{\"exclusiveMaximum\": 0.1}`.\n- A `$ref` at the root of an `$id`-bearing subresource dropped as a\nself-reference when its pointer matched the one that reached that\nsubresource.\n- Canonicalization reusing one definition's body for a same-named\ndefinition in another resource, when the name spells a canonical URI.\n- `unevaluatedItems` counting `prefixItems` as evaluating elements\nbefore Draft 2020-12, where it is not a keyword.\n\n##### Performance\n\n- Up to 70% faster `evaluate` by building each location in a single\nallocation instead of two, reusing the instance location a node already\nbuilt, and caching evaluation paths across instance nodes.\n\n###\n[`v0.49.2`](https://redirect.github.com/Stranger6667/jsonschema/blob/HEAD/CHANGELOG.md#0492---2026-07-28)\n\n##### Performance\n\n- Faster serialization of canonicalized schemas.\n- Faster macro code generation for subschemas with many keywords.\n- Up to 70x faster canonicalization of `multipleOf` beside numeric\nbounds far from zero.\n\n</details>\n\n<details>\n<summary>GREsau/schemars (schemars)</summary>\n\n###\n[`v1.2.2`](https://redirect.github.com/GREsau/schemars/blob/HEAD/CHANGELOG.md#122---2026-07-27)\n\n[Compare\nSource](https://redirect.github.com/GREsau/schemars/compare/v1.2.1...v1.2.2)\n\n- Update to syn 3 in schemars\\_derive\n\n</details>\n\n---\n\n### Configuration\n\n📅 **Schedule**: (in timezone Asia/Shanghai)\n\n- Branch creation\n  - \"before 10am on monday\"\n- Automerge\n  - At any time (no schedule defined)\n\n🚦 **Automerge**: Disabled by config. Please merge this manually once you\nare satisfied.\n\n♻ **Rebasing**: Whenever PR is behind base branch, or you tick the\nrebase/retry checkbox.\n\n👻 **Immortal**: This PR will be recreated if closed unmerged. Get\n[config\nhelp](https://redirect.github.com/renovatebot/renovate/discussions) if\nthat's undesired.\n\n---\n\n- [ ] <!-- rebase-check -->If you want to rebase/retry this PR, check\nthis box\n\n---\n\nThis PR was generated by [Mend Renovate](https://mend.io/renovate/).\nView the [repository job\nlog](https://developer.mend.io/github/rolldown/rolldown).\n\n<!--renovate-debug:eyJjcmVhdGVkSW5WZXIiOiI0NC4zLjIiLCJ1cGRhdGVkSW5WZXIiOiI0NC4zLjIiLCJ0YXJnZXRCcmFuY2giOiJtYWluIiwibGFiZWxzIjpbXX0=-->\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2026-08-03T02:27:48+08:00",
+          "tree_id": "2fb755874196abf6745d3289edf3a21244b50cf7",
+          "url": "https://github.com/rolldown/rolldown/commit/d94ded19e0e6cdac544d6084e8367c00fd6dbe56"
+        },
+        "date": 1785695692962,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 774.52,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 970.96,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 974.14,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 1140.77,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 152.22,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 192.52,
             "unit": "ms / ops"
           }
         ]
