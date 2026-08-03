@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1785740740337,
+  "lastUpdate": 1785744875861,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -267209,6 +267209,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 155.24,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "165626830+shulaoda@users.noreply.github.com",
+            "name": "Jerry Zhao",
+            "username": "shulaoda"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "db295c342774698624a76763052e93f5c967ab32",
+          "message": "fix(dev): force `cleanDir` off in dev mode (#10579)\n\nDev mode should force `cleanDir` option off\n\n---------\n\nSigned-off-by: Jerry Zhao <165626830+shulaoda@users.noreply.github.com>\nCo-authored-by: andrew <andywangsy@gmail.com>",
+          "timestamp": "2026-08-03T16:04:14+08:00",
+          "tree_id": "538b613c97418784cdad5e503b992deebbc2a5d0",
+          "url": "https://github.com/rolldown/rolldown/commit/db295c342774698624a76763052e93f5c967ab32"
+        },
+        "date": 1785744875753,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 765.95,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 972.41,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 1032.72,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 1169.78,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 163.63,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 190.13,
             "unit": "ms / ops"
           }
         ]
