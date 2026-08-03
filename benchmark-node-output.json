@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1785739820419,
+  "lastUpdate": 1785740740337,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -267155,6 +267155,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 169.54,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "2356281422@qq.com",
+            "name": "btea",
+            "username": "btea"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d5b2e1f11218da70bde118aa7b3912370fd2e358",
+          "message": "fix(dev): keep `?rolldown-lazy` proxy ids out of user `resolveId` hooks (#10580)\n\n## Summary\n\nFixes vitejs/vite#23124 — re-resolving a lazy proxy id\n(`?rolldown-lazy=1`) no longer leaks to user `resolveId` hooks, and\nknown proxy ids are claimed by the lazy compilation plugin itself.\n\n## Why\n\nA plugin virtual module reached through a dynamic import becomes a lazy\nentry whose proxy id carries the internal `?rolldown-lazy=1` query. When\nthat stub id is re-resolved (e.g. entry resolution for a lazy\ncompilation request), virtual-module plugins no longer recognize their\nown id with the query appended, and nothing else can resolve a virtual\nid → `UNRESOLVED_ENTRY` on first page load.\n\n#10426 covered `load` / `transform` / `transform_ast` / `module_parsed`\nbut not `resolve_id`; Vite's own workaround (#22778) likewise only wraps\n`transform`.\n\n## What changed\n\n- `LazyCompilationPlugin::resolve_id`: claim proxy ids present in\n`lazy_entries` for any import kind. Unknown proxy ids still fall through\nand stay unresolvable (cf. the #9969 gate).\n- `PluginDriver`: extend the `should_skip_plugin_for_lazy_proxy` skip to\n`resolve_id`, so user plugins never see the internal query; the lazy\nplugin itself still runs to claim the id. Matching is on the specifier\nonly — the fetched proxy's `import($MODULE_ID)` (importer = proxy id)\nstill resolves the real module through user plugins normally.\n- Regression test in\n`packages/rolldown/tests/dev/dev-lazy-compile.test.ts`: a virtual module\nbehind a lazy proxy — asserts user `resolveId` hooks never see the proxy\nid, the proxy id re-resolves to itself, and the real module still\ncompiles into the lazy chunk.\n- Update `internal-docs/lazy-compilation/implementation.md` with the new\n`resolve_id` contract.\n\n## Validation\n\n- `pnpm --filter rolldown run build-native:debug`\n- `pnpm --filter rolldown-tests exec vitest run\ndev/dev-lazy-compile.test.ts` (8/8)\n- Negative control: with the Rust changes stashed and a full rebuild,\nthe new test fails (`this.resolve(proxyId)` returns `null`)\n- E2E with the issue's repro (vite-bundleddev-virtual-lazy-repro, local\nvite + this rolldown via pnpm overrides):\n- Baseline (npm rolldown 1.2.1): server logs `[UNRESOLVED_ENTRY] Cannot\nresolve entry module \\0virtual:lazy-me?rolldown-lazy=1`, page shows `ERR\nFailed to fetch dynamically imported module`\n- This change: first lazy compile succeeds, page renders `hello from a\nvirtual module`, zero server/console errors\n\nNote: the repro's plugin must also recognize its own `\\0`-prefixed id in\n`resolveId` (the canonical virtual-module pattern, which real-world\nplugins like @embroider/vite follow). Without it, the fetched proxy's\nimport of the *real* module id can't resolve — a separate behavior\ndifference from classic Vite dev (rolldown re-resolves the real id),\nbetter handled as a follow-up.\n\n## AI disclosure\n\nThis PR was developed with AI assistance. All generated changes were\nreviewed, tested, and adjusted before submission.",
+          "timestamp": "2026-08-03T06:58:16Z",
+          "tree_id": "61e929c48a1c21b9fb4464a85722ba7ef1f81fde",
+          "url": "https://github.com/rolldown/rolldown/commit/d5b2e1f11218da70bde118aa7b3912370fd2e358"
+        },
+        "date": 1785740740257,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 616.01,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 885.35,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 821.33,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 1031.6,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 127.57,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 155.24,
             "unit": "ms / ops"
           }
         ]
