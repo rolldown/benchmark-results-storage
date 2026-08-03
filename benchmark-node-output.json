@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1785726045479,
+  "lastUpdate": 1785736590542,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -267047,6 +267047,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 179.42,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "hyfdev",
+            "username": "hyfdev"
+          },
+          "committer": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "hyfdev",
+            "username": "hyfdev"
+          },
+          "distinct": false,
+          "id": "7aa4bf00a05992e14dc32426030b66b1ff61a7b4",
+          "message": "fix: initialize re-exported wrapped ESM modules at the entry chunk (#10567)\n\nFixes https://github.com/rolldown/rolldown/issues/10543.\n\nThe issue is that after wrapping, rolldown should output the entry chunk with a `init_xxx` call to ensure the execution of the wrapped module.\n\n```js\n// @mui_material_styles.js — before\nimport { …, v as StyledEngineProvider } from \"./styles-BcPZjlv2.js\";\nexport { StyledEngineProvider, … };   // nothing ever runs the module body that assigns `v`\n\n// after\nimport { …, v as StyledEngineProvider, y as init_StyledEngineProvider } from \"./styles-6TFHfymC.js\";\ninit_StyledEngineProvider();          // evaluates the wrapped module first\nexport { StyledEngineProvider, … };\n```\n\n--edited\n\nWhile this PR does fix the issue, I feel that the complexity around \"wrappers\" are increases significantly, we need to find a way to abstract them.",
+          "timestamp": "2026-08-03T05:44:53Z",
+          "tree_id": "ecd310a937ecd638ac3fe17df3ddfd60ac4d9cd9",
+          "url": "https://github.com/rolldown/rolldown/commit/7aa4bf00a05992e14dc32426030b66b1ff61a7b4"
+        },
+        "date": 1785736590460,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 612.3,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 870.84,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 767,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 995.34,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 118.63,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 149.19,
             "unit": "ms / ops"
           }
         ]
