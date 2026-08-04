@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1785816095516,
+  "lastUpdate": 1785828792833,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -267371,6 +267371,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 173.63,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "165626830+shulaoda@users.noreply.github.com",
+            "name": "Jerry Zhao",
+            "username": "shulaoda"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "7b8249440cd2b44ae4869d1bd43edb20989e2127",
+          "message": "fix(dev): don't let a failed watch registration abort the batch (#10548)\n\nPart of rolldown/rolldown#10059\n\nThe dev engine registers a build's watch files with the fs watcher in\none batch. A single path the watcher refuses is enough to lose the whole\nbatch: everything after it is skipped, and everything before it was\nstaged but never committed, so none of it takes effect.\n\nThe paths are recorded as watched regardless. That record is what later\nbuilds check before registering anything, so the batch is never retried\nand the loss lasts as long as the server runs.\n\nNothing surfaces either, because the caller discards the error. The dev\nserver just stops reacting to part of the project. Which paths are lost\ndepends on iteration order, so it looks intermittent.\n\nA pre-existing bug, independent of the rest of the stack.",
+          "timestamp": "2026-08-04T15:26:20+08:00",
+          "tree_id": "6ac494033c1468f3a7bf24b2f0a78f58e10722c7",
+          "url": "https://github.com/rolldown/rolldown/commit/7b8249440cd2b44ae4869d1bd43edb20989e2127"
+        },
+        "date": 1785828792713,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 680.83,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 868.64,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 894.58,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 1074.64,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 146,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 177.5,
             "unit": "ms / ops"
           }
         ]
