@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1785828792833,
+  "lastUpdate": 1785849478894,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -267425,6 +267425,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 177.5,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "83ee59a3965937ff17e34f4bda708bc581937ea3",
+          "message": "perf(chunk-naming): build minified export names without allocating (#10618)\n\n`generate_minified_names` allocated a `Vec<u8>` per candidate name, but\n`CompactStr` inlines anything up to 24 bytes and these names are at most\n6. Built in a stack array instead.",
+          "timestamp": "2026-08-04T21:12:30+08:00",
+          "tree_id": "6a9711016d47a99512d90034d107225021915aa1",
+          "url": "https://github.com/rolldown/rolldown/commit/83ee59a3965937ff17e34f4bda708bc581937ea3"
+        },
+        "date": 1785849478797,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 700.23,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 899.22,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 925.87,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 1087.73,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 149.78,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 175.71,
             "unit": "ms / ops"
           }
         ]
