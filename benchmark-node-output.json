@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1785922218905,
+  "lastUpdate": 1785924787587,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -267587,6 +267587,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 171.11,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49056869+sapphi-red@users.noreply.github.com",
+            "name": "sapphi-red",
+            "username": "sapphi-red"
+          },
+          "committer": {
+            "email": "49056869+sapphi-red@users.noreply.github.com",
+            "name": "sapphi-red",
+            "username": "sapphi-red"
+          },
+          "distinct": false,
+          "id": "082ed412187cabfbdc83c9c30499b89815087de2",
+          "message": "refactor: remove deprecated `watch.notify` option (#10628)\n\nRemove the deprecated `watch.notify` option. The `watch` option was experimental, so it's not a breaking change.",
+          "timestamp": "2026-08-05T10:01:27Z",
+          "tree_id": "9013e3023145c67570eb8aa6da1d33e9e394ea82",
+          "url": "https://github.com/rolldown/rolldown/commit/082ed412187cabfbdc83c9c30499b89815087de2"
+        },
+        "date": 1785924787488,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 733.8,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 930.68,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 956.85,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 1139.89,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 148.7,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 175.05,
             "unit": "ms / ops"
           }
         ]
