@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1785926030744,
+  "lastUpdate": 1785926881588,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -267695,6 +267695,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 151.88,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "hyfdev",
+            "username": "hyfdev"
+          },
+          "committer": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "hyfdev",
+            "username": "hyfdev"
+          },
+          "distinct": false,
+          "id": "f08027595e78ea3f2c912d97b3cb4bcf304fe619",
+          "message": "test(webcontainer): smoke test the packed WASI artifacts inside a WebContainer (#10626)\n\nThis PR will use `pnpm pack` to pack the rolldown dist ouput into a `.tgz` file and upload it into webcontainer.\n\nThe pkg json in webcontainer will look like\n\n```json\n{\n\"rolldown\": \"file:./rolldown.tgz\"\n}\n```\n\nand then npm will download correspending napi-rs wasi runtime written in package.json inside of `.tgz` file and do a smoke test to ensure everything works.\n\nBecuase the webcontainer's engine is required to be downloaded from official cdn, so I don't think it's proper to make this as a default on ci workflow or part of local tests.\n\n---\n\nHow this PR does?\n\nIt opens a headless browser and use `@webcontainer/sdk` to interact with the webcontainer env and check behaviors.\n\n---\n\nI assigned the PR to Jerry but also @sapphi-red cc",
+          "timestamp": "2026-08-05T10:35:02Z",
+          "tree_id": "7dadf6aa961e3710b6b3a56fb2fc5c03bb497550",
+          "url": "https://github.com/rolldown/rolldown/commit/f08027595e78ea3f2c912d97b3cb4bcf304fe619"
+        },
+        "date": 1785926881488,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 750.65,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 925.54,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 969.51,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 1108.68,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 162.54,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 197.56,
             "unit": "ms / ops"
           }
         ]
