@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1785849478894,
+  "lastUpdate": 1785898582349,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -267479,6 +267479,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 175.71,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "jjb@users.noreply.github.com",
+            "name": "John Bachir",
+            "username": "jjb"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "79cd87fe83c6a46350394f80c520cce7d9b41fc6",
+          "message": "test(resolve-file-url): allow a reference id to start with a digit (#10623)\n\n## What is this PR solving?\n\nThe seven `plugin/resolve-file-url` fixtures assert that the reference\nid passed to the hook is usable as a standalone JS identifier, but\nnothing in rolldown actually requires that. This is already reachable on\n`main`. Counter-derived ids are `xxhash` of an incrementing integer, and\nthe fourth is `8HSUfh7cJHNFxCkInNzNXw`, so a build only has to emit four\nunnamed assets. The fixtures do not catch it because each emits a single\nasset and gets `xxhash(\"0\")`, which happens to start with a letter — so\ntoday they pass by luck of the alphabet rather than by design. Reference\nids are hashes, so roughly ten in sixty-four begin with a digit, and\nsuch an id is perfectly usable:\n\n- The id is only ever interpolated **after a prefix** —\n`import.meta.ROLLDOWN_FILE_URL_<referenceId>`. The property name\ntherefore starts with `R`, and digits are legal everywhere after the\nfirst character of an `IdentifierName`. The documented plugin pattern in\n`docs/apis/plugin-api/file-urls.md` interpolates it the same way.\n- `strip_file_url_prefix` splits the optional `_<urlId>` suffix off by\n`REFERENCE_ID_LEN` rather than scanning for a separator, precisely\nbecause an id may contain `_` and `$`. A digit changes nothing there.\n- The two plugins that put an id into generated code,\n`rolldown_plugin_asset_module` and `rolldown_plugin_copy_module`, embed\nit inside a string literal.\n- Rollup, whose `ROLLUP_FILE_URL_` form is supported as an alias,\ngenerates ids with `getHash64(referenceId).slice(0, 8).replaceAll('-',\n'$')` — the same `-` to `$` remap, and likewise no digit guard.\n\n## Where the assertion came from\n\nNothing suggests the stricter pattern was a deliberate guarantee. It\narrived in #10291. It seems like the regex was made to match existing\nfixtures, and maybe @sapphi-red assumed that portion needed to be a\nvalid JS identifier.\n\nTwo later PRs, #10296 and #10222, then copied the line into more\nfixtures as they added cases.\n\n## What changed\n\n- **The pattern is stated once.** `REFERENCE_ID_REGEX` is exported from\n`rolldown-tests/utils` and used by all seven fixtures, instead of the\nliteral being copied into each.\n- **The contract is covered on ids the emitter really produces.**\n`emitted_reference_ids_have_the_expected_format` emits a batch through\n`emit_file` and asserts both halves: every id contains only\nidentifier-legal characters, and at least one begins with a digit.\n- **One comment is corrected.** `assign_reference_id` said the id \"needs\nto be a valid identifier\", which justifies remapping `-` but reads as\nforbidding a leading digit.\n\n## This was discovered while working on #10605\n\n#10605 makes asset reference ids content-derived so builds are\nreproducible.",
+          "timestamp": "2026-08-05T11:50:43+09:00",
+          "tree_id": "d8f9dfba55dd20ea58ac2ec1f2f4a06bfe168339",
+          "url": "https://github.com/rolldown/rolldown/commit/79cd87fe83c6a46350394f80c520cce7d9b41fc6"
+        },
+        "date": 1785898582248,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 764.26,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 912.97,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 972.52,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 1152.13,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 161.01,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 198.2,
             "unit": "ms / ops"
           }
         ]
