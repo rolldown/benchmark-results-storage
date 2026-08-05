@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1785924787587,
+  "lastUpdate": 1785926030744,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -267641,6 +267641,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 175.05,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "278280044+rolldown-guard[bot]@users.noreply.github.com",
+            "name": "rolldown-guard[bot]",
+            "username": "rolldown-guard[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "52dbd194ea6b6d4320706caa5f2db14b1034adaf",
+          "message": "release: v1.2.3 (#10630)\n\n## [1.2.3] - 2026-08-05\n\n### 🐛 Bug Fixes\n\n- dev: don't let a failed watch registration abort the batch (#10548) by @shulaoda\n\n### 🚜 Refactor\n\n- remove deprecated `watch.notify` option (#10628) by @sapphi-red\n\n### 📚 Documentation\n\n- fix the dangling spec link on `generate_minified_names` (#10617) by @IWANABETHATGUY\n\n### ⚡ Performance\n\n- reduce finalization memory usage (#10554) by @ericclemmons\n- chunk-naming: build minified export names without allocating (#10618) by @IWANABETHATGUY\n\n### 🧪 Testing\n\n- resolve-file-url: allow a reference id to start with a digit (#10623) by @jjb\n- code-splitting: pin the already-loaded namespace-extraction boundaries (#10593) by @IWANABETHATGUY\n\n### ⚙️ Miscellaneous Tasks\n\n- deps: upgrade oxc to 0.143.0  (#10603) by @camc314\n- deps: update rollup submodule for tests to v4.62.4 (#10607) by @rolldown-guard[bot]\n- deps: update test262 submodule for tests (#10608) by @rolldown-guard[bot]\n\n### ❤️ New Contributors\n\n* @ericclemmons made their first contribution in [#10554](https://github.com/rolldown/rolldown/pull/10554)\n* @jjb made their first contribution in [#10623](https://github.com/rolldown/rolldown/pull/10623)\n\n---------\n\nCo-authored-by: shulaoda <165626830+shulaoda@users.noreply.github.com>",
+          "timestamp": "2026-08-05T18:28:32+08:00",
+          "tree_id": "f89e13fa714b981add1203cd67eeaea1160a8d28",
+          "url": "https://github.com/rolldown/rolldown/commit/52dbd194ea6b6d4320706caa5f2db14b1034adaf"
+        },
+        "date": 1785926030658,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 560.1,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 821.73,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 761.06,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 980.88,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 109.85,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 151.88,
             "unit": "ms / ops"
           }
         ]
