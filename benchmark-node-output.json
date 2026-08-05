@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1785898582349,
+  "lastUpdate": 1785922218905,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -267533,6 +267533,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 198.2,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "eric@smarterspam.com",
+            "name": "Eric Clemmons",
+            "username": "ericclemmons"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "96709374da80514c0afec9b3166efca582f52754",
+          "message": "fix: reduce finalization memory usage (#10554)\n\n**tl;dr – Bound chunk-finalization memory and return unused mimalloc\npages after builds.**\n\n`finalize_assets` currently materializes the transitive dependency\nclosure for every output chunk at the same time. On output graphs with\nmany shared chunks, this makes the retained dependency data grow\nquadratically. A Cloudflare Docs production build with 19,035 chunks\nexceeds an 8 GB cgroup while constructing these closures.\n\nThis calculates each chunk's transitive closure only while computing\nthat chunk's hash, preserving the existing deterministic traversal and\nhash semantics without retaining all closures simultaneously.\n\nWith the Workers Builds reproduction (`8,000,000,000` bytes, 8 CPUs),\nthe previously OOM-killed build completes all 8,734 pages and 1,635 cold\nimage optimizations in 5m53s. Peak cgroup usage is 7.78 GB and the\ncontainer exits 0 with `OOMKilled=false`.\n\n---\n\nReferences: https://github.com/rolldown/rolldown/issues/9330\n\n---------\n\nCo-authored-by: Jerry Zhao <165626830+shulaoda@users.noreply.github.com>",
+          "timestamp": "2026-08-05T17:23:50+08:00",
+          "tree_id": "5a91b3a807876e49df9f481cb14287ce80e16e08",
+          "url": "https://github.com/rolldown/rolldown/commit/96709374da80514c0afec9b3166efca582f52754"
+        },
+        "date": 1785922218815,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 667.4,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 840.6,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 855.14,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 1017.25,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 142.05,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 171.11,
             "unit": "ms / ops"
           }
         ]
