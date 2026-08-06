@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1785996926132,
+  "lastUpdate": 1785997033141,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -267820,43 +267820,43 @@
             "username": "hyfdev"
           },
           "distinct": false,
-          "id": "646ff017deb7b9cca924d5ea2fb77cc906ce007f",
-          "message": "test(node-wasi): run the full node test suite against the WASI binding (#10616)\n\nPart of https://github.com/rolldown/rolldown/issues/10609.\n\nThis unlocks the wasi test suite for all tests. Only a few got skipped due to arbitrary reasons. We could investigate them later, but let's have a test for wasi first!\n\nNotice this is for `node-wasi` target, which shares the same `.wasi` binary with `@rolldown/browser`, but they're not same package.\n\nThis is for path `rolldown` -> `@rolldown/binding-node-wasi`",
-          "timestamp": "2026-08-06T06:03:09Z",
-          "tree_id": "8cf2c5b4aef48e67dcdfc603b1d2d8cc98bceb88",
-          "url": "https://github.com/rolldown/rolldown/commit/646ff017deb7b9cca924d5ea2fb77cc906ce007f"
+          "id": "8376f01ad61204e8f7676a2a6f3176bfe7ea2866",
+          "message": "fix(devtools): resolve log paths against the build cwd (#10622)\n\nThis makes the `devtools` related logic using `InputOptions#cwd` as the real cwd instead of getting it from the current env, which makes it env-dependent.\n\nThis is also an alignment with other rolldown logic, which uses `InputOptions#cwd` for `cwd-required` scenario.",
+          "timestamp": "2026-08-06T06:03:10Z",
+          "tree_id": "32cd5990ba0e5b6142c8aafb7b9f04b53da68637",
+          "url": "https://github.com/rolldown/rolldown/commit/8376f01ad61204e8f7676a2a6f3176bfe7ea2866"
         },
-        "date": 1785996926034,
+        "date": 1785997033047,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
             "name": "threejs10x (default)",
-            "value": 734.24,
+            "value": 718.47,
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-sourcemap (default)",
-            "value": 914.64,
+            "value": 878.59,
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify (default)",
-            "value": 961.1,
+            "value": 908.51,
             "unit": "ms / ops"
           },
           {
             "name": "threejs10x-minify-sourcemap (default)",
-            "value": 1121.13,
+            "value": 1052.97,
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts (default)",
-            "value": 158.53,
+            "value": 144.13,
             "unit": "ms / ops"
           },
           {
             "name": "rome-ts-sourcemap (default)",
-            "value": 183.71,
+            "value": 180.45,
             "unit": "ms / ops"
           }
         ]
