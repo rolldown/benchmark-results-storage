@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1785945823631,
+  "lastUpdate": 1785996926132,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -267803,6 +267803,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 160.06,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "hyfdev",
+            "username": "hyfdev"
+          },
+          "committer": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "hyfdev",
+            "username": "hyfdev"
+          },
+          "distinct": false,
+          "id": "646ff017deb7b9cca924d5ea2fb77cc906ce007f",
+          "message": "test(node-wasi): run the full node test suite against the WASI binding (#10616)\n\nPart of https://github.com/rolldown/rolldown/issues/10609.\n\nThis unlocks the wasi test suite for all tests. Only a few got skipped due to arbitrary reasons. We could investigate them later, but let's have a test for wasi first!\n\nNotice this is for `node-wasi` target, which shares the same `.wasi` binary with `@rolldown/browser`, but they're not same package.\n\nThis is for path `rolldown` -> `@rolldown/binding-node-wasi`",
+          "timestamp": "2026-08-06T06:03:09Z",
+          "tree_id": "8cf2c5b4aef48e67dcdfc603b1d2d8cc98bceb88",
+          "url": "https://github.com/rolldown/rolldown/commit/646ff017deb7b9cca924d5ea2fb77cc906ce007f"
+        },
+        "date": 1785996926034,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 734.24,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 914.64,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 961.1,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 1121.13,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 158.53,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 183.71,
             "unit": "ms / ops"
           }
         ]
