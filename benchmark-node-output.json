@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1785997033141,
+  "lastUpdate": 1786090286160,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -267857,6 +267857,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 180.45,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "hyfdev",
+            "username": "hyfdev"
+          },
+          "committer": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "hyfdev",
+            "username": "hyfdev"
+          },
+          "distinct": false,
+          "id": "a743bf9446c6cb1d9aae6f931aa6824c14e9c8a4",
+          "message": "chore(wasi): point the wasm skips at the right place (#10644)\n\nhttps://github.com/rolldown/rolldown/issues/10609 is closed.\n\nSome test are skipped in WASI on purpose. This PR updates some stale information.\n\n- `misc/error` tests are skipped because wasi throw different stack message due to the wasi env.\n- `packages/rolldown/tests/dev/dev-close.test.ts` is deliberately tracked at https://github.com/rolldown/rolldown/issues/10639\n- `builtin-plugin/import-glob/follow-symlinks` is left untouched on purpose: https://github.com/rolldown/rolldown/pull/10624 removes that skip entirely, so editing the same lines here would only create a conflict.",
+          "timestamp": "2026-08-07T07:58:35Z",
+          "tree_id": "faf604093458a6815a70af3fde4cc02d1aeade54",
+          "url": "https://github.com/rolldown/rolldown/commit/a743bf9446c6cb1d9aae6f931aa6824c14e9c8a4"
+        },
+        "date": 1786090286059,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 700.21,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 915.9,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 938.71,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 1083.68,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 151.47,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 179.56,
             "unit": "ms / ops"
           }
         ]
