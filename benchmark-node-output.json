@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1786090286160,
+  "lastUpdate": 1786091282288,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -267911,6 +267911,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 179.56,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "hyfdev",
+            "username": "hyfdev"
+          },
+          "committer": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "hyfdev",
+            "username": "hyfdev"
+          },
+          "distinct": false,
+          "id": "6a54a05318bee777c598c83da2ed6ec9cafc7f87",
+          "message": "chore(deps): tighten `@napi-rs/wasm-runtime` range to `~1.2.2` (#10615)\n\nPart of https://github.com/rolldown/rolldown/issues/10609\n\nThis PR locks the version into a certain range for `napi-rs/wasm-runtime`. This makes `@rolldown/brwoser` only relies on the correpsonding version.\n\nPrevious, ` ^1.2.2` can even satifies `2.0` if there is one. The `~1.2.2` in this PR only allows patch versions around `1.2.2`.\n\nThis makes:\n- If upperstream releaes an issued version like `1.3`, it won't be installed due to  `~1.2.2`\n- All minor version bumps are now explicit so the update PR could be tested via CI\n\n---\n\nnapi-rs official already did similar thing https://github.com/napi-rs/napi-rs/pull/3426, but `@rolldown/browser` is maintained manually, so we need to make this change manually.",
+          "timestamp": "2026-08-07T08:16:18Z",
+          "tree_id": "2f96f2798118272f22e0e09d3961aa7dd41c8e11",
+          "url": "https://github.com/rolldown/rolldown/commit/6a54a05318bee777c598c83da2ed6ec9cafc7f87"
+        },
+        "date": 1786091282191,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 721.33,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 909,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 950,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 1141.6,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 144.22,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 175.93,
             "unit": "ms / ops"
           }
         ]
