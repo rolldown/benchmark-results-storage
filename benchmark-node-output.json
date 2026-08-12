@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1786529693562,
+  "lastUpdate": 1786530918480,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -268343,6 +268343,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 178.7,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "committer": {
+            "email": "iwanabethatguy@qq.com",
+            "name": "IWANABETHATGUY",
+            "username": "IWANABETHATGUY"
+          },
+          "distinct": false,
+          "id": "c104448ecd8c7741d8e09bb317ae6cd2f2c8ce48",
+          "message": "fix: silence two wasm-only warnings (#10668)\n\n`cargo check -p rolldown_binding --target wasm32-wasip1-threads` warned about an unused `rayon::iter::ParallelIterator` import and an unused `parallel_plugins_registry` binding. Both are wasm-only, so a native build never shows them.",
+          "timestamp": "2026-08-12T10:23:10Z",
+          "tree_id": "b170fdd440cc6003393166976a9a980809acafc5",
+          "url": "https://github.com/rolldown/rolldown/commit/c104448ecd8c7741d8e09bb317ae6cd2f2c8ce48"
+        },
+        "date": 1786530918382,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 738.3,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 943.38,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 955.76,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 1118.82,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 164.86,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 194.74,
             "unit": "ms / ops"
           }
         ]
