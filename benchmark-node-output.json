@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1786524899384,
+  "lastUpdate": 1786529693562,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -268289,6 +268289,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 177.85,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "278280044+rolldown-guard[bot]@users.noreply.github.com",
+            "name": "rolldown-guard[bot]",
+            "username": "rolldown-guard[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "483c64833c0fb0d1b75f1339accf781c0a09b335",
+          "message": "release: v1.2.4 (#10667)\n\n## [1.2.4] - 2026-08-12\n\n### 🚀 Features\n\n- code-splitting: widen namespace extraction for already-loaded merges (#10594) by @IWANABETHATGUY\n\n### 🐛 Bug Fixes\n\n- binding: illegal instruction crash on Android arm64 (#10638) by @shulaoda\n- code-splitting: stop negated sideEffects globs retaining modules (#10660) by @JoviDeCroock\n- devtools: resolve log paths against the build cwd (#10622) by @hyfdev\n\n### 📚 Documentation\n\n- plugin-api: document sourcemap differences from Rollup (#10636) by @IWANABETHATGUY\n\n### 🧪 Testing\n\n- browser: smoke test the packed `@rolldown/browser` in a real browser page (#10634) by @hyfdev\n- node-wasi: run the full node test suite against the WASI binding (#10616) by @hyfdev\n- webcontainer: smoke test the packed WASI artifacts inside a WebContainer (#10626) by @hyfdev\n\n### ⚙️ Miscellaneous Tasks\n\n- deps: update napi (#10649) by @renovate[bot]\n- deps: update esbuild for tests to 0.28.2 (#10662) by @rolldown-guard[bot]\n- deps: update test262 submodule for tests (#10663) by @rolldown-guard[bot]\n- deps: update npm packages (#10653) by @renovate[bot]\n- deps: update github actions (#10651) by @renovate[bot]\n- deps: update crate-ci/typos action to v1.49.0 (#10642) by @renovate[bot]\n- deps: update dependency vite-plus to v0.2.9 (#10627) by @renovate[bot]\n- deps: update rust crates (#10652) by @renovate[bot]\n- deps: upgrade oxc to 0.144.0 (#10657) by @camc314\n- ignore napi-rs temp files (#10658) by @camc314\n- deps: tighten `@napi-rs/wasm-runtime` range to `~1.2.2` (#10615) by @hyfdev\n- wasi: point the wasm skips at the right place (#10644) by @hyfdev\n\nCo-authored-by: shulaoda <165626830+shulaoda@users.noreply.github.com>",
+          "timestamp": "2026-08-12T18:09:11+08:00",
+          "tree_id": "3219613fb5141c11b691555e906b01f1439c154c",
+          "url": "https://github.com/rolldown/rolldown/commit/483c64833c0fb0d1b75f1339accf781c0a09b335"
+        },
+        "date": 1786529693461,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 742.07,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 955.7,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 963.29,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 1135.38,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 147.26,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 178.7,
             "unit": "ms / ops"
           }
         ]
