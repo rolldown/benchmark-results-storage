@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1786530918480,
+  "lastUpdate": 1786587719896,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -268397,6 +268397,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 194.74,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "marco.roth@intergga.ch",
+            "name": "Marco Roth",
+            "username": "marcoroth"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ab2d07487a208ea376e6b3e5d584f66e9ae69549",
+          "message": "fix(renamer): rename nested `require`/`__filename`/`__dirname` bindings in CJS output (#10655)\n\nFixes #10654 \n\nCommonJS output rewrites `import.meta.url` to\n`require(\"url\").pathToFileURL(__filename).href`. The injected identifier\nis built as a bare, unbound identifier in\n`try_rewrite_import_meta_prop_expr`, so it is invisible to the renamer.\nWhen the module declares its own `require` in an enclosing scope, that\nbinding is hoisted and captures the injected call inside its own\ninitializer:\n\n```js\n// input\nfunction init() {\n  var require = createRequire(import.meta.url);\n  const path = require(\"node:path\");\n  const os = require(\"node:os\");\n  return path.sep + os.EOL;\n}\n```\n\n```js\n// output before this PR — throws `require is not a function` on the first call\nvar require = createRequire(require(\"url\").pathToFileURL(__filename).href);\n```\n\nThe renamer already reserves `require` for CommonJS output, but only for\nroot-scope symbols, so a nested binding is left alone.\n\n#### The change\n\nAdds `rename_bindings_shadowing_cjs_require`, a fifth nested-scope pass\nalongside the existing ones. It is modelled on the wrapper-params pass,\nwhich solves the same shape of problem for `exports` and `module`, and\nruns only for `OutputFormat::Cjs`.\n\nOutput now matches rollup, which deconflicts the local the same way:\n\n```js\nvar require$1 = createRequire(require(\"url\").pathToFileURL(__filename).href);\n```\n\n#### Alternatives considered\n\nHoisting the polyfill to a chunk-level variable also works and is immune\nto shadowing, but it changes the emitted shape for every\n`import.meta.url` user rather than only the shadowing case.\n\nMaking the injected identifier a canonical, symbol-backed reference\nwould be the more general fix, since the same bare `require` identifier\nis emitted for external imports too. Renaming the shadowing binding is\nthe smaller change and follows a pattern already established in this\nfile.\n\n#### Notes for reviewers\n\nThe pass renames any nested binding named `require` under CommonJS\noutput, not only those in scopes that actually enclose an injected call.\nThat is deliberately broader than the reference-precise passes above it,\nbecause several rewrites emit a bare `require(...)`, not just the\n`import.meta.url` polyfill. Renaming a local is semantically\ntransparent, and in practice it is inert: the full suite produced no\nsnapshot changes outside the new test. Happy to narrow it to\nreference-precise if preferred.\n\n---------\n\nCo-authored-by: Dunqing <dengqing0821@gmail.com>",
+          "timestamp": "2026-08-13T02:16:15Z",
+          "tree_id": "bec756426b5462989b277b2ff6d1773a27ac9093",
+          "url": "https://github.com/rolldown/rolldown/commit/ab2d07487a208ea376e6b3e5d584f66e9ae69549"
+        },
+        "date": 1786587719798,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 720.37,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 903.86,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 933.68,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 1087.91,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 148.18,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 171.53,
             "unit": "ms / ops"
           }
         ]
