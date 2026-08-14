@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1786601995322,
+  "lastUpdate": 1786688143490,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -268505,6 +268505,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 178.1,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "1399789151@qq.com",
+            "name": "AliceLanniste",
+            "username": "AliceLanniste"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "84010dc6d24bee0b131ca8c93395e96499781615",
+          "message": "feat: add `NAMESPACE_CONFLICT` warning for conflicting star re-exports (#7452)\n\nrelated #6780\n\n---------\n\nCo-authored-by: shulaoda <165626830+shulaoda@users.noreply.github.com>",
+          "timestamp": "2026-08-14T14:08:51+08:00",
+          "tree_id": "c95756834ec6d085004a052790fbddb1ca18d860",
+          "url": "https://github.com/rolldown/rolldown/commit/84010dc6d24bee0b131ca8c93395e96499781615"
+        },
+        "date": 1786688143383,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 745.35,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 937.32,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 972.13,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 1138.03,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 148.63,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 180.82,
             "unit": "ms / ops"
           }
         ]
