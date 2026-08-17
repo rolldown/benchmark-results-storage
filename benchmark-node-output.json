@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1786873057474,
+  "lastUpdate": 1786949466906,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -268667,6 +268667,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 186.24,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "2356281422@qq.com",
+            "name": "btea",
+            "username": "btea"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3745db1737968eb39ba69eb8eaae1683e50aa1e3",
+          "message": "fix(dev): flush re-emitted assets when their content changes (#10637)\n\nThe `FileEmitter` is reused for the whole DevEngine lifetime and\n`emitted_files` is never cleared in dev mode. Since the reference id of\nan asset emitted with an explicit `fileName` is derived from that name,\nre-emitting the asset with changed content in a later build was silently\ndropped after the first flush: `add_additional_files` skipped it\nforever. This broke consumers that serve emitted assets in dev, e.g.\nVite's bundled dev server missing updated html entry assets\n(vitejs/vite#23179).\n\nRecord the source hash of every flushed asset and mark the file dirty\nwhen it is re-emitted with different content, so it is flushed again.\nAssets re-emitted with unchanged content stay deduplicated, and the\nfilename conflict check still only runs on the first flush.\n\n## AI disclosure\n\nThis PR was developed with AI assistance. All generated changes were\nreviewed, tested, and adjusted before submission.\n\n---------\n\nSigned-off-by: btea <2356281422@qq.com>\nCo-authored-by: andrew <andywangsy@gmail.com>",
+          "timestamp": "2026-08-17T06:44:15Z",
+          "tree_id": "5f53aac45c4d5aeeaae1ed85ad06fccd6a69e541",
+          "url": "https://github.com/rolldown/rolldown/commit/3745db1737968eb39ba69eb8eaae1683e50aa1e3"
+        },
+        "date": 1786949466807,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 730.82,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 898.85,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 936.25,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 1076.74,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 154.29,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 189.51,
             "unit": "ms / ops"
           }
         ]
