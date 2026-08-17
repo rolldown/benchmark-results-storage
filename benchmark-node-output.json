@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1786949466906,
+  "lastUpdate": 1786951880144,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -268721,6 +268721,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 189.51,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "hyfdev",
+            "username": "hyfdev"
+          },
+          "committer": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "hyfdev",
+            "username": "hyfdev"
+          },
+          "distinct": false,
+          "id": "b26b65db803eb0b665f4b56c4fb7b175ae7834ed",
+          "message": "refactor(code-splitting): remove redundant synthetic statement owner (#10503)\n\n## Summary\n\n- remove the duplicate `OrderSyntheticStmt.owner` field because each declared symbol already carries its module owner\n- keep the order-wrapper ownership assertion at the registration boundary while leaving `chunk` as the physical placement fact\n- update the code-splitting design to document symbol ownership and synthetic declaration placement separately\n\n## Validation\n\n- `cargo check -p rolldown --lib`\n- `cargo clippy -p rolldown --lib --features experimental -- --deny warnings`\n- `cargo test -p rolldown --test integration strict_execution_order_invariants` (12 passed)\n- `cargo test -p rolldown --test integration strict_execution_order_invariants -- --ignored` (5 passed)\n- `cargo test -p rolldown --test integration cjs_dynamic_entry_transitive_external_star -- --ignored`\n- `cargo fmt --all -- --check`\n- `just lint-repo`",
+          "timestamp": "2026-08-17T07:18:53Z",
+          "tree_id": "009784ff44c12c4640ba1b0b8d5c878f3c11e38c",
+          "url": "https://github.com/rolldown/rolldown/commit/b26b65db803eb0b665f4b56c4fb7b175ae7834ed"
+        },
+        "date": 1786951880045,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 781.12,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 949.11,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 978.89,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 1145.97,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 145.11,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 175.67,
             "unit": "ms / ops"
           }
         ]
