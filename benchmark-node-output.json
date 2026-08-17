@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1786951880144,
+  "lastUpdate": 1786967430928,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -268775,6 +268775,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 175.67,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "decroockjovi@gmail.com",
+            "name": "Jovi De Croock",
+            "username": "JoviDeCroock"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "982e3446e9b25ae89ac2e0c5c8c4f7007cc2d070",
+          "message": "fix(code-splitting): fold already-loaded side-effectful libraries into eager entries (#10645)\n\n> [!NOTE]\n> This PR's reproduction was written by a human, the fix was written by\nan LLM and then reviewed by a human.\n\nFixes https://github.com/rolldown/rolldown/issues/9963\n\nWhen a side-effectful library is imported by an eager entry and by lazy\nconsumers that are only reachable through that entry, Rolldown no longer\nextracts it into a separate shared chunk. Instead, it folds the library\ninto the eager entry, where its side effect is guaranteed to run before\nthe lazy consumers load.\n\nI only noticed later on that there was already an issue for this 😅 \n\nThe fix:\n\n- Removes phantom dependency cycles caused by re-export records.\n- Computes “already loaded” status from emitted chunk imports.\n- Allows re-export-only barrels to merge without falsely widening a\nstrict entry signature.\n\nThe PR purposefully splits between reproduction and fix in case y'all\nwant something different than the reproduction can be immediately useful\nto y'all.\n\n---------\n\nCo-authored-by: autofix-ci[bot] <114827586+autofix-ci[bot]@users.noreply.github.com>\nCo-authored-by: Yunfei He <i.heyunfei@gmail.com>",
+          "timestamp": "2026-08-17T11:44:45Z",
+          "tree_id": "99b6c2683bd35c8a85f17319005024041f8e7aa0",
+          "url": "https://github.com/rolldown/rolldown/commit/982e3446e9b25ae89ac2e0c5c8c4f7007cc2d070"
+        },
+        "date": 1786967430813,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 717.22,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 912.47,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 919.7,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 1104,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 158.71,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 189,
             "unit": "ms / ops"
           }
         ]
