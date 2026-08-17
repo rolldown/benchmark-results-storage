@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1786975574102,
+  "lastUpdate": 1786987924944,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -268883,6 +268883,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 193.12,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "maritz.hans@gmail.com",
+            "name": "Hans-Albert Maritz",
+            "username": "Freakazo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "95fa2c41290f85a68ed9d3bfe5cf38ee905e4ef3",
+          "message": "fix(rolldown_plugin_vite_resolve): preserve Yarn PnP virtual importer (#10591)\n\nYarn PnP virtual importer paths can be valid inside a ZIP or virtual\npath even though\n`std::fs::exists` reports them as missing. That caused Vite resolution\nto discard\nthe importer and resolve from the workspace root.\n\n- Use oxc’s PnP-aware filesystem when deciding whether to preserve an\nimporter.\n- Read optional-peer package metadata through the same filesystem.\n- Share the PnP filesystem/ZIP cache across resolver variants.\n- Add regression coverage for virtual-path metadata and reads.\n\n---------\n\nCo-authored-by: shulaoda <165626830+shulaoda@users.noreply.github.com>",
+          "timestamp": "2026-08-18T01:27:04+08:00",
+          "tree_id": "928d428e644e659960c31485f3fb109f402986a7",
+          "url": "https://github.com/rolldown/rolldown/commit/95fa2c41290f85a68ed9d3bfe5cf38ee905e4ef3"
+        },
+        "date": 1786987924863,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 605.67,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 869.34,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 784.9,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 983.46,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 116.38,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 156.89,
             "unit": "ms / ops"
           }
         ]
