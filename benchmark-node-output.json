@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1786987924944,
+  "lastUpdate": 1787021144354,
   "repoUrl": "https://github.com/rolldown/rolldown",
   "entries": {
     "Benchmark": [
@@ -268937,6 +268937,60 @@
           {
             "name": "rome-ts-sourcemap (default)",
             "value": 156.89,
+            "unit": "ms / ops"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "hyfdev",
+            "username": "hyfdev"
+          },
+          "committer": {
+            "email": "i.heyunfei@gmail.com",
+            "name": "hyfdev",
+            "username": "hyfdev"
+          },
+          "distinct": false,
+          "id": "138ee26612aa45e9f69d6e31d57fc298196b2a34",
+          "message": "refactor: skip case folding for filenames with hash placeholders (#10689)\n\nFollow-up of #10590.\n\nAfter checking rollup's logic, I found that there's no necessary generate a unique name for placeholder that already contains `[hash]`.",
+          "timestamp": "2026-08-18T02:29:58Z",
+          "tree_id": "e406c634865be8a6d61aa1af3962b8f46ded1d6d",
+          "url": "https://github.com/rolldown/rolldown/commit/138ee26612aa45e9f69d6e31d57fc298196b2a34"
+        },
+        "date": 1787021144258,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "threejs10x (default)",
+            "value": 738.52,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-sourcemap (default)",
+            "value": 927.63,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify (default)",
+            "value": 960.08,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "threejs10x-minify-sourcemap (default)",
+            "value": 1124.36,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts (default)",
+            "value": 154.96,
+            "unit": "ms / ops"
+          },
+          {
+            "name": "rome-ts-sourcemap (default)",
+            "value": 197.37,
             "unit": "ms / ops"
           }
         ]
